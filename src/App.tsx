@@ -164,7 +164,9 @@ export default function App() {
     if (current && phase === 'landed') spin(current)
   }, [current, phase, spin])
 
-  // Space spins, unless focus is on something Space already activates.
+  // Space spins. Keyboard users who tabbed onto a control keep its native Space behavior.
+  // Mouse clicks don't move focus onto buttons, so clicking a chip and then pressing
+  // Space still spins instead of toggling that chip again.
   const spinRef = useRef(spin)
   spinRef.current = spin
   useEffect(() => {
@@ -175,8 +177,17 @@ export default function App() {
       e.preventDefault()
       spinRef.current()
     }
+    const onMouseDown = (e: MouseEvent) => {
+      if (!(e.target as HTMLElement | null)?.closest('button')) return
+      e.preventDefault()
+      ;(document.activeElement as HTMLElement | null)?.blur()
+    }
     window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
+    window.addEventListener('mousedown', onMouseDown)
+    return () => {
+      window.removeEventListener('keydown', onKey)
+      window.removeEventListener('mousedown', onMouseDown)
+    }
   }, [])
 
   const toggleCategory = (c: Category) => {
@@ -207,7 +218,7 @@ export default function App() {
           <h1 className="wordmark">Uncached</h1>
           <p className="tagline">spin · explain · discuss</p>
         </div>
-        <p className="counter" aria-label={`${covered.length} of ${TOPICS.length} topics explored`}>
+        <p className="counter">
           <span className="counter-num">{covered.length}</span>
           <span className="counter-sep"> / </span>
           <span>{TOPICS.length}</span>
