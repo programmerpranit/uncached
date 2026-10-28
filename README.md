@@ -1,5 +1,7 @@
 # Uncached
 
+**Live:** https://uncached.vercel.app
+
 A "spin a random tech topic" game for teams. One person spins, the app lands on an intermediate-to-hard topic, and the group explains and discusses it together.
 
 There is no backend, no login and no timer. Everything runs in the browser, and progress is saved in `localStorage`.
