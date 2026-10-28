@@ -516,6 +516,13 @@ button {
   color: var(--ink-dim);
 }
 
+.history-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+}
+
 .confirm {
   display: inline-flex;
   flex-wrap: wrap;

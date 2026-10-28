@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { CATEGORIES, TOPICS, topicKey, type Category, type Topic } from './data/topics'
+import { playLand, playStart, playTick } from './sound'
 
 const COVERED_STORAGE = 'uncached:covered'
 const SELECTED_STORAGE = 'uncached:categories'
-const SPIN_MS = 1500
-const FIRST_TICK_MS = 45
-const TICK_GROWTH = 1.12
+const SOUND_STORAGE = 'uncached:sound'
+const SPIN_MS = 5000
+const REEL_TICKS = 50
 
 const TOPIC_BY_KEY = new Map(TOPICS.map((t) => [topicKey(t), t]))
 
@@ -45,17 +46,13 @@ function pickRandom<T>(items: T[]): T {
   return items[Math.floor(Math.random() * items.length)]
 }
 
-/** Tick intervals that start fast and stretch out until they add up to roughly SPIN_MS. */
+/**
+ * Tick intervals that add up to exactly SPIN_MS. Tick start times follow an ease-out curve,
+ * so the reel starts at ~50ms per tick and slows to a long final pause before it lands.
+ */
 function reelSchedule(): number[] {
-  const out: number[] = []
-  let total = 0
-  let interval = FIRST_TICK_MS
-  while (total + interval < SPIN_MS) {
-    out.push(interval)
-    total += interval
-    interval *= TICK_GROWTH
-  }
-  return out
+  const times = Array.from({ length: REEL_TICKS + 1 }, (_, i) => SPIN_MS * (1 - Math.sqrt(1 - i / REEL_TICKS)))
+  return times.slice(1).map((t, i) => t - times[i])
 }
 
 const prefersReducedMotion = () =>
@@ -79,12 +76,14 @@ export default function App() {
   const [announce, setAnnounce] = useState('')
   const [historyOpen, setHistoryOpen] = useState(false)
   const [confirmReset, setConfirmReset] = useState(false)
+  const [soundOn, setSoundOn] = useState(() => readJson(SOUND_STORAGE) !== false)
 
   const timers = useRef<number[]>([])
   const spinning = phase === 'spinning'
 
   useEffect(() => writeJson(COVERED_STORAGE, covered), [covered])
   useEffect(() => writeJson(SELECTED_STORAGE, selected), [selected])
+  useEffect(() => writeJson(SOUND_STORAGE, soundOn), [soundOn])
   useEffect(() => () => timers.current.forEach(clearTimeout), [])
 
   const selectedSet = useMemo(() => new Set(selected), [selected])
@@ -100,8 +99,9 @@ export default function App() {
   const remaining = selected.reduce((sum, c) => sum + remainingByCategory[c], 0)
   const exhausted = remaining === 0
 
-  const land = useCallback((topic: Topic) => {
+  const land = useCallback((topic: Topic, withSound: boolean) => {
     const key = topicKey(topic)
+    if (withSound) playLand()
     setCurrent(topic)
     setPhase('landed')
     setReel(null)
@@ -127,11 +127,8 @@ export default function App() {
       if (skipKey) setCovered((prev) => prev.filter((k) => k !== skipKey))
       setConfirmReset(false)
       const winner = pickRandom(candidates)
-
-      if (prefersReducedMotion()) {
-        land(winner)
-        return
-      }
+      // With reduced motion the reel doesn't cycle; it holds a static line for the same suspense.
+      const still = prefersReducedMotion()
 
       // Decoys come from every topic in the selection so the reel stays lively even when few remain.
       const decoys = TOPICS.filter((t) => selectedSet.has(t.category) && t !== winner)
@@ -140,6 +137,8 @@ export default function App() {
       timers.current = []
       setPhase('spinning')
       setAnnounce('')
+      if (soundOn) playStart()
+      if (still) setReel({ text: 'Drawing a topic…', ms: SPIN_MS, id: 0 })
 
       let at = 0
       let last: Topic | null = null
@@ -152,12 +151,18 @@ export default function App() {
         }
         last = topic
         const text = topic.title
-        timers.current.push(window.setTimeout(() => setReel({ text, ms, id: i }), at))
+        const progress = i / (schedule.length - 1)
+        timers.current.push(
+          window.setTimeout(() => {
+            if (!still) setReel({ text, ms, id: i })
+            if (soundOn) playTick(progress)
+          }, at),
+        )
         at += ms
       })
-      timers.current.push(window.setTimeout(() => land(winner), at))
+      timers.current.push(window.setTimeout(() => land(winner, soundOn), at))
     },
-    [spinning, selectedSet, coveredSet, land],
+    [spinning, selectedSet, coveredSet, land, soundOn],
   )
 
   const reroll = useCallback(() => {
@@ -347,22 +352,32 @@ export default function App() {
           >
             {historyOpen ? 'Hide' : 'Show'} covered ({covered.length})
           </button>
-          {covered.length > 0 &&
-            (confirmReset ? (
-              <span className="confirm">
-                Clear all {covered.length}?
-                <button type="button" className="link link--danger" onClick={resetHistory}>
-                  Yes, reset
+          <span className="history-actions">
+            <button
+              type="button"
+              className="link"
+              aria-pressed={soundOn}
+              onClick={() => setSoundOn((on) => !on)}
+            >
+              Sound {soundOn ? 'on' : 'off'}
+            </button>
+            {covered.length > 0 &&
+              (confirmReset ? (
+                <span className="confirm">
+                  Clear all {covered.length}?
+                  <button type="button" className="link link--danger" onClick={resetHistory}>
+                    Yes, reset
+                  </button>
+                  <button type="button" className="link" onClick={() => setConfirmReset(false)}>
+                    Cancel
+                  </button>
+                </span>
+              ) : (
+                <button type="button" className="link" onClick={() => setConfirmReset(true)}>
+                  Reset history
                 </button>
-                <button type="button" className="link" onClick={() => setConfirmReset(false)}>
-                  Cancel
-                </button>
-              </span>
-            ) : (
-              <button type="button" className="link" onClick={() => setConfirmReset(true)}>
-                Reset history
-              </button>
-            ))}
+              ))}
+          </span>
         </div>
         {historyOpen && (
           <div id="history-list">

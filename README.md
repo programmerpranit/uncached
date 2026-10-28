@@ -9,7 +9,8 @@ There is no backend, no login and no timer. Everything runs in the browser, and 
 ## How to play
 
 - Pick one or more categories. **All** is the default. When All is active, tapping a single category narrows the selection to just that one.
-- Press **Spin**, or hit the spacebar, to land on a topic.
+- Press **Spin**, or hit the spacebar. The reel spins for 5 seconds, slowing down before it lands on a topic.
+- The spin has sound effects: a whoosh, a click per reel step and a chime on landing. They are synthesized with the Web Audio API, so there are no audio files. Toggle them with **Sound on/off** in the footer; the choice is saved per browser.
 - A landed topic counts as covered right away. Covered topics are skipped on future spins.
 - **Reroll** skips the current topic. The skipped topic is un-covered, so it can come up again later.
 - **Show covered** lists everything explored so far. **Reset history** clears that list (it asks you to confirm).
@@ -56,4 +57,4 @@ To add a new **category**, add its name to `CATEGORIES` and add a matching key t
 
 ## Stack
 
-Vite, React and TypeScript, with plain CSS (`src/styles.css`). Fonts are Instrument Serif and JetBrains Mono, loaded from Google Fonts. The spin animation respects `prefers-reduced-motion`.
+Vite, React and TypeScript, with plain CSS (`src/styles.css`). Fonts are Instrument Serif and JetBrains Mono, loaded from Google Fonts. With `prefers-reduced-motion`, the reel doesn't cycle. It shows a static line for the same 5 seconds, then the topic fades in. Spin timing lives in `SPIN_MS` and `REEL_TICKS` in `src/App.tsx`; the sounds are in `src/sound.ts`.
