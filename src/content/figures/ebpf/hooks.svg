@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 399" width="880" height="399" role="img" aria-label="eBPF attach points for observability, networking, security and scheduling" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="399" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Where eBPF programs attach</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the same runtime powers tracing, networking and security</text>
+<rect x="40.0" y="96.0" width="390.0" height="104.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="54.0" y="118.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">observability</text>
+<text x="54.0" y="142.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• kprobes / kretprobes: any kernel function</text>
+<text x="54.0" y="162.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• uprobes: any user-space function</text>
+<text x="54.0" y="182.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• tracepoints, USDT, perf events (sampling)</text>
+<rect x="450.0" y="96.0" width="390.0" height="104.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="464.0" y="118.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">networking</text>
+<text x="464.0" y="142.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• XDP: in the driver, before sk_buff</text>
+<text x="464.0" y="162.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• tc ingress/egress: shape, redirect, NAT</text>
+<text x="464.0" y="182.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• socket and cgroup hooks: connect, sendmsg</text>
+<rect x="40.0" y="216.0" width="390.0" height="104.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="54.0" y="238.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">security</text>
+<text x="54.0" y="262.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• seccomp (classic BPF): syscall filters</text>
+<text x="54.0" y="282.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• BPF LSM: security policy hooks</text>
+<text x="54.0" y="302.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• cgroup device / sysctl hooks</text>
+<rect x="450.0" y="216.0" width="390.0" height="104.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="464.0" y="238.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">scheduling &amp; more</text>
+<text x="464.0" y="262.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• sched_ext: whole CPU schedulers in BPF</text>
+<text x="464.0" y="282.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">• HID, struct_ops (TCP congestion control)</text>
+<text x="40.0" y="350.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cilium (Kubernetes networking), Cloudflare's DDoS protection, Meta's Katran load balancer, Falco and Tetragon</text>
+<text x="40.0" y="369.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">(runtime security), bpftrace and BCC tools, Pixie and Parca (observability) are all built on these hooks.</text>
+</svg>

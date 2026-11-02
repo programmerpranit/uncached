@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 427" width="360" height="427" role="img" aria-label="eBPF attach points for observability, networking, security and scheduling" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="427" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">eBPF hooks</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">tracing, networking, security</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">observability</text>
+<text x="16.0" y="106.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• kprobes / kretprobes</text>
+<text x="16.0" y="123.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• uprobes</text>
+<text x="16.0" y="140.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• tracepoints, USDT, perf events (sampling)</text>
+<text x="16.0" y="167.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">networking</text>
+<text x="16.0" y="187.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• XDP</text>
+<text x="16.0" y="204.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• tc ingress/egress</text>
+<text x="16.0" y="221.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• socket and cgroup hooks</text>
+<text x="16.0" y="248.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">security</text>
+<text x="16.0" y="268.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• seccomp (classic BPF)</text>
+<text x="16.0" y="285.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• BPF LSM</text>
+<text x="16.0" y="302.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• cgroup device / sysctl hooks</text>
+<text x="16.0" y="329.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">scheduling &amp; more</text>
+<text x="16.0" y="349.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• sched_ext</text>
+<text x="16.0" y="366.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">• HID, struct_ops (TCP congestion control)</text>
+<text x="16.0" y="397.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cilium, Katran, Falco, bpftrace…</text>
+</svg>

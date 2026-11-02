@@ -153,8 +153,8 @@ NICs with programmable processors (ARM cores, FPGAs or P4 pipelines) that run ne
 1. DPDK. [Programmer's Guide](https://doc.dpdk.org/guides/prog_guide/).
 2. SPDK. [Storage Performance Development Kit documentation](https://spdk.io/doc/).
 3. C. Guo et al. [RDMA over Commodity Ethernet at Scale](https://www.microsoft.com/en-us/research/publication/rdma-over-commodity-ethernet-at-scale/). *SIGCOMM 2016*.
-4. A. Dragojević et al. [FaRM: Fast Remote Memory](https://www.usenix.org/conference/nsdi14/technical-sessions/dragojevi%C4%87). *NSDI 2014*.
+4. A. Dragojević et al. *FaRM: Fast Remote Memory*. *NSDI 2014*.
 5. T. Høiland-Jørgensen et al. [The eXpress Data Path: Fast Programmable Packet Processing in the Operating System Kernel](https://dl.acm.org/doi/10.1145/3281411.3281443). *CoNEXT 2018*.
 6. Linux kernel docs. [AF_XDP](https://docs.kernel.org/networking/af_xdp.html).
-7. M. Marty et al. [Snap: a Microkernel Approach to Host Networking](https://research.google/pubs/snap-a-microkernel-approach-to-host-networking/). *SOSP 2019*.
+7. M. Marty et al. *Snap: a Microkernel Approach to Host Networking*. *SOSP 2019*.
 8. RDMA Core. [rdma-core and libibverbs](https://github.com/linux-rdma/rdma-core).
