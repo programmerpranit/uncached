@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 396" width="360" height="396" role="img" aria-label="Comparing two Merkle trees by descending only into subtrees whose hashes differ" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="396" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Diffing two trees</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">follow mismatches down</text>
+<line x1="180.0" y1="108.0" x2="98.0" y2="136.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="180.0" y1="108.0" x2="262.0" y2="136.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="98.0" y1="160.0" x2="57.0" y2="188.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="98.0" y1="160.0" x2="139.0" y2="188.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="262.0" y1="160.0" x2="221.0" y2="188.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="262.0" y1="160.0" x2="303.0" y2="188.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="57.0" y1="212.0" x2="36.5" y2="240.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="57.0" y1="212.0" x2="77.5" y2="240.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="139.0" y1="212.0" x2="118.5" y2="240.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="139.0" y1="212.0" x2="159.5" y2="240.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="221.0" y1="212.0" x2="200.5" y2="240.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="221.0" y1="212.0" x2="241.5" y2="240.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="303.0" y1="212.0" x2="282.5" y2="240.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="303.0" y1="212.0" x2="323.5" y2="240.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="125.0" y="84.0" width="110.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="100.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="600">≠</text>
+<rect x="43.0" y="136.0" width="110.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="98.0" y="152.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="600">=</text>
+<rect x="207.0" y="136.0" width="110.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="262.0" y="152.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="600">≠</text>
+<rect x="20.0" y="188.0" width="74.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="57.0" y="204.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600"></text>
+<rect x="102.0" y="188.0" width="74.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="139.0" y="204.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600"></text>
+<rect x="184.0" y="188.0" width="74.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="221.0" y="204.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="600">≠</text>
+<rect x="266.0" y="188.0" width="74.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="303.0" y="204.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="600">=</text>
+<rect x="20.0" y="240.0" width="33.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="36.5" y="256.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600"></text>
+<rect x="61.0" y="240.0" width="33.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="77.5" y="256.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600"></text>
+<rect x="102.0" y="240.0" width="33.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="118.5" y="256.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600"></text>
+<rect x="143.0" y="240.0" width="33.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="159.5" y="256.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600"></text>
+<rect x="184.0" y="240.0" width="33.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="200.5" y="256.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="600">=</text>
+<rect x="225.0" y="240.0" width="33.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="241.5" y="256.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="600">≠</text>
+<rect x="266.0" y="240.0" width="33.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="282.5" y="256.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600"></text>
+<rect x="307.0" y="240.0" width="33.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="323.5" y="256.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600"></text>
+<text x="16.0" y="290.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">red ≠: hashes differ → descend</text>
+<text x="16.0" y="309.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">green =: identical → skip subtree</text>
+<text x="16.0" y="347.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cost ≈ (differences × depth) hashes,</text>
+<text x="16.0" y="366.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">not the size of the data.</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="880" height="320" role="img" aria-label="Data transferred to reconcile two replicas naively versus with a Merkle tree" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="320" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Anti-entropy cost: naive vs Merkle</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">two replicas, 100M keys, 50 keys differ</text>
+<text x="40.0" y="100.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">send every key + value</text>
+<rect x="470.0" y="86.0" width="330.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="808.0" y="101.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~100 GB</text>
+<text x="40.0" y="144.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">send every key + hash (16 B)</text>
+<rect x="470.0" y="130.0" width="198.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="676.0" y="145.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~2.4 GB</text>
+<text x="40.0" y="188.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Merkle tree (2²⁰ leaves), then the differing ranges</text>
+<rect x="470.0" y="174.0" width="13.2" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="491.2" y="189.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">~0.2 MB</text>
+<text x="40.0" y="252.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">With 2²⁰ leaves (~100 keys each, ~1 KB values), 50 differences cost ~50 × 20 levels of hash comparisons, then key</text>
+<text x="40.0" y="271.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">hashes for 50 leaf ranges and the 50 changed values. The trade-off: building the tree means reading all the data,</text>
+<text x="40.0" y="290.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">so systems build trees incrementally or in the background, and Cassandra throttles its repair validation.</text>
+</svg>

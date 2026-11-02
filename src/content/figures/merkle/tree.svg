@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 368" width="880" height="368" role="img" aria-label="A Merkle tree with leaf hashes of key ranges, internal hashes of children, and a root hash" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="368" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A Merkle tree</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each parent is the hash of its children; the root summarizes everything</text>
+<line x1="440.0" y1="115.0" x2="240.0" y2="147.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="440.0" y1="115.0" x2="640.0" y2="147.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="240.0" y1="177.0" x2="140.0" y2="209.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="240.0" y1="177.0" x2="340.0" y2="209.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="640.0" y1="177.0" x2="540.0" y2="209.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="640.0" y1="177.0" x2="740.0" y2="209.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="385.0" y="85.0" width="110.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="440.0" y="104.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="600">root</text>
+<rect x="185.0" y="147.0" width="110.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="240.0" y="166.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="600">H(01)</text>
+<rect x="585.0" y="147.0" width="110.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="640.0" y="166.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="600">H(23)</text>
+<rect x="85.0" y="209.0" width="110.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="140.0" y="228.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">H0</text>
+<rect x="285.0" y="209.0" width="110.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="340.0" y="228.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">H1</text>
+<rect x="485.0" y="209.0" width="110.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="540.0" y="228.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">H2</text>
+<rect x="685.0" y="209.0" width="110.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="740.0" y="228.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">H3</text>
+<text x="140.0" y="258.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">keys 0–249</text>
+<text x="340.0" y="258.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">keys 250–499</text>
+<text x="540.0" y="258.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">keys 500–749</text>
+<text x="740.0" y="258.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">keys 750–999</text>
+<text x="40.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Leaves hash ranges of data (or individual blocks). Each level hashes the pair below it. Change one key, and its</text>
+<text x="40.0" y="319.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">leaf, its parent and the root all change, so two replicas with equal roots hold identical data (with overwhelming</text>
+<text x="40.0" y="338.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">probability).</text>
+</svg>
