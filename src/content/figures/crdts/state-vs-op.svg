@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 339" width="880" height="339" role="img" aria-label="State-based versus operation-based CRDTs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="339" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">State-based vs operation-based CRDTs</text>
+<rect x="40.0" y="80.0" width="390.0" height="170.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="108.0" font-size="14" fill="#5fb3a1" text-anchor="start" font-weight="700">State-based (CvRDT)</text>
+<text x="56.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· ship the whole state (or a delta)</text>
+<text x="56.0" y="164.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· merge = join in a semilattice</text>
+<text x="56.0" y="188.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">· tolerates duplicates &amp; reordering</text>
+<text x="56.0" y="212.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">· state can be large</text>
+<rect x="450.0" y="80.0" width="390.0" height="170.0" rx="3" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1"/>
+<text x="466.0" y="108.0" font-size="14" fill="#9b8cff" text-anchor="start" font-weight="700">Operation-based (CmRDT)</text>
+<text x="466.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· ship each operation</text>
+<text x="466.0" y="164.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· concurrent ops must commute</text>
+<text x="466.0" y="188.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">· needs exactly-once, causal delivery</text>
+<text x="466.0" y="212.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">· small messages</text>
+<text x="40.0" y="290.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Delta-state CRDTs combine the two: send only the part of the state that changed, but merge it with the same</text>
+<text x="40.0" y="309.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">join function, so duplicates and reordering are still harmless.</text>
+</svg>

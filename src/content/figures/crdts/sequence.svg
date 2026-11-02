@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 398" width="880" height="398" role="img" aria-label="Sequence CRDT: characters have unique IDs and inserts reference IDs, so concurrent inserts merge deterministically" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="398" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Collaborative text: unique IDs instead of indexes</text>
+<text x="40.0" y="96.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">shared doc "Hi" — each character has an ID (counter@replica)</text>
+<rect x="40.0" y="110.0" width="60.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="70.0" y="137.8" font-size="16" fill="#ede6d8" text-anchor="middle" font-weight="600">H</text>
+<text x="70.0" y="172.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">1@A</text>
+<rect x="110.0" y="110.0" width="60.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="140.0" y="137.8" font-size="16" fill="#ede6d8" text-anchor="middle" font-weight="600">i</text>
+<text x="140.0" y="172.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">2@A</text>
+<text x="220.0" y="138.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">A types "!" after 2@A</text>
+<text x="220.0" y="160.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">B types "?" after 2@A (concurrently)</text>
+<text x="40.0" y="212.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">after merge on both replicas</text>
+<rect x="40.0" y="228.0" width="60.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="70.0" y="255.8" font-size="16" fill="#ede6d8" text-anchor="middle" font-weight="600">H</text>
+<text x="70.0" y="290.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">1@A</text>
+<rect x="110.0" y="228.0" width="60.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="140.0" y="255.8" font-size="16" fill="#ede6d8" text-anchor="middle" font-weight="600">i</text>
+<text x="140.0" y="290.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">2@A</text>
+<rect x="180.0" y="228.0" width="60.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="210.0" y="255.8" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="600">?</text>
+<text x="210.0" y="290.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">3@B</text>
+<rect x="250.0" y="228.0" width="60.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="280.0" y="255.8" font-size="16" fill="#5fb3a1" text-anchor="middle" font-weight="600">!</text>
+<text x="280.0" y="290.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">3@A</text>
+<text x="40.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Operations say "insert after ID 2@A", not "insert at position 2", so they still make sense after concurrent edits.</text>
+<text x="40.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Ties (two inserts after the same ID) are broken deterministically, e.g. by replica ID,</text>
+<text x="40.0" y="368.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">so every replica ends up with the same text.</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 418" width="360" height="418" role="img" aria-label="G-Counter: per-replica slots merged with element-wise max" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="418" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">A grow-only counter (G-Counter)</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">own slot + element-wise max</text>
+<rect x="16.0" y="72.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="94.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">replica A</text>
+<text x="180.0" y="110.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">{A:3, B:0, C:0} → 3</text>
+<rect x="16.0" y="134.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="156.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">replica B</text>
+<text x="180.0" y="172.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">{A:1, B:2, C:0} → 3</text>
+<rect x="16.0" y="212.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="234.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">merge: max per slot</text>
+<text x="180.0" y="250.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">{A:3, B:2, C:0}</text>
+<rect x="16.0" y="276.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="302.7" font-size="13" fill="#7cc47f" text-anchor="middle" font-weight="600">value = 3 + 2 + 0 = 5</text>
+<text x="16.0" y="350.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Max is commutative, associative and</text>
+<text x="16.0" y="369.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">idempotent: merge in any order, any</text>
+<text x="16.0" y="388.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">number of times, same result.</text>
+</svg>

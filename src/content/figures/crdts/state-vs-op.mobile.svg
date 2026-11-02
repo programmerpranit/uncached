@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 459" width="360" height="459" role="img" aria-label="State-based versus operation-based CRDTs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="459" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">State vs op-based CRDTs</text>
+<rect x="16.0" y="72.0" width="328.0" height="150.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="96.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">State-based (CvRDT)</text>
+<text x="28.0" y="124.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· ship the whole state (or a delta)</text>
+<text x="28.0" y="146.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· merge = join in a semilattice</text>
+<text x="28.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· tolerates duplicates &amp; reordering</text>
+<text x="28.0" y="190.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· state can be large</text>
+<rect x="16.0" y="234.0" width="328.0" height="150.0" rx="3" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1"/>
+<text x="28.0" y="258.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Operation-based (CmRDT)</text>
+<text x="28.0" y="286.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· ship each operation</text>
+<text x="28.0" y="308.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· concurrent ops must commute</text>
+<text x="28.0" y="330.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· needs exactly-once, causal delivery</text>
+<text x="28.0" y="352.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· small messages</text>
+<text x="16.0" y="410.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Delta CRDTs: send only what changed,</text>
+<text x="16.0" y="429.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">merge with the same join.</text>
+</svg>
