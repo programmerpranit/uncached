@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 354" width="880" height="354" role="img" aria-label="Write-through, write-back and write-around caching" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="354" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Where do writes go?</text>
+<rect x="40.0" y="80.0" width="250.0" height="250.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="106.0" font-size="14" fill="#5fb3a1" text-anchor="start" font-weight="700">Write-through</text>
+<rect x="56.0" y="126.0" width="90.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="101.0" y="150.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">write</text>
+<rect x="184.0" y="126.0" width="90.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="229.0" y="150.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">cache</text>
+<rect x="184.0" y="210.0" width="90.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="229.0" y="234.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">DB</text>
+<line x1="148.0" y1="140.0" x2="182.0" y2="140.0" stroke="#5fb3a1" stroke-width="1.3" marker-end="url(#ah0)"/>
+<line x1="229.0" y1="168.0" x2="229.0" y2="208.0" stroke="#5fb3a1" stroke-width="1.3" marker-end="url(#ah0)"/>
+<text x="236.0" y="194.0" font-size="10" fill="#5fb3a1" text-anchor="start" font-weight="400">sync</text>
+<text x="56.0" y="282.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">write cache + DB synchronously</text>
+<text x="56.0" y="300.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">fresh cache; slower writes</text>
+<rect x="320.0" y="80.0" width="250.0" height="250.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="336.0" y="106.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">Write-back</text>
+<rect x="336.0" y="126.0" width="90.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="381.0" y="150.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">write</text>
+<rect x="464.0" y="126.0" width="90.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="509.0" y="150.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">cache</text>
+<rect x="464.0" y="210.0" width="90.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="509.0" y="234.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">DB</text>
+<line x1="428.0" y1="140.0" x2="462.0" y2="140.0" stroke="#e2b45a" stroke-width="1.3" marker-end="url(#ah1)"/>
+<line x1="509.0" y1="168.0" x2="509.0" y2="208.0" stroke="#e2b45a" stroke-width="1.3" marker-end="url(#ah1)" stroke-dasharray="4 4"/>
+<text x="516.0" y="194.0" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="400">later</text>
+<text x="336.0" y="282.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">write cache; flush to DB later</text>
+<text x="336.0" y="300.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">fast writes; data loss risk</text>
+<rect x="600.0" y="80.0" width="250.0" height="250.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="616.0" y="106.0" font-size="14" fill="#9b8cff" text-anchor="start" font-weight="700">Write-around</text>
+<rect x="616.0" y="126.0" width="90.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="661.0" y="150.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">write</text>
+<rect x="744.0" y="126.0" width="90.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="789.0" y="150.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">cache</text>
+<rect x="744.0" y="210.0" width="90.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="789.0" y="234.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">DB</text>
+<path d="M661 168 L661 230 L742 230" fill="none" stroke="#9b8cff" stroke-width="1.3" marker-end="url(#ah2)"/>
+<line x1="789.0" y1="208.0" x2="789.0" y2="170.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah3)" stroke-dasharray="3 3"/>
+<text x="796.0" y="194.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">on read</text>
+<text x="616.0" y="282.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">write DB only; cache on next read</text>
+<text x="616.0" y="300.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">first read always misses</text>
+</svg>

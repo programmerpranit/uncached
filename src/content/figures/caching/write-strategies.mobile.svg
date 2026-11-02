@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 366" width="360" height="366" role="img" aria-label="Write-through, write-back and write-around caching" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="366" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Where do writes go?</text>
+<rect x="16.0" y="72.0" width="328.0" height="82.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="96.0" font-size="14" fill="#5fb3a1" text-anchor="start" font-weight="700">Write-through</text>
+<text x="28.0" y="120.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">write cache + DB synchronously</text>
+<text x="28.0" y="138.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">fresh cache; slower writes</text>
+<rect x="16.0" y="166.0" width="328.0" height="82.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="190.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">Write-back</text>
+<text x="28.0" y="214.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">write cache; flush to DB later</text>
+<text x="28.0" y="232.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">fast writes; data loss risk</text>
+<rect x="16.0" y="260.0" width="328.0" height="82.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="28.0" y="284.0" font-size="14" fill="#9b8cff" text-anchor="start" font-weight="700">Write-around</text>
+<text x="28.0" y="308.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">write DB only; cache on next read</text>
+<text x="28.0" y="326.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">first read always misses</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 359" width="360" height="359" role="img" aria-label="Cache-aside: read through the cache on miss, invalidate on write" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="359" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Cache-aside (lazy loading)</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the app manages the cache</text>
+<rect x="16.0" y="72.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="96.7" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="600">app</text>
+<text x="16.0" y="140.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">read path</text>
+<text x="16.0" y="161.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">1. GET from cache → hit? done.</text>
+<text x="16.0" y="182.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">2. miss → SELECT from database</text>
+<text x="16.0" y="203.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">3. SET in cache with a TTL</text>
+<text x="16.0" y="245.0" font-size="12.5" fill="#ff5b2e" text-anchor="start" font-weight="700">write path</text>
+<text x="16.0" y="266.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">1. UPDATE the database</text>
+<text x="16.0" y="287.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">2. DELETE the cache key</text>
+<text x="16.0" y="329.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">Next read reloads fresh data.</text>
+</svg>

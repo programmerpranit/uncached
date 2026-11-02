@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" width="360" height="440" role="img" aria-label="A read-miss racing with a write can leave stale data in the cache" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="440" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">The classic stale-cache race</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">cache-aside, delete-on-write</text>
+<text x="16.0" y="86.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="600">t1</text>
+<text x="56.0" y="86.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Reader A</text>
+<text x="146.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">GET → miss</text>
+<text x="16.0" y="126.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="600">t2</text>
+<text x="56.0" y="126.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Reader A</text>
+<text x="146.0" y="126.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">SELECT → v1</text>
+<text x="16.0" y="166.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="600">t3</text>
+<text x="56.0" y="166.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">Writer B</text>
+<text x="146.0" y="166.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">UPDATE → v2</text>
+<text x="16.0" y="206.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="600">t4</text>
+<text x="56.0" y="206.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">Writer B</text>
+<text x="146.0" y="206.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">DELETE key</text>
+<text x="16.0" y="246.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="600">t5</text>
+<text x="56.0" y="246.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">Reader A</text>
+<text x="146.0" y="246.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="600">SET key = v1  (stale!)</text>
+<text x="16.0" y="296.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A read v1 before the write and stored</text>
+<text x="16.0" y="315.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">it after the delete. The cache now</text>
+<text x="16.0" y="334.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">holds v1 until its TTL expires.</text>
+<text x="16.0" y="372.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Mitigations: short TTLs, delayed</text>
+<text x="16.0" y="391.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">double delete, versioned writes,</text>
+<text x="16.0" y="410.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">leases (Facebook’s memcache).</text>
+</svg>
