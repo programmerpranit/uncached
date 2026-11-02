@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 441" width="880" height="441" role="img" aria-label="Message lifecycle: sent, delivered and read acknowledgements between sender, server and recipient" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="441" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Send, store, deliver, read</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each tick is a separate acknowledgement</text>
+<text x="80.0" y="96.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="700">Alice</text>
+<line x1="80.0" y1="106.0" x2="80.0" y2="350.0" stroke="#4a4136" stroke-width="1.2"/>
+<text x="440.0" y="96.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="700">server</text>
+<line x1="440.0" y1="106.0" x2="440.0" y2="350.0" stroke="#4a4136" stroke-width="1.2"/>
+<text x="800.0" y="96.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="700">Bob</text>
+<line x1="800.0" y1="106.0" x2="800.0" y2="350.0" stroke="#4a4136" stroke-width="1.2"/>
+<line x1="80.0" y1="130.0" x2="440.0" y2="130.0" stroke="#5fb3a1" stroke-width="1.1" marker-end="url(#ah0)"/>
+<text x="260.0" y="124.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">send {client_id: c7, text}</text>
+<line x1="440.0" y1="170.0" x2="80.0" y2="170.0" stroke="#7cc47f" stroke-width="1.1" marker-end="url(#ah1)"/>
+<text x="260.0" y="164.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">ack: id 1042, seq 88  ✓ sent</text>
+<line x1="440.0" y1="210.0" x2="800.0" y2="210.0" stroke="#e2b45a" stroke-width="1.1" marker-end="url(#ah2)"/>
+<text x="620.0" y="204.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">deliver id 1042</text>
+<line x1="800.0" y1="250.0" x2="440.0" y2="250.0" stroke="#e2b45a" stroke-width="1.1" marker-end="url(#ah2)"/>
+<text x="620.0" y="244.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">delivered 1042</text>
+<line x1="440.0" y1="280.0" x2="80.0" y2="280.0" stroke="#7cc47f" stroke-width="1.1" marker-end="url(#ah1)"/>
+<text x="260.0" y="274.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">✓✓ delivered</text>
+<line x1="800.0" y1="314.0" x2="440.0" y2="314.0" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah3)"/>
+<text x="620.0" y="308.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">read up to seq 88</text>
+<line x1="440.0" y1="344.0" x2="80.0" y2="344.0" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah3)"/>
+<text x="260.0" y="338.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">✓✓ read</text>
+<text x="40.0" y="392.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The server acks only after the message is durably stored. The client-generated id (c7) makes resends idempotent;</text>
+<text x="40.0" y="411.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">"read up to seq 88" acknowledges everything before it in one message.</text>
+</svg>

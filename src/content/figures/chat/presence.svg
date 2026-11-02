@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 286" width="880" height="286" role="img" aria-label="Techniques for reducing presence fan-out: heartbeats, debouncing, subscriptions and limits for large groups" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="286" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Presence is expensive to fan out</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">online/offline changes × contacts who care</text>
+<text x="40.0" y="100.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A user with 500 contacts who reconnects 20 times a day generates 20,000 presence events.</text>
+<text x="40.0" y="119.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Across 100M users that is trillions of fan-out messages per day if done naively.</text>
+<text x="40.0" y="160.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">heartbeat</text>
+<text x="200.0" y="160.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">client pings every ~30 s; missing 2 → offline</text>
+<text x="40.0" y="192.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">debounce</text>
+<text x="200.0" y="192.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">ignore flaps shorter than a few seconds</text>
+<text x="40.0" y="224.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">subscribe</text>
+<text x="200.0" y="224.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">only push presence for chats on screen</text>
+<text x="40.0" y="256.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">large groups</text>
+<text x="200.0" y="256.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">show counts or nothing, not per-member status</text>
+</svg>

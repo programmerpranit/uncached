@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 329" width="880" height="329" role="img" aria-label="Devices sync a conversation by requesting messages after their last known sequence number" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="329" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Per-conversation sequence numbers drive sync</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each device remembers the last seq it has; it asks for everything after</text>
+<text x="40.0" y="100.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="600">conversation #551 log</text>
+<rect x="40.0" y="112.0" width="62.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="71.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">84</text>
+<rect x="110.0" y="112.0" width="62.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="141.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">85</text>
+<rect x="180.0" y="112.0" width="62.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="211.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">86</text>
+<rect x="250.0" y="112.0" width="62.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.4" stroke="#9b8cff" stroke-width="1"/>
+<text x="281.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">87</text>
+<rect x="320.0" y="112.0" width="62.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.4" stroke="#9b8cff" stroke-width="1"/>
+<text x="351.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">88</text>
+<rect x="390.0" y="112.0" width="62.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.4" stroke="#9b8cff" stroke-width="1"/>
+<text x="421.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">89</text>
+<rect x="460.0" y="112.0" width="62.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.4" stroke="#9b8cff" stroke-width="1"/>
+<text x="491.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">90</text>
+<rect x="530.0" y="112.0" width="62.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.4" stroke="#9b8cff" stroke-width="1"/>
+<text x="561.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">91</text>
+<text x="40.0" y="190.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">phone: last seq 91</text>
+<text x="420.0" y="190.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">→ up to date</text>
+<text x="40.0" y="226.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">laptop (was asleep): last seq 86</text>
+<text x="420.0" y="226.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">→ GET /conv/551?after=86 → 87…91</text>
+<text x="40.0" y="280.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The server assigns seq in commit order, so every device sees the same order. Gaps are detectable (got 89 but</text>
+<text x="40.0" y="299.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">not 88 → fetch), and reconnecting is just "give me everything after N", for any device, after any outage.</text>
+</svg>

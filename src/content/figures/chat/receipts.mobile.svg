@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 323" width="360" height="323" role="img" aria-label="Message lifecycle: sent, delivered and read acknowledgements between sender, server and recipient" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="323" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Send, store, deliver, read</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each tick = one ack</text>
+<text x="16.0" y="80.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">Alice → server: send (client id c7)</text>
+<text x="16.0" y="106.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">server → Alice: stored, seq 88 ✓</text>
+<text x="16.0" y="132.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">server → Bob: deliver</text>
+<text x="16.0" y="158.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">Bob → server: delivered</text>
+<text x="16.0" y="184.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">server → Alice: ✓✓ delivered</text>
+<text x="16.0" y="210.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="400">Bob → server: read up to seq 88</text>
+<text x="16.0" y="236.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="400">server → Alice: ✓✓ read</text>
+<text x="16.0" y="274.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Ack only after durable storage.</text>
+<text x="16.0" y="293.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Client ids make resends idempotent.</text>
+</svg>

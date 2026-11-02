@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 447" width="360" height="447" role="img" aria-label="Chat system architecture with connection gateways, chat service, message store, session registry and push" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="447" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Chat architecture</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">gateways + chat services</text>
+<rect x="16.0" y="72.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="91.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">clients</text>
+<text x="180.0" y="107.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">phones, laptops, browsers</text>
+<rect x="16.0" y="124.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="143.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">gateways</text>
+<text x="180.0" y="159.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">hold WebSockets</text>
+<rect x="16.0" y="176.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="195.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="600">chat service</text>
+<text x="180.0" y="211.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="400">validate, assign seq, store</text>
+<rect x="16.0" y="228.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="247.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">message store</text>
+<text x="180.0" y="263.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">per-conversation log</text>
+<rect x="16.0" y="280.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="299.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">session registry</text>
+<text x="180.0" y="315.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">user → device → gateway</text>
+<rect x="16.0" y="332.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="351.0" font-size="12" fill="#d77fa1" text-anchor="middle" font-weight="600">push service</text>
+<text x="180.0" y="367.0" font-size="11" fill="#d77fa1" text-anchor="middle" font-weight="400">APNs / FCM for offline</text>
+<text x="16.0" y="398.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Lookup the recipient’s gateway,</text>
+<text x="16.0" y="417.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">or push if they’re offline.</text>
+</svg>
