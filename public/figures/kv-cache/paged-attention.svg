@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" width="880" height="460" role="img" aria-label="PagedAttention maps each request’s logical KV blocks to non-contiguous physical blocks through a block table" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="460" fill="#1b1712"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="36.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">PagedAttention: the KV cache as virtual memory</text>
+<text x="560.0" y="70.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="600">GPU memory: physical KV blocks</text>
+<rect x="560.0" y="80.0" width="260.0" height="30.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="828.0" y="100.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">#0</text>
+<rect x="560.0" y="118.0" width="260.0" height="30.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="828.0" y="138.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">#1</text>
+<rect x="560.0" y="156.0" width="260.0" height="30.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="828.0" y="176.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">#2</text>
+<rect x="560.0" y="194.0" width="260.0" height="30.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="828.0" y="214.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">#3</text>
+<rect x="560.0" y="232.0" width="260.0" height="30.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="828.0" y="252.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">#4</text>
+<rect x="560.0" y="270.0" width="260.0" height="30.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="828.0" y="290.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">#5</text>
+<rect x="560.0" y="308.0" width="260.0" height="30.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="828.0" y="328.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">#6</text>
+<rect x="560.0" y="346.0" width="260.0" height="30.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="828.0" y="366.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">#7</text>
+<text x="30.0" y="80.0" font-size="11" fill="#ff5b2e" text-anchor="start" font-weight="600">Request A — logical blocks</text>
+<rect x="30.0" y="90.0" width="260.0" height="30.0" rx="2" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="38.0" y="110.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">Four</text>
+<text x="102.0" y="110.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">score</text>
+<text x="166.0" y="110.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">and</text>
+<text x="230.0" y="110.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">seven</text>
+<rect x="560.0" y="346.0" width="260.0" height="30.0" rx="2" fill="#ff5b2e" fill-opacity="0.75" stroke="none" stroke-width="1"/>
+<text x="568.0" y="366.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">Four</text>
+<text x="632.0" y="366.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">score</text>
+<text x="696.0" y="366.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">and</text>
+<text x="760.0" y="366.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">seven</text>
+<line x1="292.0" y1="105.0" x2="546.0" y2="361.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah)"/>
+<rect x="30.0" y="126.0" width="260.0" height="30.0" rx="2" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="38.0" y="146.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">years</text>
+<text x="102.0" y="146.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">ago</text>
+<text x="166.0" y="146.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">our</text>
+<text x="230.0" y="146.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">fathers</text>
+<rect x="560.0" y="118.0" width="260.0" height="30.0" rx="2" fill="#ff5b2e" fill-opacity="0.75" stroke="none" stroke-width="1"/>
+<text x="568.0" y="138.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">years</text>
+<text x="632.0" y="138.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">ago</text>
+<text x="696.0" y="138.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">our</text>
+<text x="760.0" y="138.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">fathers</text>
+<line x1="292.0" y1="141.0" x2="546.0" y2="133.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah)"/>
+<rect x="30.0" y="162.0" width="260.0" height="30.0" rx="2" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="38.0" y="182.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">brought</text>
+<rect x="560.0" y="194.0" width="65.0" height="30.0" rx="2" fill="#ff5b2e" fill-opacity="0.75" stroke="none" stroke-width="1"/>
+<text x="568.0" y="214.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">brought</text>
+<line x1="292.0" y1="177.0" x2="546.0" y2="209.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah)"/>
+<text x="310.0" y="80.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">block table: #7 → #1 → #3</text>
+<text x="30.0" y="250.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="600">Request B — logical blocks</text>
+<rect x="30.0" y="260.0" width="260.0" height="30.0" rx="2" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="38.0" y="280.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">I</text>
+<text x="102.0" y="280.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">have</text>
+<text x="166.0" y="280.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">a</text>
+<text x="230.0" y="280.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">dream</text>
+<rect x="560.0" y="270.0" width="260.0" height="30.0" rx="2" fill="#9b8cff" fill-opacity="0.75" stroke="none" stroke-width="1"/>
+<text x="568.0" y="290.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">I</text>
+<text x="632.0" y="290.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">have</text>
+<text x="696.0" y="290.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">a</text>
+<text x="760.0" y="290.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">dream</text>
+<line x1="292.0" y1="275.0" x2="546.0" y2="285.0" stroke="#9b8cff" stroke-width="1" marker-end="url(#ah)"/>
+<rect x="30.0" y="296.0" width="260.0" height="30.0" rx="2" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="38.0" y="316.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">that</text>
+<text x="102.0" y="316.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">one</text>
+<rect x="560.0" y="80.0" width="130.0" height="30.0" rx="2" fill="#9b8cff" fill-opacity="0.75" stroke="none" stroke-width="1"/>
+<text x="568.0" y="100.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">that</text>
+<text x="632.0" y="100.0" font-size="10" fill="#1b1712" text-anchor="start" font-weight="600">one</text>
+<line x1="292.0" y1="311.0" x2="546.0" y2="95.0" stroke="#9b8cff" stroke-width="1" marker-end="url(#ah)"/>
+<text x="310.0" y="250.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">block table: #5 → #0</text>
+<text x="30.0" y="424.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Blocks are fixed-size and allocated on demand, so they need not be contiguous. Waste is limited to the</text>
+<text x="30.0" y="442.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">unfilled tail of each request’s last block, and identical prefixes can point at the same physical block.</text>
+</svg>

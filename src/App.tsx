@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { CATEGORIES, TOPICS, topicKey, type Category, type Topic } from './data/topics'
 import { playLand, playStart, playTick } from './sound'
+import { articlePath, hasArticle } from './content/articles'
+import Reader from './Reader'
 
 const COVERED_STORAGE = 'uncached:covered'
 const SELECTED_STORAGE = 'uncached:categories'
@@ -9,6 +11,16 @@ const SPIN_MS = 5000
 const REEL_TICKS = 50
 
 const TOPIC_BY_KEY = new Map(TOPICS.map((t) => [topicKey(t), t]))
+const TOPIC_BY_PATH = new Map(TOPICS.map((t) => [articlePath(t), t]))
+
+const READ_PREFIX = '#/read/'
+
+/** The topic whose deep dive the URL points at (`#/read/<category>/<title>`), if any. */
+function readRoute(): Topic | null {
+  const hash = window.location.hash
+  if (!hash.startsWith(READ_PREFIX)) return null
+  return TOPIC_BY_PATH.get(decodeURIComponent(hash.slice(READ_PREFIX.length))) ?? null
+}
 
 function readJson(key: string): unknown {
   try {
@@ -77,6 +89,35 @@ export default function App() {
   const [historyOpen, setHistoryOpen] = useState(false)
   const [confirmReset, setConfirmReset] = useState(false)
   const [soundOn, setSoundOn] = useState(() => readJson(SOUND_STORAGE) !== false)
+  const [reading, setReading] = useState<Topic | null>(readRoute)
+  // True when the reader was opened from inside the app, so closing it can step back in history.
+  const openedInApp = useRef(false)
+  const readingRef = useRef(reading)
+  readingRef.current = reading
+
+  useEffect(() => {
+    const onHash = () => {
+      const topic = readRoute()
+      if (!topic) openedInApp.current = false
+      setReading(topic)
+    }
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+
+  const openArticle = useCallback((t: Topic) => {
+    openedInApp.current = true
+    window.location.hash = READ_PREFIX + articlePath(t)
+  }, [])
+
+  const closeArticle = useCallback(() => {
+    if (openedInApp.current) {
+      window.history.back()
+    } else {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search)
+      setReading(null)
+    }
+  }, [])
 
   const timers = useRef<number[]>([])
   const spinning = phase === 'spinning'
@@ -176,6 +217,7 @@ export default function App() {
   spinRef.current = spin
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      if (readingRef.current) return
       if (e.code !== 'Space' || e.repeat || e.metaKey || e.ctrlKey || e.altKey) return
       const target = e.target as HTMLElement | null
       if (target?.closest('button, a, input, textarea, select, summary, [contenteditable="true"]')) return
@@ -215,6 +257,23 @@ export default function App() {
   )
 
   const progress = covered.length / TOPICS.length
+
+  if (reading)
+    return (
+      <Reader
+        topic={reading}
+        path={articlePath(reading)}
+        onClose={closeArticle}
+        onSpinAnother={
+          exhausted
+            ? undefined
+            : () => {
+                closeArticle()
+                spinRef.current()
+              }
+        }
+      />
+    )
 
   return (
     <div className="app">
@@ -295,6 +354,18 @@ export default function App() {
               <>
                 <span className="tag">{current.category}</span>
                 <p className="hook">{current.hook}</p>
+                {hasArticle(current) ? (
+                  <button
+                    type="button"
+                    className="btn-read"
+                    onClick={() => openArticle(current)}
+                    tabIndex={phase === 'landed' ? undefined : -1}
+                  >
+                    Read the deep dive <span aria-hidden="true">→</span>
+                  </button>
+                ) : (
+                  <p className="no-article">Deep dive not written yet — research this one yourself.</p>
+                )}
               </>
             )}
           </div>
@@ -385,7 +456,13 @@ export default function App() {
               <ol className="history-list">
                 {history.map((t) => (
                   <li key={topicKey(t)}>
-                    <span className="history-title">{t.title}</span>
+                    {hasArticle(t) ? (
+                      <button type="button" className="link history-title" onClick={() => openArticle(t)}>
+                        {t.title} <span className="history-read">· read</span>
+                      </button>
+                    ) : (
+                      <span className="history-title">{t.title}</span>
+                    )}
                     <span className="history-cat">{t.category}</span>
                   </li>
                 ))}

@@ -11,6 +11,7 @@
 
   --display: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
   --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --text: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
 
   --title-size: clamp(2.3rem, min(6.4vw, 10vh), 8.5rem);
   --gutter: clamp(1rem, 4vw, 4rem);
@@ -317,7 +318,7 @@ button {
   gap: 0.9rem;
   margin-top: clamp(1rem, 2.5vh, 2rem);
   /* Reserve space so the controls don't shift when the hook appears. */
-  min-height: 5rem;
+  min-height: 8.5rem;
   opacity: 0;
   transform: translateY(6px);
   transition:
@@ -352,6 +353,46 @@ button {
   line-height: 1.25;
   color: var(--ink-dim);
   text-wrap: balance;
+}
+
+/* Deep-dive link under a landed topic. */
+.btn-read {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.65em 1.1em;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color 160ms,
+    color 160ms;
+}
+
+.btn-read:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.btn-read span {
+  transition: transform 160ms var(--ease-out);
+}
+
+.btn-read:hover span {
+  transform: translateX(3px);
+}
+
+.no-article {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-dim);
 }
 
 /* Controls ------------------------------------------------------------ */
@@ -564,6 +605,467 @@ button {
   color: var(--ink-dim);
 }
 
+button.history-title {
+  padding: 0;
+  text-align: left;
+}
+
+.history-read {
+  color: var(--accent);
+}
+
+/* Reader -------------------------------------------------------------- */
+
+.reader {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--gutter) 4rem;
+}
+
+.reader-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 calc(var(--gutter) * -1);
+  padding: 0.85rem var(--gutter);
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.reader-back {
+  flex-shrink: 0;
+  padding: 0.35em 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.reader-back:hover {
+  color: var(--accent);
+}
+
+.reader-bar-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--ink-dim);
+}
+
+.reader-esc {
+  flex-shrink: 0;
+  color: var(--ink-dim);
+}
+
+.reader-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+}
+
+.reader-progress span {
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.reader-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 52rem;
+  padding: clamp(2.5rem, 8vh, 5rem) 0 clamp(2rem, 5vh, 3rem);
+}
+
+.reader-title {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.6rem, 6vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.reader-summary {
+  margin: 0;
+  max-width: 40em;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+  line-height: 1.3;
+  color: var(--ink-dim);
+  text-wrap: pretty;
+}
+
+.reader-meta {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+}
+
+.reader-status {
+  padding: 3rem 0;
+  color: var(--ink-dim);
+}
+
+.reader-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 3rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 2.5rem;
+}
+
+@media (min-width: 1080px) {
+  .reader-layout {
+    grid-template-columns: 14rem minmax(0, 44rem);
+  }
+}
+
+.toc {
+  font-size: 0.72rem;
+}
+
+.toc-label {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-dim);
+}
+
+.toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toc li a {
+  display: block;
+  padding: 0.3rem 0 0.3rem 0.75rem;
+  border-left: 1px solid var(--rule);
+  color: var(--ink-dim);
+  text-decoration: none;
+  line-height: 1.35;
+  transition:
+    color 160ms,
+    border-color 160ms;
+}
+
+.toc li.toc-3 a {
+  padding-left: 1.5rem;
+  font-size: 0.95em;
+}
+
+.toc li a:hover {
+  color: var(--ink);
+}
+
+.toc li a[aria-current] {
+  color: var(--accent);
+  border-left-color: var(--accent);
+}
+
+@media (min-width: 1080px) {
+  .toc {
+    position: sticky;
+    top: 4.5rem;
+    align-self: start;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 1079px) {
+  .toc {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--rule);
+    background: var(--bg-raised);
+  }
+}
+
+/* Article body. Long-form text uses a readable serif; code and figures stay in the app's mono. */
+.prose {
+  font-family: var(--text);
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: var(--ink);
+  overflow-wrap: break-word;
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+  margin: 0 0 1.15em;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.4em;
+}
+
+.prose li {
+  margin: 0.3em 0;
+}
+
+.prose li::marker {
+  color: var(--ink-dim);
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #fff8ec;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  position: relative;
+  scroll-margin-top: 5rem;
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+.prose h2 {
+  margin: 2.2em 0 0.6em;
+  padding-top: 1.4em;
+  border-top: 1px solid var(--rule);
+  font-family: var(--display);
+  font-size: 2.1em;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.prose h3 {
+  margin: 1.9em 0 0.5em;
+  font-family: var(--mono);
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.prose h4 {
+  margin: 1.5em 0 0.4em;
+  font-weight: 600;
+}
+
+.anchor {
+  position: absolute;
+  left: -1.1em;
+  color: var(--rule-strong);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 160ms;
+}
+
+.prose h2 .anchor {
+  top: 1.2em;
+}
+
+.prose :is(h2, h3):hover .anchor {
+  opacity: 1;
+}
+
+.prose a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.prose a:hover {
+  color: var(--accent);
+}
+
+.prose :not(pre) > code {
+  padding: 0.1em 0.35em;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--bg-raised);
+  font-family: var(--mono);
+  font-size: 0.8em;
+}
+
+.prose :is(h2, h3) code {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 0.8em;
+  color: inherit;
+}
+
+.prose pre {
+  margin: 0 0 1.4em;
+  padding: 1.1rem 1.25rem;
+  overflow-x: auto;
+  border: 1px solid var(--rule);
+  border-left: 2px solid var(--accent);
+  border-radius: 2px;
+  background: var(--bg-raised);
+  font-family: var(--mono);
+  font-size: 0.74em;
+  line-height: 1.6;
+  tab-size: 2;
+}
+
+.prose pre code {
+  font-family: inherit;
+}
+
+.prose figure {
+  margin: 2em 0;
+}
+
+.prose figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--bg-raised);
+}
+
+.prose figcaption {
+  margin-top: 0.7em;
+  font-family: var(--mono);
+  font-size: 0.68em;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  color: var(--ink-dim);
+}
+
+.fig-no {
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-right: 0.4em;
+}
+
+.prose blockquote {
+  margin: 1.6em 0;
+  padding: 0.2em 0 0.2em 1.2em;
+  border-left: 2px solid var(--rule-strong);
+  font-style: italic;
+  color: var(--ink-dim);
+}
+
+.callout {
+  margin: 1.8em 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  background: var(--bg-raised);
+  font-size: 0.95em;
+}
+
+.callout > :last-child {
+  margin-bottom: 0;
+}
+
+.callout-label {
+  margin: 0 0 0.35em !important;
+  font-family: var(--mono);
+  font-size: 0.68em;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.callout--key,
+.callout--tip {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--rule));
+}
+
+.callout--key .callout-label,
+.callout--tip .callout-label {
+  color: var(--accent);
+}
+
+.callout--warning {
+  border-color: #8a6a2a;
+}
+
+.callout--warning .callout-label {
+  color: #e2b45a;
+}
+
+.table-wrap {
+  margin: 0 0 1.5em;
+  overflow-x: auto;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+.prose th,
+.prose td {
+  padding: 0.6em 0.8em;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+  text-align: left;
+}
+
+.prose th {
+  font-family: var(--mono);
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  border-bottom-color: var(--rule-strong);
+}
+
+.prose hr {
+  margin: 2.5em 0;
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* The references list reads like a bibliography. */
+.prose #references ~ ol {
+  font-size: 0.88em;
+  line-height: 1.55;
+}
+
+.reader-foot {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--rule);
+}
+
 /* Small screens ------------------------------------------------------- */
 
 @media (max-width: 640px) {
@@ -602,6 +1104,26 @@ button {
   .history-list li {
     flex-direction: column;
     gap: 0.15rem;
+  }
+
+  .prose {
+    font-size: 1.05rem;
+  }
+
+  /* Number-heavy tables scroll sideways instead of squeezing into one-word columns. */
+  .prose table {
+    min-width: 34rem;
+  }
+
+  .prose pre {
+    margin-left: calc(var(--gutter) * -1);
+    margin-right: calc(var(--gutter) * -1);
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+
+  .anchor {
+    display: none;
   }
 }
 

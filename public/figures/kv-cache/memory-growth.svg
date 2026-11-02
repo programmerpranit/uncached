@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img" aria-label="KV cache memory grows linearly with context length" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="440" fill="#1b1712"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="36.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">KV cache size for one sequence (FP16) vs context length</text>
+<line x1="90.0" y1="360.0" x2="650.0" y2="360.0" stroke="#2f2921" stroke-width="1"/>
+<text x="80.0" y="364.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">0 GB</text>
+<line x1="90.0" y1="287.5" x2="650.0" y2="287.5" stroke="#2f2921" stroke-width="1"/>
+<text x="80.0" y="291.5" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">20 GB</text>
+<line x1="90.0" y1="215.0" x2="650.0" y2="215.0" stroke="#2f2921" stroke-width="1"/>
+<text x="80.0" y="219.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">40 GB</text>
+<line x1="90.0" y1="142.5" x2="650.0" y2="142.5" stroke="#2f2921" stroke-width="1"/>
+<text x="80.0" y="146.5" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">60 GB</text>
+<line x1="90.0" y1="70.0" x2="650.0" y2="70.0" stroke="#2f2921" stroke-width="1"/>
+<text x="80.0" y="74.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">80 GB</text>
+<text x="90.0" y="380.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="230.0" y="380.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">32K</text>
+<text x="370.0" y="380.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">64K</text>
+<text x="510.0" y="380.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">96K</text>
+<text x="650.0" y="380.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">128K</text>
+<text x="370.0" y="402.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">tokens in context</text>
+<line x1="90.0" y1="360.0" x2="107.5" y2="352.2" stroke="#e2b45a" stroke-width="2.5"/>
+<line x1="107.5" y1="352.2" x2="650.0" y2="110.9" stroke="#e2b45a" stroke-width="2.5" stroke-dasharray="6 5"/>
+<circle cx="650" cy="110.9" r="4" fill="#e2b45a"/>
+<text x="660.0" y="114.9" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">69 GB</text>
+<line x1="90.0" y1="360.0" x2="650.0" y2="204.3" stroke="#ff5b2e" stroke-width="2.5"/>
+<circle cx="650" cy="204.3" r="4" fill="#ff5b2e"/>
+<text x="660.0" y="208.3" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">43 GB</text>
+<line x1="90.0" y1="360.0" x2="650.0" y2="297.7" stroke="#5fb3a1" stroke-width="2.5"/>
+<circle cx="650" cy="297.7" r="4" fill="#5fb3a1"/>
+<text x="660.0" y="301.7" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">17 GB</text>
+<line x1="90.0" y1="70.0" x2="650.0" y2="70.0" stroke="#ede6d8" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="96.0" y="86.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">80 GB — an entire H100 GPU</text>
+<rect x="110.0" y="113.0" width="12.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="130.0" y="123.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Llama 2 7B · MHA, 32 KV heads  (512 KiB/token)</text>
+<rect x="110.0" y="135.0" width="12.0" height="12.0" rx="2" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="130.0" y="145.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Llama 3.1 70B · GQA, 8 KV heads  (320 KiB/token)</text>
+<rect x="110.0" y="157.0" width="12.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="130.0" y="167.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Llama 3.1 8B · GQA, 8 KV heads  (128 KiB/token)</text>
+<text x="30.0" y="424.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">bytes = 2 (K and V) × layers × KV heads × head dim (128) × 2 bytes × tokens. Dashed: past Llama 2’s 4K native window.</text>
+</svg>

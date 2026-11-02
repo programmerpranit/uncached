@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" role="img" aria-label="Adding server D" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="900" height="600" fill="#1b1712"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs><circle cx="300" cy="300" r="200" fill="none" stroke="#4a4136" stroke-width="2"/>
+<path d="M106.3 349.7 A200 200 0 0 1 396.4 124.7" fill="none" stroke="#ff5b2e" stroke-width="4" stroke-opacity="0.35"/>
+<path d="M396.4 124.7 A200 200 0 0 1 500.0 300.0" fill="none" stroke="#9b8cff" stroke-width="6" stroke-opacity="1"/>
+<path d="M500.0 300.0 A200 200 0 0 1 396.4 475.3" fill="none" stroke="#5fb3a1" stroke-width="4" stroke-opacity="0.35"/>
+<path d="M396.4 475.3 A200 200 0 0 1 106.3 349.7" fill="none" stroke="#e2b45a" stroke-width="4" stroke-opacity="0.35"/>
+<text x="300.0" y="78.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >2³²−1 │ 0</text>
+<path d="M340 62 q 40 -2 70 12" fill="none" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah)"/>
+<text x="418.0" y="74.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400" >clockwise</text>
+<line x1="325.1" y1="101.6" x2="320.8" y2="135.3" stroke="#ff5b2e" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="320.8" cy="135.3" r="5" fill="#ff5b2e" stroke="#1b1712" stroke-width="1"/>
+<text x="318.0" y="161.1" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >k1</text>
+<line x1="475.3" y1="203.6" x2="445.5" y2="220.0" stroke="#9b8cff" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="445.5" cy="220.0" r="7" fill="#9b8cff" stroke="#ede6d8" stroke-width="2"/>
+<text x="426.2" y="234.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400" >k2</text>
+<line x1="498.4" y1="325.1" x2="464.7" y2="320.8" stroke="#5fb3a1" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="464.7" cy="320.8" r="5" fill="#5fb3a1" stroke="#1b1712" stroke-width="1"/>
+<text x="442.9" y="322.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >k3</text>
+<line x1="454.1" y1="427.5" x2="427.9" y2="405.8" stroke="#5fb3a1" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="427.9" cy="405.8" r="5" fill="#5fb3a1" stroke="#1b1712" stroke-width="1"/>
+<text x="411.0" y="395.8" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >k4</text>
+<line x1="300.0" y1="500.0" x2="300.0" y2="466.0" stroke="#e2b45a" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="300.0" cy="466.0" r="5" fill="#e2b45a" stroke="#1b1712" stroke-width="1"/>
+<text x="300.0" y="448.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >k5</text>
+<line x1="182.4" y1="461.8" x2="202.4" y2="434.3" stroke="#e2b45a" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="202.4" cy="434.3" r="5" fill="#e2b45a" stroke="#1b1712" stroke-width="1"/>
+<text x="215.4" y="420.5" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >k6</text>
+<line x1="131.1" y1="407.2" x2="159.8" y2="388.9" stroke="#e2b45a" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="159.8" cy="388.9" r="5" fill="#e2b45a" stroke="#1b1712" stroke-width="1"/>
+<text x="178.4" y="381.2" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >k7</text>
+<line x1="106.3" y1="250.3" x2="139.2" y2="258.7" stroke="#ff5b2e" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="139.2" cy="258.7" r="5" fill="#ff5b2e" stroke="#1b1712" stroke-width="1"/>
+<text x="160.5" y="268.2" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >k8</text>
+<line x1="182.4" y1="138.2" x2="202.4" y2="165.7" stroke="#ff5b2e" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="202.4" cy="165.7" r="5" fill="#ff5b2e" stroke="#1b1712" stroke-width="1"/>
+<text x="215.4" y="187.5" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >k9</text>
+<line x1="238.2" y1="109.8" x2="248.7" y2="142.1" stroke="#ff5b2e" stroke-width="1" stroke-opacity="0.6"/>
+<circle cx="248.7" cy="142.1" r="5" fill="#ff5b2e" stroke="#1b1712" stroke-width="1"/>
+<text x="255.5" y="167.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400" >k10</text>
+<rect x="381.4" y="109.7" width="30" height="30" rx="3" fill="#ff5b2e" stroke="#1b1712" stroke-width="2"/>
+<text x="396.4" y="129.7" font-size="14" fill="#1b1712" text-anchor="middle" font-weight="700" >A</text>
+<rect x="381.4" y="460.3" width="30" height="30" rx="3" fill="#5fb3a1" stroke="#1b1712" stroke-width="2"/>
+<text x="396.4" y="480.3" font-size="14" fill="#1b1712" text-anchor="middle" font-weight="700" >B</text>
+<rect x="91.3" y="334.7" width="30" height="30" rx="3" fill="#e2b45a" stroke="#1b1712" stroke-width="2"/>
+<text x="106.3" y="354.7" font-size="14" fill="#1b1712" text-anchor="middle" font-weight="700" >C</text>
+<rect x="485.0" y="285.0" width="30" height="30" rx="3" fill="#9b8cff" stroke="#ede6d8" stroke-width="2"/>
+<text x="500.0" y="305.0" font-size="14" fill="#1b1712" text-anchor="middle" font-weight="700" >D</text>
+<text x="600.0" y="70.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600" >Adding server D</text>
+<text x="600.0" y="100.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400" >D lands between A and B on the ring.</text>
+<text x="600.0" y="122.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400" ></text>
+<text x="600.0" y="144.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400" >Only keys in the arc (A, D] change</text>
+<text x="600.0" y="166.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400" >owner — k2 moves from B to D.</text>
+<text x="600.0" y="188.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400" ></text>
+<text x="600.0" y="210.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400" >Every other key keeps its server.</text>
+<text x="600.0" y="232.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400" ></text>
+<text x="600.0" y="254.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400" >Expected movement: ~1/N of keys,</text>
+<text x="600.0" y="276.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400" >and only from D’s clockwise</text>
+<text x="600.0" y="298.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400" >neighbour.</text>
+<text x="600.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400" ></text>
+<text x="600.0" y="342.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400" >Removing D reverses this exactly.</text>
+</svg>
