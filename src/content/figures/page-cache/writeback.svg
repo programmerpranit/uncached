@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="Dirty page thresholds for background writeback and writer throttling, and fsync" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Writes go to the cache first; writeback happens later</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">write() returns once data is in RAM; the kernel flushes dirty pages in the background</text>
+<rect x="120.0" y="110.0" width="640.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="120.0" y="110.0" width="89.6" height="36.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<line x1="184.0" y1="100.0" x2="184.0" y2="156.0" stroke="#5fb3a1" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="184.0" y="94.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">dirty_background_ratio 10%</text>
+<line x1="248.0" y1="100.0" x2="248.0" y2="170.0" stroke="#e5534b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="254.0" y="182.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">dirty_ratio 20%</text>
+<text x="40.0" y="133.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">memory</text>
+<text x="164.8" y="133.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="700">dirty</text>
+<text x="40.0" y="218.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">below 10%: dirty pages wait (up to ~30 s by default), absorbing rewrites and merging I/O</text>
+<text x="40.0" y="242.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">above 10%: flusher threads start writing back in the background</text>
+<text x="40.0" y="266.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">above 20%: writers are throttled, so write() itself blocks until writeback catches up</text>
+<text x="40.0" y="290.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">fsync(fd): forces this file's dirty pages (and metadata) to stable storage now</text>
+<text x="40.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Percentages are of available memory, and cgroups have their own limits. A large dirty_ratio lets a burst of writes</text>
+<text x="40.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">finish fast, then stalls everything during the flush. A power loss before writeback loses what was only in RAM.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 342" width="360" height="342" role="img" aria-label="Memory on a 64 GiB server split into process memory, page cache and free memory" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="342" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Where RAM goes</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">64 GiB server (free -g)</text>
+<text x="16.0" y="90.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">used by processes</text>
+<rect x="16.0" y="98.0" width="90.0" height="16.0" rx="3" fill="#ff5b2e" fill-opacity="0.75" stroke="#ff5b2e" stroke-width="1"/>
+<text x="112.0" y="111.0" font-size="11" fill="#ff5b2e" text-anchor="start" font-weight="700">18 GiB</text>
+<text x="16.0" y="138.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">page cache (buff/cache)</text>
+<rect x="16.0" y="146.0" width="210.0" height="16.0" rx="3" fill="#e2b45a" fill-opacity="0.75" stroke="#e2b45a" stroke-width="1"/>
+<text x="22.0" y="159.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="700">42 GiB</text>
+<text x="16.0" y="186.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">truly free</text>
+<rect x="16.0" y="194.0" width="20.0" height="16.0" rx="3" fill="#7cc47f" fill-opacity="0.75" stroke="#7cc47f" stroke-width="1"/>
+<text x="42.0" y="207.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="700">4 GiB</text>
+<text x="16.0" y="242.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">available ≈ 44 GiB</text>
+<text x="16.0" y="274.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Idle RAM caches files. Clean cache</text>
+<text x="16.0" y="293.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">is dropped instantly when needed:</text>
+<text x="16.0" y="312.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">look at "available", not "free".</text>
+</svg>
