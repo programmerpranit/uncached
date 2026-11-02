@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 583" width="360" height="583" role="img" aria-label="Choreographed sagas pass events between services; orchestrated sagas use a central coordinator" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="583" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Choreography vs orchestration</text>
+<text x="16.0" y="80.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Choreography</text>
+<rect x="16.0" y="92.0" width="140.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="86.0" y="115.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Order</text>
+<line x1="86.0" y1="132.0" x2="86.0" y2="150.0" stroke="#5fb3a1" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="100.0" y="145.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">OrderCreated</text>
+<rect x="16.0" y="152.0" width="140.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="86.0" y="175.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Payment</text>
+<line x1="86.0" y1="192.0" x2="86.0" y2="210.0" stroke="#5fb3a1" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="100.0" y="205.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">PaymentCaptured</text>
+<rect x="16.0" y="212.0" width="140.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="86.0" y="235.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Inventory</text>
+<line x1="86.0" y1="252.0" x2="86.0" y2="270.0" stroke="#5fb3a1" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="100.0" y="265.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">StockReserved</text>
+<rect x="16.0" y="272.0" width="140.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="86.0" y="295.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Shipping</text>
+<text x="16.0" y="352.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">Orchestration</text>
+<rect x="16.0" y="366.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="386.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="600">saga orchestrator</text>
+<text x="180.0" y="402.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="400">persisted state machine</text>
+<rect x="16.0" y="430.0" width="76.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="54.0" y="451.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Order</text>
+<line x1="180.0" y1="414.0" x2="54.0" y2="428.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah1)"/>
+<rect x="100.0" y="430.0" width="76.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="138.0" y="451.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Payment</text>
+<line x1="180.0" y1="414.0" x2="138.0" y2="428.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah1)"/>
+<rect x="184.0" y="430.0" width="76.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="222.0" y="451.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Inventory</text>
+<line x1="180.0" y1="414.0" x2="222.0" y2="428.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah1)"/>
+<rect x="268.0" y="430.0" width="76.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="306.0" y="451.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Shipping</text>
+<line x1="180.0" y1="414.0" x2="306.0" y2="428.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah1)"/>
+<text x="16.0" y="496.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Choreography: decoupled, but the</text>
+<text x="16.0" y="515.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">flow is implicit and hard to trace.</text>
+<text x="16.0" y="534.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Orchestration: one place to see and</text>
+<text x="16.0" y="553.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">change the flow; must be reliable.</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 374" width="360" height="374" role="img" aria-label="Two-phase commit locks all participants until commit; a saga commits each step immediately" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="374" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Two-phase commit vs saga</text>
+<text x="16.0" y="82.0" font-size="14" fill="#9b8cff" text-anchor="start" font-weight="700">2PC</text>
+<text x="16.0" y="106.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">coordinator: prepare → all vote</text>
+<text x="16.0" y="125.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">yes → commit everywhere.</text>
+<text x="16.0" y="144.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Atomic, but participants hold</text>
+<text x="16.0" y="163.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">locks while waiting, and block if</text>
+<text x="16.0" y="182.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the coordinator dies mid-way.</text>
+<text x="16.0" y="226.0" font-size="14" fill="#5fb3a1" text-anchor="start" font-weight="700">Saga</text>
+<rect x="16.0" y="240.0" width="100.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="66.0" y="263.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">T1 commit</text>
+<rect x="128.0" y="240.0" width="100.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="178.0" y="263.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">T2 commit</text>
+<rect x="240.0" y="240.0" width="100.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="290.0" y="263.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">T3 commit</text>
+<text x="16.0" y="306.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">No global locks; each step commits</text>
+<text x="16.0" y="325.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">at once. Others can see partial</text>
+<text x="16.0" y="344.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">progress; failures → compensate.</text>
+</svg>

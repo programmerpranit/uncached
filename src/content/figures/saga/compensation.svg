@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 398" width="880" height="398" role="img" aria-label="A saga runs local transactions in sequence and compensates completed steps when one fails" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="398" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A saga with compensation</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">T3 fails, so completed steps are undone in reverse</text>
+<rect x="60.0" y="100.0" width="220.0" height="62.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="170.0" y="128.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="600">T1: create order</text>
+<text x="170.0" y="144.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">Order service</text>
+<line x1="282.0" y1="131.0" x2="328.0" y2="131.0" stroke="#5fb3a1" stroke-width="1.4" marker-end="url(#ah0)"/>
+<rect x="330.0" y="100.0" width="220.0" height="62.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="128.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="600">T2: charge card</text>
+<text x="440.0" y="144.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">Payment service</text>
+<line x1="552.0" y1="131.0" x2="598.0" y2="131.0" stroke="#5fb3a1" stroke-width="1.4" marker-end="url(#ah0)"/>
+<rect x="600.0" y="100.0" width="220.0" height="62.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="710.0" y="128.0" font-size="13" fill="#e5534b" text-anchor="middle" font-weight="600">T3: reserve stock</text>
+<text x="710.0" y="144.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">Inventory service</text>
+<text x="722.0" y="192.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">✕ out of stock</text>
+<rect x="330.0" y="230.0" width="220.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="440.0" y="262.7" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">C2: refund card</text>
+<rect x="60.0" y="230.0" width="220.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="170.0" y="262.7" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">C1: cancel order</text>
+<path d="M710 164 L710 258 L552 258" fill="none" stroke="#e2b45a" stroke-width="1.4" marker-end="url(#ah1)"/>
+<line x1="328.0" y1="258.0" x2="282.0" y2="258.0" stroke="#e2b45a" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="60.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each Ti is a local ACID transaction in one service. If step k fails, run the compensations</text>
+<text x="60.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">C(k−1) … C1. Compensations are semantic undos (a refund, not a rollback): the charge really</text>
+<text x="60.0" y="368.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">happened and was visible in the meantime.</text>
+</svg>

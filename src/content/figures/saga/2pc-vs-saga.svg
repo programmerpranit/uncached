@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 390" width="880" height="390" role="img" aria-label="Two-phase commit locks all participants until commit; a saga commits each step immediately" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="390" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Two-phase commit vs saga</text>
+<text x="40.0" y="90.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">2PC: atomic, but participants hold locks while waiting</text>
+<rect x="40.0" y="110.0" width="150.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="115.0" y="136.3" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">coordinator</text>
+<rect x="300.0" y="110.0" width="140.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="370.0" y="136.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">DB A</text>
+<rect x="480.0" y="110.0" width="140.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="550.0" y="136.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">DB B</text>
+<rect x="660.0" y="110.0" width="140.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="730.0" y="136.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">DB C</text>
+<text x="250.0" y="198.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="400">1. prepare → vote yes/no   2. commit or abort to all</text>
+<path d="M192 132 L240 132 L240 180 L370 180 L370 156" fill="none" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah0)"/>
+<path d="M192 132 L240 132 L240 180 L550 180 L550 156" fill="none" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah0)"/>
+<path d="M192 132 L240 132 L240 180 L730 180 L730 156" fill="none" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah0)"/>
+<text x="40.0" y="234.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">If the coordinator dies after “prepare”, participants are stuck holding locks (blocking).</text>
+<text x="40.0" y="262.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Saga: no global locks; each step commits immediately</text>
+<rect x="40.0" y="282.0" width="190.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="135.0" y="308.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">T1 commit</text>
+<line x1="232.0" y1="304.0" x2="268.0" y2="304.0" stroke="#5fb3a1" stroke-width="1.2" marker-end="url(#ah1)"/>
+<rect x="270.0" y="282.0" width="190.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="365.0" y="308.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">T2 commit</text>
+<line x1="462.0" y1="304.0" x2="498.0" y2="304.0" stroke="#5fb3a1" stroke-width="1.2" marker-end="url(#ah1)"/>
+<rect x="500.0" y="282.0" width="190.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="595.0" y="308.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">T3 commit</text>
+<text x="40.0" y="360.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Intermediate states are visible to others; failures are handled with compensations.</text>
+</svg>
