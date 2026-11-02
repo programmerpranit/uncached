@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 326" width="880" height="326" role="img" aria-label="Five responses to overload: slow down, buffer, drop, scale, or batch" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="326" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What to do when the consumer can’t keep up</text>
+<rect x="40.0" y="78.0" width="255.0" height="104.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="54.0" y="104.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Slow the producer</text>
+<text x="54.0" y="128.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">block, pull-based demand, credits</text>
+<text x="54.0" y="146.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">no loss; latency moves upstream</text>
+<rect x="315.0" y="78.0" width="255.0" height="104.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="329.0" y="104.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Buffer (bounded)</text>
+<text x="329.0" y="128.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">absorb short bursts</text>
+<text x="329.0" y="146.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">memory + latency grow; needs a cap</text>
+<rect x="590.0" y="78.0" width="255.0" height="104.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="604.0" y="104.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">Drop / sample</text>
+<text x="604.0" y="128.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">shed oldest, newest, or a sample</text>
+<text x="604.0" y="146.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">bounded cost; lose data on purpose</text>
+<rect x="40.0" y="198.0" width="255.0" height="104.0" rx="3" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="54.0" y="224.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Scale consumers</text>
+<text x="54.0" y="248.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">add partitions / workers</text>
+<text x="54.0" y="266.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">works if the work parallelizes</text>
+<rect x="315.0" y="198.0" width="255.0" height="104.0" rx="3" fill="#d77fa1" fill-opacity="0.12" stroke="#d77fa1" stroke-width="1"/>
+<text x="329.0" y="224.0" font-size="13" fill="#d77fa1" text-anchor="start" font-weight="700">Batch / degrade</text>
+<text x="329.0" y="248.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">bigger batches, cheaper processing</text>
+<text x="329.0" y="266.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">more throughput per unit of work</text>
+</svg>

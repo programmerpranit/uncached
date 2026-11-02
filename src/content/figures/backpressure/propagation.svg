@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 328" width="880" height="328" role="img" aria-label="A slow sink fills bounded buffers stage by stage until the source slows down" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="328" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Backpressure propagates upstream</text>
+<rect x="40.0" y="110.0" width="160.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="120.0" y="135.0" font-size="13" fill="#5fb3a1" text-anchor="middle" font-weight="600">source</text>
+<text x="120.0" y="151.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">Kafka topic</text>
+<line x1="202.0" y1="128.0" x2="253.0" y2="128.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<line x1="253.0" y1="150.0" x2="202.0" y2="150.0" stroke="#ff5b2e" stroke-width="1.3" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<rect x="208.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="218.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="228.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="238.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<rect x="255.0" y="110.0" width="160.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="335.0" y="135.0" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">parse</text>
+<text x="335.0" y="151.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">stage 1</text>
+<line x1="417.0" y1="128.0" x2="468.0" y2="128.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<line x1="468.0" y1="150.0" x2="417.0" y2="150.0" stroke="#ff5b2e" stroke-width="1.3" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<rect x="423.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="433.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="443.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="453.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<rect x="470.0" y="110.0" width="160.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="550.0" y="135.0" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">enrich</text>
+<text x="550.0" y="151.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">stage 2</text>
+<line x1="632.0" y1="128.0" x2="683.0" y2="128.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<line x1="683.0" y1="150.0" x2="632.0" y2="150.0" stroke="#ff5b2e" stroke-width="1.3" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<rect x="638.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="648.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="658.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="668.0" y="176.0" width="8.0" height="16.0" rx="1" fill="#e2b45a" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<rect x="685.0" y="110.0" width="160.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="765.0" y="135.0" font-size="13" fill="#e5534b" text-anchor="middle" font-weight="600">sink</text>
+<text x="765.0" y="151.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">DB writes (slow)</text>
+<text x="40.0" y="96.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">data →</text>
+<text x="40.0" y="220.0" font-size="11" fill="#ff5b2e" text-anchor="start" font-weight="400">← demand / “slow down” signal</text>
+<text x="40.0" y="260.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The sink slows. Its input buffer fills, so stage 2 can’t emit, its buffer fills, and so on back to</text>
+<text x="40.0" y="279.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the source, which simply reads more slowly: Kafka consumer lag grows instead of memory.</text>
+<text x="40.0" y="298.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Every stage has a small, bounded buffer.</text>
+</svg>

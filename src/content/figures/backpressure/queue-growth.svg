@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="An unbounded queue grows forever under sustained overload; a bounded queue with backpressure caps it" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Producer outpaces consumer</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">producer 1,200 msg/s, consumer 1,000 msg/s</text>
+<line x1="80.0" y1="274.0" x2="660.0" y2="274.0" stroke="#2f2921" stroke-width="1"/>
+<text x="72.0" y="278.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">0k</text>
+<line x1="80.0" y1="210.7" x2="660.0" y2="210.7" stroke="#2f2921" stroke-width="1"/>
+<text x="72.0" y="214.7" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">4k</text>
+<line x1="80.0" y1="147.3" x2="660.0" y2="147.3" stroke="#2f2921" stroke-width="1"/>
+<text x="72.0" y="151.3" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">8k</text>
+<line x1="80.0" y1="84.0" x2="660.0" y2="84.0" stroke="#2f2921" stroke-width="1"/>
+<text x="72.0" y="88.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">12k</text>
+<text x="80.0" y="292.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">0s</text>
+<text x="273.3" y="292.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">20s</text>
+<text x="466.7" y="292.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">40s</text>
+<text x="660.0" y="292.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">60s</text>
+<text x="72.0" y="72.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">queued messages</text>
+<path d="M80.0 274.0 L89.7 270.8 L99.3 267.7 L109.0 264.5 L118.7 261.3 L128.3 258.2 L138.0 255.0 L147.7 251.8 L157.3 248.7 L167.0 245.5 L176.7 242.3 L186.3 239.2 L196.0 236.0 L205.7 232.8 L215.3 229.7 L225.0 226.5 L234.7 223.3 L244.3 220.2 L254.0 217.0 L263.7 213.8 L273.3 210.7 L283.0 207.5 L292.7 204.3 L302.3 201.2 L312.0 198.0 L321.7 194.8 L331.3 191.7 L341.0 188.5 L350.7 185.3 L360.3 182.2 L370.0 179.0 L379.7 175.8 L389.3 172.7 L399.0 169.5 L408.7 166.3 L418.3 163.2 L428.0 160.0 L437.7 156.8 L447.3 153.7 L457.0 150.5 L466.7 147.3 L476.3 144.2 L486.0 141.0 L495.7 137.8 L505.3 134.7 L515.0 131.5 L524.7 128.3 L534.3 125.2 L544.0 122.0 L553.7 118.8 L563.3 115.7 L573.0 112.5 L582.7 109.3 L592.3 106.2 L602.0 103.0 L611.7 99.8 L621.3 96.7 L631.0 93.5 L640.7 90.3 L650.3 87.2 L660.0 84.0" fill="none" stroke="#e5534b" stroke-width="2.5"/>
+<path d="M80.0 274.0 L89.7 270.8 L99.3 267.7 L109.0 264.5 L118.7 261.3 L128.3 258.2 L138.0 255.0 L147.7 251.8 L157.3 248.7 L167.0 245.5 L176.7 242.3 L186.3 242.3 L196.0 242.3 L205.7 242.3 L215.3 242.3 L225.0 242.3 L234.7 242.3 L244.3 242.3 L254.0 242.3 L263.7 242.3 L273.3 242.3 L283.0 242.3 L292.7 242.3 L302.3 242.3 L312.0 242.3 L321.7 242.3 L331.3 242.3 L341.0 242.3 L350.7 242.3 L360.3 242.3 L370.0 242.3 L379.7 242.3 L389.3 242.3 L399.0 242.3 L408.7 242.3 L418.3 242.3 L428.0 242.3 L437.7 242.3 L447.3 242.3 L457.0 242.3 L466.7 242.3 L476.3 242.3 L486.0 242.3 L495.7 242.3 L505.3 242.3 L515.0 242.3 L524.7 242.3 L534.3 242.3 L544.0 242.3 L553.7 242.3 L563.3 242.3 L573.0 242.3 L582.7 242.3 L592.3 242.3 L602.0 242.3 L611.7 242.3 L621.3 242.3 L631.0 242.3 L640.7 242.3 L650.3 242.3 L660.0 242.3" fill="none" stroke="#5fb3a1" stroke-width="2.5"/>
+<text x="670.0" y="88.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">unbounded buffer:</text>
+<text x="670.0" y="106.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">grows forever → OOM</text>
+<text x="670.0" y="234.3" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">bounded (2k) +</text>
+<text x="670.0" y="252.3" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">backpressure: producer</text>
+<text x="670.0" y="270.3" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">slowed to 1,000/s</text>
+<text x="40.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Any sustained mismatch grows a queue linearly. Buffers only absorb bursts; for sustained overload something must</text>
+<text x="40.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">slow down, drop, or scale out.</text>
+</svg>

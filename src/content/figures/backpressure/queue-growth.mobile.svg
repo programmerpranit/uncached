@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 446" width="360" height="446" role="img" aria-label="An unbounded queue grows forever under sustained overload; a bounded queue with backpressure caps it" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="446" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Producer outpaces consumer</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">produce 1,200/s · consume 1,000/s</text>
+<line x1="56.0" y1="274.0" x2="340.0" y2="274.0" stroke="#2f2921" stroke-width="1"/>
+<text x="48.0" y="278.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">0k</text>
+<line x1="56.0" y1="210.7" x2="340.0" y2="210.7" stroke="#2f2921" stroke-width="1"/>
+<text x="48.0" y="214.7" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">4k</text>
+<line x1="56.0" y1="147.3" x2="340.0" y2="147.3" stroke="#2f2921" stroke-width="1"/>
+<text x="48.0" y="151.3" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">8k</text>
+<line x1="56.0" y1="84.0" x2="340.0" y2="84.0" stroke="#2f2921" stroke-width="1"/>
+<text x="48.0" y="88.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">12k</text>
+<text x="56.0" y="292.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">0s</text>
+<text x="150.7" y="292.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">20s</text>
+<text x="245.3" y="292.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">40s</text>
+<text x="340.0" y="292.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">60s</text>
+<text x="48.0" y="72.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">queued messages</text>
+<path d="M56.0 274.0 L60.7 270.8 L65.5 267.7 L70.2 264.5 L74.9 261.3 L79.7 258.2 L84.4 255.0 L89.1 251.8 L93.9 248.7 L98.6 245.5 L103.3 242.3 L108.1 239.2 L112.8 236.0 L117.5 232.8 L122.3 229.7 L127.0 226.5 L131.7 223.3 L136.5 220.2 L141.2 217.0 L145.9 213.8 L150.7 210.7 L155.4 207.5 L160.1 204.3 L164.9 201.2 L169.6 198.0 L174.3 194.8 L179.1 191.7 L183.8 188.5 L188.5 185.3 L193.3 182.2 L198.0 179.0 L202.7 175.8 L207.5 172.7 L212.2 169.5 L216.9 166.3 L221.7 163.2 L226.4 160.0 L231.1 156.8 L235.9 153.7 L240.6 150.5 L245.3 147.3 L250.1 144.2 L254.8 141.0 L259.5 137.8 L264.3 134.7 L269.0 131.5 L273.7 128.3 L278.5 125.2 L283.2 122.0 L287.9 118.8 L292.7 115.7 L297.4 112.5 L302.1 109.3 L306.9 106.2 L311.6 103.0 L316.3 99.8 L321.1 96.7 L325.8 93.5 L330.5 90.3 L335.3 87.2 L340.0 84.0" fill="none" stroke="#e5534b" stroke-width="2.5"/>
+<path d="M56.0 274.0 L60.7 270.8 L65.5 267.7 L70.2 264.5 L74.9 261.3 L79.7 258.2 L84.4 255.0 L89.1 251.8 L93.9 248.7 L98.6 245.5 L103.3 242.3 L108.1 242.3 L112.8 242.3 L117.5 242.3 L122.3 242.3 L127.0 242.3 L131.7 242.3 L136.5 242.3 L141.2 242.3 L145.9 242.3 L150.7 242.3 L155.4 242.3 L160.1 242.3 L164.9 242.3 L169.6 242.3 L174.3 242.3 L179.1 242.3 L183.8 242.3 L188.5 242.3 L193.3 242.3 L198.0 242.3 L202.7 242.3 L207.5 242.3 L212.2 242.3 L216.9 242.3 L221.7 242.3 L226.4 242.3 L231.1 242.3 L235.9 242.3 L240.6 242.3 L245.3 242.3 L250.1 242.3 L254.8 242.3 L259.5 242.3 L264.3 242.3 L269.0 242.3 L273.7 242.3 L278.5 242.3 L283.2 242.3 L287.9 242.3 L292.7 242.3 L297.4 242.3 L302.1 242.3 L306.9 242.3 L311.6 242.3 L316.3 242.3 L321.1 242.3 L325.8 242.3 L330.5 242.3 L335.3 242.3 L340.0 242.3" fill="none" stroke="#5fb3a1" stroke-width="2.5"/>
+<rect x="16.0" y="312.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="322.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">unbounded → OOM</text>
+<rect x="16.0" y="334.0" width="12.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="344.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">bounded + backpressure</text>
+<text x="16.0" y="378.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Buffers absorb bursts. Sustained</text>
+<text x="16.0" y="397.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">overload needs slowing, dropping</text>
+<text x="16.0" y="416.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">or scaling out.</text>
+</svg>
