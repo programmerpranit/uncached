@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 411" width="880" height="411" role="img" aria-label="Spectrum from tuned kernel sockets through XDP and user-space stacks to DPDK and RDMA" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="411" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">From kernel stack to full bypass: a spectrum</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">options trade generality and safety for latency and throughput</text>
+<text x="40.0" y="104.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">kernel sockets + tuning</text>
+<text x="40.0" y="121.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">busy polling, GRO, RSS, io_uring</text>
+<rect x="560.0" y="96.0" width="39.0" height="16.0" rx="3" fill="#4a4136" fill-opacity="0.7" stroke="#4a4136" stroke-width="1"/>
+<text x="40.0" y="154.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">AF_XDP / XDP</text>
+<text x="40.0" y="171.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">eBPF in the driver; zero-copy to user sockets, kernel stays in charge</text>
+<rect x="560.0" y="146.0" width="104.0" height="16.0" rx="3" fill="#5fb3a1" fill-opacity="0.7" stroke="#5fb3a1" stroke-width="1"/>
+<text x="40.0" y="204.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">user-space TCP stacks</text>
+<text x="40.0" y="221.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Seastar, F-Stack, mTCP on top of DPDK</text>
+<rect x="560.0" y="196.0" width="156.0" height="16.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="40.0" y="254.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">DPDK / SPDK</text>
+<text x="40.0" y="271.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">full user-space drivers for NICs and NVMe</text>
+<rect x="560.0" y="246.0" width="208.0" height="16.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="304.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">RDMA</text>
+<text x="40.0" y="321.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">remote memory access in hardware</text>
+<rect x="560.0" y="296.0" width="260.0" height="16.0" rx="3" fill="#9b8cff" fill-opacity="0.7" stroke="#9b8cff" stroke-width="1"/>
+<text x="560.0" y="84.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">less kernel → more speed, more work</text>
+<text x="40.0" y="362.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Start at the top: a tuned kernel stack is enough for most services. XDP/AF_XDP gives much of the speed while</text>
+<text x="40.0" y="381.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">keeping kernel tools; full bypass is for appliances, trading, storage and HPC where every microsecond counts.</text>
+</svg>

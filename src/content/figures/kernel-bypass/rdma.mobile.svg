@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 296" width="360" height="296" role="img" aria-label="An RDMA write from host A NIC directly into registered memory on host B without host B CPU involvement" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="296" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">RDMA</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">remote CPU not involved</text>
+<rect x="16.0" y="86.0" width="150.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="91.0" y="110.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">host A app</text>
+<rect x="194.0" y="86.0" width="150.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="269.0" y="110.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">host B memory</text>
+<line x1="166.0" y1="106.0" x2="192.0" y2="106.0" stroke="#7cc47f" stroke-width="2" marker-end="url(#ah0)"/>
+<text x="180.0" y="150.0" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="400">RNIC → RNIC, remote CPU idle</text>
+<text x="16.0" y="190.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Apps post work requests to the</text>
+<text x="16.0" y="209.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">NIC from user space; NICs move</text>
+<text x="16.0" y="228.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">data between registered, pinned</text>
+<text x="16.0" y="247.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">memory. A few µs latency.</text>
+<text x="16.0" y="266.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">InfiniBand, RoCE v2 or iWARP.</text>
+</svg>

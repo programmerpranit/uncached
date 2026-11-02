@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 418" width="880" height="418" role="img" aria-label="An RDMA write from host A NIC directly into registered memory on host B without host B CPU involvement" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="418" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">RDMA: the NIC reads and writes remote memory</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one-sided operations complete without involving the remote CPU or kernel</text>
+<rect x="40.0" y="90.0" width="340.0" height="200.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="210.0" y="112.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="700">host A</text>
+<rect x="60.0" y="126.0" width="140.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="130.0" y="150.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">app</text>
+<rect x="220.0" y="126.0" width="140.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="290.0" y="150.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">CPU / kernel</text>
+<rect x="60.0" y="186.0" width="300.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="210.0" y="210.1" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="600">registered memory region</text>
+<rect x="60.0" y="240.0" width="300.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="210.0" y="262.1" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="600">RDMA NIC (RNIC)</text>
+<rect x="500.0" y="90.0" width="340.0" height="200.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="670.0" y="112.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="700">host B</text>
+<rect x="520.0" y="126.0" width="140.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="590.0" y="150.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">app</text>
+<rect x="680.0" y="126.0" width="140.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="750.0" y="150.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">CPU / kernel</text>
+<rect x="520.0" y="186.0" width="300.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="670.0" y="210.1" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="600">registered memory region</text>
+<rect x="520.0" y="240.0" width="300.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="670.0" y="262.1" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="600">RDMA NIC (RNIC)</text>
+<line x1="360.0" y1="258.0" x2="498.0" y2="258.0" stroke="#7cc47f" stroke-width="2" marker-end="url(#ah0)"/>
+<text x="430.0" y="250.0" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="400">RDMA WRITE</text>
+<path d="M820 258 C 860 240, 860 220, 820 206" fill="none" stroke="#7cc47f" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="680.0" y="320.0" font-size="11.5" fill="#e5534b" text-anchor="middle" font-weight="400">host B's CPU never sees the write</text>
+<text x="40.0" y="350.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The app posts a work request (write these bytes to remote address X, with key K) directly to its NIC's queue</text>
+<text x="40.0" y="369.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">from user space. The NICs move data between registered, pinned memory regions with no copies and no remote CPU.</text>
+<text x="40.0" y="388.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Latency drops to a few microseconds. Runs over InfiniBand, or Ethernet with RoCE v2 (lossless setup) or iWARP.</text>
+</svg>

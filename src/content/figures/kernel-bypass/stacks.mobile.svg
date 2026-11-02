@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 340" width="360" height="340" role="img" aria-label="The kernel networking stack layers compared with DPDK user-space packet processing" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="340" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Kernel vs bypass</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">who touches each packet</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">kernel stack</text>
+<text x="16.0" y="106.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">app → syscall + copy → sockets</text>
+<text x="16.0" y="124.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">→ TCP/IP → netfilter → softirq</text>
+<text x="16.0" y="142.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">→ driver + IRQ → NIC</text>
+<text x="16.0" y="178.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">DPDK</text>
+<text x="16.0" y="198.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">app + user-space driver</text>
+<text x="16.0" y="216.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">→ rings in hugepage memory → NIC</text>
+<text x="16.0" y="234.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">(kernel not involved after setup)</text>
+<text x="16.0" y="272.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Kernel: ~1–2 M small packets/s</text>
+<text x="16.0" y="291.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">per core. DPDK polling: tens of</text>
+<text x="16.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">millions per core.</text>
+</svg>

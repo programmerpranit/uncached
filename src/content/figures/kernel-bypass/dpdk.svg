@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 451" width="880" height="451" role="img" aria-label="DPDK techniques: poll-mode drivers, batching, hugepage memory pools, lock-free rings and core pinning" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="451" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">How DPDK gets its speed</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a set of trade-offs that remove per-packet overhead</text>
+<rect x="40.0" y="84.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="104.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">poll-mode drivers</text>
+<text x="260.0" y="104.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">dedicated cores spin on rx/tx rings: no interrupts, no syscalls</text>
+<text x="260.0" y="122.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">cost: cores at 100% even when idle</text>
+<rect x="40.0" y="142.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="162.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">batching</text>
+<text x="260.0" y="162.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">process 32–64 packets per loop iteration; amortize every fixed cost</text>
+<text x="260.0" y="180.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">cost: a little added latency</text>
+<rect x="40.0" y="200.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="220.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">hugepage memory pools</text>
+<text x="260.0" y="220.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">preallocated packet buffers; no TLB misses, no malloc per packet</text>
+<text x="260.0" y="238.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">cost: memory reserved up front</text>
+<rect x="40.0" y="258.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="56.0" y="278.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">lock-free rings</text>
+<text x="260.0" y="278.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">cores pass packets via single-producer/consumer queues</text>
+<text x="260.0" y="296.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">cost: careful pipeline design</text>
+<rect x="40.0" y="316.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="56.0" y="336.0" font-size="12.5" fill="#d77fa1" text-anchor="start" font-weight="700">core and NUMA pinning</text>
+<text x="260.0" y="336.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">each core owns queues on the NIC's NUMA node</text>
+<text x="260.0" y="354.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">cost: static configuration</text>
+<text x="40.0" y="402.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">What you give up: the kernel's TCP/IP stack, firewalling, tcpdump, standard sockets and tools, and fair sharing of</text>
+<text x="40.0" y="421.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the NIC. Apps bring their own stack (or only need L2/L3 forwarding) and manage the device themselves.</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 345" width="360" height="345" role="img" aria-label="Spectrum from tuned kernel sockets through XDP and user-space stacks to DPDK and RDMA" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="345" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">The bypass spectrum</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">generality vs speed</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">kernel sockets + tuning</text>
+<rect x="16.0" y="94.0" width="30.0" height="12.0" rx="3" fill="#4a4136" fill-opacity="0.7" stroke="#4a4136" stroke-width="1"/>
+<text x="16.0" y="126.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">AF_XDP / XDP</text>
+<rect x="16.0" y="134.0" width="80.0" height="12.0" rx="3" fill="#5fb3a1" fill-opacity="0.7" stroke="#5fb3a1" stroke-width="1"/>
+<text x="16.0" y="166.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">user-space TCP stacks</text>
+<rect x="16.0" y="174.0" width="120.0" height="12.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="16.0" y="206.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">DPDK / SPDK</text>
+<rect x="16.0" y="214.0" width="160.0" height="12.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="16.0" y="246.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">RDMA</text>
+<rect x="16.0" y="254.0" width="200.0" height="12.0" rx="3" fill="#9b8cff" fill-opacity="0.7" stroke="#9b8cff" stroke-width="1"/>
+<text x="16.0" y="296.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Start with a tuned kernel; reach</text>
+<text x="16.0" y="315.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">for bypass only when needed.</text>
+</svg>
