@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 319" width="880" height="319" role="img" aria-label="Hot key detection pipeline: sample, count, aggregate, act" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="319" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Detecting hot keys</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">sample traffic, count with a sketch, act on the top-k</text>
+<rect x="40.0" y="110.0" width="180.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="130.0" y="149.7" font-size="13" fill="#5fb3a1" text-anchor="middle" font-weight="600">sample</text>
+<text x="40.0" y="206.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">1 in 100 requests per node</text>
+<text x="40.0" y="222.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400"></text>
+<line x1="222.0" y1="145.0" x2="248.0" y2="145.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="250.0" y="110.0" width="180.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="340.0" y="149.7" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">count</text>
+<text x="250.0" y="206.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Count-Min sketch / top-k</text>
+<text x="250.0" y="222.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">per window</text>
+<line x1="432.0" y1="145.0" x2="458.0" y2="145.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="460.0" y="110.0" width="180.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="550.0" y="149.7" font-size="13" fill="#9b8cff" text-anchor="middle" font-weight="600">aggregate</text>
+<text x="460.0" y="206.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">merge per-node top-k</text>
+<text x="460.0" y="222.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">centrally</text>
+<line x1="642.0" y1="145.0" x2="668.0" y2="145.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="670.0" y="110.0" width="180.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="760.0" y="149.7" font-size="13" fill="#ff5b2e" text-anchor="middle" font-weight="600">act</text>
+<text x="670.0" y="206.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">split, replicate, cache,</text>
+<text x="670.0" y="222.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">or throttle</text>
+<text x="40.0" y="270.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Static sharding decisions can’t anticipate a viral post or a celebrity login. Systems like Redis (--hotkeys),</text>
+<text x="40.0" y="289.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cassandra and DynamoDB expose hot-key metrics; mature platforms react automatically within seconds.</text>
+</svg>

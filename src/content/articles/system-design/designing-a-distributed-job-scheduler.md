@@ -102,7 +102,7 @@ These are the questions that separate a toy from a production scheduler:
 | **Temporal / Cadence** | Durable timers and cron workflows. History sharded across nodes; timers stored per shard. |
 | **Sidekiq, Celery beat, BullMQ** | Redis sorted sets for scheduled jobs, with leader election for the periodic scheduler |
 | **AWS EventBridge Scheduler, Google Cloud Scheduler** | Managed schedulers that invoke targets at least once |
-| **Dropbox ATF, Airbnb, Uber** | In-house async task frameworks with partitioned schedulers and at-least-once execution |
+| **Dropbox ATF** | In-house async task framework with partitioned schedulers and at-least-once execution |
 
 ### Use case walk-through: 10 million reminder emails a day
 
