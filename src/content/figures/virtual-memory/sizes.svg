@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 350" width="880" height="350" role="img" aria-label="Page table memory for a flat table versus multi-level tables with 4 KiB and 2 MiB pages" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="350" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Why page tables are multi-level</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">page-table memory for a process using 1 GiB in a 48-bit address space</text>
+<text x="40.0" y="104.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">flat table, 4 KiB pages</text>
+<text x="40.0" y="121.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">2³⁶ entries × 8 B</text>
+<rect x="420.0" y="94.0" width="302.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="732.0" y="109.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">512 GiB</text>
+<text x="40.0" y="160.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">4-level, 4 KiB pages</text>
+<text x="40.0" y="177.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">1 PML4 + 1 PDPT + 1 PD + 512 PT</text>
+<rect x="420.0" y="150.0" width="38.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="468.0" y="165.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~2 MiB</text>
+<text x="40.0" y="216.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">4-level, 2 MiB huge pages</text>
+<text x="40.0" y="233.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">1 + 1 + 1 tables</text>
+<rect x="420.0" y="206.0" width="8.0" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="438.0" y="221.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">12 KiB</text>
+<text x="40.0" y="282.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A flat table needs an entry for every possible page, used or not. A tree only allocates tables for regions that</text>
+<text x="40.0" y="301.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">are mapped: an address space is mostly empty holes, so most subtrees simply don't exist. The price is one memory</text>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">read per level on a TLB miss.</text>
+</svg>

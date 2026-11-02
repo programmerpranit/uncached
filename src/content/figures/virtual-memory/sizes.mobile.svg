@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 337" width="360" height="337" role="img" aria-label="Page table memory for a flat table versus multi-level tables with 4 KiB and 2 MiB pages" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="337" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Why multi-level?</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">tables needed for 1 GiB used</text>
+<text x="16.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">flat table, 4 KiB pages</text>
+<rect x="16.0" y="95.0" width="212.0" height="16.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="236.0" y="108.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="700">512 GiB</text>
+<text x="16.0" y="138.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">4-level, 4 KiB pages</text>
+<rect x="16.0" y="147.0" width="27.2" height="16.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="51.2" y="160.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="700">~2 MiB</text>
+<text x="16.0" y="190.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">4-level, 2 MiB huge pages</text>
+<rect x="16.0" y="199.0" width="6.2" height="16.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="30.2" y="212.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="700">12 KiB</text>
+<text x="16.0" y="250.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A flat table needs an entry for</text>
+<text x="16.0" y="269.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">every possible page. A tree only</text>
+<text x="16.0" y="288.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">allocates tables for mapped</text>
+<text x="16.0" y="307.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">regions; empty holes cost nothing.</text>
+</svg>

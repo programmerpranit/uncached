@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 448" width="880" height="448" role="img" aria-label="Two processes whose page tables map the same virtual regions to different physical frames, sharing library and code frames" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="448" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Every process gets its own address space</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the same virtual address maps to different physical frames per process</text>
+<text x="140.0" y="92.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="600">process A</text>
+<rect x="40.0" y="104.0" width="200.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="140.0" y="128.1" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">stack</text>
+<rect x="40.0" y="166.0" width="200.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="140.0" y="190.1" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="600">heap</text>
+<rect x="40.0" y="228.0" width="200.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="140.0" y="252.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">libc.so</text>
+<rect x="40.0" y="290.0" width="200.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="140.0" y="314.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">code</text>
+<text x="740.0" y="92.0" font-size="12" fill="#d77fa1" text-anchor="middle" font-weight="600">process B</text>
+<rect x="640.0" y="104.0" width="200.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="740.0" y="128.1" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">stack</text>
+<rect x="640.0" y="166.0" width="200.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="740.0" y="190.1" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="600">heap</text>
+<rect x="640.0" y="228.0" width="200.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="740.0" y="252.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">libc.so</text>
+<rect x="640.0" y="290.0" width="200.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="740.0" y="314.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">code</text>
+<text x="440.0" y="92.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">physical RAM (frames)</text>
+<rect x="380.0" y="110.0" width="120.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="440.0" y="128.8" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="600">A stack</text>
+<rect x="380.0" y="150.0" width="120.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="440.0" y="168.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">B heap</text>
+<rect x="380.0" y="190.0" width="120.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="208.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">libc (shared)</text>
+<rect x="380.0" y="230.0" width="120.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="440.0" y="248.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">A heap</text>
+<rect x="380.0" y="270.0" width="120.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="440.0" y="288.8" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="600">B stack</text>
+<rect x="380.0" y="310.0" width="120.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="328.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">code (shared)</text>
+<line x1="240.0" y1="124.0" x2="380.0" y2="125.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="240.0" y1="186.0" x2="380.0" y2="245.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="240.0" y1="248.0" x2="380.0" y2="205.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="240.0" y1="310.0" x2="380.0" y2="325.0" stroke="#ff5b2e" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="640.0" y1="124.0" x2="500.0" y2="285.0" stroke="#d77fa1" stroke-width="1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<line x1="640.0" y1="186.0" x2="500.0" y2="165.0" stroke="#d77fa1" stroke-width="1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<line x1="640.0" y1="248.0" x2="500.0" y2="205.0" stroke="#d77fa1" stroke-width="1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<line x1="640.0" y1="310.0" x2="500.0" y2="325.0" stroke="#d77fa1" stroke-width="1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<text x="40.0" y="380.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Both processes use the same virtual addresses (say, heap at 0x5555_0000_0000), but their page tables send</text>
+<text x="40.0" y="399.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">them to different frames. Read-only code and shared libraries map to the same frames, so 100 processes using</text>
+<text x="40.0" y="418.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">libc keep one copy in RAM. Frames are scattered: contiguous virtual memory need not be contiguous physically.</text>
+</svg>

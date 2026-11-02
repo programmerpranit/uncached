@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 471" width="360" height="471" role="img" aria-label="A 48-bit x86-64 virtual address split into four 9-bit indexes and a 12-bit offset, walking four tables from CR3 to the page" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="471" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">4-level page walk (x86-64)</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">4 × 9-bit index + 12-bit offset</text>
+<rect x="16.0" y="82.0" width="150.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="91.0" y="100.1" font-size="11.5" fill="#ff5b2e" text-anchor="middle" font-weight="600">PML4</text>
+<text x="178.0" y="100.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">bits 47–39</text>
+<rect x="16.0" y="116.0" width="150.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="91.0" y="134.1" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="600">PDPT</text>
+<text x="178.0" y="134.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">bits 38–30</text>
+<rect x="16.0" y="150.0" width="150.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="91.0" y="168.1" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">PD</text>
+<text x="178.0" y="168.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">bits 29–21</text>
+<rect x="16.0" y="184.0" width="150.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="91.0" y="202.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">PT</text>
+<text x="178.0" y="202.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">bits 20–12</text>
+<rect x="16.0" y="218.0" width="150.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="91.0" y="236.1" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="600">offset</text>
+<text x="178.0" y="236.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">bits 11–0</text>
+<text x="16.0" y="270.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">CR3 → PML4[i] → PDPT[j]</text>
+<text x="16.0" y="289.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">     → PD[k] → PT[l] → page</text>
+<text x="16.0" y="327.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each table: 512 entries × 8 B</text>
+<text x="16.0" y="346.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">= one 4 KiB page. Four dependent</text>
+<text x="16.0" y="365.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">memory reads per translation,</text>
+<text x="16.0" y="384.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">hence the TLB.</text>
+<text x="16.0" y="422.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">2 MiB huge page: stop at PD.</text>
+<text x="16.0" y="441.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">1 GiB page: stop at PDPT.</text>
+</svg>
