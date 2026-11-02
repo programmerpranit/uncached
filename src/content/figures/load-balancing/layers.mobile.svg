@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" width="360" height="400" role="img" aria-label="DNS, L4, L7 and client-side load balancing layers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="400" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Where load balancing happens</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">layers of balancing</text>
+<rect x="16.0" y="72.0" width="328.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="95.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">DNS / GSLB</text>
+<text x="180.0" y="111.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="400">pick a region or POP</text>
+<rect x="16.0" y="134.0" width="328.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="157.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">L4 load balancer</text>
+<text x="180.0" y="173.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="400">TCP/UDP, per connection</text>
+<rect x="16.0" y="196.0" width="328.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="219.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">L7 proxy</text>
+<text x="180.0" y="235.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="400">HTTP/gRPC, per request</text>
+<rect x="16.0" y="258.0" width="328.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="281.0" font-size="12" fill="#d77fa1" text-anchor="middle" font-weight="600">client-side LB</text>
+<text x="180.0" y="297.0" font-size="10.5" fill="#d77fa1" text-anchor="middle" font-weight="400">caller picks a backend</text>
+<text x="16.0" y="332.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each layer picks among the next.</text>
+<text x="16.0" y="351.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">With client-side balancing, every</text>
+<text x="16.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">caller is its own load balancer.</text>
+</svg>

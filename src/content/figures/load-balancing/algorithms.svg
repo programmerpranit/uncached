@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 324" width="880" height="324" role="img" aria-label="Round robin, weighted round robin, least connections, least latency, power of two choices, hashing" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="324" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Common algorithms</text>
+<rect x="40.0" y="76.0" width="255.0" height="104.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="54.0" y="104.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Round robin</text>
+<text x="54.0" y="130.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">next backend in turn</text>
+<text x="54.0" y="166.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">no state; ignores load</text>
+<rect x="315.0" y="76.0" width="255.0" height="104.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="329.0" y="104.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Weighted RR</text>
+<text x="329.0" y="130.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">more turns for bigger hosts</text>
+<text x="329.0" y="166.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">static weights</text>
+<rect x="590.0" y="76.0" width="255.0" height="104.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="604.0" y="104.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Least connections</text>
+<text x="604.0" y="130.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">fewest active requests</text>
+<text x="604.0" y="166.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">needs global view</text>
+<rect x="40.0" y="196.0" width="255.0" height="104.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="54.0" y="224.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Least latency / EWMA</text>
+<text x="54.0" y="250.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">fastest recent responses</text>
+<text x="54.0" y="286.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">can herd; needs care</text>
+<rect x="315.0" y="196.0" width="255.0" height="104.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="329.0" y="224.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">Power of two choices</text>
+<text x="329.0" y="250.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">sample 2, take the less loaded</text>
+<text x="329.0" y="286.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">near-optimal, cheap</text>
+<rect x="590.0" y="196.0" width="255.0" height="104.0" rx="3" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="604.0" y="224.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Hashing</text>
+<text x="604.0" y="250.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">hash(key) → backend</text>
+<text x="604.0" y="286.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">affinity; skew risk</text>
+</svg>

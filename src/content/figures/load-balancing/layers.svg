@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 349" width="880" height="349" role="img" aria-label="DNS, L4, L7 and client-side load balancing layers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="349" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Where load balancing happens</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">several layers, each choosing among the next</text>
+<rect x="30.0" y="150.0" width="110.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="85.0" y="179.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">client</text>
+<rect x="170.0" y="140.0" width="130.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="235.0" y="179.1" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">DNS / GSLB</text>
+<text x="170.0" y="236.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">picks a region</text>
+<text x="170.0" y="255.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">or POP</text>
+<line x1="142.0" y1="175.0" x2="168.0" y2="175.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="320.0" y="140.0" width="130.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="385.0" y="179.1" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="600">L4 load balancer</text>
+<text x="320.0" y="236.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">TCP/UDP: IP + port,</text>
+<text x="320.0" y="255.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">per connection</text>
+<line x1="292.0" y1="175.0" x2="318.0" y2="175.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="470.0" y="140.0" width="130.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="535.0" y="179.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">L7 proxy</text>
+<text x="470.0" y="236.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">HTTP/gRPC: per</text>
+<text x="470.0" y="255.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">request, sees paths</text>
+<line x1="442.0" y1="175.0" x2="468.0" y2="175.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="620.0" y="140.0" width="130.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="685.0" y="179.1" font-size="11.5" fill="#d77fa1" text-anchor="middle" font-weight="600">client-side LB</text>
+<text x="620.0" y="236.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">the caller picks</text>
+<text x="620.0" y="255.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">a backend itself</text>
+<line x1="592.0" y1="175.0" x2="618.0" y2="175.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="800.0" y="130.0" width="50.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="825.0" y="146.6" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="600">b1</text>
+<rect x="800.0" y="162.0" width="50.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="825.0" y="178.6" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="600">b2</text>
+<rect x="800.0" y="194.0" width="50.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="825.0" y="210.6" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="600">b3</text>
+<line x1="752.0" y1="175.0" x2="798.0" y2="143.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="752.0" y1="175.0" x2="798.0" y2="175.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="752.0" y1="175.0" x2="798.0" y2="207.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<text x="30.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A request may be balanced several times. Client-side balancing (gRPC, service meshes) replaces the L7 hop</text>
+<text x="30.0" y="319.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">with logic inside each caller, so the "balancer" is really thousands of independent decision-makers.</text>
+</svg>
