@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img" aria-label="Allocation size classes, each a free list of equal-size slots, with a request rounded up" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="430" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Size classes: round up, then reuse</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">requests are rounded to a class; each class has its own free list of equal-size slots</text>
+<text x="70.0" y="114.0" font-size="11.5" fill="#e2b45a" text-anchor="end" font-weight="400">16 B</text>
+<rect x="90.0" y="100.0" width="14.4" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="108.4" y="100.0" width="14.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="126.8" y="100.0" width="14.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="145.2" y="100.0" width="14.4" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="163.6" y="100.0" width="14.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="182.0" y="100.0" width="14.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="200.4" y="100.0" width="14.4" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="218.8" y="100.0" width="14.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<text x="70.0" y="144.0" font-size="11.5" fill="#e2b45a" text-anchor="end" font-weight="400">32 B</text>
+<rect x="90.0" y="130.0" width="28.8" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="122.8" y="130.0" width="28.8" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="155.6" y="130.0" width="28.8" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="188.4" y="130.0" width="28.8" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="221.2" y="130.0" width="28.8" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="254.0" y="130.0" width="28.8" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="286.8" y="130.0" width="28.8" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="319.6" y="130.0" width="28.8" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<text x="70.0" y="174.0" font-size="11.5" fill="#e2b45a" text-anchor="end" font-weight="400">48 B</text>
+<rect x="90.0" y="160.0" width="43.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="137.2" y="160.0" width="43.2" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="184.4" y="160.0" width="43.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="231.6" y="160.0" width="43.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="278.8" y="160.0" width="43.2" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="326.0" y="160.0" width="43.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="373.2" y="160.0" width="43.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="420.4" y="160.0" width="43.2" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="70.0" y="204.0" font-size="11.5" fill="#e2b45a" text-anchor="end" font-weight="400">64 B</text>
+<rect x="90.0" y="190.0" width="57.6" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="151.6" y="190.0" width="57.6" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="213.2" y="190.0" width="57.6" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="274.8" y="190.0" width="57.6" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="336.4" y="190.0" width="57.6" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="398.0" y="190.0" width="57.6" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="459.6" y="190.0" width="57.6" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="521.2" y="190.0" width="57.6" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<text x="70.0" y="234.0" font-size="11.5" fill="#e2b45a" text-anchor="end" font-weight="400">80 B</text>
+<rect x="90.0" y="220.0" width="72.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="166.0" y="220.0" width="72.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="242.0" y="220.0" width="72.0" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="318.0" y="220.0" width="72.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="394.0" y="220.0" width="72.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="470.0" y="220.0" width="72.0" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="546.0" y="220.0" width="72.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="622.0" y="220.0" width="72.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<text x="70.0" y="264.0" font-size="11.5" fill="#e2b45a" text-anchor="end" font-weight="400">96 B</text>
+<rect x="90.0" y="250.0" width="86.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="180.4" y="250.0" width="86.4" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="270.8" y="250.0" width="86.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="361.2" y="250.0" width="86.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="451.6" y="250.0" width="86.4" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="542.0" y="250.0" width="86.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="632.4" y="250.0" width="86.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="722.8" y="250.0" width="86.4" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="70.0" y="294.0" font-size="11.5" fill="#e2b45a" text-anchor="end" font-weight="400">128 B</text>
+<rect x="90.0" y="280.0" width="115.2" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="209.2" y="280.0" width="115.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="328.4" y="280.0" width="115.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="447.6" y="280.0" width="115.2" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="566.8" y="280.0" width="115.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="686.0" y="280.0" width="115.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="330.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">request 50 bytes → 64-byte class (14 bytes of internal fragmentation)</text>
+<text x="40.0" y="362.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Equal-size slots make allocation a pop from a free list and free a push, with no searching and no coalescing.</text>
+<text x="40.0" y="381.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Fine-grained classes (jemalloc and tcmalloc use dozens) keep internal waste around 10–20%. Each class lives in</text>
+<text x="40.0" y="400.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">spans of pages ("slabs"), so the allocator can find an object's size from its address alone.</text>
+</svg>

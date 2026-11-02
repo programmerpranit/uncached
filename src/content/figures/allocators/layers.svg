@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img" aria-label="Layers of a modern allocator: thread caches, arenas, page runs and kernel calls" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="400" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Where malloc() gets memory</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the allocator sits between your code and the kernel's page-granular calls</text>
+<rect x="40.0" y="82.0" width="800.0" height="34.0" rx="3" fill="#4a4136" fill-opacity="0.1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="103.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">malloc(48) / free(p)</text>
+<text x="380.0" y="103.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">your code: millions of small, short-lived allocations</text>
+<rect x="60.0" y="126.0" width="760.0" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.1" stroke="#7cc47f" stroke-width="1"/>
+<text x="76.0" y="147.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">thread cache</text>
+<text x="380.0" y="147.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">per-thread free lists by size class: no lock, ~10–20 ns</text>
+<rect x="80.0" y="170.0" width="720.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1"/>
+<text x="96.0" y="191.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">arenas / central heap</text>
+<text x="380.0" y="191.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">shared size-class bins, spans of pages; locked or per-CPU</text>
+<rect x="100.0" y="214.0" width="680.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1"/>
+<text x="116.0" y="235.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">page allocator in user space</text>
+<text x="380.0" y="235.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">page runs split into size classes; big objects direct</text>
+<rect x="120.0" y="258.0" width="640.0" height="34.0" rx="3" fill="#e5534b" fill-opacity="0.1" stroke="#e5534b" stroke-width="1"/>
+<text x="136.0" y="279.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">kernel: brk / mmap / madvise</text>
+<text x="380.0" y="279.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">get or return whole pages; µs per call</text>
+<text x="40.0" y="332.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Most calls are served from the top layers without locks or syscalls. The allocator gets memory from the kernel</text>
+<text x="40.0" y="351.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">in big chunks and returns it (madvise DONTNEED, munmap) on its own schedule, which is why RSS doesn't drop</text>
+<text x="40.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the moment you free().</text>
+</svg>

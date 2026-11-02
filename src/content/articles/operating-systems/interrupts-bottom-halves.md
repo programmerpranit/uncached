@@ -135,10 +135,10 @@ They have awkward semantics (they run in softirq context but are serialized per 
 
 ## References
 
-1. J. Mogul, K. K. Ramakrishnan. [Eliminating Receive Livelock in an Interrupt-driven Kernel](https://www.usenix.org/legacy/publications/library/proceedings/sd96/full_papers/mogul.pdf). *ACM TOCS*, 1997 (earlier version at USENIX 1996).
+1. J. Mogul, K. K. Ramakrishnan. *Eliminating Receive Livelock in an Interrupt-driven Kernel*. *ACM TOCS*, 1997 (earlier version at USENIX 1996).
 2. Linux kernel docs. [Scaling in the Linux Networking Stack](https://docs.kernel.org/networking/scaling.html) (RSS, RPS, RFS, XPS).
 3. Linux kernel docs. [NAPI](https://docs.kernel.org/networking/napi.html).
 4. R. Love. *Linux Kernel Development*, 3rd ed., chapters 7–8: Interrupts and Interrupt Handlers; Bottom Halves and Deferring Work. Addison-Wesley, 2010.
 5. Linux kernel docs. [Workqueue](https://docs.kernel.org/core-api/workqueue.html).
 6. Linux kernel docs. [NO_HZ: Reducing Scheduling-Clock Ticks](https://docs.kernel.org/timers/no_hz.html).
-7. Red Hat. [Monitoring and Tuning the RHEL Network Stack](https://access.redhat.com/sites/default/files/attachments/20150325_network_performance_tuning.pdf).
+7. Linux kernel docs. [Generic IRQ handling](https://docs.kernel.org/core-api/genericirq.html).

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 363" width="360" height="363" role="img" aria-label="glibc malloc, jemalloc, tcmalloc, mimalloc and musl compared" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="363" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Allocators compared</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">different trade-offs</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">glibc ptmalloc2</text>
+<text x="16.0" y="103.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">default on most Linux</text>
+<text x="16.0" y="130.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">jemalloc</text>
+<text x="16.0" y="147.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">FreeBSD, Rust (formerly), Redis</text>
+<text x="16.0" y="174.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">tcmalloc</text>
+<text x="16.0" y="191.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Google, Chromium (partly)</text>
+<text x="16.0" y="218.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">mimalloc</text>
+<text x="16.0" y="235.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Microsoft, many apps</text>
+<text x="16.0" y="262.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">musl mallocng</text>
+<text x="16.0" y="279.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Alpine Linux</text>
+<text x="16.0" y="314.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Swap via LD_PRELOAD; benchmark</text>
+<text x="16.0" y="333.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">throughput and RSS over days.</text>
+</svg>
