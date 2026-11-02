@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 337" width="360" height="337" role="img" aria-label="Synchronization primitives built on futexes: mutexes, condition variables, rwlocks, once, join, PI and robust futexes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="337" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Built on futexes</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">most user-space sync on Linux</text>
+<text x="16.0" y="86.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">mutexes</text>
+<text x="16.0" y="110.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">condition variables</text>
+<text x="16.0" y="134.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">rwlocks, semaphores, barriers</text>
+<text x="16.0" y="158.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">one-time init</text>
+<text x="16.0" y="182.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">thread join</text>
+<text x="16.0" y="206.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">PI futexes</text>
+<text x="16.0" y="230.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">robust futexes</text>
+<text x="16.0" y="254.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">futex_waitv</text>
+<text x="16.0" y="288.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Windows: WaitOnAddress;</text>
+<text x="16.0" y="307.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">macOS: os_unfair_lock / ulock.</text>
+</svg>

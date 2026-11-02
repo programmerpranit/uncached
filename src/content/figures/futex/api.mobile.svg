@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 361" width="360" height="361" role="img" aria-label="The futex wait and wake operations and the kernel hash table of waiting threads" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="361" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">futex wait and wake</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the lock is just a word in user memory</text>
+<rect x="16.0" y="86.0" width="328.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="109.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">FUTEX_WAIT(&amp;w, expected)</text>
+<text x="180.0" y="125.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="400">sleep only if w == expected</text>
+<rect x="16.0" y="150.0" width="328.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="173.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">FUTEX_WAKE(&amp;w, n)</text>
+<text x="180.0" y="189.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="400">wake up to n waiters</text>
+<text x="16.0" y="236.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Kernel: hash(address) → bucket</text>
+<text x="16.0" y="255.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">with a queue of sleepers. Nothing</text>
+<text x="16.0" y="274.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">exists when nobody waits.</text>
+<text x="16.0" y="312.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Check-and-sleep is atomic, so</text>
+<text x="16.0" y="331.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">no wakeup is ever lost.</text>
+</svg>

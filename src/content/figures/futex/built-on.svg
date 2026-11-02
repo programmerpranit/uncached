@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 449" width="880" height="449" role="img" aria-label="Synchronization primitives built on futexes: mutexes, condition variables, rwlocks, once, join, PI and robust futexes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="449" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What gets built on futexes</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one primitive under most synchronization in Linux user space</text>
+<rect x="40.0" y="82.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="102.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">mutexes</text>
+<text x="300.0" y="102.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">glibc pthread_mutex, std::mutex, Rust std Mutex</text>
+<rect x="40.0" y="118.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="138.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">condition variables</text>
+<text x="300.0" y="138.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">pthread_cond, std::condition_variable (sequence-number futex)</text>
+<rect x="40.0" y="154.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="174.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">rwlocks, semaphores, barriers</text>
+<text x="300.0" y="174.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">pthread_rwlock, sem_t, std::latch, std::barrier</text>
+<rect x="40.0" y="190.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="210.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">one-time init</text>
+<text x="300.0" y="210.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">pthread_once, std::call_once, Rust Once / OnceLock</text>
+<rect x="40.0" y="226.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="246.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">thread join</text>
+<text x="300.0" y="246.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">the kernel clears and futex-wakes the TID word on thread exit</text>
+<rect x="40.0" y="262.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="282.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">PI futexes</text>
+<text x="300.0" y="282.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">priority inheritance: kernel tracks owner TID in the word</text>
+<rect x="40.0" y="298.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="318.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">robust futexes</text>
+<text x="300.0" y="318.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">kernel marks locks of a dead owner (EOWNERDEAD)</text>
+<rect x="40.0" y="334.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="56.0" y="354.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">futex_waitv</text>
+<text x="300.0" y="354.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">wait on many futexes at once (Linux 5.16; Wine/Proton)</text>
+<text x="40.0" y="400.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Go and Java park goroutines/threads with futexes underneath their own runtimes, and Windows' WaitOnAddress /</text>
+<text x="40.0" y="419.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">WakeByAddress (and macOS's os_unfair_lock / __ulock) provide the same idea on other systems.</text>
+</svg>
