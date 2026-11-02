@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 256" width="360" height="256" role="img" aria-label="sendfile passes page cache references to the socket so the NIC reads data directly" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="256" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">sendfile()</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">no CPU copy of the payload</text>
+<text x="16.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">disk → page cache</text>
+<text x="344.0" y="86.0" font-size="11.5" fill="#a69d8e" text-anchor="end" font-weight="700">DMA</text>
+<text x="16.0" y="116.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">page cache → socket</text>
+<text x="344.0" y="116.0" font-size="11.5" fill="#7cc47f" text-anchor="end" font-weight="700">page refs, no copy</text>
+<text x="16.0" y="146.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">socket → NIC</text>
+<text x="344.0" y="146.0" font-size="11.5" fill="#a69d8e" text-anchor="end" font-weight="700">DMA</text>
+<text x="16.0" y="188.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">One syscall. With scatter-gather</text>
+<text x="16.0" y="207.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">DMA the NIC reads page-cache</text>
+<text x="16.0" y="226.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">pages directly.</text>
+</svg>

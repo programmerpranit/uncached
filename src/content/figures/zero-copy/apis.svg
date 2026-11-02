@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 439" width="880" height="439" role="img" aria-label="Linux zero-copy APIs: sendfile, splice, copy_file_range, MSG_ZEROCOPY and mmap" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="439" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The zero-copy toolbox on Linux</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">which call moves bytes between what</text>
+<rect x="40.0" y="84.0" width="800.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="104.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">sendfile(out, in_fd, …)</text>
+<text x="380.0" y="104.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">file → socket (or any fd)</text>
+<text x="380.0" y="121.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">use: static files, Kafka consumers</text>
+<rect x="40.0" y="140.0" width="800.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="160.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">splice(in, out, …)</text>
+<text x="380.0" y="160.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">fd ↔ pipe, moving page references</text>
+<text x="380.0" y="177.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">use: proxies: socket → pipe → socket</text>
+<rect x="40.0" y="196.0" width="800.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="216.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">copy_file_range(…)</text>
+<text x="380.0" y="216.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">file → file, in kernel (reflink on Btrfs/XFS)</text>
+<text x="380.0" y="233.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">use: cp, file copies, backups</text>
+<rect x="40.0" y="252.0" width="800.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="56.0" y="272.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">MSG_ZEROCOPY / io_uring send_zc</text>
+<text x="380.0" y="272.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">user buffer → NIC without copying</text>
+<text x="380.0" y="289.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">use: large sends from app memory</text>
+<rect x="40.0" y="308.0" width="800.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="328.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">mmap + write</text>
+<text x="380.0" y="328.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">file pages mapped, one copy on write</text>
+<text x="380.0" y="345.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">use: simple, but faults + TLB cost</text>
+<text x="40.0" y="390.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">TLS complicates zero copy: the bytes must be encrypted on the way out. Kernel TLS (kTLS) moves record encryption</text>
+<text x="40.0" y="409.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">into the kernel (or the NIC), so sendfile works over HTTPS again; Netflix serves video this way from FreeBSD.</text>
+</svg>

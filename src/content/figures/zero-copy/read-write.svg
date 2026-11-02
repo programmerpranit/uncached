@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 409" width="880" height="409" role="img" aria-label="The read and write path copies data from the page cache to user space and back into the socket buffer" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="409" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Serving a file the classic way: read() + write()</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">four copies (two by the CPU) and four mode switches per chunk</text>
+<rect x="40.0" y="90.0" width="800.0" height="60.0" rx="3" fill="#5fb3a1" fill-opacity="0.06" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="110.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="600">user space</text>
+<rect x="40.0" y="160.0" width="800.0" height="110.0" rx="3" fill="#e5534b" fill-opacity="0.06" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="180.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="600">kernel</text>
+<rect x="40.0" y="280.0" width="800.0" height="50.0" rx="3" fill="#a69d8e" fill-opacity="0.06" stroke="#a69d8e" stroke-width="1"/>
+<text x="56.0" y="300.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="600">hardware</text>
+<rect x="150.0" y="284.0" width="120.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="210.0" y="308.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">disk</text>
+<rect x="680.0" y="284.0" width="120.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="740.0" y="308.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">NIC</text>
+<rect x="160.0" y="200.0" width="170.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="245.0" y="224.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">page cache</text>
+<rect x="520.0" y="200.0" width="170.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="605.0" y="224.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">socket buffer</text>
+<rect x="340.0" y="100.0" width="200.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="124.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">app buffer</text>
+<line x1="210.0" y1="284.0" x2="230.0" y2="242.0" stroke="#a69d8e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="180.0" y="264.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">DMA</text>
+<line x1="260.0" y1="200.0" x2="360.0" y2="142.0" stroke="#e5534b" stroke-width="1.6" marker-end="url(#ah1)"/>
+<text x="250.0" y="166.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">CPU copy</text>
+<line x1="520.0" y1="142.0" x2="600.0" y2="198.0" stroke="#e5534b" stroke-width="1.6" marker-end="url(#ah1)"/>
+<text x="570.0" y="166.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">CPU copy</text>
+<line x1="660.0" y1="242.0" x2="720.0" y2="282.0" stroke="#a69d8e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="700.0" y="262.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">DMA</text>
+<text x="40.0" y="360.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each read() copies from the page cache into your buffer and each write() copies it back into the kernel, burning</text>
+<text x="40.0" y="379.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">CPU and memory bandwidth and polluting caches, just to move bytes the program never looks at.</text>
+</svg>

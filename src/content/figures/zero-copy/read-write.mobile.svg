@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 286" width="360" height="286" role="img" aria-label="The read and write path copies data from the page cache to user space and back into the socket buffer" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="286" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">read() + write()</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">2 CPU copies, 4 switches</text>
+<text x="16.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">disk → page cache</text>
+<text x="344.0" y="86.0" font-size="11.5" fill="#a69d8e" text-anchor="end" font-weight="700">DMA</text>
+<text x="16.0" y="116.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">page cache → app buffer</text>
+<text x="344.0" y="116.0" font-size="11.5" fill="#e5534b" text-anchor="end" font-weight="700">CPU copy</text>
+<text x="16.0" y="146.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">app buffer → socket buffer</text>
+<text x="344.0" y="146.0" font-size="11.5" fill="#e5534b" text-anchor="end" font-weight="700">CPU copy</text>
+<text x="16.0" y="176.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">socket → NIC</text>
+<text x="344.0" y="176.0" font-size="11.5" fill="#a69d8e" text-anchor="end" font-weight="700">DMA</text>
+<text x="16.0" y="218.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Two CPU copies and four mode</text>
+<text x="16.0" y="237.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">switches per chunk for bytes</text>
+<text x="16.0" y="256.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the app never looks at.</text>
+</svg>
