@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 357" width="360" height="357" role="img" aria-label="A producer publishes data with a release store and a consumer reads it with an acquire load" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="357" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Release / acquire</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">order the flag after the data</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">producer</text>
+<text x="16.0" y="110.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">data = 42</text>
+<text x="16.0" y="132.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">ready.store(true, release)</text>
+<text x="16.0" y="180.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">consumer</text>
+<text x="16.0" y="204.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="400">while (!ready.load(acquire)) {}</text>
+<text x="16.0" y="226.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">use(data)  // sees 42</text>
+<text x="16.0" y="270.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Release keeps earlier writes before</text>
+<text x="16.0" y="289.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the flag; acquire keeps later reads</text>
+<text x="16.0" y="308.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">after it. Without them, ARM may show</text>
+<text x="16.0" y="327.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ready = true with stale data.</text>
+</svg>

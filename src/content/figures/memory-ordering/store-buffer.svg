@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 434" width="880" height="434" role="img" aria-label="Store-buffering litmus test where both threads read zero because stores wait in store buffers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="434" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Store buffering: both threads can read 0, even on x86</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">x = y = 0 initially; each core's store sits in its store buffer while its load runs</text>
+<rect x="40.0" y="92.0" width="380.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="230.0" y="116.7" font-size="13" fill="#5fb3a1" text-anchor="middle" font-weight="600">core 1</text>
+<text x="60.0" y="160.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="400">1. x = 1</text>
+<text x="60.0" y="186.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="400">2. r1 = y</text>
+<rect x="240.0" y="148.0" width="160.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="320.0" y="168.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="600">store buffer</text>
+<text x="320.0" y="184.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">x = 1 (pending)</text>
+<rect x="460.0" y="92.0" width="380.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="650.0" y="116.7" font-size="13" fill="#9b8cff" text-anchor="middle" font-weight="600">core 2</text>
+<text x="480.0" y="160.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="400">1. y = 1</text>
+<text x="480.0" y="186.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="400">2. r2 = x</text>
+<rect x="660.0" y="148.0" width="160.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="740.0" y="168.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="600">store buffer</text>
+<text x="740.0" y="184.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">y = 1 (pending)</text>
+<rect x="260.0" y="250.0" width="360.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="274.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">shared memory / caches:  x = 0, y = 0</text>
+<line x1="240.0" y1="194.0" x2="330.0" y2="248.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah0)" stroke-dasharray="4 3"/>
+<line x1="660.0" y1="194.0" x2="560.0" y2="248.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah0)" stroke-dasharray="4 3"/>
+<text x="440.0" y="326.0" font-size="12.5" fill="#e5534b" text-anchor="middle" font-weight="600">result: r1 = 0 and r2 = 0   (impossible under "one global order of all operations")</text>
+<text x="40.0" y="366.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each store waits in its core's store buffer while the next load reads memory directly. Neither store is visible</text>
+<text x="40.0" y="385.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">yet, so both loads see 0. x86 allows exactly this one reordering (a store followed by a load). A full fence</text>
+<text x="40.0" y="404.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">(mfence, or a seq_cst operation) between the store and the load forbids it, at a cost of tens of cycles.</text>
+</svg>

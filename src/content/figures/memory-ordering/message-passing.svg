@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 348" width="880" height="348" role="img" aria-label="A producer publishes data with a release store and a consumer reads it with an acquire load" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="348" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Publishing data safely: release / acquire</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a flag may become visible before the data it guards, unless the accesses are ordered</text>
+<rect x="40.0" y="90.0" width="360.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="220.0" y="114.7" font-size="13" fill="#5fb3a1" text-anchor="middle" font-weight="600">producer</text>
+<rect x="480.0" y="90.0" width="360.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="660.0" y="114.7" font-size="13" fill="#9b8cff" text-anchor="middle" font-weight="600">consumer</text>
+<text x="60.0" y="164.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="400">data = 42</text>
+<text x="60.0" y="192.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="400">ready.store(true, release)</text>
+<text x="500.0" y="164.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="400">while (!ready.load(acquire)) {}</text>
+<text x="500.0" y="192.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="400">use(data)   // guaranteed 42</text>
+<path d="M330 186 C 400 220, 440 220, 500 164" fill="none" stroke="#7cc47f" stroke-width="1.5" marker-end="url(#ah0)"/>
+<text x="415.0" y="236.0" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="400">synchronizes-with</text>
+<text x="40.0" y="280.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Release: no earlier read or write may be moved after this store. Acquire: no later read or write may be moved</text>
+<text x="40.0" y="299.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">before this load. When the acquire load sees the released value, everything before the release is visible. With</text>
+<text x="40.0" y="318.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">plain (non-atomic) or relaxed accesses, an ARM core may show ready = true and still read the old data.</text>
+</svg>
