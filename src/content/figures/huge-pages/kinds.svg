@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 407" width="880" height="407" role="img" aria-label="Comparison of explicit hugetlbfs huge pages and transparent huge pages" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="407" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Two ways to get huge pages on Linux</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">explicit, reserved pages vs transparent, best-effort pages</text>
+<text x="240.0" y="100.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">explicit (hugetlbfs)</text>
+<text x="560.0" y="100.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">transparent (THP)</text>
+<rect x="40.0" y="112.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="132.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">how</text>
+<text x="240.0" y="132.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">reserve nr_hugepages; MAP_HUGETLB, hugetlbfs</text>
+<text x="560.0" y="132.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">kernel uses 2 MiB pages when it can</text>
+<rect x="40.0" y="148.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="168.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">guarantee</text>
+<text x="240.0" y="168.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">reserved at boot/runtime: guaranteed</text>
+<text x="560.0" y="168.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">best effort: falls back to 4 KiB</text>
+<rect x="40.0" y="184.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="204.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">swappable</text>
+<text x="240.0" y="204.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">no (pinned)</text>
+<text x="560.0" y="204.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">yes (split first)</text>
+<rect x="40.0" y="220.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="240.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">app changes</text>
+<text x="240.0" y="240.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">must ask for them</text>
+<text x="560.0" y="240.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">none (or madvise(MADV_HUGEPAGE))</text>
+<rect x="40.0" y="256.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="276.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">risks</text>
+<text x="240.0" y="276.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">reserved memory unusable by others</text>
+<text x="560.0" y="276.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">compaction stalls, bloat</text>
+<rect x="40.0" y="292.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="312.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">used by</text>
+<text x="240.0" y="312.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Oracle, PostgreSQL, DPDK, VMs</text>
+<text x="560.0" y="312.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">JVM, general apps, tcmalloc</text>
+<text x="40.0" y="358.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">1 GiB pages are only available through hugetlbfs (usually reserved at boot). Since Linux 6.8, multi-size THP (mTHP)</text>
+<text x="40.0" y="377.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">can also use intermediate sizes like 16–64 KiB, which helps on ARM and for memory that would waste a full 2 MiB.</text>
+</svg>

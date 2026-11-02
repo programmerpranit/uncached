@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 415" width="880" height="415" role="img" aria-label="Mapping 1 GiB with 4 KiB, 2 MiB and 1 GiB pages: page table entries, walk depth and TLB reach" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="415" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">One 2 MiB page replaces 512 small ones</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">mapping 1 GiB of memory with different page sizes (x86-64)</text>
+<rect x="40.0" y="84.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="104.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">4 KiB pages</text>
+<text x="220.0" y="104.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">262,144 PTEs · 2 MiB of page tables · 4-level walk</text>
+<text x="220.0" y="122.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">TLB covers ~6 MiB</text>
+<rect x="40.0" y="142.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="162.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">2 MiB pages</text>
+<text x="220.0" y="162.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">512 entries · 4 KiB of tables · 3-level walk</text>
+<text x="220.0" y="180.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">TLB covers ~3 GiB</text>
+<rect x="40.0" y="200.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="220.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">1 GiB pages</text>
+<text x="220.0" y="220.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">1 entry · 2-level walk</text>
+<text x="220.0" y="238.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">few entries, huge reach</text>
+<rect x="40.0" y="284.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="303.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<rect x="42.0" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="54.5" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="66.9" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="79.3" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="91.8" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="104.2" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="116.7" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="129.1" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="141.6" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="154.1" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="166.5" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="178.9" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="191.4" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="203.8" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="216.3" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="228.8" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="241.2" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="253.6" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="266.1" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="278.5" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="291.0" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="303.4" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="315.9" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="328.3" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="340.8" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="353.2" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="365.7" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="378.1" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="390.6" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="403.0" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="415.5" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="427.9" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="440.4" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="452.8" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="465.3" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="477.8" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="490.2" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="502.6" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="515.1" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="527.5" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="540.0" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="552.5" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="564.9" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="577.4" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="589.8" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="602.2" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="614.7" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="627.1" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="639.6" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="652.0" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="664.5" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="676.9" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="689.4" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="701.8" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="714.3" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="726.8" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="739.2" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="751.6" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="764.1" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="776.5" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="789.0" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="801.4" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="813.9" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<rect x="826.3" y="288.0" width="11.0" height="22.0" rx="1" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<text x="440.0" y="334.0" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="400">one 2 MiB page = 512 contiguous 4 KiB frames, aligned to 2 MiB, mapped by one PMD entry</text>
+<text x="40.0" y="366.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Benefits: fewer TLB misses, shorter page walks, less page-table memory, fewer page faults. The catch: the kernel</text>
+<text x="40.0" y="385.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">needs 2 MiB of physically contiguous, aligned free memory, which gets hard to find on a long-running system.</text>
+</svg>

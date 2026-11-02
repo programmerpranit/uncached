@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 315" width="360" height="315" role="img" aria-label="Mapping 1 GiB with 4 KiB, 2 MiB and 1 GiB pages: page table entries, walk depth and TLB reach" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="315" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">2 MiB = 512 × 4 KiB</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">mapping 1 GiB</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">4 KiB pages</text>
+<text x="16.0" y="103.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">TLB covers ~6 MiB</text>
+<text x="16.0" y="130.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">2 MiB pages</text>
+<text x="16.0" y="147.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">TLB covers ~3 GiB</text>
+<text x="16.0" y="174.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">1 GiB pages</text>
+<text x="16.0" y="191.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">few entries, huge reach</text>
+<text x="16.0" y="228.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Fewer TLB misses, shorter walks,</text>
+<text x="16.0" y="247.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">less page-table memory. Needs</text>
+<text x="16.0" y="266.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">2 MiB of contiguous, aligned</text>
+<text x="16.0" y="285.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">free RAM, which fragments away.</text>
+</svg>

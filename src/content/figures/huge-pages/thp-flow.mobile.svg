@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 344" width="360" height="344" role="img" aria-label="How transparent huge pages are allocated at fault time, compacted, collapsed by khugepaged and split" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="344" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">How THP allocates</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">at fault time or later</text>
+<circle cx="26.0" cy="86.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1.5"/>
+<text x="26.0" y="90.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="700">1</text>
+<text x="44.0" y="90.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">fault in eligible region</text>
+<circle cx="26.0" cy="122.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1.5"/>
+<text x="26.0" y="126.0" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="700">2</text>
+<text x="44.0" y="126.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">free 2 MiB block → map it</text>
+<circle cx="26.0" cy="158.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="26.0" y="162.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="700">3</text>
+<text x="44.0" y="162.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="400">none → compact, defer or 4 KiB</text>
+<circle cx="26.0" cy="194.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1.5"/>
+<text x="26.0" y="198.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="700">4</text>
+<text x="44.0" y="198.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="400">khugepaged collapses later</text>
+<circle cx="26.0" cy="230.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1.5"/>
+<text x="26.0" y="234.0" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="700">5</text>
+<text x="44.0" y="234.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">pressure → split again</text>
+<text x="16.0" y="276.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Settings: enabled and defrag in</text>
+<text x="16.0" y="295.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">/sys/kernel/mm/transparent_hugepage.</text>
+<text x="16.0" y="314.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Many DBs use never or madvise.</text>
+</svg>
