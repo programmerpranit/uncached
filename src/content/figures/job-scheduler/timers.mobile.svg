@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 439" width="360" height="439" role="img" aria-label="Database polling versus hierarchical timing wheels for storing timers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="439" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">DB polling vs timing wheel</text>
+<rect x="16.0" y="72.0" width="328.0" height="140.0" rx="3" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="96.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">DB polling</text>
+<text x="28.0" y="124.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· due_at index + poll every 1–5 s</text>
+<text x="28.0" y="146.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· durable, simple, easy to inspect</text>
+<text x="28.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· precision ≈ poll interval</text>
+<text x="28.0" y="190.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· good to ~thousands of runs/s</text>
+<rect x="16.0" y="224.0" width="328.0" height="140.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="248.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Hierarchical timing wheel</text>
+<text x="28.0" y="276.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· buckets per second / minute / hour</text>
+<text x="28.0" y="298.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· O(1) insert and expire, in memory</text>
+<text x="28.0" y="320.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· millisecond precision</text>
+<text x="28.0" y="342.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">· needs a durable log to rebuild</text>
+<text x="16.0" y="390.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Common: durable store + in-memory</text>
+<text x="16.0" y="409.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">wheel for the next few minutes.</text>
+</svg>

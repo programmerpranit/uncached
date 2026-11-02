@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 417" width="360" height="417" role="img" aria-label="Job scheduler architecture: API, job store, schedulers, queue and workers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="417" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Scheduler architecture</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">"when" separate from "run"</text>
+<rect x="16.0" y="72.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="92.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">API</text>
+<text x="180.0" y="108.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">create / cancel jobs</text>
+<line x1="180.0" y1="118.0" x2="180.0" y2="128.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="130.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="150.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">job store</text>
+<text x="180.0" y="166.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">definitions + runs</text>
+<line x1="180.0" y1="176.0" x2="180.0" y2="186.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="188.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="208.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="600">schedulers</text>
+<text x="180.0" y="224.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="400">poll due runs, partitioned</text>
+<line x1="180.0" y1="234.0" x2="180.0" y2="244.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="246.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="266.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">queue</text>
+<text x="180.0" y="282.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">ready runs</text>
+<line x1="180.0" y1="292.0" x2="180.0" y2="302.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="304.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="324.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">workers</text>
+<text x="180.0" y="340.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">execute, heartbeat, report</text>
+<text x="16.0" y="368.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Workers report status back to the</text>
+<text x="16.0" y="387.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">job store, the source of truth.</text>
+</svg>

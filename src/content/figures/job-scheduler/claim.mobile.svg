@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 393" width="360" height="393" role="img" aria-label="Claiming due runs with FOR UPDATE SKIP LOCKED and a unique run key" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="393" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Claiming due runs</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">atomic claim per row</text>
+<rect x="16.0" y="72.0" width="328.0" height="206.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="24.0" y="96.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">UPDATE runs SET state='queued', owner=:me</text>
+<text x="24.0" y="118.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">WHERE id IN (</text>
+<text x="24.0" y="140.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400"> SELECT id FROM runs</text>
+<text x="24.0" y="162.0" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="400"> WHERE state='scheduled' AND due_at &lt;= now()</text>
+<text x="24.0" y="184.0" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="400">  AND partition = ANY(:my_partitions)</text>
+<text x="24.0" y="206.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400"> ORDER BY due_at LIMIT 100</text>
+<text x="24.0" y="228.0" font-size="10" fill="#ff5b2e" text-anchor="start" font-weight="400"> FOR UPDATE SKIP LOCKED)</text>
+<text x="24.0" y="250.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">RETURNING id;</text>
+<text x="16.0" y="306.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="400">SKIP LOCKED: no two schedulers</text>
+<text x="16.0" y="325.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="400">claim the same row.</text>
+<text x="16.0" y="344.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Unique (job_id, scheduled_time)</text>
+<text x="16.0" y="363.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">makes run creation idempotent.</text>
+</svg>

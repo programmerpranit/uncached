@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 329" width="880" height="329" role="img" aria-label="Database polling versus hierarchical timing wheels for storing timers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="329" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Timer storage: poll the DB vs a timing wheel</text>
+<rect x="40.0" y="80.0" width="390.0" height="160.0" rx="3" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="108.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">DB polling</text>
+<text x="56.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· due_at index + poll every 1–5 s</text>
+<text x="56.0" y="164.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· durable, simple, easy to inspect</text>
+<text x="56.0" y="188.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· precision ≈ poll interval</text>
+<text x="56.0" y="212.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· good to ~thousands of runs/s</text>
+<rect x="450.0" y="80.0" width="390.0" height="160.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="466.0" y="108.0" font-size="14" fill="#5fb3a1" text-anchor="start" font-weight="700">Hierarchical timing wheel</text>
+<text x="466.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· buckets per second / minute / hour</text>
+<text x="466.0" y="164.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· O(1) insert and expire, in memory</text>
+<text x="466.0" y="188.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· millisecond precision</text>
+<text x="466.0" y="212.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">· needs a durable log to rebuild</text>
+<text x="40.0" y="280.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Most systems combine them: store all runs durably, and load the next few minutes of due runs into an</text>
+<text x="40.0" y="299.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">in-memory wheel or delay queue for precise firing (as Kafka does for request timeouts, and Netty for timers).</text>
+</svg>

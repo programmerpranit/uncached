@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 267" width="360" height="267" role="img" aria-label="Worker leases with heartbeats; when a worker crashes, its lease expires and another worker retries" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="267" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Leases and retries</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ownership = live lease</text>
+<text x="16.0" y="82.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">worker 1 takes run 881, lease 30 s</text>
+<text x="16.0" y="106.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">heartbeats renew the lease</text>
+<text x="16.0" y="130.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">worker 1 crashes ✗</text>
+<text x="16.0" y="154.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">lease expires</text>
+<text x="16.0" y="178.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="400">worker 2 retries: attempt 2</text>
+<text x="16.0" y="218.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Attempt 1 may have half-finished,</text>
+<text x="16.0" y="237.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">so jobs must be idempotent.</text>
+</svg>

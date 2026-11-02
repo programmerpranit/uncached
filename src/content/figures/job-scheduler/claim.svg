@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 369" width="880" height="369" role="img" aria-label="Claiming due runs with FOR UPDATE SKIP LOCKED and a unique run key" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="369" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Finding due runs without double-firing</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each scheduler claims rows atomically</text>
+<rect x="40.0" y="80.0" width="520.0" height="200.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="108.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">UPDATE runs SET state='queued', owner=:me</text>
+<text x="56.0" y="130.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">WHERE id IN (</text>
+<text x="56.0" y="152.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">  SELECT id FROM runs</text>
+<text x="56.0" y="174.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">  WHERE state='scheduled' AND due_at &lt;= now()</text>
+<text x="56.0" y="196.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">    AND partition = ANY(:my_partitions)</text>
+<text x="56.0" y="218.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">  ORDER BY due_at LIMIT 100</text>
+<text x="56.0" y="240.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="400">  FOR UPDATE SKIP LOCKED)</text>
+<text x="56.0" y="262.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">RETURNING id;</text>
+<text x="590.0" y="110.0" font-size="11.5" fill="#ff5b2e" text-anchor="start" font-weight="600">SKIP LOCKED</text>
+<text x="590.0" y="129.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">two schedulers never block on or</text>
+<text x="590.0" y="148.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">claim the same row</text>
+<text x="590.0" y="186.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="600">partition</text>
+<text x="590.0" y="205.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">each scheduler owns a slice of</text>
+<text x="590.0" y="224.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">jobs; slices move on failure</text>
+<text x="590.0" y="262.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="600">index on (state, due_at)</text>
+<text x="590.0" y="281.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">the poll is a cheap range scan</text>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Unique key (job_id, scheduled_time) on runs makes creating the next run idempotent: two schedulers racing</text>
+<text x="40.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">to materialize the 09:00 run of job 42 produce one row, not two.</text>
+</svg>

@@ -103,7 +103,7 @@ Because the distribution is learned, the detector **adapts**: on a jittery netwo
 | **Redis Cluster** | Cluster bus: nodes ping random peers with gossip sections. PFAIL → FAIL when a majority of masters agree. |
 | **Akka Cluster** | Gossip of cluster state (CRDT-like merge), phi accrual failure detector |
 | **Bitcoin / Ethereum** | Gossip of transactions and blocks across peer-to-peer networks |
-| **Uber Ringpop, ScyllaDB, CockroachDB** | Gossip for membership and cluster metadata (CockroachDB gossips node addresses and liveness-related info, with Raft for data) |
+| **Uber Ringpop, CockroachDB** | Gossip for membership and cluster metadata (CockroachDB gossips node addresses and liveness-related info, with Raft for data) |
 
 ### Use case walk-through: a 2,000-node cache cluster
 
