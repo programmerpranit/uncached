@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 403" width="880" height="403" role="img" aria-label="Approximate costs of a function call, syscall, coroutine switch, thread switch, process switch and cache refill" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="403" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Rough costs, from cheapest to most expensive</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">order of magnitude on a modern x86 server (log scale, varies widely)</text>
+<text x="40.0" y="100.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">function call</text>
+<rect x="400.0" y="88.0" width="16.5" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="426.5" y="103.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">~1 ns</text>
+<text x="40.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">system call (no switch)</text>
+<rect x="400.0" y="128.0" width="99.0" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="509.0" y="143.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">~100 ns</text>
+<text x="40.0" y="180.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">user-space coroutine / goroutine switch</text>
+<rect x="400.0" y="168.0" width="115.5" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.7" stroke="#5fb3a1" stroke-width="1"/>
+<text x="525.5" y="183.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">~100–200 ns</text>
+<text x="40.0" y="220.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">thread switch, same process</text>
+<rect x="400.0" y="208.0" width="181.5" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="591.5" y="223.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~1–2 µs</text>
+<text x="40.0" y="260.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">process switch (+ address space)</text>
+<rect x="400.0" y="248.0" width="204.6" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="614.6" y="263.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~2–5 µs</text>
+<text x="40.0" y="300.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">switch + cold cache refill</text>
+<rect x="400.0" y="288.0" width="313.5" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="723.5" y="303.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~10–100+ µs</text>
+<text x="40.0" y="354.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Measured costs vary with CPU, kernel version, mitigations (KPTI, retpolines) and working-set size. The pattern is</text>
+<text x="40.0" y="373.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">robust: a kernel switch costs microseconds, a user-space switch costs ~100 ns, and lost cache state can dwarf both.</text>
+</svg>

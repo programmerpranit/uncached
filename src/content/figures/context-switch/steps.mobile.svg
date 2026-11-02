@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 413" width="360" height="413" role="img" aria-label="Steps of a context switch: trap, save registers, schedule, switch address space, restore, return" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="413" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Inside a context switch</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">save A, pick next, restore B</text>
+<rect x="16.0" y="84.0" width="328.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="103.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">trap into kernel</text>
+<rect x="16.0" y="122.0" width="328.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="141.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">save A's registers</text>
+<rect x="16.0" y="160.0" width="328.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="179.3" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">scheduler picks B</text>
+<rect x="16.0" y="198.0" width="328.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="217.3" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">switch address space</text>
+<rect x="16.0" y="236.0" width="328.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="255.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">restore B's registers</text>
+<rect x="16.0" y="274.0" width="328.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="293.3" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">return to user space</text>
+<text x="16.0" y="326.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">direct: ~1–3 µs</text>
+<text x="16.0" y="345.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">indirect: cold caches, TLB,</text>
+<text x="16.0" y="364.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">branch predictors; can add</text>
+<text x="16.0" y="383.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">tens of µs after the switch</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 429" width="880" height="429" role="img" aria-label="Steps of a context switch: trap, save registers, schedule, switch address space, restore, return" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="429" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What happens in a context switch</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">thread A blocks or is preempted; the kernel saves it and resumes thread B</text>
+<rect x="40.0" y="96.0" width="250.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="165.0" y="117.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">trap into kernel</text>
+<text x="310.0" y="117.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">syscall, interrupt or timer tick</text>
+<line x1="165.0" y1="130.0" x2="165.0" y2="140.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="40.0" y="140.0" width="250.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="165.0" y="161.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">save A's registers</text>
+<text x="310.0" y="161.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">general, stack pointer, PC, flags</text>
+<line x1="165.0" y1="174.0" x2="165.0" y2="184.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="40.0" y="184.0" width="250.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="165.0" y="205.3" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">scheduler picks B</text>
+<text x="310.0" y="205.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">runqueue lookup, accounting</text>
+<line x1="165.0" y1="218.0" x2="165.0" y2="228.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="40.0" y="228.0" width="250.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="165.0" y="249.3" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">switch address space</text>
+<text x="310.0" y="249.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">load CR3 (if B is another process)</text>
+<line x1="165.0" y1="262.0" x2="165.0" y2="272.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="40.0" y="272.0" width="250.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="165.0" y="293.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">restore B's registers</text>
+<text x="310.0" y="293.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">incl. FPU/SIMD state (KBs with AVX-512)</text>
+<line x1="165.0" y1="306.0" x2="165.0" y2="316.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="40.0" y="316.0" width="250.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="165.0" y="337.3" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">return to user space</text>
+<text x="310.0" y="337.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">B continues where it stopped</text>
+<rect x="620.0" y="96.0" width="220.0" height="256.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="730.0" y="120.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">direct cost</text>
+<text x="730.0" y="140.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">~1–3 µs for these steps</text>
+<text x="730.0" y="186.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">indirect cost</text>
+<text x="636.0" y="210.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">cold L1/L2 caches</text>
+<text x="636.0" y="228.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">TLB entries lost or</text>
+<text x="636.0" y="246.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">  unhelpful</text>
+<text x="636.0" y="264.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">branch predictors</text>
+<text x="636.0" y="282.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">  trained on A</text>
+<text x="636.0" y="300.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">can add tens of µs</text>
+<text x="40.0" y="380.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The steps themselves are cheap. What hurts is that B starts with caches, TLB and branch predictor state that</text>
+<text x="40.0" y="399.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">belong to A, and runs slowly until it warms them up again.</text>
+</svg>

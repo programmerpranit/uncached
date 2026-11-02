@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 438" width="880" height="438" role="img" aria-label="Illustrative throughput curve rising to the core count then falling as threads increase" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="438" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Too many threads: throughput falls as switching grows</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">CPU-bound work on 8 cores, increasing thread count (illustrative)</text>
+<line x1="90.0" y1="300.0" x2="730.0" y2="300.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="90.0" y1="300.0" x2="90.0" y2="100.0" stroke="#4a4136" stroke-width="1.3"/>
+<path d="M90.0 276.0 L154.0 252.0 L218.0 206.0 L282.0 120.0 L346.0 124.0 L474.0 140.0 L602.0 168.0 L730.0 210.0" fill="none" stroke="#ff5b2e" stroke-width="2.2"/>
+<circle cx="90.0" cy="276.0" r="3.5" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="90.0" y="318.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<circle cx="154.0" cy="252.0" r="3.5" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="154.0" y="318.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<circle cx="218.0" cy="206.0" r="3.5" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="218.0" y="318.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<circle cx="282.0" cy="120.0" r="3.5" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="282.0" y="318.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">8</text>
+<circle cx="346.0" cy="124.0" r="3.5" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="346.0" y="318.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">16</text>
+<circle cx="474.0" cy="140.0" r="3.5" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="474.0" y="318.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">64</text>
+<circle cx="602.0" cy="168.0" r="3.5" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="602.0" y="318.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">256</text>
+<circle cx="730.0" cy="210.0" r="3.5" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="730.0" y="318.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">1024</text>
+<text x="410.0" y="338.0" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="400">threads</text>
+<text x="82.0" y="104.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">100%</text>
+<text x="82.0" y="204.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">50%</text>
+<line x1="282.0" y1="300.0" x2="282.0" y2="100.0" stroke="#5fb3a1" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="288.0" y="108.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">threads = cores</text>
+<text x="40.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Up to one thread per core, adding threads adds throughput. Beyond that, threads only take turns: each switch</text>
+<text x="40.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">costs CPU, evicts other threads' cache lines and adds lock contention. For blocking I/O, more threads than cores</text>
+<text x="40.0" y="408.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">help, until switches and per-thread memory dominate. That is the case for event loops and async I/O.</text>
+</svg>

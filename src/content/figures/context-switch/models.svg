@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 397" width="880" height="397" role="img" aria-label="Techniques to avoid kernel context switches: event loops, user-space threads, thread-per-core, batching, busy polling" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="397" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Ways to avoid paying for kernel switches</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">do more work per switch, or switch in user space</text>
+<rect x="40.0" y="82.0" width="800.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="104.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">event loop (epoll / io_uring)</text>
+<text x="330.0" y="104.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">one thread per core handles thousands of sockets</text>
+<rect x="40.0" y="130.0" width="800.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="56.0" y="152.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">user-space threads</text>
+<text x="330.0" y="152.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">goroutines, Java virtual threads, async/await: ~100 ns switches</text>
+<rect x="40.0" y="178.0" width="800.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="200.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">thread-per-core</text>
+<text x="330.0" y="200.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">pin threads, no sharing, no migration (Seastar, Glommio)</text>
+<rect x="40.0" y="226.0" width="800.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="248.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">batching</text>
+<text x="330.0" y="248.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">io_uring, recvmmsg, larger buffers: fewer syscalls per byte</text>
+<rect x="40.0" y="274.0" width="800.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="56.0" y="296.0" font-size="12.5" fill="#d77fa1" text-anchor="start" font-weight="700">busy polling</text>
+<text x="330.0" y="296.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">spin instead of sleeping when the wait is shorter than a switch</text>
+<text x="40.0" y="348.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each trades something: event loops need non-blocking code, user-space threads need runtime support (and can</text>
+<text x="40.0" y="367.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">still block a carrier thread on a syscall), busy polling burns a core. Pick based on where the switches come from.</text>
+</svg>
