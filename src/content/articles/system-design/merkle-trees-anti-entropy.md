@@ -78,7 +78,7 @@ This is what makes Merkle trees central to verifiable systems:
 - **IPFS and content-addressed storage:** files are split into blocks and linked in a Merkle DAG, so identical blocks are deduplicated and content can be verified from any untrusted peer.
 - **ZFS and Btrfs:** block checksums are stored in parent blocks up to the root (the uberblock in ZFS), detecting silent data corruption and enabling self-healing from a good copy.
 - **BitTorrent v2:** per-file Merkle trees let peers verify each piece as it arrives.
-- **Amazon S3 and DynamoDB** use Merkle-like structures internally for consistency checks across replicas. Apache Cassandra, Riak and ScyllaDB use them for repair.
+- **Apache Cassandra, Riak and ScyllaDB** use them for replica repair.
 - **Rsync-like sync tools and backup systems** (restic, borg) use content-defined chunks and hash trees for deduplication and incremental transfer.
 
 ## Where it's used
@@ -129,7 +129,7 @@ A Cassandra replica was down for 6 hours. Hinted handoff covered 3 hours (the de
 
 ### What hash function should a Merkle tree use?
 
-For **anti-entropy** inside a trusted system, a fast non-cryptographic or truncated hash is enough (Cassandra uses Murmur3-based tokens and hashes rows into trees). For **verifiable** structures where an adversary might try to forge data (Git, blockchains, CT logs), use a cryptographic hash like SHA-256. Git is migrating from SHA-1 to SHA-256 for this reason.
+For **anti-entropy** inside a trusted system, a fast hash is usually enough, since no one is trying to forge data. For **verifiable** structures where an adversary might try to forge data (Git, blockchains, CT logs), use a cryptographic hash like SHA-256. Git is migrating from SHA-1 to SHA-256 for this reason.
 
 ### Do Merkle trees have to be binary?
 
