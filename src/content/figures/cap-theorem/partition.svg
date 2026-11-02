@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 394" width="880" height="394" role="img" aria-label="During a partition a replica must either refuse the request or answer with possibly stale data" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="394" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A network partition forces a choice</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">client 1 writes x=2 to N1; client 2 then reads x from N2</text>
+<rect x="60.0" y="90.0" width="170.0" height="60.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="145.0" y="117.0" font-size="16" fill="#ede6d8" text-anchor="middle" font-weight="600">N1</text>
+<text x="145.0" y="133.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">x = 2 (new)</text>
+<rect x="650.0" y="90.0" width="170.0" height="60.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="735.0" y="117.0" font-size="16" fill="#ede6d8" text-anchor="middle" font-weight="600">N2</text>
+<text x="735.0" y="133.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">x = 1 (old)</text>
+<line x1="232.0" y1="120.0" x2="648.0" y2="120.0" stroke="#e5534b" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="440.0" y="108.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">✕ partition — replication fails</text>
+<text x="145.0" y="182.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">↑ write x=2 from client 1</text>
+<text x="735.0" y="182.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">↑ read x from client 2</text>
+<rect x="60.0" y="220.0" width="360.0" height="150.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="80.0" y="250.0" font-size="14" fill="#ff5b2e" text-anchor="start" font-weight="700">Choose C (CP)</text>
+<text x="80.0" y="276.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">N2 refuses or blocks the read:</text>
+<text x="80.0" y="295.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">"503 — can’t confirm latest value".</text>
+<text x="80.0" y="314.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Correct, but unavailable on</text>
+<text x="80.0" y="333.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the minority side.</text>
+<rect x="460.0" y="220.0" width="360.0" height="150.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="480.0" y="250.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">Choose A (AP)</text>
+<text x="480.0" y="276.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">N2 answers x = 1 right away.</text>
+<text x="480.0" y="295.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Available, but stale — and if N2</text>
+<text x="480.0" y="314.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">also accepts writes, the sides</text>
+<text x="480.0" y="333.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">diverge and must be reconciled.</text>
+</svg>

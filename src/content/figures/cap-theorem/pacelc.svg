@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 434" width="880" height="434" role="img" aria-label="PACELC quadrants with example systems" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="434" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">PACELC: two separate choices</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">if Partition → A or C;  Else → L or C</text>
+<rect x="60.0" y="90.0" width="370.0" height="150.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="80.0" y="122.0" font-size="18" fill="#e2b45a" text-anchor="start" font-weight="700">PA / EL</text>
+<text x="80.0" y="148.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">available in a partition,</text>
+<text x="80.0" y="167.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">low latency otherwise</text>
+<text x="80.0" y="198.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Dynamo, Cassandra, Riak</text>
+<text x="80.0" y="217.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">(default settings)</text>
+<rect x="460.0" y="90.0" width="370.0" height="150.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="480.0" y="122.0" font-size="18" fill="#ff5b2e" text-anchor="start" font-weight="700">PC / EC</text>
+<text x="480.0" y="148.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">consistent always,</text>
+<text x="480.0" y="167.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">pays latency every time</text>
+<text x="480.0" y="198.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Spanner, VoltDB,</text>
+<text x="480.0" y="217.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">HBase, BigTable</text>
+<rect x="60.0" y="260.0" width="370.0" height="150.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="80.0" y="292.0" font-size="18" fill="#5fb3a1" text-anchor="start" font-weight="700">PA / EC</text>
+<text x="80.0" y="318.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">available in a partition,</text>
+<text x="80.0" y="337.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">consistent otherwise</text>
+<text x="80.0" y="368.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">MongoDB (in Abadi’s</text>
+<text x="80.0" y="387.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">2012 classification)</text>
+<rect x="460.0" y="260.0" width="370.0" height="150.0" rx="3" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="480.0" y="292.0" font-size="18" fill="#9b8cff" text-anchor="start" font-weight="700">PC / EL</text>
+<text x="480.0" y="318.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">consistent in a partition,</text>
+<text x="480.0" y="337.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">low latency otherwise</text>
+<text x="480.0" y="368.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Yahoo PNUTS</text>
+</svg>

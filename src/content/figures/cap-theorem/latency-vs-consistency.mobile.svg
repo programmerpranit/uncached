@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 354" width="360" height="354" role="img" aria-label="Synchronous replication adds a round trip; asynchronous replication is fast but can be stale" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="354" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Else: latency vs consistency</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a write in normal operation, no partition</text>
+<text x="16.0" y="86.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">Synchronous (EC)</text>
+<rect x="16.0" y="100.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="62.0" y="122.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">client</text>
+<rect x="130.0" y="100.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="176.0" y="122.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">leader</text>
+<rect x="244.0" y="100.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="290.0" y="122.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">replica</text>
+<line x1="110.0" y1="112.0" x2="128.0" y2="112.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="224.0" y1="112.0" x2="242.0" y2="112.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah1)"/>
+<line x1="242.0" y1="126.0" x2="224.0" y2="126.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah1)"/>
+<line x1="128.0" y1="126.0" x2="110.0" y2="126.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="16.0" y="158.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Ack waits for the replica: +1 round</text>
+<text x="16.0" y="177.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">trip (e.g. 70 ms cross-region).</text>
+<text x="16.0" y="214.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Asynchronous (EL)</text>
+<rect x="16.0" y="228.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="62.0" y="250.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">client</text>
+<rect x="130.0" y="228.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="176.0" y="250.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">leader</text>
+<rect x="244.0" y="228.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="290.0" y="250.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">replica</text>
+<line x1="110.0" y1="240.0" x2="128.0" y2="240.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="224.0" y1="246.0" x2="242.0" y2="246.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah2)" stroke-dasharray="3 3"/>
+<line x1="128.0" y1="254.0" x2="110.0" y2="254.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="16.0" y="286.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Ack immediately; replica catches up.</text>
+<text x="16.0" y="305.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Fast, but replica reads may be</text>
+<text x="16.0" y="324.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">stale and a crash can lose writes.</text>
+</svg>

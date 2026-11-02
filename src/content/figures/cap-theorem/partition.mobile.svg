@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 452" width="360" height="452" role="img" aria-label="During a partition a replica must either refuse the request or answer with possibly stale data" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="452" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">A partition forces a choice</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">write x=2 to N1, then read x from N2</text>
+<rect x="16.0" y="72.0" width="150.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="91.0" y="97.0" font-size="15" fill="#ede6d8" text-anchor="middle" font-weight="600">N1</text>
+<text x="91.0" y="113.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">x = 2 (new)</text>
+<rect x="194.0" y="72.0" width="150.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="269.0" y="97.0" font-size="15" fill="#ede6d8" text-anchor="middle" font-weight="600">N2</text>
+<text x="269.0" y="113.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">x = 1 (old)</text>
+<line x1="168.0" y1="100.0" x2="192.0" y2="100.0" stroke="#e5534b" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="180.0" y="150.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">✕ partition between them</text>
+<rect x="16.0" y="176.0" width="328.0" height="118.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="30.0" y="202.0" font-size="14" fill="#ff5b2e" text-anchor="start" font-weight="700">Choose C (CP)</text>
+<text x="30.0" y="226.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">N2 refuses the read: correct,</text>
+<text x="30.0" y="245.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">but unavailable on the minority</text>
+<text x="30.0" y="264.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">side.</text>
+<rect x="16.0" y="310.0" width="328.0" height="118.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="30.0" y="336.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">Choose A (AP)</text>
+<text x="30.0" y="360.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">N2 returns stale x = 1. Available,</text>
+<text x="30.0" y="379.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">but sides may diverge and need</text>
+<text x="30.0" y="398.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">reconciling later.</text>
+</svg>
