@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" width="360" height="420" role="img" aria-label="Capacity estimates for a URL shortener" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="420" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Back-of-the-envelope estimates</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">100M links/day · 100:1 reads</text>
+<rect x="16.0" y="72.0" width="160.0" height="100.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="28.0" y="104.0" font-size="18" fill="#ff5b2e" text-anchor="start" font-weight="700">~1.2k/s</text>
+<text x="28.0" y="128.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">writes (avg)</text>
+<text x="28.0" y="148.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">100M ÷ 86,400 s</text>
+<text x="28.0" y="163.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400"></text>
+<rect x="184.0" y="72.0" width="160.0" height="100.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="196.0" y="104.0" font-size="18" fill="#5fb3a1" text-anchor="start" font-weight="700">~116k/s</text>
+<text x="196.0" y="128.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">redirects (avg)</text>
+<text x="196.0" y="148.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">100 × writes; plan</text>
+<text x="196.0" y="163.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">for 3–5× peaks</text>
+<rect x="16.0" y="184.0" width="160.0" height="100.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="216.0" font-size="18" fill="#e2b45a" text-anchor="start" font-weight="700">182.5B</text>
+<text x="28.0" y="240.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">links in 5 years</text>
+<text x="28.0" y="260.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">100M × 365 × 5</text>
+<text x="28.0" y="275.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400"></text>
+<rect x="184.0" y="184.0" width="160.0" height="100.0" rx="3" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="196.0" y="216.0" font-size="18" fill="#9b8cff" text-anchor="start" font-weight="700">~91 TB</text>
+<text x="196.0" y="240.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">storage</text>
+<text x="196.0" y="260.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">at ~500 bytes per</text>
+<text x="196.0" y="275.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">link</text>
+<rect x="16.0" y="296.0" width="160.0" height="100.0" rx="3" fill="#d77fa1" fill-opacity="0.12" stroke="#d77fa1" stroke-width="1"/>
+<text x="28.0" y="328.0" font-size="18" fill="#d77fa1" text-anchor="start" font-weight="700">7 chars</text>
+<text x="28.0" y="352.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">base62 code</text>
+<text x="28.0" y="372.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">62⁷ ≈ 3.5 trillion</text>
+<text x="28.0" y="387.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">codes</text>
+<rect x="184.0" y="296.0" width="160.0" height="100.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="196.0" y="328.0" font-size="18" fill="#7cc47f" text-anchor="start" font-weight="700">80/20</text>
+<text x="196.0" y="352.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">click skew</text>
+<text x="196.0" y="372.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">~20% of links get</text>
+<text x="196.0" y="387.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">~80% of clicks</text>
+</svg>

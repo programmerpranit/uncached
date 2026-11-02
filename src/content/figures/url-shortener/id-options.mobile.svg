@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 501" width="360" height="501" role="img" aria-label="Hashing, random codes, and counters with base62 encoding" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="501" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Generating the short code</text>
+<rect x="16.0" y="72.0" width="328.0" height="110.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="96.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">Hash + truncate</text>
+<text x="28.0" y="120.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">base62(sha256(url))[:7]</text>
+<text x="28.0" y="144.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">+ same URL → same code (dedupe)</text>
+<text x="28.0" y="166.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">− collisions → check &amp; retry</text>
+<rect x="16.0" y="194.0" width="328.0" height="110.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="218.0" font-size="14" fill="#5fb3a1" text-anchor="start" font-weight="700">Random</text>
+<text x="28.0" y="242.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">7 random base62 chars</text>
+<text x="28.0" y="266.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">+ unguessable, no coordination</text>
+<text x="28.0" y="288.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">− collision check on insert</text>
+<rect x="16.0" y="316.0" width="328.0" height="110.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="28.0" y="340.0" font-size="14" fill="#ff5b2e" text-anchor="start" font-weight="700">Counter + base62</text>
+<text x="28.0" y="364.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">id 1,000,000,000 → "15FTGg"</text>
+<text x="28.0" y="388.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">+ no collisions, short codes</text>
+<text x="28.0" y="410.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">− needs an allocator; guessable</text>
+<text x="16.0" y="452.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Counters scale with range leasing:</text>
+<text x="16.0" y="471.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each server takes 1,000 IDs at a time.</text>
+</svg>

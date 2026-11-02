@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 350" width="880" height="350" role="img" aria-label="Capacity estimates for a URL shortener" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="350" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Back-of-the-envelope estimates</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">assume 100M new links/day, 100:1 read:write</text>
+<rect x="40.0" y="84.0" width="255.0" height="112.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="56.0" y="124.0" font-size="24" fill="#ff5b2e" text-anchor="start" font-weight="700">~1.2k/s</text>
+<text x="56.0" y="152.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">writes (avg)</text>
+<text x="56.0" y="174.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">100M ÷ 86,400 s</text>
+<rect x="315.0" y="84.0" width="255.0" height="112.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="331.0" y="124.0" font-size="24" fill="#5fb3a1" text-anchor="start" font-weight="700">~116k/s</text>
+<text x="331.0" y="152.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">redirects (avg)</text>
+<text x="331.0" y="174.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">100 × writes; plan for 3–5× peaks</text>
+<rect x="590.0" y="84.0" width="255.0" height="112.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="606.0" y="124.0" font-size="24" fill="#e2b45a" text-anchor="start" font-weight="700">182.5B</text>
+<text x="606.0" y="152.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">links in 5 years</text>
+<text x="606.0" y="174.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">100M × 365 × 5</text>
+<rect x="40.0" y="214.0" width="255.0" height="112.0" rx="3" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="56.0" y="254.0" font-size="24" fill="#9b8cff" text-anchor="start" font-weight="700">~91 TB</text>
+<text x="56.0" y="282.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">storage</text>
+<text x="56.0" y="304.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">at ~500 bytes per link</text>
+<rect x="315.0" y="214.0" width="255.0" height="112.0" rx="3" fill="#d77fa1" fill-opacity="0.12" stroke="#d77fa1" stroke-width="1"/>
+<text x="331.0" y="254.0" font-size="24" fill="#d77fa1" text-anchor="start" font-weight="700">7 chars</text>
+<text x="331.0" y="282.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">base62 code</text>
+<text x="331.0" y="304.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">62⁷ ≈ 3.5 trillion codes</text>
+<rect x="590.0" y="214.0" width="255.0" height="112.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="606.0" y="254.0" font-size="24" fill="#7cc47f" text-anchor="start" font-weight="700">80/20</text>
+<text x="606.0" y="282.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">click skew</text>
+<text x="606.0" y="304.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">~20% of links get ~80% of clicks</text>
+</svg>

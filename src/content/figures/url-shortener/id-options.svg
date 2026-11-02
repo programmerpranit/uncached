@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 329" width="880" height="329" role="img" aria-label="Hashing, random codes, and counters with base62 encoding" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="329" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Three ways to generate the short code</text>
+<rect x="40.0" y="84.0" width="255.0" height="160.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="112.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">Hash + truncate</text>
+<text x="56.0" y="140.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">base62(sha256(url))[:7]</text>
+<text x="56.0" y="176.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">+ same URL → same code (dedupe)</text>
+<text x="56.0" y="200.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">− collisions → check &amp; retry</text>
+<rect x="315.0" y="84.0" width="255.0" height="160.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="331.0" y="112.0" font-size="14" fill="#5fb3a1" text-anchor="start" font-weight="700">Random</text>
+<text x="331.0" y="140.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">7 random base62 chars</text>
+<text x="331.0" y="176.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">+ unguessable, no coordination</text>
+<text x="331.0" y="200.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">− collision check on insert</text>
+<rect x="590.0" y="84.0" width="255.0" height="160.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="606.0" y="112.0" font-size="14" fill="#ff5b2e" text-anchor="start" font-weight="700">Counter + base62</text>
+<text x="606.0" y="140.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">id 1,000,000,000 → "15FTGg"</text>
+<text x="606.0" y="176.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">+ no collisions, short codes</text>
+<text x="606.0" y="200.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">− needs an allocator; guessable</text>
+<text x="40.0" y="280.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Range allocation makes counters scale: each app server leases a block (e.g. 1,000 IDs) from a central</text>
+<text x="40.0" y="299.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">counter and hands them out locally, so the allocator is touched once per thousand links.</text>
+</svg>
