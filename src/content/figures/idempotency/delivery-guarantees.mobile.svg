@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 439" width="360" height="439" role="img" aria-label="At-most-once, at-least-once and effectively-exactly-once delivery" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="439" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Delivery guarantees</text>
+<rect x="16.0" y="80.0" width="328.0" height="86.0" rx="3" fill="#a69d8e" fill-opacity="0.12" stroke="#a69d8e" stroke-width="1"/>
+<text x="32.0" y="106.0" font-size="14" fill="#a69d8e" text-anchor="start" font-weight="700">At most once</text>
+<text x="32.0" y="128.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">send, never retry</text>
+<text x="32.0" y="145.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">may lose messages; never duplicates</text>
+<rect x="16.0" y="178.0" width="328.0" height="86.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="32.0" y="204.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">At least once</text>
+<text x="32.0" y="226.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">retry until acknowledged</text>
+<text x="32.0" y="243.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">never loses; may duplicate</text>
+<rect x="16.0" y="276.0" width="328.0" height="86.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="32.0" y="302.0" font-size="14" fill="#ff5b2e" text-anchor="start" font-weight="700">Exactly once (effectively)</text>
+<text x="32.0" y="324.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">at-least-once delivery + idempotent or</text>
+<text x="32.0" y="341.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">transactional processing → each effect once</text>
+<text x="16.0" y="390.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Exactly-once delivery is impossible;</text>
+<text x="16.0" y="409.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">exactly-once effects are achievable.</text>
+</svg>
