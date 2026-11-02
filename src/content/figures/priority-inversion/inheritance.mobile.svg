@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 308" width="360" height="308" role="img" aria-label="Timeline with priority inheritance: the low task is boosted while the high task waits, so the medium task cannot preempt it" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="308" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Priority inheritance</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">L inherits H's priority</text>
+<text x="42.0" y="106.0" font-size="13" fill="#e5534b" text-anchor="end" font-weight="700">H</text>
+<line x1="56.0" y1="114.0" x2="346.0" y2="114.0" stroke="#4a4136" stroke-width="1"/>
+<text x="42.0" y="146.0" font-size="13" fill="#e2b45a" text-anchor="end" font-weight="700">M</text>
+<line x1="56.0" y1="154.0" x2="346.0" y2="154.0" stroke="#4a4136" stroke-width="1"/>
+<text x="42.0" y="186.0" font-size="13" fill="#5fb3a1" text-anchor="end" font-weight="700">L</text>
+<line x1="56.0" y1="194.0" x2="346.0" y2="194.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="56.0" y="174.0" width="34.8" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<text x="73.4" y="188.0" font-size="10" fill="#1b1712" text-anchor="middle" font-weight="700">L</text>
+<rect x="90.8" y="174.0" width="23.2" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="114.0" y="94.0" width="17.4" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.75" stroke="#e5534b" stroke-width="1"/>
+<rect x="131.4" y="94.0" width="29.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="131.4" y="174.0" width="29.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.75" stroke="#e5534b" stroke-width="1"/>
+<rect x="160.4" y="94.0" width="69.6" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.75" stroke="#e5534b" stroke-width="1"/>
+<text x="195.2" y="108.0" font-size="10" fill="#1b1712" text-anchor="middle" font-weight="700">H gets lock</text>
+<rect x="143.0" y="134.0" width="2.9" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.75" stroke="#e2b45a" stroke-width="1"/>
+<rect x="230.0" y="134.0" width="116.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.75" stroke="#e2b45a" stroke-width="1"/>
+<text x="288.0" y="148.0" font-size="10" fill="#1b1712" text-anchor="middle" font-weight="700">M</text>
+<rect x="160.4" y="174.0" width="5.8" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<text x="151.7" y="148.0" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="400">M waits</text>
+<text x="16.0" y="240.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">L runs at H's priority until it</text>
+<text x="16.0" y="259.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">unlocks. H's wait is bounded by</text>
+<text x="16.0" y="278.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the critical section.</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 336" width="360" height="336" role="img" aria-label="Priority inheritance, priority ceiling, disabling preemption and avoiding shared locks as fixes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="336" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Prevention</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">protocols and design</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">priority inheritance</text>
+<text x="16.0" y="103.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Linux PI futexes</text>
+<text x="16.0" y="130.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">priority ceiling</text>
+<text x="16.0" y="147.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">POSIX PTHREAD_PRIO_PROTECT</text>
+<text x="16.0" y="174.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">disable preemption</text>
+<text x="16.0" y="191.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">kernel spinlocks</text>
+<text x="16.0" y="218.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">avoid shared locks</text>
+<text x="16.0" y="235.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">audio threads</text>
+<text x="16.0" y="268.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Inheritance: dynamic, cheap.</text>
+<text x="16.0" y="287.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Ceiling: static, also prevents</text>
+<text x="16.0" y="306.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">deadlock; common in RTOSes.</text>
+</svg>

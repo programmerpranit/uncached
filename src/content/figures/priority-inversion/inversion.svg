@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 317" width="880" height="317" role="img" aria-label="Timeline of unbounded priority inversion where a medium task preempts the low task holding a lock the high task needs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="317" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Unbounded priority inversion</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">H waits for L, and L can't run because M keeps preempting it</text>
+<text x="106.0" y="116.0" font-size="13" fill="#e5534b" text-anchor="end" font-weight="700">H</text>
+<line x1="120.0" y1="124.0" x2="820.0" y2="124.0" stroke="#4a4136" stroke-width="1"/>
+<text x="106.0" y="162.0" font-size="13" fill="#e2b45a" text-anchor="end" font-weight="700">M</text>
+<line x1="120.0" y1="170.0" x2="820.0" y2="170.0" stroke="#4a4136" stroke-width="1"/>
+<text x="106.0" y="208.0" font-size="13" fill="#5fb3a1" text-anchor="end" font-weight="700">L</text>
+<line x1="120.0" y1="216.0" x2="820.0" y2="216.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="120.0" y="196.0" width="84.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<text x="162.0" y="210.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="700">L</text>
+<rect x="204.0" y="196.0" width="56.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<text x="232.0" y="210.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="700">lock</text>
+<rect x="260.0" y="104.0" width="42.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.75" stroke="#e5534b" stroke-width="1"/>
+<text x="281.0" y="118.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="700">H</text>
+<rect x="302.0" y="104.0" width="420.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="512.0" y="118.0" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="700">blocked</text>
+<rect x="330.0" y="150.0" width="350.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.75" stroke="#e2b45a" stroke-width="1"/>
+<text x="505.0" y="164.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="700">M runs (no lock needed)</text>
+<rect x="680.0" y="196.0" width="56.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<text x="708.0" y="210.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="700">unlock</text>
+<rect x="736.0" y="104.0" width="84.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.75" stroke="#e5534b" stroke-width="1"/>
+<text x="778.0" y="118.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="700">H</text>
+<line x1="330.0" y1="94.0" x2="330.0" y2="238.0" stroke="#e2b45a" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="40.0" y="268.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">H effectively runs at M's priority, for as long as M (or any number of medium tasks) keeps running.</text>
+<text x="40.0" y="287.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A deadline missed by the highest-priority task, caused by a task that never touches the lock.</text>
+</svg>
