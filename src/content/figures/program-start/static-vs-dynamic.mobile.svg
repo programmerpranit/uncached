@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 399" width="360" height="399" role="img" aria-label="Comparison of static and dynamic linking for startup, size, memory, updates and portability" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="399" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Static vs dynamic</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">trade-offs</text>
+<text x="16.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">startup</text>
+<text x="16.0" y="103.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">static: no loader work; fastest</text>
+<text x="16.0" y="119.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">dynamic: load + relocate libraries (~ms)</text>
+<text x="16.0" y="136.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">size</text>
+<text x="16.0" y="153.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">static: bigger binary</text>
+<text x="16.0" y="169.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">dynamic: small binary, shared libs</text>
+<text x="16.0" y="186.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">memory</text>
+<text x="16.0" y="203.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">static: each process has its own copy</text>
+<text x="16.0" y="219.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">dynamic: one copy of libc in RAM for all</text>
+<text x="16.0" y="236.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">security updates</text>
+<text x="16.0" y="253.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">static: rebuild every binary</text>
+<text x="16.0" y="269.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">dynamic: update the library once</text>
+<text x="16.0" y="286.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">portability</text>
+<text x="16.0" y="303.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">static: runs anywhere (same kernel ABI)</text>
+<text x="16.0" y="319.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">dynamic: needs matching library versions</text>
+<text x="16.0" y="336.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">used by</text>
+<text x="16.0" y="353.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">static: Go (mostly), Rust musl, busybox</text>
+<text x="16.0" y="369.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">dynamic: most C/C++ on Linux distros</text>
+</svg>

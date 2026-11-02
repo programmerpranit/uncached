@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 439" width="880" height="439" role="img" aria-label="Steps from execve through the kernel and dynamic loader to main" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="439" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">From execve() to main()</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what happens before the first line of your program runs</text>
+<rect x="40.0" y="82.0" width="800.0" height="34.0" rx="3" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="103.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">kernel: execve("./app")</text>
+<text x="370.0" y="103.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">check permissions, read ELF header, tear down old address space</text>
+<rect x="40.0" y="122.0" width="800.0" height="34.0" rx="3" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="143.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">kernel: map segments</text>
+<text x="370.0" y="143.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">map code (r-x) and data (rw-); build stack: argv, envp, auxv</text>
+<rect x="40.0" y="162.0" width="800.0" height="34.0" rx="3" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="183.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">kernel: jump to interpreter</text>
+<text x="370.0" y="183.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">PT_INTERP says /lib64/ld-linux-x86-64.so.2; start it, not the app</text>
+<rect x="40.0" y="202.0" width="800.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="223.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">ld.so: load libraries</text>
+<text x="370.0" y="223.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">read DT_NEEDED (libc.so.6, libssl.so.3…), search paths, mmap each</text>
+<rect x="40.0" y="242.0" width="800.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="263.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">ld.so: relocate + bind</text>
+<text x="370.0" y="263.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">fix up addresses; resolve symbols now or lazily via the PLT</text>
+<rect x="40.0" y="282.0" width="800.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="303.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">ld.so: run initializers</text>
+<text x="370.0" y="303.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">constructors, .init_array, C++ static objects, TLS setup</text>
+<rect x="40.0" y="322.0" width="800.0" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.08" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="343.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">_start → __libc_start_main → main</text>
+<text x="370.0" y="343.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">argc, argv, envp; atexit handlers run after main returns</text>
+<text x="40.0" y="390.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Red steps run in the kernel, amber in the dynamic loader (user space), green in libc. A static binary has no</text>
+<text x="40.0" y="409.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">PT_INTERP, so the kernel jumps straight to _start. All of this typically takes ~1 ms, more with many libraries.</text>
+</svg>

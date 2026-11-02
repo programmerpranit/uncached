@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 402" width="360" height="402" role="img" aria-label="Steps from execve through the kernel and dynamic loader to main" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="402" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">execve() to main()</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">before your first line runs</text>
+<rect x="16.0" y="70.0" width="6.0" height="26.0" rx="1" fill="#e5534b" fill-opacity="0.9" stroke="#e5534b" stroke-width="1"/>
+<text x="30.0" y="88.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">execve: read ELF header</text>
+<rect x="16.0" y="104.0" width="6.0" height="26.0" rx="1" fill="#e5534b" fill-opacity="0.9" stroke="#e5534b" stroke-width="1"/>
+<text x="30.0" y="122.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">map PT_LOAD segments + stack</text>
+<rect x="16.0" y="138.0" width="6.0" height="26.0" rx="1" fill="#e5534b" fill-opacity="0.9" stroke="#e5534b" stroke-width="1"/>
+<text x="30.0" y="156.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">start interpreter (ld.so)</text>
+<rect x="16.0" y="172.0" width="6.0" height="26.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="#e2b45a" stroke-width="1"/>
+<text x="30.0" y="190.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">load needed libraries</text>
+<rect x="16.0" y="206.0" width="6.0" height="26.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="#e2b45a" stroke-width="1"/>
+<text x="30.0" y="224.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">relocate, bind symbols</text>
+<rect x="16.0" y="240.0" width="6.0" height="26.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="#e2b45a" stroke-width="1"/>
+<text x="30.0" y="258.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">run constructors</text>
+<rect x="16.0" y="274.0" width="6.0" height="26.0" rx="1" fill="#7cc47f" fill-opacity="0.9" stroke="#7cc47f" stroke-width="1"/>
+<text x="30.0" y="292.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">_start → main()</text>
+<text x="16.0" y="334.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">kernel</text>
+<text x="16.0" y="353.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">dynamic loader (ld.so)</text>
+<text x="16.0" y="372.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">libc</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 442" width="360" height="442" role="img" aria-label="Process address space after loading: app segments, heap, mapped libraries, vdso and stack" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="442" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Address space after exec</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ASLR randomizes bases</text>
+<rect x="16.0" y="84.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="136.0" y="98.8" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="600">stack ↓</text>
+<text x="266.0" y="99.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">rw-</text>
+<rect x="16.0" y="118.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="136.0" y="132.8" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="600">vdso, vvar</text>
+<text x="266.0" y="133.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">r-x</text>
+<rect x="16.0" y="144.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="136.0" y="158.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">ld-linux-x86-64.so.2</text>
+<text x="266.0" y="159.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">r-x/rw-</text>
+<rect x="16.0" y="170.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="136.0" y="184.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">libssl.so.3</text>
+<text x="266.0" y="185.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">r-x/rw-</text>
+<rect x="16.0" y="196.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="136.0" y="210.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">libc.so.6</text>
+<text x="266.0" y="211.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">r-x/rw-</text>
+<rect x="16.0" y="222.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="136.0" y="236.8" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="600">mmap region ↓</text>
+<text x="266.0" y="237.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400"></text>
+<rect x="16.0" y="256.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="136.0" y="270.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">heap (brk) ↑</text>
+<text x="266.0" y="271.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">rw-</text>
+<rect x="16.0" y="282.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="136.0" y="296.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">.data .bss</text>
+<text x="266.0" y="297.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">rw-</text>
+<rect x="16.0" y="308.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="136.0" y="322.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">.rodata</text>
+<text x="266.0" y="323.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">r--</text>
+<rect x="16.0" y="334.0" width="240.0" height="22.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="136.0" y="348.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">.text (app code)</text>
+<text x="266.0" y="349.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">r-x</text>
+<text x="16.0" y="374.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Library code is shared between</text>
+<text x="16.0" y="393.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">processes; ASLR randomizes every</text>
+<text x="16.0" y="412.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">base address on each run.</text>
+</svg>

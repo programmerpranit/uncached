@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 378" width="880" height="378" role="img" aria-label="A library call going through the PLT stub and GOT entry, resolved by the dynamic loader" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="378" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ede6d8"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Calling a library function through the PLT and GOT</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">position-independent code calls puts() through an indirection the loader fills in</text>
+<rect x="40.0" y="110.0" width="170.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="125.0" y="129.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">call puts@plt</text>
+<text x="125.0" y="145.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">app .text</text>
+<rect x="300.0" y="110.0" width="190.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="395.0" y="129.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">puts@plt stub</text>
+<text x="395.0" y="145.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">jmp *GOT[puts]</text>
+<rect x="580.0" y="110.0" width="190.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="675.0" y="129.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">GOT[puts]</text>
+<text x="675.0" y="145.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">writable table</text>
+<rect x="580.0" y="220.0" width="190.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="675.0" y="239.0" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">puts in libc.so.6</text>
+<text x="675.0" y="255.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">real address</text>
+<rect x="300.0" y="220.0" width="190.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="395.0" y="239.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">ld.so resolver</text>
+<text x="395.0" y="255.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">first call only (lazy)</text>
+<line x1="210.0" y1="132.0" x2="298.0" y2="132.0" stroke="#ede6d8" stroke-width="1.3" marker-end="url(#ah0)"/>
+<line x1="490.0" y1="132.0" x2="578.0" y2="132.0" stroke="#e2b45a" stroke-width="1.3" marker-end="url(#ah1)"/>
+<line x1="675.0" y1="154.0" x2="675.0" y2="218.0" stroke="#7cc47f" stroke-width="1.3" marker-end="url(#ah2)"/>
+<text x="685.0" y="190.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">after binding</text>
+<path d="M580 150 C 540 190, 520 200, 490 230" fill="none" stroke="#e5534b" stroke-width="1.2" marker-end="url(#ah3)" stroke-dasharray="4 3"/>
+<text x="530.0" y="212.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">before</text>
+<path d="M395 220 C 420 180, 520 170, 578 145" fill="none" stroke="#e5534b" stroke-width="1.0" marker-end="url(#ah3)" stroke-dasharray="2 3"/>
+<text x="420.0" y="186.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">patch GOT</text>
+<text x="40.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Code stays read-only and shareable; only the GOT, a per-process table of addresses, gets written. With lazy binding</text>
+<text x="40.0" y="329.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the first call goes through the resolver; with full RELRO / -z now (the default in many distros) everything is</text>
+<text x="40.0" y="348.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">bound at startup and the GOT is made read-only, which blocks GOT-overwrite exploits at a small startup cost.</text>
+</svg>

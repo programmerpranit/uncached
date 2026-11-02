@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 383" width="360" height="383" role="img" aria-label="A library call going through the PLT stub and GOT entry, resolved by the dynamic loader" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="383" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">PLT and GOT</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">indirection filled in by ld.so</text>
+<rect x="16.0" y="86.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="103.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">call puts@plt</text>
+<text x="180.0" y="119.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="400">app code</text>
+<rect x="16.0" y="136.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="153.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">jmp *GOT[puts]</text>
+<text x="180.0" y="169.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="400">PLT stub</text>
+<rect x="16.0" y="186.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="203.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">GOT[puts] → libc puts</text>
+<text x="180.0" y="219.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="400">filled by ld.so</text>
+<rect x="16.0" y="236.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="253.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">first call (lazy):</text>
+<text x="180.0" y="269.0" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="400">resolver patches GOT</text>
+<text x="16.0" y="296.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Code stays read-only and shared;</text>
+<text x="16.0" y="315.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">only the GOT is written. Full</text>
+<text x="16.0" y="334.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">RELRO binds everything at start</text>
+<text x="16.0" y="353.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and makes the GOT read-only.</text>
+</svg>

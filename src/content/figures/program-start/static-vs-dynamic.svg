@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 403" width="880" height="403" role="img" aria-label="Comparison of static and dynamic linking for startup, size, memory, updates and portability" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="403" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Static vs dynamic linking</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what you trade when you bundle libraries into the binary</text>
+<text x="260.0" y="96.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">static</text>
+<text x="560.0" y="96.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">dynamic</text>
+<rect x="40.0" y="108.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="128.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">startup</text>
+<text x="260.0" y="128.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">no loader work; fastest</text>
+<text x="560.0" y="128.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">load + relocate libraries (~ms)</text>
+<rect x="40.0" y="144.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="164.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">size</text>
+<text x="260.0" y="164.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">bigger binary</text>
+<text x="560.0" y="164.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">small binary, shared libs</text>
+<rect x="40.0" y="180.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="200.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">memory</text>
+<text x="260.0" y="200.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">each process has its own copy</text>
+<text x="560.0" y="200.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">one copy of libc in RAM for all</text>
+<rect x="40.0" y="216.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="236.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">security updates</text>
+<text x="260.0" y="236.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">rebuild every binary</text>
+<text x="560.0" y="236.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">update the library once</text>
+<rect x="40.0" y="252.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="272.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">portability</text>
+<text x="260.0" y="272.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">runs anywhere (same kernel ABI)</text>
+<text x="560.0" y="272.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">needs matching library versions</text>
+<rect x="40.0" y="288.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="308.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">used by</text>
+<text x="260.0" y="308.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Go (mostly), Rust musl, busybox</text>
+<text x="560.0" y="308.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">most C/C++ on Linux distros</text>
+<text x="40.0" y="354.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Containers blurred the trade-off: an image ships its libraries anyway, so static binaries mainly buy simpler,</text>
+<text x="40.0" y="373.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">smaller images (FROM scratch). glibc discourages full static linking (NSS, dlopen); musl is the usual choice.</text>
+</svg>
