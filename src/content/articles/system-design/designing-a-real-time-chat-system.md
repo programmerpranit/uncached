@@ -177,6 +177,6 @@ Not for the delivery path itself, which needs low latency. A log like Kafka is u
 3. Discord Blog. [How Discord Stores Trillions of Messages](https://discord.com/blog/how-discord-stores-trillions-of-messages). 2023.
 4. Discord Blog. [How Discord Scaled Elixir to 5,000,000 Concurrent Users](https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users). 2017.
 5. Meta Engineering. [Building Mobile-First Infrastructure for Messenger](https://engineering.fb.com/2014/10/09/production-engineering/building-mobile-first-infrastructure-for-messenger/). 2014.
-6. LinkedIn Engineering. [Now You See Me, Now You Don't: LinkedIn's Real-Time Presence Platform](https://www.linkedin.com/blog/engineering/infrastructure/now-you-see-me-now-you-dont-linkedins-real-time-presence-platf). 2018.
+6. LinkedIn Engineering. [Now You See Me, Now You Don't: LinkedIn's Real-Time Presence Platform](https://engineering.linkedin.com/blog/2018/01/now-you-see-me--now-you-dont--linkedins-real-time-presence-platf). 2018.
 7. WhatsApp. [WhatsApp Encryption Overview (technical white paper)](https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf).
 8. IETF. [RFC 6455: The WebSocket Protocol](https://www.rfc-editor.org/rfc/rfc6455). 2011.

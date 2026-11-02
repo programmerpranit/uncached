@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 317" width="880" height="317" role="img" aria-label="Shuffle sharding assigns each customer a random subset of workers so one bad customer rarely shares all workers with another" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="317" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Shuffle sharding: give each customer a random pair of workers</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">8 workers; customers A and B each get 2; overlap is rare</text>
+<rect x="60.0" y="140.0" width="80.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="100.0" y="169.7" font-size="13" fill="#a69d8e" text-anchor="middle" font-weight="600">w0</text>
+<rect x="155.0" y="140.0" width="80.0" height="50.0" rx="3" fill="#e5534b" fill-opacity="0.75" stroke="#e5534b" stroke-width="1"/>
+<text x="195.0" y="169.7" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="600">w1</text>
+<rect x="250.0" y="140.0" width="80.0" height="50.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<text x="290.0" y="169.7" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="600">w2</text>
+<rect x="345.0" y="140.0" width="80.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="385.0" y="169.7" font-size="13" fill="#a69d8e" text-anchor="middle" font-weight="600">w3</text>
+<rect x="440.0" y="140.0" width="80.0" height="50.0" rx="3" fill="#e5534b" fill-opacity="0.75" stroke="#e5534b" stroke-width="1"/>
+<text x="480.0" y="169.7" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="600">w4</text>
+<rect x="535.0" y="140.0" width="80.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="575.0" y="169.7" font-size="13" fill="#a69d8e" text-anchor="middle" font-weight="600">w5</text>
+<rect x="630.0" y="140.0" width="80.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.75" stroke="#e2b45a" stroke-width="1"/>
+<text x="670.0" y="169.7" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="600">w6</text>
+<rect x="725.0" y="140.0" width="80.0" height="50.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<text x="765.0" y="169.7" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="600">w7</text>
+<text x="60.0" y="110.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">customer A (poison requests) → w1, w4</text>
+<text x="460.0" y="110.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">B → w4, w6</text>
+<text x="620.0" y="110.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">C → w2, w7</text>
+<text x="60.0" y="230.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A crashes w1 and w4. B shares w4 but still has w6, so it degrades instead of failing. C is untouched.</text>
+<text x="60.0" y="249.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">With 8 workers and 2 per customer there are C(8,2) = 28 distinct pairs, so only 1 in 28</text>
+<text x="60.0" y="268.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">customers shares A’s exact pair.</text>
+<text x="60.0" y="287.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">With 100 workers and 5 per customer: ~75 million combinations. AWS Route 53 uses this to isolate customers.</text>
+</svg>

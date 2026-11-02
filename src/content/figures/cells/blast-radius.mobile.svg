@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 411" width="360" height="411" role="img" aria-label="A failure in a shared system affects every customer; in a cell-based system it affects one cell" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="411" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Blast radius</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one failure, two designs</text>
+<rect x="16.0" y="72.0" width="328.0" height="110.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="94.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="700">shared stack: all customers</text>
+<circle cx="40.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="71.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="102.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="133.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="164.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="195.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="226.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="257.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="288.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="319.0" cy="120.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="40.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="71.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="102.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="133.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="164.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="195.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="226.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="257.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="288.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="319.0" cy="148.0" r="7" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<rect x="16.0" y="200.0" width="76.0" height="62.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="54.0" y="218.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">cell 1</text>
+<circle cx="32.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="54.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="76.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<rect x="99.0" y="200.0" width="76.0" height="62.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="137.0" y="218.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">cell 2</text>
+<circle cx="115.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="137.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="159.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<rect x="182.0" y="200.0" width="76.0" height="62.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="220.0" y="218.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">cell 3</text>
+<circle cx="198.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="220.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="242.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<rect x="265.0" y="200.0" width="76.0" height="62.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="303.0" y="218.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">cell 4</text>
+<circle cx="281.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="303.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="325.0" cy="242.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<rect x="16.0" y="270.0" width="76.0" height="62.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="54.0" y="288.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">cell 5</text>
+<circle cx="32.0" cy="312.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="54.0" cy="312.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="76.0" cy="312.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<rect x="99.0" y="270.0" width="76.0" height="62.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="137.0" y="288.0" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="600">cell 6</text>
+<circle cx="115.0" cy="312.0" r="6" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="137.0" cy="312.0" r="6" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="159.0" cy="312.0" r="6" fill="#e5534b" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<rect x="182.0" y="270.0" width="76.0" height="62.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="220.0" y="288.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">cell 7</text>
+<circle cx="198.0" cy="312.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="220.0" cy="312.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="242.0" cy="312.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<rect x="265.0" y="270.0" width="76.0" height="62.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="303.0" y="288.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">cell 8</text>
+<circle cx="281.0" cy="312.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="303.0" cy="312.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<circle cx="325.0" cy="312.0" r="6" fill="#5fb3a1" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<text x="16.0" y="362.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Shared: one failure hits everyone.</text>
+<text x="16.0" y="381.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cells: one failure hits 1/8.</text>
+</svg>
