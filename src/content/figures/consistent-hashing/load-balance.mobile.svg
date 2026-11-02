@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 536" width="360" height="536" role="img" aria-label="Load per server with 1 versus 100 virtual nodes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="536" fill="#1b1712"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="30.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Keys per server</text>
+<text x="16.0" y="50.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">100,000 keys · 10 servers (simulated)</text>
+<text x="16.0" y="80.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="600">1 vnode per server</text>
+<line x1="50.0" y1="246.0" x2="340.0" y2="246.0" stroke="#2f2921" stroke-width="1"/>
+<text x="42.0" y="250.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">0k</text>
+<line x1="50.0" y1="196.0" x2="340.0" y2="196.0" stroke="#2f2921" stroke-width="1"/>
+<text x="42.0" y="200.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">10k</text>
+<line x1="50.0" y1="146.0" x2="340.0" y2="146.0" stroke="#2f2921" stroke-width="1"/>
+<text x="42.0" y="150.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">20k</text>
+<line x1="50.0" y1="96.0" x2="340.0" y2="96.0" stroke="#2f2921" stroke-width="1"/>
+<text x="42.0" y="100.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">30k</text>
+<rect x="53.0" y="244.4" width="23.0" height="1.6" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="82.0" y="239.2" width="23.0" height="6.8" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="111.0" y="234.2" width="23.0" height="11.8" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="140.0" y="233.9" width="23.0" height="12.1" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="169.0" y="217.8" width="23.0" height="28.2" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="198.0" y="212.6" width="23.0" height="33.4" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="227.0" y="172.0" width="23.0" height="74.0" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="256.0" y="163.6" width="23.0" height="82.4" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="285.0" y="135.2" width="23.0" height="110.8" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="314.0" y="107.0" width="23.0" height="139.0" rx="1.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<line x1="50.0" y1="196.0" x2="340.0" y2="196.0" stroke="#ede6d8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="54.0" y="190.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">ideal</text>
+<text x="16.0" y="274.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">busiest 2.78× · quietest 0.03×</text>
+<text x="16.0" y="330.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="600">100 vnodes per server</text>
+<line x1="50.0" y1="496.0" x2="340.0" y2="496.0" stroke="#2f2921" stroke-width="1"/>
+<text x="42.0" y="500.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">0k</text>
+<line x1="50.0" y1="446.0" x2="340.0" y2="446.0" stroke="#2f2921" stroke-width="1"/>
+<text x="42.0" y="450.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">10k</text>
+<line x1="50.0" y1="396.0" x2="340.0" y2="396.0" stroke="#2f2921" stroke-width="1"/>
+<text x="42.0" y="400.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">20k</text>
+<line x1="50.0" y1="346.0" x2="340.0" y2="346.0" stroke="#2f2921" stroke-width="1"/>
+<text x="42.0" y="350.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">30k</text>
+<rect x="53.0" y="450.3" width="23.0" height="45.7" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="82.0" y="449.0" width="23.0" height="47.0" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="111.0" y="448.2" width="23.0" height="47.8" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="140.0" y="447.3" width="23.0" height="48.7" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="169.0" y="445.9" width="23.0" height="50.1" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="198.0" y="445.6" width="23.0" height="50.4" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="227.0" y="444.5" width="23.0" height="51.5" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="256.0" y="443.7" width="23.0" height="52.3" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="285.0" y="443.6" width="23.0" height="52.4" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="314.0" y="441.9" width="23.0" height="54.1" rx="1.5" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<line x1="50.0" y1="446.0" x2="340.0" y2="446.0" stroke="#ede6d8" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="54.0" y="440.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">ideal</text>
+<text x="16.0" y="524.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">busiest 1.08× · quietest 0.91×</text>
+</svg>

@@ -77,8 +77,10 @@ updated: 2026-11-02
 - `## ` and `### ` headings build the table of contents.
 - A paragraph that contains only an image becomes a numbered figure. The image title is the caption.
 - Callouts: start a blockquote with `[!KEY]`, `[!NOTE]`, `[!TIP]`, `[!WARNING]` or `[!EXAMPLE]`.
-- Put figures in `public/figures/<topic>/`. Use SVGs in the app's palette (`#1b1712` background, `#ede6d8` ink, `#ff5b2e` accent).
-- Suggested outline: TL;DR → The problem → How it works → Deep-dive sections → Code → Where it's used → Pitfalls → Alternatives → Discussion questions → Key takeaways → References.
+- Put figures in `src/content/figures/<topic>/` and reference them as `/figures/<topic>/<name>.svg`. Use SVGs in the app's palette (`#1b1712` background, `#ede6d8` ink, `#ff5b2e` accent).
+- **Every figure needs a phone version.** Wide figures shrink to unreadable text on a phone, so add a portrait layout next to the original as `<name>.mobile.svg`. It is about 360 px wide, with text at 11 px or larger. Screens up to 700 px wide get it automatically.
+- **FAQ:** under a `## FAQ` heading, write each question as a `### Question?` heading followed by its answer. The questions render as expandable entries and stay out of the table of contents.
+- Suggested outline: TL;DR → The problem → How it works → Deep-dive sections → Where it's used → Pitfalls → Alternatives → Discussion questions → FAQ → Key takeaways → References.
 
 ## Stack
 

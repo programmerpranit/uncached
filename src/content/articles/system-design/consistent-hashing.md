@@ -78,62 +78,6 @@ How much does it help? Here is a simulation of 100,000 keys over 10 servers:
 
 The cost of vnodes is memory and lookup time for the ring (`N × v` entries), plus more complex rebalancing bookkeeping in databases, where every vnode is a token range to stream. Cassandra used 256 vnodes per node by default for years. Since 4.0 it defaults to **16 tokens** with a smarter allocation algorithm, because 256 made repairs and streaming expensive.
 
-## A minimal implementation
-
-```ts
-import { createHash } from 'node:crypto'
-
-const hash32 = (s: string) => createHash('md5').update(s).digest().readUInt32BE(0)
-
-class HashRing {
-  private points: { pos: number; node: string }[] = []
-
-  constructor(nodes: string[] = [], private vnodes = 100) {
-    nodes.forEach((n) => this.add(n))
-  }
-
-  add(node: string) {
-    for (let i = 0; i < this.vnodes; i++) {
-      this.points.push({ pos: hash32(`${node}#${i}`), node })
-    }
-    this.points.sort((a, b) => a.pos - b.pos)
-  }
-
-  remove(node: string) {
-    this.points = this.points.filter((p) => p.node !== node)
-  }
-
-  /** First point clockwise from hash(key), wrapping past the top of the ring. */
-  get(key: string): string {
-    if (!this.points.length) throw new Error('empty ring')
-    const h = hash32(key)
-    let lo = 0, hi = this.points.length
-    while (lo < hi) {
-      const mid = (lo + hi) >>> 1
-      if (this.points[mid].pos < h) lo = mid + 1
-      else hi = mid
-    }
-    return this.points[lo % this.points.length].node
-  }
-
-  /** N distinct physical nodes clockwise from the key: the replica set. */
-  getN(key: string, n: number): string[] {
-    const out = new Set<string>()
-    let i = this.points.findIndex((p) => p.pos >= hash32(key))
-    if (i < 0) i = 0
-    for (let step = 0; out.size < n && step < this.points.length; step++) {
-      out.add(this.points[(i + step) % this.points.length].node)
-    }
-    return [...out]
-  }
-}
-```
-
-Things to note:
-
-- **The hash function only has to spread values evenly. It doesn't need to be cryptographic.** MD5 is common for historical reasons (ketama). MurmurHash3 or xxHash are faster. Every client **must** use the same function and the same vnode naming scheme, or they'll disagree about owners.
-- **`getN` skips duplicate physical nodes.** With vnodes, the next few points clockwise may belong to the same machine, and two replicas on one machine aren't really two replicas. Production systems also skip nodes in the same rack or availability zone.
-
 ## Where it's used
 
 | System | How consistent hashing shows up |
@@ -213,6 +157,36 @@ Use these to drive the conversation once someone has explained the basics:
 4. When would you pick jump hash over a ring? When would you pick rendezvous?
 5. Your cache cluster uses consistent hashing, but one node is at 95% CPU and the rest are at 30%. List three possible causes and how you'd tell them apart.
 6. How would you change a *datastore's* membership without serving stale reads during the data movement?
+
+## FAQ
+
+### Is consistent hashing the same thing as sharding?
+
+No. Sharding is the goal: splitting data or traffic across machines. Consistent hashing is one way to decide **which** shard a key goes to. Other ways include range partitioning (Bigtable, Spanner), a fixed set of hash slots (Redis Cluster), and a directory or lookup service that stores the mapping explicitly.
+
+### How many virtual nodes should I use?
+
+Enough that the load spread is acceptable, and few enough that the ring stays cheap. For a stateless cache or load balancer, 100–200 per server is typical. Lookup is a binary search, so even 100K ring entries are fast. For a database, where every vnode is a range that has to be streamed and repaired, use fewer and place them carefully. Cassandra moved from 256 to 16 tokens per node, paired with a token allocation algorithm.
+
+### Which hash function should I use?
+
+Any fast hash with a good spread: MurmurHash3, xxHash, or MD5 if you need ketama compatibility. It doesn't need to be cryptographic. What matters more is that **every client uses the same function and the same vnode naming scheme**. Two clients that disagree route the same key to different servers.
+
+### Does Redis Cluster use consistent hashing?
+
+Not the ring version. Redis Cluster hashes each key to one of **16,384 fixed slots** (`CRC16(key) mod 16384`) and assigns slots to nodes. Adding a node means moving some slots to it explicitly. The effect is similar (only the moved slots' keys change owner), but the mapping is an explicit table that the cluster agrees on, not something computed from a ring.
+
+### Does consistent hashing guarantee even load?
+
+It balances the **number of keys** per server, and only roughly, unless you use many vnodes. It says nothing about **traffic** per key. One hot key can still overload its owner. For that you need bounded loads, replicating hot keys, local caching in front, or splitting the key.
+
+### How are replicas placed?
+
+Walk clockwise from the key and take the first **N distinct physical servers**, skipping vnodes that belong to a server you already picked. Production systems also skip servers in the same rack or availability zone, so one failure can't take out every copy. Dynamo calls this list the *preference list*.
+
+### Why not keep a lookup table of key → server?
+
+You can, and many systems do (directory-based sharding). A table is flexible: you can move any key anywhere. But it has to be stored, kept consistent and looked up, often through a metadata service on the hot path. Consistent hashing replaces the table with a **calculation** that any client can do from the server list alone.
 
 ## Key takeaways
 

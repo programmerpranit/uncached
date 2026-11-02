@@ -96,6 +96,7 @@ export default function Reader({ topic, path, onClose, onSpinAnother }: Props) {
     e.preventDefault()
     const target = document.getElementById(decodeURIComponent(href.slice(1)))
     if (!target) return
+    if (target instanceof HTMLDetailsElement) target.open = true
     target.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })
     setActiveId(target.id)
   }

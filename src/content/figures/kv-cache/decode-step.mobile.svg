@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 502" width="360" height="502" role="img" aria-label="One decode step: the new query is scored against cached keys and mixes cached values" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="502" fill="#1b1712"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="30.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">One decoding step, one head</text>
+<rect x="16.0" y="52.0" width="96.0" height="34.0" rx="2" fill="#ff5b2e" fill-opacity="0.95" stroke="none" stroke-width="1"/>
+<text x="64.0" y="74.0" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="700">"mat"</text>
+<line x1="116.0" y1="69.0" x2="140.0" y2="69.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah)"/>
+<rect x="146.0" y="52.0" width="60.0" height="34.0" rx="2" fill="#ede6d8" fill-opacity="0.15" stroke="#ede6d8" stroke-width="1"/>
+<text x="176.0" y="74.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="700">q_t</text>
+<rect x="216.0" y="52.0" width="60.0" height="34.0" rx="2" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="246.0" y="74.0" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="700">k_t</text>
+<rect x="286.0" y="52.0" width="60.0" height="34.0" rx="2" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="316.0" y="74.0" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="700">v_t</text>
+<text x="16.0" y="112.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">k_t and v_t are appended to the cache</text>
+<text x="16.0" y="140.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="600">K cache</text>
+<text x="140.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">q·kᵀ → softmax</text>
+<text x="262.0" y="140.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="600">V cache</text>
+<rect x="16.0" y="150.0" width="108.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="24.0" y="169.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">k_The</text>
+<rect x="140.0" y="156.0" width="10.3" height="16.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="155.3" y="169.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">0.05</text>
+<rect x="262.0" y="150.0" width="82.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="270.0" y="169.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">v_The</text>
+<rect x="16.0" y="186.0" width="108.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="24.0" y="205.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">k_cat</text>
+<rect x="140.0" y="192.0" width="45.3" height="16.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="190.3" y="205.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">0.22</text>
+<rect x="262.0" y="186.0" width="82.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="270.0" y="205.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">v_cat</text>
+<rect x="16.0" y="222.0" width="108.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="24.0" y="241.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">k_sat</text>
+<rect x="140.0" y="228.0" width="16.5" height="16.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="161.5" y="241.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">0.08</text>
+<rect x="262.0" y="222.0" width="82.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="270.0" y="241.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">v_sat</text>
+<rect x="16.0" y="258.0" width="108.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="24.0" y="277.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">k_on</text>
+<rect x="140.0" y="264.0" width="24.7" height="16.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="169.7" y="277.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">0.12</text>
+<rect x="262.0" y="258.0" width="82.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="270.0" y="277.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">v_on</text>
+<rect x="16.0" y="294.0" width="108.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="24.0" y="313.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">k_the</text>
+<rect x="140.0" y="300.0" width="37.0" height="16.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="182.0" y="313.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">0.18</text>
+<rect x="262.0" y="294.0" width="82.0" height="28.0" rx="2" fill="#5fb3a1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="270.0" y="313.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">v_the</text>
+<rect x="16.0" y="330.0" width="108.0" height="28.0" rx="2" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="24.0" y="349.0" font-size="12" fill="#1b1712" text-anchor="start" font-weight="600">k_t</text>
+<rect x="140.0" y="336.0" width="72.0" height="16.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="217.0" y="349.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">0.35</text>
+<rect x="262.0" y="330.0" width="82.0" height="28.0" rx="2" fill="#ff5b2e" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="270.0" y="349.0" font-size="12" fill="#1b1712" text-anchor="start" font-weight="600">v_t</text>
+<text x="16.0" y="392.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">output = Σ weight × v</text>
+<text x="16.0" y="422.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Only q_t, k_t, v_t are new work.</text>
+<text x="16.0" y="441.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Everything teal is read from GPU</text>
+<text x="16.0" y="460.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">memory, and that read grows with</text>
+<text x="16.0" y="479.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">every token, layer and head.</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 620" width="360" height="620" role="img" aria-label="Multi-head, grouped-query and multi-query attention" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="620" fill="#1b1712"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="30.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">How many K/V heads are cached?</text>
+<text x="16.0" y="66.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">Multi-head (MHA)</text>
+<rect x="40.0" y="80.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="53.0" y1="108.0" x2="53.0" y2="146.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="76.0" y="80.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="89.0" y1="108.0" x2="89.0" y2="146.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="112.0" y="80.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="125.0" y1="108.0" x2="125.0" y2="146.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="148.0" y="80.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="161.0" y1="108.0" x2="161.0" y2="146.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="184.0" y="80.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="197.0" y1="108.0" x2="197.0" y2="146.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="220.0" y="80.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="233.0" y1="108.0" x2="233.0" y2="146.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="256.0" y="80.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="269.0" y1="108.0" x2="269.0" y2="146.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="292.0" y="80.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="305.0" y1="108.0" x2="305.0" y2="146.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="40.0" y="148.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="76.0" y="148.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="112.0" y="148.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="148.0" y="148.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="184.0" y="148.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="220.0" y="148.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="256.0" y="148.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="292.0" y="148.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="16.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">8 KV heads → 8× cache</text>
+<text x="16.0" y="236.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="600">Grouped-query (GQA)</text>
+<rect x="40.0" y="250.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="53.0" y1="278.0" x2="107.0" y2="316.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="76.0" y="250.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="89.0" y1="278.0" x2="107.0" y2="316.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="112.0" y="250.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="125.0" y1="278.0" x2="107.0" y2="316.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="148.0" y="250.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="161.0" y1="278.0" x2="107.0" y2="316.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="184.0" y="250.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="197.0" y1="278.0" x2="251.0" y2="316.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="220.0" y="250.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="233.0" y1="278.0" x2="251.0" y2="316.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="256.0" y="250.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="269.0" y1="278.0" x2="251.0" y2="316.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="292.0" y="250.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="305.0" y1="278.0" x2="251.0" y2="316.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="94.0" y="318.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="238.0" y="318.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="16.0" y="364.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">2 KV heads → 2× cache</text>
+<text x="16.0" y="406.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">Multi-query (MQA)</text>
+<rect x="40.0" y="420.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="53.0" y1="448.0" x2="179.0" y2="486.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="76.0" y="420.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="89.0" y1="448.0" x2="179.0" y2="486.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="112.0" y="420.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="125.0" y1="448.0" x2="179.0" y2="486.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="148.0" y="420.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="161.0" y1="448.0" x2="179.0" y2="486.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="184.0" y="420.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="197.0" y1="448.0" x2="179.0" y2="486.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="220.0" y="420.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="233.0" y1="448.0" x2="179.0" y2="486.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="256.0" y="420.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="269.0" y1="448.0" x2="179.0" y2="486.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="292.0" y="420.0" width="26.0" height="26.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<line x1="305.0" y1="448.0" x2="179.0" y2="486.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="166.0" y="488.0" width="26.0" height="26.0" rx="2" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="16.0" y="534.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">1 KV head → 1× cache</text>
+<rect x="16.0" y="566.0" width="12.0" height="12.0" rx="2" fill="#ede6d8" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="34.0" y="577.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">query head (not cached)</text>
+<rect x="16.0" y="590.0" width="12.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="601.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">key/value head (cached)</text>
+</svg>

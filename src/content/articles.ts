@@ -7,6 +7,26 @@ import type { Topic } from '../data/topics'
  */
 const LOADERS = import.meta.glob<string>('./articles/*/*.md', { query: '?raw', import: 'default' })
 
+/**
+ * Figures live in src/content/figures and are referenced from Markdown as /figures/<topic>/<name>.svg.
+ * Bundling them gives cache-busting URLs. A sibling <name>.mobile.svg, if present, is a portrait
+ * layout served to narrow screens, where the wide desktop figure would shrink to unreadable text.
+ */
+const FIGURES = import.meta.glob<string>('./figures/**/*.{svg,png,jpg,jpeg,webp,gif}', {
+  query: '?url',
+  import: 'default',
+  eager: true,
+})
+
+const MOBILE_FIGURE_QUERY = '(max-width: 700px)'
+
+function resolveFigure(href: string): { src: string; mobile: string | null } {
+  if (/^[a-z]+:/i.test(href)) return { src: href, mobile: null }
+  const key = `./${href.replace(/^\/+/, '')}`
+  const mobileKey = key.replace(/(\.[a-z]+)$/i, '.mobile$1')
+  return { src: FIGURES[key] ?? href, mobile: mobileKey !== key ? (FIGURES[mobileKey] ?? null) : null }
+}
+
 export const slugify = (s: string) =>
   s
     .toLowerCase()
@@ -58,12 +78,15 @@ const CALLOUTS: Record<string, string> = {
 // Captions are Markdown too (inline only), e.g. `*italic*` or `code`.
 const inline = new Marked({ gfm: true })
 
+const FAQ_HEADING = /^(faq|frequently asked questions)$/i
+
 const escapeAttr = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;')
 
 function render(body: string): { html: string; toc: TocEntry[] } {
   const toc: TocEntry[] = []
   const used = new Map<string, number>()
   let figureNo = 0
+  let inFaq = false
 
   const marked = new Marked({
     gfm: true,
@@ -75,6 +98,9 @@ function render(body: string): { html: string; toc: TocEntry[] } {
         const n = used.get(id) ?? 0
         used.set(id, n + 1)
         if (n) id = `${id}-${n}`
+        if (depth === 2) inFaq = FAQ_HEADING.test(text.trim())
+        // FAQ questions become collapsible entries (see wrapFaq) and stay out of the table of contents.
+        if (inFaq && depth === 3) return `<h3 class="faq-q" id="${id}">${inner}</h3>\n`
         if (depth === 2 || depth === 3) toc.push({ id, text, depth })
         return `<h${depth} id="${id}"><a class="anchor" href="#${id}" aria-hidden="true" tabindex="-1">#</a>${inner}</h${depth}>\n`
       },
@@ -87,7 +113,12 @@ function render(body: string): { html: string; toc: TocEntry[] } {
           const caption = img.title
             ? `<figcaption><span class="fig-no">Fig. ${figureNo}</span> ${inline.parseInline(img.title, { async: false })}</figcaption>`
             : ''
-          return `<figure><img src="${escapeAttr(img.href)}" alt="${escapeAttr(img.text)}" loading="lazy" decoding="async" />${caption}</figure>\n`
+          const { src, mobile } = resolveFigure(img.href)
+          const imgTag = `<img src="${escapeAttr(src)}" alt="${escapeAttr(img.text)}" loading="lazy" decoding="async" />`
+          const media = mobile
+            ? `<picture><source media="${MOBILE_FIGURE_QUERY}" srcset="${escapeAttr(mobile)}" />${imgTag}</picture>`
+            : imgTag
+          return `<figure${mobile ? ' class="has-mobile"' : ''}>${media}${caption}</figure>\n`
         }
         return `<p>${this.parser.parseInline(tokens)}</p>\n`
       },
@@ -119,7 +150,30 @@ function render(body: string): { html: string; toc: TocEntry[] } {
     },
   })
 
-  return { html: marked.parse(body, { async: false }) as string, toc }
+  return { html: wrapFaq(marked.parse(body, { async: false }) as string), toc }
+}
+
+/**
+ * Turns the FAQ section's `### Question` + answer pairs into <details> disclosures,
+ * so readers can scan the questions and open only the ones they care about.
+ */
+function wrapFaq(html: string): string {
+  const start = html.search(/<h2 id="(faq|frequently-asked-questions)[^"]*"/)
+  if (start < 0) return html
+  const bodyStart = html.indexOf('</h2>', start) + '</h2>'.length
+  const next = html.indexOf('<h2 ', bodyStart)
+  const end = next < 0 ? html.length : next
+  const section = html.slice(bodyStart, end)
+  const parts = section.split(/(?=<h3 class="faq-q")/)
+  const intro = parts[0].startsWith('<h3 class="faq-q"') ? '' : parts.shift()!
+  const items = parts
+    .map((part) => {
+      const m = /^<h3 class="faq-q" id="([^"]+)">([\s\S]*?)<\/h3>\n?/.exec(part)
+      if (!m) return part
+      return `<details class="faq" id="${m[1]}"><summary>${m[2]}</summary><div class="faq-a">${part.slice(m[0].length)}</div></details>\n`
+    })
+    .join('')
+  return `${html.slice(0, bodyStart)}\n${intro}<div class="faq-list">${items}</div>\n${html.slice(end)}`
 }
 
 function cell(content: string, tag: 'th' | 'td', align: 'left' | 'right' | 'center' | null) {

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 704" width="360" height="704" role="img" aria-label="PagedAttention maps logical KV blocks to non-contiguous physical blocks" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="704" fill="#1b1712"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="30.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">PagedAttention</text>
+<text x="16.0" y="50.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the KV cache as virtual memory</text>
+<text x="16.0" y="86.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="600">Request A — logical blocks</text>
+<rect x="16.0" y="98.0" width="256.0" height="28.0" rx="2" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="22.0" y="117.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Four</text>
+<text x="86.0" y="117.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">score</text>
+<text x="150.0" y="117.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">and</text>
+<text x="214.0" y="117.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">seven</text>
+<text x="282.0" y="117.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">→ #7</text>
+<rect x="16.0" y="132.0" width="256.0" height="28.0" rx="2" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="22.0" y="151.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">years</text>
+<text x="86.0" y="151.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">ago</text>
+<text x="150.0" y="151.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">our</text>
+<text x="214.0" y="151.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">fathers</text>
+<text x="282.0" y="151.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">→ #1</text>
+<rect x="16.0" y="166.0" width="256.0" height="28.0" rx="2" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="22.0" y="185.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">brought</text>
+<text x="282.0" y="185.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">→ #3</text>
+<text x="16.0" y="222.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="600">Request B — logical blocks</text>
+<rect x="16.0" y="234.0" width="256.0" height="28.0" rx="2" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="22.0" y="253.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">I</text>
+<text x="86.0" y="253.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">have</text>
+<text x="150.0" y="253.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">a</text>
+<text x="214.0" y="253.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">dream</text>
+<text x="282.0" y="253.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">→ #5</text>
+<rect x="16.0" y="268.0" width="256.0" height="28.0" rx="2" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="22.0" y="287.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">that</text>
+<text x="86.0" y="287.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">one</text>
+<text x="282.0" y="287.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">→ #0</text>
+<text x="16.0" y="324.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="600">GPU memory: physical blocks</text>
+<rect x="16.0" y="336.0" width="256.0" height="26.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="282.0" y="354.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">#0</text>
+<rect x="16.0" y="336.0" width="128.0" height="26.0" rx="2" fill="#9b8cff" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<text x="22.0" y="354.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">that</text>
+<text x="86.0" y="354.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">one</text>
+<rect x="16.0" y="367.0" width="256.0" height="26.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="282.0" y="385.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">#1</text>
+<rect x="16.0" y="367.0" width="256.0" height="26.0" rx="2" fill="#ff5b2e" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<text x="22.0" y="385.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">years</text>
+<text x="86.0" y="385.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">ago</text>
+<text x="150.0" y="385.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">our</text>
+<text x="214.0" y="385.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">fathers</text>
+<rect x="16.0" y="398.0" width="256.0" height="26.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="282.0" y="416.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">#2</text>
+<rect x="16.0" y="429.0" width="256.0" height="26.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="282.0" y="447.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">#3</text>
+<rect x="16.0" y="429.0" width="64.0" height="26.0" rx="2" fill="#ff5b2e" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<text x="22.0" y="447.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">brought</text>
+<rect x="16.0" y="460.0" width="256.0" height="26.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="282.0" y="478.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">#4</text>
+<rect x="16.0" y="491.0" width="256.0" height="26.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="282.0" y="509.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">#5</text>
+<rect x="16.0" y="491.0" width="256.0" height="26.0" rx="2" fill="#9b8cff" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<text x="22.0" y="509.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">I</text>
+<text x="86.0" y="509.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">have</text>
+<text x="150.0" y="509.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">a</text>
+<text x="214.0" y="509.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">dream</text>
+<rect x="16.0" y="522.0" width="256.0" height="26.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="282.0" y="540.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">#6</text>
+<rect x="16.0" y="553.0" width="256.0" height="26.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="282.0" y="571.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">#7</text>
+<rect x="16.0" y="553.0" width="256.0" height="26.0" rx="2" fill="#ff5b2e" fill-opacity="0.8" stroke="none" stroke-width="1"/>
+<text x="22.0" y="571.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">Four</text>
+<text x="86.0" y="571.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">score</text>
+<text x="150.0" y="571.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">and</text>
+<text x="214.0" y="571.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">seven</text>
+<text x="16.0" y="604.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Blocks are allocated on demand and</text>
+<text x="16.0" y="623.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">need not be contiguous. Only each</text>
+<text x="16.0" y="642.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">request’s last block can be partly</text>
+<text x="16.0" y="661.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">empty, and shared prefixes can point</text>
+<text x="16.0" y="680.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">at the same physical block.</text>
+</svg>

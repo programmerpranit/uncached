@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 500" width="360" height="500" role="img" aria-label="The hash ring" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="500" fill="#1b1712"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="30.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">The hash ring</text>
+<circle cx="180" cy="190" r="125" fill="none" stroke="#4a4136" stroke-width="2"/>
+<path d="M58.9 221.1 A125 125 0 0 1 240.2 80.5" fill="none" stroke="#ff5b2e" stroke-width="4" stroke-opacity="1"/>
+<path d="M240.2 80.5 A125 125 0 0 1 240.2 299.5" fill="none" stroke="#5fb3a1" stroke-width="4" stroke-opacity="1"/>
+<path d="M240.2 299.5 A125 125 0 0 1 58.9 221.1" fill="none" stroke="#e2b45a" stroke-width="4" stroke-opacity="1"/>
+<text x="174.0" y="53.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">0</text>
+<line x1="195.7" y1="66.0" x2="192.4" y2="91.8" stroke="#ff5b2e" stroke-width="1"/>
+<circle cx="192.4" cy="91.8" r="5" fill="#ff5b2e" stroke="#1b1712" stroke-width="1"/>
+<text x="189.9" y="115.6" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k1</text>
+<line x1="289.5" y1="129.8" x2="266.8" y2="142.3" stroke="#5fb3a1" stroke-width="1"/>
+<circle cx="266.8" cy="142.3" r="5" fill="#5fb3a1" stroke="#1b1712" stroke-width="1"/>
+<text x="249.2" y="155.9" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k2</text>
+<line x1="304.0" y1="205.7" x2="278.2" y2="202.4" stroke="#5fb3a1" stroke-width="1"/>
+<circle cx="278.2" cy="202.4" r="5" fill="#5fb3a1" stroke="#1b1712" stroke-width="1"/>
+<text x="258.4" y="203.9" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k3</text>
+<line x1="276.3" y1="269.7" x2="256.3" y2="253.1" stroke="#5fb3a1" stroke-width="1"/>
+<circle cx="256.3" cy="253.1" r="5" fill="#5fb3a1" stroke="#1b1712" stroke-width="1"/>
+<text x="240.9" y="244.4" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k4</text>
+<line x1="180.0" y1="315.0" x2="180.0" y2="289.0" stroke="#e2b45a" stroke-width="1"/>
+<circle cx="180.0" cy="289.0" r="5" fill="#e2b45a" stroke="#1b1712" stroke-width="1"/>
+<text x="180.0" y="273.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k5</text>
+<line x1="106.5" y1="291.1" x2="121.8" y2="270.1" stroke="#e2b45a" stroke-width="1"/>
+<circle cx="121.8" cy="270.1" r="5" fill="#e2b45a" stroke="#1b1712" stroke-width="1"/>
+<text x="133.6" y="257.9" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k6</text>
+<line x1="74.5" y1="257.0" x2="96.4" y2="243.0" stroke="#e2b45a" stroke-width="1"/>
+<circle cx="96.4" cy="243.0" r="5" fill="#e2b45a" stroke="#1b1712" stroke-width="1"/>
+<text x="113.3" y="236.3" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k7</text>
+<line x1="58.9" y1="158.9" x2="84.1" y2="165.4" stroke="#ff5b2e" stroke-width="1"/>
+<circle cx="84.1" cy="165.4" r="5" fill="#ff5b2e" stroke="#1b1712" stroke-width="1"/>
+<text x="103.5" y="174.4" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k8</text>
+<line x1="106.5" y1="88.9" x2="121.8" y2="109.9" stroke="#ff5b2e" stroke-width="1"/>
+<circle cx="121.8" cy="109.9" r="5" fill="#ff5b2e" stroke="#1b1712" stroke-width="1"/>
+<text x="133.6" y="130.1" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k9</text>
+<line x1="141.4" y1="71.1" x2="149.4" y2="95.8" stroke="#ff5b2e" stroke-width="1"/>
+<circle cx="149.4" cy="95.8" r="5" fill="#ff5b2e" stroke="#1b1712" stroke-width="1"/>
+<text x="155.6" y="118.9" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">k10</text>
+<rect x="226.2" y="66.5" width="28.0" height="28.0" rx="3" fill="#ff5b2e" fill-opacity="1" stroke="#1b1712" stroke-width="2"/>
+<text x="240.2" y="85.5" font-size="14" fill="#1b1712" text-anchor="middle" font-weight="700">A</text>
+<rect x="226.2" y="285.5" width="28.0" height="28.0" rx="3" fill="#5fb3a1" fill-opacity="1" stroke="#1b1712" stroke-width="2"/>
+<text x="240.2" y="304.5" font-size="14" fill="#1b1712" text-anchor="middle" font-weight="700">B</text>
+<rect x="44.9" y="207.1" width="28.0" height="28.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="#1b1712" stroke-width="2"/>
+<text x="58.9" y="226.1" font-size="14" fill="#1b1712" text-anchor="middle" font-weight="700">C</text>
+<text x="16.0" y="359.0" font-size="12.5" fill="#a69d8e" text-anchor="start" font-weight="400">Servers and keys share one circle</text>
+<text x="16.0" y="379.0" font-size="12.5" fill="#a69d8e" text-anchor="start" font-weight="400">of hash values (0 … 2³²−1). A key</text>
+<text x="16.0" y="399.0" font-size="12.5" fill="#a69d8e" text-anchor="start" font-weight="400">belongs to the first server clockwise.</text>
+<text x="16.0" y="439.0" font-size="12.5" fill="#ff5b2e" text-anchor="start" font-weight="400">A owns k8 k9 k10 k1 (wraps past 0)</text>
+<text x="16.0" y="459.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="400">B owns k2 k3 k4</text>
+<text x="16.0" y="479.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="400">C owns k5 k6 k7</text>
+</svg>

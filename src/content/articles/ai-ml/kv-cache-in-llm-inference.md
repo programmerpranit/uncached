@@ -202,6 +202,36 @@ Many requests start with the **same tokens**: a long system prompt, few-shot exa
 5. Why is decode memory-bound even on a GPU with enormous compute? What does batching change, and what stops you batching forever?
 6. PagedAttention is "virtual memory for the KV cache". Which other OS ideas (copy-on-write, swapping, LRU) show up in LLM serving, and where?
 
+## FAQ
+
+### Does the KV cache change the model's output?
+
+No. It's an exact optimisation. Past keys and values can't change under causal attention, so reusing them gives the same result as recomputing them, up to tiny floating-point differences. Lossy techniques built on top of it, such as KV quantization, eviction and sliding windows, **can** change outputs, so evaluate those separately.
+
+### Is this the same as "prompt caching" in LLM APIs?
+
+Prompt caching is the KV cache **kept across requests**. Normally a request's cache is thrown away when it finishes. With prompt or prefix caching, the provider keeps the K/V for a prompt prefix for a while. When your next request starts with exactly the same tokens, it skips prefill for that part. That's why cached input tokens are cheaper and the first token comes back faster.
+
+### If the cache removes recomputation, why do long contexts still get slower?
+
+Each new token still has to **read** the whole cache to attend over it. At 100K tokens of context, every decoding step streams 100K keys and values per layer from GPU memory. Per-token time and memory both grow linearly with context. The cache removes the *quadratic recompute*, not the *linear read*.
+
+### How do I estimate how much memory I need?
+
+Use `2 × layers × kv_heads × head_dim × bytes_per_value` per token, from the model's `config.json` (`num_hidden_layers`, `num_key_value_heads`, `head_dim` or `hidden_size / num_attention_heads`). Multiply by the longest context you'll serve and the number of concurrent sequences. Add the weights and ~10–20% headroom for activations and fragmentation.
+
+### Does FlashAttention shrink the KV cache?
+
+No. FlashAttention computes attention in tiles, so it never materialises the full attention-score matrix, which saves memory traffic and time. The K and V tensors it reads are still the full cache. To shrink the cache itself, use GQA/MQA, MLA, quantization or windows. FlashAttention-style kernels and a paged KV cache are complementary, and engines use both.
+
+### Can different users share a KV cache?
+
+Only for **byte-identical prefixes**, such as a common system prompt, and only if it's safe. Cache-hit timing can leak whether someone else recently sent the same prefix, so multi-tenant services usually scope caches per organisation or account.
+
+### Is the KV cache the model's "memory" of earlier conversations?
+
+No. It's per-request working state that disappears when the request ends, or when a prompt cache entry expires. A model "remembers" an earlier chat only because the app sends that chat again as part of the next prompt. The KV cache just makes re-reading it cheaper.
+
 ## Key takeaways
 
 - Causal attention makes past keys and values **immutable**, so caching them is exact, not an approximation.
