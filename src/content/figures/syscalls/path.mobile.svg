@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 458" width="360" height="458" role="img" aria-label="Path of a read system call from user code through libc, the syscall instruction, the kernel and back" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="458" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Path of a system call</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">user mode → kernel → back</text>
+<rect x="16.0" y="70.0" width="6.0" height="40.0" rx="1" fill="#5fb3a1" fill-opacity="0.9" stroke="#5fb3a1" stroke-width="1"/>
+<text x="30.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">your code</text>
+<text x="30.0" y="103.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">user mode</text>
+<rect x="16.0" y="120.0" width="6.0" height="40.0" rx="1" fill="#5fb3a1" fill-opacity="0.9" stroke="#5fb3a1" stroke-width="1"/>
+<text x="30.0" y="136.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">libc wrapper</text>
+<text x="30.0" y="153.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">user mode</text>
+<rect x="16.0" y="170.0" width="6.0" height="40.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="#e2b45a" stroke-width="1"/>
+<text x="30.0" y="186.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">syscall instruction</text>
+<text x="30.0" y="203.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">mode switch</text>
+<rect x="16.0" y="220.0" width="6.0" height="40.0" rx="1" fill="#e5534b" fill-opacity="0.9" stroke="#e5534b" stroke-width="1"/>
+<text x="30.0" y="236.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">kernel entry</text>
+<text x="30.0" y="253.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">kernel mode</text>
+<rect x="16.0" y="270.0" width="6.0" height="40.0" rx="1" fill="#e5534b" fill-opacity="0.9" stroke="#e5534b" stroke-width="1"/>
+<text x="30.0" y="286.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">sys_read → VFS → socket</text>
+<text x="30.0" y="303.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">kernel mode</text>
+<rect x="16.0" y="320.0" width="6.0" height="40.0" rx="1" fill="#e2b45a" fill-opacity="0.9" stroke="#e2b45a" stroke-width="1"/>
+<text x="30.0" y="336.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">sysret</text>
+<text x="30.0" y="353.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">mode switch</text>
+<text x="16.0" y="390.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The kernel validates every pointer</text>
+<text x="16.0" y="409.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and copies data across. Each call</text>
+<text x="16.0" y="428.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">pays the mode switch both ways.</text>
+</svg>

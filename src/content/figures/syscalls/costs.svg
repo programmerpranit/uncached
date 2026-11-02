@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 422" width="880" height="422" role="img" aria-label="Approximate cost of a function call, vDSO call, trivial syscall, syscall with mitigations, read and blocking syscall" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="422" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What crossing the boundary costs (order of magnitude)</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">modern x86 Linux; exact numbers vary with CPU and mitigations (log scale)</text>
+<text x="40.0" y="100.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">function call</text>
+<rect x="400.0" y="88.0" width="16.5" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="426.5" y="103.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">~1 ns</text>
+<text x="40.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">vDSO clock_gettime()</text>
+<rect x="400.0" y="128.0" width="99.0" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="509.0" y="143.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">~20 ns</text>
+<text x="40.0" y="180.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">trivial syscall (getppid)</text>
+<rect x="400.0" y="168.0" width="148.5" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="558.5" y="183.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~50–100 ns</text>
+<text x="40.0" y="220.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">same, with KPTI/Spectre mitigations</text>
+<rect x="400.0" y="208.0" width="198.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="608.0" y="223.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~100s of ns</text>
+<text x="40.0" y="260.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">read() of 4 KiB from page cache</text>
+<rect x="400.0" y="248.0" width="237.6" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="647.6" y="263.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~1 µs</text>
+<text x="40.0" y="300.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">syscall that blocks → context switch</text>
+<rect x="400.0" y="288.0" width="303.6" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="713.6" y="303.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">µs + wakeup</text>
+<text x="40.0" y="354.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The mode switch itself is cheap next to a context switch, but at millions of calls per second it adds up, and</text>
+<text x="40.0" y="373.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">mitigations for Meltdown and Spectre (2018) made it noticeably more expensive. Data copying and the work the</text>
+<text x="40.0" y="392.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">call does often dominate, so measure before blaming the boundary.</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 424" width="360" height="424" role="img" aria-label="Approximate cost of a function call, vDSO call, trivial syscall, syscall with mitigations, read and blocking syscall" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="424" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Boundary costs</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">x86 Linux, log scale, rough</text>
+<text x="16.0" y="84.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">function call</text>
+<rect x="16.0" y="92.0" width="11.0" height="14.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="35.0" y="104.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="700">~1 ns</text>
+<text x="16.0" y="128.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">vDSO clock_gettime</text>
+<rect x="16.0" y="136.0" width="66.0" height="14.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="90.0" y="148.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="700">~20 ns</text>
+<text x="16.0" y="172.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">trivial syscall</text>
+<rect x="16.0" y="180.0" width="99.0" height="14.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="123.0" y="192.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">~50–100 ns</text>
+<text x="16.0" y="216.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">+ mitigations</text>
+<rect x="16.0" y="224.0" width="132.0" height="14.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="156.0" y="236.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">~100s of ns</text>
+<text x="16.0" y="260.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">read 4 KiB (cached)</text>
+<rect x="16.0" y="268.0" width="158.4" height="14.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="182.4" y="280.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="700">~1 µs</text>
+<text x="16.0" y="304.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">blocking syscall</text>
+<rect x="16.0" y="312.0" width="202.4" height="14.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="226.4" y="324.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="700">µs + wakeup</text>
+<text x="16.0" y="356.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cheap per call, expensive at</text>
+<text x="16.0" y="375.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">millions per second. Mitigations</text>
+<text x="16.0" y="394.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">since 2018 raised the cost.</text>
+</svg>
