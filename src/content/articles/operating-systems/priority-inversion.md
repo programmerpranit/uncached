@@ -138,9 +138,9 @@ Then you lose the ability to guarantee that urgent work (control loops, audio, i
 
 ## References
 
-1. L. Sha, R. Rajkumar, J. Lehoczky. [Priority Inheritance Protocols: An Approach to Real-Time Synchronization](https://ieeexplore.ieee.org/document/57058). *IEEE Transactions on Computers*, 1990.
+1. L. Sha, R. Rajkumar, J. Lehoczky. *Priority Inheritance Protocols: An Approach to Real-Time Synchronization*. *IEEE Transactions on Computers*, 1990.
 2. G. Reeves. [What really happened on Mars?](https://www.cs.cornell.edu/courses/cs614/1999sp/papers/pathfinder.html) 1997.
-3. M. Jones. [What really happened on Mars Rover Pathfinder](https://www.cs.unc.edu/~anderson/teach/comp790/papers/mars_pathfinder_long_version.html). *RISKS Digest*, 1997.
+3. M. Jones. What really happened on Mars Rover Pathfinder. *The RISKS Digest*, volume 19, issue 49, 1997.
 4. Linux kernel docs. [RT-mutex implementation design](https://docs.kernel.org/locking/rt-mutex-design.html) and [PI-futex](https://docs.kernel.org/locking/pi-futex.html).
 5. Linux man pages. [pthread_mutexattr_setprotocol(3p)](https://man7.org/linux/man-pages/man3/pthread_mutexattr_setprotocol.3p.html).
 6. R. Bencina. [Real-time audio programming 101: time waits for nothing](http://www.rossbencina.com/code/real-time-audio-programming-101-time-waits-for-nothing). 2011.
