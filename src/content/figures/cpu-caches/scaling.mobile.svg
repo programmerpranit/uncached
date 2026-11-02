@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 408" width="360" height="408" role="img" aria-label="Illustrative throughput of padded versus adjacent per-thread counters as threads increase" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="408" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">False sharing cost</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">own counter per thread (illustrative)</text>
+<line x1="46.0" y1="250.0" x2="336.0" y2="250.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="46.0" y1="250.0" x2="46.0" y2="100.0" stroke="#4a4136" stroke-width="1.3"/>
+<path d="M46.0 240.6 L118.5 231.2 L191.0 212.5 L263.5 175.0 L336.0 100.0" fill="none" stroke="#7cc47f" stroke-width="2.2"/>
+<circle cx="46.0" cy="240.6" r="3.2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="118.5" cy="231.2" r="3.2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="191.0" cy="212.5" r="3.2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="263.5" cy="175.0" r="3.2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="336.0" cy="100.0" r="3.2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<path d="M46.0 240.6 L118.5 244.4 L191.0 245.3 L263.5 245.8 L336.0 246.2" fill="none" stroke="#e5534b" stroke-width="2.2"/>
+<circle cx="46.0" cy="240.6" r="3.2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="118.5" cy="244.4" r="3.2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="191.0" cy="245.3" r="3.2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="263.5" cy="245.8" r="3.2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="336.0" cy="246.2" r="3.2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="46.0" y="268.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<text x="118.5" y="268.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<text x="191.0" y="268.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<text x="263.5" y="268.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">8</text>
+<text x="336.0" y="268.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">16</text>
+<text x="191.0" y="286.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">threads</text>
+<text x="38.0" y="104.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">16×</text>
+<text x="38.0" y="244.6" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">1×</text>
+<rect x="16.0" y="300.0" width="12.0" height="12.0" rx="2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="310.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">padded</text>
+<rect x="126.0" y="300.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="144.0" y="310.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">adjacent</text>
+<text x="16.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Adjacent counters get slower than</text>
+<text x="16.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one thread. perf c2c finds the</text>
+<text x="16.0" y="378.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">contended lines.</text>
+</svg>

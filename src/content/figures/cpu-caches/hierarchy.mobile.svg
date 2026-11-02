@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 426" width="360" height="426" role="img" aria-label="Latency of registers, L1, L2, L3, local DRAM and remote DRAM" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="426" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Memory hierarchy</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">rough latency, log scale</text>
+<text x="16.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">register</text>
+<rect x="16.0" y="94.0" width="6.4" height="14.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="30.4" y="106.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="700">&lt;1 ns</text>
+<text x="16.0" y="130.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">L1 cache</text>
+<rect x="16.0" y="138.0" width="28.4" height="14.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="52.4" y="150.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="700">~1 ns</text>
+<text x="16.0" y="174.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">L2 cache</text>
+<rect x="16.0" y="182.0" width="68.0" height="14.0" rx="3" fill="#5fb3a1" fill-opacity="0.7" stroke="#5fb3a1" stroke-width="1"/>
+<text x="92.0" y="194.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="700">~3–5 ns</text>
+<text x="16.0" y="218.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">L3 cache</text>
+<rect x="16.0" y="226.0" width="107.6" height="14.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="131.6" y="238.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">~10–20 ns</text>
+<text x="16.0" y="262.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">DRAM</text>
+<rect x="16.0" y="270.0" width="167.0" height="14.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="191.0" y="282.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="700">~80–100 ns</text>
+<text x="16.0" y="306.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">DRAM, other socket</text>
+<rect x="16.0" y="314.0" width="189.0" height="14.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="213.0" y="326.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="700">~130–200 ns</text>
+<text x="16.0" y="358.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">64-byte lines. DRAM ≈ 100× L1.</text>
+<text x="16.0" y="377.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Access patterns often matter more</text>
+<text x="16.0" y="396.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">than instruction counts.</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 388" width="880" height="388" role="img" aria-label="Illustrative time to sum 100 million integers with sequential, strided, random and linked-list access" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="388" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Access patterns: same data, very different speed</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">summing 100 million 4-byte ints (illustrative)</text>
+<text x="40.0" y="104.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">sequential array</text>
+<text x="40.0" y="121.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">prefetchers stream lines; every byte of each line used</text>
+<rect x="500.0" y="94.0" width="20.0" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="530.0" y="109.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">~30 ms</text>
+<text x="40.0" y="156.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">strided (every 16th int)</text>
+<text x="40.0" y="173.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">one useful int per 64-byte line</text>
+<rect x="500.0" y="146.0" width="112.5" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="622.5" y="161.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~16× more lines</text>
+<text x="40.0" y="208.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">random indexes into array</text>
+<text x="40.0" y="225.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">cache miss per access; prefetch can't guess</text>
+<rect x="500.0" y="198.0" width="212.5" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="722.5" y="213.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~1 s</text>
+<text x="40.0" y="260.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">linked list in allocation order</text>
+<text x="40.0" y="277.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">pointer chasing: next address unknown until load</text>
+<rect x="500.0" y="250.0" width="250.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="760.0" y="265.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~1–2 s</text>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Hardware prefetchers detect sequential and strided streams and fetch ahead; random and dependent accesses</text>
+<text x="40.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">defeat them. Data-oriented design (arrays of structs → structs of arrays, contiguous containers, fewer pointers)</text>
+<text x="40.0" y="358.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">is mostly about turning the bottom rows into the top one.</text>
+</svg>

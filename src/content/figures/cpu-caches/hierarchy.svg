@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 458" width="880" height="458" role="img" aria-label="Latency of registers, L1, L2, L3, local DRAM and remote DRAM" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="458" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The memory hierarchy: latency per access</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">typical modern x86 server core (log scale, rough)</text>
+<text x="40.0" y="104.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">register</text>
+<text x="40.0" y="121.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">—</text>
+<rect x="300.0" y="94.0" width="8.0" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="318.0" y="109.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">&lt;1 ns</text>
+<text x="40.0" y="150.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">L1 cache</text>
+<text x="40.0" y="167.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">32–48 KiB per core</text>
+<rect x="300.0" y="140.0" width="48.0" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="358.0" y="155.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">~1 ns (4–5 cycles)</text>
+<text x="40.0" y="196.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">L2 cache</text>
+<text x="40.0" y="213.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">1–2 MiB per core</text>
+<rect x="300.0" y="186.0" width="120.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.7" stroke="#5fb3a1" stroke-width="1"/>
+<text x="430.0" y="201.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">~3–5 ns (12–16 cycles)</text>
+<text x="40.0" y="242.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">L3 cache</text>
+<text x="40.0" y="259.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">tens of MiB, shared</text>
+<rect x="300.0" y="232.0" width="192.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="502.0" y="247.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~10–20 ns (40–70 cycles)</text>
+<text x="40.0" y="288.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">DRAM</text>
+<text x="40.0" y="305.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">GBs–TBs</text>
+<rect x="300.0" y="278.0" width="300.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="610.0" y="293.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~80–100 ns</text>
+<text x="40.0" y="334.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">DRAM, other socket</text>
+<text x="40.0" y="351.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400"></text>
+<rect x="300.0" y="324.0" width="340.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="650.0" y="339.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~130–200 ns</text>
+<text x="40.0" y="390.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Caches move data in 64-byte lines. A miss all the way to DRAM costs ~100× an L1 hit, the time for hundreds of</text>
+<text x="40.0" y="409.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">instructions. That is why access patterns (sequential vs random, compact vs scattered) often matter more than</text>
+<text x="40.0" y="428.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">instruction counts, and why a sorted array can beat a "faster" algorithm on a linked structure.</text>
+</svg>
