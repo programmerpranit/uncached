@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 357" width="360" height="357" role="img" aria-label="Count-Min Sketch: counters in several hashed rows, estimate is the minimum" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="357" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Count-Min Sketch: approximate counts</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">estimate = min across rows</text>
+<text x="28.0" y="124.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">h1</text>
+<rect x="40.0" y="100.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="125.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">3</text>
+<rect x="76.0" y="100.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="92.0" y="125.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<rect x="112.0" y="100.0" width="32.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="#ff5b2e" stroke-width="1"/>
+<text x="128.0" y="125.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">7</text>
+<rect x="148.0" y="100.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="164.0" y="125.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<rect x="184.0" y="100.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="200.0" y="125.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<rect x="220.0" y="100.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="236.0" y="125.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">9</text>
+<rect x="256.0" y="100.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="272.0" y="125.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<rect x="292.0" y="100.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="308.0" y="125.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="28.0" y="172.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">h2</text>
+<rect x="40.0" y="148.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="173.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<rect x="76.0" y="148.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="92.0" y="173.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">5</text>
+<rect x="112.0" y="148.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="128.0" y="173.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<rect x="148.0" y="148.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="164.0" y="173.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">8</text>
+<rect x="184.0" y="148.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="200.0" y="173.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">3</text>
+<rect x="220.0" y="148.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="236.0" y="173.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<rect x="256.0" y="148.0" width="32.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="#ff5b2e" stroke-width="1"/>
+<text x="272.0" y="173.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">6</text>
+<rect x="292.0" y="148.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="308.0" y="173.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<text x="28.0" y="220.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">h3</text>
+<rect x="40.0" y="196.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="221.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<rect x="76.0" y="196.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="92.0" y="221.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<rect x="112.0" y="196.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="128.0" y="221.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<rect x="148.0" y="196.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="164.0" y="221.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<rect x="184.0" y="196.0" width="32.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="#ff5b2e" stroke-width="1"/>
+<text x="200.0" y="221.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">9</text>
+<rect x="220.0" y="196.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="236.0" y="221.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">3</text>
+<rect x="256.0" y="196.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="272.0" y="221.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<rect x="292.0" y="196.0" width="32.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="308.0" y="221.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">7</text>
+<text x="16.0" y="82.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="600">count("tea") = min(7, 6, 9) = 6</text>
+<text x="16.0" y="270.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Collisions only add, so each row</text>
+<text x="16.0" y="289.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">over-estimates; take the minimum.</text>
+<text x="16.0" y="308.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Memory is fixed, whatever the</text>
+<text x="16.0" y="327.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">number of distinct keys.</text>
+</svg>

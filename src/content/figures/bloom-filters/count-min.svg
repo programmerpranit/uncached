@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 319" width="880" height="319" role="img" aria-label="Count-Min Sketch: counters in several hashed rows, estimate is the minimum" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="319" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Count-Min Sketch: approximate counts</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">d rows × w counters; estimate = min across rows</text>
+<text x="208.0" y="114.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">h1</text>
+<rect x="220.0" y="90.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="248.0" y="115.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">3</text>
+<rect x="280.0" y="90.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="308.0" y="115.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<rect x="340.0" y="90.0" width="56.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="#ff5b2e" stroke-width="1"/>
+<text x="368.0" y="115.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">7</text>
+<rect x="400.0" y="90.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="428.0" y="115.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<rect x="460.0" y="90.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="488.0" y="115.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<rect x="520.0" y="90.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="548.0" y="115.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">9</text>
+<rect x="580.0" y="90.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="608.0" y="115.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<rect x="640.0" y="90.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="668.0" y="115.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="208.0" y="162.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">h2</text>
+<rect x="220.0" y="138.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="248.0" y="163.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<rect x="280.0" y="138.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="308.0" y="163.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">5</text>
+<rect x="340.0" y="138.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="368.0" y="163.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<rect x="400.0" y="138.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="428.0" y="163.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">8</text>
+<rect x="460.0" y="138.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="488.0" y="163.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">3</text>
+<rect x="520.0" y="138.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="548.0" y="163.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<rect x="580.0" y="138.0" width="56.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="#ff5b2e" stroke-width="1"/>
+<text x="608.0" y="163.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">6</text>
+<rect x="640.0" y="138.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="668.0" y="163.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<text x="208.0" y="210.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">h3</text>
+<rect x="220.0" y="186.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="248.0" y="211.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<rect x="280.0" y="186.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="308.0" y="211.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<rect x="340.0" y="186.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="368.0" y="211.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<rect x="400.0" y="186.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="428.0" y="211.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<rect x="460.0" y="186.0" width="56.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="#ff5b2e" stroke-width="1"/>
+<text x="488.0" y="211.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">9</text>
+<rect x="520.0" y="186.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="548.0" y="211.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">3</text>
+<rect x="580.0" y="186.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="608.0" y="211.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<rect x="640.0" y="186.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="668.0" y="211.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">7</text>
+<text x="40.0" y="110.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="600">count("tea")</text>
+<text x="40.0" y="130.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">= min(7, 6, 9)</text>
+<text x="40.0" y="150.0" font-size="14" fill="#ff5b2e" text-anchor="start" font-weight="700">= 6</text>
+<text x="40.0" y="270.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Increment: add 1 to one counter per row. Collisions only add, so every row over-estimates; the minimum is the best</text>
+<text x="40.0" y="289.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">guess. Error ≤ εN with probability 1−δ using w = e/ε and d = ln(1/δ). Used for heavy hitters and rate limiting.</text>
+</svg>

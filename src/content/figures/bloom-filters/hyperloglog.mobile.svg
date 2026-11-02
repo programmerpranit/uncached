@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 306" width="360" height="306" role="img" aria-label="HyperLogLog estimates distinct counts from the maximum number of leading zeros in hashes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="306" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">HyperLogLog</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">rare patterns ⇒ many values</text>
+<text x="16.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">0001 0110…</text>
+<text x="344.0" y="86.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">3 zeros</text>
+<text x="16.0" y="110.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">1011 0001…</text>
+<text x="344.0" y="110.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">0 zeros</text>
+<text x="16.0" y="134.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">0000 0011…</text>
+<text x="344.0" y="134.0" font-size="12" fill="#ff5b2e" text-anchor="end" font-weight="400">6 zeros</text>
+<text x="16.0" y="158.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">0100 1110…</text>
+<text x="344.0" y="158.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">1 zeros</text>
+<text x="16.0" y="200.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">6 leading zeros ≈ 1 in 64, so</text>
+<text x="16.0" y="219.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">you’ve likely seen ~64 values.</text>
+<text x="16.0" y="238.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">Many registers + harmonic mean</text>
+<text x="16.0" y="257.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">→ ~0.8% error in 12 KB (Redis).</text>
+<text x="16.0" y="276.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Merge two HLLs with max.</text>
+</svg>

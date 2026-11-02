@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 318" width="880" height="318" role="img" aria-label="HyperLogLog estimates distinct counts from the maximum number of leading zeros in hashes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="318" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">HyperLogLog: count distinct from leading zeros</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">rare bit patterns reveal how many values you have seen</text>
+<text x="60.0" y="96.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">hash = 0001 0110…</text>
+<text x="300.0" y="96.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">leading zeros: 3</text>
+<text x="60.0" y="122.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">hash = 1011 0001…</text>
+<text x="300.0" y="122.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">leading zeros: 0</text>
+<text x="60.0" y="148.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">hash = 0000 0011…</text>
+<text x="300.0" y="148.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="400">leading zeros: 6</text>
+<text x="60.0" y="174.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">hash = 0100 1110…</text>
+<text x="300.0" y="174.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">leading zeros: 1</text>
+<text x="500.0" y="96.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Seeing a hash with 6 leading zeros</text>
+<text x="500.0" y="118.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">is a 1-in-64 event, so you have</text>
+<text x="500.0" y="140.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">probably seen ~64 distinct values.</text>
+<text x="500.0" y="162.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">Split into 2^p registers, keep the</text>
+<text x="500.0" y="184.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">max per register, take a harmonic</text>
+<text x="500.0" y="206.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">mean: ~0.8% error in 12 KB.</text>
+<text x="60.0" y="250.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Redis PFADD/PFCOUNT uses 12 KB per HyperLogLog (16,384 registers × 6 bits) for a standard error of 0.81%,</text>
+<text x="60.0" y="269.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">whether you count a thousand or a billion distinct items. Duplicates don’t change the registers,</text>
+<text x="60.0" y="288.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and two HLLs merge by taking the max of each register.</text>
+</svg>

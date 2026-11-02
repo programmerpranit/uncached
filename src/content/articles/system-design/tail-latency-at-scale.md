@@ -90,7 +90,6 @@ For search, recommendations and feeds, a response built from **98% of shards** i
 | --- | --- |
 | **Google search, BigTable** | Hedged and tied requests, micro-partitions, canary requests, partial results |
 | **Apache Cassandra** | Speculative retry: send a read to another replica if the first is slower than its p99 (`speculative_retry = 99p`) |
-| **Amazon DynamoDB / S3 clients** | Request hedging in some SDKs and services; AWS writes about avoiding tail latency in the Builders' Library |
 | **gRPC** | Hedging policy in service config (`hedgingPolicy` with `hedgingDelay`) |
 | **Envoy** | Request hedging on per-try timeout, outlier detection |
 | **Finagle / Linkerd** | Backup requests, latency-aware balancing |
@@ -165,5 +164,5 @@ No. A page that makes 20 backend calls, or a microservice architecture with a de
 4. gRPC. [Request Hedging](https://grpc.io/docs/guides/request-hedging/).
 5. Apache Cassandra docs. [Speculative retry](https://cassandra.apache.org/doc/latest/cassandra/reference/cql-commands/create-table.html#speculative-retry-options).
 6. Elastic. [Improving Response Latency in Elasticsearch with Adaptive Replica Selection](https://www.elastic.co/blog/improving-response-latency-in-elasticsearch-with-adaptive-replica-selection). 2017.
-7. P. Lu, T. Ji, et al. [Treadmill: Attributing the Source of Tail Latency through Precise Load Testing and Statistical Inference](https://research.facebook.com/publications/treadmill-attributing-the-source-of-tail-latency-through-precise-load-testing-and-statistical-inference/). *ISCA 2016*.
+7. Y. Zhang, D. Meisner, J. Mars, L. Tang. [Treadmill: Attributing the Source of Tail Latency through Precise Load Testing and Statistical Inference](https://research.facebook.com/publications/treadmill-attributing-the-source-of-tail-latency-through-precise-load-testing-and-statistical-inference/). *ISCA 2016*.
 8. Google SRE Book. [Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/) (on percentiles and "worrying about your tail").

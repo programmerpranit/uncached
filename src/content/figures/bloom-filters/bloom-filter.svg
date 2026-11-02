@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 355" width="880" height="355" role="img" aria-label="A Bloom filter with 16 bits and 3 hash functions; a query for an absent key returns a false positive" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="355" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A Bloom filter: k hashes set k bits</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">m = 16 bits, k = 3 hash functions</text>
+<rect x="60.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="81.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="81.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<rect x="106.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.5" stroke="#5fb3a1" stroke-width="1"/>
+<text x="127.0" y="194.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">1</text>
+<text x="127.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<rect x="152.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="173.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="173.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<rect x="198.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="#e2b45a" stroke-width="1"/>
+<text x="219.0" y="194.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">1</text>
+<text x="219.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">3</text>
+<rect x="244.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="265.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="265.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<rect x="290.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="311.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="311.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">5</text>
+<rect x="336.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.5" stroke="#9b8cff" stroke-width="1"/>
+<text x="357.0" y="194.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">1</text>
+<text x="357.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">6</text>
+<rect x="382.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="403.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="403.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">7</text>
+<rect x="428.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="449.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="449.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">8</text>
+<rect x="474.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="495.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="495.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">9</text>
+<rect x="520.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="541.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="541.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">10</text>
+<rect x="566.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.5" stroke="#5fb3a1" stroke-width="1"/>
+<text x="587.0" y="194.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">1</text>
+<text x="587.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">11</text>
+<rect x="612.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="633.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="633.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">12</text>
+<rect x="658.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="679.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="679.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">13</text>
+<rect x="704.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="#e2b45a" stroke-width="1"/>
+<text x="725.0" y="194.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">1</text>
+<text x="725.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">14</text>
+<rect x="750.0" y="170.0" width="42.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="771.0" y="194.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="400">0</text>
+<text x="771.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">15</text>
+<text x="60.0" y="96.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="600">add "cat"</text>
+<line x1="120.0" y1="102.0" x2="127.0" y2="168.0" stroke="#5fb3a1" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="120.0" y1="102.0" x2="357.0" y2="168.0" stroke="#5fb3a1" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="120.0" y1="102.0" x2="587.0" y2="168.0" stroke="#5fb3a1" stroke-width="1" marker-end="url(#ah0)"/>
+<text x="520.0" y="96.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="600">add "dog"</text>
+<line x1="580.0" y1="102.0" x2="219.0" y2="168.0" stroke="#e2b45a" stroke-width="1" marker-end="url(#ah1)"/>
+<line x1="580.0" y1="102.0" x2="357.0" y2="168.0" stroke="#e2b45a" stroke-width="1" marker-end="url(#ah1)"/>
+<line x1="580.0" y1="102.0" x2="725.0" y2="168.0" stroke="#e2b45a" stroke-width="1" marker-end="url(#ah1)"/>
+<text x="60.0" y="270.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">query "fox" → bits 1, 3, 14 → all 1 → "probably present" (false positive!)</text>
+<line x1="127.0" y1="232.0" x2="127.0" y2="250.0" stroke="#e5534b" stroke-width="1.2"/>
+<line x1="219.0" y1="232.0" x2="219.0" y2="250.0" stroke="#e5534b" stroke-width="1.2"/>
+<line x1="725.0" y1="232.0" x2="725.0" y2="250.0" stroke="#e5534b" stroke-width="1.2"/>
+<text x="60.0" y="306.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Any 0 bit means "definitely not present". All 1s means "probably present": the bits may have been set by other</text>
+<text x="60.0" y="325.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">keys. No false negatives, tunable false positives, and no way to list or delete keys.</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 389" width="880" height="389" role="img" aria-label="False-positive rate falls exponentially with bits per element" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="389" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">False-positive rate vs memory</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">optimal k; bits per element on the x-axis</text>
+<line x1="110.0" y1="290.0" x2="830.0" y2="290.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="110.0" y1="90.0" x2="110.0" y2="290.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="110.0" y1="90.0" x2="830.0" y2="90.0" stroke="#2f2921" stroke-width="1"/>
+<text x="104.0" y="94.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">100%</text>
+<line x1="110.0" y1="130.0" x2="830.0" y2="130.0" stroke="#2f2921" stroke-width="1"/>
+<text x="104.0" y="134.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">10%</text>
+<line x1="110.0" y1="170.0" x2="830.0" y2="170.0" stroke="#2f2921" stroke-width="1"/>
+<text x="104.0" y="174.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">1%</text>
+<line x1="110.0" y1="210.0" x2="830.0" y2="210.0" stroke="#2f2921" stroke-width="1"/>
+<text x="104.0" y="214.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">0.1%</text>
+<line x1="110.0" y1="250.0" x2="830.0" y2="250.0" stroke="#2f2921" stroke-width="1"/>
+<text x="104.0" y="254.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">0.01%</text>
+<line x1="110.0" y1="290.0" x2="830.0" y2="290.0" stroke="#2f2921" stroke-width="1"/>
+<text x="104.0" y="294.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">0.001%</text>
+<path d="M110,98.3 L113,99.1 L116,99.9 L119,100.7 L122,101.5 L125,102.3 L128,103.1 L131,103.9 L134,104.7 L137,105.5 L140,106.3 L143,107.1 L146,107.9 L149,108.7 L152,109.5 L155,110.3 L158,111.1 L161,111.9 L164,112.7 L167,113.5 L170,114.3 L173,115.1 L176,115.9 L179,116.7 L182,117.5 L185,118.3 L188,119.1 L191,119.9 L194,120.7 L197,121.5 L200,122.3 L203,123.1 L206,123.9 L209,124.7 L212,125.5 L215,126.3 L218,127.1 L221,127.9 L224,128.7 L227,129.5 L230,130.3 L233,131.1 L236,131.9 L239,132.7 L242,133.5 L245,134.3 L248,135.1 L251,135.9 L254,136.7 L257,137.5 L260,138.3 L263,139.1 L266,139.9 L269,140.7 L272,141.5 L275,142.3 L278,143.1 L281,143.9 L284,144.7 L287,145.5 L290,146.3 L293,147.1 L296,147.9 L299,148.7 L302,149.5 L305,150.3 L308,151.1 L311,151.9 L314,152.7 L317,153.5 L320,154.3 L323,155.1 L326,155.9 L329,156.7 L332,157.5 L335,158.3 L338,159.1 L341,159.9 L344,160.7 L347,161.5 L350,162.3 L353,163.1 L356,163.9 L359,164.7 L362,165.5 L365,166.3 L368,167.1 L371,167.9 L374,168.7 L377,169.5 L380,170.3 L383,171.1 L386,171.9 L389,172.7 L392,173.5 L395,174.3 L398,175.1 L401,175.9 L404,176.7 L407,177.5 L410,178.3 L413,179.1 L416,179.9 L419,180.7 L422,181.5 L425,182.3 L428,183.1 L431,183.9 L434,184.7 L437,185.5 L440,186.3 L443,187.1 L446,187.9 L449,188.7 L452,189.5 L455,190.3 L458,191.1 L461,191.9 L464,192.7 L467,193.5 L470,194.3 L473,195.1 L476,195.9 L479,196.7 L482,197.5 L485,198.3 L488,199.1 L491,199.9 L494,200.7 L497,201.5 L500,202.3 L503,203.1 L506,203.9 L509,204.7 L512,205.5 L515,206.3 L518,207.1 L521,207.9 L524,208.7 L527,209.5 L530,210.3 L533,211.1 L536,211.9 L539,212.7 L542,213.5 L545,214.3 L548,215.1 L551,215.9 L554,216.7 L557,217.5 L560,218.3 L563,219.1 L566,219.9 L569,220.7 L572,221.5 L575,222.3 L578,223.1 L581,223.9 L584,224.7 L587,225.5 L590,226.3 L593,227.1 L596,227.9 L599,228.7 L602,229.5 L605,230.3 L608,231.1 L611,231.9 L614,232.7 L617,233.5 L620,234.3 L623,235.1 L626,235.9 L629,236.7 L632,237.5 L635,238.3 L638,239.1 L641,239.9 L644,240.7 L647,241.5 L650,242.3 L653,243.1 L656,243.9 L659,244.7 L662,245.5 L665,246.3 L668,247.1 L671,247.9 L674,248.7 L677,249.5 L680,250.3 L683,251.1 L686,251.9 L689,252.7 L692,253.5 L695,254.3 L698,255.1 L701,255.9 L704,256.7 L707,257.5 L710,258.3 L713,259.1 L716,259.9 L719,260.7 L722,261.5 L725,262.3 L728,263.1 L731,263.9 L734,264.7 L737,265.5 L740,266.3 L743,267.1 L746,267.9 L749,268.7 L752,269.5 L755,270.3 L758,271.1 L761,271.9 L764,272.7 L767,273.5 L770,274.3 L773,275.1 L776,275.9 L779,276.7 L782,277.5 L785,278.3 L788,279.1 L791,279.9 L794,280.7 L797,281.5 L800,282.3 L803,283.1 L806,283.9 L809,284.7 L812,285.5 L815,286.3 L818,287.1 L821,287.9 L824,288.7 L827,289.5 L830,290.3" fill="none" stroke="#ff5b2e" stroke-width="2.2"/>
+<circle cx="235.2" cy="131.7" r="4" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="241.2" y="123.7" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">5 bits: 9.1% (k=3)</text>
+<circle cx="391.7" cy="173.5" r="4" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="397.7" y="165.5" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">10 bits: 0.82% (k=7)</text>
+<circle cx="548.3" cy="215.2" r="4" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="554.3" y="207.2" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">15 bits: 0.074% (k=10)</text>
+<circle cx="704.8" cy="256.9" r="4" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="710.8" y="248.9" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">20 bits: 0.0067% (k=14)</text>
+<text x="830.0" y="308.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">bits per element</text>
+<text x="40.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">p ≈ 0.6185^(bits per element) with k = (m/n)·ln 2 hash functions. ~10 bits per key gives ~1%, and every extra</text>
+<text x="40.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">4.8 bits divides the error by 10. A billion keys at 1% fits in ~1.2 GB, far less than storing the keys.</text>
+</svg>
