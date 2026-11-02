@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 359" width="880" height="359" role="img" aria-label="Approximate memory, creation and switch cost of processes, OS threads, green threads and async tasks" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="359" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Cost per unit of concurrency (order of magnitude)</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">memory per unit and time to create or switch, on Linux</text>
+<text x="40.0" y="100.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400"></text>
+<text x="290.0" y="100.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">memory each</text>
+<text x="550.0" y="100.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">create</text>
+<text x="720.0" y="100.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">switch</text>
+<rect x="40.0" y="112.0" width="800.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="52.0" y="134.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">process</text>
+<text x="290.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~1+ MB, page tables + private pages</text>
+<text x="550.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~100 µs+ (fork)</text>
+<text x="720.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~µs + TLB</text>
+<rect x="40.0" y="154.0" width="800.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="52.0" y="176.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">OS thread</text>
+<text x="290.0" y="176.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">1–8 MB stack reserved, ~10s KB used</text>
+<text x="550.0" y="176.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~10–20 µs</text>
+<text x="720.0" y="176.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~1–2 µs</text>
+<rect x="40.0" y="196.0" width="800.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="52.0" y="218.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">goroutine / virtual thread</text>
+<text x="290.0" y="218.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~2 KB stack, grows on demand</text>
+<text x="550.0" y="218.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~1 µs or less</text>
+<text x="720.0" y="218.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~100–200 ns</text>
+<rect x="40.0" y="238.0" width="800.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="52.0" y="260.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">async task (Rust, JS)</text>
+<text x="290.0" y="260.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">size of its state machine</text>
+<text x="550.0" y="260.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~100 ns</text>
+<text x="720.0" y="260.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~10s of ns</text>
+<text x="40.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Ten thousand OS threads is feasible; a million is not. A million goroutines or virtual threads fits in a few GB.</text>
+<text x="40.0" y="329.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Numbers vary by OS and runtime, but the gaps between rows are orders of magnitude, and that decides designs.</text>
+</svg>

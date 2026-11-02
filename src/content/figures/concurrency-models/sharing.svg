@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 438" width="880" height="438" role="img" aria-label="What processes and threads share versus keep private" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="438" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What is shared, and what is private</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">processes share nothing by default; threads share almost everything</text>
+<text x="230.0" y="96.0" font-size="13" fill="#ff5b2e" text-anchor="middle" font-weight="700">two processes</text>
+<text x="650.0" y="96.0" font-size="13" fill="#5fb3a1" text-anchor="middle" font-weight="700">two threads in one process</text>
+<rect x="40.0" y="110.0" width="180.0" height="220.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="130.0" y="132.0" font-size="11.5" fill="#ff5b2e" text-anchor="middle" font-weight="600">process 1</text>
+<rect x="52.0" y="146.0" width="156.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="130.0" y="166.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">address space</text>
+<rect x="52.0" y="190.0" width="156.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="130.0" y="210.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">heap, globals</text>
+<rect x="52.0" y="234.0" width="156.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="130.0" y="254.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">file descriptors</text>
+<rect x="52.0" y="278.0" width="156.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="130.0" y="298.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">registers + stack</text>
+<rect x="235.0" y="110.0" width="180.0" height="220.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="325.0" y="132.0" font-size="11.5" fill="#ff5b2e" text-anchor="middle" font-weight="600">process 2</text>
+<rect x="247.0" y="146.0" width="156.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="325.0" y="166.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">address space</text>
+<rect x="247.0" y="190.0" width="156.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="325.0" y="210.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">heap, globals</text>
+<rect x="247.0" y="234.0" width="156.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="325.0" y="254.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">file descriptors</text>
+<rect x="247.0" y="278.0" width="156.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="325.0" y="298.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">registers + stack</text>
+<rect x="460.0" y="110.0" width="380.0" height="220.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="650.0" y="132.0" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">one process</text>
+<rect x="476.0" y="146.0" width="348.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="650.0" y="167.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="600">shared: address space, heap, globals</text>
+<rect x="476.0" y="190.0" width="348.0" height="34.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="650.0" y="211.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="600">shared: file descriptors, signal handlers</text>
+<rect x="476.0" y="234.0" width="168.0" height="78.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="560.0" y="270.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">thread 1</text>
+<text x="560.0" y="286.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">own regs + stack</text>
+<rect x="656.0" y="234.0" width="168.0" height="78.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="740.0" y="270.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">thread 2</text>
+<text x="740.0" y="286.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">own regs + stack</text>
+<text x="40.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Separate address spaces make processes robust (a crash stays contained), but communication needs IPC: pipes,</text>
+<text x="40.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">sockets, shared memory. Threads communicate through ordinary memory, which is fast and convenient, and is also</text>
+<text x="40.0" y="408.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">how data races and "one bad thread corrupts everything" happen.</text>
+</svg>

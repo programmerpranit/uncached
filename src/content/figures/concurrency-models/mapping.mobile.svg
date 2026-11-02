@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 374" width="360" height="374" role="img" aria-label="One-to-one kernel threads versus many green threads multiplexed onto a few kernel threads" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="374" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">1:1 vs M:N</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">kernel threads vs green threads</text>
+<text x="16.0" y="86.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">1:1</text>
+<text x="60.0" y="86.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">each thread = kernel thread</text>
+<rect x="16.0" y="100.0" width="72.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="52.0" y="116.6" font-size="10" fill="#e2b45a" text-anchor="middle" font-weight="600">t1→kt</text>
+<rect x="100.0" y="100.0" width="72.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="136.0" y="116.6" font-size="10" fill="#e2b45a" text-anchor="middle" font-weight="600">t2→kt</text>
+<rect x="184.0" y="100.0" width="72.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="220.0" y="116.6" font-size="10" fill="#e2b45a" text-anchor="middle" font-weight="600">t3→kt</text>
+<rect x="268.0" y="100.0" width="72.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="304.0" y="116.6" font-size="10" fill="#e2b45a" text-anchor="middle" font-weight="600">t4→kt</text>
+<text x="16.0" y="166.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">M:N</text>
+<text x="60.0" y="166.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">many tasks on few threads</text>
+<rect x="16.0" y="180.0" width="40.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="36.0" y="195.6" font-size="10" fill="#7cc47f" text-anchor="middle" font-weight="600">g1</text>
+<rect x="63.0" y="180.0" width="40.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="83.0" y="195.6" font-size="10" fill="#7cc47f" text-anchor="middle" font-weight="600">g2</text>
+<rect x="110.0" y="180.0" width="40.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="130.0" y="195.6" font-size="10" fill="#7cc47f" text-anchor="middle" font-weight="600">g3</text>
+<rect x="157.0" y="180.0" width="40.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="177.0" y="195.6" font-size="10" fill="#7cc47f" text-anchor="middle" font-weight="600">g4</text>
+<rect x="204.0" y="180.0" width="40.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="224.0" y="195.6" font-size="10" fill="#7cc47f" text-anchor="middle" font-weight="600">g5</text>
+<rect x="251.0" y="180.0" width="40.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="271.0" y="195.6" font-size="10" fill="#7cc47f" text-anchor="middle" font-weight="600">g6</text>
+<rect x="298.0" y="180.0" width="40.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="318.0" y="195.6" font-size="10" fill="#7cc47f" text-anchor="middle" font-weight="600">g7</text>
+<rect x="16.0" y="214.0" width="328.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="231.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">runtime scheduler</text>
+<rect x="46.0" y="248.0" width="70.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="81.0" y="263.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">kt1</text>
+<rect x="146.0" y="248.0" width="70.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="181.0" y="263.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">kt2</text>
+<rect x="246.0" y="248.0" width="70.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="281.0" y="263.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">kt3</text>
+<text x="16.0" y="306.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">pthreads, Java platform threads:</text>
+<text x="16.0" y="325.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">1:1. Go, Erlang, virtual threads,</text>
+<text x="16.0" y="344.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Tokio: M:N, switched in user space.</text>
+</svg>
