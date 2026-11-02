@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 463" width="360" height="463" role="img" aria-label="Comparison of mutex, semaphore and spinlock" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="463" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Three primitives</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">who enters, how waiters wait</text>
+<rect x="16.0" y="82.0" width="328.0" height="96.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="30.0" y="104.0" font-size="13.5" fill="#5fb3a1" text-anchor="start" font-weight="700">mutex</text>
+<text x="30.0" y="126.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">one owner at a time; waiters sleep</text>
+<text x="30.0" y="144.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">owner must unlock</text>
+<text x="30.0" y="164.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">for: protect shared data</text>
+<rect x="16.0" y="190.0" width="328.0" height="96.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="30.0" y="212.0" font-size="13.5" fill="#e2b45a" text-anchor="start" font-weight="700">semaphore</text>
+<text x="30.0" y="234.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">N permits (counter); waiters sleep</text>
+<text x="30.0" y="252.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">any thread can post</text>
+<text x="30.0" y="272.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">for: limit concurrency, signal</text>
+<rect x="16.0" y="298.0" width="328.0" height="96.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="30.0" y="320.0" font-size="13.5" fill="#e5534b" text-anchor="start" font-weight="700">spinlock</text>
+<text x="30.0" y="342.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">one owner at a time; waiters busy-loop</text>
+<text x="30.0" y="360.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">never sleeps</text>
+<text x="30.0" y="380.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">for: tiny sections, kernel, IRQs</text>
+<text x="16.0" y="414.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Spinning wins only when the lock</text>
+<text x="16.0" y="433.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">is released within ~100s of ns.</text>
+</svg>

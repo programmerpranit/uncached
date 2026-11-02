@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 438" width="880" height="438" role="img" aria-label="Futex-based mutex: atomic fast path in user space, futex wait and wake syscalls when contended" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="438" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ede6d8"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker><marker id="ah4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">How a modern mutex works: futex fast path and slow path</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">uncontended locking never enters the kernel</text>
+<rect x="40.0" y="96.0" width="180.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="130.0" y="122.7" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="600">lock()</text>
+<rect x="300.0" y="96.0" width="240.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="420.0" y="115.0" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">CAS state 0 → 1</text>
+<text x="420.0" y="131.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">one atomic instruction</text>
+<line x1="220.0" y1="118.0" x2="298.0" y2="118.0" stroke="#ede6d8" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="640.0" y="96.0" width="180.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="730.0" y="122.3" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">got it (~20 ns)</text>
+<line x1="540.0" y1="118.0" x2="638.0" y2="118.0" stroke="#7cc47f" stroke-width="1.5" marker-end="url(#ah1)"/>
+<text x="590.0" y="110.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">ok</text>
+<rect x="300.0" y="190.0" width="240.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="420.0" y="209.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">spin briefly</text>
+<text x="420.0" y="225.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">maybe the owner is about done</text>
+<line x1="420.0" y1="140.0" x2="420.0" y2="188.0" stroke="#e2b45a" stroke-width="1.3" marker-end="url(#ah2)"/>
+<text x="430.0" y="170.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">failed: held</text>
+<rect x="300.0" y="284.0" width="240.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="420.0" y="303.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">futex_wait()</text>
+<text x="420.0" y="319.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">syscall: sleep in kernel queue</text>
+<line x1="420.0" y1="234.0" x2="420.0" y2="282.0" stroke="#e5534b" stroke-width="1.3" marker-end="url(#ah3)"/>
+<text x="430.0" y="264.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">still held</text>
+<rect x="640.0" y="284.0" width="180.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="730.0" y="303.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">woken, retry</text>
+<text x="730.0" y="319.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">µs: switch + wakeup</text>
+<line x1="540.0" y1="306.0" x2="638.0" y2="306.0" stroke="#9b8cff" stroke-width="1.3" marker-end="url(#ah4)"/>
+<text x="640.0" y="200.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">unlock(): atomic store;</text>
+<text x="640.0" y="218.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">if waiters → futex_wake()</text>
+<text x="40.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Linux mutexes (glibc pthread_mutex, Rust std, Go sync.Mutex in spirit) keep the lock state in a user-space word.</text>
+<text x="40.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The kernel only gets involved to put a waiter to sleep or wake it, so an uncontended lock/unlock costs tens of</text>
+<text x="40.0" y="408.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">nanoseconds while a contended one costs microseconds. Contention, not locking, is what is expensive.</text>
+</svg>

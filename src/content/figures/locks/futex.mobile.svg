@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 389" width="360" height="389" role="img" aria-label="Futex-based mutex: atomic fast path in user space, futex wait and wake syscalls when contended" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="389" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Futex-based mutex</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">no syscall unless contended</text>
+<rect x="16.0" y="84.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="101.0" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">lock(): CAS 0 → 1</text>
+<text x="180.0" y="117.0" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="400">~20 ns if free</text>
+<rect x="16.0" y="136.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="153.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">held → spin briefly</text>
+<text x="180.0" y="169.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="400">owner may finish</text>
+<rect x="16.0" y="188.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="205.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">still held → futex_wait</text>
+<text x="180.0" y="221.0" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="400">sleep in kernel</text>
+<rect x="16.0" y="240.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="257.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">unlock → futex_wake</text>
+<text x="180.0" y="273.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="400">µs to switch back</text>
+<text x="16.0" y="302.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Uncontended: no syscall, tens of</text>
+<text x="16.0" y="321.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ns. Contended: sleep and wakeup,</text>
+<text x="16.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">microseconds. Contention is what</text>
+<text x="16.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">costs, not locking itself.</text>
+</svg>

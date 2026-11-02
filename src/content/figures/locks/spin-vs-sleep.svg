@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 434" width="880" height="434" role="img" aria-label="Illustrative cost of spinning versus sleeping as lock hold time grows" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="434" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Spin or sleep? It depends on how long the lock is held</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">wasted time for a waiter vs critical-section length (illustrative)</text>
+<line x1="90.0" y1="300.0" x2="730.0" y2="300.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="90.0" y1="300.0" x2="90.0" y2="100.0" stroke="#4a4136" stroke-width="1.3"/>
+<path d="M90.0 300.0 L151.1 279.0 L218.0 256.0 L279.1 235.0 L346.0 212.0 L407.1 191.0 L474.0 168.0 L535.1 147.0 L602.0 124.0 L663.1 103.0 L730.0 100.0" fill="none" stroke="#e5534b" stroke-width="2.2"/>
+<path d="M90.0 176.0 L730.0 156.0" fill="none" stroke="#5fb3a1" stroke-width="2.2"/>
+<text x="90.0" y="318.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">10 ns</text>
+<text x="346.0" y="318.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">1 µs</text>
+<text x="602.0" y="318.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">100 µs</text>
+<text x="410.0" y="336.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">how long the holder keeps the lock</text>
+<line x1="450.7" y1="300.0" x2="450.7" y2="100.0" stroke="#e2b45a" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="456.7" y="112.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">≈ cost of a sleep/wake</text>
+<rect x="110.0" y="76.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="128.0" y="86.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">spin: burns CPU the whole wait</text>
+<rect x="354.6" y="76.0" width="12.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="372.6" y="86.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">sleep: fixed ~µs switch cost</text>
+<text x="40.0" y="366.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Short critical sections favor spinning; long ones favor sleeping. Adaptive mutexes spin for roughly the cost of a</text>
+<text x="40.0" y="385.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">context switch, then sleep. Pure spinlocks belong where sleeping is impossible (kernel interrupt context) or the</text>
+<text x="40.0" y="404.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">holder is guaranteed to be running on another core and never preempted.</text>
+</svg>
