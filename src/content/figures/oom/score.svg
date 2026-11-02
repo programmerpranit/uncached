@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 388" width="880" height="388" role="img" aria-label="Example OOM scores for processes with different memory use and oom_score_adj" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="388" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Who gets killed: oom_score</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">roughly memory use as a share of RAM, adjusted by oom_score_adj (−1000 … +1000)</text>
+<text x="40.0" y="104.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">java (8 GiB RSS)</text>
+<text x="40.0" y="121.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">adj 0</text>
+<rect x="380.0" y="94.0" width="190.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="580.0" y="109.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">score ≈ 500</text>
+<text x="40.0" y="156.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">postgres (3 GiB)</text>
+<text x="40.0" y="173.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">adj −900 (protected)</text>
+<rect x="380.0" y="146.0" width="3.8" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="393.8" y="161.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">score ≈ 0</text>
+<text x="40.0" y="208.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">batch job (2 GiB)</text>
+<text x="40.0" y="225.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">adj +500 (expendable)</text>
+<rect x="380.0" y="198.0" width="235.6" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="625.6" y="213.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">score ≈ 620</text>
+<text x="40.0" y="260.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="600">sshd (10 MiB)</text>
+<text x="40.0" y="277.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">adj −1000 (never)</text>
+<text x="390.0" y="265.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">never killed</text>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The kernel kills the process with the highest score (RSS + swap + page tables, scaled to 0–1000, plus the</text>
+<text x="40.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">adjustment). Kubernetes sets oom_score_adj by QoS class: Guaranteed pods ≈ −997, BestEffort 1000. Inside a cgroup</text>
+<text x="40.0" y="358.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">that hits memory.max, the OOM killer only considers that cgroup's processes.</text>
+</svg>

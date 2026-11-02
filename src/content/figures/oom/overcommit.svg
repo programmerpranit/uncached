@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="880" height="340" role="img" aria-label="Committed memory exceeding physical RAM while resident memory stays below it" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="340" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Overcommit: promising more memory than exists</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a 16 GiB machine; processes have reserved far more than they touch</text>
+<text x="40.0" y="110.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">physical RAM + swap</text>
+<rect x="400.0" y="98.0" width="148.3" height="22.0" rx="3" fill="#a69d8e" fill-opacity="0.7" stroke="#a69d8e" stroke-width="1"/>
+<text x="558.3" y="114.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">16 GiB</text>
+<text x="40.0" y="156.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">committed (promised: malloc, mmap, fork)</text>
+<rect x="400.0" y="144.0" width="380.0" height="22.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="790.0" y="160.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">41 GiB</text>
+<text x="40.0" y="202.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">actually touched (resident)</text>
+<rect x="400.0" y="190.0" width="102.0" height="22.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="512.0" y="206.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">11 GiB</text>
+<line x1="548.3" y1="90.0" x2="548.3" y2="228.0" stroke="#e5534b" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="554.3" y="240.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">what really exists</text>
+<text x="40.0" y="272.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Allocation reserves address space; only touching a page uses a frame. Since programs routinely over-reserve</text>
+<text x="40.0" y="291.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">(thread stacks, heap arenas, fork of a big process), Linux by default lets commitments exceed RAM, betting</text>
+<text x="40.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">they won't all be touched. When the bet loses, memory runs out at the moment of a page fault, not at malloc().</text>
+</svg>

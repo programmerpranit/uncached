@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 428" width="880" height="428" role="img" aria-label="Stages as memory runs out: background reclaim, direct reclaim, thrashing, OOM kill and recovery" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="428" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What happens as memory runs out</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">page faults need frames; the kernel tries everything before killing</text>
+<circle cx="56.0" cy="100.0" r="11" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1.5"/>
+<text x="56.0" y="104.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="700">1</text>
+<text x="80.0" y="98.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">free memory falls below watermark</text>
+<text x="80.0" y="115.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">kswapd starts reclaiming in the background</text>
+<line x1="56.0" y1="112.0" x2="56.0" y2="136.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="150.0" r="11" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="56.0" y="154.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="700">2</text>
+<text x="80.0" y="148.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">allocation can't be satisfied quickly</text>
+<text x="80.0" y="165.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">direct reclaim: the faulting thread itself drops cache, swaps, compacts</text>
+<line x1="56.0" y1="162.0" x2="56.0" y2="186.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="200.0" r="11" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1.5"/>
+<text x="56.0" y="204.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="700">3</text>
+<text x="80.0" y="198.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">reclaim makes no progress</text>
+<text x="80.0" y="215.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">retries fail; the system may thrash (stalls, 100% I/O wait) first</text>
+<line x1="56.0" y1="212.0" x2="56.0" y2="236.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="250.0" r="11" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1.5"/>
+<text x="56.0" y="254.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="700">4</text>
+<text x="80.0" y="248.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">out of memory</text>
+<text x="80.0" y="265.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">OOM killer picks the "worst" process and sends SIGKILL</text>
+<line x1="56.0" y1="262.0" x2="56.0" y2="286.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="300.0" r="11" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1.5"/>
+<text x="56.0" y="304.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="700">5</text>
+<text x="80.0" y="298.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">memory freed</text>
+<text x="80.0" y="315.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">allocation retried; life goes on (minus one process)</text>
+<text x="40.0" y="360.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The painful phase is often step 3, not step 4: with nearly all memory in use the kernel evicts code pages and</text>
+<text x="40.0" y="379.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">cache, everything faults back in, and the machine can hang for minutes before it finally kills something.</text>
+<text x="40.0" y="398.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">User-space killers (systemd-oomd, earlyoom) act earlier, using pressure stall information (PSI).</text>
+</svg>

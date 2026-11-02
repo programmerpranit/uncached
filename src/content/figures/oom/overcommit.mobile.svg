@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 339" width="360" height="339" role="img" aria-label="Committed memory exceeding physical RAM while resident memory stays below it" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="339" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Overcommit</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">16 GiB RAM, promises vs use</text>
+<text x="16.0" y="92.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">physical RAM + swap</text>
+<rect x="16.0" y="100.0" width="109.3" height="16.0" rx="3" fill="#a69d8e" fill-opacity="0.7" stroke="#a69d8e" stroke-width="1"/>
+<text x="131.3" y="113.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">16 GiB</text>
+<text x="16.0" y="142.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">committed</text>
+<rect x="16.0" y="150.0" width="280.0" height="16.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="302.0" y="163.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">41 GiB</text>
+<text x="16.0" y="192.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">actually touched</text>
+<rect x="16.0" y="200.0" width="75.1" height="16.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="97.1" y="213.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="700">11 GiB</text>
+<text x="16.0" y="252.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">malloc reserves; touching a page</text>
+<text x="16.0" y="271.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">uses RAM. Linux lets promises</text>
+<text x="16.0" y="290.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">exceed RAM. If the bet loses, it</text>
+<text x="16.0" y="309.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">fails at a page fault, not malloc.</text>
+</svg>
