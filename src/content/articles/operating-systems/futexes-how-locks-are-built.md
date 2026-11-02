@@ -36,7 +36,7 @@ With futexes, A passes the value it saw (`expected`). B changes the word **befor
 
 ![States: 0 unlocked, 1 locked, 2 contended. lock fast path is a CAS from 0 to 1; slow path sets 2 and futex_waits; unlock exchanges to 0 and calls futex_wake only if the old value was 2.](/figures/futex/mutex.svg "The third state tells unlock whether anybody might be sleeping.")
 
-Ulrich Drepper's paper *Futexes Are Tricky* walks through mutex designs, the first ones subtly wrong. The standard correct one uses three states:
+Ulrich Drepper's paper *Futexes Are Tricky* walks through several mutex designs, showing how easy it is to make them subtly wrong or needlessly slow. The standard correct one uses three states:
 
 - **0**: unlocked.
 - **1**: locked, no waiters.
@@ -98,7 +98,7 @@ A service's profile shows 20% CPU in the kernel, mostly in `futex` system calls,
 
 ## Pitfalls
 
-- **Writing your own futex-based locks** for production. The protocols are subtle (Drepper's paper shows two broken attempts before a correct one). Use your standard library.
+- **Writing your own futex-based locks** for production. The protocols are subtle enough that Drepper's paper needs several iterations to get a correct, efficient mutex. Use your standard library.
 - **Notifying condition variables on every event** when nobody is waiting.
 - **Forgetting to recheck the condition** after a condvar wait (spurious wakeups, stolen wakeups).
 - **Locks in shared memory without robust futexes**: if a process dies holding the lock, every other process hangs.
