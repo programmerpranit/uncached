@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 438" width="880" height="438" role="img" aria-label="Raft leader replicates log entries; an entry is committed once a majority stores it" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="438" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Raft log replication</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">numbers are terms; commit = stored on a majority</text>
+<text x="175.0" y="80.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<text x="245.0" y="80.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<text x="315.0" y="80.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">3</text>
+<text x="385.0" y="80.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<text x="455.0" y="80.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">5</text>
+<text x="525.0" y="80.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">6</text>
+<text x="30.0" y="116.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="600">S1 leader</text>
+<rect x="140.0" y="90.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="172.0" y="111.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<rect x="210.0" y="90.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="242.0" y="111.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<rect x="280.0" y="90.0" width="64.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="312.0" y="111.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">2</text>
+<rect x="350.0" y="90.0" width="64.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="382.0" y="111.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">3</text>
+<rect x="420.0" y="90.0" width="64.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="452.0" y="111.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">3</text>
+<rect x="490.0" y="90.0" width="64.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.4" stroke="none" stroke-width="1"/>
+<text x="522.0" y="111.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">3</text>
+<text x="30.0" y="162.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="600">S2</text>
+<rect x="140.0" y="136.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="172.0" y="157.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<rect x="210.0" y="136.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="242.0" y="157.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<rect x="280.0" y="136.0" width="64.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="312.0" y="157.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">2</text>
+<rect x="350.0" y="136.0" width="64.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="382.0" y="157.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">3</text>
+<rect x="420.0" y="136.0" width="64.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="452.0" y="157.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">3</text>
+<rect x="490.0" y="136.0" width="64.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.4" stroke="none" stroke-width="1"/>
+<text x="522.0" y="157.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">3</text>
+<text x="30.0" y="208.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="600">S3</text>
+<rect x="140.0" y="182.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="172.0" y="203.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<rect x="210.0" y="182.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="242.0" y="203.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<rect x="280.0" y="182.0" width="64.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="312.0" y="203.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">2</text>
+<rect x="350.0" y="182.0" width="64.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="382.0" y="203.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">3</text>
+<rect x="420.0" y="182.0" width="64.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="452.0" y="203.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">3</text>
+<text x="30.0" y="254.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="600">S4</text>
+<rect x="140.0" y="228.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="172.0" y="249.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<rect x="210.0" y="228.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="242.0" y="249.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<rect x="280.0" y="228.0" width="64.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="312.0" y="249.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">2</text>
+<text x="30.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="600">S5</text>
+<rect x="140.0" y="274.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="172.0" y="295.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<rect x="210.0" y="274.0" width="64.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="242.0" y="295.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">1</text>
+<line x1="487.0" y1="86.0" x2="487.0" y2="320.0" stroke="#ff5b2e" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="487.0" y="338.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="700">commit index = 5</text>
+<text x="30.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Entry 5 is on S1, S2 and S3, a majority of five, so it is committed and can be applied.</text>
+<text x="30.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Entry 6 is only on two servers. S4 and S5 lag; the leader keeps sending AppendEntries until</text>
+<text x="30.0" y="408.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">their logs match. Committed entries are never lost.</text>
+</svg>

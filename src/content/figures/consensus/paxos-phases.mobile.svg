@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 500" width="360" height="500" role="img" aria-label="Basic Paxos prepare/promise and accept/accepted phases" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="500" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Basic Paxos: two phases</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">proposer P with ballot n = 5; three acceptors</text>
+<rect x="16.0" y="74.0" width="328.0" height="74.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="98.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Phase 1a  Prepare(n)</text>
+<text x="28.0" y="120.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">P → all acceptors</text>
+<rect x="16.0" y="160.0" width="328.0" height="74.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="184.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Phase 1b  Promise(n, prev)</text>
+<text x="28.0" y="206.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">majority promise to ignore lower</text>
+<text x="28.0" y="223.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">ballots; report any accepted value</text>
+<rect x="16.0" y="246.0" width="328.0" height="74.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="28.0" y="270.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">Phase 2a  Accept(n, v)</text>
+<text x="28.0" y="292.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">v = highest previously accepted value,</text>
+<text x="28.0" y="309.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">else P’s own</text>
+<rect x="16.0" y="332.0" width="328.0" height="74.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="28.0" y="356.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">Phase 2b  Accepted(n, v)</text>
+<text x="28.0" y="378.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">a majority accepts → v is chosen</text>
+<text x="16.0" y="432.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each phase needs replies from a</text>
+<text x="16.0" y="451.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">majority (2 of 3), so one slow or</text>
+<text x="16.0" y="470.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">dead acceptor doesn’t block it.</text>
+</svg>

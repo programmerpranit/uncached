@@ -193,7 +193,7 @@ As **meters** they're equivalent: one counts tokens available, the other counts 
 ## References
 
 1. P. Tarjan. [Scaling your API with rate limiters](https://stripe.com/blog/rate-limiters). Stripe Engineering, 2017.
-2. J. Pitts. [How we built rate limiting capable of scaling to millions of domains](https://blog.cloudflare.com/counting-things-a-lot-of-different-things/). Cloudflare Blog, 2017.
+2. J. Desgats. [Counting things, a lot of different things](https://blog.cloudflare.com/counting-things-a-lot-of-different-things/). Cloudflare Blog, 2017.
 3. B. Leach. [Rate Limiting, Cells, and GCRA](https://brandur.org/rate-limiting). 2015.
 4. AWS. [Throttle requests to your REST APIs for better throughput in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html).
 5. NGINX. [Module ngx_http_limit_req_module](https://nginx.org/en/docs/http/ngx_http_limit_req_module.html).

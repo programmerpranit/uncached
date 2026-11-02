@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 499" width="880" height="499" role="img" aria-label="Consensus keeps identical logs on every server so their state machines stay identical" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="499" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Replicated state machine</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same log, same order → same state on every server</text>
+<rect x="30.0" y="150.0" width="110.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="85.0" y="176.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">client</text>
+<rect x="200.0" y="80.0" width="640.0" height="90.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="214.0" y="102.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">S1 (leader)</text>
+<rect x="214.0" y="114.0" width="130.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="279.0" y="138.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">consensus</text>
+<rect x="380.0" y="114.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="408.0" y="138.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="600">x←3</text>
+<rect x="442.0" y="114.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="470.0" y="138.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="600">y←1</text>
+<rect x="504.0" y="114.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="532.0" y="138.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="600">x←7</text>
+<rect x="566.0" y="114.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="594.0" y="138.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">z←2</text>
+<text x="380.0" y="166.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">log</text>
+<rect x="660.0" y="114.0" width="160.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="740.0" y="138.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">x=7 y=1</text>
+<line x1="346.0" y1="134.0" x2="378.0" y2="134.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="626.0" y1="134.0" x2="658.0" y2="134.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="200.0" y="190.0" width="640.0" height="90.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="214.0" y="212.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">S2</text>
+<rect x="214.0" y="224.0" width="130.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="279.0" y="248.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">consensus</text>
+<rect x="380.0" y="224.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="408.0" y="248.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="600">x←3</text>
+<rect x="442.0" y="224.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="470.0" y="248.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="600">y←1</text>
+<rect x="504.0" y="224.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="532.0" y="248.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="600">x←7</text>
+<rect x="566.0" y="224.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="594.0" y="248.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">z←2</text>
+<text x="380.0" y="276.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">log</text>
+<rect x="660.0" y="224.0" width="160.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="740.0" y="248.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">x=7 y=1</text>
+<line x1="346.0" y1="244.0" x2="378.0" y2="244.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="626.0" y1="244.0" x2="658.0" y2="244.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="200.0" y="300.0" width="640.0" height="90.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="214.0" y="322.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">S3</text>
+<rect x="214.0" y="334.0" width="130.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="279.0" y="358.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">consensus</text>
+<rect x="380.0" y="334.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="408.0" y="358.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="600">x←3</text>
+<rect x="442.0" y="334.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="470.0" y="358.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="600">y←1</text>
+<rect x="504.0" y="334.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="532.0" y="358.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="600">x←7</text>
+<rect x="566.0" y="334.0" width="56.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="594.0" y="358.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">z←2</text>
+<text x="380.0" y="386.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">log</text>
+<rect x="660.0" y="334.0" width="160.0" height="40.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="740.0" y="358.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">x=7 y=1</text>
+<line x1="346.0" y1="354.0" x2="378.0" y2="354.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="626.0" y1="354.0" x2="658.0" y2="354.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="142.0" y1="172.0" x2="198.0" y2="125.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="660.0" y="416.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">state machine</text>
+<text x="30.0" y="450.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Entries in amber are committed (stored on a majority). Each server applies committed entries in log order,</text>
+<text x="30.0" y="469.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">so all state machines stay identical even though they run independently. z←2 is not yet committed.</text>
+</svg>
