@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" width="880" height="360" role="img" aria-label="Generator logic: handle clock going backwards, same millisecond, and new millisecond" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="360" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What a generator does each millisecond</text>
+<rect x="40.0" y="100.0" width="180.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="130.0" y="125.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="600">read clock</text>
+<text x="130.0" y="141.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">now = epoch ms</text>
+<line x1="222.0" y1="128.0" x2="288.0" y2="104.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="290.0" y="76.0" width="170.0" height="56.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="375.0" y="101.0" font-size="13" fill="#e5534b" text-anchor="middle" font-weight="700">now &lt; last</text>
+<text x="375.0" y="120.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">clock moved back</text>
+<line x1="462.0" y1="104.0" x2="500.0" y2="104.0" stroke="#e5534b" stroke-width="1.1" marker-end="url(#ah1)"/>
+<text x="508.0" y="109.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">wait until last, or refuse and alert</text>
+<line x1="222.0" y1="128.0" x2="288.0" y2="180.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="290.0" y="152.0" width="170.0" height="56.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="375.0" y="177.0" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="700">now == last</text>
+<text x="375.0" y="196.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">same millisecond</text>
+<line x1="462.0" y1="180.0" x2="500.0" y2="180.0" stroke="#e2b45a" stroke-width="1.1" marker-end="url(#ah2)"/>
+<text x="508.0" y="185.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">seq += 1; if seq hits 4,096, spin to next ms</text>
+<line x1="222.0" y1="128.0" x2="288.0" y2="256.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="290.0" y="228.0" width="170.0" height="56.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="375.0" y="253.0" font-size="13" fill="#7cc47f" text-anchor="middle" font-weight="700">now &gt; last</text>
+<text x="375.0" y="272.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">new millisecond</text>
+<line x1="462.0" y1="256.0" x2="500.0" y2="256.0" stroke="#7cc47f" stroke-width="1.1" marker-end="url(#ah3)"/>
+<text x="508.0" y="261.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">seq = 0 (or random start), last = now</text>
+<text x="40.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Output: (now − epoch) &lt;&lt; 22 | machine &lt;&lt; 12 | seq.  No network call, no lock shared with other machines.</text>
+</svg>

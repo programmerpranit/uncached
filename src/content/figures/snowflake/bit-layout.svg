@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 371" width="880" height="371" role="img" aria-label="Snowflake ID bit layout: 1 sign bit, 41-bit timestamp, 10-bit machine ID, 12-bit sequence" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="371" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Anatomy of a Snowflake ID</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">64 bits: sign · timestamp · machine · sequence</text>
+<rect x="40.0" y="90.0" width="28.0" height="56.0" rx="3" fill="#a69d8e" fill-opacity="0.18" stroke="#a69d8e" stroke-width="1"/>
+<text x="54.0" y="123.0" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="700">0</text>
+<text x="54.0" y="170.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">sign</text>
+<rect x="68.0" y="90.0" width="512.5" height="56.0" rx="3" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="324.2" y="123.0" font-size="13" fill="#ff5b2e" text-anchor="middle" font-weight="700">timestamp</text>
+<text x="324.2" y="170.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">41 bits</text>
+<text x="324.2" y="188.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">ms since custom epoch</text>
+<rect x="580.5" y="90.0" width="125.0" height="56.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="643.0" y="123.0" font-size="13" fill="#5fb3a1" text-anchor="middle" font-weight="700">machine</text>
+<text x="643.0" y="170.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">10 bits</text>
+<text x="643.0" y="188.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">1,024 workers</text>
+<rect x="705.5" y="90.0" width="150.0" height="56.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="780.5" y="123.0" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="700">sequence</text>
+<text x="780.5" y="170.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">12 bits</text>
+<text x="780.5" y="188.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">4,096 per ms</text>
+<text x="40.0" y="232.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">example: 1859851681370542080</text>
+<text x="40.0" y="260.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="400">timestamp 443,423,195,212 ms → 2024-11-22 06:49 UTC (Twitter epoch 2010-11-04)</text>
+<text x="40.0" y="279.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">machine 17 (datacenter 0, worker 17)  ·  sequence 0</text>
+<text x="40.0" y="322.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">41 bits of milliseconds last ~69.7 years. 1,024 machines × 4,096 IDs per ms ≈ 4.2 billion IDs/s in total.</text>
+<text x="40.0" y="341.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Because time sits in the high bits, sorting the integers sorts IDs by creation time (to the millisecond).</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 345" width="880" height="345" role="img" aria-label="Random UUID inserts touch every B-tree leaf; time-ordered IDs append to the rightmost leaf" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="345" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Why sortable IDs are kinder to indexes</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">random keys scatter writes; time-ordered keys append</text>
+<text x="225.0" y="96.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="700">UUIDv4 (random)</text>
+<rect x="195.0" y="112.0" width="60.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="225.0" y="127.6" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="600">root</text>
+<line x1="225.0" y1="136.0" x2="68.3" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="40.0" y="176.0" width="56.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="225.0" y1="136.0" x2="131.0" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="102.7" y="176.0" width="56.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="225.0" y1="136.0" x2="193.7" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="165.3" y="176.0" width="56.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="225.0" y1="136.0" x2="256.3" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="228.0" y="176.0" width="56.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="225.0" y1="136.0" x2="319.0" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="290.7" y="176.0" width="56.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="225.0" y1="136.0" x2="381.7" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="353.3" y="176.0" width="56.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<text x="655.0" y="96.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="700">Snowflake / UUIDv7</text>
+<rect x="625.0" y="112.0" width="60.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="655.0" y="127.6" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="600">root</text>
+<line x1="655.0" y1="136.0" x2="498.3" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="470.0" y="176.0" width="56.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="655.0" y1="136.0" x2="561.0" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="532.7" y="176.0" width="56.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="655.0" y1="136.0" x2="623.7" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="595.3" y="176.0" width="56.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="655.0" y1="136.0" x2="686.3" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="658.0" y="176.0" width="56.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="655.0" y1="136.0" x2="749.0" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="720.7" y="176.0" width="56.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="655.0" y1="136.0" x2="811.7" y2="176.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="783.3" y="176.0" width="56.7" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<text x="40.0" y="236.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">Random: every leaf page is a write target, so the working set is the whole index.</text>
+<text x="40.0" y="255.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Pages split in the middle and end up ~50–70% full; caches miss more as the table grows.</text>
+<text x="40.0" y="296.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">Time-ordered: new keys land in the rightmost leaf.</text>
+<text x="40.0" y="315.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Only the "hot" tail of the index needs to be in memory; pages fill up completely before splitting.</text>
+</svg>

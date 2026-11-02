@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 459" width="360" height="459" role="img" aria-label="Random UUID inserts touch every B-tree leaf; time-ordered IDs append to the rightmost leaf" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="459" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Sortable IDs and indexes</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">random vs time-ordered keys</text>
+<text x="180.0" y="86.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="700">UUIDv4 (random)</text>
+<rect x="150.0" y="102.0" width="60.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="117.6" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="600">root</text>
+<line x1="180.0" y1="126.0" x2="40.8" y2="166.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="16.0" y="166.0" width="49.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="180.0" y1="126.0" x2="96.5" y2="166.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="71.7" y="166.0" width="49.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="180.0" y1="126.0" x2="152.2" y2="166.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="127.3" y="166.0" width="49.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="180.0" y1="126.0" x2="207.8" y2="166.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="183.0" y="166.0" width="49.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="180.0" y1="126.0" x2="263.5" y2="166.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="238.7" y="166.0" width="49.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<line x1="180.0" y1="126.0" x2="319.2" y2="166.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="294.3" y="166.0" width="49.7" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.35" stroke="#e5534b" stroke-width="1"/>
+<text x="16.0" y="222.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">Every leaf is a write target.</text>
+<text x="16.0" y="241.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Whole index must stay in cache.</text>
+<text x="180.0" y="274.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="700">Snowflake / UUIDv7</text>
+<rect x="150.0" y="290.0" width="60.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="305.6" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="600">root</text>
+<line x1="180.0" y1="314.0" x2="40.8" y2="354.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="16.0" y="354.0" width="49.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="180.0" y1="314.0" x2="96.5" y2="354.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="71.7" y="354.0" width="49.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="180.0" y1="314.0" x2="152.2" y2="354.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="127.3" y="354.0" width="49.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="180.0" y1="314.0" x2="207.8" y2="354.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="183.0" y="354.0" width="49.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="180.0" y1="314.0" x2="263.5" y2="354.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="238.7" y="354.0" width="49.7" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="180.0" y1="314.0" x2="319.2" y2="354.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="294.3" y="354.0" width="49.7" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<text x="16.0" y="410.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">Inserts append to the right edge.</text>
+<text x="16.0" y="429.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Only the newest pages are hot.</text>
+</svg>

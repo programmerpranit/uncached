@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 436" width="360" height="436" role="img" aria-label="Generator logic: handle clock going backwards, same millisecond, and new millisecond" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="436" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Generator logic per ID</text>
+<rect x="16.0" y="72.0" width="328.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="93.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="600">read clock</text>
+<text x="180.0" y="109.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">now = epoch ms</text>
+<rect x="16.0" y="136.0" width="328.0" height="76.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="28.0" y="160.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">now &lt; last</text>
+<text x="332.0" y="160.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">clock moved back</text>
+<text x="28.0" y="184.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">wait until last, or refuse and alert</text>
+<text x="28.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400"></text>
+<rect x="16.0" y="222.0" width="328.0" height="76.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="246.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">now == last</text>
+<text x="332.0" y="246.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">same millisecond</text>
+<text x="28.0" y="270.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">seq += 1; if seq hits 4,096, spin to</text>
+<text x="28.0" y="286.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">next ms</text>
+<rect x="16.0" y="308.0" width="328.0" height="76.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="28.0" y="332.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">now &gt; last</text>
+<text x="332.0" y="332.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">new millisecond</text>
+<text x="28.0" y="356.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">seq = 0 (or random start), last = now</text>
+<text x="28.0" y="372.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400"></text>
+<text x="16.0" y="406.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">id = ts &lt;&lt; 22 | machine &lt;&lt; 12 | seq</text>
+</svg>
