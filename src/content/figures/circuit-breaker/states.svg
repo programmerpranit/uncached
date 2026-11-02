@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 389" width="880" height="389" role="img" aria-label="Circuit breaker states: closed, open and half-open, with transitions" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="389" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The circuit breaker state machine</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">three states, two thresholds, one timer</text>
+<rect x="60.0" y="150.0" width="180.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="150.0" y="182.0" font-size="15" fill="#7cc47f" text-anchor="middle" font-weight="600">CLOSED</text>
+<text x="150.0" y="198.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">calls pass through</text>
+<rect x="350.0" y="70.0" width="180.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="440.0" y="102.0" font-size="15" fill="#e5534b" text-anchor="middle" font-weight="600">OPEN</text>
+<text x="440.0" y="118.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">fail fast, no calls</text>
+<rect x="640.0" y="150.0" width="180.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="730.0" y="182.0" font-size="15" fill="#e2b45a" text-anchor="middle" font-weight="600">HALF-OPEN</text>
+<text x="730.0" y="198.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">let a few probes in</text>
+<path d="M240 160 Q290 100 348 100" fill="none" stroke="#e5534b" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="150.0" y="104.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">failure rate ≥ 50%</text>
+<text x="150.0" y="120.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">over last N calls</text>
+<path d="M532 86 Q660 70 720 148" fill="none" stroke="#e2b45a" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="600.0" y="66.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">after wait (e.g. 30 s)</text>
+<path d="M640 205 Q450 300 242 205" fill="none" stroke="#7cc47f" stroke-width="1.4" marker-end="url(#ah2)"/>
+<text x="380.0" y="290.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">probes succeed</text>
+<path d="M650 165 Q590 150 534 128" fill="none" stroke="#e5534b" stroke-width="1.2" marker-end="url(#ah0)" stroke-dasharray="4 3"/>
+<text x="540.0" y="182.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">a probe fails</text>
+<text x="60.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">While open, callers get an immediate error or a fallback instead of waiting for a timeout. The</text>
+<text x="60.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">failing dependency gets breathing room to recover, and the caller keeps its threads.</text>
+</svg>

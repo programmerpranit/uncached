@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 427" width="360" height="427" role="img" aria-label="Circuit breaker states: closed, open and half-open, with transitions" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="427" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">The circuit breaker state machine</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">closed · open · half-open</text>
+<rect x="16.0" y="72.0" width="328.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="97.0" font-size="14" fill="#7cc47f" text-anchor="middle" font-weight="600">CLOSED</text>
+<text x="180.0" y="113.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">calls pass through</text>
+<text x="180.0" y="148.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">↓ failure rate ≥ threshold</text>
+<rect x="16.0" y="162.0" width="328.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="187.0" font-size="14" fill="#e5534b" text-anchor="middle" font-weight="600">OPEN</text>
+<text x="180.0" y="203.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">fail fast, no calls</text>
+<text x="180.0" y="238.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">↓ wait timer expires</text>
+<rect x="16.0" y="252.0" width="328.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="277.0" font-size="14" fill="#e2b45a" text-anchor="middle" font-weight="600">HALF-OPEN</text>
+<text x="180.0" y="293.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">let a few probes in</text>
+<text x="16.0" y="332.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">probes succeed → CLOSED</text>
+<text x="16.0" y="351.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">a probe fails → OPEN again</text>
+<text x="16.0" y="378.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">While open, callers fail fast or</text>
+<text x="16.0" y="397.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">use a fallback instead of waiting.</text>
+</svg>
