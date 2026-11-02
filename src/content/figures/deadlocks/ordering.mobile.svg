@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 407" width="360" height="407" role="img" aria-label="Acquiring locks in a consistent global order prevents deadlock" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="407" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Lock ordering</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same order everywhere = no cycle</text>
+<text x="16.0" y="88.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">transfer(from, to):</text>
+<text x="16.0" y="107.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">  a, b = sort(from, to)</text>
+<text x="16.0" y="126.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">  lock(a); lock(b)</text>
+<text x="16.0" y="145.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">  ...</text>
+<rect x="16.0" y="180.0" width="120.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="76.0" y="201.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">lock 17</text>
+<rect x="16.0" y="250.0" width="120.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="76.0" y="271.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">lock 42</text>
+<line x1="76.0" y1="214.0" x2="76.0" y2="248.0" stroke="#7cc47f" stroke-width="1.6" marker-end="url(#ah0)"/>
+<text x="150.0" y="236.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">always 17 first</text>
+<text x="16.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Whoever loses waits on 17 while</text>
+<text x="16.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">holding nothing: no cycle.</text>
+<text x="16.0" y="358.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Tools like lockdep check the</text>
+<text x="16.0" y="377.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">order automatically.</text>
+</svg>

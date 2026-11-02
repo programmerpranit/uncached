@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 419" width="880" height="419" role="img" aria-label="Two threads each holding one lock and waiting for the other, forming a cycle" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="419" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The classic deadlock: two threads, two locks, opposite order</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each holds one lock and waits forever for the other</text>
+<rect x="90.0" y="110.0" width="160.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="170.0" y="132.0" font-size="13" fill="#5fb3a1" text-anchor="middle" font-weight="600">thread 1</text>
+<text x="170.0" y="148.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">transfer(a→b)</text>
+<rect x="90.0" y="270.0" width="160.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="170.0" y="292.0" font-size="13" fill="#9b8cff" text-anchor="middle" font-weight="600">thread 2</text>
+<text x="170.0" y="308.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">transfer(b→a)</text>
+<rect x="560.0" y="110.0" width="160.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="640.0" y="132.0" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">lock A</text>
+<text x="640.0" y="148.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">account a</text>
+<rect x="560.0" y="270.0" width="160.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="640.0" y="292.0" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">lock B</text>
+<text x="640.0" y="308.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">account b</text>
+<line x1="558.0" y1="135.0" x2="252.0" y2="135.0" stroke="#7cc47f" stroke-width="1.6" marker-end="url(#ah0)"/>
+<text x="405.0" y="126.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">held by</text>
+<line x1="558.0" y1="295.0" x2="252.0" y2="295.0" stroke="#7cc47f" stroke-width="1.6" marker-end="url(#ah0)"/>
+<text x="405.0" y="316.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">held by</text>
+<line x1="250.0" y1="150.0" x2="558.0" y2="282.0" stroke="#e5534b" stroke-width="1.6" marker-end="url(#ah1)" stroke-dasharray="5 4"/>
+<text x="370.0" y="196.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">waits for</text>
+<line x1="250.0" y1="280.0" x2="558.0" y2="148.0" stroke="#e5534b" stroke-width="1.6" marker-end="url(#ah1)" stroke-dasharray="5 4"/>
+<text x="370.0" y="256.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">waits for</text>
+<text x="40.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Thread 1: lock(A); lock(B).  Thread 2: lock(B); lock(A).  If each gets its first lock before the other gets its</text>
+<text x="40.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">second, the wait-for graph has a cycle: 1 → B → 2 → A → 1. Nobody can proceed, nobody will release.</text>
+</svg>
