@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 419" width="360" height="419" role="img" aria-label="A memory access either hits in the TLB, misses and walks the page table, or faults into the kernel" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="419" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Hit, miss or fault</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">TLB hit, page walk, or page fault</text>
+<rect x="16.0" y="86.0" width="328.0" height="64.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="28.0" y="108.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">TLB hit</text>
+<text x="28.0" y="126.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">~1 cycle extra</text>
+<text x="28.0" y="142.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">translation cached</text>
+<rect x="16.0" y="164.0" width="328.0" height="64.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="186.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">TLB miss → page walk</text>
+<text x="28.0" y="204.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">10s–100s of cycles</text>
+<text x="28.0" y="220.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">hardware reads tables</text>
+<rect x="16.0" y="242.0" width="328.0" height="64.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="28.0" y="264.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">page fault → kernel</text>
+<text x="28.0" y="282.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">µs (minor) – ms (major)</text>
+<text x="28.0" y="298.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">or SIGSEGV if invalid</text>
+<text x="16.0" y="332.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Every load, store and instruction</text>
+<text x="16.0" y="351.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">fetch is translated. 99%+ hit rates</text>
+<text x="16.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">make it nearly free; random access</text>
+<text x="16.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">over huge memory does not.</text>
+</svg>

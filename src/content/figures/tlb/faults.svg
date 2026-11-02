@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 370" width="880" height="370" role="img" aria-label="Approximate latency of minor, major SSD, major disk and invalid page faults" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="370" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Kinds of page faults and what they cost</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">order-of-magnitude latency for one fault (log scale)</text>
+<text x="40.0" y="104.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">minor: zero-fill / COW / page in cache</text>
+<rect x="390.0" y="92.0" width="90.0" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="490.0" y="107.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">~0.5–5 µs</text>
+<text x="40.0" y="150.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">major: read from NVMe SSD</text>
+<rect x="390.0" y="138.0" width="198.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="598.0" y="153.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~50–200 µs</text>
+<text x="40.0" y="196.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">major: read from spinning disk</text>
+<rect x="390.0" y="184.0" width="342.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="742.0" y="199.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~5–10 ms</text>
+<text x="40.0" y="242.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">invalid address or permission</text>
+<text x="390.0" y="245.0" font-size="12" fill="#d77fa1" text-anchor="start" font-weight="700">SIGSEGV</text>
+<text x="40.0" y="302.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Minor faults need no I/O: the kernel allocates a zeroed page, copies a COW page, or maps a page already in the</text>
+<text x="40.0" y="321.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">page cache. Major faults wait for storage. A service that suddenly takes major faults (swap, cold mmap'd files)</text>
+<text x="40.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">sees its latency jump by orders of magnitude, often with no change in CPU usage.</text>
+</svg>

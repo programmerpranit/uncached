@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 371" width="360" height="371" role="img" aria-label="Approximate latency of minor, major SSD, major disk and invalid page faults" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="371" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Page fault costs</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">rough latency, log scale</text>
+<text x="16.0" y="84.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">minor (zero / COW / cached)</text>
+<rect x="16.0" y="92.0" width="55.0" height="14.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="79.0" y="104.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="700">~0.5–5 µs</text>
+<text x="16.0" y="132.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">major from NVMe</text>
+<rect x="16.0" y="140.0" width="121.0" height="14.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="145.0" y="152.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">~50–200 µs</text>
+<text x="16.0" y="180.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">major from HDD</text>
+<rect x="16.0" y="188.0" width="209.0" height="14.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="233.0" y="200.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="700">~5–10 ms</text>
+<text x="16.0" y="228.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">invalid access</text>
+<text x="16.0" y="248.0" font-size="11" fill="#d77fa1" text-anchor="start" font-weight="700">SIGSEGV</text>
+<text x="16.0" y="284.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Minor faults need no I/O. Major</text>
+<text x="16.0" y="303.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">faults wait for storage, so a</text>
+<text x="16.0" y="322.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">swapping service gets slow without</text>
+<text x="16.0" y="341.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">using more CPU.</text>
+</svg>

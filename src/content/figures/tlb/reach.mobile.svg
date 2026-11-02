@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 337" width="360" height="337" role="img" aria-label="TLB reach with 4 KiB, 2 MiB and 1 GiB pages" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="337" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">TLB reach</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">~1,500-entry L2 TLB (not to scale)</text>
+<text x="16.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">4 KiB pages</text>
+<text x="150.0" y="86.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">1,536 × 4 KiB</text>
+<rect x="16.0" y="95.0" width="7.0" height="16.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="31.0" y="108.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="700">6 MiB</text>
+<text x="16.0" y="138.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">2 MiB pages</text>
+<text x="150.0" y="138.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">1,536 × 2 MiB</text>
+<rect x="16.0" y="147.0" width="114.5" height="16.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="138.5" y="160.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="700">3 GiB</text>
+<text x="16.0" y="190.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">1 GiB pages</text>
+<text x="150.0" y="190.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">entries × 1 GiB</text>
+<rect x="16.0" y="199.0" width="252.0" height="16.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="276.0" y="212.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="700">many GiB</text>
+<text x="16.0" y="250.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A working set bigger than a few</text>
+<text x="16.0" y="269.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">MiB overflows a 4 KiB-page TLB.</text>
+<text x="16.0" y="288.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Huge pages give 512× the reach</text>
+<text x="16.0" y="307.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">per entry.</text>
+</svg>
