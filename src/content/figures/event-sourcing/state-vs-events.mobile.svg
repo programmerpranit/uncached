@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 506" width="360" height="506" role="img" aria-label="A CRUD row stores only current state; an event log stores every change" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="506" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Storing state vs storing events</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the same bank account, two ways</text>
+<text x="16.0" y="84.0" font-size="13" fill="#a69d8e" text-anchor="start" font-weight="700">CRUD: current state only</text>
+<rect x="16.0" y="96.0" width="328.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="128.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">id=42 Ana balance=100</text>
+<text x="16.0" y="172.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each UPDATE overwrites the row;</text>
+<text x="16.0" y="191.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the history is gone.</text>
+<text x="16.0" y="230.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">Event sourcing: append-only</text>
+<rect x="16.0" y="244.0" width="328.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="266.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">#1 AccountOpened</text>
+<text x="332.0" y="266.0" font-size="12" fill="#5fb3a1" text-anchor="end" font-weight="600">owner: Ana</text>
+<rect x="16.0" y="286.0" width="328.0" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="28.0" y="308.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">#2 MoneyDeposited</text>
+<text x="332.0" y="308.0" font-size="12" fill="#7cc47f" text-anchor="end" font-weight="600">+100</text>
+<rect x="16.0" y="328.0" width="328.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="350.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">#3 MoneyWithdrawn</text>
+<text x="332.0" y="350.0" font-size="12" fill="#e2b45a" text-anchor="end" font-weight="600">−30</text>
+<rect x="16.0" y="370.0" width="328.0" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="28.0" y="392.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">#4 MoneyDeposited</text>
+<text x="332.0" y="392.0" font-size="12" fill="#7cc47f" text-anchor="end" font-weight="600">+50</text>
+<rect x="16.0" y="412.0" width="328.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="434.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">#5 MoneyWithdrawn</text>
+<text x="332.0" y="434.0" font-size="12" fill="#e2b45a" text-anchor="end" font-weight="600">−20</text>
+<text x="16.0" y="476.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">fold(events) → balance = 100</text>
+</svg>

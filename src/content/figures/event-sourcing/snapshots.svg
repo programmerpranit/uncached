@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 279" width="880" height="279" role="img" aria-label="Snapshots let you rebuild state from a recent point instead of replaying every event" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="279" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Rebuilding state: replay and snapshots</text>
+<rect x="31.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="51.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="72.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="92.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="113.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="133.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="154.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="174.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="195.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="215.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="236.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="256.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="277.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="297.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="318.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="338.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="359.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="379.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="400.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="420.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="441.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="461.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="482.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="502.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="523.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="543.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="564.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="584.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="605.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="625.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#e2b45a" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="646.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="666.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="687.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="707.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="728.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="748.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="769.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="789.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="810.0" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<rect x="830.5" y="80.0" width="18.5" height="28.0" rx="1" fill="#7cc47f" fill-opacity="0.7" stroke="none" stroke-width="1"/>
+<line x1="645.0" y1="70.0" x2="645.0" y2="120.0" stroke="#ff5b2e" stroke-width="2"/>
+<text x="645.0" y="138.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="700">snapshot @ v30</text>
+<text x="30.0" y="170.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Without a snapshot: replay all events from #1.</text>
+<text x="30.0" y="192.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">With one: load snapshot, replay only the tail.</text>
+<text x="30.0" y="230.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Snapshots are a cache of state at a version. They can be</text>
+<text x="30.0" y="249.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">thrown away and rebuilt; the events stay the source of truth.</text>
+</svg>

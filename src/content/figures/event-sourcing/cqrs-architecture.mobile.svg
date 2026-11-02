@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 555" width="360" height="555" role="img" aria-label="Commands append events; projectors build read models that serve queries" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="555" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">CQRS with event sourcing</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">separate write and read paths</text>
+<rect x="16.0" y="72.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="98.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">client: command</text>
+<line x1="180.0" y1="118.0" x2="180.0" y2="136.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="138.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="157.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">command handler</text>
+<text x="180.0" y="173.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">validates invariants</text>
+<line x1="180.0" y1="184.0" x2="180.0" y2="202.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="204.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="223.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="600">event store</text>
+<text x="180.0" y="239.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="400">append-only log</text>
+<line x1="180.0" y1="250.0" x2="180.0" y2="268.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="270.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="296.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">projectors</text>
+<line x1="180.0" y1="316.0" x2="180.0" y2="334.0" stroke="#5fb3a1" stroke-width="1.2" marker-end="url(#ah1)"/>
+<rect x="16.0" y="336.0" width="104.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="68.0" y="362.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">SQL</text>
+<rect x="16.0" y="336.0" width="104.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="68.0" y="355.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">SQL</text>
+<text x="68.0" y="371.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">read model</text>
+<rect x="128.0" y="336.0" width="104.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="355.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">search</text>
+<text x="180.0" y="371.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">index</text>
+<rect x="240.0" y="336.0" width="104.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="292.0" y="355.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">cache</text>
+<text x="292.0" y="371.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">KV</text>
+<rect x="16.0" y="398.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="422.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">query handler ← client query</text>
+<text x="16.0" y="468.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Writes enforce business rules and</text>
+<text x="16.0" y="487.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">append events. Projections build</text>
+<text x="16.0" y="506.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">read models per screen; they lag a</text>
+<text x="16.0" y="525.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">little (eventual consistency).</text>
+</svg>
