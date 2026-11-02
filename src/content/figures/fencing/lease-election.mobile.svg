@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 387" width="360" height="387" role="img" aria-label="Nodes race to create a lease-backed key; the winner is leader until its lease lapses" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="387" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Leader election with a lease</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">via etcd / ZooKeeper / Consul</text>
+<rect x="16.0" y="72.0" width="328.0" height="58.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="98.0" font-size="13" fill="#5fb3a1" text-anchor="middle" font-weight="600">/election/leader</text>
+<text x="180.0" y="114.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">value: A · lease 10 s · rev 34</text>
+<rect x="16.0" y="150.0" width="100.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="66.0" y="174.3" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="600">A: leader</text>
+<rect x="128.0" y="150.0" width="100.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="178.0" y="174.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">B: watch</text>
+<rect x="240.0" y="150.0" width="100.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="290.0" y="174.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">C: watch</text>
+<text x="16.0" y="224.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">1. Everyone tries create-if-absent;</text>
+<text x="16.0" y="243.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">   one wins (A) and keeps its lease</text>
+<text x="16.0" y="262.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">   alive with heartbeats.</text>
+<text x="16.0" y="281.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">2. Others watch the key.</text>
+<text x="16.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">3. A stops renewing → lease expires</text>
+<text x="16.0" y="319.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">   → key deleted → others race again.</text>
+<text x="16.0" y="357.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">rev 34 doubles as a fencing token.</text>
+</svg>
