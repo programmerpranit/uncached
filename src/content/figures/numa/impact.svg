@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 343" width="880" height="343" role="img" aria-label="Illustrative relative run time of a memory-bound scan with local, interleaved and remote memory placement" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="343" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What locality is worth (illustrative)</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">memory-bound scan of 100 GiB on a two-socket server</text>
+<text x="40.0" y="104.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">all local (bound per node)</text>
+<rect x="400.0" y="92.0" width="190.0" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="600.0" y="107.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">1.0×</text>
+<text x="40.0" y="148.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">interleaved</text>
+<rect x="400.0" y="136.0" width="228.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="638.0" y="151.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">~1.2×</text>
+<text x="40.0" y="192.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">all memory on the other node</text>
+<rect x="400.0" y="180.0" width="304.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="714.0" y="195.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~1.6×</text>
+<text x="40.0" y="236.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">one node's memory, threads on both</text>
+<rect x="400.0" y="224.0" width="342.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="752.0" y="239.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">~1.8×</text>
+<text x="400.0" y="84.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">run time (relative)</text>
+<text x="40.0" y="294.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Exact ratios depend on the CPU and the access pattern. Latency-bound pointer chasing suffers from remote latency;</text>
+<text x="40.0" y="313.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">bandwidth-bound scans suffer from saturating one memory controller. Cache-friendly code barely notices.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 355" width="360" height="355" role="img" aria-label="Single-threaded initialization puts all memory on one node, while parallel initialization spreads it across nodes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="355" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">First-touch placement</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">page goes where it's first written</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">bad: one thread initializes</text>
+<rect x="16.0" y="98.0" width="328.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="118.0" font-size="11.5" fill="#1b1712" text-anchor="middle" font-weight="700">all on node 0</text>
+<text x="16.0" y="150.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">half the workers go remote</text>
+<text x="16.0" y="190.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">good: workers init their part</text>
+<rect x="16.0" y="202.0" width="164.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.6" stroke="#5fb3a1" stroke-width="1"/>
+<text x="98.0" y="222.0" font-size="11.5" fill="#1b1712" text-anchor="middle" font-weight="700">node 0</text>
+<rect x="180.0" y="202.0" width="164.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.6" stroke="#9b8cff" stroke-width="1"/>
+<text x="262.0" y="222.0" font-size="11.5" fill="#1b1712" text-anchor="middle" font-weight="700">node 1</text>
+<text x="16.0" y="268.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Placement happens at first write,</text>
+<text x="16.0" y="287.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">not malloc(). Initialize in</text>
+<text x="16.0" y="306.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">parallel, interleave, or pin</text>
+<text x="16.0" y="325.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">threads and memory together.</text>
+</svg>

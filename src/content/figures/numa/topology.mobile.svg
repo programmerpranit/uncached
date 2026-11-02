@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 446" width="360" height="446" role="img" aria-label="A two-socket server with two NUMA nodes, each with cores, L3 cache and local DRAM, joined by an interconnect" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="446" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Two NUMA nodes</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">local vs remote memory</text>
+<rect x="16.0" y="84.0" width="328.0" height="104.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="30.0" y="106.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">node 0: cores + L3</text>
+<rect x="30.0" y="124.0" width="300.0" height="44.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="143.0" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">local DRAM</text>
+<text x="180.0" y="159.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">own memory controller</text>
+<rect x="16.0" y="214.0" width="328.0" height="104.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="30.0" y="236.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">node 1: cores + L3</text>
+<rect x="30.0" y="254.0" width="300.0" height="44.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="273.0" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">local DRAM</text>
+<text x="180.0" y="289.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">own memory controller</text>
+<line x1="180.0" y1="188.0" x2="180.0" y2="214.0" stroke="#e5534b" stroke-width="2.5"/>
+<text x="196.0" y="206.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">interconnect</text>
+<text x="16.0" y="340.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">local ~80–100 ns</text>
+<text x="16.0" y="359.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">remote ~130–200 ns</text>
+<text x="16.0" y="397.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Remote access costs more latency</text>
+<text x="16.0" y="416.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and shares interconnect bandwidth.</text>
+</svg>
