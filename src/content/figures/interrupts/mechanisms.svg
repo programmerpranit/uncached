@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 393" width="880" height="393" role="img" aria-label="Linux deferred work mechanisms: softirqs, tasklets, workqueues and threaded IRQs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="393" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Deferred work in Linux: four mechanisms</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">choose by whether the work may sleep and how urgent it is</text>
+<rect x="40.0" y="84.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="104.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">softirq</text>
+<text x="200.0" y="104.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">fixed set (NET_RX, NET_TX, BLOCK, TIMER, RCU…)</text>
+<text x="200.0" y="122.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">no sleeping; runs on the same CPU right after IRQs or in ksoftirqd</text>
+<rect x="40.0" y="142.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="162.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">tasklet</text>
+<text x="200.0" y="162.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">dynamic, built on softirqs</text>
+<text x="200.0" y="180.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">no sleeping; one instance at a time; being phased out</text>
+<rect x="40.0" y="200.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="220.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">workqueue</text>
+<text x="200.0" y="220.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">kernel worker threads (kworker)</text>
+<text x="200.0" y="238.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">can sleep, take mutexes, do I/O; scheduled like threads</text>
+<rect x="40.0" y="258.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="278.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">threaded IRQ</text>
+<text x="200.0" y="278.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">handler runs in its own kernel thread</text>
+<text x="200.0" y="296.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">can sleep; has a priority; default on PREEMPT_RT</text>
+<text x="40.0" y="344.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Softirqs are fast but run ahead of every user thread, so a flood of them (a packet storm) can starve apps.</text>
+<text x="40.0" y="363.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">After a time or iteration budget, Linux hands the rest to the per-CPU ksoftirqd thread, scheduled normally.</text>
+</svg>

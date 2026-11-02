@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 311" width="360" height="311" role="img" aria-label="Linux deferred work mechanisms: softirqs, tasklets, workqueues and threaded IRQs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="311" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Bottom halves</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">can it sleep? how urgent?</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">softirq</text>
+<text x="16.0" y="103.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">can't sleep</text>
+<text x="16.0" y="128.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">tasklet</text>
+<text x="16.0" y="145.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">can't sleep</text>
+<text x="16.0" y="170.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">workqueue</text>
+<text x="16.0" y="187.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">can sleep</text>
+<text x="16.0" y="212.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">threaded IRQ</text>
+<text x="16.0" y="229.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">can sleep</text>
+<text x="16.0" y="262.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Softirq floods can starve apps;</text>
+<text x="16.0" y="281.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">overflow goes to ksoftirqd.</text>
+</svg>

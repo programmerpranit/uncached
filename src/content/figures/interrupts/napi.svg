@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 363" width="880" height="363" role="img" aria-label="Per-packet interrupts versus interrupt coalescing, NAPI polling and busy polling" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="363" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Interrupt storms vs NAPI polling</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">at high packet rates, one interrupt per packet would consume the CPU</text>
+<rect x="40.0" y="84.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="108.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">1 interrupt per packet</text>
+<text x="300.0" y="108.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">1.5M pkts/s × ~1 µs each = most of a core just on interrupt entry/exit</text>
+<rect x="40.0" y="134.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="158.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">interrupt coalescing (NIC)</text>
+<text x="300.0" y="158.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">fire once per N packets or µs: fewer interrupts, a bit more latency</text>
+<rect x="40.0" y="184.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="208.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">NAPI (kernel)</text>
+<text x="300.0" y="208.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">first packet interrupts; then poll in batches, IRQs off, until ring empty</text>
+<rect x="40.0" y="234.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="56.0" y="258.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">busy polling</text>
+<text x="300.0" y="258.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">app threads poll the device queue directly; lowest latency, burns CPU</text>
+<text x="40.0" y="314.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The same idea appears everywhere: block layers complete many I/Os per interrupt, NVMe uses per-CPU completion</text>
+<text x="40.0" y="333.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">queues, and io_uring/SPDK can poll storage. Interrupts are best for low rates; polling wins at high rates.</text>
+</svg>

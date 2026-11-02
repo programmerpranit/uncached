@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img" aria-label="Path of a network packet from NIC interrupt through the top half and softirq to the receiving thread" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="430" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">From a packet on the wire to your recv()</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the top half acknowledges fast; deferred work does the heavy lifting</text>
+<rect x="40.0" y="82.0" width="800.0" height="34.0" rx="3" fill="#4a4136" fill-opacity="0.08" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="103.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">NIC</text>
+<text x="260.0" y="103.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">DMAs the packet into a ring buffer in RAM, raises an interrupt (MSI-X)</text>
+<rect x="40.0" y="124.0" width="800.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="145.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">CPU</text>
+<text x="260.0" y="145.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">stops current work, saves state, jumps to the handler</text>
+<rect x="40.0" y="166.0" width="800.0" height="34.0" rx="3" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="187.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">top half (hard IRQ)</text>
+<text x="260.0" y="187.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">ack the device, disable its interrupts, schedule NAPI poll; microseconds</text>
+<rect x="40.0" y="208.0" width="800.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1"/>
+<text x="56.0" y="229.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">softirq (NET_RX)</text>
+<text x="260.0" y="229.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">poll the ring for a batch of packets, run the TCP/IP stack</text>
+<rect x="40.0" y="250.0" width="800.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="271.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">wake the reader</text>
+<text x="260.0" y="271.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">data queued on the socket; blocked thread made runnable</text>
+<rect x="40.0" y="292.0" width="800.0" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.08" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="313.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">your thread</text>
+<text x="260.0" y="313.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">recv() copies the data to user space</text>
+<text x="40.0" y="362.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Hard interrupt handlers run with their interrupt masked (often all interrupts on the core) and can't sleep,</text>
+<text x="40.0" y="381.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">so they do the minimum. Everything else is deferred to softirqs, tasklets, workqueues or threaded IRQ handlers,</text>
+<text x="40.0" y="400.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">which run later with interrupts enabled.</text>
+</svg>

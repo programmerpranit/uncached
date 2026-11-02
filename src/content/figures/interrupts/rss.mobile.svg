@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 378" width="360" height="378" role="img" aria-label="A multi-queue NIC hashing flows to queues whose interrupts go to different CPUs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="378" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Spreading IRQ load</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">multi-queue NIC + RSS</text>
+<rect x="16.0" y="86.0" width="328.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="108.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">NIC: hash(5-tuple) → queue</text>
+<text x="16.0" y="156.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">queue 0 → IRQ 40 → CPU 0</text>
+<text x="16.0" y="194.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">queue 1 → IRQ 41 → CPU 1</text>
+<text x="16.0" y="232.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">queue 2 → IRQ 42 → CPU 2</text>
+<text x="16.0" y="270.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">queue 3 → IRQ 43 → CPU 3</text>
+<text x="16.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Pin each queue's IRQ to its own</text>
+<text x="16.0" y="329.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">core; RPS/RFS do it in software;</text>
+<text x="16.0" y="348.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">aRFS follows the app thread.</text>
+</svg>
