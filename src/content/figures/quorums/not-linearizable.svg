@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 345" width="880" height="345" role="img" aria-label="Two readers see different versions while a write is still propagating, despite quorums" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="345" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">R + W &gt; N is not linearizability</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a write in progress can be seen by one reader and missed by a later one</text>
+<text x="40.0" y="104.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">replica 1</text>
+<line x1="130.0" y1="100.0" x2="840.0" y2="100.0" stroke="#4a4136" stroke-width="1.2"/>
+<text x="40.0" y="154.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">replica 2</text>
+<line x1="130.0" y1="150.0" x2="840.0" y2="150.0" stroke="#4a4136" stroke-width="1.2"/>
+<text x="40.0" y="204.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">replica 3</text>
+<line x1="130.0" y1="200.0" x2="840.0" y2="200.0" stroke="#4a4136" stroke-width="1.2"/>
+<circle cx="300.0" cy="100.0" r="6" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="300.0" y="82.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="400">v2 lands on replica 1</text>
+<text x="560.0" y="82.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">v2 reaches replicas 2–3 later…</text>
+<rect x="380.0" y="90.0" width="140.0" height="70.0" rx="3" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="450.0" y="232.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">reader A: replicas 1, 2</text>
+<text x="450.0" y="248.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="600">sees v2</text>
+<rect x="560.0" y="142.0" width="140.0" height="66.0" rx="3" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="640.0" y="232.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">reader B (later): 2, 3</text>
+<text x="630.0" y="248.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="600">sees v1 ✗</text>
+<text x="40.0" y="296.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Reader B started after reader A finished, yet saw older data. Fixes: synchronous read repair before returning</text>
+<text x="40.0" y="315.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">(Cassandra blocking read repair), or consensus-based writes when you need linearizability.</text>
+</svg>

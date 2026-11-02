@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" width="360" height="400" role="img" aria-label="Read and write quorum configurations for N=3 and their trade-offs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="400" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Tuning R and W (N = 3)</text>
+<rect x="16.0" y="72.0" width="328.0" height="70.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="94.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">W=3, R=1</text>
+<text x="332.0" y="94.0" font-size="11" fill="#7cc47f" text-anchor="end" font-weight="400">overlap ✓</text>
+<text x="28.0" y="114.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">fast reads</text>
+<text x="28.0" y="132.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">writes fail if any replica is down</text>
+<rect x="16.0" y="150.0" width="328.0" height="70.0" rx="3" fill="#ff5b2e" fill-opacity="0.1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="28.0" y="172.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">W=2, R=2</text>
+<text x="332.0" y="172.0" font-size="11" fill="#7cc47f" text-anchor="end" font-weight="400">overlap ✓</text>
+<text x="28.0" y="192.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">balanced</text>
+<text x="28.0" y="210.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">tolerates 1 down for reads and writes</text>
+<rect x="16.0" y="228.0" width="328.0" height="70.0" rx="3" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="250.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">W=1, R=3</text>
+<text x="332.0" y="250.0" font-size="11" fill="#7cc47f" text-anchor="end" font-weight="400">overlap ✓</text>
+<text x="28.0" y="270.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">fast writes</text>
+<text x="28.0" y="288.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">reads fail if any replica is down</text>
+<rect x="16.0" y="306.0" width="328.0" height="70.0" rx="3" fill="#e5534b" fill-opacity="0.1" stroke="#e5534b" stroke-width="1"/>
+<text x="28.0" y="328.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">W=1, R=1</text>
+<text x="332.0" y="328.0" font-size="11" fill="#e5534b" text-anchor="end" font-weight="400">no overlap ✗</text>
+<text x="28.0" y="348.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">fastest</text>
+<text x="28.0" y="366.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">no overlap: stale reads likely</text>
+</svg>

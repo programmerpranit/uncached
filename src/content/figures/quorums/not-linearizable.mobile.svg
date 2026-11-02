@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 293" width="360" height="293" role="img" aria-label="Two readers see different versions while a write is still propagating, despite quorums" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="293" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">R + W &gt; N is not linearizability</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">an in-flight write can flicker</text>
+<text x="16.0" y="80.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="400">Writer: v2 reaches replica 1 only</text>
+<text x="16.0" y="102.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">(still in flight to 2 and 3)</text>
+<text x="16.0" y="146.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">Reader A asks 1 + 2 → v2</text>
+<text x="16.0" y="168.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">Reader B, later, asks 2 + 3 → v1</text>
+<text x="16.0" y="206.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">B started after A finished but saw</text>
+<text x="16.0" y="225.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">older data. Quorums alone are not</text>
+<text x="16.0" y="244.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">linearizable; blocking read repair</text>
+<text x="16.0" y="263.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">or consensus is needed.</text>
+</svg>

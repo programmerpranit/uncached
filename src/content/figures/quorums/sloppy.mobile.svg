@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 373" width="360" height="373" role="img" aria-label="Sloppy quorum: a fallback node accepts a write for an unreachable replica and hands it back later" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="373" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Sloppy quorum and hinted handoff</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">borrow a neighbour, hand back later</text>
+<rect x="16.0" y="72.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="96.3" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">A (home): ack</text>
+<rect x="16.0" y="120.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="144.3" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">B (home): down</text>
+<rect x="16.0" y="168.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="192.3" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">C (home): down</text>
+<rect x="16.0" y="216.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="236.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">D (fallback): ack</text>
+<text x="180.0" y="252.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">stores hint "for B"</text>
+<text x="16.0" y="286.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">W=2 met by A + D. When B returns,</text>
+<text x="16.0" y="305.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">D hands the write back.</text>
+<text x="16.0" y="324.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">A read of A, B, C may miss it:</text>
+<text x="16.0" y="343.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">no overlap guarantee.</text>
+</svg>
