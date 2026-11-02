@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 285" width="880" height="285" role="img" aria-label="Two nodes merge membership tables, keeping the entry with the higher heartbeat counter" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="285" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Membership state merges by version</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each node’s entry carries a heartbeat counter; higher wins</text>
+<text x="40.0" y="100.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">node A’s view</text>
+<text x="40.0" y="124.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n1</text>
+<text x="90.0" y="124.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="260.0" y="124.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 41</text>
+<text x="40.0" y="148.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n2</text>
+<text x="90.0" y="148.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="260.0" y="148.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 17</text>
+<text x="40.0" y="172.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n3</text>
+<text x="90.0" y="172.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">suspect</text>
+<text x="260.0" y="172.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 9</text>
+<text x="330.0" y="100.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">node B’s view</text>
+<text x="330.0" y="124.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n1</text>
+<text x="380.0" y="124.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="550.0" y="124.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 39</text>
+<text x="330.0" y="148.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n2</text>
+<text x="380.0" y="148.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="550.0" y="148.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 18</text>
+<text x="330.0" y="172.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n3</text>
+<text x="380.0" y="172.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="550.0" y="172.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 12</text>
+<text x="620.0" y="100.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">after exchange (both)</text>
+<text x="620.0" y="124.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n1</text>
+<text x="670.0" y="124.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="840.0" y="124.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 41</text>
+<text x="620.0" y="148.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n2</text>
+<text x="670.0" y="148.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="840.0" y="148.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 18</text>
+<text x="620.0" y="172.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n3</text>
+<text x="670.0" y="172.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="840.0" y="172.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 12</text>
+<text x="300.0" y="150.0" font-size="18" fill="#a69d8e" text-anchor="middle" font-weight="400">+</text>
+<text x="590.0" y="150.0" font-size="18" fill="#a69d8e" text-anchor="middle" font-weight="400">=</text>
+<text x="40.0" y="236.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each node increments its own heartbeat counter; gossip carries (node, status, counter) tuples. On merge, the higher</text>
+<text x="40.0" y="255.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">counter wins, so a fresher "alive" from n3 overrides A’s stale suspicion. Like a CRDT, merges converge in any order.</text>
+</svg>

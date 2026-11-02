@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 470" width="360" height="470" role="img" aria-label="Two nodes merge membership tables, keeping the entry with the higher heartbeat counter" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="470" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Merging membership state</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">higher heartbeat counter wins</text>
+<text x="16.0" y="84.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">A’s view</text>
+<text x="16.0" y="108.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n1</text>
+<text x="66.0" y="108.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="336.0" y="108.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 41</text>
+<text x="16.0" y="132.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n2</text>
+<text x="66.0" y="132.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="336.0" y="132.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 17</text>
+<text x="16.0" y="156.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n3</text>
+<text x="66.0" y="156.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">suspect</text>
+<text x="336.0" y="156.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 9</text>
+<text x="16.0" y="190.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">B’s view</text>
+<text x="16.0" y="214.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n1</text>
+<text x="66.0" y="214.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="336.0" y="214.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 39</text>
+<text x="16.0" y="238.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n2</text>
+<text x="66.0" y="238.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="336.0" y="238.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 18</text>
+<text x="16.0" y="262.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n3</text>
+<text x="66.0" y="262.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="336.0" y="262.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 12</text>
+<text x="16.0" y="296.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">merged (both)</text>
+<text x="16.0" y="320.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n1</text>
+<text x="66.0" y="320.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="336.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 41</text>
+<text x="16.0" y="344.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n2</text>
+<text x="66.0" y="344.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="336.0" y="344.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 18</text>
+<text x="16.0" y="368.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">n3</text>
+<text x="66.0" y="368.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">alive</text>
+<text x="336.0" y="368.0" font-size="12" fill="#a69d8e" text-anchor="end" font-weight="400">hb 12</text>
+<text x="16.0" y="402.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Higher heartbeat counter wins, so</text>
+<text x="16.0" y="421.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">n3’s fresher "alive" clears A’s</text>
+<text x="16.0" y="440.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">stale suspicion.</text>
+</svg>

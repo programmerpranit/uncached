@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 318" width="360" height="318" role="img" aria-label="SWIM: a direct ping, then indirect pings through other members, before suspecting a node" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="318" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">SWIM failure detection</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">direct, then indirect probes</text>
+<text x="16.0" y="80.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">1. A pings B: no ack</text>
+<text x="16.0" y="102.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">2. A asks C and D: "ping B for me"</text>
+<text x="16.0" y="124.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">3. C, D ping B and relay any ack</text>
+<text x="16.0" y="168.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">ack from anyone → B alive</text>
+<text x="16.0" y="190.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">no ack → B suspect</text>
+<text x="16.0" y="212.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">suspect too long → B dead</text>
+<text x="16.0" y="250.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Indirect probes stop one bad link</text>
+<text x="16.0" y="269.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">from killing a healthy node.</text>
+<text x="16.0" y="288.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Detection news spreads by gossip.</text>
+</svg>
