@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 382" width="360" height="382" role="img" aria-label="A cgroup v2 hierarchy with system, kubepods and user slices and per-pod and per-container limits" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="382" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">cgroup v2 tree</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">limits apply to subtrees</text>
+<text x="16.0" y="86.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">/ (root)</text>
+<text x="34.0" y="110.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="400">└ system.slice</text>
+<text x="34.0" y="134.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="400">└ kubepods.slice</text>
+<text x="52.0" y="158.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="400">└ pod-api  cpu.weight=200</text>
+<text x="70.0" y="182.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">└ app  memory.max=2G</text>
+<text x="70.0" y="206.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">└ sidecar  memory.max=256M</text>
+<text x="52.0" y="230.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="400">└ pod-batch  cpu.weight=50</text>
+<text x="70.0" y="254.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">└ worker  cpu.max=2 CPUs</text>
+<text x="34.0" y="278.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="400">└ user.slice</text>
+<text x="16.0" y="314.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each group is a directory under</text>
+<text x="16.0" y="333.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">/sys/fs/cgroup; limits apply to</text>
+<text x="16.0" y="352.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the whole subtree.</text>
+</svg>

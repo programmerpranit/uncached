@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 418" width="880" height="418" role="img" aria-label="Host and container views of process IDs under PID namespaces" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="418" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">One process, two views: PID namespaces</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the host sees every process; the container sees only its own, numbered from 1</text>
+<rect x="40.0" y="90.0" width="800.0" height="230.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="112.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">host PID namespace</text>
+<text x="70.0" y="140.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">    1  systemd</text>
+<text x="70.0" y="162.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">  812  sshd</text>
+<text x="70.0" y="184.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400"> 4242  nginx (container A)</text>
+<text x="70.0" y="206.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400"> 4250  nginx worker</text>
+<text x="70.0" y="228.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400"> 5100  postgres (container B)</text>
+<rect x="440.0" y="124.0" width="380.0" height="80.0" rx="3" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1"/>
+<text x="456.0" y="144.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="600">container A namespace</text>
+<text x="470.0" y="168.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="400">    1  nginx      (= host 4242)</text>
+<text x="470.0" y="188.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="400">    7  nginx worker (= 4250)</text>
+<rect x="440.0" y="220.0" width="380.0" height="60.0" rx="3" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1"/>
+<text x="456.0" y="240.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="600">container B namespace</text>
+<text x="470.0" y="264.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="400">    1  postgres   (= host 5100)</text>
+<text x="40.0" y="350.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">PID 1 inside a container has init duties: it must reap zombie children and handle signals, which is why tiny</text>
+<text x="40.0" y="369.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">init processes (tini, dumb-init, docker --init) exist. The same pattern applies to every namespace: nested views</text>
+<text x="40.0" y="388.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">onto one set of kernel objects.</text>
+</svg>

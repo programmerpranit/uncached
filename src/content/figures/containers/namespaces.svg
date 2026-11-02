@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 391" width="880" height="391" role="img" aria-label="The eight Linux namespace types and what each isolates" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="391" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Namespaces: what each one makes private</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a process sees its own copy of each resource; the kernel is still shared</text>
+<rect x="40.0" y="80.0" width="390.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="54.0" y="102.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">pid</text>
+<text x="130.0" y="102.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">process IDs (container's init is PID 1)</text>
+<rect x="450.0" y="80.0" width="390.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="464.0" y="102.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">net</text>
+<text x="540.0" y="102.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">interfaces, IPs, routes, ports, iptables</text>
+<rect x="40.0" y="138.0" width="390.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="54.0" y="160.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">mnt</text>
+<text x="130.0" y="160.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">mount table: its own root filesystem</text>
+<rect x="450.0" y="138.0" width="390.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="464.0" y="160.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">uts</text>
+<text x="540.0" y="160.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">hostname and domain name</text>
+<rect x="40.0" y="196.0" width="390.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="54.0" y="218.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">ipc</text>
+<text x="130.0" y="218.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">System V IPC, POSIX message queues</text>
+<rect x="450.0" y="196.0" width="390.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="464.0" y="218.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">user</text>
+<text x="540.0" y="218.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">UID/GID map: root inside, unprivileged out</text>
+<rect x="40.0" y="254.0" width="390.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="54.0" y="276.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">cgroup</text>
+<text x="130.0" y="276.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">view of the cgroup tree</text>
+<rect x="450.0" y="254.0" width="390.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="464.0" y="276.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">time</text>
+<text x="540.0" y="276.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">boot and monotonic clock offsets</text>
+<text x="40.0" y="342.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Namespaces control what a process can see; cgroups control how much it can use. Neither changes the fact that</text>
+<text x="40.0" y="361.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">every container shares one kernel, so a kernel bug or a too-permissive setup can let a process escape.</text>
+</svg>

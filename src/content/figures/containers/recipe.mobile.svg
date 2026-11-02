@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 424" width="360" height="424" role="img" aria-label="A container combines namespaces, cgroups, a root filesystem, capabilities, seccomp and LSM policies" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="424" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">What a container is</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">several kernel features combined</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">namespaces</text>
+<text x="16.0" y="103.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">what it can see</text>
+<text x="16.0" y="130.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">cgroups</text>
+<text x="16.0" y="147.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">how much it can use</text>
+<text x="16.0" y="174.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">root filesystem</text>
+<text x="16.0" y="191.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">image layers via overlayfs + pivot_root</text>
+<text x="16.0" y="218.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">capabilities</text>
+<text x="16.0" y="235.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">drop most of root's powers</text>
+<text x="16.0" y="262.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">seccomp</text>
+<text x="16.0" y="279.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">block risky system calls</text>
+<text x="16.0" y="306.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">LSM (AppArmor / SELinux)</text>
+<text x="16.0" y="323.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">mandatory access control</text>
+<text x="16.0" y="356.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">runc/crun combines these, then</text>
+<text x="16.0" y="375.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">execs the entrypoint. gVisor and</text>
+<text x="16.0" y="394.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Firecracker add stronger walls.</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 404" width="360" height="404" role="img" aria-label="The eight Linux namespace types and what each isolates" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="404" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Linux namespaces</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what each one isolates</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">pid</text>
+<text x="80.0" y="86.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">process IDs (init = PID 1)</text>
+<text x="16.0" y="116.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">net</text>
+<text x="80.0" y="116.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">interfaces, IPs, routes, ports, iptables</text>
+<text x="16.0" y="146.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">mnt</text>
+<text x="80.0" y="146.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">mount table: its own root filesystem</text>
+<text x="16.0" y="176.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">uts</text>
+<text x="80.0" y="176.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">hostname and domain name</text>
+<text x="16.0" y="206.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">ipc</text>
+<text x="80.0" y="206.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">System V IPC, POSIX message queues</text>
+<text x="16.0" y="236.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">user</text>
+<text x="80.0" y="236.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">UID map: root inside only</text>
+<text x="16.0" y="266.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">cgroup</text>
+<text x="80.0" y="266.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">view of the cgroup tree</text>
+<text x="16.0" y="296.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">time</text>
+<text x="80.0" y="296.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">boot and monotonic clock offsets</text>
+<text x="16.0" y="336.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Namespaces limit what a process</text>
+<text x="16.0" y="355.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">sees; cgroups limit what it uses.</text>
+<text x="16.0" y="374.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">All containers share one kernel.</text>
+</svg>
