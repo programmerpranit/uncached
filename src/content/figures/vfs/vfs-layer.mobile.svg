@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 364" width="360" height="364" role="img" aria-label="System calls go through the VFS layer to filesystems such as ext4, XFS, NFS, FUSE and procfs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="364" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">The VFS layer</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one API, many filesystems</text>
+<rect x="16.0" y="84.0" width="328.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="104.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="400">open · read · write · stat …</text>
+<rect x="16.0" y="126.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="148.0" font-size="12.5" fill="#7cc47f" text-anchor="middle" font-weight="700">VFS</text>
+<text x="180.0" y="166.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">lookup · dcache · inode cache</text>
+<rect x="16.0" y="192.0" width="76.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="54.0" y="210.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">ext4</text>
+<rect x="99.0" y="192.0" width="76.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="137.0" y="210.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">XFS</text>
+<rect x="182.0" y="192.0" width="76.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="220.0" y="210.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">Btrfs</text>
+<rect x="265.0" y="192.0" width="76.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="303.0" y="210.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">NFS</text>
+<rect x="16.0" y="232.0" width="76.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="54.0" y="250.8" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="600">FUSE</text>
+<rect x="99.0" y="232.0" width="76.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="137.0" y="250.8" font-size="10.5" fill="#d77fa1" text-anchor="middle" font-weight="600">procfs</text>
+<rect x="182.0" y="232.0" width="76.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="220.0" y="250.8" font-size="10.5" fill="#d77fa1" text-anchor="middle" font-weight="600">tmpfs</text>
+<rect x="265.0" y="232.0" width="76.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="303.0" y="250.8" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="600">overlayfs</text>
+<text x="16.0" y="296.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Same calls for ext4, NFS, FUSE</text>
+<text x="16.0" y="315.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and /proc. Caching and permission</text>
+<text x="16.0" y="334.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">checks live once, in the VFS.</text>
+</svg>

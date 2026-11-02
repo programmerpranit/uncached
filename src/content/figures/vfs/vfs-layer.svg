@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 428" width="880" height="428" role="img" aria-label="System calls go through the VFS layer to filesystems such as ext4, XFS, NFS, FUSE and procfs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="428" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The VFS: one interface over many filesystems</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">system calls talk to the VFS; each filesystem plugs in its own operations</text>
+<rect x="40.0" y="86.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="111.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">open · read · write · stat · rename · mmap · getdents</text>
+<rect x="40.0" y="150.0" width="800.0" height="80.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="440.0" y="174.0" font-size="13" fill="#7cc47f" text-anchor="middle" font-weight="700">VFS</text>
+<text x="440.0" y="196.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="400">path lookup · dentry cache · inode cache · page cache · permissions · file locks</text>
+<text x="440.0" y="214.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">calls each filesystem through inode_operations, file_operations, super_operations</text>
+<rect x="40.0" y="260.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="86.0" y="282.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">ext4</text>
+<line x1="86.0" y1="230.0" x2="86.0" y2="258.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="141.0" y="260.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="187.0" y="282.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">XFS</text>
+<line x1="187.0" y1="230.0" x2="187.0" y2="258.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="242.0" y="260.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="288.0" y="282.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">Btrfs</text>
+<line x1="288.0" y1="230.0" x2="288.0" y2="258.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="343.0" y="260.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="389.0" y="282.1" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="600">NFS</text>
+<line x1="389.0" y1="230.0" x2="389.0" y2="258.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="444.0" y="260.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="490.0" y="282.1" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">FUSE</text>
+<line x1="490.0" y1="230.0" x2="490.0" y2="258.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="545.0" y="260.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="591.0" y="282.1" font-size="11.5" fill="#d77fa1" text-anchor="middle" font-weight="600">procfs</text>
+<line x1="591.0" y1="230.0" x2="591.0" y2="258.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="646.0" y="260.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="692.0" y="282.1" font-size="11.5" fill="#d77fa1" text-anchor="middle" font-weight="600">tmpfs</text>
+<line x1="692.0" y1="230.0" x2="692.0" y2="258.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="747.0" y="260.0" width="92.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="793.0" y="282.1" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">overlayfs</text>
+<line x1="793.0" y1="230.0" x2="793.0" y2="258.0" stroke="#4a4136" stroke-width="1"/>
+<text x="40.0" y="322.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">on-disk</text>
+<text x="343.0" y="322.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">network / user space</text>
+<text x="646.0" y="322.0" font-size="11" fill="#d77fa1" text-anchor="start" font-weight="400">virtual (no disk)</text>
+<line x1="440.0" y1="126.0" x2="440.0" y2="148.0" stroke="#4a4136" stroke-width="1.3" marker-end="url(#ah0)"/>
+<text x="40.0" y="360.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Because everything implements the same operations, cat works on a file in ext4, a remote NFS share, a FUSE-mounted</text>
+<text x="40.0" y="379.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">S3 bucket or /proc/cpuinfo, which the kernel generates on the fly. Common work (caching, permission checks, path</text>
+<text x="40.0" y="398.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">walking) is written once in the VFS instead of in every filesystem.</text>
+</svg>

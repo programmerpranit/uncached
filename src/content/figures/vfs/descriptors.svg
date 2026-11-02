@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 458" width="880" height="458" role="img" aria-label="File descriptor tables point to open file descriptions, which point to inodes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="458" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">File descriptors, open files and inodes</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">three levels: per-process fd table, shared open file description, the inode</text>
+<rect x="40.0" y="90.0" width="200.0" height="150.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="56.0" y="112.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="600">process A fds</text>
+<text x="60.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">fd 3</text>
+<text x="60.0" y="168.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">fd 4</text>
+<text x="60.0" y="196.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">fd 5</text>
+<rect x="40.0" y="260.0" width="200.0" height="90.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="56.0" y="282.0" font-size="12" fill="#d77fa1" text-anchor="start" font-weight="600">process B (forked)</text>
+<text x="60.0" y="310.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">fd 3</text>
+<rect x="340.0" y="110.0" width="220.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="450.0" y="132.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">open file #1</text>
+<text x="450.0" y="148.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">offset 4096, O_APPEND</text>
+<rect x="340.0" y="200.0" width="220.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="450.0" y="222.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">open file #2</text>
+<text x="450.0" y="238.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">offset 0, read-only</text>
+<rect x="660.0" y="150.0" width="180.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="750.0" y="172.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">inode 1832</text>
+<text x="750.0" y="188.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">log.txt</text>
+<line x1="140.0" y1="136.0" x2="338.0" y2="135.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="140.0" y1="164.0" x2="338.0" y2="140.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah0)" stroke-dasharray="4 3"/>
+<line x1="140.0" y1="192.0" x2="338.0" y2="225.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="240.0" y1="306.0" x2="338.0" y2="150.0" stroke="#d77fa1" stroke-width="1.2" marker-end="url(#ah1)"/>
+<line x1="560.0" y1="135.0" x2="658.0" y2="170.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah2)"/>
+<line x1="560.0" y1="225.0" x2="658.0" y2="180.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah2)"/>
+<text x="40.0" y="390.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">dup() (fd 4) and fork() (process B) share an open file description, including its offset, so their writes advance</text>
+<text x="40.0" y="409.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one position. Two separate open() calls (fd 5) get separate offsets but the same inode. Permissions are checked at</text>
+<text x="40.0" y="428.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">open() time, which is why an fd keeps working after chmod and can be passed to another process over a Unix socket.</text>
+</svg>
