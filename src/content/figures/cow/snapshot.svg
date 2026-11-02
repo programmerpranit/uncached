@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 392" width="880" height="392" role="img" aria-label="Extra memory used by a fork-based Redis snapshot under different write patterns" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="392" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Snapshot by fork(): memory cost depends on the write rate</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a 10 GB Redis forks to write an RDB file; extra RAM = pages dirtied before the child finishes</text>
+<text x="40.0" y="104.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">read-mostly cache</text>
+<text x="40.0" y="120.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">~2% pages touched</text>
+<rect x="330.0" y="92.0" width="9.6" height="22.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="349.6" y="108.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">+0.2 GB</text>
+<text x="40.0" y="156.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">moderate writes</text>
+<text x="40.0" y="172.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">~25% touched</text>
+<rect x="330.0" y="144.0" width="97.0" height="22.0" rx="3" fill="#e2b45a" fill-opacity="0.7" stroke="#e2b45a" stroke-width="1"/>
+<text x="437.0" y="160.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">+2.5 GB</text>
+<text x="40.0" y="208.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">write-heavy, random keys</text>
+<text x="40.0" y="224.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">~80% touched</text>
+<rect x="330.0" y="196.0" width="306.0" height="22.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="646.0" y="212.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">+8 GB</text>
+<text x="40.0" y="260.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">write-heavy, THP, kernel &lt; 5.8</text>
+<text x="40.0" y="276.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">2 MiB copied per write</text>
+<rect x="330.0" y="248.0" width="382.0" height="22.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="722.0" y="264.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">+10 GB</text>
+<text x="40.0" y="324.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each page is copied the first time either process writes to it during the snapshot. Random writes spread over</text>
+<text x="40.0" y="343.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the keyspace dirty pages fast. Before Linux 5.8, a write to a transparent huge page copied all 2 MiB, one reason</text>
+<text x="40.0" y="362.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Redis tells you to disable THP. Either way, leave RAM headroom and set vm.overcommit_memory = 1.</text>
+</svg>

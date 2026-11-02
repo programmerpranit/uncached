@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 376" width="880" height="376" role="img" aria-label="Cost of fork plus exec compared with vfork and posix_spawn" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="376" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Starting a new program: fork+exec vs vfork vs posix_spawn</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">cost of fork grows with the parent's mapped memory, even if exec throws it all away</text>
+<text x="40.0" y="104.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">fork() + exec()</text>
+<text x="40.0" y="122.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">copy page tables, then discard them</text>
+<rect x="440.0" y="94.0" width="262.0" height="20.0" rx="3" fill="#e5534b" fill-opacity="0.7" stroke="#e5534b" stroke-width="1"/>
+<text x="440.0" y="134.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">~10 ms per GB mapped</text>
+<text x="40.0" y="170.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">vfork() + exec()</text>
+<text x="40.0" y="188.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">borrow parent memory; parent waits</text>
+<rect x="440.0" y="160.0" width="17.6" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="440.0" y="200.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">constant, ~tens of µs</text>
+<text x="40.0" y="236.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">posix_spawn()</text>
+<text x="40.0" y="254.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">glibc: clone(CLONE_VM|CLONE_VFORK)</text>
+<rect x="440.0" y="226.0" width="17.6" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.7" stroke="#7cc47f" stroke-width="1"/>
+<text x="440.0" y="266.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">constant, ~tens of µs</text>
+<text x="40.0" y="308.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Figures are rough: fork time is dominated by copying page tables (Redis measured ~9–13 ms per GB on bare</text>
+<text x="40.0" y="327.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">metal, far more on old Xen VMs). A 30 GB JVM that forks to run "ls" pays that cost for nothing. posix_spawn</text>
+<text x="40.0" y="346.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and vfork skip the copy because the child runs in the parent's memory until exec replaces it.</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 562" width="880" height="562" role="img" aria-label="Parent and child page tables after fork pointing at the same physical frames, marked read-only" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="562" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">After fork(): two page tables, one set of physical pages</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">both processes map the same frames, marked read-only</text>
+<text x="110.0" y="92.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">parent page table</text>
+<text x="110.0" y="322.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">child page table</text>
+<text x="620.0" y="92.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">physical memory</text>
+<rect x="40.0" y="104.0" width="140.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="110.0" y="121.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">A  r/o</text>
+<rect x="40.0" y="138.0" width="140.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="110.0" y="155.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">B  r/o</text>
+<rect x="40.0" y="172.0" width="140.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="110.0" y="189.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">C  r/o</text>
+<rect x="40.0" y="206.0" width="140.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="110.0" y="223.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">D  r/o</text>
+<rect x="40.0" y="334.0" width="140.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="110.0" y="351.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="600">A  r/o</text>
+<rect x="40.0" y="368.0" width="140.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="110.0" y="385.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="600">B  r/o</text>
+<rect x="40.0" y="402.0" width="140.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="110.0" y="419.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="600">C  r/o</text>
+<rect x="40.0" y="436.0" width="140.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="110.0" y="453.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="600">D  r/o</text>
+<rect x="540.0" y="170.0" width="160.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="620.0" y="189.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="600">frame 17  refs=2</text>
+<rect x="540.0" y="208.0" width="160.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="620.0" y="227.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="600">frame 42  refs=2</text>
+<rect x="540.0" y="246.0" width="160.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="620.0" y="265.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="600">frame 08  refs=2</text>
+<rect x="540.0" y="284.0" width="160.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="620.0" y="303.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="600">frame 91  refs=2</text>
+<line x1="180.0" y1="117.0" x2="540.0" y2="185.0" stroke="#5fb3a1" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="180.0" y1="347.0" x2="540.0" y2="185.0" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<line x1="180.0" y1="151.0" x2="540.0" y2="223.0" stroke="#5fb3a1" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="180.0" y1="381.0" x2="540.0" y2="223.0" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<line x1="180.0" y1="185.0" x2="540.0" y2="261.0" stroke="#5fb3a1" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="180.0" y1="415.0" x2="540.0" y2="261.0" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<line x1="180.0" y1="219.0" x2="540.0" y2="299.0" stroke="#5fb3a1" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="180.0" y1="449.0" x2="540.0" y2="299.0" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<text x="40.0" y="494.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">fork() copies the page tables (and the kernel bookkeeping around them), not the pages. Writable private pages</text>
+<text x="40.0" y="513.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">are marked read-only in both tables and their reference counts go up. Until someone writes, the two processes</text>
+<text x="40.0" y="532.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">share every byte of physical memory.</text>
+</svg>

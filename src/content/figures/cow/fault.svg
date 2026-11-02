@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 410" width="880" height="410" role="img" aria-label="Steps of a copy-on-write page fault: write, fault, copy, remap, retry" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="410" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The first write: a copy-on-write fault</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the child writes page B; the kernel copies just that page</text>
+<circle cx="56.0" cy="96.0" r="13" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1.5"/>
+<text x="56.0" y="100.5" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="700">1</text>
+<text x="84.0" y="100.5" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">child: store to page B</text>
+<line x1="56.0" y1="110.0" x2="56.0" y2="126.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="142.0" r="13" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1.5"/>
+<text x="56.0" y="146.5" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="700">2</text>
+<text x="84.0" y="146.5" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">MMU: PTE is read-only → page fault</text>
+<line x1="56.0" y1="156.0" x2="56.0" y2="172.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="188.0" r="13" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="56.0" y="192.5" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="700">3</text>
+<text x="84.0" y="192.5" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">kernel: refs&gt;1 → allocate frame, copy 4 KiB</text>
+<line x1="56.0" y1="202.0" x2="56.0" y2="218.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="234.0" r="13" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1.5"/>
+<text x="56.0" y="238.5" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="700">4</text>
+<text x="84.0" y="238.5" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">child PTE → new frame, writable; refs of old frame −1</text>
+<line x1="56.0" y1="248.0" x2="56.0" y2="264.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="280.0" r="13" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1.5"/>
+<text x="56.0" y="284.5" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="700">5</text>
+<text x="84.0" y="284.5" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">return to user space; the store is retried and succeeds</text>
+<rect x="600.0" y="96.0" width="110.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="655.0" y="115.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">frame 42</text>
+<text x="722.0" y="108.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">parent keeps it</text>
+<text x="722.0" y="122.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">(now refs=1)</text>
+<rect x="600.0" y="210.0" width="110.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="655.0" y="229.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="600">frame 63</text>
+<text x="722.0" y="222.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="400">child's</text>
+<text x="722.0" y="236.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="400">private copy</text>
+<line x1="655.0" y1="126.0" x2="655.0" y2="208.0" stroke="#e2b45a" stroke-width="1.3" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<text x="665.0" y="172.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">copy</text>
+<text x="40.0" y="342.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cost of one COW fault: a trap into the kernel, a page allocation, a 4 KiB memcpy and a TLB flush for that</text>
+<text x="40.0" y="361.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">address, typically a few microseconds. If the old frame's refcount is already 1 (the other side exited or already</text>
+<text x="40.0" y="380.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">copied), the kernel skips the copy and just flips the PTE back to writable.</text>
+</svg>

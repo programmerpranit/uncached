@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 412" width="360" height="412" role="img" aria-label="Steps of a copy-on-write page fault: write, fault, copy, remap, retry" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="412" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">The first write</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">only the written page is copied</text>
+<circle cx="30.0" cy="86.0" r="12" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1.5"/>
+<text x="30.0" y="90.5" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="700">1</text>
+<text x="52.0" y="90.5" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">child writes page B</text>
+<line x1="30.0" y1="99.0" x2="30.0" y2="114.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="30.0" cy="128.0" r="12" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1.5"/>
+<text x="30.0" y="132.5" font-size="11.5" fill="#e5534b" text-anchor="middle" font-weight="700">2</text>
+<text x="52.0" y="132.5" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">PTE read-only → fault</text>
+<line x1="30.0" y1="141.0" x2="30.0" y2="156.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="30.0" cy="170.0" r="12" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="30.0" y="174.5" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="700">3</text>
+<text x="52.0" y="174.5" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">refs&gt;1 → copy 4 KiB</text>
+<line x1="30.0" y1="183.0" x2="30.0" y2="198.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="30.0" cy="212.0" r="12" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1.5"/>
+<text x="30.0" y="216.5" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="700">4</text>
+<text x="52.0" y="216.5" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">child PTE → new frame</text>
+<line x1="30.0" y1="225.0" x2="30.0" y2="240.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="30.0" cy="254.0" r="12" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1.5"/>
+<text x="30.0" y="258.5" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="700">5</text>
+<text x="52.0" y="258.5" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">retry store: succeeds</text>
+<text x="16.0" y="306.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cost: a trap, an allocation, a</text>
+<text x="16.0" y="325.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">4 KiB copy and a TLB flush —</text>
+<text x="16.0" y="344.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a few microseconds per page.</text>
+<text x="16.0" y="363.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">If refs is already 1, no copy:</text>
+<text x="16.0" y="382.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the PTE just becomes writable.</text>
+</svg>

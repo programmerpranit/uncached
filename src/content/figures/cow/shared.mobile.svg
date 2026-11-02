@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 468" width="360" height="468" role="img" aria-label="Parent and child page tables after fork pointing at the same physical frames, marked read-only" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="468" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">After fork()</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same frames, now read-only</text>
+<text x="16.0" y="84.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="600">parent</text>
+<text x="16.0" y="248.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="600">child</text>
+<rect x="16.0" y="94.0" width="84.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="58.0" y="109.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">A r/o</text>
+<rect x="16.0" y="126.0" width="84.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="58.0" y="141.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">B r/o</text>
+<rect x="16.0" y="158.0" width="84.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="58.0" y="173.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">C r/o</text>
+<rect x="16.0" y="190.0" width="84.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="58.0" y="205.8" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">D r/o</text>
+<rect x="16.0" y="258.0" width="84.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="58.0" y="273.8" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="600">A r/o</text>
+<rect x="16.0" y="290.0" width="84.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="58.0" y="305.8" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="600">B r/o</text>
+<rect x="16.0" y="322.0" width="84.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="58.0" y="337.8" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="600">C r/o</text>
+<rect x="16.0" y="354.0" width="84.0" height="24.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="58.0" y="369.8" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="600">D r/o</text>
+<text x="274.0" y="150.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">physical</text>
+<rect x="210.0" y="164.0" width="130.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="275.0" y="181.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">frame 17 ×2</text>
+<rect x="210.0" y="200.0" width="130.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="275.0" y="217.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">frame 42 ×2</text>
+<rect x="210.0" y="236.0" width="130.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="275.0" y="253.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">frame 08 ×2</text>
+<rect x="210.0" y="272.0" width="130.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="275.0" y="289.8" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="600">frame 91 ×2</text>
+<line x1="100.0" y1="106.0" x2="210.0" y2="178.0" stroke="#5fb3a1" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="100.0" y1="270.0" x2="210.0" y2="178.0" stroke="#9b8cff" stroke-width="1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<line x1="100.0" y1="138.0" x2="210.0" y2="214.0" stroke="#5fb3a1" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="100.0" y1="302.0" x2="210.0" y2="214.0" stroke="#9b8cff" stroke-width="1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<line x1="100.0" y1="170.0" x2="210.0" y2="250.0" stroke="#5fb3a1" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="100.0" y1="334.0" x2="210.0" y2="250.0" stroke="#9b8cff" stroke-width="1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<line x1="100.0" y1="202.0" x2="210.0" y2="286.0" stroke="#5fb3a1" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="100.0" y1="366.0" x2="210.0" y2="286.0" stroke="#9b8cff" stroke-width="1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<text x="16.0" y="400.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">fork() copies page tables, not</text>
+<text x="16.0" y="419.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">pages. Shared pages turn read-only</text>
+<text x="16.0" y="438.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and their refcount goes to 2.</text>
+</svg>
