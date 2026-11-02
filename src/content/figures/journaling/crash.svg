@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 377" width="880" height="377" role="img" aria-label="Appending a block updates the bitmap, inode and data block; a crash between writes causes inconsistencies" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="377" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Appending one block means updating three places on disk</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a crash between them leaves the filesystem inconsistent</text>
+<rect x="40.0" y="90.0" width="250.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="165.0" y="112.0" font-size="12.5" fill="#e2b45a" text-anchor="middle" font-weight="600">bitmap</text>
+<text x="165.0" y="128.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">mark block 812 used</text>
+<rect x="315.0" y="90.0" width="250.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="440.0" y="112.0" font-size="12.5" fill="#9b8cff" text-anchor="middle" font-weight="600">inode</text>
+<text x="440.0" y="128.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">size += 4 KiB; pointer → 812</text>
+<rect x="590.0" y="90.0" width="250.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="715.0" y="112.0" font-size="12.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">data block 812</text>
+<text x="715.0" y="128.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">the new bytes</text>
+<text x="40.0" y="180.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">if the power fails after some of these writes:</text>
+<text x="60.0" y="208.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">only data written</text>
+<text x="330.0" y="208.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">harmless: data lost, metadata consistent</text>
+<text x="60.0" y="234.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">only inode written</text>
+<text x="330.0" y="234.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">inode points at garbage: file shows old/random data</text>
+<text x="60.0" y="260.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">only bitmap written</text>
+<text x="330.0" y="260.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">space leak: block used but owned by nobody</text>
+<text x="60.0" y="286.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">inode + bitmap, no data</text>
+<text x="330.0" y="286.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">metadata consistent, contents garbage</text>
+<text x="40.0" y="328.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Disks reorder writes and only guarantee atomicity for a single sector (or block). Before journaling, fsck had to</text>
+<text x="40.0" y="347.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">scan the entire filesystem after every crash to find and fix these, which took hours on large disks.</text>
+</svg>

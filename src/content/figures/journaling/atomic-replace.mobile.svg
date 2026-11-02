@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 349" width="360" height="349" role="img" aria-label="Steps to atomically and durably replace a file: write temp, fsync, rename, fsync directory" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="349" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Atomic file replace</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">old or new, never half</text>
+<circle cx="26.0" cy="86.0" r="11" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1.5"/>
+<text x="26.0" y="90.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="700">1</text>
+<text x="46.0" y="90.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">write config.json.tmp</text>
+<circle cx="26.0" cy="128.0" r="11" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="26.0" y="132.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="700">2</text>
+<text x="46.0" y="132.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">fsync(tmp fd)</text>
+<circle cx="26.0" cy="170.0" r="11" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1.5"/>
+<text x="26.0" y="174.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="700">3</text>
+<text x="46.0" y="174.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">rename(tmp, config.json)</text>
+<circle cx="26.0" cy="212.0" r="11" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="26.0" y="216.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="700">4</text>
+<text x="46.0" y="216.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">fsync(directory fd)</text>
+<text x="16.0" y="262.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Skip 2: crash may leave an empty</text>
+<text x="16.0" y="281.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">file. Skip 4: the rename may be</text>
+<text x="16.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">lost. rename() makes the switch</text>
+<text x="16.0" y="319.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">atomic for readers.</text>
+</svg>

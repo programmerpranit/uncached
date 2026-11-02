@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 304" width="360" height="304" role="img" aria-label="ext4 data=journal, data=ordered and data=writeback modes compared" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="304" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">ext4 journal modes</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">safety vs write cost</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">data=journal</text>
+<text x="16.0" y="103.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">data written twice; strongest</text>
+<text x="16.0" y="134.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">data=ordered (default)</text>
+<text x="16.0" y="151.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">no garbage in files after a crash</text>
+<text x="16.0" y="182.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">data=writeback</text>
+<text x="16.0" y="199.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">fastest; may expose stale data</text>
+<text x="16.0" y="236.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Journaling protects the filesystem,</text>
+<text x="16.0" y="255.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">not your data: without fsync,</text>
+<text x="16.0" y="274.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">recent writes can still be lost.</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 409" width="360" height="409" role="img" aria-label="Appending a block updates the bitmap, inode and data block; a crash between writes causes inconsistencies" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="409" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">One append, three writes</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">crash between them = inconsistency</text>
+<rect x="16.0" y="84.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="101.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">bitmap</text>
+<text x="180.0" y="117.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="400">mark block 812 used</text>
+<rect x="16.0" y="132.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="149.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">inode</text>
+<text x="180.0" y="165.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="400">size += 4 KiB; pointer → 812</text>
+<rect x="16.0" y="180.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="197.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">data block 812</text>
+<text x="180.0" y="213.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="400">the new bytes</text>
+<text x="16.0" y="240.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">crash after some writes:</text>
+<text x="16.0" y="262.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="700">only data written</text>
+<text x="16.0" y="284.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="700">only inode written</text>
+<text x="16.0" y="306.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="700">only bitmap written</text>
+<text x="16.0" y="328.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="700">inode + bitmap, no data</text>
+<text x="16.0" y="360.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">fsck had to scan the whole disk</text>
+<text x="16.0" y="379.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">after each crash to repair this.</text>
+</svg>

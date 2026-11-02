@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 376" width="880" height="376" role="img" aria-label="ext4 data=journal, data=ordered and data=writeback modes compared" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="376" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">ext4 journaling modes: what goes through the journal</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">stronger guarantees cost more writes</text>
+<rect x="40.0" y="84.0" width="800.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="104.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">data=journal</text>
+<text x="300.0" y="104.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">metadata + data journaled</text>
+<text x="300.0" y="124.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">data written twice; strongest</text>
+<rect x="40.0" y="150.0" width="800.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="170.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">data=ordered (default)</text>
+<text x="300.0" y="170.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">metadata journaled; data written before its metadata commits</text>
+<text x="300.0" y="190.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">no garbage in files after a crash</text>
+<rect x="40.0" y="216.0" width="800.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="236.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">data=writeback</text>
+<text x="300.0" y="236.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">metadata journaled; data whenever</text>
+<text x="300.0" y="256.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">fastest; files may contain stale data after a crash</text>
+<text x="40.0" y="308.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Journaling protects the filesystem's own structure. It does not make your application's data durable at any</text>
+<text x="40.0" y="327.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">particular moment: without fsync, recently written data can still be lost in a crash, and ordered mode only</text>
+<text x="40.0" y="346.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">guarantees you won't see garbage. XFS and Btrfs differ in mechanism (Btrfs is copy-on-write) but not in this rule.</text>
+</svg>

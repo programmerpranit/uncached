@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 364" width="880" height="364" role="img" aria-label="Steps to atomically and durably replace a file: write temp, fsync, rename, fsync directory" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="364" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Safely replacing a file: the write–fsync–rename–fsync dance</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">so readers and crashes see either the old file or the complete new one</text>
+<circle cx="56.0" cy="100.0" r="12" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1.5"/>
+<text x="56.0" y="104.0" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="700">1</text>
+<text x="84.0" y="104.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">write config.json.tmp</text>
+<text x="380.0" y="104.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">new contents in a temp file in the same directory</text>
+<line x1="56.0" y1="113.0" x2="56.0" y2="133.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="146.0" r="12" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="56.0" y="150.0" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="700">2</text>
+<text x="84.0" y="150.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">fsync(tmp fd)</text>
+<text x="380.0" y="150.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">new data durable before it becomes visible</text>
+<line x1="56.0" y1="159.0" x2="56.0" y2="179.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="192.0" r="12" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1.5"/>
+<text x="56.0" y="196.0" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="700">3</text>
+<text x="84.0" y="196.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">rename(tmp, config.json)</text>
+<text x="380.0" y="196.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">atomic switch: readers see old or new, never partial</text>
+<line x1="56.0" y1="205.0" x2="56.0" y2="225.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<circle cx="56.0" cy="238.0" r="12" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="56.0" y="242.0" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="700">4</text>
+<text x="84.0" y="242.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="600">fsync(directory fd)</text>
+<text x="380.0" y="242.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">make the rename itself durable</text>
+<text x="40.0" y="296.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Skip step 2 and a crash can leave config.json pointing at an empty or partial file (the "zero-length file" problem</text>
+<text x="40.0" y="315.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ext4 users hit in 2009). Skip step 4 and the rename may be lost, bringing back the old file. Many apps skip both</text>
+<text x="40.0" y="334.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and get away with it until a power cut. Careful software follows this sequence or keeps its own log.</text>
+</svg>
