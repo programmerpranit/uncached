@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 411" width="880" height="411" role="img" aria-label="Typical round-trip times between cloud regions compared with the speed-of-light minimum in fibre" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="411" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The speed of light sets a floor</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">typical round-trip times vs the theoretical minimum in fibre</text>
+<text x="40.0" y="110.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">us-east ↔ us-west</text>
+<rect x="320.0" y="96.0" width="135.3" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="#e2b45a" stroke-width="1"/>
+<rect x="320.0" y="96.0" width="85.1" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.8" stroke="#5fb3a1" stroke-width="1"/>
+<text x="463.3" y="110.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">62 ms</text>
+<text x="40.0" y="146.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">us-east ↔ eu-west (Ireland)</text>
+<rect x="320.0" y="132.0" width="152.7" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="#e2b45a" stroke-width="1"/>
+<rect x="320.0" y="132.0" width="115.6" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.8" stroke="#5fb3a1" stroke-width="1"/>
+<text x="480.7" y="146.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">70 ms</text>
+<text x="40.0" y="182.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">eu-west ↔ ap-south (Mumbai)</text>
+<rect x="320.0" y="168.0" width="261.8" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="#e2b45a" stroke-width="1"/>
+<rect x="320.0" y="168.0" width="168.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.8" stroke="#5fb3a1" stroke-width="1"/>
+<text x="589.8" y="182.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">120 ms</text>
+<text x="40.0" y="218.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">us-east ↔ ap-northeast (Tokyo)</text>
+<rect x="320.0" y="204.0" width="327.3" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="#e2b45a" stroke-width="1"/>
+<rect x="320.0" y="204.0" width="237.8" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.8" stroke="#5fb3a1" stroke-width="1"/>
+<text x="655.3" y="218.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">150 ms</text>
+<text x="40.0" y="254.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">us-east ↔ ap-southeast (Sydney)</text>
+<rect x="320.0" y="240.0" width="436.4" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="#e2b45a" stroke-width="1"/>
+<rect x="320.0" y="240.0" width="340.4" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.8" stroke="#5fb3a1" stroke-width="1"/>
+<text x="764.4" y="254.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">200 ms</text>
+<rect x="320.0" y="286.0" width="12.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="338.0" y="296.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">fibre minimum (light at ~2/3 c, great-circle path)</text>
+<rect x="320.0" y="306.0" width="12.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="338.0" y="316.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">typical measured RTT</text>
+<text x="40.0" y="362.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Real routes are longer than great circles and add routers and queues, so measured RTTs run 1.5–2× the minimum.</text>
+<text x="40.0" y="381.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">No amount of engineering removes the floor: a synchronous cross-ocean round trip costs ~70–200 ms.</text>
+</svg>

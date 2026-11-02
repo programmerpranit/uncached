@@ -37,7 +37,7 @@ When a key is read far more than it's written, **make more copies** and spread r
 - **CDN / edge caching** for public content.
 - **Request coalescing**, so concurrent misses for the hot key cause one fetch, not thousands.
 
-Facebook's memcache paper describes both regional replication and leases for hot keys. Twitter's cache layer detects hot keys and serves them from an in-process cache on the cache proxies.
+Facebook's memcache paper describes both regional replication and leases for hot keys.
 
 ## Write-hot keys
 
@@ -78,7 +78,6 @@ You can't plan for a post going viral, so detect hotness at runtime:
 | --- | --- |
 | **DynamoDB** | Adaptive capacity, split-for-heat on partitions. Docs recommend write sharding with random or calculated suffixes. Contributor Insights shows top keys. |
 | **Facebook memcache / TAO** | Regional replication, leases, and read-through caches for hot objects |
-| **Twitter** | Hot-key detection in the cache proxy layer with in-process caching of hot keys |
 | **CockroachDB, Spanner, TiKV** | Load-based range splitting and rebalancing |
 | **Redis Cluster** | `--hotkeys` with LFU. Client-side caching (`CLIENT TRACKING`) with invalidation messages. |
 | **Google App Engine / Firestore** | Sharded counters. Firestore documents ~1 sustained write per second per document as a guideline. |

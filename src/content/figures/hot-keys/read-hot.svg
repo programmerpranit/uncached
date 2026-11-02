@@ -30,5 +30,5 @@
 <text x="720.0" y="193.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">rarely touched</text>
 <line x1="512.0" y1="140.0" x2="618.0" y2="170.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)" stroke-dasharray="4 3"/>
 <text x="40.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A 1–5 second in-process cache on each app server turns 200k reads/s into a few hundred. For the remaining reads,</text>
-<text x="40.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">replicate hot keys to several cache nodes and pick one at random. Facebook and Twitter both do variants of this.</text>
+<text x="40.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">replicate hot keys to several cache nodes and pick one at random. Facebook’s memcache does a variant of this.</text>
 </svg>

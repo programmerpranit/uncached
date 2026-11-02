@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 369" width="880" height="369" role="img" aria-label="Geo-partitioned data: each user row is homed in a region, with global reference tables replicated everywhere" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="369" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Geo-partitioning: data lives near its users</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">rows pinned to a home region by a region column</text>
+<rect x="40.0" y="90.0" width="255.0" height="120.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="54.0" y="116.0" font-size="14" fill="#5fb3a1" text-anchor="start" font-weight="700">eu-west</text>
+<text x="54.0" y="144.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">users where region = "eu"</text>
+<text x="54.0" y="170.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">reads + writes: ~2–5 ms</text>
+<text x="54.0" y="192.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">replicas within the region</text>
+<rect x="315.0" y="90.0" width="255.0" height="120.0" rx="3" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1"/>
+<text x="329.0" y="116.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">us-east</text>
+<text x="329.0" y="144.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">users where region = "us"</text>
+<text x="329.0" y="170.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">reads + writes: ~2–5 ms</text>
+<text x="329.0" y="192.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">replicas within the region</text>
+<rect x="590.0" y="90.0" width="255.0" height="120.0" rx="3" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1"/>
+<text x="604.0" y="116.0" font-size="14" fill="#9b8cff" text-anchor="start" font-weight="700">ap-south</text>
+<text x="604.0" y="144.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">users where region = "in"</text>
+<text x="604.0" y="170.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">reads + writes: ~2–5 ms</text>
+<text x="604.0" y="192.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">replicas within the region</text>
+<rect x="40.0" y="240.0" width="800.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="266.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">global tables (product catalog, config): replicated everywhere, read locally, written rarely</text>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A Berlin user’s profile and orders live in eu-west, so their requests never cross an ocean, and data residency</text>
+<text x="40.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">requirements are easier to meet. Travelling users and cross-region queries pay the round trip.</text>
+</svg>
