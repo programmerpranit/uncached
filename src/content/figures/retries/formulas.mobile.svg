@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 410" width="360" height="410" role="img" aria-label="Constant, exponential, full jitter, equal jitter and decorrelated jitter backoff formulas" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="410" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Backoff formulas</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">base 100 ms, cap 5 s</text>
+<text x="16.0" y="78.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">constant</text>
+<text x="16.0" y="98.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">sleep = base</text>
+<text x="16.0" y="116.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">simple; hammers a struggling server</text>
+<text x="16.0" y="140.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">exponential</text>
+<text x="16.0" y="160.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">sleep = min(cap, base·2ⁿ)</text>
+<text x="16.0" y="178.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">backs off, but clients stay in sync</text>
+<text x="16.0" y="202.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">full jitter</text>
+<text x="16.0" y="222.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">sleep = random(0, min(cap, base·2ⁿ))</text>
+<text x="16.0" y="240.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">spreads load best; AWS recommendation</text>
+<text x="16.0" y="264.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">equal jitter</text>
+<text x="16.0" y="284.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">t = min(cap, base·2ⁿ);</text>
+<text x="16.0" y="300.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">sleep = t/2 + random(0, t/2)</text>
+<text x="16.0" y="318.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">guarantees some wait</text>
+<text x="16.0" y="342.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">decorrelated</text>
+<text x="16.0" y="362.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">sleep = min(cap, random(base, prev·3))</text>
+<text x="16.0" y="380.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">grows from the previous sleep</text>
+</svg>

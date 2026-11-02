@@ -92,7 +92,7 @@ Most traffic is reads. Ways to serve them nearby:
 | **Amazon Aurora Global Database** | One primary region, storage-level replication to secondary regions, managed failover |
 | **Azure Cosmos DB** | Multi-region writes, five consistency levels (strong, bounded staleness, session, consistent prefix, eventual) |
 | **Cassandra** | Multi-DC replication with `LOCAL_QUORUM` per region |
-| **Figma, Slack, Shopify** | Pods or cells per region or per customer group, homing data near users |
+| **Shopify, Slack** | Pods or cells that each serve a subset of customers, limiting blast radius and placing data deliberately |
 
 ### Use case walk-through: a SaaS app expanding to Europe and India
 

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 479" width="360" height="479" role="img" aria-label="Histogram of retry times for 100 clients with and without jitter" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="479" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Jitter breaks up the waves</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">100 clients, 4 retries each</text>
+<text x="30.0" y="86.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">no jitter: synchronized spikes</text>
+<line x1="30.0" y1="206.0" x2="330.0" y2="206.0" stroke="#4a4136" stroke-width="1.3"/>
+<rect x="30.0" y="96.0" width="8.4" height="110.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="39.4" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="48.8" y="96.0" width="8.4" height="110.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="58.1" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="67.5" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="76.9" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="86.2" y="96.0" width="8.4" height="110.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="95.6" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="105.0" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="114.4" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="123.8" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="133.1" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="142.5" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="151.9" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="161.2" y="96.0" width="8.4" height="110.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="170.6" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="180.0" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="189.4" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="198.8" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="208.1" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="217.5" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="226.9" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="236.2" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="245.6" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="255.0" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="264.4" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="273.8" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="283.1" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="292.5" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="301.9" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="311.2" y="96.0" width="8.4" height="110.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="320.6" y="206.0" width="8.4" height="0.0" rx="0" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="30.0" y="222.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">0 s</text>
+<text x="330.0" y="222.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">1.6 s</text>
+<text x="30.0" y="266.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">full jitter: spread out</text>
+<line x1="30.0" y1="386.0" x2="330.0" y2="386.0" stroke="#4a4136" stroke-width="1.3"/>
+<rect x="30.0" y="276.0" width="8.4" height="110.0" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="39.4" y="304.6" width="8.4" height="81.4" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="48.8" y="361.8" width="8.4" height="24.2" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="58.1" y="346.4" width="8.4" height="39.6" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="67.5" y="350.8" width="8.4" height="35.2" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="76.9" y="361.8" width="8.4" height="24.2" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="86.2" y="358.5" width="8.4" height="27.5" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="95.6" y="360.7" width="8.4" height="25.3" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="105.0" y="372.8" width="8.4" height="13.2" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="114.4" y="369.5" width="8.4" height="16.5" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="123.8" y="376.1" width="8.4" height="9.9" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="133.1" y="376.1" width="8.4" height="9.9" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="142.5" y="373.9" width="8.4" height="12.1" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="151.9" y="380.5" width="8.4" height="5.5" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="161.2" y="381.6" width="8.4" height="4.4" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="170.6" y="377.2" width="8.4" height="8.8" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="180.0" y="380.5" width="8.4" height="5.5" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="189.4" y="377.2" width="8.4" height="8.8" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="198.8" y="380.5" width="8.4" height="5.5" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="208.1" y="381.6" width="8.4" height="4.4" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="217.5" y="380.5" width="8.4" height="5.5" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="226.9" y="380.5" width="8.4" height="5.5" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="236.2" y="382.7" width="8.4" height="3.3" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="245.6" y="383.8" width="8.4" height="2.2" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="255.0" y="384.9" width="8.4" height="1.1" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="264.4" y="384.9" width="8.4" height="1.1" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="273.8" y="383.8" width="8.4" height="2.2" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="283.1" y="384.9" width="8.4" height="1.1" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="292.5" y="386.0" width="8.4" height="0.0" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="301.9" y="386.0" width="8.4" height="0.0" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="311.2" y="386.0" width="8.4" height="0.0" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="320.6" y="386.0" width="8.4" height="0.0" rx="0" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="30.0" y="402.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">0 s</text>
+<text x="330.0" y="402.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">1.6 s</text>
+<text x="16.0" y="430.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Same number of retries, but no</text>
+<text x="16.0" y="449.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">moment sees all 100 at once.</text>
+</svg>

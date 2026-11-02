@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 383" width="360" height="383" role="img" aria-label="Retry amplification: three attempts at each of four layers become 81 calls to the database" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="383" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Retries multiply through layers</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">3 attempts per layer</text>
+<rect x="16.0" y="72.0" width="328.0" height="42.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="97.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">client: 1 attempt</text>
+<rect x="16.0" y="122.0" width="328.0" height="42.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="147.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">API gateway: 3 attempts</text>
+<rect x="16.0" y="172.0" width="328.0" height="42.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="197.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">service A: 9 attempts</text>
+<rect x="16.0" y="222.0" width="328.0" height="42.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="247.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">service B: 27 attempts</text>
+<rect x="16.0" y="272.0" width="328.0" height="42.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="297.3" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">database: 81 attempts</text>
+<text x="16.0" y="334.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">One request → 81 DB calls during an</text>
+<text x="16.0" y="353.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">outage. Retry at one layer only.</text>
+</svg>

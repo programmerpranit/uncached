@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 288" width="880" height="288" role="img" aria-label="Retry amplification: three attempts at each of four layers become 81 calls to the database" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="288" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Retries multiply through layers</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each layer retries 3 times; the database is the one that is struggling</text>
+<rect x="40.0" y="110.0" width="140.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="110.0" y="135.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">client</text>
+<text x="110.0" y="151.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">1 attempt</text>
+<line x1="182.0" y1="138.0" x2="208.0" y2="138.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="210.0" y="110.0" width="140.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="280.0" y="135.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">API gateway</text>
+<text x="280.0" y="151.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">3 attempts</text>
+<line x1="352.0" y1="138.0" x2="378.0" y2="138.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="380.0" y="110.0" width="140.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="450.0" y="135.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">service A</text>
+<text x="450.0" y="151.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">9 attempts</text>
+<line x1="522.0" y1="138.0" x2="548.0" y2="138.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="550.0" y="110.0" width="140.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="620.0" y="135.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">service B</text>
+<text x="620.0" y="151.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">27 attempts</text>
+<line x1="692.0" y1="138.0" x2="718.0" y2="138.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="720.0" y="110.0" width="140.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="790.0" y="135.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">database</text>
+<text x="790.0" y="151.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">81 attempts</text>
+<text x="40.0" y="220.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">One user request becomes 3⁴ = 81 database calls during an outage, exactly when the database can least afford them.</text>
+<text x="40.0" y="239.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Retry at one layer only (usually the one closest to the user or the one that knows the operation is safe), and</text>
+<text x="40.0" y="258.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">make the others fail fast.</text>
+</svg>

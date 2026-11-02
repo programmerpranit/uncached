@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 289" width="880" height="289" role="img" aria-label="A retry budget implemented as a token bucket refilled by successful requests" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="289" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A retry budget caps the extra load</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">retries allowed only while they stay under ~10% of successful requests</text>
+<rect x="40.0" y="110.0" width="170.0" height="60.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="125.0" y="144.3" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">request fails</text>
+<rect x="280.0" y="100.0" width="220.0" height="80.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="390.0" y="137.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">retry token bucket</text>
+<text x="390.0" y="153.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">+0.1 per success, −1 per retry</text>
+<line x1="212.0" y1="140.0" x2="278.0" y2="140.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="580.0" y="80.0" width="250.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="705.0" y="106.1" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="600">token available → retry</text>
+<rect x="580.0" y="156.0" width="250.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="705.0" y="182.1" font-size="11.5" fill="#e5534b" text-anchor="middle" font-weight="600">bucket empty → fail fast</text>
+<line x1="502.0" y1="130.0" x2="578.0" y2="102.0" stroke="#7cc47f" stroke-width="1.1" marker-end="url(#ah1)"/>
+<line x1="502.0" y1="150.0" x2="578.0" y2="178.0" stroke="#e5534b" stroke-width="1.1" marker-end="url(#ah2)"/>
+<text x="40.0" y="240.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">When things are healthy, the rare failure gets retried. During an outage, the bucket drains quickly and retries</text>
+<text x="40.0" y="259.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">stop, so they add at most ~10% load instead of multiplying it. The AWS SDKs and gRPC both implement this idea.</text>
+</svg>
