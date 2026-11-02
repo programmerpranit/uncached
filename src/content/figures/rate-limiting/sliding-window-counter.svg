@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 317" width="880" height="317" role="img" aria-label="Sliding window counter weights the previous window by its overlap" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="317" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Sliding window counter</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">approximates a true sliding window with 2 counters</text>
+<rect x="60.0" y="110.0" width="380.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.25" stroke="#5fb3a1" stroke-width="1"/>
+<text x="70.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">previous minute: 84</text>
+<rect x="440.0" y="110.0" width="380.0" height="44.0" rx="3" fill="#e2b45a" fill-opacity="0.25" stroke="#e2b45a" stroke-width="1"/>
+<text x="450.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">current: 36</text>
+<rect x="326.0" y="96.0" width="380.0" height="72.0" rx="3" fill="none" fill-opacity="1" stroke="#ff5b2e" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="706.0" y="88.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="600">now</text>
+<text x="326.0" y="88.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="600">now − 60 s</text>
+<text x="383.0" y="190.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">30% overlap</text>
+<text x="60.0" y="230.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">estimate = prev × overlap + current = 84 × 0.3 + 36 ≈ 61   (limit 100 → allow)</text>
+<text x="60.0" y="268.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Two integers per key instead of a log of timestamps. It assumes the previous window’s requests</text>
+<text x="60.0" y="287.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">were evenly spread; Cloudflare found it very accurate on real traffic.</text>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 475" width="360" height="475" role="img" aria-label="Simulation of bursty traffic through a token bucket and a leaky bucket" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="475" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Same traffic, two shapes</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">r = 10/s, capacity 8, 6 s shown</text>
+<text x="16.0" y="92.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">incoming requests</text>
+<line x1="16.0" y1="150.0" x2="344.0" y2="150.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="43.8" y="123.6" width="4.5" height="26.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="49.3" y="123.6" width="4.5" height="26.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="54.8" y="123.6" width="4.5" height="26.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="60.2" y="123.6" width="4.5" height="26.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="153.2" y="106.0" width="4.5" height="44.0" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="158.6" y="106.0" width="4.5" height="44.0" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="235.2" y="145.6" width="4.5" height="4.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="246.1" y="145.6" width="4.5" height="4.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="257.0" y="145.6" width="4.5" height="4.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="268.0" y="145.6" width="4.5" height="4.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="278.9" y="145.6" width="4.5" height="4.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="289.8" y="145.6" width="4.5" height="4.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="300.8" y="145.6" width="4.5" height="4.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="311.7" y="145.6" width="4.5" height="4.4" rx="0.5" fill="#ede6d8" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="16.0" y="184.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="600">token bucket: passed / rejected</text>
+<line x1="16.0" y1="242.0" x2="344.0" y2="242.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="43.8" y="215.6" width="4.5" height="26.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="49.3" y="228.8" width="4.5" height="13.2" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="49.3" y="215.6" width="4.5" height="13.2" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="54.8" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="54.8" y="215.6" width="4.5" height="22.0" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="60.2" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="60.2" y="215.6" width="4.5" height="22.0" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="153.2" y="206.8" width="4.5" height="35.2" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="153.2" y="198.0" width="4.5" height="8.8" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="158.6" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="158.6" y="198.0" width="4.5" height="39.6" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="235.2" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="246.1" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="257.0" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="268.0" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="278.9" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="289.8" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="300.8" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="311.7" y="237.6" width="4.5" height="4.4" rx="0.5" fill="#5fb3a1" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<text x="16.0" y="276.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="600">leaky bucket: output / dropped</text>
+<line x1="16.0" y1="334.0" x2="344.0" y2="334.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="43.8" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="49.3" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="49.3" y="316.4" width="4.5" height="13.2" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="54.8" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="54.8" y="307.6" width="4.5" height="22.0" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="60.2" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="60.2" y="307.6" width="4.5" height="22.0" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="65.7" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="71.2" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="76.6" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="82.1" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="87.6" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="93.0" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="98.5" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="153.2" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="153.2" y="320.8" width="4.5" height="8.8" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="158.6" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="158.6" y="290.0" width="4.5" height="39.6" rx="0.5" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="164.1" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="169.6" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="175.0" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="180.5" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="186.0" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="191.4" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="196.9" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="235.2" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="246.1" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="257.0" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="268.0" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="278.9" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="289.8" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="300.8" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="311.7" y="329.6" width="4.5" height="4.4" rx="0.5" fill="#e2b45a" fill-opacity="0.9" stroke="none" stroke-width="1"/>
+<rect x="16.0" y="352.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="362.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">rejected / dropped</text>
+<text x="16.0" y="388.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Token bucket passes the first burst</text>
+<text x="16.0" y="407.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">instantly (up to 8), then rejects.</text>
+<text x="16.0" y="426.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Leaky bucket smooths output to a</text>
+<text x="16.0" y="445.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">steady 1 per tick, queueing the rest.</text>
+</svg>

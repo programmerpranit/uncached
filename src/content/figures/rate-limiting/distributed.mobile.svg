@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 416" width="360" height="416" role="img" aria-label="Gateways share rate limit state through a central store" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="416" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Distributed rate limiting</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">many gateways must share one view of usage</text>
+<rect x="16.0" y="74.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="98.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">clients</text>
+<line x1="180.0" y1="116.0" x2="180.0" y2="138.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="140.0" width="100.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="66.0" y="168.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">gw 1</text>
+<rect x="130.0" y="140.0" width="100.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="168.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">gw 2</text>
+<rect x="244.0" y="140.0" width="100.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="294.0" y="168.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">gw 3</text>
+<line x1="66.0" y1="190.0" x2="180.0" y2="226.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah1)"/>
+<line x1="180.0" y1="190.0" x2="180.0" y2="226.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah1)"/>
+<line x1="294.0" y1="190.0" x2="180.0" y2="226.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah1)"/>
+<rect x="16.0" y="228.0" width="328.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="251.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">Redis / limiter service</text>
+<text x="180.0" y="267.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">INCR + EXPIRE, or a Lua script</text>
+<text x="16.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Central store: exact, but an extra</text>
+<text x="16.0" y="329.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">network hop per request.</text>
+<text x="16.0" y="367.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Local counters, synced: fast, but</text>
+<text x="16.0" y="386.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">can overshoot the limit briefly.</text>
+</svg>

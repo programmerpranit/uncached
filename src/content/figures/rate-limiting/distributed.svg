@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="Gateways share rate limit state through a central store" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Distributed rate limiting</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">many gateways must share one view of usage</text>
+<rect x="40.0" y="90.0" width="130.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="105.0" y="116.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">client 1</text>
+<rect x="40.0" y="160.0" width="130.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="105.0" y="186.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">client 2</text>
+<rect x="40.0" y="230.0" width="130.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="105.0" y="256.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">client 3</text>
+<rect x="300.0" y="90.0" width="160.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="380.0" y="109.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">gateway 1</text>
+<text x="380.0" y="125.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">local cache</text>
+<rect x="300.0" y="160.0" width="160.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="380.0" y="179.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">gateway 2</text>
+<text x="380.0" y="195.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">local cache</text>
+<rect x="300.0" y="230.0" width="160.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="380.0" y="249.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">gateway 3</text>
+<text x="380.0" y="265.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">local cache</text>
+<line x1="172.0" y1="112.0" x2="298.0" y2="112.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="172.0" y1="182.0" x2="298.0" y2="182.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="172.0" y1="252.0" x2="298.0" y2="252.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="620.0" y="150.0" width="200.0" height="60.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="720.0" y="177.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">Redis / limiter service</text>
+<text x="720.0" y="193.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">INCR + EXPIRE, or Lua</text>
+<line x1="462.0" y1="112.0" x2="618.0" y2="180.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah1)"/>
+<line x1="462.0" y1="182.0" x2="618.0" y2="180.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah1)"/>
+<line x1="462.0" y1="252.0" x2="618.0" y2="180.0" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah1)"/>
+<text x="40.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Central store: exact, but adds a network hop per request and becomes a dependency.</text>
+<text x="40.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Local counters synced periodically: fast, but can overshoot the limit by up to (gateways × sync lag × rate).</text>
+</svg>

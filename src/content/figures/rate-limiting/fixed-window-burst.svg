@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 291" width="880" height="291" role="img" aria-label="A fixed window lets up to twice the limit through around a window boundary" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="291" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Fixed window: the boundary burst</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">limit 100 requests per minute</text>
+<line x1="40.0" y1="140.0" x2="840.0" y2="140.0" stroke="#4a4136" stroke-width="2"/>
+<line x1="40.0" y1="114.0" x2="40.0" y2="150.0" stroke="#a69d8e" stroke-width="1"/>
+<text x="40.0" y="168.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">12:00</text>
+<line x1="440.0" y1="114.0" x2="440.0" y2="150.0" stroke="#a69d8e" stroke-width="1"/>
+<text x="440.0" y="168.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">12:01</text>
+<line x1="840.0" y1="114.0" x2="840.0" y2="150.0" stroke="#a69d8e" stroke-width="1"/>
+<text x="840.0" y="168.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">12:02</text>
+<rect x="384.0" y="80.0" width="54.0" height="58.0" rx="3" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="412.0" y="72.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="700">100</text>
+<rect x="442.0" y="80.0" width="54.0" height="58.0" rx="3" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="468.0" y="72.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="700">100</text>
+<path d="M384.0 188 L495.99999999999994 188" fill="none" stroke="#e2b45a" stroke-width="2"/>
+<text x="440.0" y="208.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">200 requests in ~10 seconds</text>
+<text x="40.0" y="242.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each window counts ≤ 100, so everything is allowed, yet the backend sees twice the intended rate around 12:01.</text>
+<text x="40.0" y="261.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Sliding windows and token buckets don’t have this edge effect.</text>
+</svg>

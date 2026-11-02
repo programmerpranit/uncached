@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 374" width="360" height="374" role="img" aria-label="Sliding window counter weights the previous window by its overlap" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="374" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Sliding window counter</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a sliding window from 2 counters</text>
+<rect x="16.0" y="110.0" width="164.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.25" stroke="#5fb3a1" stroke-width="1"/>
+<text x="26.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">prev: 84</text>
+<rect x="180.0" y="110.0" width="164.0" height="44.0" rx="3" fill="#e2b45a" fill-opacity="0.25" stroke="#e2b45a" stroke-width="1"/>
+<text x="190.0" y="137.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">current: 36</text>
+<rect x="130.8" y="96.0" width="164.0" height="72.0" rx="3" fill="none" fill-opacity="1" stroke="#ff5b2e" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="294.8" y="88.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="600">now</text>
+<text x="155.4" y="190.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">30% overlap</text>
+<text x="16.0" y="230.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">estimate = 84 × 0.3 + 36 ≈ 61</text>
+<text x="16.0" y="268.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Weight the previous window by how</text>
+<text x="16.0" y="287.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">much of it still overlaps the last</text>
+<text x="16.0" y="306.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">60 s. Two integers per key; it</text>
+<text x="16.0" y="325.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">assumes the previous window’s</text>
+<text x="16.0" y="344.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">requests were evenly spread.</text>
+</svg>
