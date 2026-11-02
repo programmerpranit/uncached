@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 397" width="880" height="397" role="img" aria-label="CPU shares for pairs of tasks with different nice values" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="397" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Nice values become weights, weights become shares</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each nice step is ~1.25× weight, ~10% CPU difference between neighbors</text>
+<text x="40.0" y="104.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">nice 0 vs nice 0</text>
+<text x="40.0" y="121.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">1024 : 1024</text>
+<rect x="300.0" y="92.0" width="210.0" height="22.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="510.0" y="92.0" width="210.0" height="22.0" rx="3" fill="#e2b45a" fill-opacity="0.75" stroke="#e2b45a" stroke-width="1"/>
+<text x="735.0" y="108.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">50% / 50%</text>
+<text x="40.0" y="154.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">nice 0 vs nice 1</text>
+<text x="40.0" y="171.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">1024 : 820</text>
+<rect x="300.0" y="142.0" width="233.1" height="22.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="533.1" y="142.0" width="186.9" height="22.0" rx="3" fill="#e2b45a" fill-opacity="0.75" stroke="#e2b45a" stroke-width="1"/>
+<text x="735.0" y="158.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">56% / 44%</text>
+<text x="40.0" y="204.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">nice 0 vs nice 5</text>
+<text x="40.0" y="221.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">1024 : 335</text>
+<rect x="300.0" y="192.0" width="316.3" height="22.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="616.3" y="192.0" width="103.7" height="22.0" rx="3" fill="#e2b45a" fill-opacity="0.75" stroke="#e2b45a" stroke-width="1"/>
+<text x="735.0" y="208.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">75% / 25%</text>
+<text x="40.0" y="254.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">nice −10 vs nice 10</text>
+<text x="40.0" y="271.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">9548 : 110</text>
+<rect x="300.0" y="242.0" width="415.4" height="22.0" rx="3" fill="#5fb3a1" fill-opacity="0.75" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="715.4" y="242.0" width="4.6" height="22.0" rx="3" fill="#e2b45a" fill-opacity="0.75" stroke="#e2b45a" stroke-width="1"/>
+<text x="735.0" y="258.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">99% / 1%</text>
+<rect x="300.0" y="300.0" width="12.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="318.0" y="310.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">first task</text>
+<rect x="408.2" y="300.0" width="12.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="426.2" y="310.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">second task</text>
+<text x="40.0" y="348.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Shares are relative: a task's fraction = its weight / sum of weights of runnable tasks on that CPU. The same</text>
+<text x="40.0" y="367.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">weights apply to cgroups (cpu.weight), so a container with twice the weight gets twice the CPU under contention.</text>
+</svg>

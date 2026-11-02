@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 358" width="880" height="358" role="img" aria-label="A container with a 0.4 CPU limit uses its quota in 10 ms with 4 threads and is throttled for 90 ms each period" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="358" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">CPU limits (CFS bandwidth): quota per 100 ms period</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a container limited to 0.4 CPU = 40 ms per 100 ms; 4 busy threads use it in 10 ms</text>
+<rect x="120.0" y="100.0" width="35.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.8" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="155.0" y="100.0" width="315.0" height="18.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="120.0" y="126.0" width="35.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.8" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="155.0" y="126.0" width="315.0" height="18.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="120.0" y="152.0" width="35.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.8" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="155.0" y="152.0" width="315.0" height="18.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="120.0" y="178.0" width="35.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.8" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="155.0" y="178.0" width="315.0" height="18.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="295.0" y="220.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">period 1: 100 ms</text>
+<line x1="120.0" y1="94.0" x2="120.0" y2="210.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="470.0" y="100.0" width="35.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.8" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="505.0" y="100.0" width="315.0" height="18.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="470.0" y="126.0" width="35.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.8" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="505.0" y="126.0" width="315.0" height="18.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="470.0" y="152.0" width="35.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.8" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="505.0" y="152.0" width="315.0" height="18.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="470.0" y="178.0" width="35.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.8" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="505.0" y="178.0" width="315.0" height="18.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="645.0" y="220.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">period 2: 100 ms</text>
+<line x1="470.0" y1="94.0" x2="470.0" y2="210.0" stroke="#4a4136" stroke-width="1"/>
+<text x="40.0" y="114.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">thread 1</text>
+<text x="40.0" y="140.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">thread 2</text>
+<text x="40.0" y="166.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">thread 3</text>
+<text x="40.0" y="192.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">thread 4</text>
+<rect x="120.0" y="240.0" width="12.0" height="12.0" rx="2" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="138.0" y="250.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">running (quota)</text>
+<rect x="262.3" y="240.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="280.3" y="250.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">throttled: runnable but not allowed</text>
+<text x="40.0" y="290.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Average usage is only 40% of one CPU, yet each request that arrives at the wrong moment waits up to 90 ms.</text>
+<text x="40.0" y="309.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">This is why Kubernetes services with CPU limits show latency spikes at low utilization. Check nr_throttled in</text>
+<text x="40.0" y="328.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">cpu.stat; consider removing limits (keeping requests/weights), raising them, or using cpu.max burst.</text>
+</svg>

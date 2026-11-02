@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 378" width="880" height="378" role="img" aria-label="EEVDF choosing the eligible task with the earliest virtual deadline" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="378" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">EEVDF: among eligible tasks, run the earliest virtual deadline</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">eligible = not ahead of its fair share (lag ≥ 0); deadline = eligible time + slice / weight</text>
+<line x1="260.0" y1="96.0" x2="730.0" y2="96.0" stroke="#4a4136" stroke-width="1.3"/>
+<text x="260.0" y="88.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">now (virtual time V)</text>
+<text x="40.0" y="134.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">batch job</text>
+<text x="40.0" y="150.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">slice 3 ms</text>
+<rect x="260.0" y="122.0" width="291.4" height="20.0" rx="3" fill="#9b8cff" fill-opacity="0.35" stroke="#9b8cff" stroke-width="1"/>
+<line x1="551.4" y1="116.0" x2="551.4" y2="148.0" stroke="#9b8cff" stroke-width="2"/>
+<text x="557.4" y="134.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="400">deadline</text>
+<text x="750.0" y="134.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">eligible</text>
+<text x="40.0" y="192.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">audio thread</text>
+<text x="40.0" y="208.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">slice 0.5 ms</text>
+<rect x="260.0" y="180.0" width="37.6" height="20.0" rx="3" fill="#7cc47f" fill-opacity="0.35" stroke="#7cc47f" stroke-width="1"/>
+<line x1="297.6" y1="174.0" x2="297.6" y2="206.0" stroke="#7cc47f" stroke-width="2"/>
+<text x="303.6" y="192.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">deadline</text>
+<text x="750.0" y="192.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">eligible</text>
+<text x="40.0" y="250.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">web worker</text>
+<text x="40.0" y="266.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">slice 3 ms</text>
+<rect x="316.4" y="238.0" width="202.1" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<line x1="518.5" y1="232.0" x2="518.5" y2="264.0" stroke="#5fb3a1" stroke-width="2"/>
+<text x="524.5" y="250.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">deadline</text>
+<text x="750.0" y="250.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">not eligible</text>
+<line x1="260.0" y1="100.0" x2="260.0" y2="274.0" stroke="#ede6d8" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="40.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The audio thread asked for a short slice, so its virtual deadline comes soonest and it runs first, even with the</text>
+<text x="40.0" y="329.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same weight. The web worker already ran ahead of its fair share (negative lag) and must wait until it becomes</text>
+<text x="40.0" y="348.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">eligible again. Shares stay fair over time; latency-sensitive tasks just get them in smaller, more frequent pieces.</text>
+</svg>
