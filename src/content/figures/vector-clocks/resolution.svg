@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 311" width="880" height="311" role="img" aria-label="Conflict resolution options: last-write-wins, siblings, merge functions and CRDTs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="311" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Resolving a detected conflict</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">from simplest to most correct</text>
+<rect x="40.0" y="84.0" width="186.0" height="140.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="52.0" y="110.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">Last-write-wins</text>
+<text x="52.0" y="142.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">pick one by timestamp or</text>
+<text x="52.0" y="160.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">node ID</text>
+<text x="52.0" y="200.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">simple; loses data</text>
+<rect x="242.0" y="84.0" width="186.0" height="140.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="254.0" y="110.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">Siblings + app merge</text>
+<text x="254.0" y="142.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">return all versions; the</text>
+<text x="254.0" y="160.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">app merges</text>
+<text x="254.0" y="200.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">correct; app does the work</text>
+<rect x="444.0" y="84.0" width="186.0" height="140.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="456.0" y="110.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">Merge function</text>
+<text x="456.0" y="142.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">union for sets, max for</text>
+<text x="456.0" y="160.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">counters…</text>
+<text x="456.0" y="200.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">automatic for some types</text>
+<rect x="646.0" y="84.0" width="186.0" height="140.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="658.0" y="110.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">CRDTs</text>
+<text x="658.0" y="142.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">data types that merge by</text>
+<text x="658.0" y="160.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">design</text>
+<text x="658.0" y="200.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">provably convergent</text>
+<text x="40.0" y="262.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Dynamo returned all "siblings" to the shopping-cart service, which merged them by union. That is why deleted</text>
+<text x="40.0" y="281.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">items occasionally reappeared: a union cannot tell "never added" from "removed".</text>
+</svg>

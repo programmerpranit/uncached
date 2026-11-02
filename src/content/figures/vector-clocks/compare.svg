@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 373" width="880" height="373" role="img" aria-label="Comparing vector clocks: happened-before, equal, or concurrent" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="373" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Comparing two vector clocks</text>
+<rect x="40.0" y="84.0" width="800.0" height="62.0" rx="3" fill="#7cc47f" fill-opacity="0.1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="110.0" font-size="14" fill="#ede6d8" text-anchor="start" font-weight="600">[2,1,0] vs [3,1,0]</text>
+<text x="56.0" y="132.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">every entry ≤, one &lt;</text>
+<text x="400.0" y="110.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">A happened before B</text>
+<text x="400.0" y="132.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">B supersedes A: keep B</text>
+<rect x="40.0" y="158.0" width="800.0" height="62.0" rx="3" fill="#a69d8e" fill-opacity="0.1" stroke="#a69d8e" stroke-width="1"/>
+<text x="56.0" y="184.0" font-size="14" fill="#ede6d8" text-anchor="start" font-weight="600">[2,2,1] vs [2,2,1]</text>
+<text x="56.0" y="206.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">all entries equal</text>
+<text x="400.0" y="184.0" font-size="13" fill="#a69d8e" text-anchor="start" font-weight="700">same version</text>
+<text x="400.0" y="206.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">nothing to do</text>
+<rect x="40.0" y="232.0" width="800.0" height="62.0" rx="3" fill="#e5534b" fill-opacity="0.1" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="258.0" font-size="14" fill="#ede6d8" text-anchor="start" font-weight="600">[3,0,0] vs [2,2,1]</text>
+<text x="56.0" y="280.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">some &lt;, some &gt;</text>
+<text x="400.0" y="258.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">concurrent</text>
+<text x="400.0" y="280.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">conflict: keep both, resolve</text>
+<text x="40.0" y="324.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Vector clocks capture causality (Lamport’s "happened-before"), not wall-clock time. That lets a store tell</text>
+<text x="40.0" y="343.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">"overwrite" apart from "conflict" instead of guessing from timestamps.</text>
+</svg>
