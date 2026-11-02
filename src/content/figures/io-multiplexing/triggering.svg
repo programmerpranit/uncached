@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 378" width="880" height="378" role="img" aria-label="Level-triggered epoll reports leftover data on every wait; edge-triggered reports only once" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="378" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Level-triggered vs edge-triggered notification</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">4 KB arrives; the app reads only 1 KB, then waits again</text>
+<text x="40.0" y="110.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">socket buffer</text>
+<path d="M200.0 130.0 L260.0 130.0 L260.0 82.0 L440.0 82.0 L440.0 94.0 L800.0 94.0" fill="none" stroke="#e2b45a" stroke-width="2"/>
+<text x="266.0" y="72.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">4 KB arrives</text>
+<text x="446.0" y="88.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">read 1 KB → 3 KB left</text>
+<text x="40.0" y="190.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">level-triggered</text>
+<circle cx="272.0" cy="186.0" r="6" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="470.0" cy="186.0" r="6" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="620.0" cy="186.0" r="6" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<circle cx="770.0" cy="186.0" r="6" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="530.0" y="214.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">reported on every wait while data remains</text>
+<text x="40.0" y="262.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">edge-triggered</text>
+<circle cx="272.0" cy="258.0" r="6" fill="#9b8cff" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="470.0" y="262.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">silence: no new data arrived, so no new edge</text>
+<text x="40.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Level-triggered (the default, like poll) is forgiving: leftover data is reported again. Edge-triggered (EPOLLET,</text>
+<text x="40.0" y="329.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">EV_CLEAR) fires once per change, so you must read until EAGAIN or the remaining 3 KB may sit unnoticed forever.</text>
+<text x="40.0" y="348.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Edge mode saves wake-ups when many threads share one epoll; EPOLLONESHOT and EPOLLEXCLUSIVE help with that too.</text>
+</svg>

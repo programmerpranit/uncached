@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 376" width="360" height="376" role="img" aria-label="io_uring submission and completion ring buffers shared between application and kernel" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="376" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">io_uring rings</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">submit requests, reap completions</text>
+<circle cx="90.0" cy="170.0" r="70" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="2"/>
+<circle cx="90.0" cy="170.0" r="38.5" fill="#1b1712" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="90.0" y="174.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="700">SQ</text>
+<text x="90.0" y="119.4" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">read</text>
+<text x="121.7" y="129.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">send</text>
+<text x="141.6" y="156.3" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">recv</text>
+<circle cx="270.0" cy="170.0" r="70" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="2"/>
+<circle cx="270.0" cy="170.0" r="38.5" fill="#1b1712" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="270.0" y="174.0" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="700">CQ</text>
+<text x="270.0" y="119.4" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">512</text>
+<text x="301.7" y="129.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">64</text>
+<text x="321.6" y="156.3" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">0</text>
+<text x="90.0" y="90.0" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="400">submit</text>
+<text x="270.0" y="90.0" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="400">complete</text>
+<line x1="160.0" y1="170.0" x2="198.0" y2="170.0" stroke="#e2b45a" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="16.0" y="270.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Shared memory rings: queuing a</text>
+<text x="16.0" y="289.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">request is a memory write. One</text>
+<text x="16.0" y="308.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">syscall submits many requests;</text>
+<text x="16.0" y="327.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">with SQPOLL, none at all.</text>
+<text x="16.0" y="346.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Works for files and sockets.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 357" width="360" height="357" role="img" aria-label="epoll interest list and ready list; packets move sockets to the ready list and epoll_wait returns them" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="357" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Inside epoll</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">register once, wait for ready</text>
+<rect x="16.0" y="86.0" width="150.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="91.0" y="108.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">epoll_ctl(ADD)</text>
+<text x="180.0" y="108.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="400">→ interest list</text>
+<rect x="16.0" y="140.0" width="150.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="91.0" y="162.1" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="600">packet arrives</text>
+<text x="180.0" y="162.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="400">→ ready list</text>
+<rect x="16.0" y="194.0" width="150.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="91.0" y="216.1" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="600">epoll_wait()</text>
+<text x="180.0" y="216.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">← ready fds only</text>
+<text x="16.0" y="270.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Register once (O(log n)). Each wait</text>
+<text x="16.0" y="289.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">costs O(ready), not O(watched).</text>
+<text x="16.0" y="308.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Then read/write each ready fd</text>
+<text x="16.0" y="327.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">until EAGAIN, and wait again.</text>
+</svg>
