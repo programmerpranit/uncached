@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 378" width="360" height="378" role="img" aria-label="Probability of early refresh increases as the key approaches expiry" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="378" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Early expiration (XFetch)</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">refresh chance rises near expiry</text>
+<line x1="40.0" y1="230.0" x2="340.0" y2="230.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="40.0" y1="80.0" x2="40.0" y2="230.0" stroke="#4a4136" stroke-width="1.3"/>
+<path d="M40,230 L44,230 L48,230 L52,230 L56,230 L60,230 L64,230 L68,230 L72,230 L76,230 L80,230 L84,230 L88,230 L92,230 L96,230 L100,230 L104,230 L108,230 L112,230 L116,230 L120,230 L124,230 L128,230 L132,230 L136,230 L140,230 L144,230 L148,230 L152,230 L156,230 L160,230 L164,230 L168,230 L172,229 L176,229 L180,229 L184,229 L188,229 L192,229 L196,229 L200,229 L204,228 L208,228 L212,228 L216,228 L220,227 L224,227 L228,226 L232,226 L236,225 L240,225 L244,224 L248,223 L252,222 L256,221 L260,220 L264,218 L268,216 L272,214 L276,212 L280,210 L284,207 L288,203 L292,200 L296,195 L300,190 L304,185 L308,178 L312,171 L316,163 L320,153 L324,142 L328,129 L332,115 L336,99 L340,80" fill="none" stroke="#5fb3a1" stroke-width="2"/>
+<text x="334.0" y="200.5" font-size="11" fill="#5fb3a1" text-anchor="end" font-weight="400">β = 1</text>
+<path d="M40,229 L44,229 L48,229 L52,229 L56,229 L60,229 L64,228 L68,228 L72,228 L76,228 L80,228 L84,228 L88,228 L92,228 L96,227 L100,227 L104,227 L108,227 L112,227 L116,226 L120,226 L124,226 L128,226 L132,225 L136,225 L140,225 L144,224 L148,224 L152,223 L156,223 L160,223 L164,222 L168,221 L172,221 L176,220 L180,220 L184,219 L188,218 L192,217 L196,216 L200,215 L204,214 L208,213 L212,212 L216,211 L220,210 L224,208 L228,207 L232,205 L236,203 L240,202 L244,200 L248,198 L252,195 L256,193 L260,190 L264,188 L268,185 L272,182 L276,178 L280,175 L284,171 L288,167 L292,163 L296,158 L300,153 L304,148 L308,142 L312,136 L316,129 L320,123 L324,115 L328,107 L332,99 L336,90 L340,80" fill="none" stroke="#ff5b2e" stroke-width="2"/>
+<text x="334.0" y="153.1" font-size="11" fill="#ff5b2e" text-anchor="end" font-weight="400">β = 2</text>
+<text x="40.0" y="248.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">10 s left</text>
+<text x="340.0" y="248.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">expiry</text>
+<text x="46.0" y="90.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">P(refresh)</text>
+<text x="16.0" y="272.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Refresh early if</text>
+<text x="16.0" y="291.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">now − δ·β·ln(rand()) ≥ expiry</text>
+<text x="16.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">(δ = recompute time).</text>
+<text x="16.0" y="329.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">One lucky request refreshes first,</text>
+<text x="16.0" y="348.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">so the key never expires under load.</text>
+</svg>

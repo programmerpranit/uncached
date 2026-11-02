@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 359" width="360" height="359" role="img" aria-label="Database load spikes when a hot cache key expires and all requests miss at once" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="359" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">A cache stampede</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">hot key expires → all requests miss</text>
+<line x1="40.0" y1="220.0" x2="340.0" y2="220.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="40.0" y1="80.0" x2="40.0" y2="220.0" stroke="#4a4136" stroke-width="1.3"/>
+<text x="44.0" y="74.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">DB QPS</text>
+<path d="M40,213 L43,213 L46,213 L49,213 L52,213 L55,213 L58,213 L61,213 L64,213 L67,213 L70,213 L73,213 L76,213 L79,213 L82,213 L85,213 L88,213 L91,213 L94,213 L97,213 L100,213 L103,213 L106,213 L109,213 L112,213 L115,213 L118,213 L121,213 L124,213 L127,213 L130,213 L133,213 L136,213 L139,213 L142,213 L145,213 L148,213 L151,213 L154,213 L157,213 L160,213 L163,183 L166,167 L169,147 L172,125 L175,106 L178,92 L181,87 L184,92 L187,106 L190,125 L193,147 L196,167 L199,183 L202,195 L205,203 L208,208 L211,211 L214,212 L217,213 L220,213 L223,213 L226,213 L229,213 L232,213 L235,213 L238,213 L241,213 L244,213 L247,213 L250,213 L253,213 L256,213 L259,213 L262,213 L265,213 L268,213 L271,213 L274,213 L277,213 L280,213 L283,213 L286,213 L289,213 L292,213 L295,213 L298,213 L301,213 L304,213 L307,213 L310,213 L313,213 L316,213 L319,213 L322,213 L325,213 L328,213 L331,213 L334,213 L337,213 L340,213" fill="none" stroke="#e5534b" stroke-width="2"/>
+<line x1="160.0" y1="80.0" x2="160.0" y2="220.0" stroke="#e2b45a" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="156.0" y="238.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="400">key expires</text>
+<text x="16.0" y="272.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">1,000 misses → 1,000 identical</text>
+<text x="16.0" y="291.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">queries at the same moment.</text>
+<text x="16.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The DB slows, more requests pile</text>
+<text x="16.0" y="329.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">up, and it can fall over.</text>
+</svg>

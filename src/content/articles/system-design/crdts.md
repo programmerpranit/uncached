@@ -4,7 +4,7 @@ updated: 2026-11-02
 ---
 
 > [!KEY]
-> **TL;DR.** A **CRDT** (conflict-free replicated data type) is a data structure designed so replicas can be updated **independently and concurrently**, without locks or consensus, and are **guaranteed to converge** to the same state once they've seen the same updates. The trick is to make merging **commutative, associative and idempotent** (state-based CRDTs) or to make concurrent operations **commute** (operation-based CRDTs). There are CRDTs for counters, sets, registers, maps, lists and text. They power **offline-first** and **real-time collaborative** apps (Figma-style multiplayer, Automerge, Yjs) and **active-active** databases (Riak, Redis Enterprise, Azure Cosmos DB). The price is **metadata** (IDs, tombstones, version vectors) and semantics that don't fit every invariant: a CRDT can't enforce "balance never goes below zero".
+> **TL;DR.** A **CRDT** (conflict-free replicated data type) is a data structure designed so replicas can be updated **independently and concurrently**, without locks or consensus, and are **guaranteed to converge** to the same state once they've seen the same updates. The trick is to make merging **commutative, associative and idempotent** (state-based CRDTs) or to make concurrent operations **commute** (operation-based CRDTs). There are CRDTs for counters, sets, registers, maps, lists and text. They power **offline-first** and **real-time collaborative** apps (Figma-style multiplayer, Automerge, Yjs) and **active-active** databases (Riak, Redis Enterprise). The price is **metadata** (IDs, tombstones, version vectors) and semantics that don't fit every invariant: a CRDT can't enforce "balance never goes below zero".
 
 ## The problem: writes everywhere, no coordination
 
@@ -99,11 +99,10 @@ Well-known algorithms: **RGA** (Replicated Growable Array), **Logoot** and **LSE
 | --- | --- |
 | **Riak** | Built-in data types: counters, sets, maps, registers, flags, HyperLogLog |
 | **Redis Enterprise Active-Active** | CRDT-based multi-region replication for strings, counters, sets, sorted sets, lists |
-| **Azure Cosmos DB** | Multi-region writes with custom conflict resolution; CRDT-style merge for some types |
 | **Automerge** | JSON document CRDT library for local-first apps (Rust core with JS bindings) |
 | **Yjs** | Fast CRDT for collaborative editing. Bindings for ProseMirror, CodeMirror, Monaco, Quill. |
 | **Figma** | Multiplayer inspired by CRDTs, but with a central server as the authority (properties use last-writer-wins per object) |
-| **Apple Notes, Zed, Linear** | CRDT-based sync for notes, collaborative code editing, and offline-capable issue tracking |
+| **Apple Notes, Zed** | CRDT-based sync for notes and for collaborative code editing |
 | **SoundCloud Roshi, League of Legends chat** | LWW-element sets for timelines and presence at scale |
 
 ### Use case walk-through: an offline-first task app

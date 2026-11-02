@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 369" width="880" height="369" role="img" aria-label="Database load spikes when a hot cache key expires and all requests miss at once" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="369" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A cache stampede</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a hot key expires and every request misses at once</text>
+<line x1="80.0" y1="270.0" x2="820.0" y2="270.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="80.0" y1="90.0" x2="80.0" y2="270.0" stroke="#4a4136" stroke-width="1.3"/>
+<text x="72.0" y="96.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">DB</text>
+<text x="72.0" y="110.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">QPS</text>
+<path d="M80,261 L84,261 L88,261 L92,261 L96,261 L100,261 L104,261 L108,261 L112,261 L116,261 L120,261 L124,261 L128,261 L132,261 L136,261 L140,261 L144,261 L148,261 L152,261 L156,261 L160,261 L164,261 L168,261 L172,261 L176,261 L180,261 L184,261 L188,261 L192,261 L196,261 L200,261 L204,261 L208,261 L212,261 L216,261 L220,261 L224,261 L228,261 L232,261 L236,261 L240,261 L244,261 L248,261 L252,261 L256,261 L260,261 L264,261 L268,261 L272,261 L276,261 L280,261 L284,261 L288,261 L292,261 L296,261 L300,261 L304,261 L308,261 L312,261 L316,261 L320,261 L324,261 L328,261 L332,261 L336,261 L340,261 L344,261 L348,261 L352,261 L356,261 L360,261 L364,261 L368,261 L372,261 L376,261 L380,230 L384,221 L388,210 L392,197 L396,184 L400,169 L404,154 L408,139 L412,126 L416,115 L420,106 L424,101 L428,99 L432,101 L436,107 L440,116 L444,127 L448,141 L452,155 L456,170 L460,185 L464,199 L468,211 L472,222 L476,231 L480,239 L484,245 L488,250 L492,253 L496,256 L500,257 L504,259 L508,260 L512,260 L516,260 L520,261 L524,261 L528,261 L532,261 L536,261 L540,261 L544,261 L548,261 L552,261 L556,261 L560,261 L564,261 L568,261 L572,261 L576,261 L580,261 L584,261 L588,261 L592,261 L596,261 L600,261 L604,261 L608,261 L612,261 L616,261 L620,261 L624,261 L628,261 L632,261 L636,261 L640,261 L644,261 L648,261 L652,261 L656,261 L660,261 L664,261 L668,261 L672,261 L676,261 L680,261 L684,261 L688,261 L692,261 L696,261 L700,261 L704,261 L708,261 L712,261 L716,261 L720,261 L724,261 L728,261 L732,261 L736,261 L740,261 L744,261 L748,261 L752,261 L756,261 L760,261 L764,261 L768,261 L772,261 L776,261 L780,261 L784,261 L788,261 L792,261 L796,261 L800,261 L804,261 L808,261 L812,261 L816,261 L820,261" fill="none" stroke="#e5534b" stroke-width="2"/>
+<line x1="376.0" y1="90.0" x2="376.0" y2="270.0" stroke="#e2b45a" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="370.0" y="102.0" font-size="11" fill="#e2b45a" text-anchor="end" font-weight="400">key expires</text>
+<text x="442.6" y="100.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">1,000 concurrent misses → 1,000 identical queries</text>
+<text x="154.0" y="254.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">hits served from cache</text>
+<text x="635.0" y="254.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">cache refilled</text>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each miss runs the same expensive query. The database slows down, so the misses take longer, so more requests</text>
+<text x="40.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">pile up behind them. In the worst case the DB falls over and the cache never gets refilled.</text>
+</svg>
