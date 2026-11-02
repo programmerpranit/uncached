@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 345" width="360" height="345" role="img" aria-label="Hybrid fan-out: push posts from normal users, pull posts from celebrities at read time" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="345" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Hybrid fan-out</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">push normal users, pull celebrities</text>
+<rect x="16.0" y="72.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="92.0" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">normal user posts → push</text>
+<text x="180.0" y="108.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">written into follower caches</text>
+<rect x="16.0" y="130.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="150.0" font-size="11.5" fill="#d77fa1" text-anchor="middle" font-weight="600">celebrity posts → stored once</text>
+<text x="180.0" y="166.0" font-size="11" fill="#d77fa1" text-anchor="middle" font-weight="400">no fan-out</text>
+<rect x="16.0" y="210.0" width="328.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="233.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Bob’s timeline read</text>
+<text x="180.0" y="249.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">cached list ∪ followed celebs</text>
+<line x1="100.0" y1="178.0" x2="100.0" y2="208.0" stroke="#5fb3a1" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="260.0" y1="178.0" x2="260.0" y2="208.0" stroke="#d77fa1" stroke-width="1.1" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<text x="16.0" y="296.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A user follows few celebrities, so</text>
+<text x="16.0" y="315.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">merging them at read time is cheap.</text>
+</svg>

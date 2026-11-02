@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 458" width="360" height="458" role="img" aria-label="Cost comparison of push and pull fan-out for different events" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="458" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Where the work goes</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">push vs pull work</text>
+<rect x="16.0" y="74.0" width="328.0" height="68.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="96.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">post by user with 200 followers</text>
+<text x="28.0" y="122.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">push: 200 writes</text>
+<text x="180.0" y="122.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">pull: 1 write</text>
+<rect x="16.0" y="150.0" width="328.0" height="68.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="172.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">post by user with 50M followers</text>
+<text x="28.0" y="198.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">push: 50M writes</text>
+<text x="180.0" y="198.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">pull: 1 write</text>
+<rect x="16.0" y="226.0" width="328.0" height="68.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="248.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">open timeline (follows 300)</text>
+<text x="28.0" y="274.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">push: 1 read</text>
+<text x="180.0" y="274.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">pull: 300 reads</text>
+<rect x="16.0" y="302.0" width="328.0" height="68.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="324.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="600">inactive follower</text>
+<text x="28.0" y="350.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">push: wasted writes</text>
+<text x="180.0" y="350.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">pull: nothing</text>
+<text x="16.0" y="390.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Feeds are read far more than written,</text>
+<text x="16.0" y="409.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">so push usually wins, except for</text>
+<text x="16.0" y="428.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">huge accounts and inactive users.</text>
+</svg>

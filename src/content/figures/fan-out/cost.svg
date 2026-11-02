@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 327" width="880" height="327" role="img" aria-label="Cost comparison of push and pull fan-out for different events" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="327" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Where the work goes</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">per post vs per timeline view</text>
+<text x="40.0" y="92.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="600">event</text>
+<text x="470.0" y="92.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="600">push</text>
+<text x="660.0" y="92.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="600">pull</text>
+<line x1="40.0" y1="102.0" x2="840.0" y2="102.0" stroke="#4a4136" stroke-width="1.3"/>
+<text x="40.0" y="130.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">post by user with 200 followers</text>
+<text x="470.0" y="130.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">200 writes</text>
+<text x="660.0" y="130.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">1 write</text>
+<text x="40.0" y="162.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">post by user with 50M followers</text>
+<text x="470.0" y="162.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">50M writes</text>
+<text x="660.0" y="162.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">1 write</text>
+<text x="40.0" y="194.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">open timeline (follows 300)</text>
+<text x="470.0" y="194.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">1 read</text>
+<text x="660.0" y="194.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">300 reads + merge</text>
+<text x="40.0" y="226.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">inactive follower</text>
+<text x="470.0" y="226.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">wasted writes</text>
+<text x="660.0" y="226.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">nothing</text>
+<text x="40.0" y="278.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Read-heavy products (feeds are often 100:1 or more) favour push: pay once at write, save on every view.</text>
+<text x="40.0" y="297.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Push breaks down at the extremes: huge follower counts and many inactive followers.</text>
+</svg>
