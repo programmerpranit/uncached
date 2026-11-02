@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 436" width="360" height="436" role="img" aria-label="A message queue delivers each message to one consumer and deletes it after acknowledgement" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="436" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">A message queue: deliver, ack, delete</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">deliver · ack · delete</text>
+<rect x="16.0" y="72.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="96.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">producer</text>
+<rect x="16.0" y="130.0" width="328.0" height="60.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<rect x="28.0" y="140.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="164.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">m5</text>
+<rect x="98.0" y="140.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="#e2b45a" stroke-width="1"/>
+<text x="126.0" y="164.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">m4</text>
+<rect x="168.0" y="140.0" width="56.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="#e2b45a" stroke-width="1"/>
+<text x="196.0" y="164.3" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">m3</text>
+<text x="250.0" y="166.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="600">queue</text>
+<rect x="16.0" y="208.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="225.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">consumer A</text>
+<text x="180.0" y="241.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">processing m1</text>
+<rect x="16.0" y="256.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="273.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">consumer B</text>
+<text x="180.0" y="289.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">processing m2</text>
+<rect x="16.0" y="304.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="321.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">consumer C</text>
+<text x="180.0" y="337.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">idle</text>
+<text x="16.0" y="368.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">ack → message deleted</text>
+<text x="16.0" y="387.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">no ack → redelivered</text>
+<text x="16.0" y="406.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each message goes to one consumer.</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="An event log retains messages; consumer groups read independently by offset" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">An event log: append, keep, read by offset</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each consumer group tracks its own position</text>
+<rect x="40.0" y="90.0" width="120.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="100.0" y="117.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">producer</text>
+<line x1="162.0" y1="113.0" x2="198.0" y2="113.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="200.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="225.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">0</text>
+<rect x="256.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="281.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">1</text>
+<rect x="312.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="337.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">2</text>
+<rect x="368.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="393.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">3</text>
+<rect x="424.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="449.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">4</text>
+<rect x="480.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="505.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">5</text>
+<rect x="536.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="561.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">6</text>
+<rect x="592.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="617.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">7</text>
+<rect x="648.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="673.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">8</text>
+<rect x="704.0" y="90.0" width="50.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.45" stroke="#9b8cff" stroke-width="1"/>
+<text x="729.0" y="118.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">9</text>
+<text x="200.0" y="80.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="400">partition 0 (append-only, retained for 7 days or forever)</text>
+<line x1="729.0" y1="170.0" x2="729.0" y2="140.0" stroke="#5fb3a1" stroke-width="1.1" marker-end="url(#ah1)"/>
+<text x="737.0" y="174.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">billing: offset 9</text>
+<line x1="561.0" y1="214.0" x2="561.0" y2="140.0" stroke="#e2b45a" stroke-width="1.1" marker-end="url(#ah2)"/>
+<text x="569.0" y="218.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">search-indexer: offset 6</text>
+<line x1="337.0" y1="258.0" x2="337.0" y2="140.0" stroke="#d77fa1" stroke-width="1.1" marker-end="url(#ah3)"/>
+<text x="345.0" y="262.0" font-size="11" fill="#d77fa1" text-anchor="start" font-weight="400">analytics (replaying): offset 2</text>
+<text x="40.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Reading does not remove anything. Each consumer group stores an offset and can rewind it to reprocess history.</text>
+<text x="40.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A new service can start from offset 0 and rebuild its state from the full log.</text>
+</svg>

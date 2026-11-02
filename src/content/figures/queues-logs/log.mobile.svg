@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 357" width="360" height="357" role="img" aria-label="An event log retains messages; consumer groups read independently by offset" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="357" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">An event log</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">append · retain · read by offset</text>
+<rect x="16.0" y="72.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="96.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">producer</text>
+<text x="16.0" y="138.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="400">partition 0 (append-only)</text>
+<rect x="16.0" y="148.0" width="36.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="34.0" y="173.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">0</text>
+<rect x="57.0" y="148.0" width="36.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="75.0" y="173.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">1</text>
+<rect x="98.0" y="148.0" width="36.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="116.0" y="173.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">2</text>
+<rect x="139.0" y="148.0" width="36.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="157.0" y="173.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">3</text>
+<rect x="180.0" y="148.0" width="36.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="198.0" y="173.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">4</text>
+<rect x="221.0" y="148.0" width="36.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="239.0" y="173.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">5</text>
+<rect x="262.0" y="148.0" width="36.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="280.0" y="173.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">6</text>
+<rect x="303.0" y="148.0" width="36.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.45" stroke="#9b8cff" stroke-width="1"/>
+<text x="321.0" y="173.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="400">7</text>
+<text x="16.0" y="220.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">billing: offset 7</text>
+<text x="16.0" y="244.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="400">search-indexer: offset 5</text>
+<text x="16.0" y="268.0" font-size="12" fill="#d77fa1" text-anchor="start" font-weight="400">analytics (replay): offset 2</text>
+<text x="16.0" y="308.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Reads don’t delete. Each group keeps</text>
+<text x="16.0" y="327.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">an offset and can rewind it.</text>
+</svg>

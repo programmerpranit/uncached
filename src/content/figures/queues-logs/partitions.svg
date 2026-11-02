@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="Keys are hashed to partitions; each partition is consumed in order by one consumer in a group" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Ordering and parallelism come from partitions</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">key → partition; one consumer per partition in a group</text>
+<rect x="220.0" y="90.0" width="360.0" height="50.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="232.0" y="110.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="700">partition 0</text>
+<text x="232.0" y="128.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">order-17, order-42</text>
+<rect x="660.0" y="93.0" width="170.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="745.0" y="119.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="600">consumer 1</text>
+<line x1="582.0" y1="115.0" x2="658.0" y2="115.0" stroke="#5fb3a1" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="220.0" y="160.0" width="360.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="232.0" y="180.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">partition 1</text>
+<text x="232.0" y="198.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">order-8, order-99</text>
+<rect x="660.0" y="163.0" width="170.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="745.0" y="189.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="600">consumer 2</text>
+<line x1="582.0" y1="185.0" x2="658.0" y2="185.0" stroke="#e2b45a" stroke-width="1" marker-end="url(#ah1)"/>
+<rect x="220.0" y="230.0" width="360.0" height="50.0" rx="3" fill="#d77fa1" fill-opacity="0.12" stroke="#d77fa1" stroke-width="1"/>
+<text x="232.0" y="250.0" font-size="11" fill="#d77fa1" text-anchor="start" font-weight="700">partition 2</text>
+<text x="232.0" y="268.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">order-3, order-61</text>
+<rect x="660.0" y="233.0" width="170.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="745.0" y="259.0" font-size="11" fill="#d77fa1" text-anchor="middle" font-weight="600">consumer 3</text>
+<line x1="582.0" y1="255.0" x2="658.0" y2="255.0" stroke="#d77fa1" stroke-width="1" marker-end="url(#ah2)"/>
+<rect x="40.0" y="140.0" width="130.0" height="60.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="105.0" y="167.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">producer</text>
+<text x="105.0" y="183.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">hash(order_id)</text>
+<line x1="172.0" y1="170.0" x2="218.0" y2="115.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah3)"/>
+<line x1="172.0" y1="170.0" x2="218.0" y2="185.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah3)"/>
+<line x1="172.0" y1="170.0" x2="218.0" y2="255.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah3)"/>
+<text x="40.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">All events for one key go to one partition, so they are read in order by a single consumer. Throughput scales</text>
+<text x="40.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">with partitions, but a group can have at most one active consumer per partition.</text>
+</svg>

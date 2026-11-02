@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="880" height="340" role="img" aria-label="Comparison of message queues and event logs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="340" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Queue vs log at a glance</text>
+<text x="40.0" y="92.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400"></text>
+<text x="300.0" y="92.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="600">message queue (RabbitMQ, SQS)</text>
+<text x="600.0" y="92.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="600">event log (Kafka, Kinesis)</text>
+<line x1="40.0" y1="102.0" x2="840.0" y2="102.0" stroke="#4a4136" stroke-width="1.3"/>
+<text x="40.0" y="130.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">after consumption</text>
+<text x="300.0" y="130.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">deleted</text>
+<text x="600.0" y="130.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">retained</text>
+<text x="40.0" y="160.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">consumers</text>
+<text x="300.0" y="160.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">compete for messages</text>
+<text x="600.0" y="160.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">independent groups</text>
+<text x="40.0" y="190.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">replay</text>
+<text x="300.0" y="190.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">no (DLQ only)</text>
+<text x="600.0" y="190.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">yes, rewind offset</text>
+<text x="40.0" y="220.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ordering</text>
+<text x="300.0" y="220.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">weak, per queue</text>
+<text x="600.0" y="220.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">strict per partition</text>
+<text x="40.0" y="250.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">per-message routing</text>
+<text x="300.0" y="250.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">rich (exchanges, priorities)</text>
+<text x="600.0" y="250.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">by key → partition</text>
+<text x="40.0" y="280.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">slow message</text>
+<text x="300.0" y="280.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">blocks only itself</text>
+<text x="600.0" y="280.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">blocks its partition</text>
+<text x="40.0" y="310.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">scale unit</text>
+<text x="300.0" y="310.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">consumers</text>
+<text x="600.0" y="310.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">partitions</text>
+</svg>
