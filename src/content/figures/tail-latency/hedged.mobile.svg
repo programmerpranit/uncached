@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 318" width="360" height="318" role="img" aria-label="Hedged requests: a backup request sent after the p95 delay returns first" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="318" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Hedged requests</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">backup after p95, first answer wins</text>
+<rect x="16.0" y="80.0" width="328.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<text x="28.0" y="100.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">replica 1: stuck, 400 ms</text>
+<text x="16.0" y="138.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="400">after 20 ms (p95), no answer →</text>
+<rect x="16.0" y="152.0" width="180.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.35" stroke="#7cc47f" stroke-width="1"/>
+<text x="28.0" y="172.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">replica 2: 12 ms</text>
+<text x="16.0" y="212.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">answer at 32 ms; cancel replica 1</text>
+<text x="16.0" y="250.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">~5% of requests hedge, so ~5% extra</text>
+<text x="16.0" y="269.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">load. Google: p99.9 1,800 → 74 ms</text>
+<text x="16.0" y="288.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">with 2% more requests.</text>
+</svg>

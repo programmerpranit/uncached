@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 500" width="360" height="500" role="img" aria-label="Sources of tail latency: queueing, shared resources, background work, hardware, retries and fan-out" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="500" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Where tail latency comes from</text>
+<rect x="16.0" y="64.0" width="328.0" height="62.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="28.0" y="88.0" font-size="12.5" fill="#ff5b2e" text-anchor="start" font-weight="700">Queueing</text>
+<text x="28.0" y="110.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">bursts wait behind other work</text>
+<rect x="16.0" y="134.0" width="328.0" height="62.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="158.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">Shared resources</text>
+<text x="28.0" y="180.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">noisy neighbours, CPU, caches, network</text>
+<rect x="16.0" y="204.0" width="328.0" height="62.0" rx="3" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="28.0" y="228.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">Background work</text>
+<text x="28.0" y="250.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">GC, compaction, log rotation</text>
+<rect x="16.0" y="274.0" width="328.0" height="62.0" rx="3" fill="#d77fa1" fill-opacity="0.12" stroke="#d77fa1" stroke-width="1"/>
+<text x="28.0" y="298.0" font-size="12.5" fill="#d77fa1" text-anchor="start" font-weight="700">Power &amp; hardware</text>
+<text x="28.0" y="320.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">CPU throttling, SSD garbage collection</text>
+<rect x="16.0" y="344.0" width="328.0" height="62.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="28.0" y="368.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">Retries &amp; timeouts</text>
+<text x="28.0" y="390.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">a lost packet = 200 ms+ TCP retransmit</text>
+<rect x="16.0" y="414.0" width="328.0" height="62.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="438.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">Fan-out</text>
+<text x="28.0" y="460.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">waiting for the slowest of n</text>
+</svg>

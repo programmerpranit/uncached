@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 389" width="880" height="389" role="img" aria-label="Probability that a fanned-out request is slow grows quickly with the number of servers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="389" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Fan-out turns rare slowness into common slowness</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">P(request is slow) when each of n servers is slow 1% of the time</text>
+<line x1="100.0" y1="290.0" x2="820.0" y2="290.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="100.0" y1="90.0" x2="100.0" y2="290.0" stroke="#4a4136" stroke-width="1.3"/>
+<line x1="100.0" y1="290.0" x2="820.0" y2="290.0" stroke="#2f2921" stroke-width="1"/>
+<text x="94.0" y="294.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">0%</text>
+<line x1="100.0" y1="240.0" x2="820.0" y2="240.0" stroke="#2f2921" stroke-width="1"/>
+<text x="94.0" y="244.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">25%</text>
+<line x1="100.0" y1="190.0" x2="820.0" y2="190.0" stroke="#2f2921" stroke-width="1"/>
+<text x="94.0" y="194.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">50%</text>
+<line x1="100.0" y1="140.0" x2="820.0" y2="140.0" stroke="#2f2921" stroke-width="1"/>
+<text x="94.0" y="144.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">75%</text>
+<line x1="100.0" y1="90.0" x2="820.0" y2="90.0" stroke="#2f2921" stroke-width="1"/>
+<text x="94.0" y="94.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">100%</text>
+<path d="M103.6,288.0 L107.2,286.0 L110.8,284.1 L114.4,282.1 L118.0,280.2 L121.6,278.3 L125.2,276.4 L128.8,274.5 L132.4,272.7 L136.0,270.9 L139.6,269.1 L143.2,267.3 L146.8,265.5 L150.4,263.7 L154.0,262.0 L157.6,260.3 L161.2,258.6 L164.8,256.9 L168.4,255.2 L172.0,253.6 L175.6,251.9 L179.2,250.3 L182.8,248.7 L186.4,247.1 L190.0,245.6 L193.6,244.0 L197.2,242.5 L200.8,240.9 L204.4,239.4 L208.0,237.9 L211.6,236.5 L215.2,235.0 L218.8,233.5 L222.4,232.1 L226.0,230.7 L229.6,229.3 L233.2,227.9 L236.8,226.5 L240.4,225.1 L244.0,223.8 L247.6,222.5 L251.2,221.1 L254.8,219.8 L258.4,218.5 L262.0,217.2 L265.6,216.0 L269.2,214.7 L272.8,213.5 L276.4,212.2 L280.0,211.0 L283.6,209.8 L287.2,208.6 L290.8,207.4 L294.4,206.2 L298.0,205.1 L301.6,203.9 L305.2,202.8 L308.8,201.7 L312.4,200.5 L316.0,199.4 L319.6,198.3 L323.2,197.3 L326.8,196.2 L330.4,195.1 L334.0,194.1 L337.6,193.0 L341.2,192.0 L344.8,191.0 L348.4,190.0 L352.0,189.0 L355.6,188.0 L359.2,187.0 L362.8,186.0 L366.4,185.1 L370.0,184.1 L373.6,183.2 L377.2,182.2 L380.8,181.3 L384.4,180.4 L388.0,179.5 L391.6,178.6 L395.2,177.7 L398.8,176.8 L402.4,176.0 L406.0,175.1 L409.6,174.3 L413.2,173.4 L416.8,172.6 L420.4,171.8 L424.0,170.9 L427.6,170.1 L431.2,169.3 L434.8,168.5 L438.4,167.8 L442.0,167.0 L445.6,166.2 L449.2,165.4 L452.8,164.7 L456.4,163.9 L460.0,163.2 L463.6,162.5 L467.2,161.7 L470.8,161.0 L474.4,160.3 L478.0,159.6 L481.6,158.9 L485.2,158.2 L488.8,157.6 L492.4,156.9 L496.0,156.2 L499.6,155.5 L503.2,154.9 L506.8,154.2 L510.4,153.6 L514.0,153.0 L517.6,152.3 L521.2,151.7 L524.8,151.1 L528.4,150.5 L532.0,149.9 L535.6,149.3 L539.2,148.7 L542.8,148.1 L546.4,147.5 L550.0,146.9 L553.6,146.4 L557.2,145.8 L560.8,145.3 L564.4,144.7 L568.0,144.2 L571.6,143.6 L575.2,143.1 L578.8,142.5 L582.4,142.0 L586.0,141.5 L589.6,141.0 L593.2,140.5 L596.8,140.0 L600.4,139.5 L604.0,139.0 L607.6,138.5 L611.2,138.0 L614.8,137.5 L618.4,137.0 L622.0,136.6 L625.6,136.1 L629.2,135.6 L632.8,135.2 L636.4,134.7 L640.0,134.3 L643.6,133.8 L647.2,133.4 L650.8,133.0 L654.4,132.5 L658.0,132.1 L661.6,131.7 L665.2,131.3 L668.8,130.9 L672.4,130.5 L676.0,130.1 L679.6,129.7 L683.2,129.3 L686.8,128.9 L690.4,128.5 L694.0,128.1 L697.6,127.7 L701.2,127.3 L704.8,127.0 L708.4,126.6 L712.0,126.2 L715.6,125.9 L719.2,125.5 L722.8,125.1 L726.4,124.8 L730.0,124.4 L733.6,124.1 L737.2,123.8 L740.8,123.4 L744.4,123.1 L748.0,122.8 L751.6,122.4 L755.2,122.1 L758.8,121.8 L762.4,121.5 L766.0,121.2 L769.6,120.8 L773.2,120.5 L776.8,120.2 L780.4,119.9 L784.0,119.6 L787.6,119.3 L791.2,119.0 L794.8,118.7 L798.4,118.5 L802.0,118.2 L805.6,117.9 L809.2,117.6 L812.8,117.3 L816.4,117.1 L820.0,116.8" fill="none" stroke="#ff5b2e" stroke-width="2.2"/>
+<circle cx="103.6" cy="288.0" r="4" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="109.6" y="304.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">n=1: 1%</text>
+<circle cx="136.0" cy="270.9" r="4" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="142.0" y="286.9" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">n=10: 10%</text>
+<circle cx="280.0" cy="211.0" r="4" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="286.0" y="227.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">n=50: 39%</text>
+<circle cx="460.0" cy="163.2" r="4" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="466.0" y="179.2" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">n=100: 63%</text>
+<circle cx="820.0" cy="116.8" r="4" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="814.0" y="108.8" font-size="11" fill="#ede6d8" text-anchor="end" font-weight="400">n=200: 87%</text>
+<text x="820.0" y="308.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">servers per request (n = 200)</text>
+<text x="40.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">If a request waits for all n leaf servers, it is as slow as the slowest. With 100 leaves, 63% of user requests hit</text>
+<text x="40.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">at least one leaf’s p99. Your user-facing median is now shaped by your servers’ 99th percentile.</text>
+</svg>
