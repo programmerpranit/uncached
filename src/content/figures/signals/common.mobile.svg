@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 407" width="360" height="407" role="img" aria-label="Common Unix signals with their typical source and default action" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="407" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Common signals</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">source and default action</text>
+<text x="16.0" y="86.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">SIGINT</text>
+<text x="344.0" y="86.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">terminate</text>
+<text x="16.0" y="114.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">SIGTERM</text>
+<text x="344.0" y="114.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">terminate</text>
+<text x="16.0" y="142.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">SIGKILL</text>
+<text x="344.0" y="142.0" font-size="11" fill="#e5534b" text-anchor="end" font-weight="400">uncatchable</text>
+<text x="16.0" y="170.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">SIGHUP</text>
+<text x="344.0" y="170.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">terminate</text>
+<text x="16.0" y="198.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">SIGSEGV / SIGBUS</text>
+<text x="344.0" y="198.0" font-size="11" fill="#e5534b" text-anchor="end" font-weight="400">core dump</text>
+<text x="16.0" y="226.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">SIGPIPE</text>
+<text x="344.0" y="226.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">terminate</text>
+<text x="16.0" y="254.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">SIGCHLD</text>
+<text x="344.0" y="254.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">ignore</text>
+<text x="16.0" y="282.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">SIGUSR1/2</text>
+<text x="344.0" y="282.0" font-size="11" fill="#a69d8e" text-anchor="end" font-weight="400">terminate</text>
+<text x="16.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Ignore SIGPIPE; SIGTERM =</text>
+<text x="16.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">graceful shutdown; SIGKILL</text>
+<text x="16.0" y="358.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">(after a grace period) can't</text>
+<text x="16.0" y="377.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">be caught.</text>
+</svg>

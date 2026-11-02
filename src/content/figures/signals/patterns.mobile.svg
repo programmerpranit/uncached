@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 380" width="360" height="380" role="img" aria-label="Safe ways to handle signals: flags, self-pipe, signalfd, a sigwait thread or runtime APIs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="380" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Safe patterns</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">make signals synchronous</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">flag</text>
+<text x="16.0" y="103.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">set an atomic flag</text>
+<text x="16.0" y="130.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">self-pipe</text>
+<text x="16.0" y="147.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">write a byte; poll the pipe</text>
+<text x="16.0" y="174.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">signalfd (Linux)</text>
+<text x="16.0" y="191.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">read signals from an fd</text>
+<text x="16.0" y="218.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">sigwait thread</text>
+<text x="16.0" y="235.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">one thread waits for signals</text>
+<text x="16.0" y="262.0" font-size="12.5" fill="#d77fa1" text-anchor="start" font-weight="700">runtime APIs</text>
+<text x="16.0" y="279.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Go channels, Python, Node</text>
+<text x="16.0" y="312.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Real work happens later, in</text>
+<text x="16.0" y="331.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">normal code where locks and</text>
+<text x="16.0" y="350.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">allocation are safe.</text>
+</svg>

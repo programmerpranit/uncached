@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 368" width="360" height="368" role="img" aria-label="Steps of signal delivery from generation to handler execution and sigreturn" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="368" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Signal delivery</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">at the next return to user mode</text>
+<circle cx="26.0" cy="86.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1.5"/>
+<text x="26.0" y="90.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="700">1</text>
+<text x="44.0" y="90.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">kill / Ctrl-C / fault</text>
+<circle cx="26.0" cy="120.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="26.0" y="124.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="700">2</text>
+<text x="44.0" y="124.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="400">marked pending</text>
+<circle cx="26.0" cy="154.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1.5"/>
+<text x="26.0" y="158.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="700">3</text>
+<text x="44.0" y="158.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="400">next return to user mode</text>
+<circle cx="26.0" cy="188.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1.5"/>
+<text x="26.0" y="192.0" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="700">4</text>
+<text x="44.0" y="192.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">kernel pushes handler frame</text>
+<circle cx="26.0" cy="222.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1.5"/>
+<text x="26.0" y="226.0" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="700">5</text>
+<text x="44.0" y="226.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">handler runs anywhere</text>
+<circle cx="26.0" cy="256.0" r="10" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1.5"/>
+<text x="26.0" y="260.0" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="700">6</text>
+<text x="44.0" y="260.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">sigreturn: resume / EINTR</text>
+<text x="16.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">SIGKILL / SIGSTOP can't be caught.</text>
+<text x="16.0" y="319.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Same-type signals don't queue:</text>
+<text x="16.0" y="338.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">loop in the handler.</text>
+</svg>

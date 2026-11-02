@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 432" width="880" height="432" role="img" aria-label="Safe ways to handle signals: flags, self-pipe, signalfd, a sigwait thread or runtime APIs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="432" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Safe patterns: do almost nothing in the handler</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">turn the asynchronous signal into a synchronous event your main loop handles</text>
+<rect x="40.0" y="84.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="108.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">flag</text>
+<text x="230.0" y="108.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">handler sets a volatile sig_atomic_t / atomic flag; main loop checks it</text>
+<rect x="40.0" y="134.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="158.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">self-pipe</text>
+<text x="230.0" y="158.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">handler write()s one byte to a pipe; event loop polls the read end</text>
+<rect x="40.0" y="184.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="208.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">signalfd (Linux)</text>
+<text x="230.0" y="208.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">block the signal; read it as a struct from a file descriptor</text>
+<rect x="40.0" y="234.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="56.0" y="258.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">sigwait thread</text>
+<text x="230.0" y="258.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">block signals in all threads; one thread loops on sigwaitinfo()</text>
+<rect x="40.0" y="284.0" width="800.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="56.0" y="308.0" font-size="12.5" fill="#d77fa1" text-anchor="start" font-weight="700">runtime APIs</text>
+<text x="230.0" y="308.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">Go os/signal channels, Python signal handlers, Node process.on</text>
+<text x="40.0" y="364.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">All of them move the real work (logging, reloading config, graceful shutdown) out of the handler and into ordinary</text>
+<text x="40.0" y="383.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">code where locks, allocation and I/O are safe. Language runtimes do this for you: Python signal handlers run later,</text>
+<text x="40.0" y="402.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">between bytecodes, on the main thread.</text>
+</svg>

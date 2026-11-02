@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 324" width="360" height="324" role="img" aria-label="A signal handler calling printf deadlocks on the allocator lock held by the interrupted code" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="324" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Handler deadlock</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">handler needs a lock its thread holds</text>
+<rect x="16.0" y="86.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="26.0" y="106.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="400">main: malloc()</text>
+<text x="26.0" y="124.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">holds allocator lock</text>
+<rect x="16.0" y="146.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="26.0" y="166.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">handler: printf → malloc</text>
+<text x="26.0" y="184.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">waits for the same lock</text>
+<text x="16.0" y="222.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">same thread → deadlock</text>
+<text x="16.0" y="256.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Only async-signal-safe calls</text>
+<text x="16.0" y="275.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">(write, _exit, kill, …) are allowed.</text>
+<text x="16.0" y="294.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Not printf, malloc, free or locks.</text>
+</svg>
