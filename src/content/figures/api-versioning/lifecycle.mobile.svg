@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 443" width="360" height="443" role="img" aria-label="Deprecation lifecycle: announce with a Deprecation header, measure usage by client and version, nudge with a Sunset header and outreach, run brownouts, and finally remove with 410 Gone" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="443" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Retiring a version</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">announce, measure, remove</text>
+<rect x="16.0" y="90.0" width="328.0" height="50.0" rx="8" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="28.0" y="110.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">1. Announce</text>
+<text x="28.0" y="128.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">changelog + email · Deprecation header</text>
+<rect x="16.0" y="148.0" width="328.0" height="50.0" rx="8" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="28.0" y="168.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">2. Measure</text>
+<text x="28.0" y="186.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">calls per client · by version</text>
+<rect x="16.0" y="206.0" width="328.0" height="50.0" rx="8" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="28.0" y="226.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">3. Nudge</text>
+<text x="28.0" y="244.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">Sunset date header · direct outreach</text>
+<rect x="16.0" y="264.0" width="328.0" height="50.0" rx="8" fill="#d77fa1" fill-opacity="0.12" stroke="#d77fa1" stroke-width="1.2"/>
+<text x="28.0" y="284.0" font-size="12" fill="#d77fa1" text-anchor="start" font-weight="700">4. Brownout</text>
+<text x="28.0" y="302.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">scheduled short · failures</text>
+<rect x="16.0" y="322.0" width="328.0" height="50.0" rx="8" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1.2"/>
+<text x="28.0" y="342.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">5. Remove</text>
+<text x="28.0" y="360.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">410 Gone · after sunset</text>
+<text x="16.0" y="394.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Remove only when usage data says</text>
+<text x="16.0" y="413.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">nobody is left behind.</text>
+</svg>

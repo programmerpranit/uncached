@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 434" width="880" height="434" role="img" aria-label="Three versioning schemes: a version in the URL path, in an Accept header media type, or a date-pinned version header, each with trade-offs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="434" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Where the version lives</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">three common schemes and what each costs</text>
+<rect x="40.0" y="96.0" width="800.0" height="82.0" rx="10" fill="#ff5b2e" fill-opacity="0.08" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="58.0" y="122.0" font-size="13.5" fill="#ff5b2e" text-anchor="start" font-weight="700">URL path</text>
+<text x="58.0" y="150.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">GET /v2/orders/812</text>
+<text x="500.0" y="126.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ obvious, cacheable, easy to route</text>
+<text x="500.0" y="152.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">− whole API jumps at once; links break</text>
+<rect x="40.0" y="192.0" width="800.0" height="82.0" rx="10" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="58.0" y="218.0" font-size="13.5" fill="#9b8cff" text-anchor="start" font-weight="700">Header / media type</text>
+<text x="58.0" y="246.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Accept: application/vnd.shop.v2+json</text>
+<text x="500.0" y="222.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ clean URLs, per-resource versions</text>
+<text x="500.0" y="248.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">− hidden in curl; caches need Vary</text>
+<rect x="40.0" y="288.0" width="800.0" height="82.0" rx="10" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="58.0" y="314.0" font-size="13.5" fill="#5fb3a1" text-anchor="start" font-weight="700">Date-pinned</text>
+<text x="58.0" y="342.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Api-Version: 2026-03-01</text>
+<text x="500.0" y="318.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ small changes, per-account pinning</text>
+<text x="500.0" y="344.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">− server must run a transform chain</text>
+<text x="40.0" y="404.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Whichever scheme you pick, version the contract rarely and evolve it additively in between.</text>
+</svg>

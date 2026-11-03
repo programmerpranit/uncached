@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 432" width="360" height="432" role="img" aria-label="Date-pinned versioning: the handler produces only the latest response shape, and a chain of small adapters transforms it back step by step for clients pinned to older versions" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="432" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Version transform chain</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">handlers speak latest only</text>
+<rect x="16.0" y="90.0" width="328.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="116.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Handler (latest shape only)</text>
+<line x1="180.0" y1="134.0" x2="180.0" y2="150.0" stroke="#a69d8e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<rect x="16.0" y="150.0" width="328.0" height="52.0" rx="8" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="28.0" y="170.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="700">down to 2025-11-15</text>
+<text x="28.0" y="190.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">amount → {value, currency}</text>
+<line x1="180.0" y1="202.0" x2="180.0" y2="218.0" stroke="#a69d8e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<rect x="16.0" y="218.0" width="328.0" height="52.0" rx="8" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="28.0" y="238.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">down to 2025-06-01</text>
+<text x="28.0" y="258.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">status "canceled" → "cancelled"</text>
+<line x1="180.0" y1="270.0" x2="180.0" y2="286.0" stroke="#a69d8e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<rect x="16.0" y="286.0" width="328.0" height="52.0" rx="8" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="28.0" y="306.0" font-size="11" fill="#ff5b2e" text-anchor="start" font-weight="700">down to 2024-09-10</text>
+<text x="28.0" y="326.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">customer inlined → customer_id</text>
+<text x="16.0" y="364.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">A client pinned to 2024-09-10 runs</text>
+<text x="16.0" y="383.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">all three adapters; a client on the</text>
+<text x="16.0" y="402.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">latest runs none.</text>
+</svg>

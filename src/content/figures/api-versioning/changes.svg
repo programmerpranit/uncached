@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 449" width="880" height="449" role="img" aria-label="Backward compatible changes such as adding optional fields or endpoints versus breaking changes such as removing or renaming fields, changing types or tightening validation" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="449" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Safe vs breaking changes</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what an old client, compiled last year, can survive</text>
+<rect x="40.0" y="96.0" width="380.0" height="270.0" rx="10" fill="#7cc47f" fill-opacity="0.08" stroke="#7cc47f" stroke-width="1.2"/>
+<text x="58.0" y="124.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">Backward compatible (ship any time)</text>
+<text x="58.0" y="158.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">+ Add an optional request field</text>
+<text x="58.0" y="186.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">+ Add a response field</text>
+<text x="58.0" y="214.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">+ Add a new endpoint or method</text>
+<text x="58.0" y="242.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">+ Add an enum value (if clients</text>
+<text x="74.0" y="270.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">were told to tolerate unknowns)</text>
+<text x="58.0" y="298.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">+ Relax a validation rule</text>
+<text x="58.0" y="326.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">+ Make a required input optional</text>
+<rect x="460.0" y="96.0" width="380.0" height="270.0" rx="10" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1.2"/>
+<text x="478.0" y="124.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">Breaking (needs a new version)</text>
+<text x="478.0" y="158.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">× Remove or rename a field</text>
+<text x="478.0" y="186.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">× Change a field type (int → string)</text>
+<text x="478.0" y="214.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">× Make an optional input required</text>
+<text x="478.0" y="242.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">× Tighten validation or limits</text>
+<text x="478.0" y="270.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">× Change error codes or status</text>
+<text x="478.0" y="298.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">× Change default behaviour or units</text>
+<text x="478.0" y="326.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">× Change pagination or ordering</text>
+<text x="40.0" y="400.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Rule of thumb: be strict in what you add to the contract, tolerant in what clients must accept.</text>
+<text x="40.0" y="419.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Old clients must keep working unchanged; anything that could break a correct old client is breaking.</text>
+</svg>

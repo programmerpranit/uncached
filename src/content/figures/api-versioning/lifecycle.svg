@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="Deprecation lifecycle: announce with a Deprecation header, measure usage by client and version, nudge with a Sunset header and outreach, run brownouts, and finally remove with 410 Gone" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Retiring an old version</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">announce, measure, nudge, then remove</text>
+<rect x="40.0" y="110.0" width="148.0" height="120.0" rx="10" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="54.0" y="136.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">1. Announce</text>
+<text x="54.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">changelog + email</text>
+<text x="54.0" y="188.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Deprecation header</text>
+<line x1="188.0" y1="170.0" x2="203.0" y2="170.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="203.0" y="110.0" width="148.0" height="120.0" rx="10" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="217.0" y="136.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">2. Measure</text>
+<text x="217.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">calls per client</text>
+<text x="217.0" y="188.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">by version</text>
+<line x1="351.0" y1="170.0" x2="366.0" y2="170.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="366.0" y="110.0" width="148.0" height="120.0" rx="10" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="380.0" y="136.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">3. Nudge</text>
+<text x="380.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Sunset date header</text>
+<text x="380.0" y="188.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">direct outreach</text>
+<line x1="514.0" y1="170.0" x2="529.0" y2="170.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="529.0" y="110.0" width="148.0" height="120.0" rx="10" fill="#d77fa1" fill-opacity="0.12" stroke="#d77fa1" stroke-width="1.2"/>
+<text x="543.0" y="136.0" font-size="13" fill="#d77fa1" text-anchor="start" font-weight="700">4. Brownout</text>
+<text x="543.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">scheduled short</text>
+<text x="543.0" y="188.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">failures</text>
+<line x1="677.0" y1="170.0" x2="692.0" y2="170.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="692.0" y="110.0" width="148.0" height="120.0" rx="10" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1.2"/>
+<text x="706.0" y="136.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">5. Remove</text>
+<text x="706.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">410 Gone</text>
+<text x="706.0" y="188.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">after sunset</text>
+<line x1="40.0" y1="270.0" x2="840.0" y2="270.0" stroke="#4a4136" stroke-width="2"/>
+<text x="40.0" y="292.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">month 0</text>
+<text x="366.0" y="292.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">month 3–6</text>
+<text x="692.0" y="292.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">month 12+</text>
+<text x="40.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Removal is driven by data, not the calendar alone: watch per-client usage of the old version fall to zero</text>
+<text x="40.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">(or to clients you have contacted) before the final step.</text>
+</svg>
