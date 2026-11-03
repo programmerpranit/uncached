@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img" aria-label="Three stages: two PoPs announcing, one withdrawing after a failed health check, and the remaining PoP absorbing its users after BGP converges; a note explains that route changes mid-connection can reset TCP flows" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="400" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">When a PoP goes away</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">withdrawing the route moves users automatically — and that is also the risk for long TCP connections</text>
+<text x="40.0" y="92.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">1. Healthy</text>
+<rect x="40.0" y="104.0" width="170.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="125.0" y="123.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">PoP A</text>
+<text x="125.0" y="139.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">announcing</text>
+<rect x="40.0" y="164.0" width="170.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="125.0" y="183.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">PoP B</text>
+<text x="125.0" y="199.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">announcing</text>
+<text x="310.0" y="92.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">2. A withdraws</text>
+<rect x="310.0" y="104.0" width="170.0" height="44.0" rx="3" fill="#e5534b" fill-opacity="0.18" stroke="#e5534b" stroke-width="1"/>
+<text x="395.0" y="123.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">PoP A</text>
+<text x="395.0" y="139.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">health check failed</text>
+<rect x="310.0" y="164.0" width="170.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="395.0" y="183.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">PoP B</text>
+<text x="395.0" y="199.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">announcing</text>
+<text x="580.0" y="92.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">3. Converged</text>
+<rect x="580.0" y="104.0" width="260.0" height="44.0" rx="3" fill="#7cc47f" fill-opacity="0.22" stroke="#7cc47f" stroke-width="1"/>
+<text x="710.0" y="123.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">PoP B absorbs A's users</text>
+<text x="710.0" y="139.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">after BGP converges (secs–mins)</text>
+<rect x="580.0" y="164.0" width="260.0" height="44.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="710.0" y="189.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Capacity must cover the extra load</text>
+<line x1="214.0" y1="150.0" x2="306.0" y2="150.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="484.0" y1="150.0" x2="576.0" y2="150.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="40.0" y="240.0" width="800.0" height="96.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="56.0" y="262.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="700">Mid-connection path changes</text>
+<text x="56.0" y="280.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">If a route flips while a TCP connection is open, packets arrive at a PoP that has no state for it → RST, the connection dies.</text>
+<text x="56.0" y="298.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Short HTTP requests rarely notice. Long downloads, WebSockets and video streams do. Mitigations: stable routing policy,</text>
+<text x="56.0" y="316.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">connection-aware load balancers that forward strays to the right host, QUIC connection IDs, and client retries.</text>
+<text x="40.0" y="370.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Graceful drain: prepend AS hops or lower preference first, let traffic bleed off, then withdraw the route.</text>
+</svg>

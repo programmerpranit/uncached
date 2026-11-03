@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 421" width="360" height="421" role="img" aria-label="A comparison table of unicast, GeoDNS and anycast: who decides where a user goes, how fast failover happens, and the main trade-off of each" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="421" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Steering users</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">unicast · GeoDNS · anycast</text>
+<rect x="16.0" y="72.0" width="328.0" height="34.0" rx="3" fill="#a69d8e" fill-opacity="0.22" stroke="#a69d8e" stroke-width="1"/>
+<text x="180.0" y="92.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Unicast — one IP, one place</text>
+<text x="24.0" y="124.0" font-size="9" fill="#ede6d8" text-anchor="start" font-weight="400">decides: nobody — everyone travels to it</text>
+<text x="24.0" y="138.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">failover: n/a</text>
+<text x="24.0" y="152.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">simple; far users pay latency</text>
+<rect x="16.0" y="172.0" width="328.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="192.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">GeoDNS — IP per region</text>
+<text x="24.0" y="224.0" font-size="9" fill="#ede6d8" text-anchor="start" font-weight="400">decides: authoritative DNS, by resolver IP</text>
+<text x="24.0" y="238.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">failover: DNS TTL</text>
+<text x="24.0" y="252.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">fine-grained; resolver ≠ user location</text>
+<rect x="16.0" y="272.0" width="328.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="292.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Anycast — same IP, many places</text>
+<text x="24.0" y="324.0" font-size="9" fill="#ede6d8" text-anchor="start" font-weight="400">decides: BGP, router by router</text>
+<text x="24.0" y="338.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">failover: BGP convergence</text>
+<text x="24.0" y="352.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">no client state; coarse control</text>
+<text x="16.0" y="376.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">CDNs combine anycast for the first</text>
+<text x="16.0" y="391.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">hop with DNS to choose pools.</text>
+</svg>

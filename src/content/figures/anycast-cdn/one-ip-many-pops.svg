@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 422" width="880" height="422" role="img" aria-label="Three points of presence in Frankfurt, Virginia and Singapore all announce the same prefix over BGP; users in Paris, Boston and Jakarta connecting to the same IP each reach the nearest PoP" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="422" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">One IP, many places</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">every PoP announces 203.0.113.0/24 over BGP; each user lands on the PoP with the best path</text>
+<rect x="80.0" y="90.0" width="200.0" height="50.0" rx="3" fill="#9b8cff" fill-opacity="0.22" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="112.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">PoP Frankfurt</text>
+<text x="180.0" y="128.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">announces 203.0.113.0/24</text>
+<rect x="340.0" y="90.0" width="200.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="440.0" y="112.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">PoP Virginia</text>
+<text x="440.0" y="128.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">announces 203.0.113.0/24</text>
+<rect x="600.0" y="90.0" width="200.0" height="50.0" rx="3" fill="#d77fa1" fill-opacity="0.22" stroke="#d77fa1" stroke-width="1"/>
+<text x="700.0" y="112.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">PoP Singapore</text>
+<text x="700.0" y="128.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">announces 203.0.113.0/24</text>
+<rect x="40.0" y="180.0" width="800.0" height="56.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="440.0" y="204.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="400">The internet: thousands of ASes, each choosing one best BGP route per prefix</text>
+<text x="440.0" y="222.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">shortest AS path, local preference, peering deals — not geographic distance</text>
+<line x1="180.0" y1="140.0" x2="180.0" y2="178.0" stroke="#9b8cff" stroke-width="1.4" marker-end="url(#ah0)"/>
+<line x1="440.0" y1="140.0" x2="440.0" y2="178.0" stroke="#e2b45a" stroke-width="1.4" marker-end="url(#ah1)"/>
+<line x1="700.0" y1="140.0" x2="700.0" y2="178.0" stroke="#d77fa1" stroke-width="1.4" marker-end="url(#ah2)"/>
+<rect x="80.0" y="280.0" width="200.0" height="46.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="300.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">User in Paris</text>
+<text x="180.0" y="316.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">connects to 203.0.113.10</text>
+<line x1="180.0" y1="278.0" x2="180.0" y2="238.0" stroke="#9b8cff" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="190.0" y="262.0" font-size="9.5" fill="#9b8cff" text-anchor="start" font-weight="400">→ Frankfurt</text>
+<rect x="340.0" y="280.0" width="200.0" height="46.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="300.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">User in Boston</text>
+<text x="440.0" y="316.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">connects to 203.0.113.10</text>
+<line x1="440.0" y1="278.0" x2="440.0" y2="238.0" stroke="#e2b45a" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="450.0" y="262.0" font-size="9.5" fill="#e2b45a" text-anchor="start" font-weight="400">→ Virginia</text>
+<rect x="600.0" y="280.0" width="200.0" height="46.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="700.0" y="300.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">User in Jakarta</text>
+<text x="700.0" y="316.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">connects to 203.0.113.10</text>
+<line x1="700.0" y1="278.0" x2="700.0" y2="238.0" stroke="#d77fa1" stroke-width="1.4" marker-end="url(#ah2)"/>
+<text x="710.0" y="262.0" font-size="9.5" fill="#d77fa1" text-anchor="start" font-weight="400">→ Singapore</text>
+<text x="40.0" y="360.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Same destination address everywhere. Routers forward each packet toward whichever announcement looks best from where they sit,</text>
+<text x="40.0" y="376.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">so users split across PoPs with no DNS trickery and no client logic. "Nearest" means nearest in routing terms, which usually —</text>
+<text x="40.0" y="392.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">but not always — tracks geography.</text>
+</svg>
