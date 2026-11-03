@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 365" width="880" height="365" role="img" aria-label="Four kinds of workers: dedicated workers for CPU tasks, shared workers across tabs, service workers as a network proxy, and worklets hooking into rendering and audio" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="365" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The worker family</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">different jobs, same idea: code off the main thread</text>
+<rect x="40.0" y="100.0" width="190.0" height="180.0" rx="8" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1.3"/>
+<text x="54.0" y="126.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Dedicated Worker</text>
+<text x="54.0" y="150.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">one page owns it</text>
+<text x="54.0" y="190.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">typical use</text>
+<text x="54.0" y="212.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">CPU work: parsing,</text>
+<text x="54.0" y="230.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">images, search</text>
+<rect x="244.0" y="100.0" width="190.0" height="180.0" rx="8" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.3"/>
+<text x="258.0" y="126.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Shared Worker</text>
+<text x="258.0" y="150.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">shared by tabs of</text>
+<text x="258.0" y="166.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">one origin</text>
+<text x="258.0" y="190.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">typical use</text>
+<text x="258.0" y="212.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">one WebSocket or cache</text>
+<text x="258.0" y="230.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">for many tabs</text>
+<rect x="448.0" y="100.0" width="190.0" height="180.0" rx="8" fill="#ff5b2e" fill-opacity="0.08" stroke="#ff5b2e" stroke-width="1.3"/>
+<text x="462.0" y="126.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">Service Worker</text>
+<text x="462.0" y="150.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">proxy between page</text>
+<text x="462.0" y="166.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">and network</text>
+<text x="462.0" y="190.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">typical use</text>
+<text x="462.0" y="212.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">offline, caching,</text>
+<text x="462.0" y="230.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">push notifications</text>
+<rect x="652.0" y="100.0" width="190.0" height="180.0" rx="8" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1.3"/>
+<text x="666.0" y="126.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Worklets</text>
+<text x="666.0" y="150.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">small hooks into</text>
+<text x="666.0" y="166.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">the engine</text>
+<text x="666.0" y="190.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">typical use</text>
+<text x="666.0" y="212.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">audio, paint, animation,</text>
+<text x="666.0" y="230.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">layout (Houdini)</text>
+<text x="40.0" y="316.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">All of them run JavaScript on another thread with no DOM access and talk to pages through messages.</text>
+<text x="40.0" y="335.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">This article focuses on dedicated workers; service workers have their own lifecycle and caching role.</text>
+</svg>

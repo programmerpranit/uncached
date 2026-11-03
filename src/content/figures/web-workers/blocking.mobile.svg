@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 413" width="360" height="413" role="img" aria-label="A 600 millisecond task on the main thread drops dozens of frames; moved to a worker, the main thread keeps rendering and only handles the result" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="413" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Long tasks freeze the UI</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">main thread vs worker</text>
+<text x="16.0" y="96.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">A. all on the main thread</text>
+<text x="16.0" y="114.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">main thread</text>
+<rect x="16.0" y="120.0" width="328.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="37.9" y="120.0" width="218.7" height="26.0" rx="4" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="147.2" y="137.0" font-size="10" fill="#1b1712" text-anchor="middle" font-weight="600">600 ms task</text>
+<text x="16.0" y="166.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">UI frozen: input and paint wait</text>
+<text x="16.0" y="210.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">B. heavy work in a worker</text>
+<text x="16.0" y="228.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">main thread</text>
+<rect x="16.0" y="234.0" width="328.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="16.0" y="234.0" width="14.6" height="26.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="52.4" y="234.0" width="14.6" height="26.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="88.9" y="234.0" width="14.6" height="26.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="256.5" y="234.0" width="14.6" height="26.0" rx="4" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="16.0" y="280.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">worker</text>
+<rect x="16.0" y="286.0" width="328.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="41.5" y="286.0" width="215.0" height="26.0" rx="4" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="149.0" y="303.0" font-size="10" fill="#1b1712" text-anchor="middle" font-weight="600">600 ms task</text>
+<text x="16.0" y="330.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">UI stays responsive</text>
+<text x="16.0" y="364.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Same work, different thread: the</text>
+<text x="16.0" y="383.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">main thread keeps painting frames.</text>
+</svg>

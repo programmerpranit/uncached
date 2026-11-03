@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 511" width="880" height="511" role="img" aria-label="Data reaches a worker by structured cloning, by transferring ownership of a buffer, or by sharing memory with SharedArrayBuffer" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="511" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Three ways to move data to a worker</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">copy it, transfer ownership, or share memory</text>
+<rect x="40.0" y="100.0" width="800.0" height="104.0" rx="8" fill="#ff5b2e" fill-opacity="0.07" stroke="#ff5b2e" stroke-width="1.3"/>
+<rect x="56.0" y="122.0" width="150.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="131.0" y="152.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">main thread</text>
+<rect x="674.0" y="122.0" width="150.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="749.0" y="152.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">worker</text>
+<text x="440.0" y="124.0" font-size="12.5" fill="#ff5b2e" text-anchor="middle" font-weight="700">structured clone (default)</text>
+<text x="440.0" y="146.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">postMessage(obj)</text>
+<line x1="212.0" y1="158.0" x2="668.0" y2="158.0" stroke="#ff5b2e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<text x="440.0" y="190.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">data is deep-copied; both sides have their own copy  ·  cost grows with size</text>
+<rect x="40.0" y="216.0" width="800.0" height="104.0" rx="8" fill="#5fb3a1" fill-opacity="0.07" stroke="#5fb3a1" stroke-width="1.3"/>
+<rect x="56.0" y="238.0" width="150.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="131.0" y="268.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">main thread</text>
+<rect x="674.0" y="238.0" width="150.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="749.0" y="268.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">worker</text>
+<text x="440.0" y="240.0" font-size="12.5" fill="#5fb3a1" text-anchor="middle" font-weight="700">transferable</text>
+<text x="440.0" y="262.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">postMessage(buf, [buf])</text>
+<line x1="212.0" y1="274.0" x2="668.0" y2="274.0" stroke="#5fb3a1" stroke-width="1.5" marker-end="url(#ah1)"/>
+<text x="440.0" y="306.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">ownership moves; sender's buffer becomes empty (detached)  ·  near-zero cost</text>
+<rect x="40.0" y="332.0" width="800.0" height="104.0" rx="8" fill="#e2b45a" fill-opacity="0.07" stroke="#e2b45a" stroke-width="1.3"/>
+<rect x="56.0" y="354.0" width="150.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="131.0" y="384.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">main thread</text>
+<rect x="674.0" y="354.0" width="150.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="749.0" y="384.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">worker</text>
+<text x="440.0" y="356.0" font-size="12.5" fill="#e2b45a" text-anchor="middle" font-weight="700">SharedArrayBuffer</text>
+<text x="440.0" y="378.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">new SharedArrayBuffer(n)</text>
+<line x1="212.0" y1="390.0" x2="668.0" y2="390.0" stroke="#e2b45a" stroke-width="1.5" marker-end="url(#ah2)" stroke-dasharray="5 4"/>
+<line x1="668.0" y1="398.0" x2="212.0" y2="398.0" stroke="#e2b45a" stroke-width="1.5" marker-end="url(#ah2)" stroke-dasharray="5 4"/>
+<text x="440.0" y="422.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">both threads see the same memory; use Atomics to coordinate  ·  needs cross-origin isolation</text>
+<text x="40.0" y="462.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Messages are asynchronous: the worker has no access to the DOM, window or the main thread's variables.</text>
+<text x="40.0" y="481.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Libraries such as Comlink wrap postMessage so a worker looks like an object with async methods.</text>
+</svg>

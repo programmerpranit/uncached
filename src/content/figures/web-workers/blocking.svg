@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 461" width="880" height="461" role="img" aria-label="A 600 millisecond task on the main thread drops dozens of frames; moved to a worker, the main thread keeps rendering and only handles the result" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="461" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">One long task freezes the page</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the same 600 ms of work, on the main thread vs in a worker</text>
+<text x="40.0" y="110.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">A. everything on the main thread</text>
+<text x="40.0" y="144.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">main thread</text>
+<rect x="150.0" y="124.0" width="660.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="150.0" y="124.0" width="29.3" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="194.0" y="124.0" width="440.0" height="30.0" rx="4" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="414.0" y="144.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">parse + sort 50k rows (600 ms)</text>
+<rect x="648.7" y="124.0" width="29.3" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="692.7" y="124.0" width="29.3" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="152.0" y="174.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="225.3" y="174.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">✕</text>
+<text x="298.7" y="174.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">✕</text>
+<text x="372.0" y="174.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">✕</text>
+<text x="445.3" y="174.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">✕</text>
+<text x="518.7" y="174.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">✕</text>
+<text x="592.0" y="174.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">✕</text>
+<text x="665.3" y="174.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="738.7" y="174.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="40.0" y="174.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">frames</text>
+<text x="414.0" y="196.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">~36 frames dropped: clicks, typing and scroll wait</text>
+<text x="40.0" y="240.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">B. heavy work moved to a worker</text>
+<text x="40.0" y="274.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">main thread</text>
+<rect x="150.0" y="254.0" width="660.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="150.0" y="254.0" width="29.3" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="194.0" y="254.0" width="7.3" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="223.3" y="254.0" width="29.3" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="296.7" y="254.0" width="29.3" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="370.0" y="254.0" width="29.3" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="634.0" y="254.0" width="22.0" height="30.0" rx="4" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="692.7" y="254.0" width="29.3" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="40.0" y="318.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">worker</text>
+<rect x="150.0" y="298.0" width="660.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="201.3" y="298.0" width="432.7" height="30.0" rx="4" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="417.7" y="318.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">parse + sort 50k rows (600 ms)</text>
+<line x1="197.7" y1="286.0" x2="201.3" y2="296.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="205.0" y="350.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">postMessage(file)</text>
+<line x1="634.0" y1="296.0" x2="641.3" y2="286.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="634.0" y="350.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">onmessage(result) → render</text>
+<text x="152.0" y="374.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="225.3" y="374.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="298.7" y="374.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="372.0" y="374.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="445.3" y="374.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="518.7" y="374.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="592.0" y="374.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="665.3" y="374.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="738.7" y="374.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓</text>
+<text x="40.0" y="374.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">frames</text>
+<text x="40.0" y="412.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Total work is the same, or slightly more. What changes is that the main thread stays free to handle input and paint.</text>
+<text x="40.0" y="431.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Any task over 50 ms counts as a "long task" and directly hurts Interaction to Next Paint (INP).</text>
+</svg>

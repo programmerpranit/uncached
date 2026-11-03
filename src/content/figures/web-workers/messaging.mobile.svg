@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 487" width="360" height="487" role="img" aria-label="Data reaches a worker by structured cloning, by transferring ownership of a buffer, or by sharing memory with SharedArrayBuffer" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="487" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Moving data to a worker</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">copy, transfer, or share</text>
+<rect x="16.0" y="84.0" width="328.0" height="104.0" rx="8" fill="#ff5b2e" fill-opacity="0.07" stroke="#ff5b2e" stroke-width="1.3"/>
+<text x="28.0" y="106.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">structured clone (default)</text>
+<text x="28.0" y="126.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">postMessage(obj)</text>
+<text x="28.0" y="148.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">deep copy on both sides</text>
+<text x="28.0" y="164.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">cost grows with data size</text>
+<rect x="16.0" y="198.0" width="328.0" height="104.0" rx="8" fill="#5fb3a1" fill-opacity="0.07" stroke="#5fb3a1" stroke-width="1.3"/>
+<text x="28.0" y="220.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">transferable</text>
+<text x="28.0" y="240.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">postMessage(buf, [buf])</text>
+<text x="28.0" y="262.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">ownership moves, sender detached</text>
+<text x="28.0" y="278.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">near-zero cost</text>
+<rect x="16.0" y="312.0" width="328.0" height="104.0" rx="8" fill="#e2b45a" fill-opacity="0.07" stroke="#e2b45a" stroke-width="1.3"/>
+<text x="28.0" y="334.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">SharedArrayBuffer</text>
+<text x="28.0" y="354.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">new SharedArrayBuffer(n)</text>
+<text x="28.0" y="376.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">same memory, use Atomics</text>
+<text x="28.0" y="392.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">needs cross-origin isolation</text>
+<text x="16.0" y="438.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">No DOM in a worker; messages</text>
+<text x="16.0" y="457.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">are always asynchronous.</text>
+</svg>
