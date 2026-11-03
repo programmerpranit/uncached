@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 437" width="360" height="437" role="img" aria-label="A host loads remoteEntry files from independently deployed remotes, negotiates shared library versions, and renders exposed components" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="437" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Module federation</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">remotes + shared scope</text>
+<rect x="16.0" y="84.0" width="328.0" height="166.0" rx="8" fill="#ff5b2e" fill-opacity="0.08" stroke="#ff5b2e" stroke-width="1.3"/>
+<text x="28.0" y="106.0" font-size="12.5" fill="#ff5b2e" text-anchor="start" font-weight="700">host (shell)</text>
+<text x="28.0" y="128.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">import("checkout/Cart")</text>
+<text x="28.0" y="156.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">shared scope:</text>
+<text x="28.0" y="176.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">react 18.3.1 singleton ✓</text>
+<text x="28.0" y="194.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">react-dom singleton ✓</text>
+<text x="28.0" y="212.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">date-fns 3.x + 2.x</text>
+<text x="28.0" y="234.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">fetch remoteEntry → load chunks</text>
+<line x1="180.0" y1="252.0" x2="180.0" y2="272.0" stroke="#9b8cff" stroke-width="1.4" marker-end="url(#ah0)"/>
+<rect x="16.0" y="276.0" width="328.0" height="84.0" rx="8" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1.3"/>
+<text x="28.0" y="298.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">remote: checkout</text>
+<text x="28.0" y="318.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">exposes ./Cart, ./MiniCart</text>
+<text x="28.0" y="338.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">own team, own deploys</text>
+<text x="16.0" y="388.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The host only knows a URL; shared</text>
+<text x="16.0" y="407.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">singletons must stay compatible.</text>
+</svg>

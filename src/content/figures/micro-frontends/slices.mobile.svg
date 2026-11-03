@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 461" width="360" height="461" role="img" aria-label="An app shell composes three vertical slices, each owned end to end by a separate team with its own repo and deploys" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="461" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Vertical slices</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">independent deploys per team</text>
+<rect x="16.0" y="84.0" width="328.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="105.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">app shell (host)</text>
+<text x="180.0" y="121.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">routing, layout, shared deps</text>
+<rect x="16.0" y="150.0" width="328.0" height="72.0" rx="8" fill="#ff5b2e" fill-opacity="0.08" stroke="#ff5b2e" stroke-width="1.3"/>
+<text x="28.0" y="174.0" font-size="12.5" fill="#ff5b2e" text-anchor="start" font-weight="700">Search team</text>
+<text x="28.0" y="194.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">search + results</text>
+<text x="28.0" y="212.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">own repo, CI, deploys</text>
+<rect x="16.0" y="234.0" width="328.0" height="72.0" rx="8" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.3"/>
+<text x="28.0" y="258.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">Product team</text>
+<text x="28.0" y="278.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">product page</text>
+<text x="28.0" y="296.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">own repo, CI, deploys</text>
+<rect x="16.0" y="318.0" width="328.0" height="72.0" rx="8" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1.3"/>
+<text x="28.0" y="342.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">Checkout team</text>
+<text x="28.0" y="362.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">cart + payment</text>
+<text x="28.0" y="380.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">own repo, CI, deploys</text>
+<text x="16.0" y="412.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Split by business domain; the shell</text>
+<text x="16.0" y="431.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">composes the slices at runtime.</text>
+</svg>

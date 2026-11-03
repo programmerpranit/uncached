@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 477" width="880" height="477" role="img" aria-label="An app shell composes three vertical slices, each owned end to end by a separate team with its own repo and deploys" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="477" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Teams own vertical slices</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each team ships its part of the UI on its own schedule</text>
+<rect x="40.0" y="96.0" width="800.0" height="56.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="122.0" font-size="13" fill="#ede6d8" text-anchor="middle" font-weight="700">app shell (host)</text>
+<text x="440.0" y="141.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">routing, layout, auth, design system, shared dependencies</text>
+<line x1="168.0" y1="154.0" x2="168.0" y2="176.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="40.0" y="180.0" width="256.0" height="214.0" rx="8" fill="#ff5b2e" fill-opacity="0.08" stroke="#ff5b2e" stroke-width="1.3"/>
+<text x="56.0" y="206.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">Search team</text>
+<rect x="56.0" y="222.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="168.0" y="243.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">UI: search + results</text>
+<rect x="56.0" y="264.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="168.0" y="285.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">own repo + CI/CD</text>
+<rect x="56.0" y="306.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="168.0" y="327.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">own release cadence</text>
+<rect x="56.0" y="348.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="168.0" y="369.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">own backend (BFF)</text>
+<line x1="440.0" y1="154.0" x2="440.0" y2="176.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="312.0" y="180.0" width="256.0" height="214.0" rx="8" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.3"/>
+<text x="328.0" y="206.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Product team</text>
+<rect x="328.0" y="222.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="243.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">UI: product page</text>
+<rect x="328.0" y="264.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="285.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">own repo + CI/CD</text>
+<rect x="328.0" y="306.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="327.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">own release cadence</text>
+<rect x="328.0" y="348.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="369.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">own backend (BFF)</text>
+<line x1="712.0" y1="154.0" x2="712.0" y2="176.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="584.0" y="180.0" width="256.0" height="214.0" rx="8" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1.3"/>
+<text x="600.0" y="206.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Checkout team</text>
+<rect x="600.0" y="222.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="712.0" y="243.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">UI: cart + payment</text>
+<rect x="600.0" y="264.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="712.0" y="285.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">own repo + CI/CD</text>
+<rect x="600.0" y="306.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="712.0" y="327.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">own release cadence</text>
+<rect x="600.0" y="348.0" width="224.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="712.0" y="369.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">own backend (BFF)</text>
+<text x="40.0" y="428.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Split by business domain, not by technical layer. Each slice goes from UI to database and is owned by one team.</text>
+<text x="40.0" y="447.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The shell composes them at runtime; a deploy by one team does not require the others to rebuild.</text>
+</svg>

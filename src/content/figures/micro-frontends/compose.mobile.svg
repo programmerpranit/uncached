@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 586" width="360" height="586" role="img" aria-label="Four places to compose micro-frontends: build-time packages, server or edge includes, runtime loading in the browser, and iframes, with their trade-offs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="586" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Where to compose</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">build, server, or browser</text>
+<rect x="16.0" y="84.0" width="328.0" height="112.0" rx="8" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1.3"/>
+<text x="28.0" y="106.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">Build time</text>
+<text x="332.0" y="106.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">npm packages</text>
+<text x="28.0" y="128.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">each MFE is a package host installs + bundles</text>
+<text x="28.0" y="148.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">+ simple, type-safe, one bundle</text>
+<text x="28.0" y="163.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">– host rebuilds for every change</text>
+<rect x="16.0" y="206.0" width="328.0" height="112.0" rx="8" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.3"/>
+<text x="28.0" y="228.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">Server / edge</text>
+<text x="332.0" y="228.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">SSI, ESI, fragments</text>
+<text x="28.0" y="250.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">server stitches HTML from several services</text>
+<text x="28.0" y="270.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">+ fast first paint, good SEO</text>
+<text x="28.0" y="285.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">– interactivity and state harder</text>
+<rect x="16.0" y="328.0" width="328.0" height="112.0" rx="8" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1.3"/>
+<text x="28.0" y="350.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">Runtime (browser)</text>
+<text x="332.0" y="350.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">federation, import maps</text>
+<text x="28.0" y="372.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">host loads remote JS at runtime by URL</text>
+<text x="28.0" y="392.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">+ independent deploys</text>
+<text x="28.0" y="407.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">– version drift, load failures</text>
+<rect x="16.0" y="450.0" width="328.0" height="112.0" rx="8" fill="#d77fa1" fill-opacity="0.08" stroke="#d77fa1" stroke-width="1.3"/>
+<text x="28.0" y="472.0" font-size="12.5" fill="#d77fa1" text-anchor="start" font-weight="700">iframes</text>
+<text x="332.0" y="472.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">full isolation</text>
+<text x="28.0" y="494.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">each MFE in its own browsing context</text>
+<text x="28.0" y="514.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">+ strongest isolation</text>
+<text x="28.0" y="529.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">– sizing, routing, a11y, dup JS</text>
+</svg>
