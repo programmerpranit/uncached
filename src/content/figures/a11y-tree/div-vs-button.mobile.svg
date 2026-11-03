@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520" width="360" height="520" role="img" aria-label="Comparing a div with role button, which needs tabindex, key handlers and disabled logic added by hand, to a native button that has them built in" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="520" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">div vs &lt;button&gt;</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ARIA changes semantics only</text>
+<rect x="16.0" y="86.0" width="328.0" height="52.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="106.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">announced as button</text>
+<text x="28.0" y="126.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">div: role="button"</text>
+<text x="336.0" y="126.0" font-size="10" fill="#7cc47f" text-anchor="end" font-weight="400">built in</text>
+<rect x="16.0" y="144.0" width="328.0" height="52.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="164.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">focusable with Tab</text>
+<text x="28.0" y="184.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">div: tabindex="0"</text>
+<text x="336.0" y="184.0" font-size="10" fill="#7cc47f" text-anchor="end" font-weight="400">built in</text>
+<rect x="16.0" y="202.0" width="328.0" height="52.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="222.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">Enter activates</text>
+<text x="28.0" y="242.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">div: keydown handler</text>
+<text x="336.0" y="242.0" font-size="10" fill="#7cc47f" text-anchor="end" font-weight="400">built in</text>
+<rect x="16.0" y="260.0" width="328.0" height="52.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="280.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">Space activates</text>
+<text x="28.0" y="300.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">div: keyup handler + preventDefault</text>
+<text x="336.0" y="300.0" font-size="10" fill="#7cc47f" text-anchor="end" font-weight="400">built in</text>
+<rect x="16.0" y="318.0" width="328.0" height="52.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="338.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">disabled state</text>
+<text x="28.0" y="358.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">div: aria-disabled + guard logic</text>
+<text x="336.0" y="358.0" font-size="10" fill="#7cc47f" text-anchor="end" font-weight="400">disabled attr</text>
+<rect x="16.0" y="376.0" width="328.0" height="52.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="396.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">works in forms</text>
+<text x="28.0" y="416.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">div: manual</text>
+<text x="336.0" y="416.0" font-size="10" fill="#7cc47f" text-anchor="end" font-weight="400">type="submit"</text>
+<text x="16.0" y="452.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">First rule of ARIA: use the</text>
+<text x="16.0" y="471.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">native element when one exists.</text>
+<text x="16.0" y="490.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">role="button" adds no behaviour.</text>
+</svg>

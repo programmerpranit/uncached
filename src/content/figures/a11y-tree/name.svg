@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 468" width="880" height="468" role="img" aria-label="Accessible name sources in order: aria-labelledby, aria-label, native label, contents, then title or placeholder" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="468" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">How an accessible name is computed</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">first source that yields text wins (simplified)</text>
+<circle cx="60.0" cy="122.0" r="15" fill="#9b8cff" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="60.0" y="127.0" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="700">1</text>
+<rect x="90.0" y="100.0" width="750.0" height="44.0" rx="6" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="106.0" y="127.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">aria-labelledby</text>
+<text x="330.0" y="127.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">text of the referenced element(s)</text>
+<circle cx="60.0" cy="178.0" r="15" fill="#9b8cff" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="60.0" y="183.0" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="700">2</text>
+<rect x="90.0" y="156.0" width="750.0" height="44.0" rx="6" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="106.0" y="183.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">aria-label</text>
+<text x="330.0" y="183.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">string on the element itself</text>
+<circle cx="60.0" cy="234.0" r="15" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="60.0" y="239.0" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="700">3</text>
+<rect x="90.0" y="212.0" width="750.0" height="44.0" rx="6" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="106.0" y="239.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">native label</text>
+<text x="330.0" y="239.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;label for&gt;, &lt;caption&gt;, &lt;legend&gt;, alt=</text>
+<circle cx="60.0" cy="290.0" r="15" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="60.0" y="295.0" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="700">4</text>
+<rect x="90.0" y="268.0" width="750.0" height="44.0" rx="6" fill="#ff5b2e" fill-opacity="0.1" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="106.0" y="295.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">contents</text>
+<text x="330.0" y="295.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">text inside (buttons, links, headings)</text>
+<circle cx="60.0" cy="346.0" r="15" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="60.0" y="351.0" font-size="13" fill="#1b1712" text-anchor="middle" font-weight="700">5</text>
+<rect x="90.0" y="324.0" width="750.0" height="44.0" rx="6" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="106.0" y="351.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">title / placeholder</text>
+<text x="330.0" y="351.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">last resort, unreliable</text>
+<text x="40.0" y="400.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;button aria-label="Close"&gt;&lt;svg/&gt;&lt;/button&gt;          → button "Close"</text>
+<text x="40.0" y="419.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;button aria-label="Save"&gt;Submit&lt;/button&gt;          → button "Save"  (aria-label hides "Submit"!)</text>
+<text x="40.0" y="438.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;input placeholder="Email"&gt;                       → textbox "Email" (but placeholder vanishes on typing)</text>
+</svg>

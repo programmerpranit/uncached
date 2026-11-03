@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 448" width="880" height="448" role="img" aria-label="Comparing a div with role button, which needs tabindex, key handlers and disabled logic added by hand, to a native button that has them built in" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="448" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A &lt;div&gt; button vs a real &lt;button&gt;</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ARIA changes what is announced, not how it behaves</text>
+<text x="40.0" y="100.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">behaviour</text>
+<text x="300.0" y="100.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">&lt;div onclick&gt;</text>
+<text x="620.0" y="100.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">&lt;button&gt;</text>
+<rect x="40.0" y="116.0" width="800.0" height="34.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="138.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">announced as button</text>
+<text x="300.0" y="138.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">role="button"</text>
+<text x="620.0" y="138.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">built in</text>
+<rect x="40.0" y="156.0" width="800.0" height="34.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="178.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">focusable with Tab</text>
+<text x="300.0" y="178.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">tabindex="0"</text>
+<text x="620.0" y="178.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">built in</text>
+<rect x="40.0" y="196.0" width="800.0" height="34.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="218.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Enter activates</text>
+<text x="300.0" y="218.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">keydown handler</text>
+<text x="620.0" y="218.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">built in</text>
+<rect x="40.0" y="236.0" width="800.0" height="34.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="258.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Space activates</text>
+<text x="300.0" y="258.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">keyup handler + preventDefault</text>
+<text x="620.0" y="258.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">built in</text>
+<rect x="40.0" y="276.0" width="800.0" height="34.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="298.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">disabled state</text>
+<text x="300.0" y="298.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">aria-disabled + guard logic</text>
+<text x="620.0" y="298.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">disabled attr</text>
+<rect x="40.0" y="316.0" width="800.0" height="34.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="338.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">works in forms</text>
+<text x="300.0" y="338.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="400">manual</text>
+<text x="620.0" y="338.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="400">type="submit"</text>
+<text x="40.0" y="380.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">First rule of ARIA: if a native element does the job, use it. role="button" makes a screen reader say "button"</text>
+<text x="40.0" y="399.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">but adds no keyboard support, focus or form behaviour. Surveys of real sites keep finding that pages with</text>
+<text x="40.0" y="418.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ARIA have more detected errors on average than pages without, usually from roles without the matching behaviour.</text>
+</svg>

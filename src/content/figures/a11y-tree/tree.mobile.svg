@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 658" width="360" height="658" role="img" aria-label="The browser turns the DOM into an accessibility tree of roles, names and states, pruning wrappers; an icon-only button ends up with no name" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="658" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">DOM vs a11y tree</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">assistive tech reads a derived tree</text>
+<text x="16.0" y="88.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">DOM</text>
+<rect x="16.0" y="98.0" width="328.0" height="190.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="26.0" y="116.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">&lt;nav&gt;</text>
+<text x="26.0" y="132.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">  &lt;ul&gt;</text>
+<text x="26.0" y="148.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">    &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;</text>
+<text x="26.0" y="164.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">    &lt;li&gt;&lt;a href="/docs"&gt;Docs&lt;/a&gt;</text>
+<text x="26.0" y="180.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">&lt;main&gt;</text>
+<text x="26.0" y="196.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">  &lt;div class="wrap"&gt;</text>
+<text x="26.0" y="212.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">    &lt;h1&gt;Settings&lt;/h1&gt;</text>
+<text x="26.0" y="228.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">    &lt;label for=n&gt;Name&lt;/label&gt;</text>
+<text x="26.0" y="244.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">    &lt;input id=n value="Ada"&gt;</text>
+<text x="26.0" y="260.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">    &lt;div class="icon"&gt;&lt;/div&gt;</text>
+<text x="26.0" y="276.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">    &lt;button&gt;&lt;svg …/&gt;&lt;/button&gt;</text>
+<line x1="180.0" y1="292.0" x2="180.0" y2="312.0" stroke="#a69d8e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<text x="16.0" y="330.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">accessibility tree</text>
+<rect x="16.0" y="340.0" width="328.0" height="220.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="364.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="600">navigation</text>
+<text x="42.0" y="390.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">list (2 items)</text>
+<text x="56.0" y="416.0" font-size="10.5" fill="#ff5b2e" text-anchor="start" font-weight="600">link "Home"</text>
+<text x="56.0" y="442.0" font-size="10.5" fill="#ff5b2e" text-anchor="start" font-weight="600">link "Docs"</text>
+<text x="28.0" y="468.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="600">main</text>
+<text x="42.0" y="494.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="600">heading "Settings" level 1</text>
+<text x="42.0" y="520.0" font-size="10.5" fill="#ff5b2e" text-anchor="start" font-weight="600">textbox "Name" value "Ada"</text>
+<text x="42.0" y="546.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="600">button ""  ← no name!</text>
+<text x="16.0" y="590.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Wrappers are pruned, labels fold</text>
+<text x="16.0" y="609.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">into controls. The icon button has</text>
+<text x="16.0" y="628.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">no name.</text>
+</svg>
