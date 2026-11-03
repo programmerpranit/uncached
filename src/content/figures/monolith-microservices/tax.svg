@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img" aria-label="Table of what changes when a function call becomes a network call: latency, failure handling, consistency, queries, debugging, change management and operations all get harder" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="430" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The distributed systems tax</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">turning an in-process call into a network call changes its failure modes</text>
+<text x="170.0" y="90.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="700">Monolith (in-process)</text>
+<text x="500.0" y="90.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="700">Microservices (over the network)</text>
+<rect x="40.0" y="108.0" width="800.0" height="32.0" rx="3" fill="#2f2921" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="56.0" y="129.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">Latency</text>
+<text x="170.0" y="129.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">~ns function call</text>
+<text x="500.0" y="129.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">~ms network hop, x every hop</text>
+<rect x="40.0" y="146.0" width="800.0" height="32.0" rx="3" fill="#2f2921" fill-opacity="0.25" stroke="none" stroke-width="1"/>
+<text x="56.0" y="167.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">Failure</text>
+<text x="170.0" y="167.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">exception, same process</text>
+<text x="500.0" y="167.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">timeouts, retries, partial failure</text>
+<rect x="40.0" y="184.0" width="800.0" height="32.0" rx="3" fill="#2f2921" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="56.0" y="205.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">Consistency</text>
+<text x="170.0" y="205.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">one DB transaction</text>
+<text x="500.0" y="205.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">sagas, outbox, eventual consistency</text>
+<rect x="40.0" y="222.0" width="800.0" height="32.0" rx="3" fill="#2f2921" fill-opacity="0.25" stroke="none" stroke-width="1"/>
+<text x="56.0" y="243.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">Queries</text>
+<text x="170.0" y="243.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">SQL JOIN</text>
+<text x="500.0" y="243.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">API composition or replicated data</text>
+<rect x="40.0" y="260.0" width="800.0" height="32.0" rx="3" fill="#2f2921" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="56.0" y="281.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">Debugging</text>
+<text x="170.0" y="281.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">one stack trace</text>
+<text x="500.0" y="281.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">distributed tracing across N logs</text>
+<rect x="40.0" y="298.0" width="800.0" height="32.0" rx="3" fill="#2f2921" fill-opacity="0.25" stroke="none" stroke-width="1"/>
+<text x="56.0" y="319.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">Change</text>
+<text x="170.0" y="319.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">one refactor, one deploy</text>
+<text x="500.0" y="319.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">versioned contracts, ordered rollouts</text>
+<rect x="40.0" y="336.0" width="800.0" height="32.0" rx="3" fill="#2f2921" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="56.0" y="357.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">Operations</text>
+<text x="170.0" y="357.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">1 pipeline, 1 dashboard</text>
+<text x="500.0" y="357.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">N pipelines, mesh, service discovery</text>
+<text x="40.0" y="400.0" font-size="11.5" fill="#ff5b2e" text-anchor="start" font-weight="400">Each row is solvable — but each solution is a system you now build, run and debug.</text>
+</svg>

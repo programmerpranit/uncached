@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="Strangler fig migration in three stages: put a proxy in front of the monolith, route one bounded context to a new service, and repeat until the monolith shrinks" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Strangler fig migration</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">route traffic through a facade and peel off one bounded context at a time</text>
+<text x="40.0" y="92.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">1. Facade in front</text>
+<rect x="40.0" y="108.0" width="250.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="165.0" y="129.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">proxy / gateway</text>
+<rect x="40.0" y="180.0" width="230.0" height="110.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="155.0" y="239.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="52.0" y="200.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">monolith</text>
+<text x="52.0" y="222.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Catalog</text>
+<text x="52.0" y="239.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Orders</text>
+<text x="52.0" y="256.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Shipping</text>
+<text x="52.0" y="273.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Billing</text>
+<line x1="100.0" y1="142.0" x2="100.0" y2="178.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="315.0" y="92.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">2. Extract one context</text>
+<rect x="315.0" y="108.0" width="250.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="440.0" y="129.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">proxy / gateway</text>
+<rect x="315.0" y="180.0" width="175.0" height="110.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="402.5" y="239.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="327.0" y="200.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">monolith</text>
+<text x="327.0" y="222.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Catalog</text>
+<text x="327.0" y="239.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Orders</text>
+<text x="327.0" y="256.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Shipping</text>
+<rect x="502.0" y="180.0" width="78.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="541.0" y="198.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Shipping</text>
+<line x1="375.0" y1="142.0" x2="375.0" y2="178.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="515.0" y1="142.0" x2="515.0" y2="178.0" stroke="#9b8cff" stroke-width="1.2" marker-end="url(#ah1)"/>
+<text x="590.0" y="92.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">3. Monolith shrinks</text>
+<rect x="590.0" y="108.0" width="250.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="715.0" y="129.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">proxy / gateway</text>
+<rect x="590.0" y="180.0" width="95.0" height="110.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="637.5" y="239.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="602.0" y="200.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="700">monolith</text>
+<text x="602.0" y="222.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Catalog</text>
+<rect x="697.0" y="180.0" width="143.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="768.5" y="198.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Shipping</text>
+<rect x="697.0" y="218.0" width="143.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="768.5" y="236.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Billing</text>
+<rect x="697.0" y="256.0" width="143.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="768.5" y="274.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Catalog</text>
+<line x1="650.0" y1="142.0" x2="650.0" y2="178.0" stroke="#ff5b2e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="790.0" y1="142.0" x2="805.0" y2="178.0" stroke="#9b8cff" stroke-width="1.2" marker-end="url(#ah1)"/>
+<text x="40.0" y="330.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">The facade lets you move routes one at a time, compare old and new, and roll back by flipping a route.</text>
+<text x="40.0" y="349.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Extract the context with the clearest boundary and the most independent change rate first.</text>
+</svg>

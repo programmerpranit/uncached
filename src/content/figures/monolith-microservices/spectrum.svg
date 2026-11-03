@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 415" width="880" height="415" role="img" aria-label="Three architectures: a monolith with tangled modules, a modular monolith with enforced boundaries in one deployable, and microservices with separate deployables and databases connected over the network" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="415" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The architecture spectrum</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the modular monolith sits between the two choices most teams think they have</text>
+<rect x="40.0" y="85.0" width="250.0" height="250.0" rx="3" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1"/>
+<text x="165.0" y="213.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="56.0" y="110.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Monolith</text>
+<text x="56.0" y="132.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">1 deployable, 1 DB</text>
+<text x="56.0" y="148.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">tangled modules</text>
+<rect x="60.0" y="168.0" width="46.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="114.0" y="168.0" width="46.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="168.0" y="168.0" width="46.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="222.0" y="168.0" width="46.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<path d="M83 208 C130 240 190 240 245 208" fill="none" stroke="#e2b45a" stroke-width="1"/>
+<path d="M137 168 C170 150 210 150 245 168" fill="none" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="262.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">Simple deploys,</text>
+<text x="56.0" y="278.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">calls and joins</text>
+<text x="56.0" y="302.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">Coupling grows</text>
+<text x="56.0" y="318.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">unchecked</text>
+<rect x="315.0" y="85.0" width="250.0" height="250.0" rx="3" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="213.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="331.0" y="110.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Modular monolith</text>
+<text x="331.0" y="132.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">1 deployable, N modules</text>
+<text x="331.0" y="148.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">enforced boundaries</text>
+<rect x="331.0" y="164.0" width="218.0" height="52.0" rx="3" fill="#5fb3a1" fill-opacity="0.06" stroke="#5fb3a1" stroke-width="1" stroke-dasharray="4,3"/>
+<rect x="339.0" y="172.0" width="44.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.3" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="391.0" y="172.0" width="44.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.3" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="443.0" y="172.0" width="44.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.3" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="495.0" y="172.0" width="44.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.3" stroke="#5fb3a1" stroke-width="1"/>
+<text x="331.0" y="262.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">Clear ownership,</text>
+<text x="331.0" y="278.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">still in-process</text>
+<text x="331.0" y="302.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">One release</text>
+<text x="331.0" y="318.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">train</text>
+<rect x="590.0" y="85.0" width="250.0" height="250.0" rx="3" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1"/>
+<text x="715.0" y="213.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="606.0" y="110.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Microservices</text>
+<text x="606.0" y="132.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">N deployables, N DBs</text>
+<text x="606.0" y="148.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">network boundaries</text>
+<rect x="610.0" y="168.0" width="44.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.3" stroke="#9b8cff" stroke-width="1"/>
+<circle cx="632.0" cy="222.0" r="6" fill="#9b8cff" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="666.0" y="168.0" width="44.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.3" stroke="#9b8cff" stroke-width="1"/>
+<circle cx="688.0" cy="222.0" r="6" fill="#9b8cff" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="722.0" y="168.0" width="44.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.3" stroke="#9b8cff" stroke-width="1"/>
+<circle cx="744.0" cy="222.0" r="6" fill="#9b8cff" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="778.0" y="168.0" width="44.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.3" stroke="#9b8cff" stroke-width="1"/>
+<circle cx="800.0" cy="222.0" r="6" fill="#9b8cff" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<line x1="654.0" y1="186.0" x2="666.0" y2="186.0" stroke="#9b8cff" stroke-width="1"/>
+<line x1="710.0" y1="186.0" x2="722.0" y2="186.0" stroke="#9b8cff" stroke-width="1"/>
+<line x1="766.0" y1="186.0" x2="778.0" y2="186.0" stroke="#9b8cff" stroke-width="1"/>
+<text x="606.0" y="262.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">Independent deploy</text>
+<text x="606.0" y="278.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">and scaling</text>
+<text x="606.0" y="302.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">Distributed</text>
+<text x="606.0" y="318.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">systems tax</text>
+<line x1="40.0" y1="365.0" x2="840.0" y2="365.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="385.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">more coordination in code</text>
+<text x="840.0" y="385.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">more coordination over the network</text>
+</svg>

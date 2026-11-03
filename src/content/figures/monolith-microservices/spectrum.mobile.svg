@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 404" width="360" height="404" role="img" aria-label="Three architectures: a monolith with tangled modules, a modular monolith with enforced boundaries in one deployable, and microservices with separate deployables and databases connected over the network" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="404" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">The architecture spectrum</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">three points, not two</text>
+<rect x="16.0" y="78.0" width="328.0" height="94.0" rx="3" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="128.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="100.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Monolith</text>
+<text x="28.0" y="118.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">1 deployable, 1 DB</text>
+<text x="28.0" y="140.0" font-size="9.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ Simple deploys, in-process</text>
+<text x="28.0" y="158.0" font-size="9.5" fill="#e5534b" text-anchor="start" font-weight="400">− Coupling grows unchecked</text>
+<rect x="16.0" y="182.0" width="328.0" height="94.0" rx="3" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="232.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="204.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Modular monolith</text>
+<text x="28.0" y="222.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">1 deployable, N modules</text>
+<text x="28.0" y="244.0" font-size="9.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ Clear ownership, in-process</text>
+<text x="28.0" y="262.0" font-size="9.5" fill="#e5534b" text-anchor="start" font-weight="400">− One release train</text>
+<rect x="16.0" y="286.0" width="328.0" height="94.0" rx="3" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="336.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="308.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">Microservices</text>
+<text x="28.0" y="326.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">N deployables, N DBs</text>
+<text x="28.0" y="348.0" font-size="9.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ Independent deploy and scaling</text>
+<text x="28.0" y="366.0" font-size="9.5" fill="#e5534b" text-anchor="start" font-weight="400">− Distributed systems tax</text>
+</svg>
