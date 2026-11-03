@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 341" width="880" height="341" role="img" aria-label="A request passes through the gateway stages TLS termination, authentication, rate limiting, routing, transformation and observability before reaching orders, users or search services" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="341" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What a gateway does</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">cross-cutting concerns run once at the edge instead of in every service</text>
+<rect x="30.0" y="150.0" width="80.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="70.0" y="179.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Client</text>
+<rect x="140.0" y="140.0" width="86.0" height="70.0" rx="3" fill="#a69d8e" fill-opacity="0.16" stroke="#a69d8e" stroke-width="1"/>
+<text x="183.0" y="172.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">TLS</text>
+<text x="183.0" y="188.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">terminate</text>
+<line x1="226.0" y1="175.0" x2="236.0" y2="175.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="236.0" y="140.0" width="86.0" height="70.0" rx="3" fill="#ff5b2e" fill-opacity="0.16" stroke="#ff5b2e" stroke-width="1"/>
+<text x="279.0" y="172.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Auth</text>
+<text x="279.0" y="188.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">verify JWT</text>
+<line x1="322.0" y1="175.0" x2="332.0" y2="175.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="332.0" y="140.0" width="86.0" height="70.0" rx="3" fill="#e2b45a" fill-opacity="0.16" stroke="#e2b45a" stroke-width="1"/>
+<text x="375.0" y="172.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Rate limit</text>
+<text x="375.0" y="188.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">per key</text>
+<line x1="418.0" y1="175.0" x2="428.0" y2="175.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="428.0" y="140.0" width="86.0" height="70.0" rx="3" fill="#5fb3a1" fill-opacity="0.16" stroke="#5fb3a1" stroke-width="1"/>
+<text x="471.0" y="172.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Route</text>
+<text x="471.0" y="188.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">path → svc</text>
+<line x1="514.0" y1="175.0" x2="524.0" y2="175.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="524.0" y="140.0" width="86.0" height="70.0" rx="3" fill="#9b8cff" fill-opacity="0.16" stroke="#9b8cff" stroke-width="1"/>
+<text x="567.0" y="172.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Transform</text>
+<text x="567.0" y="188.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">headers, shape</text>
+<line x1="610.0" y1="175.0" x2="620.0" y2="175.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="620.0" y="140.0" width="86.0" height="70.0" rx="3" fill="#d77fa1" fill-opacity="0.16" stroke="#d77fa1" stroke-width="1"/>
+<text x="663.0" y="172.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Observe</text>
+<text x="663.0" y="188.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">log, trace</text>
+<line x1="110.0" y1="175.0" x2="138.0" y2="175.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="130.0" y="118.0" width="586.0" height="108.0" rx="3" fill="#ff5b2e" fill-opacity="0" stroke="#ff5b2e" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="140.0" y="112.0" font-size="11" fill="#ff5b2e" text-anchor="start" font-weight="700">API gateway</text>
+<rect x="770.0" y="110.0" width="90.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="815.0" y="133.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">orders</text>
+<path d="M716 175 C740 175 745 129 768 129" fill="none" stroke="#5fb3a1" stroke-width="1.2" marker-end="url(#ah1)"/>
+<rect x="770.0" y="160.0" width="90.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="815.0" y="183.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">users</text>
+<path d="M716 175 C740 175 745 179 768 179" fill="none" stroke="#5fb3a1" stroke-width="1.2" marker-end="url(#ah1)"/>
+<rect x="770.0" y="210.0" width="90.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="815.0" y="233.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">search</text>
+<path d="M716 175 C740 175 745 229 768 229" fill="none" stroke="#5fb3a1" stroke-width="1.2" marker-end="url(#ah1)"/>
+<text x="140.0" y="270.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="700">Rejected early:</text>
+<text x="140.0" y="292.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">401 bad token · 429 over quota · 404 unknown route</text>
+<text x="140.0" y="311.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">never reach a backend, so backends stay simple and protected.</text>
+</svg>

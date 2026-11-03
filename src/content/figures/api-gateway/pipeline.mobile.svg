@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 468" width="360" height="468" role="img" aria-label="A request passes through the gateway stages TLS termination, authentication, rate limiting, routing, transformation and observability before reaching orders, users or search services" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="468" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">What a gateway does</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one request, many concerns</text>
+<rect x="16.0" y="72.0" width="328.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="93.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Client</text>
+<rect x="30.0" y="122.0" width="300.0" height="38.0" rx="3" fill="#a69d8e" fill-opacity="0.16" stroke="#a69d8e" stroke-width="1"/>
+<text x="180.0" y="145.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">TLS — terminate</text>
+<rect x="30.0" y="168.0" width="300.0" height="38.0" rx="3" fill="#ff5b2e" fill-opacity="0.16" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="191.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Auth — verify JWT</text>
+<rect x="30.0" y="214.0" width="300.0" height="38.0" rx="3" fill="#e2b45a" fill-opacity="0.16" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="237.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Rate limit — per key</text>
+<rect x="30.0" y="260.0" width="300.0" height="38.0" rx="3" fill="#5fb3a1" fill-opacity="0.16" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="283.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Route — path → svc</text>
+<rect x="30.0" y="306.0" width="300.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.16" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="329.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Transform — headers, shape</text>
+<rect x="30.0" y="352.0" width="300.0" height="38.0" rx="3" fill="#d77fa1" fill-opacity="0.16" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="375.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Observe — log, trace</text>
+<rect x="22.0" y="116.0" width="316.0" height="280.0" rx="3" fill="#ff5b2e" fill-opacity="0" stroke="#ff5b2e" stroke-width="1" stroke-dasharray="4,3"/>
+<rect x="16.0" y="410.0" width="328.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="431.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">orders · users · search</text>
+</svg>
