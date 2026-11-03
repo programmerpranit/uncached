@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 445" width="880" height="445" role="img" aria-label="Request context flows from handler to service to repository to outbound calls, passed explicitly or via async-local storage; a global current-user variable lets concurrent requests overwrite each other" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="445" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Passing context down the call stack</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">explicit parameter or async-local storage, never a mutable global</text>
+<rect x="40.0" y="104.0" width="200.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="140.0" y="133.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Handler</text>
+<text x="256.0" y="134.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">reads ctx.principal</text>
+<line x1="140.0" y1="154.0" x2="140.0" y2="174.0" stroke="#ff5b2e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="150.0" y="168.0" font-size="10.5" fill="#ff5b2e" text-anchor="start" font-weight="400">ctx</text>
+<rect x="40.0" y="174.0" width="200.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="140.0" y="203.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Service</text>
+<text x="256.0" y="204.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">checks ownership, tenant</text>
+<line x1="140.0" y1="224.0" x2="140.0" y2="244.0" stroke="#ff5b2e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="150.0" y="238.0" font-size="10.5" fill="#ff5b2e" text-anchor="start" font-weight="400">ctx</text>
+<rect x="40.0" y="244.0" width="200.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="140.0" y="273.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Repository</text>
+<text x="256.0" y="274.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">scopes queries by tenant</text>
+<line x1="140.0" y1="294.0" x2="140.0" y2="314.0" stroke="#ff5b2e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="150.0" y="308.0" font-size="10.5" fill="#ff5b2e" text-anchor="start" font-weight="400">ctx</text>
+<rect x="40.0" y="314.0" width="200.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="140.0" y="343.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Outbound call</text>
+<text x="256.0" y="344.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">forwards trace + identity headers</text>
+<rect x="520.0" y="104.0" width="320.0" height="110.0" rx="8" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="536.0" y="128.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">Good</text>
+<text x="536.0" y="150.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">ctx passed as a parameter (Go context),</text>
+<text x="536.0" y="166.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">or async-local storage scoped to this</text>
+<text x="536.0" y="182.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">request (AsyncLocalStorage, contextvars)</text>
+<rect x="520.0" y="234.0" width="320.0" height="110.0" rx="8" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="536.0" y="258.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">Bad</text>
+<text x="536.0" y="280.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">a module-level "currentUser" variable:</text>
+<text x="536.0" y="296.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">concurrent requests overwrite each other</text>
+<text x="536.0" y="312.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">and one user sees another's data</text>
+<text x="40.0" y="396.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Context should be created once per request, be read-only after the auth middleware, and be propagated across</text>
+<text x="40.0" y="415.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">async boundaries and service calls so logs, traces and data access all agree on who is acting.</text>
+</svg>

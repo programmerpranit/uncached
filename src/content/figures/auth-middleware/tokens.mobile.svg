@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 483" width="360" height="483" role="img" aria-label="Session cookies need a store lookup but revoke instantly; JWTs verify locally with no network call but revoke only at expiry; opaque tokens need an introspection call and revoke instantly" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="483" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Verifying a credential</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">latency vs revocation</text>
+<rect x="16.0" y="94.0" width="328.0" height="98.0" rx="8" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="116.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Session cookie</text>
+<text x="28.0" y="136.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">look up session ID in a store (Redis, DB)</text>
+<text x="28.0" y="180.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">cost: 1 store lookup · revoke: instant</text>
+<rect x="16.0" y="204.0" width="328.0" height="98.0" rx="8" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="28.0" y="226.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">JWT (signed token)</text>
+<text x="28.0" y="246.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">verify signature + exp locally with a</text>
+<text x="28.0" y="261.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">public key</text>
+<text x="28.0" y="290.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">cost: no network call · revoke: at expiry</text>
+<rect x="16.0" y="314.0" width="328.0" height="98.0" rx="8" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="28.0" y="336.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">Opaque token + introspection</text>
+<text x="28.0" y="356.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">ask the auth server whether the token is</text>
+<text x="28.0" y="371.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">active</text>
+<text x="28.0" y="400.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">cost: 1 call to auth server · revoke: instant</text>
+<text x="16.0" y="434.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Common mix: short-lived JWTs plus a</text>
+<text x="16.0" y="453.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">revocable refresh token or session.</text>
+</svg>

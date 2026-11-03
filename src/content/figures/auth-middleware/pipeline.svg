@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 437" width="880" height="437" role="img" aria-label="A request passes request-id, authentication, principal loading and authorization middleware before the handler; authentication can return 401, authorization 403, and each step adds fields to a per-request context" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="437" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ede6d8"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A request through the middleware chain</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each layer can reject early or add to the request context</text>
+<rect x="40.0" y="110.0" width="148.0" height="64.0" rx="3" fill="#a69d8e" fill-opacity="0.2" stroke="#a69d8e" stroke-width="1"/>
+<text x="114.0" y="139.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Request ID + logging</text>
+<text x="114.0" y="155.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">assign trace id</text>
+<line x1="188.0" y1="142.0" x2="210.0" y2="142.0" stroke="#ede6d8" stroke-width="1.4" marker-end="url(#ah0)"/>
+<rect x="210.0" y="110.0" width="148.0" height="64.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="284.0" y="139.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Authenticate</text>
+<text x="284.0" y="155.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">who is calling?</text>
+<line x1="358.0" y1="142.0" x2="380.0" y2="142.0" stroke="#ede6d8" stroke-width="1.4" marker-end="url(#ah0)"/>
+<line x1="284.0" y1="174.0" x2="284.0" y2="214.0" stroke="#e5534b" stroke-width="1.4" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<text x="284.0" y="232.0" font-size="11.5" fill="#e5534b" text-anchor="middle" font-weight="700">401 Unauthorized</text>
+<rect x="380.0" y="110.0" width="148.0" height="64.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="454.0" y="139.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Load principal</text>
+<text x="454.0" y="155.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">user, tenant, roles</text>
+<line x1="528.0" y1="142.0" x2="550.0" y2="142.0" stroke="#ede6d8" stroke-width="1.4" marker-end="url(#ah0)"/>
+<rect x="550.0" y="110.0" width="148.0" height="64.0" rx="3" fill="#e2b45a" fill-opacity="0.2" stroke="#e2b45a" stroke-width="1"/>
+<text x="624.0" y="139.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Authorize</text>
+<text x="624.0" y="155.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">may they do this?</text>
+<line x1="698.0" y1="142.0" x2="720.0" y2="142.0" stroke="#ede6d8" stroke-width="1.4" marker-end="url(#ah0)"/>
+<line x1="624.0" y1="174.0" x2="624.0" y2="214.0" stroke="#e5534b" stroke-width="1.4" marker-end="url(#ah1)" stroke-dasharray="4 3"/>
+<text x="624.0" y="232.0" font-size="11.5" fill="#e5534b" text-anchor="middle" font-weight="700">403 Forbidden</text>
+<rect x="720.0" y="110.0" width="148.0" height="64.0" rx="3" fill="#7cc47f" fill-opacity="0.2" stroke="#7cc47f" stroke-width="1"/>
+<text x="794.0" y="139.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Handler</text>
+<text x="794.0" y="155.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">business logic</text>
+<rect x="40.0" y="270.0" width="800.0" height="84.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="56.0" y="294.0" font-size="12.5" fill="#ff5b2e" text-anchor="start" font-weight="700">Request context (immutable, per request)</text>
+<text x="56.0" y="318.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">request_id = 7f3a…    principal = user 42 (alice)    tenant = acme    scopes = [orders:read]</text>
+<text x="56.0" y="340.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">auth_method = jwt    deadline = now + 2 s    client_ip = 203.0.113.9</text>
+<text x="40.0" y="388.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Authentication answers "who", authorization answers "may they". Both run before the handler, and what they</text>
+<text x="40.0" y="407.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">learn is attached to a context object that every later layer reads instead of re-parsing headers.</text>
+</svg>
