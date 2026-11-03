@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 541" width="360" height="541" role="img" aria-label="A setState in Page re-renders every descendant component, except a memo-wrapped Footer whose props are unchanged" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="541" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Render cascade</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">parent renders → children render</text>
+<rect x="16.0" y="86.0" width="328.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="104.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">App</text>
+<rect x="16.0" y="122.0" width="328.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="140.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Page  ← setState</text>
+<rect x="44.0" y="158.0" width="300.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="194.0" y="176.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Header</text>
+<rect x="72.0" y="194.0" width="272.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="208.0" y="212.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Avatar</text>
+<rect x="44.0" y="230.0" width="300.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="194.0" y="248.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">List</text>
+<rect x="72.0" y="266.0" width="272.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="208.0" y="284.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Row ×200</text>
+<rect x="72.0" y="302.0" width="272.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="208.0" y="320.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Footer (memo)</text>
+<rect x="44.0" y="338.0" width="300.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="194.0" y="356.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Sidebar</text>
+<rect x="72.0" y="374.0" width="272.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="208.0" y="392.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Ad</text>
+<rect x="16.0" y="410.0" width="12.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="420.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">state changed</text>
+<rect x="16.0" y="430.0" width="12.0" height="12.0" rx="2" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="440.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">re-rendered</text>
+<rect x="16.0" y="450.0" width="12.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="460.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">skipped (memo)</text>
+<text x="16.0" y="492.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Renders call your function and diff;</text>
+<text x="16.0" y="511.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">the DOM changes only where output does.</text>
+</svg>
