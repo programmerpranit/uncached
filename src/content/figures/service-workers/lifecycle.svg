@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 384" width="880" height="384" role="img" aria-label="Service worker lifecycle: register, install, waiting, activate, controlling, with skipWaiting as a shortcut" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="384" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Service worker lifecycle</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a new version waits until no page uses the old one</text>
+<rect x="30.0" y="110.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="104.0" y="139.7" font-size="13" fill="#a69d8e" text-anchor="middle" font-weight="600">register</text>
+<text x="104.0" y="184.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">navigator.serviceWorker</text>
+<text x="104.0" y="201.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">.register()</text>
+<line x1="180.0" y1="135.0" x2="196.0" y2="135.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="198.0" y="110.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="272.0" y="139.7" font-size="13" fill="#ff5b2e" text-anchor="middle" font-weight="600">install</text>
+<text x="272.0" y="184.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">precache assets</text>
+<text x="272.0" y="201.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">(event.waitUntil)</text>
+<line x1="348.0" y1="135.0" x2="364.0" y2="135.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="366.0" y="110.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="440.0" y="139.7" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">waiting</text>
+<text x="440.0" y="184.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">old SW still</text>
+<text x="440.0" y="201.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">controls tabs</text>
+<line x1="516.0" y1="135.0" x2="532.0" y2="135.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="534.0" y="110.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="608.0" y="139.7" font-size="13" fill="#9b8cff" text-anchor="middle" font-weight="600">activate</text>
+<text x="608.0" y="184.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">delete old caches,</text>
+<text x="608.0" y="201.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">clients.claim()</text>
+<line x1="684.0" y1="135.0" x2="700.0" y2="135.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="702.0" y="110.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="776.0" y="139.7" font-size="13" fill="#7cc47f" text-anchor="middle" font-weight="600">controlling</text>
+<text x="776.0" y="184.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">handles fetch,</text>
+<text x="776.0" y="201.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">push, sync</text>
+<path d="M 440 108 C 440 70, 590 70, 590 106" fill="none" stroke="#d77fa1" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="515.0" y="72.0" font-size="11" fill="#d77fa1" text-anchor="middle" font-weight="400">skipWaiting()</text>
+<rect x="30.0" y="250.0" width="820.0" height="110.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="46.0" y="276.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Why waiting exists: two versions controlling different tabs at once could read each other's caches</text>
+<text x="46.0" y="295.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">in incompatible formats. So v2 waits until every tab using v1 is closed (a reload isn't enough while</text>
+<text x="46.0" y="314.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">another tab is open). skipWaiting() skips the wait; it's safe only if v2 can serve pages loaded by v1.</text>
+<text x="46.0" y="333.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">If install fails (one precache request 404s), v2 is discarded and v1 keeps running.</text>
+</svg>
