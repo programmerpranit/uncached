@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 438" width="880" height="438" role="img" aria-label="Animating width re-runs style, layout, paint and composite; animating color re-runs paint; animating transform or opacity only re-runs composite" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="438" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Which stages each property re-runs</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">every frame, the browser runs from the first stage a change touches</text>
+<rect x="380.0" y="100.0" width="84.0" height="32.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="422.0" y="120.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">JS</text>
+<rect x="472.0" y="100.0" width="84.0" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.25" stroke="#9b8cff" stroke-width="1"/>
+<text x="514.0" y="120.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Style</text>
+<rect x="564.0" y="100.0" width="84.0" height="32.0" rx="3" fill="#e5534b" fill-opacity="0.25" stroke="#e5534b" stroke-width="1"/>
+<text x="606.0" y="120.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Layout</text>
+<rect x="656.0" y="100.0" width="84.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.25" stroke="#e2b45a" stroke-width="1"/>
+<text x="698.0" y="120.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Paint</text>
+<rect x="748.0" y="100.0" width="84.0" height="32.0" rx="3" fill="#7cc47f" fill-opacity="0.25" stroke="#7cc47f" stroke-width="1"/>
+<text x="790.0" y="120.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Composite</text>
+<text x="40.0" y="174.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">width, height, top, left, margin, font-size</text>
+<text x="40.0" y="194.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">layout + paint + composite</text>
+<rect x="380.0" y="162.0" width="84.0" height="30.0" rx="4" fill="#a69d8e" fill-opacity="0.45" stroke="#a69d8e" stroke-width="1"/>
+<rect x="472.0" y="162.0" width="84.0" height="30.0" rx="4" fill="#9b8cff" fill-opacity="0.45" stroke="#9b8cff" stroke-width="1"/>
+<rect x="564.0" y="162.0" width="84.0" height="30.0" rx="4" fill="#e5534b" fill-opacity="0.45" stroke="#e5534b" stroke-width="1"/>
+<rect x="656.0" y="162.0" width="84.0" height="30.0" rx="4" fill="#e2b45a" fill-opacity="0.45" stroke="#e2b45a" stroke-width="1"/>
+<rect x="748.0" y="162.0" width="84.0" height="30.0" rx="4" fill="#7cc47f" fill-opacity="0.45" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="240.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">color, background, box-shadow, border-radius</text>
+<text x="40.0" y="260.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">paint + composite</text>
+<rect x="380.0" y="228.0" width="84.0" height="30.0" rx="4" fill="#a69d8e" fill-opacity="0.45" stroke="#a69d8e" stroke-width="1"/>
+<rect x="472.0" y="228.0" width="84.0" height="30.0" rx="4" fill="#9b8cff" fill-opacity="0.45" stroke="#9b8cff" stroke-width="1"/>
+<rect x="564.0" y="228.0" width="84.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="656.0" y="228.0" width="84.0" height="30.0" rx="4" fill="#e2b45a" fill-opacity="0.45" stroke="#e2b45a" stroke-width="1"/>
+<rect x="748.0" y="228.0" width="84.0" height="30.0" rx="4" fill="#7cc47f" fill-opacity="0.45" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="306.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">transform, opacity, filter*</text>
+<text x="40.0" y="326.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">composite only (GPU, off main thread)</text>
+<rect x="380.0" y="294.0" width="84.0" height="30.0" rx="4" fill="#a69d8e" fill-opacity="0.45" stroke="#a69d8e" stroke-width="1"/>
+<rect x="472.0" y="294.0" width="84.0" height="30.0" rx="4" fill="#9b8cff" fill-opacity="0.45" stroke="#9b8cff" stroke-width="1"/>
+<rect x="564.0" y="294.0" width="84.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="656.0" y="294.0" width="84.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="748.0" y="294.0" width="84.0" height="30.0" rx="4" fill="#7cc47f" fill-opacity="0.45" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Layout is the expensive stage: a size change can move every element after it, all on the main thread.</text>
+<text x="40.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Transform and opacity skip layout and paint; the compositor just moves or fades an existing GPU layer.</text>
+<text x="40.0" y="408.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">* filter is composited in Chromium when the element has its own layer; check in DevTools.</text>
+</svg>

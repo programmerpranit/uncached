@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="Animating width spends about 17.5 ms per frame on style, layout and paint and drops frames, while animating transform spends under 2 ms" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A 16.7 ms frame budget at 60 Hz</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same slide-in, animated two ways, on a mid-range phone</text>
+<line x1="300.0" y1="96.0" x2="300.0" y2="330.0" stroke="#e5534b" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="659.4" y="0.0" font-size="1" fill="#ede6d8" text-anchor="start" font-weight="400"></text>
+<line x1="667.4" y1="96.0" x2="667.4" y2="330.0" stroke="#e5534b" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="667.4" y="92.0" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="400">16.7 ms</text>
+<text x="40.0" y="140.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">animate width</text>
+<text x="40.0" y="160.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">≈17.5 ms: dropped frames</text>
+<rect x="300.0" y="124.0" width="33.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.4" stroke="#9b8cff" stroke-width="1"/>
+<rect x="333.0" y="124.0" width="198.0" height="34.0" rx="3" fill="#e5534b" fill-opacity="0.4" stroke="#e5534b" stroke-width="1"/>
+<text x="432.0" y="146.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="400">Layout</text>
+<rect x="531.0" y="124.0" width="132.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<text x="597.0" y="146.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="400">Paint</text>
+<rect x="663.0" y="124.0" width="22.0" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="230.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">animate transform</text>
+<text x="40.0" y="250.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">≈1.6 ms: smooth, even if JS is busy</text>
+<rect x="300.0" y="214.0" width="13.2" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.4" stroke="#9b8cff" stroke-width="1"/>
+<rect x="313.2" y="214.0" width="22.0" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Width changes force layout of the element and everything it pushes, every frame, on the main thread.</text>
+<text x="40.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Transforms move a pre-painted layer on the compositor thread, so long JavaScript tasks do not stutter them.</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 369" width="880" height="369" role="img" aria-label="During a long JavaScript task, a compositor-driven transform animation keeps producing frames while a width animation on the main thread freezes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="369" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Main thread vs compositor thread</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a 300 ms JavaScript task lands mid-animation</text>
+<text x="40.0" y="124.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Main thread</text>
+<rect x="200.0" y="106.0" width="124.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.3" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="324.0" y="106.0" width="341.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.4" stroke="#e5534b" stroke-width="1.2"/>
+<text x="494.5" y="126.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">long task: 300 ms</text>
+<rect x="665.0" y="106.0" width="155.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.3" stroke="#ff5b2e" stroke-width="1"/>
+<text x="40.0" y="190.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Compositor</text>
+<rect x="201.0" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="226.8" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="252.7" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="278.5" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="304.3" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="330.2" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="356.0" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="381.8" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="407.7" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="433.5" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="459.3" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="485.2" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="511.0" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="536.8" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="562.7" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="588.5" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="614.3" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="640.2" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="666.0" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="691.8" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="717.7" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="743.5" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="769.3" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<rect x="795.2" y="172.0" width="22.8" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="212.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">transform anim</text>
+<text x="40.0" y="256.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Main thread</text>
+<text x="40.0" y="276.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">width anim</text>
+<rect x="201.0" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="226.8" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="252.7" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="278.5" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="304.3" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="666.0" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="691.8" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="717.7" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="743.5" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="769.3" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="795.2" y="240.0" width="22.8" height="30.0" rx="2" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="324.0" y="240.0" width="341.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="494.5" y="260.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">frozen: no frames</text>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">CSS animations and Web Animations of transform and opacity are handed to the compositor and keep running</text>
+<text x="40.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">at full rate while the main thread is blocked. Layout-based animations need the main thread for every frame.</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 391" width="360" height="391" role="img" aria-label="Animating width spends about 17.5 ms per frame on style, layout and paint and drops frames, while animating transform spends under 2 ms" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="391" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Frame budget</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">width vs transform</text>
+<line x1="283.2" y1="92.0" x2="283.2" y2="300.0" stroke="#e5534b" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="283.2" y="88.0" font-size="10" fill="#e5534b" text-anchor="end" font-weight="400">16.7 ms</text>
+<text x="16.0" y="110.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">animate width</text>
+<rect x="16.0" y="120.0" width="24.0" height="28.0" rx="3" fill="#9b8cff" fill-opacity="0.4" stroke="#9b8cff" stroke-width="1"/>
+<rect x="40.0" y="120.0" width="144.0" height="28.0" rx="3" fill="#e5534b" fill-opacity="0.4" stroke="#e5534b" stroke-width="1"/>
+<rect x="184.0" y="120.0" width="96.0" height="28.0" rx="3" fill="#e2b45a" fill-opacity="0.4" stroke="#e2b45a" stroke-width="1"/>
+<rect x="280.0" y="120.0" width="16.0" height="28.0" rx="3" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<text x="16.0" y="168.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">≈17.5 ms · drops frames</text>
+<text x="16.0" y="206.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">animate transform</text>
+<rect x="16.0" y="216.0" width="9.6" height="28.0" rx="3" fill="#9b8cff" fill-opacity="0.4" stroke="#9b8cff" stroke-width="1"/>
+<rect x="25.6" y="216.0" width="16.0" height="28.0" rx="3" fill="#7cc47f" fill-opacity="0.4" stroke="#7cc47f" stroke-width="1"/>
+<text x="16.0" y="264.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">≈1.6 ms · smooth</text>
+<rect x="16.0" y="292.0" width="12.0" height="12.0" rx="2" fill="#9b8cff" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="302.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">style</text>
+<rect x="90.1" y="292.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="108.1" y="302.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">layout</text>
+<rect x="171.0" y="292.0" width="12.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="189.0" y="302.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">paint</text>
+<rect x="245.1" y="292.0" width="12.0" height="12.0" rx="2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="263.1" y="302.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">composite</text>
+<text x="16.0" y="342.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Transforms run on the compositor,</text>
+<text x="16.0" y="361.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">not the main thread.</text>
+</svg>
