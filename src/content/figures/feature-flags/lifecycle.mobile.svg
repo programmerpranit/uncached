@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 453" width="360" height="453" role="img" aria-label="A flag is created with an owner and expiry, deployed dark, ramped from 1 to 100 percent, held fully on, then removed from code; rollback flips it off. Release, experiment, ops and permission flags have different lifespans" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="453" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Flag lifecycle</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">or it becomes permanent debt</text>
+<rect x="16.0" y="80.0" width="328.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="104.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Create — owner + expiry</text>
+<rect x="16.0" y="130.0" width="328.0" height="40.0" rx="3" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1"/>
+<text x="180.0" y="154.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Dark — deployed off</text>
+<rect x="16.0" y="180.0" width="328.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="204.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Ramp — 1→100%</text>
+<rect x="16.0" y="230.0" width="328.0" height="40.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="254.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Full on — 100% stable</text>
+<rect x="16.0" y="280.0" width="328.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="304.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Remove — delete code path</text>
+<text x="16.0" y="346.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">Types by lifespan</text>
+<text x="16.0" y="366.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">release: days–weeks</text>
+<text x="16.0" y="385.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">experiment: weeks</text>
+<text x="16.0" y="404.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">ops / kill switch: long-lived</text>
+<text x="16.0" y="423.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">entitlement: permanent</text>
+</svg>
