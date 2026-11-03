@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 408" width="360" height="408" role="img" aria-label="Timelines of three transports: long polling repeats held GET requests; Server-Sent Events keeps one GET open and streams events one way; WebSocket upgrades once and then exchanges frames in both directions" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="408" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Three ways to push</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">long polling, SSE, WebSocket</text>
+<rect x="16.0" y="84.0" width="328.0" height="92.0" rx="3" fill="#ff5b2e" fill-opacity="0.1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="133.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="106.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">Long polling</text>
+<text x="28.0" y="128.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Client sends GET; server holds it</text>
+<text x="28.0" y="147.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">until data or timeout, then client</text>
+<text x="28.0" y="166.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">immediately re-requests.</text>
+<rect x="16.0" y="188.0" width="328.0" height="92.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="237.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="210.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Server-Sent Events</text>
+<text x="28.0" y="232.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">One long GET; server streams</text>
+<text x="28.0" y="251.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">text events. One-way, auto-</text>
+<text x="28.0" y="270.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">reconnects with Last-Event-ID.</text>
+<rect x="16.0" y="292.0" width="328.0" height="92.0" rx="3" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="341.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="314.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">WebSocket</text>
+<text x="28.0" y="336.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">HTTP Upgrade, then full-duplex</text>
+<text x="28.0" y="355.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">binary/text frames both ways</text>
+<text x="28.0" y="374.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">on one TCP connection.</text>
+</svg>
