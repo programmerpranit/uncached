@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 412" width="880" height="412" role="img" aria-label="Timelines comparing TCP plus TLS 1.3 (two round trips before the request), a new QUIC connection (one round trip) and QUIC 0-RTT resumption (request sent in the first flight)" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="412" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Round trips before the first request byte</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">TCP + TLS 1.3 needs two; QUIC needs one, or zero when resuming</text>
+<line x1="230.0" y1="84.0" x2="230.0" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="230.0" y="78.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">start</text>
+<line x1="410.0" y1="84.0" x2="410.0" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="410.0" y="78.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">1 RTT</text>
+<line x1="590.0" y1="84.0" x2="590.0" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="590.0" y="78.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">2 RTT</text>
+<line x1="770.0" y1="84.0" x2="770.0" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="770.0" y="78.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">3 RTT</text>
+<text x="40.0" y="124.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">TCP + TLS 1.3</text>
+<text x="40.0" y="140.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">2 RTT before request</text>
+<rect x="233.0" y="110.0" width="174.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.25" stroke="#5fb3a1" stroke-width="1"/>
+<text x="320.0" y="128.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">SYN / SYN-ACK</text>
+<rect x="413.0" y="110.0" width="174.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.25" stroke="#9b8cff" stroke-width="1"/>
+<text x="500.0" y="128.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">TLS hello</text>
+<rect x="593.0" y="110.0" width="162.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1"/>
+<text x="674.0" y="128.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">GET</text>
+<text x="40.0" y="202.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">QUIC (new)</text>
+<text x="40.0" y="218.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">1 RTT before request</text>
+<rect x="233.0" y="188.0" width="174.0" height="30.0" rx="3" fill="#d77fa1" fill-opacity="0.25" stroke="#d77fa1" stroke-width="1"/>
+<text x="320.0" y="206.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Initial (QUIC + TLS)</text>
+<rect x="413.0" y="188.0" width="162.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1"/>
+<text x="494.0" y="206.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">GET</text>
+<text x="40.0" y="280.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">QUIC 0-RTT</text>
+<text x="40.0" y="296.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">request in first flight</text>
+<rect x="233.0" y="266.0" width="162.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1"/>
+<text x="314.0" y="284.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Initial + 0-RTT GET</text>
+<text x="40.0" y="350.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">QUIC carries the TLS 1.3 handshake inside its own first packets, so transport and crypto setup share one round trip.</text>
+<text x="40.0" y="366.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">With a resumption ticket, the client can send application data in the very first flight (0-RTT) — but that data can be replayed,</text>
+<text x="40.0" y="382.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">so servers should only accept idempotent requests (GET, not POST /pay) as 0-RTT.</text>
+</svg>

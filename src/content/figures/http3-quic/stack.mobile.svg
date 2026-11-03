@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 365" width="360" height="365" role="img" aria-label="Two stacks side by side: HTTP/2 over TLS over TCP over IP, and HTTP/3 over QUIC (which includes TLS 1.3 and streams) over UDP over IP" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="365" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">HTTP/2 vs HTTP/3 stacks</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">QUIC merges transport + TLS + streams</text>
+<text x="94.0" y="82.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="700">HTTP/2</text>
+<rect x="16.0" y="94.0" width="156.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="94.0" y="115.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">HTTP/2</text>
+<rect x="16.0" y="133.0" width="156.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.22" stroke="#9b8cff" stroke-width="1"/>
+<text x="94.0" y="154.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">TLS</text>
+<rect x="16.0" y="172.0" width="156.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="94.0" y="193.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">TCP</text>
+<rect x="16.0" y="211.0" width="156.0" height="34.0" rx="3" fill="#4a4136" fill-opacity="0.22" stroke="#4a4136" stroke-width="1"/>
+<text x="94.0" y="232.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">IP</text>
+<text x="266.0" y="82.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="700">HTTP/3</text>
+<rect x="188.0" y="94.0" width="156.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="266.0" y="115.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">HTTP/3</text>
+<rect x="188.0" y="133.0" width="156.0" height="74.0" rx="3" fill="#d77fa1" fill-opacity="0.22" stroke="#d77fa1" stroke-width="1"/>
+<text x="266.0" y="167.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">QUIC</text>
+<text x="266.0" y="183.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">+ TLS 1.3, streams</text>
+<rect x="188.0" y="212.0" width="156.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="266.0" y="233.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">UDP</text>
+<rect x="188.0" y="251.0" width="156.0" height="34.0" rx="3" fill="#4a4136" fill-opacity="0.22" stroke="#4a4136" stroke-width="1"/>
+<text x="266.0" y="272.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">IP</text>
+<text x="16.0" y="290.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">QUIC replaces TCP + TLS and moves</text>
+<text x="16.0" y="305.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">streams into the transport. It runs in</text>
+<text x="16.0" y="320.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">user space over UDP, so it can evolve</text>
+<text x="16.0" y="335.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">without kernel or middlebox changes.</text>
+</svg>

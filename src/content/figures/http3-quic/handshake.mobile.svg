@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 370" width="360" height="370" role="img" aria-label="Timelines comparing TCP plus TLS 1.3 (two round trips before the request), a new QUIC connection (one round trip) and QUIC 0-RTT resumption (request sent in the first flight)" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="370" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Round trips before the request</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">TCP+TLS 2 · QUIC 1 · 0-RTT 0</text>
+<text x="16.0" y="90.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="700">TCP + TLS 1.3</text>
+<text x="344.0" y="90.0" font-size="10" fill="#ff5b2e" text-anchor="end" font-weight="700">2 RTT</text>
+<rect x="16.0" y="100.0" width="105.3" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.25" stroke="#5fb3a1" stroke-width="1"/>
+<text x="68.7" y="118.4" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">TCP</text>
+<rect x="125.3" y="100.0" width="105.3" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.25" stroke="#9b8cff" stroke-width="1"/>
+<text x="178.0" y="118.4" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">TLS</text>
+<rect x="234.7" y="100.0" width="105.3" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1"/>
+<text x="287.3" y="118.4" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">GET</text>
+<text x="16.0" y="164.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="700">QUIC (new)</text>
+<text x="344.0" y="164.0" font-size="10" fill="#ff5b2e" text-anchor="end" font-weight="700">1 RTT</text>
+<rect x="16.0" y="174.0" width="160.0" height="30.0" rx="3" fill="#d77fa1" fill-opacity="0.25" stroke="#d77fa1" stroke-width="1"/>
+<text x="96.0" y="192.4" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">QUIC+TLS</text>
+<rect x="180.0" y="174.0" width="160.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1"/>
+<text x="260.0" y="192.4" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">GET</text>
+<text x="16.0" y="238.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="700">QUIC 0-RTT</text>
+<text x="344.0" y="238.0" font-size="10" fill="#ff5b2e" text-anchor="end" font-weight="700">0 RTT</text>
+<rect x="16.0" y="248.0" width="328.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="266.4" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">hello + GET</text>
+<text x="16.0" y="310.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">QUIC carries TLS inside its first</text>
+<text x="16.0" y="325.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">packets. 0-RTT data can be replayed,</text>
+<text x="16.0" y="340.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">so accept only idempotent requests.</text>
+</svg>
