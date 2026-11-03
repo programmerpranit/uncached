@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 410" width="880" height="410" role="img" aria-label="The sender computes an HMAC-SHA256 over the timestamp and raw body and sends both in headers; the receiver checks the timestamp window, recomputes the HMAC on raw bytes, compares in constant time and deduplicates by event ID" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="410" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ede6d8"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Signing and verifying a webhook</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">HMAC over timestamp + body, checked in constant time</text>
+<text x="40.0" y="100.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">Sender</text>
+<text x="480.0" y="100.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Receiver</text>
+<rect x="40.0" y="116.0" width="380.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="230.0" y="140.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">payload = ts + "." + raw_body</text>
+<rect x="40.0" y="172.0" width="380.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="230.0" y="196.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">sig = HMAC-SHA256(secret, payload)</text>
+<rect x="40.0" y="228.0" width="380.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="230.0" y="251.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">headers: Webhook-Timestamp, Webhook-Signature</text>
+<line x1="422.0" y1="248.0" x2="478.0" y2="248.0" stroke="#ede6d8" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="480.0" y="116.0" width="250.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="605.0" y="139.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">1. |now − ts| &lt; 5 min?</text>
+<text x="740.0" y="141.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">reject replays</text>
+<rect x="480.0" y="172.0" width="250.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="605.0" y="195.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">2. recompute HMAC on RAW bytes</text>
+<text x="740.0" y="197.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">before JSON parse</text>
+<rect x="480.0" y="228.0" width="250.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="605.0" y="251.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">3. constant-time compare</text>
+<text x="740.0" y="253.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">no timing leak</text>
+<rect x="480.0" y="284.0" width="250.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="605.0" y="307.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">4. seen event ID?</text>
+<text x="740.0" y="309.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">dedupe, 200 OK</text>
+<text x="40.0" y="380.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Support two active secrets during rotation; sign with the new one, accept either.</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 439" width="360" height="439" role="img" aria-label="A consumer verifies the signature, inserts the event ID with a unique constraint, returns 200 within a second, and processes asynchronously by fetching the latest state, so duplicates and reordering are harmless" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="439" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ede6d8"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Consumer handling</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ack fast, process later</text>
+<rect x="16.0" y="86.0" width="328.0" height="36.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="108.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">POST /hooks</text>
+<line x1="180.0" y1="124.0" x2="180.0" y2="142.0" stroke="#ede6d8" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="144.0" width="328.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="166.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">verify + insert event_id</text>
+<text x="180.0" y="194.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">UNIQUE → dupes skipped</text>
+<rect x="16.0" y="202.0" width="328.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="224.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">200 OK in &lt; 1 s</text>
+<line x1="180.0" y1="240.0" x2="180.0" y2="258.0" stroke="#ede6d8" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="260.0" width="328.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="282.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">worker processes later</text>
+<line x1="180.0" y1="298.0" x2="180.0" y2="316.0" stroke="#ede6d8" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="318.0" width="328.0" height="36.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="340.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">fetch latest state</text>
+<text x="180.0" y="368.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">events are hints</text>
+<text x="16.0" y="390.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Expect duplicates and</text>
+<text x="16.0" y="409.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">out-of-order delivery.</text>
+</svg>

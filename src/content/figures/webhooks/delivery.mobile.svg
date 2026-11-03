@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 433" width="360" height="433" role="img" aria-label="Webhook delivery pipeline: the domain write and an outbox row commit together, a dispatcher signs and POSTs to the customer endpoint, failures retry with exponential backoff and eventually land in a dead letter queue or disable the endpoint" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="433" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ede6d8"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Webhook delivery</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">outbox → dispatcher → retries</text>
+<rect x="16.0" y="84.0" width="328.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="105.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Domain write + outbox</text>
+<line x1="180.0" y1="118.0" x2="180.0" y2="132.0" stroke="#ede6d8" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="132.0" width="328.0" height="34.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="153.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Outbox / queue</text>
+<line x1="180.0" y1="166.0" x2="180.0" y2="180.0" stroke="#ede6d8" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="180.0" width="328.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="201.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Dispatcher: sign + POST</text>
+<line x1="180.0" y1="214.0" x2="180.0" y2="228.0" stroke="#ede6d8" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="228.0" width="328.0" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="249.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Customer endpoint</text>
+<text x="16.0" y="290.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="700">Non-2xx → backoff retries</text>
+<text x="16.0" y="312.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">1m · 5m · 30m · 2h · 8h · 24h</text>
+<rect x="16.0" y="326.0" width="328.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="344.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">then DLQ / disable + alert</text>
+<text x="16.0" y="384.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">At-least-once delivery:</text>
+<text x="16.0" y="403.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">consumers dedupe by event ID.</text>
+</svg>
