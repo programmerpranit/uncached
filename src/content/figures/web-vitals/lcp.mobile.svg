@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 453" width="360" height="453" role="img" aria-label="LCP broken into time to first byte, resource load delay, resource load duration and element render delay, with fixes for each" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="453" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Where LCP time goes</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">four sub-parts</text>
+<rect x="16.0" y="84.0" width="328.0" height="26.0" rx="3" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="102.0" font-size="11.5" fill="#1b1712" text-anchor="start" font-weight="700">TTFB</text>
+<text x="16.0" y="128.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="600">server + network</text>
+<text x="16.0" y="144.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">CDN, caching, fewer redirects</text>
+<rect x="16.0" y="162.0" width="205.0" height="26.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="180.0" font-size="11.5" fill="#1b1712" text-anchor="start" font-weight="700">Load delay</text>
+<text x="16.0" y="206.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="600">until image request starts</text>
+<text x="16.0" y="222.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">preload, no lazy-loading, in HTML</text>
+<rect x="16.0" y="240.0" width="164.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="258.0" font-size="11.5" fill="#1b1712" text-anchor="start" font-weight="700">Load duration</text>
+<text x="16.0" y="284.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="600">image download</text>
+<text x="16.0" y="300.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">smaller image, AVIF/WebP, sizes</text>
+<rect x="16.0" y="318.0" width="123.0" height="26.0" rx="3" fill="#d77fa1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="336.0" font-size="11.5" fill="#1b1712" text-anchor="start" font-weight="700">Render delay</text>
+<text x="16.0" y="362.0" font-size="10.5" fill="#d77fa1" text-anchor="start" font-weight="600">until it paints</text>
+<text x="16.0" y="378.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">less blocking JS/CSS, no hidden-until-JS</text>
+<text x="16.0" y="404.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Find the biggest sub-part first;</text>
+<text x="16.0" y="423.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">fix that one.</text>
+</svg>

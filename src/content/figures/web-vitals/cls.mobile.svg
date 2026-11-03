@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 406" width="360" height="406" role="img" aria-label="A late-loading ad pushing article text down, with the impact fraction and distance fraction that make up its layout shift score" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="406" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">How a layout shift is scored</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">impact × distance</text>
+<rect x="16.0" y="84.0" width="140.0" height="190.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="26.0" y="96.0" width="120.0" height="70.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<text x="86.0" y="136.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">text</text>
+<rect x="204.0" y="84.0" width="140.0" height="190.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="214.0" y="96.0" width="120.0" height="48.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="none" stroke-width="1"/>
+<text x="274.0" y="124.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">ad</text>
+<rect x="214.0" y="150.0" width="120.0" height="70.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<text x="274.0" y="190.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">text</text>
+<line x1="160.0" y1="180.0" x2="200.0" y2="180.0" stroke="#a69d8e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="16.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">impact ≈ 0.66, distance ≈ 0.29</text>
+<text x="16.0" y="319.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">score ≈ 0.19</text>
+<text x="16.0" y="357.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Shifts &lt; 1 s apart sum into a</text>
+<text x="16.0" y="376.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">window; the worst window is CLS.</text>
+</svg>

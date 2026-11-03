@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 309" width="880" height="309" role="img" aria-label="LCP broken into time to first byte, resource load delay, resource load duration and element render delay, with fixes for each" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="309" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Where LCP time goes</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">four sub-parts from navigation to the largest element painting</text>
+<rect x="40.0" y="100.0" width="316.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="48.0" y="127.0" font-size="12" fill="#1b1712" text-anchor="start" font-weight="700">TTFB</text>
+<rect x="360.0" y="100.0" width="196.0" height="44.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="368.0" y="127.0" font-size="12" fill="#1b1712" text-anchor="start" font-weight="700">Load delay</text>
+<rect x="560.0" y="100.0" width="156.0" height="44.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="568.0" y="127.0" font-size="12" fill="#1b1712" text-anchor="start" font-weight="700">Load duration</text>
+<rect x="720.0" y="100.0" width="116.0" height="44.0" rx="3" fill="#d77fa1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="728.0" y="127.0" font-size="12" fill="#1b1712" text-anchor="start" font-weight="700">Render delay</text>
+<text x="44.0" y="166.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="600">server + network</text>
+<text x="44.0" y="186.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">CDN, caching,</text>
+<text x="44.0" y="201.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">fewer redirects</text>
+<text x="364.0" y="166.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="600">until image request starts</text>
+<text x="364.0" y="186.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">preload, not lazy,</text>
+<text x="364.0" y="201.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">URL in the HTML</text>
+<text x="564.0" y="166.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="600">image download</text>
+<text x="564.0" y="186.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">smaller file,</text>
+<text x="564.0" y="201.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">AVIF/WebP, sizes</text>
+<text x="724.0" y="166.0" font-size="11" fill="#d77fa1" text-anchor="start" font-weight="600">until it paints</text>
+<text x="724.0" y="186.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">less blocking</text>
+<text x="724.0" y="201.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">JS and CSS</text>
+<line x1="40.0" y1="80.0" x2="40.0" y2="150.0" stroke="#a69d8e" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="44.0" y="88.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">navigation start</text>
+<line x1="838.0" y1="80.0" x2="838.0" y2="150.0" stroke="#a69d8e" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="834.0" y="88.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">LCP</text>
+<text x="40.0" y="260.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Profile first: if TTFB dominates, image tweaks won't help; if load delay dominates, the browser found the</text>
+<text x="40.0" y="279.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">image too late (CSS background, client-rendered markup, loading="lazy").</text>
+</svg>
