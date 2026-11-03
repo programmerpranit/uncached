@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 448" width="360" height="448" role="img" aria-label="Client and server exchange ephemeral public key shares, each computes the same shared secret, and an HKDF key schedule derives handshake keys, application keys and a resumption secret" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="448" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">From key shares to session keys</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">ECDHE + HKDF key schedule</text>
+<rect x="16.0" y="70.0" width="156.0" height="52.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="94.0" y="93.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">client a</text>
+<text x="94.0" y="109.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">sends A = a·G</text>
+<rect x="188.0" y="70.0" width="156.0" height="52.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="266.0" y="93.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">server b</text>
+<text x="266.0" y="109.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">sends B = b·G</text>
+<rect x="60.0" y="146.0" width="240.0" height="38.0" rx="3" fill="#e2b45a" fill-opacity="0.2" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="168.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">shared = a·B = b·A</text>
+<line x1="94.0" y1="122.0" x2="140.0" y2="146.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<line x1="266.0" y1="122.0" x2="220.0" y2="146.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="60.0" y="206.0" width="240.0" height="38.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="228.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">HKDF + transcript hash</text>
+<line x1="180.0" y1="184.0" x2="180.0" y2="206.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="60.0" y="270.0" width="240.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="290.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">handshake keys</text>
+<rect x="60.0" y="314.0" width="240.0" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="334.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">application keys</text>
+<rect x="60.0" y="358.0" width="240.0" height="34.0" rx="3" fill="#d77fa1" fill-opacity="0.18" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="378.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">resumption PSK</text>
+<line x1="180.0" y1="244.0" x2="180.0" y2="270.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<text x="16.0" y="418.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Ephemeral keys → forward secrecy.</text>
+</svg>

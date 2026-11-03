@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 410" width="880" height="410" role="img" aria-label="Leaf certificate signed by an intermediate signed by a root in the trust store; the client checks signatures, hostname, validity, revocation, and the CertificateVerify signature" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="410" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Authenticating the server</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">key exchange alone could be with an attacker; the certificate chain proves who holds the other end</text>
+<rect x="60.0" y="86.0" width="300.0" height="56.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="210.0" y="111.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">leaf: api.example.com</text>
+<text x="210.0" y="127.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">signed by intermediate · SAN = hostname</text>
+<line x1="210.0" y1="142.0" x2="210.0" y2="168.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="60.0" y="168.0" width="300.0" height="56.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="210.0" y="193.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">intermediate CA</text>
+<text x="210.0" y="209.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">signed by root · sent by the server</text>
+<line x1="210.0" y1="224.0" x2="210.0" y2="250.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="60.0" y="250.0" width="300.0" height="56.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="210.0" y="275.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">root CA</text>
+<text x="210.0" y="291.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">self-signed · in client trust store</text>
+<text x="420.0" y="98.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Client checks</text>
+<text x="420.0" y="128.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ signatures valid up to a trusted root</text>
+<text x="420.0" y="152.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ hostname matches a SAN entry</text>
+<text x="420.0" y="176.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ within validity dates; not revoked (OCSP / CRL)</text>
+<text x="420.0" y="200.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ logged in Certificate Transparency (browsers)</text>
+<text x="420.0" y="224.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ CertificateVerify: server signs the transcript</text>
+<text x="420.0" y="248.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">   with the leaf private key → proves possession</text>
+<text x="440.0" y="380.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">Any check fails → handshake aborts with an alert; no application data is ever sent.</text>
+</svg>

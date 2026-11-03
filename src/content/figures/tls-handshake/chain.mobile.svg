@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 396" width="360" height="396" role="img" aria-label="Leaf certificate signed by an intermediate signed by a root in the trust store; the client checks signatures, hostname, validity, revocation, and the CertificateVerify signature" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="396" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Authenticating the server</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the certificate chain ends at a trusted root</text>
+<rect x="16.0" y="70.0" width="328.0" height="52.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="93.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">leaf: api.example.com</text>
+<text x="180.0" y="109.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">SAN = hostname</text>
+<line x1="180.0" y1="122.0" x2="180.0" y2="142.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="142.0" width="328.0" height="52.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="165.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">intermediate CA</text>
+<text x="180.0" y="181.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">sent by the server</text>
+<line x1="180.0" y1="194.0" x2="180.0" y2="214.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="214.0" width="328.0" height="52.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="237.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">root CA</text>
+<text x="180.0" y="253.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">in client trust store</text>
+<text x="16.0" y="300.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">✓ signatures chain to trusted root</text>
+<text x="16.0" y="322.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">✓ hostname in SAN</text>
+<text x="16.0" y="344.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">✓ dates valid, not revoked</text>
+<text x="16.0" y="366.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">✓ CertificateVerify signature</text>
+</svg>
