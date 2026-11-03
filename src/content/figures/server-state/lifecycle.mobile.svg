@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 454" width="360" height="454" role="img" aria-label="A cached query moves from fetching to fresh to stale, refetching on triggers, then inactive and garbage collected" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="454" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Life of a cached query</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">staleTime and gcTime</text>
+<rect x="16.0" y="84.0" width="130.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="81.0" y="108.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">fetching</text>
+<text x="158.0" y="100.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">no data yet:</text>
+<text x="158.0" y="115.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">show skeleton</text>
+<line x1="81.0" y1="126.0" x2="81.0" y2="140.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="142.0" width="130.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="81.0" y="166.3" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">fresh</text>
+<text x="158.0" y="158.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">served from cache,</text>
+<text x="158.0" y="173.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">no refetch</text>
+<line x1="81.0" y1="184.0" x2="81.0" y2="198.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="200.0" width="130.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="81.0" y="224.3" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">stale</text>
+<text x="158.0" y="216.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">served from cache,</text>
+<text x="158.0" y="231.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">refetch on trigger</text>
+<line x1="81.0" y1="242.0" x2="81.0" y2="256.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="258.0" width="130.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="81.0" y="282.3" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="600">inactive</text>
+<text x="158.0" y="274.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">no component uses it;</text>
+<text x="158.0" y="289.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">kept for gcTime</text>
+<line x1="81.0" y1="300.0" x2="81.0" y2="314.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="316.0" width="130.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="81.0" y="340.3" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">removed</text>
+<text x="158.0" y="332.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">garbage collected</text>
+<text x="16.0" y="386.0" font-size="11.5" fill="#d77fa1" text-anchor="start" font-weight="400">stale → refetch on mount, focus,</text>
+<text x="16.0" y="405.0" font-size="11.5" fill="#d77fa1" text-anchor="start" font-weight="400">reconnect or invalidate.</text>
+<text x="16.0" y="424.0" font-size="11.5" fill="#d77fa1" text-anchor="start" font-weight="400">Cached data shows instantly.</text>
+</svg>

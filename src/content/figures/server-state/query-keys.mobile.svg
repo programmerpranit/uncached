@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 558" width="360" height="558" role="img" aria-label="Components reading the same query key share one cache entry and request; a mutation invalidates the todos keys so they refetch" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="558" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">One cache, many readers</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">mutations invalidate keys</text>
+<rect x="16.0" y="84.0" width="328.0" height="64.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="113.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">&lt;Header&gt; + &lt;Avatar&gt;</text>
+<text x="180.0" y="129.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">both useQuery(['user'])</text>
+<line x1="180.0" y1="150.0" x2="180.0" y2="170.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="174.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="201.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">['user'] → one request</text>
+<rect x="16.0" y="240.0" width="328.0" height="64.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="269.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">&lt;TodoList&gt; + &lt;TodoCount&gt;</text>
+<text x="180.0" y="285.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">useQuery(['todos',{done:false}])</text>
+<line x1="180.0" y1="306.0" x2="180.0" y2="326.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="330.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="357.3" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">['todos',…] stale → refetch</text>
+<rect x="16.0" y="404.0" width="328.0" height="56.0" rx="3" fill="#ff5b2e" fill-opacity="0.9" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="429.0" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="600">useMutation(addTodo)</text>
+<text x="180.0" y="445.0" font-size="11" fill="#1b1712" text-anchor="middle" font-weight="400">onSuccess: invalidate ['todos']</text>
+<line x1="180.0" y1="402.0" x2="180.0" y2="380.0" stroke="#d77fa1" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="16.0" y="490.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Same key → shared entry and one</text>
+<text x="16.0" y="509.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">request. Invalidating a prefix</text>
+<text x="16.0" y="528.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">marks all matching queries stale.</text>
+</svg>

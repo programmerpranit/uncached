@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 434" width="880" height="434" role="img" aria-label="A cached query moves from fetching to fresh to stale, refetching on triggers, then inactive and garbage collected" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="434" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Life of a cached query</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">stale-while-revalidate, driven by staleTime and gcTime</text>
+<rect x="30.0" y="120.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="104.0" y="149.7" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">fetching</text>
+<text x="104.0" y="194.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">no data yet:</text>
+<text x="104.0" y="211.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">show skeleton</text>
+<line x1="180.0" y1="145.0" x2="196.0" y2="145.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="198.0" y="120.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="272.0" y="149.7" font-size="13" fill="#7cc47f" text-anchor="middle" font-weight="600">fresh</text>
+<text x="272.0" y="194.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">served from cache,</text>
+<text x="272.0" y="211.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">no refetch</text>
+<line x1="348.0" y1="145.0" x2="364.0" y2="145.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="366.0" y="120.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="440.0" y="149.7" font-size="13" fill="#9b8cff" text-anchor="middle" font-weight="600">stale</text>
+<text x="440.0" y="194.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">served from cache,</text>
+<text x="440.0" y="211.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">refetch on trigger</text>
+<line x1="516.0" y1="145.0" x2="532.0" y2="145.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="534.0" y="120.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="608.0" y="149.7" font-size="13" fill="#a69d8e" text-anchor="middle" font-weight="600">inactive</text>
+<text x="608.0" y="194.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">no component uses it;</text>
+<text x="608.0" y="211.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">kept for gcTime</text>
+<line x1="684.0" y1="145.0" x2="700.0" y2="145.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="702.0" y="120.0" width="148.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="776.0" y="149.7" font-size="13" fill="#e5534b" text-anchor="middle" font-weight="600">removed</text>
+<text x="776.0" y="194.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">garbage collected</text>
+<text x="282.0" y="112.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">after staleTime</text>
+<text x="450.0" y="112.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">unmount</text>
+<text x="618.0" y="112.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">after gcTime</text>
+<path d="M 450 222 C 450 270, 282 270, 282 224" fill="none" stroke="#d77fa1" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="366.0" y="286.0" font-size="11" fill="#d77fa1" text-anchor="middle" font-weight="400">refetch triggers: mount, window focus,</text>
+<text x="366.0" y="302.0" font-size="11" fill="#d77fa1" text-anchor="middle" font-weight="400">reconnect, interval, invalidateQueries()</text>
+<rect x="30.0" y="330.0" width="820.0" height="80.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="46.0" y="356.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The user always sees cached data immediately if there is any; the refetch happens in the background and</text>
+<text x="46.0" y="375.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the UI updates when it lands. Defaults in TanStack Query: staleTime 0 (stale at once), gcTime 5 minutes.</text>
+</svg>
