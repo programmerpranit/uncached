@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 459" width="880" height="459" role="img" aria-label="Diamond dependency graph showing push-pull propagation: a write marks nodes stale and reads recompute each once, avoiding glitches" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="459" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Push-pull: no glitches</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">mark dirty eagerly, recompute lazily, once</text>
+<rect x="380.0" y="90.0" width="120.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="440.0" y="112.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">a (signal)</text>
+<rect x="220.0" y="170.0" width="150.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="295.0" y="192.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">b = a * 2</text>
+<rect x="510.0" y="170.0" width="150.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="585.0" y="192.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">c = a + 1</text>
+<rect x="360.0" y="250.0" width="160.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="272.3" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">d = b + c</text>
+<rect x="360.0" y="330.0" width="160.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="440.0" y="352.3" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">effect: log(d)</text>
+<line x1="420.0" y1="126.0" x2="310.0" y2="170.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="460.0" y1="126.0" x2="570.0" y2="170.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="300.0" y1="206.0" x2="420.0" y2="250.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="580.0" y1="206.0" x2="460.0" y2="250.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="440.0" y1="286.0" x2="440.0" y2="330.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="100.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">1. push</text>
+<text x="40.0" y="120.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">a.set(5) marks b, c, d</text>
+<text x="40.0" y="136.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">and the effect as stale.</text>
+<text x="40.0" y="152.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">No values are computed.</text>
+<text x="700.0" y="100.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">2. pull</text>
+<text x="700.0" y="120.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">The effect reads d.</text>
+<text x="700.0" y="136.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">d asks b and c, which</text>
+<text x="700.0" y="152.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">recompute from a.</text>
+<text x="700.0" y="250.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">3. result</text>
+<text x="700.0" y="270.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">d computed once,</text>
+<text x="700.0" y="286.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">from consistent b and c.</text>
+<text x="700.0" y="302.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">effect runs once.</text>
+<text x="40.0" y="410.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A naive push system would recompute d after b and again after c, briefly showing d from a new b and an old c:</text>
+<text x="40.0" y="429.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a "glitch". Topological order or lazy pulling guarantees each node sees a consistent snapshot.</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img" aria-label="Comparison of a virtual DOM component re-render, which re-runs and diffs a whole subtree, with a signal update that runs only its subscribed effect" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="440" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What one update costs</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">component re-render vs fine-grained update</text>
+<rect x="40.0" y="86.0" width="380.0" height="290.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="110.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">Virtual DOM (component re-render)</text>
+<rect x="160.0" y="128.0" width="140.0" height="32.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="230.0" y="148.1" font-size="11.5" fill="#e5534b" text-anchor="middle" font-weight="600">&lt;App&gt; (state)</text>
+<rect x="60.0" y="190.0" width="100.0" height="30.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="110.0" y="209.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="600">&lt;Header&gt;</text>
+<line x1="230.0" y1="160.0" x2="110.0" y2="190.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="180.0" y="190.0" width="100.0" height="30.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="230.0" y="209.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="600">&lt;List&gt;</text>
+<line x1="230.0" y1="160.0" x2="230.0" y2="190.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="300.0" y="190.0" width="100.0" height="30.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="350.0" y="209.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="600">&lt;Footer&gt;</text>
+<line x1="230.0" y1="160.0" x2="350.0" y2="190.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="70.0" y="250.0" width="70.0" height="26.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="105.0" y="266.6" font-size="10" fill="#e5534b" text-anchor="middle" font-weight="600">&lt;Row&gt;</text>
+<line x1="220.0" y1="220.0" x2="105.0" y2="250.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="150.0" y="250.0" width="70.0" height="26.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="185.0" y="266.6" font-size="10" fill="#e5534b" text-anchor="middle" font-weight="600">&lt;Row&gt;</text>
+<line x1="220.0" y1="220.0" x2="185.0" y2="250.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="230.0" y="250.0" width="70.0" height="26.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="265.0" y="266.6" font-size="10" fill="#e5534b" text-anchor="middle" font-weight="600">&lt;Row&gt;</text>
+<line x1="220.0" y1="220.0" x2="265.0" y2="250.0" stroke="#a69d8e" stroke-width="1"/>
+<rect x="310.0" y="250.0" width="70.0" height="26.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="345.0" y="266.6" font-size="10" fill="#e5534b" text-anchor="middle" font-weight="600">&lt;Row&gt;</text>
+<line x1="220.0" y1="220.0" x2="345.0" y2="250.0" stroke="#a69d8e" stroke-width="1"/>
+<text x="56.0" y="306.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">state changes → App and every child re-run,</text>
+<text x="56.0" y="322.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">new tree is diffed against the old one,</text>
+<text x="56.0" y="338.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">then one text node is patched.</text>
+<rect x="460.0" y="86.0" width="380.0" height="290.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="476.0" y="110.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">Signals (fine-grained)</text>
+<rect x="560.0" y="128.0" width="160.0" height="32.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="640.0" y="148.1" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="600">count signal</text>
+<rect x="560.0" y="210.0" width="160.0" height="32.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="640.0" y="230.1" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">text effect</text>
+<rect x="560.0" y="270.0" width="160.0" height="30.0" rx="3" fill="#1b1712" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="640.0" y="289.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="600">"Clicked 3 times"</text>
+<line x1="640.0" y1="160.0" x2="640.0" y2="210.0" stroke="#e5534b" stroke-width="2" marker-end="url(#ah0)"/>
+<line x1="640.0" y1="242.0" x2="640.0" y2="270.0" stroke="#e5534b" stroke-width="2" marker-end="url(#ah0)"/>
+<text x="476.0" y="326.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">components ran once, at setup; an update</text>
+<text x="476.0" y="342.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">calls just the subscribed effect.</text>
+<text x="40.0" y="410.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Both end with the same DOM write. The difference is how much code runs to find it: O(tree) vs O(dependents).</text>
+</svg>
