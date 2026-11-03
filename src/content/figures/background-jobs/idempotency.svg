@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 407" width="880" height="407" role="img" aria-label="Duplicate execution: worker A performs a side effect then crashes before acknowledging, the lease expires, worker B reruns the job; without an idempotency key the card is charged twice, with one the second run is skipped" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="407" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Why jobs must be idempotent</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the same job can run twice; the side effect must not happen twice</text>
+<rect x="40.0" y="100.0" width="184.0" height="70.0" rx="8" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="52.0" y="124.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">1. Worker A</text>
+<text x="52.0" y="150.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">charges card, sends email</text>
+<line x1="224.0" y1="135.0" x2="244.0" y2="135.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="244.0" y="100.0" width="184.0" height="70.0" rx="8" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1.2"/>
+<text x="256.0" y="124.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">2. Worker A</text>
+<text x="256.0" y="150.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">crashes before ack</text>
+<line x1="428.0" y1="135.0" x2="448.0" y2="135.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="448.0" y="100.0" width="184.0" height="70.0" rx="8" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="460.0" y="124.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">3. Queue</text>
+<text x="460.0" y="150.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">lease expires, re-delivers</text>
+<line x1="632.0" y1="135.0" x2="652.0" y2="135.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="652.0" y="100.0" width="184.0" height="70.0" rx="8" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="664.0" y="124.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">4. Worker B</text>
+<text x="664.0" y="150.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">runs the same job again</text>
+<rect x="40.0" y="210.0" width="380.0" height="110.0" rx="10" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1.2"/>
+<text x="56.0" y="236.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">Without a key</text>
+<text x="56.0" y="262.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Card charged twice.</text>
+<text x="56.0" y="282.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Two emails sent.</text>
+<text x="56.0" y="302.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Support ticket.</text>
+<rect x="460.0" y="210.0" width="380.0" height="110.0" rx="10" fill="#7cc47f" fill-opacity="0.08" stroke="#7cc47f" stroke-width="1.2"/>
+<text x="476.0" y="236.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">With an idempotency key</text>
+<text x="476.0" y="262.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">job key = order-812:charge</text>
+<text x="476.0" y="282.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Worker B: key already done → skip,</text>
+<text x="476.0" y="302.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">or pass it to the payment API.</text>
+<text x="40.0" y="358.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Record completion in the same transaction as the side effect where you can, and pass idempotency keys</text>
+<text x="40.0" y="377.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">to external APIs where you can’t. Exactly-once delivery is a myth; exactly-once effect is achievable.</text>
+</svg>

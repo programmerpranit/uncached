@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 512" width="360" height="512" role="img" aria-label="Job state machine: scheduled jobs become queued when due, a worker leases a job to run it, success acks and removes it, errors retry with exponential backoff, exhausted jobs go to a dead-letter state, and an expired lease returns the job to the queue" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="512" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">A job’s life</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what the queue tracks</text>
+<rect x="16.0" y="90.0" width="328.0" height="44.0" rx="8" fill="#e2b45a" fill-opacity="0.14" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="28.0" y="110.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">scheduled</text>
+<text x="28.0" y="126.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">run_at in the future</text>
+<rect x="16.0" y="142.0" width="328.0" height="44.0" rx="8" fill="#9b8cff" fill-opacity="0.14" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="28.0" y="162.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">queued</text>
+<text x="28.0" y="178.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">ready to be picked</text>
+<rect x="16.0" y="194.0" width="328.0" height="44.0" rx="8" fill="#5fb3a1" fill-opacity="0.14" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="28.0" y="214.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">running</text>
+<text x="28.0" y="230.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">leased by one worker</text>
+<rect x="16.0" y="246.0" width="328.0" height="44.0" rx="8" fill="#7cc47f" fill-opacity="0.14" stroke="#7cc47f" stroke-width="1.2"/>
+<text x="28.0" y="266.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">succeeded</text>
+<text x="28.0" y="282.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">acked → removed</text>
+<rect x="16.0" y="298.0" width="328.0" height="44.0" rx="8" fill="#e2b45a" fill-opacity="0.14" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="28.0" y="318.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">retrying</text>
+<text x="28.0" y="334.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">error → backoff → queued</text>
+<rect x="16.0" y="350.0" width="328.0" height="44.0" rx="8" fill="#e5534b" fill-opacity="0.14" stroke="#e5534b" stroke-width="1.2"/>
+<text x="28.0" y="370.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">dead</text>
+<text x="28.0" y="386.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">max attempts → DLQ</text>
+<rect x="16.0" y="406.0" width="328.0" height="46.0" rx="8" fill="#d77fa1" fill-opacity="0.1" stroke="#d77fa1" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="28.0" y="426.0" font-size="10.5" fill="#d77fa1" text-anchor="start" font-weight="700">worker dies → lease expires</text>
+<text x="28.0" y="442.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">→ job runs again (at-least-once)</text>
+<text x="16.0" y="482.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">So every job must be idempotent.</text>
+</svg>

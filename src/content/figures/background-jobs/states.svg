@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 419" width="880" height="419" role="img" aria-label="Job state machine: scheduled jobs become queued when due, a worker leases a job to run it, success acks and removes it, errors retry with exponential backoff, exhausted jobs go to a dead-letter state, and an expired lease returns the job to the queue" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="419" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker><marker id="ah4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A job’s life</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">states a durable queue tracks for every job</text>
+<rect x="40.0" y="120.0" width="140.0" height="48.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="110.0" y="148.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">scheduled</text>
+<rect x="220.0" y="120.0" width="140.0" height="48.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="290.0" y="148.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">queued</text>
+<rect x="400.0" y="120.0" width="140.0" height="48.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="470.0" y="148.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">running</text>
+<rect x="620.0" y="80.0" width="140.0" height="48.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="690.0" y="108.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">succeeded</text>
+<rect x="620.0" y="170.0" width="140.0" height="48.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="690.0" y="198.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">retrying</text>
+<rect x="620.0" y="260.0" width="140.0" height="48.0" rx="3" fill="#e5534b" fill-opacity="0.18" stroke="#e5534b" stroke-width="1"/>
+<text x="690.0" y="288.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">dead</text>
+<line x1="180.0" y1="144.0" x2="220.0" y2="144.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<text x="200.0" y="136.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">due</text>
+<line x1="360.0" y1="144.0" x2="400.0" y2="144.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<text x="380.0" y="136.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">lease</text>
+<line x1="540.0" y1="134.0" x2="620.0" y2="104.0" stroke="#7cc47f" stroke-width="1.3" marker-end="url(#ah1)"/>
+<text x="560.0" y="104.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">ack</text>
+<line x1="540.0" y1="154.0" x2="620.0" y2="194.0" stroke="#e2b45a" stroke-width="1.3" marker-end="url(#ah2)"/>
+<text x="560.0" y="190.0" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="400">error</text>
+<line x1="540.0" y1="162.0" x2="620.0" y2="280.0" stroke="#e5534b" stroke-width="1.3" marker-end="url(#ah3)"/>
+<text x="546.0" y="236.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">max attempts</text>
+<path d="M 620 206 Q 360 300 110 170" fill="none" stroke="#e2b45a" stroke-width="1.2" marker-end="url(#ah2)" stroke-dasharray="4 3"/>
+<text x="250.0" y="268.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">wait 2ⁿ s + jitter, then due again</text>
+<path d="M 470 120 Q 380 70 290 118" fill="none" stroke="#d77fa1" stroke-width="1.2" marker-end="url(#ah4)" stroke-dasharray="4 3"/>
+<text x="380.0" y="74.0" font-size="10.5" fill="#d77fa1" text-anchor="middle" font-weight="400">lease expired (worker died)</text>
+<text x="40.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A job is only removed when a worker acks it. If the worker crashes mid-job, the lease (visibility</text>
+<text x="40.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">timeout) expires and another worker runs it again: delivery is at-least-once, so jobs must be idempotent.</text>
+</svg>
