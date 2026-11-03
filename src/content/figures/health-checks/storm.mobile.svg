@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 330" width="360" height="330" role="img" aria-label="When liveness checks a shared database, a database outage makes every pod fail and restart at once; when liveness checks only the process, pods stay up and degrade gracefully" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="330" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">The dependency-check trap</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">shared DB down → everything restarts</text>
+<rect x="16.0" y="76.0" width="328.0" height="50.0" rx="3" fill="#e5534b" fill-opacity="0.18" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="98.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Liveness calls the DB</text>
+<text x="180.0" y="114.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">DB down → every pod restarts</text>
+<text x="16.0" y="150.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">Cold caches, reconnect storm,</text>
+<text x="16.0" y="166.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">longer outage.</text>
+<rect x="16.0" y="210.0" width="328.0" height="50.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="232.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Liveness checks only the process</text>
+<text x="180.0" y="248.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">DB down → pods stay up</text>
+<text x="16.0" y="284.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">Serve degraded responses or fast</text>
+<text x="16.0" y="300.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">errors; reconnect when DB is back.</text>
+</svg>

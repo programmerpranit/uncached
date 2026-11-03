@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="880" height="414" role="img" aria-label="A pod passes its startup probe, warms up, becomes ready, briefly turns unready under overload, and on SIGTERM fails readiness to drain before exiting" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="414" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A pod's life through its probes</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">startup gates the others; readiness flips on and off; shutdown drains before exit</text>
+<line x1="40.0" y1="200.0" x2="840.0" y2="200.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="40.0" y="150.0" width="146.0" height="44.0" rx="4" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="113.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">Booting</text>
+<text x="113.0" y="184.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">startup probe failing</text>
+<text x="113.0" y="222.0" font-size="9.5" fill="#9b8cff" text-anchor="middle" font-weight="400">no traffic, no liveness</text>
+<rect x="190.0" y="150.0" width="106.0" height="44.0" rx="4" fill="#e2b45a" fill-opacity="0.2" stroke="#e2b45a" stroke-width="1"/>
+<text x="243.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">Warming</text>
+<text x="243.0" y="184.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">ready = false</text>
+<text x="243.0" y="222.0" font-size="9.5" fill="#e2b45a" text-anchor="middle" font-weight="400">caches, pools, JIT</text>
+<rect x="300.0" y="150.0" width="146.0" height="44.0" rx="4" fill="#7cc47f" fill-opacity="0.2" stroke="#7cc47f" stroke-width="1"/>
+<text x="373.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">Serving</text>
+<text x="373.0" y="184.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">ready = true</text>
+<text x="373.0" y="222.0" font-size="9.5" fill="#7cc47f" text-anchor="middle" font-weight="400">in endpoints</text>
+<rect x="450.0" y="150.0" width="116.0" height="44.0" rx="4" fill="#e2b45a" fill-opacity="0.2" stroke="#e2b45a" stroke-width="1"/>
+<text x="508.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">Overloaded</text>
+<text x="508.0" y="184.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">ready = false</text>
+<text x="508.0" y="222.0" font-size="9.5" fill="#e2b45a" text-anchor="middle" font-weight="400">shed briefly</text>
+<rect x="570.0" y="150.0" width="106.0" height="44.0" rx="4" fill="#7cc47f" fill-opacity="0.2" stroke="#7cc47f" stroke-width="1"/>
+<text x="623.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">Serving</text>
+<text x="623.0" y="184.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">ready = true</text>
+<text x="623.0" y="222.0" font-size="9.5" fill="#7cc47f" text-anchor="middle" font-weight="400">back in</text>
+<rect x="680.0" y="150.0" width="136.0" height="44.0" rx="4" fill="#e5534b" fill-opacity="0.2" stroke="#e5534b" stroke-width="1"/>
+<text x="748.0" y="168.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">Draining</text>
+<text x="748.0" y="184.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">SIGTERM → ready=false</text>
+<text x="748.0" y="222.0" font-size="9.5" fill="#e5534b" text-anchor="middle" font-weight="400">finish in-flight</text>
+<text x="40.0" y="130.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">time →</text>
+<rect x="40.0" y="258.0" width="146.0" height="8.0" rx="3" fill="#9b8cff" fill-opacity="0.5" stroke="none" stroke-width="1"/>
+<text x="40.0" y="284.0" font-size="9.5" fill="#9b8cff" text-anchor="start" font-weight="400">startup probe: up to failureThreshold × period</text>
+<rect x="190.0" y="258.0" width="650.0" height="8.0" rx="3" fill="#e5534b" fill-opacity="0.25" stroke="none" stroke-width="1"/>
+<text x="190.0" y="304.0" font-size="9.5" fill="#e5534b" text-anchor="start" font-weight="400">liveness probe active only after startup succeeds</text>
+<rect x="300.0" y="322.0" width="146.0" height="8.0" rx="3" fill="#5fb3a1" fill-opacity="0.5" stroke="none" stroke-width="1"/>
+<rect x="570.0" y="322.0" width="106.0" height="8.0" rx="3" fill="#5fb3a1" fill-opacity="0.5" stroke="none" stroke-width="1"/>
+<text x="300.0" y="346.0" font-size="9.5" fill="#5fb3a1" text-anchor="start" font-weight="400">traffic routed only while readiness passes</text>
+<text x="440.0" y="384.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">Liveness never fails because of overload or a downstream outage — only a stuck process.</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 404" width="880" height="404" role="img" aria-label="When liveness checks a shared database, a database outage makes every pod fail and restart at once; when liveness checks only the process, pods stay up and degrade gracefully" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="404" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The dependency-check trap</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">checking the database in liveness turns one outage into a fleet-wide restart storm</text>
+<text x="40.0" y="104.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">Liveness calls the DB</text>
+<rect x="40.0" y="240.0" width="180.0" height="50.0" rx="3" fill="#e5534b" fill-opacity="0.2" stroke="#e5534b" stroke-width="1"/>
+<text x="130.0" y="262.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Database</text>
+<text x="130.0" y="278.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">slow / down</text>
+<rect x="260.0" y="120.0" width="130.0" height="36.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="325.0" y="135.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">api-1</text>
+<text x="325.0" y="151.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">liveness ✗ → restart</text>
+<line x1="256.0" y1="138.0" x2="222.0" y2="265.0" stroke="#e5534b" stroke-width="1" stroke-dasharray="3,3"/>
+<rect x="260.0" y="166.0" width="130.0" height="36.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="325.0" y="181.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">api-2</text>
+<text x="325.0" y="197.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">liveness ✗ → restart</text>
+<line x1="256.0" y1="184.0" x2="222.0" y2="265.0" stroke="#e5534b" stroke-width="1" stroke-dasharray="3,3"/>
+<rect x="260.0" y="212.0" width="130.0" height="36.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="325.0" y="227.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">api-3</text>
+<text x="325.0" y="243.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">liveness ✗ → restart</text>
+<line x1="256.0" y1="230.0" x2="222.0" y2="265.0" stroke="#e5534b" stroke-width="1" stroke-dasharray="3,3"/>
+<rect x="260.0" y="258.0" width="130.0" height="36.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="325.0" y="273.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">api-4</text>
+<text x="325.0" y="289.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">liveness ✗ → restart</text>
+<line x1="256.0" y1="276.0" x2="222.0" y2="265.0" stroke="#e5534b" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="40.0" y="330.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">All pods restart at once, cold caches,</text>
+<text x="40.0" y="346.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">connection storm when the DB returns,</text>
+<text x="40.0" y="362.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">outage gets longer, not shorter.</text>
+<line x1="440.0" y1="96.0" x2="440.0" y2="380.0" stroke="#4a4136" stroke-width="1"/>
+<text x="480.0" y="104.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">Liveness checks only the process</text>
+<rect x="480.0" y="240.0" width="180.0" height="50.0" rx="3" fill="#e5534b" fill-opacity="0.2" stroke="#e5534b" stroke-width="1"/>
+<text x="570.0" y="262.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Database</text>
+<text x="570.0" y="278.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">slow / down</text>
+<rect x="700.0" y="120.0" width="140.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="770.0" y="135.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">api-1</text>
+<text x="770.0" y="151.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">alive ✓ · degraded 503</text>
+<rect x="700.0" y="166.0" width="140.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="770.0" y="181.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">api-2</text>
+<text x="770.0" y="197.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">alive ✓ · degraded 503</text>
+<rect x="700.0" y="212.0" width="140.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="770.0" y="227.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">api-3</text>
+<text x="770.0" y="243.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">alive ✓ · degraded 503</text>
+<rect x="700.0" y="258.0" width="140.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="770.0" y="273.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">api-4</text>
+<text x="770.0" y="289.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">alive ✓ · degraded 503</text>
+<text x="480.0" y="330.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">Pods stay up, serve cached/partial</text>
+<text x="480.0" y="346.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">responses or fast errors; circuit</text>
+<text x="480.0" y="362.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">breaker reconnects when the DB is back.</text>
+</svg>
