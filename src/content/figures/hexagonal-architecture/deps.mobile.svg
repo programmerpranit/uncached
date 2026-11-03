@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 430" width="360" height="430" role="img" aria-label="In a layered design business logic depends on the ORM; in hexagonal architecture the core declares a repository interface and the Postgres adapter depends on and implements it" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="430" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Dependencies point inward</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">flip the arrow with an interface</text>
+<text x="16.0" y="96.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="700">Layered</text>
+<rect x="16.0" y="108.0" width="328.0" height="40.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="131.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Controller → Service → ORM</text>
+<text x="16.0" y="170.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">Core imports the ORM; tests need a DB.</text>
+<text x="16.0" y="220.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="700">Hexagonal</text>
+<rect x="16.0" y="232.0" width="328.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="255.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">REST adapter → Core</text>
+<rect x="16.0" y="282.0" width="328.0" height="44.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="307.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Core declares OrderRepository</text>
+<rect x="16.0" y="336.0" width="328.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="359.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Postgres adapter implements it</text>
+<text x="16.0" y="400.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">Infrastructure depends on the core.</text>
+</svg>

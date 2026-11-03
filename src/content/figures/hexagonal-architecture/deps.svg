@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 444" width="880" height="444" role="img" aria-label="In a layered design business logic depends on the ORM; in hexagonal architecture the core declares a repository interface and the Postgres adapter depends on and implements it" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="444" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Dependencies point inward</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the core declares the interface; infrastructure depends on the core, never the reverse</text>
+<text x="40.0" y="104.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">Layered (typical)</text>
+<rect x="40.0" y="124.0" width="320.0" height="50.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="200.0" y="153.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Controller</text>
+<line x1="200.0" y1="174.0" x2="200.0" y2="200.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="40.0" y="204.0" width="320.0" height="50.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="200.0" y="233.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Service (business logic)</text>
+<line x1="200.0" y1="254.0" x2="200.0" y2="280.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="40.0" y="284.0" width="320.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="200.0" y="313.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Repository → ORM → Postgres</text>
+<text x="40.0" y="370.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">Business logic imports the ORM;</text>
+<text x="40.0" y="386.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">tests need a database; swapping</text>
+<text x="40.0" y="402.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">storage means editing the core.</text>
+<line x1="440.0" y1="96.0" x2="440.0" y2="420.0" stroke="#4a4136" stroke-width="1"/>
+<text x="480.0" y="104.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">Hexagonal</text>
+<rect x="480.0" y="124.0" width="360.0" height="50.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="660.0" y="153.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">REST adapter</text>
+<line x1="660.0" y1="174.0" x2="660.0" y2="200.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="480.0" y="204.0" width="360.0" height="70.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="660.0" y="236.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Core: OrderService</text>
+<text x="660.0" y="252.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">declares interface OrderRepository</text>
+<rect x="480.0" y="300.0" width="360.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="660.0" y="322.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">PostgresOrderRepository</text>
+<text x="660.0" y="338.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">implements OrderRepository</text>
+<line x1="660.0" y1="300.0" x2="660.0" y2="278.0" stroke="#e2b45a" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="480.0" y="380.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">Postgres code depends on the core.</text>
+<text x="480.0" y="396.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">Core compiles and tests with no DB.</text>
+</svg>

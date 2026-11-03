@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 418" width="880" height="418" role="img" aria-label="Many fast core unit tests use in-memory fakes, fewer adapter contract tests run against real infrastructure, and a handful of end-to-end tests cover the full stack" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="418" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Testing at the seams</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">swap adapters to test the core in milliseconds; test each real adapter against its port contract</text>
+<rect x="60.0" y="110.0" width="760.0" height="58.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="440.0" y="136.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Core unit tests</text>
+<text x="440.0" y="152.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">use cases + in-memory fakes  ·  thousands · ms each</text>
+<rect x="160.0" y="190.0" width="560.0" height="58.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="440.0" y="216.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Adapter contract tests</text>
+<text x="440.0" y="232.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">same suite vs fake AND Postgres  ·  dozens · seconds</text>
+<rect x="260.0" y="270.0" width="360.0" height="58.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="296.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">End-to-end tests</text>
+<text x="440.0" y="312.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">real HTTP → real DB  ·  a few · slow</text>
+<text x="60.0" y="370.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">One port contract test suite runs against every adapter implementation, so the fake used in</text>
+<text x="60.0" y="388.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">core tests is proven to behave like the real thing.</text>
+</svg>
