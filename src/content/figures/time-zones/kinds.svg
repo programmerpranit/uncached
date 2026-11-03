@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 334" width="880" height="334" role="img" aria-label="Three kinds of time: an instant stored as UTC, a local date-time with an IANA zone for future and recurring events, and a plain date with no zone for birthdays" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="334" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Three kinds of "time"</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">most bugs come from storing one kind of time as another</text>
+<rect x="40.0" y="80.0" width="255.0" height="230.0" rx="3" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1"/>
+<text x="167.5" y="198.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="56.0" y="108.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Instant</text>
+<text x="56.0" y="128.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">a point on the global timeline</text>
+<rect x="56.0" y="144.0" width="223.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="167.0" y="166.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="400">2026-03-08T10:00:00Z</text>
+<text x="56.0" y="206.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="700">use for</text>
+<text x="56.0" y="224.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">logs, created_at,</text>
+<text x="56.0" y="241.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">payments, expiry</text>
+<text x="56.0" y="288.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="700">store as UTC timestamp</text>
+<rect x="315.0" y="80.0" width="255.0" height="230.0" rx="3" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1"/>
+<text x="442.5" y="198.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="331.0" y="108.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Local date-time + zone</text>
+<text x="331.0" y="128.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">a wall-clock time somewhere</text>
+<rect x="331.0" y="144.0" width="223.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="442.0" y="166.0" font-size="9.6" fill="#ede6d8" text-anchor="middle" font-weight="400">2026-11-10 09:00 America/New_York</text>
+<text x="331.0" y="206.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="700">use for</text>
+<text x="331.0" y="224.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">meetings, alarms,</text>
+<text x="331.0" y="241.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">store hours, recurring events</text>
+<text x="331.0" y="288.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="700">store local time + IANA zone ID</text>
+<rect x="590.0" y="80.0" width="255.0" height="230.0" rx="3" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1"/>
+<text x="717.5" y="198.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="606.0" y="108.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Plain date / time</text>
+<text x="606.0" y="128.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">no zone at all</text>
+<rect x="606.0" y="144.0" width="223.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="717.0" y="166.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="400">1990-05-14  ·  09:00</text>
+<text x="606.0" y="206.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="700">use for</text>
+<text x="606.0" y="224.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">birthdays, holidays,</text>
+<text x="606.0" y="241.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">"opens at 9"</text>
+<text x="606.0" y="288.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="700">store as date / time, never convert</text>
+</svg>

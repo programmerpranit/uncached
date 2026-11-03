@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img" aria-label="Daylight saving transitions in New York: in spring local time jumps from 01:59 to 03:00 so 02:30 does not exist, and in autumn 01:00 to 01:59 happens twice" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="430" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">DST transitions</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">local time skips an hour in spring and repeats one in autumn (America/New_York)</text>
+<text x="40.0" y="100.0" font-size="12" fill="#d77fa1" text-anchor="start" font-weight="700">Spring forward · 8 Mar 2026</text>
+<text x="40.0" y="124.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">UTC</text>
+<text x="40.0" y="174.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">local</text>
+<rect x="80.0" y="132.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="143.3" y="146.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">05:00</text>
+<rect x="80.0" y="158.0" width="123.7" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="143.3" y="172.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">00:00</text>
+<rect x="206.7" y="132.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="270.0" y="146.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">06:00</text>
+<rect x="206.7" y="158.0" width="123.7" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="270.0" y="172.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">01:00</text>
+<rect x="333.3" y="132.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="396.7" y="146.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">07:00</text>
+<rect x="333.3" y="158.0" width="123.7" height="20.0" rx="3" fill="#d77fa1" fill-opacity="0.3" stroke="#d77fa1" stroke-width="1"/>
+<text x="396.7" y="172.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">03:00</text>
+<rect x="460.0" y="132.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="523.3" y="146.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">08:00</text>
+<rect x="460.0" y="158.0" width="123.7" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="523.3" y="172.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">04:00</text>
+<rect x="586.7" y="132.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="650.0" y="146.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">09:00</text>
+<rect x="586.7" y="158.0" width="123.7" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="650.0" y="172.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">05:00</text>
+<rect x="713.3" y="132.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="776.7" y="146.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">10:00</text>
+<rect x="713.3" y="158.0" width="123.7" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="776.7" y="172.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">06:00</text>
+<text x="40.0" y="204.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">02:00–02:59 never happens  —  a 02:30 alarm has no instant</text>
+<text x="40.0" y="250.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Fall back · 1 Nov 2026</text>
+<text x="40.0" y="274.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">UTC</text>
+<text x="40.0" y="324.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">local</text>
+<rect x="80.0" y="282.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="143.3" y="296.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">04:00</text>
+<rect x="80.0" y="308.0" width="123.7" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="143.3" y="322.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">00:00</text>
+<rect x="206.7" y="282.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="270.0" y="296.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">05:00</text>
+<rect x="206.7" y="308.0" width="123.7" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<text x="270.0" y="322.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">01:00</text>
+<rect x="333.3" y="282.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="396.7" y="296.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">06:00</text>
+<rect x="333.3" y="308.0" width="123.7" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<text x="396.7" y="322.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">01:00</text>
+<rect x="460.0" y="282.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="523.3" y="296.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">07:00</text>
+<rect x="460.0" y="308.0" width="123.7" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="523.3" y="322.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">02:00</text>
+<rect x="586.7" y="282.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="650.0" y="296.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">08:00</text>
+<rect x="586.7" y="308.0" width="123.7" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="650.0" y="322.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">03:00</text>
+<rect x="713.3" y="282.0" width="123.7" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="776.7" y="296.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">09:00</text>
+<rect x="713.3" y="308.0" width="123.7" height="20.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="776.7" y="322.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">04:00</text>
+<text x="40.0" y="354.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">01:00–01:59 happens twice  —  01:30 maps to two instants</text>
+<text x="40.0" y="400.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Arithmetic in local time is ambiguous; convert with a zone database, and decide how to resolve gaps and overlaps.</text>
+</svg>

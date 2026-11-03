@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 356" width="880" height="356" role="img" aria-label="A wall clock reading that jumps backwards when NTP corrects it, next to a monotonic clock that always increases, showing why durations should use the monotonic clock" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="356" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Wall clock vs monotonic clock</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">wall clocks can jump; monotonic clocks only move forward</text>
+<line x1="80.0" y1="300.0" x2="820.0" y2="300.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="80.0" y1="300.0" x2="80.0" y2="90.0" stroke="#4a4136" stroke-width="1"/>
+<text x="450.0" y="326.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">real elapsed time</text>
+<text x="70.0" y="96.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">reading</text>
+<path d="M80 290 L320 200 L330 230 L560 145 L820 98" fill="none" stroke="#d77fa1" stroke-width="2"/>
+<path d="M80 295 L820 120" fill="none" stroke="#5fb3a1" stroke-width="2"/>
+<circle cx="325.0" cy="215.0" r="5" fill="none" fill-opacity="1" stroke="#d77fa1" stroke-width="1.5"/>
+<text x="340.0" y="250.0" font-size="10" fill="#d77fa1" text-anchor="start" font-weight="400">NTP steps clock back 1.2 s</text>
+<text x="600.0" y="120.0" font-size="11" fill="#d77fa1" text-anchor="start" font-weight="700">wall clock</text>
+<text x="640.0" y="176.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="700">monotonic</text>
+<rect x="560.0" y="210.0" width="250.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="685.0" y="248.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="574.0" y="232.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">end − start can be negative</text>
+<text x="574.0" y="248.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">with the wall clock. Time durations</text>
+<text x="574.0" y="264.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">with the monotonic clock.</text>
+</svg>
