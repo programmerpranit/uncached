@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 579" width="360" height="579" role="img" aria-label="An HTTP/2 frame: 24-bit length, 8-bit type, 8-bit flags, reserved bit plus 31-bit stream ID, then payload; followed by a list of frame types and their purpose" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="579" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">HTTP/2 frame</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">9-byte header + payload</text>
+<rect x="16.0" y="72.0" width="92.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="62.0" y="89.0" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Length</text>
+<text x="62.0" y="105.0" font-size="8" fill="#a69d8e" text-anchor="middle" font-weight="400">24 bit</text>
+<rect x="112.0" y="72.0" width="52.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.22" stroke="#9b8cff" stroke-width="1"/>
+<text x="138.0" y="89.0" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Type</text>
+<text x="138.0" y="105.0" font-size="8" fill="#a69d8e" text-anchor="middle" font-weight="400">8</text>
+<rect x="168.0" y="72.0" width="52.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="194.0" y="89.0" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Flags</text>
+<text x="194.0" y="105.0" font-size="8" fill="#a69d8e" text-anchor="middle" font-weight="400">8</text>
+<rect x="224.0" y="72.0" width="92.0" height="40.0" rx="3" fill="#d77fa1" fill-opacity="0.22" stroke="#d77fa1" stroke-width="1"/>
+<text x="270.0" y="89.0" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Stream ID</text>
+<text x="270.0" y="105.0" font-size="8" fill="#a69d8e" text-anchor="middle" font-weight="400">31</text>
+<rect x="16.0" y="118.0" width="324.0" height="26.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="178.0" y="134.4" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Payload</text>
+<rect x="16.0" y="168.0" width="328.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="26.0" y="184.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">HEADERS</text>
+<text x="26.0" y="198.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">HPACK headers; opens stream</text>
+<rect x="16.0" y="212.0" width="328.0" height="38.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="26.0" y="228.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">DATA</text>
+<text x="26.0" y="242.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">body; flow-controlled</text>
+<rect x="16.0" y="256.0" width="328.0" height="38.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="26.0" y="272.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">SETTINGS</text>
+<text x="26.0" y="286.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">connection parameters</text>
+<rect x="16.0" y="300.0" width="328.0" height="38.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="26.0" y="316.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">WINDOW_UPDATE</text>
+<text x="26.0" y="330.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">flow-control credit</text>
+<rect x="16.0" y="344.0" width="328.0" height="38.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="26.0" y="360.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">RST_STREAM</text>
+<text x="26.0" y="374.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">cancel one stream</text>
+<rect x="16.0" y="388.0" width="328.0" height="38.0" rx="3" fill="#d77fa1" fill-opacity="0.15" stroke="#d77fa1" stroke-width="1"/>
+<text x="26.0" y="404.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">PRIORITY_UPDATE</text>
+<text x="26.0" y="418.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">urgency hints</text>
+<rect x="16.0" y="432.0" width="328.0" height="38.0" rx="3" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1"/>
+<text x="26.0" y="448.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">PING · GOAWAY</text>
+<text x="26.0" y="462.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">liveness · shutdown</text>
+<rect x="16.0" y="476.0" width="328.0" height="38.0" rx="3" fill="#4a4136" fill-opacity="0.15" stroke="#4a4136" stroke-width="1"/>
+<text x="26.0" y="492.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">PUSH_PROMISE</text>
+<text x="26.0" y="506.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">server push (dead)</text>
+<text x="16.0" y="534.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">HPACK makes repeated headers</text>
+<text x="16.0" y="549.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">(cookies, user-agent) nearly free.</text>
+</svg>

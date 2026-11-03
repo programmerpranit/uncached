@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 498" width="880" height="498" role="img" aria-label="An HTTP/2 frame: 24-bit length, 8-bit type, 8-bit flags, reserved bit plus 31-bit stream ID, then payload; followed by a list of frame types and their purpose" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="498" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Anatomy of an HTTP/2 frame</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">9-byte header + payload; everything on the connection is a frame</text>
+<rect x="60.0" y="90.0" width="186.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="153.0" y="107.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Length</text>
+<text x="153.0" y="123.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">24 bits</text>
+<text x="153.0" y="148.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">payload size (16 KB default max)</text>
+<rect x="250.0" y="90.0" width="116.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.22" stroke="#9b8cff" stroke-width="1"/>
+<text x="308.0" y="107.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Type</text>
+<text x="308.0" y="123.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">8 bits</text>
+<text x="308.0" y="148.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">DATA, HEADERS, …</text>
+<rect x="370.0" y="90.0" width="116.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="428.0" y="107.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Flags</text>
+<text x="428.0" y="123.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">8 bits</text>
+<text x="428.0" y="148.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">END_STREAM, …</text>
+<rect x="490.0" y="90.0" width="206.0" height="40.0" rx="3" fill="#d77fa1" fill-opacity="0.22" stroke="#d77fa1" stroke-width="1"/>
+<text x="593.0" y="107.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">R + Stream ID</text>
+<text x="593.0" y="123.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">1+31 bits</text>
+<text x="593.0" y="148.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">stream 0 = whole connection</text>
+<rect x="700.0" y="90.0" width="140.0" height="40.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="770.0" y="113.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Payload</text>
+<text x="60.0" y="190.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Frame types</text>
+<rect x="60.0" y="208.0" width="250.0" height="24.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="70.0" y="224.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="600">HEADERS / CONTINUATION</text>
+<text x="324.0" y="224.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">open a stream; HPACK-compressed request or response headers</text>
+<rect x="60.0" y="238.0" width="250.0" height="24.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="70.0" y="254.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="600">DATA</text>
+<text x="324.0" y="254.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">body bytes for one stream; subject to flow control</text>
+<rect x="60.0" y="268.0" width="250.0" height="24.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="70.0" y="284.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="600">SETTINGS</text>
+<text x="324.0" y="284.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">connection parameters: max concurrent streams, initial window, frame size</text>
+<rect x="60.0" y="298.0" width="250.0" height="24.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="70.0" y="314.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="600">WINDOW_UPDATE</text>
+<text x="324.0" y="314.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">credit for flow control, per stream or for the whole connection</text>
+<rect x="60.0" y="328.0" width="250.0" height="24.0" rx="3" fill="#e5534b" fill-opacity="0.18" stroke="#e5534b" stroke-width="1"/>
+<text x="70.0" y="344.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="600">RST_STREAM</text>
+<text x="324.0" y="344.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">cancel one stream without closing the connection</text>
+<rect x="60.0" y="358.0" width="250.0" height="24.0" rx="3" fill="#d77fa1" fill-opacity="0.18" stroke="#d77fa1" stroke-width="1"/>
+<text x="70.0" y="374.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="600">PRIORITY / PRIORITY_UPDATE</text>
+<text x="324.0" y="374.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">hint which streams matter more (RFC 9218 replaced the tree)</text>
+<rect x="60.0" y="388.0" width="250.0" height="24.0" rx="3" fill="#a69d8e" fill-opacity="0.18" stroke="#a69d8e" stroke-width="1"/>
+<text x="70.0" y="404.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="600">PING · GOAWAY</text>
+<text x="324.0" y="404.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">liveness and RTT · graceful shutdown with "last stream processed"</text>
+<rect x="60.0" y="418.0" width="250.0" height="24.0" rx="3" fill="#4a4136" fill-opacity="0.18" stroke="#4a4136" stroke-width="1"/>
+<text x="70.0" y="434.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="600">PUSH_PROMISE</text>
+<text x="324.0" y="434.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">server push — disabled by major browsers, effectively dead</text>
+<text x="60.0" y="468.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">HPACK: static + dynamic tables mean a repeated header like a 500-byte cookie costs ~1 byte after the first request.</text>
+</svg>

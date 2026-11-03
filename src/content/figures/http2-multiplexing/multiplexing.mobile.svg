@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 430" width="360" height="430" role="img" aria-label="HTTP/1.1 uses six parallel connections each carrying one request at a time; HTTP/2 uses one connection carrying interleaved frames from many numbered streams" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="430" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">HTTP/1.1 vs HTTP/2 on the wire</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one request at a time vs interleaved frames</text>
+<text x="16.0" y="80.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="700">HTTP/1.1 · 6 connections</text>
+<rect x="16.0" y="90.0" width="328.0" height="16.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="20.0" y="92.0" width="40.0" height="12.0" rx="2" fill="#4a4136" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="40.0" y="101.0" font-size="7.5" fill="#a69d8e" text-anchor="middle" font-weight="400">hs</text>
+<rect x="64.0" y="92.0" width="60.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="16.0" y="110.0" width="328.0" height="16.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="20.0" y="112.0" width="40.0" height="12.0" rx="2" fill="#4a4136" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="40.0" y="121.0" font-size="7.5" fill="#a69d8e" text-anchor="middle" font-weight="400">hs</text>
+<rect x="64.0" y="112.0" width="130.0" height="12.0" rx="2" fill="#9b8cff" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="16.0" y="130.0" width="328.0" height="16.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="20.0" y="132.0" width="40.0" height="12.0" rx="2" fill="#4a4136" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="40.0" y="141.0" font-size="7.5" fill="#a69d8e" text-anchor="middle" font-weight="400">hs</text>
+<rect x="64.0" y="132.0" width="50.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="144.0" y="132.0" width="50.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="16.0" y="150.0" width="328.0" height="16.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="20.0" y="152.0" width="40.0" height="12.0" rx="2" fill="#4a4136" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="40.0" y="161.0" font-size="7.5" fill="#a69d8e" text-anchor="middle" font-weight="400">hs</text>
+<rect x="64.0" y="152.0" width="80.0" height="12.0" rx="2" fill="#d77fa1" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="16.0" y="170.0" width="328.0" height="16.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="20.0" y="172.0" width="40.0" height="12.0" rx="2" fill="#4a4136" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="40.0" y="181.0" font-size="7.5" fill="#a69d8e" text-anchor="middle" font-weight="400">hs</text>
+<rect x="64.0" y="172.0" width="40.0" height="12.0" rx="2" fill="#7cc47f" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="134.0" y="172.0" width="50.0" height="12.0" rx="2" fill="#7cc47f" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<rect x="16.0" y="190.0" width="328.0" height="16.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="20.0" y="192.0" width="40.0" height="12.0" rx="2" fill="#4a4136" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="40.0" y="201.0" font-size="7.5" fill="#a69d8e" text-anchor="middle" font-weight="400">hs</text>
+<rect x="64.0" y="192.0" width="160.0" height="12.0" rx="2" fill="#ff5b2e" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="16.0" y="224.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">one request in flight per connection</text>
+<text x="16.0" y="254.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="700">HTTP/2 · 1 connection</text>
+<rect x="16.0" y="264.0" width="328.0" height="26.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="20.0" y="268.0" width="40.0" height="18.0" rx="2" fill="#4a4136" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="40.0" y="281.0" font-size="7.5" fill="#a69d8e" text-anchor="middle" font-weight="400">hs</text>
+<rect x="64.0" y="268.0" width="16.0" height="18.0" rx="2" fill="#5fb3a1" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="72.0" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">1</text>
+<rect x="81.5" y="268.0" width="16.0" height="18.0" rx="2" fill="#9b8cff" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="89.5" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">3</text>
+<rect x="99.0" y="268.0" width="16.0" height="18.0" rx="2" fill="#e2b45a" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="107.0" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">5</text>
+<rect x="116.5" y="268.0" width="16.0" height="18.0" rx="2" fill="#d77fa1" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="124.5" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">7</text>
+<rect x="134.0" y="268.0" width="16.0" height="18.0" rx="2" fill="#5fb3a1" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="142.0" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">1</text>
+<rect x="151.5" y="268.0" width="16.0" height="18.0" rx="2" fill="#9b8cff" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="159.5" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">3</text>
+<rect x="169.0" y="268.0" width="16.0" height="18.0" rx="2" fill="#7cc47f" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="177.0" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">9</text>
+<rect x="186.5" y="268.0" width="16.0" height="18.0" rx="2" fill="#e2b45a" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="194.5" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">5</text>
+<rect x="204.0" y="268.0" width="16.0" height="18.0" rx="2" fill="#5fb3a1" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="212.0" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">1</text>
+<rect x="221.5" y="268.0" width="16.0" height="18.0" rx="2" fill="#ff5b2e" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="229.5" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">11</text>
+<rect x="239.0" y="268.0" width="16.0" height="18.0" rx="2" fill="#9b8cff" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="247.0" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">3</text>
+<rect x="256.5" y="268.0" width="16.0" height="18.0" rx="2" fill="#d77fa1" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="264.5" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">7</text>
+<rect x="274.0" y="268.0" width="16.0" height="18.0" rx="2" fill="#e2b45a" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="282.0" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">5</text>
+<rect x="291.5" y="268.0" width="16.0" height="18.0" rx="2" fill="#7cc47f" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="299.5" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">9</text>
+<rect x="309.0" y="268.0" width="16.0" height="18.0" rx="2" fill="#5fb3a1" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="317.0" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">1</text>
+<rect x="326.5" y="268.0" width="16.0" height="18.0" rx="2" fill="#ff5b2e" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="334.5" y="281.0" font-size="7.5" fill="#1b1712" text-anchor="middle" font-weight="700">11</text>
+<text x="16.0" y="310.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">Each box is a frame tagged with a</text>
+<text x="16.0" y="325.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">stream ID; frames from many</text>
+<text x="16.0" y="340.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">requests interleave on one</text>
+<text x="16.0" y="355.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">connection and finish in any order.</text>
+<text x="16.0" y="385.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">No app-level head-of-line</text>
+<text x="16.0" y="400.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="600">blocking; one handshake.</text>
+</svg>
