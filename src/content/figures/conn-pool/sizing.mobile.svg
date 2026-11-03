@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 422" width="360" height="422" role="img" aria-label="Throughput rises with pool size until roughly 12 to 24 connections on an 8-core database, then falls as contention for locks, CPU and cache grows" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="422" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Bigger pools are not faster</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">throughput vs pool size (illustrative)</text>
+<line x1="40.0" y1="296.0" x2="340.0" y2="296.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="40.0" y1="96.0" x2="40.0" y2="296.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="193.6" y="96.0" width="42.9" height="200.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="none" stroke-width="1"/>
+<text x="215.1" y="286.0" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="400">sweet spot</text>
+<path d="M40.0,269.3 L82.9,244.6 L125.7,200.8 L168.6,143.6 L193.6,118.9 L211.4,105.5 L236.5,109.3 L254.3,120.8 L279.4,143.6 L297.1,166.5 L322.2,197.0 L340.0,219.8" fill="none" stroke="#ff5b2e" stroke-width="2.4"/>
+<text x="40.0" y="314.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<text x="125.7" y="314.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<text x="211.4" y="314.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">16</text>
+<text x="297.1" y="314.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">64</text>
+<text x="190.0" y="334.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">pool size (log scale)</text>
+<text x="44.0" y="90.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">tx/s</text>
+<text x="288.9" y="248.4" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="400">contention</text>
+<text x="16.0" y="354.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Start near cores × 2. Past the knee,</text>
+<text x="16.0" y="373.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">extra connections just queue inside</text>
+<text x="16.0" y="392.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">the database.</text>
+</svg>

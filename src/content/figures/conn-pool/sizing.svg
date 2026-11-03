@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 459" width="880" height="459" role="img" aria-label="Throughput rises with pool size until roughly 12 to 24 connections on an 8-core database, then falls as contention for locks, CPU and cache grows" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="459" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Bigger pools are not faster</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">throughput vs pool size on a database with 8 cores and SSDs (illustrative)</text>
+<line x1="90.0" y1="340.0" x2="790.0" y2="340.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="90.0" y1="100.0" x2="90.0" y2="340.0" stroke="#4a4136" stroke-width="1"/>
+<rect x="448.5" y="100.0" width="100.0" height="240.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="none" stroke-width="1"/>
+<text x="498.5" y="330.0" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="400">sweet spot</text>
+<path d="M90.0,308.0 L190.0,278.3 L290.0,225.7 L390.0,157.1 L448.5,127.4 L490.0,111.4 L548.5,116.0 L590.0,129.7 L648.5,157.1 L690.0,184.6 L748.5,221.1 L790.0,248.6" fill="none" stroke="#ff5b2e" stroke-width="2.4"/>
+<text x="90.0" y="358.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">1</text>
+<text x="190.0" y="358.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">2</text>
+<text x="290.0" y="358.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">4</text>
+<text x="390.0" y="358.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">8</text>
+<text x="490.0" y="358.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">16</text>
+<text x="590.0" y="358.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">32</text>
+<text x="690.0" y="358.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">64</text>
+<text x="790.0" y="358.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">128</text>
+<text x="440.0" y="378.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">pool size (log scale)</text>
+<text x="82.0" y="108.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">tx/s</text>
+<text x="670.7" y="271.4" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">contention: locks, context</text>
+<text x="670.7" y="287.4" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">switches, cache misses</text>
+<text x="290.0" y="286.3" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">CPU idle</text>
+<text x="40.0" y="410.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A starting point from the PostgreSQL wiki: connections ≈ (cores × 2) + effective spindles. Past the knee, extra</text>
+<text x="40.0" y="429.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">connections only queue inside the database instead of in the pool, where waiting is cheaper and visible.</text>
+</svg>

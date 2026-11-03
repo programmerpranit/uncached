@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 349" width="880" height="349" role="img" aria-label="Opening a new connection spends about 8 ms on TCP, TLS, authentication and backend fork before a 2 ms query; a pooled request just borrows a connection and runs the query" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="349" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Connect per request vs reuse a pooled connection</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">time for one request that runs a 2 ms query</text>
+<text x="40.0" y="142.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="700">New connection</text>
+<rect x="200.0" y="120.0" width="60.0" height="36.0" rx="3" fill="#a69d8e" fill-opacity="0.3" stroke="#a69d8e" stroke-width="1.2"/>
+<text x="230.0" y="143.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="400">TCP</text>
+<rect x="260.0" y="120.0" width="120.0" height="36.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="320.0" y="143.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="400">TLS</text>
+<rect x="380.0" y="120.0" width="120.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.3" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="440.0" y="143.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="400">auth</text>
+<rect x="500.0" y="120.0" width="180.0" height="36.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1.2"/>
+<text x="590.0" y="143.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="400">backend fork</text>
+<rect x="680.0" y="120.0" width="120.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.3" stroke="#7cc47f" stroke-width="1.2"/>
+<text x="740.0" y="143.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="400">query</text>
+<text x="812.0" y="143.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="700">≈10 ms</text>
+<text x="40.0" y="232.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="700">Pooled</text>
+<rect x="200.0" y="210.0" width="8.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.3" stroke="#5fb3a1" stroke-width="1.2"/>
+<rect x="208.0" y="210.0" width="120.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.3" stroke="#7cc47f" stroke-width="1.2"/>
+<text x="268.0" y="233.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="400">query</text>
+<text x="340.0" y="233.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="700">≈2.1 ms</text>
+<text x="203.0" y="206.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">borrow</text>
+<text x="40.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Most of a short request is spent setting up the connection: TCP and TLS round trips, authentication,</text>
+<text x="40.0" y="319.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and (in PostgreSQL) forking a backend process. A pool pays that once and lends the warm connection out.</text>
+</svg>
