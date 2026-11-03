@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 369" width="880" height="369" role="img" aria-label="A request is resolved to a tenant from the subdomain or token, the tenant is stored in request context, a router picks the shard or database, and row-level security enforces the tenant filter; quotas and telemetry are tagged per tenant" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="369" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Tenant context on every request</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">resolve once at the edge, enforce at the data layer</text>
+<rect x="30.0" y="120.0" width="150.0" height="56.0" rx="3" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1"/>
+<text x="105.0" y="145.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Request</text>
+<text x="105.0" y="161.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">subdomain / JWT</text>
+<rect x="198.0" y="120.0" width="150.0" height="56.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="273.0" y="145.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Resolve tenant</text>
+<text x="273.0" y="161.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">tid → plan, shard</text>
+<line x1="182.0" y1="148.0" x2="196.0" y2="148.0" stroke="#a69d8e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<rect x="366.0" y="120.0" width="150.0" height="56.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="441.0" y="145.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Context</text>
+<text x="441.0" y="161.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">request scope</text>
+<line x1="350.0" y1="148.0" x2="364.0" y2="148.0" stroke="#a69d8e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<rect x="534.0" y="120.0" width="150.0" height="56.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="609.0" y="145.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Router</text>
+<text x="609.0" y="161.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">pool / shard / DB</text>
+<line x1="518.0" y1="148.0" x2="532.0" y2="148.0" stroke="#a69d8e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<rect x="702.0" y="120.0" width="150.0" height="56.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="777.0" y="145.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">DB guard</text>
+<text x="777.0" y="161.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">RLS policy</text>
+<line x1="686.0" y1="148.0" x2="700.0" y2="148.0" stroke="#a69d8e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<rect x="30.0" y="230.0" width="316.0" height="44.0" rx="3" fill="#d77fa1" fill-opacity="0.12" stroke="#d77fa1" stroke-width="1"/>
+<text x="188.0" y="256.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Quotas &amp; rate limits per tenant</text>
+<rect x="366.0" y="230.0" width="316.0" height="44.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="524.0" y="256.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Logs, metrics, traces tagged tenant_id</text>
+<text x="30.0" y="320.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Never trust a tenant ID from the request body. Derive it from the authenticated identity,</text>
+<text x="30.0" y="339.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">then let the database reject any query that forgets to filter (defence in depth).</text>
+</svg>

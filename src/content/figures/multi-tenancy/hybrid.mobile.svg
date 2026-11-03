@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 408" width="360" height="408" role="img" aria-label="Small tenants share pooled shards while large enterprise tenants get dedicated databases; a tenant can be migrated from a pool to a silo as it grows, with the same code and schema" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="408" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Hybrid tiering</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">pool small tenants, silo big ones</text>
+<rect x="16.0" y="82.0" width="328.0" height="120.0" rx="3" fill="#ff5b2e" fill-opacity="0.08" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="145.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="104.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">Pooled shards</text>
+<rect x="28.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="58.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="88.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="118.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="148.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="178.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="208.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="238.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="268.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="298.0" y="120.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="28.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="58.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="88.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="118.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="148.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="178.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="208.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="238.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="268.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="298.0" y="148.0" width="20.0" height="20.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<text x="28.0" y="192.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">long tail of small tenants</text>
+<text x="180.0" y="226.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="700">↓ migrate when big</text>
+<rect x="16.0" y="240.0" width="328.0" height="110.0" rx="3" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="298.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="262.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">Silos</text>
+<rect x="28.0" y="276.0" width="96.0" height="52.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="76.0" y="299.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">BigBank</text>
+<text x="76.0" y="315.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">own DB</text>
+<rect x="132.0" y="276.0" width="96.0" height="52.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="299.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Globex</text>
+<text x="180.0" y="315.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">own DB</text>
+<rect x="236.0" y="276.0" width="96.0" height="52.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="284.0" y="299.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Initech</text>
+<text x="284.0" y="315.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">own DB</text>
+<text x="16.0" y="378.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Same code; routing table decides.</text>
+</svg>

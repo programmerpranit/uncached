@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img" aria-label="Three models: a shared schema with a tenant_id column, a schema per tenant inside one database, and a database per tenant; isolation, cost and operational effort rise from left to right" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="430" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Three tenant isolation models</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">from shared everything to a database per tenant</text>
+<rect x="40.0" y="84.0" width="250.0" height="44.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="165.0" y="103.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Shared schema</text>
+<text x="165.0" y="119.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">tenant_id column on every row</text>
+<rect x="40.0" y="140.0" width="250.0" height="120.0" rx="6" fill="#ff5b2e" fill-opacity="0.06" stroke="#ff5b2e" stroke-width="1"/>
+<rect x="60.0" y="152.0" width="210.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="60.0" y="176.0" width="210.0" height="18.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="60.0" y="200.0" width="210.0" height="18.0" rx="3" fill="#9b8cff" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<rect x="60.0" y="224.0" width="210.0" height="18.0" rx="3" fill="#e2b45a" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<text x="165.0" y="252.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">rows of A, B, C, D interleaved</text>
+<text x="46.0" y="290.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">cheapest, densest</text>
+<text x="46.0" y="309.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">one migration</text>
+<text x="46.0" y="328.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">noisy neighbours</text>
+<text x="46.0" y="347.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">leak = WHERE bug</text>
+<rect x="320.0" y="84.0" width="250.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="445.0" y="103.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Schema per tenant</text>
+<text x="445.0" y="119.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">one DB, N schemas</text>
+<rect x="320.0" y="140.0" width="250.0" height="120.0" rx="6" fill="#5fb3a1" fill-opacity="0.06" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="336.0" y="156.0" width="48.0" height="80.0" rx="3" fill="#ff5b2e" fill-opacity="0.3" stroke="None" stroke-width="0"/>
+<text x="360.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">A</text>
+<rect x="392.0" y="156.0" width="48.0" height="80.0" rx="3" fill="#5fb3a1" fill-opacity="0.3" stroke="None" stroke-width="0"/>
+<text x="416.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">B</text>
+<rect x="448.0" y="156.0" width="48.0" height="80.0" rx="3" fill="#9b8cff" fill-opacity="0.3" stroke="None" stroke-width="0"/>
+<text x="472.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">C</text>
+<rect x="504.0" y="156.0" width="48.0" height="80.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="None" stroke-width="0"/>
+<text x="528.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">D</text>
+<text x="445.0" y="252.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">schemas in one database</text>
+<text x="326.0" y="290.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">logical isolation</text>
+<text x="326.0" y="309.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">per-tenant restore</text>
+<text x="326.0" y="328.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">N× migrations</text>
+<text x="326.0" y="347.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">catalog bloat</text>
+<rect x="600.0" y="84.0" width="250.0" height="44.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="725.0" y="103.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Database per tenant</text>
+<text x="725.0" y="119.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">own DB / cluster</text>
+<rect x="600.0" y="140.0" width="250.0" height="120.0" rx="6" fill="#9b8cff" fill-opacity="0.06" stroke="#9b8cff" stroke-width="1"/>
+<rect x="618.0" y="160.0" width="44.0" height="70.0" rx="10" fill="#ff5b2e" fill-opacity="0.3" stroke="#ff5b2e" stroke-width="1.5"/>
+<text x="640.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">A</text>
+<rect x="674.0" y="160.0" width="44.0" height="70.0" rx="10" fill="#5fb3a1" fill-opacity="0.3" stroke="#5fb3a1" stroke-width="1.5"/>
+<text x="696.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">B</text>
+<rect x="730.0" y="160.0" width="44.0" height="70.0" rx="10" fill="#9b8cff" fill-opacity="0.3" stroke="#9b8cff" stroke-width="1.5"/>
+<text x="752.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">C</text>
+<rect x="786.0" y="160.0" width="44.0" height="70.0" rx="10" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1.5"/>
+<text x="808.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">D</text>
+<text x="725.0" y="252.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">separate databases</text>
+<text x="606.0" y="290.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">strong isolation</text>
+<text x="606.0" y="309.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">per-tenant region</text>
+<text x="606.0" y="328.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">highest cost</text>
+<text x="606.0" y="347.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">fleet ops</text>
+<line x1="40.0" y1="380.0" x2="820.0" y2="380.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<text x="40.0" y="400.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">cost per tenant ↑   isolation ↑   operational effort ↑</text>
+</svg>
