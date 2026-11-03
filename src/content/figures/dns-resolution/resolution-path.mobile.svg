@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 423" width="360" height="423" role="img" aria-label="The application stub resolver sends one query to a recursive resolver, which iteratively asks a root server, the com TLD server and the example.com authoritative server, then returns the address" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="423" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">A cold-cache DNS lookup</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">stub → recursive → root → TLD → auth</text>
+<rect x="16.0" y="72.0" width="328.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="89.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">App + stub</text>
+<text x="180.0" y="105.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">getaddrinfo()</text>
+<rect x="16.0" y="126.0" width="328.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="143.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Recursive resolver</text>
+<text x="180.0" y="159.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">ISP / 1.1.1.1</text>
+<rect x="52.0" y="180.0" width="292.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.22" stroke="#9b8cff" stroke-width="1"/>
+<text x="198.0" y="197.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Root  .</text>
+<text x="198.0" y="213.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">referral → com.</text>
+<rect x="52.0" y="234.0" width="292.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="198.0" y="251.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">TLD  com.</text>
+<text x="198.0" y="267.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">referral → example.com</text>
+<rect x="52.0" y="288.0" width="292.0" height="40.0" rx="3" fill="#d77fa1" fill-opacity="0.22" stroke="#d77fa1" stroke-width="1"/>
+<text x="198.0" y="305.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Authoritative</text>
+<text x="198.0" y="321.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">A 93.184.215.14</text>
+<text x="16.0" y="348.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">The stub asks once. The resolver</text>
+<text x="16.0" y="363.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">queries root, TLD and authoritative</text>
+<text x="16.0" y="378.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">servers in turn, following referrals,</text>
+<text x="16.0" y="393.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">and caches each answer for its TTL.</text>
+</svg>

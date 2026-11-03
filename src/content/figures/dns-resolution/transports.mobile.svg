@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 348" width="360" height="348" role="img" aria-label="Four DNS transports: plaintext UDP and TCP on port 53, DNS over TLS on port 853 and DNS over HTTPS on port 443, with notes on visibility to on-path observers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="348" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">DNS transports</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">who can see your queries</text>
+<rect x="16.0" y="72.0" width="96.0" height="40.0" rx="3" fill="#e5534b" fill-opacity="0.22" stroke="#e5534b" stroke-width="1"/>
+<text x="64.0" y="95.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">UDP :53</text>
+<text x="122.0" y="86.0" font-size="9" fill="#ede6d8" text-anchor="start" font-weight="400">default; one datagram each way</text>
+<text x="122.0" y="100.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">on-path observers see and can spoof</text>
+<rect x="16.0" y="124.0" width="96.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="64.0" y="147.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">TCP :53</text>
+<text x="122.0" y="138.0" font-size="9" fill="#ede6d8" text-anchor="start" font-weight="400">responses &gt; 1232 B</text>
+<text x="122.0" y="152.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">still plaintext</text>
+<rect x="16.0" y="176.0" width="96.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="64.0" y="199.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">DoT :853</text>
+<text x="122.0" y="190.0" font-size="9" fill="#ede6d8" text-anchor="start" font-weight="400">DNS over TLS (RFC 7858)</text>
+<text x="122.0" y="204.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">encrypted</text>
+<rect x="16.0" y="228.0" width="96.0" height="40.0" rx="3" fill="#7cc47f" fill-opacity="0.22" stroke="#7cc47f" stroke-width="1"/>
+<text x="64.0" y="251.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">DoH :443</text>
+<text x="122.0" y="242.0" font-size="9" fill="#ede6d8" text-anchor="start" font-weight="400">DNS over HTTPS (RFC 8484)</text>
+<text x="122.0" y="256.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">encrypted</text>
+<text x="16.0" y="288.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">Encryption covers stub ↔ resolver</text>
+<text x="16.0" y="303.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">only. DNSSEC signs answers but</text>
+<text x="16.0" y="318.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">does not hide them.</text>
+</svg>

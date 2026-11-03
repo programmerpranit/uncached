@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 430" width="360" height="430" role="img" aria-label="The DNS namespace as a tree: root delegates to org, com and io; com delegates to example.com and shop.com; example.com holds www, api and mail records; a panel shows the NS and glue records stored in the com zone" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="430" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">DNS delegation</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">NS records hand off subtrees</text>
+<rect x="120.0" y="70.0" width="120.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.22" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="90.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">.  root</text>
+<line x1="180.0" y1="104.0" x2="180.0" y2="120.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="120.0" y="122.0" width="120.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="142.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">com.</text>
+<line x1="180.0" y1="156.0" x2="180.0" y2="172.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="100.0" y="174.0" width="160.0" height="34.0" rx="3" fill="#d77fa1" fill-opacity="0.22" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="194.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">example.com.</text>
+<rect x="30.0" y="236.0" width="92.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="76.0" y="254.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">www</text>
+<line x1="180.0" y1="208.0" x2="76.0" y2="234.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="134.0" y="236.0" width="92.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="254.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">api</text>
+<line x1="180.0" y1="208.0" x2="180.0" y2="234.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="238.0" y="236.0" width="92.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="284.0" y="254.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">mail</text>
+<line x1="180.0" y1="208.0" x2="284.0" y2="234.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<rect x="16.0" y="286.0" width="328.0" height="120.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="28.0" y="306.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="700">In the com. zone:</text>
+<text x="28.0" y="322.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">example.com. NS ns1.example.com.</text>
+<text x="28.0" y="338.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">ns1.example.com. A 192.0.2.53</text>
+<text x="28.0" y="354.0" font-size="9.5" fill="#e2b45a" text-anchor="start" font-weight="600">↑ glue: avoids asking ns1</text>
+<text x="28.0" y="370.0" font-size="9.5" fill="#e2b45a" text-anchor="start" font-weight="600">to find ns1</text>
+</svg>

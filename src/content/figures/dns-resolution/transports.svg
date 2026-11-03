@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 396" width="880" height="396" role="img" aria-label="Four DNS transports: plaintext UDP and TCP on port 53, DNS over TLS on port 853 and DNS over HTTPS on port 443, with notes on visibility to on-path observers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="396" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">How DNS travels and who can see it</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">plain DNS is visible to every hop; DoT and DoH encrypt the stub-to-resolver leg</text>
+<rect x="40.0" y="90.0" width="140.0" height="44.0" rx="3" fill="#e5534b" fill-opacity="0.22" stroke="#e5534b" stroke-width="1"/>
+<text x="110.0" y="116.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">UDP :53</text>
+<text x="200.0" y="110.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">default; one datagram each way</text>
+<text x="200.0" y="126.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">on-path observers see and can spoof</text>
+<rect x="560.0" y="98.0" width="260.0" height="28.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="570.0" y="117.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">stub</text>
+<line x1="600.0" y1="112.0" x2="770.0" y2="112.0" stroke="#e5534b" stroke-width="1.4" marker-end="url(#ah0)" stroke-dasharray="5 4"/>
+<text x="780.0" y="117.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">resolver</text>
+<rect x="40.0" y="150.0" width="140.0" height="44.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="110.0" y="176.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">TCP :53</text>
+<text x="200.0" y="170.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">responses &gt; 1232 B (truncated), zone transfers</text>
+<text x="200.0" y="186.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">still plaintext</text>
+<rect x="560.0" y="158.0" width="260.0" height="28.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="570.0" y="177.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">stub</text>
+<line x1="600.0" y1="172.0" x2="770.0" y2="172.0" stroke="#e2b45a" stroke-width="2" marker-end="url(#ah1)" stroke-dasharray="5 4"/>
+<text x="780.0" y="177.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">resolver</text>
+<rect x="40.0" y="210.0" width="140.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="110.0" y="236.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">DoT :853</text>
+<text x="200.0" y="230.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">DNS over TLS (RFC 7858)</text>
+<text x="200.0" y="246.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">encrypted; easy for networks to block</text>
+<rect x="560.0" y="218.0" width="260.0" height="28.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="570.0" y="237.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">stub</text>
+<line x1="600.0" y1="232.0" x2="770.0" y2="232.0" stroke="#5fb3a1" stroke-width="2" marker-end="url(#ah2)"/>
+<text x="780.0" y="237.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">resolver</text>
+<rect x="40.0" y="270.0" width="140.0" height="44.0" rx="3" fill="#7cc47f" fill-opacity="0.22" stroke="#7cc47f" stroke-width="1"/>
+<text x="110.0" y="296.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">DoH :443</text>
+<text x="200.0" y="290.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">DNS over HTTPS (RFC 8484)</text>
+<text x="200.0" y="306.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">encrypted; looks like web traffic</text>
+<rect x="560.0" y="278.0" width="260.0" height="28.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="570.0" y="297.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">stub</text>
+<line x1="600.0" y1="292.0" x2="770.0" y2="292.0" stroke="#7cc47f" stroke-width="2" marker-end="url(#ah3)"/>
+<text x="780.0" y="297.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">resolver</text>
+<text x="40.0" y="350.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Encryption covers only the stub ↔ resolver hop; the resolver ↔ authoritative leg is usually still plaintext UDP.</text>
+<text x="40.0" y="366.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">DNSSEC is orthogonal: it signs records so a resolver can detect forgery, but it does not hide what you asked for.</text>
+</svg>

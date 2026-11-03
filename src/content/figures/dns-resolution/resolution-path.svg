@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 407" width="880" height="407" role="img" aria-label="The application stub resolver sends one query to a recursive resolver, which iteratively asks a root server, the com TLD server and the example.com authoritative server, then returns the address" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="407" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Resolving www.example.com from a cold cache</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the stub asks once; the recursive resolver walks the hierarchy with iterative queries</text>
+<rect x="40.0" y="150.0" width="120.0" height="54.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="100.0" y="174.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">App + stub</text>
+<text x="100.0" y="190.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">getaddrinfo()</text>
+<rect x="230.0" y="150.0" width="190.0" height="54.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="325.0" y="174.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Recursive resolver</text>
+<text x="325.0" y="190.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">ISP · 1.1.1.1 · 8.8.8.8</text>
+<rect x="530.0" y="80.0" width="220.0" height="50.0" rx="3" fill="#9b8cff" fill-opacity="0.22" stroke="#9b8cff" stroke-width="1"/>
+<text x="640.0" y="102.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Root  .</text>
+<text x="640.0" y="118.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">13 named servers, anycast</text>
+<rect x="530.0" y="170.0" width="220.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="640.0" y="192.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">TLD  com.</text>
+<text x="640.0" y="208.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">Verisign servers</text>
+<rect x="530.0" y="260.0" width="220.0" height="50.0" rx="3" fill="#d77fa1" fill-opacity="0.22" stroke="#d77fa1" stroke-width="1"/>
+<text x="640.0" y="282.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Authoritative</text>
+<text x="640.0" y="298.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">ns1.example.com</text>
+<line x1="160.0" y1="170.0" x2="228.0" y2="170.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="194.0" y="162.0" font-size="9" fill="#a69d8e" text-anchor="middle" font-weight="400">1 query</text>
+<line x1="228.0" y1="190.0" x2="162.0" y2="190.0" stroke="#7cc47f" stroke-width="1.2" marker-end="url(#ah1)"/>
+<text x="194.0" y="206.0" font-size="9" fill="#7cc47f" text-anchor="middle" font-weight="400">8 answer</text>
+<line x1="420.0" y1="165.0" x2="528.0" y2="100.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="528.0" y1="114.0" x2="420.0" y2="185.0" stroke="#9b8cff" stroke-width="1.1" marker-end="url(#ah2)" stroke-dasharray="4 3"/>
+<line x1="420.0" y1="165.0" x2="528.0" y2="190.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="528.0" y1="204.0" x2="420.0" y2="185.0" stroke="#e2b45a" stroke-width="1.1" marker-end="url(#ah3)" stroke-dasharray="4 3"/>
+<line x1="420.0" y1="165.0" x2="528.0" y2="280.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="528.0" y1="294.0" x2="420.0" y2="185.0" stroke="#d77fa1" stroke-width="1.1" marker-end="url(#ah4)" stroke-dasharray="4 3"/>
+<text x="764.0" y="100.0" font-size="9.5" fill="#9b8cff" text-anchor="start" font-weight="400">2–3 referral</text>
+<text x="764.0" y="190.0" font-size="9.5" fill="#e2b45a" text-anchor="start" font-weight="400">4–5 referral</text>
+<text x="764.0" y="280.0" font-size="9.5" fill="#d77fa1" text-anchor="start" font-weight="400">6–7 answer</text>
+<text x="40.0" y="345.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">The stub sends one recursive query ("give me the final answer"). The resolver issues iterative queries: each server returns either</text>
+<text x="40.0" y="361.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">the answer or a referral — the NS records (plus glue addresses) for the next zone down. Every response is cached for its TTL,</text>
+<text x="40.0" y="377.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">so the next lookup for anything under com. skips the root entirely, and a repeat of this one is answered from cache in ~1 ms.</text>
+</svg>
