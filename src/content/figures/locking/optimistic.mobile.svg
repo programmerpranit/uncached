@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 323" width="360" height="323" role="img" aria-label="Optimistic locking: both transactions read version 7; the first conditional update succeeds and bumps the version to 8; the second matches zero rows and must re-read and retry" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="323" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Optimistic locking</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">compare version on write</text>
+<rect x="16.0" y="86.0" width="328.0" height="32.0" rx="3" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1"/>
+<text x="180.0" y="105.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">A, B both read v=7</text>
+<rect x="16.0" y="128.0" width="328.0" height="32.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="147.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">A: UPDATE WHERE v=7 → 1 row</text>
+<rect x="16.0" y="170.0" width="328.0" height="32.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="189.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">B: UPDATE WHERE v=7 → 0 rows</text>
+<rect x="16.0" y="212.0" width="328.0" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="231.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">B: re-read v=8, retry</text>
+<text x="16.0" y="274.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">No locks held; conflicts</text>
+<text x="16.0" y="293.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">found at write, then retried.</text>
+</svg>

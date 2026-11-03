@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 310" width="360" height="310" role="img" aria-label="Optimistic locking gives higher throughput at low conflict rates but degrades sharply as conflicts rise; pessimistic locking has steadier throughput and wins on hot rows" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="310" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Choosing a strategy</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">depends on conflict rate</text>
+<rect x="16.0" y="90.0" width="328.0" height="90.0" rx="3" fill="#ff5b2e" fill-opacity="0.1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="138.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="112.0" font-size="12" fill="#ff5b2e" text-anchor="start" font-weight="700">Optimistic</text>
+<text x="28.0" y="134.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">rare conflicts, user think time,</text>
+<text x="28.0" y="153.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">REST + ETag, distributed</text>
+<rect x="16.0" y="196.0" width="328.0" height="90.0" rx="3" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="244.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="218.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">Pessimistic</text>
+<text x="28.0" y="240.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">hot rows, short transactions,</text>
+<text x="28.0" y="259.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">retries are expensive</text>
+</svg>
