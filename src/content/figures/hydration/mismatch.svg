@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 351" width="880" height="351" role="img" aria-label="Server HTML and the client first render differ, causing a hydration mismatch, with common causes and fixes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="351" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Hydration mismatch</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">server and client must render the same first output</text>
+<rect x="40.0" y="96.0" width="250.0" height="110.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="120.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Server HTML</text>
+<text x="56.0" y="146.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;p&gt;Updated 10:42 UTC&lt;/p&gt;</text>
+<text x="56.0" y="166.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;button&gt;Sign in&lt;/button&gt;</text>
+<rect x="320.0" y="96.0" width="250.0" height="110.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="336.0" y="120.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Client first render</text>
+<text x="336.0" y="146.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;p&gt;Updated 15:42 IST&lt;/p&gt;</text>
+<text x="336.0" y="166.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;button&gt;Hi, Ana&lt;/button&gt;</text>
+<rect x="600.0" y="96.0" width="240.0" height="110.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="616.0" y="120.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">Result</text>
+<text x="616.0" y="146.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">recoverable error;</text>
+<text x="616.0" y="164.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">React client-renders up</text>
+<text x="616.0" y="182.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">to nearest Suspense</text>
+<line x1="290.0" y1="150.0" x2="320.0" y2="150.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="570.0" y1="150.0" x2="600.0" y2="150.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="240.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="700">Common causes</text>
+<text x="40.0" y="264.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• Date.now(), Math.random(), time zones</text>
+<text x="40.0" y="283.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• reading window or localStorage in render</text>
+<text x="40.0" y="302.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• invalid nesting (&lt;div&gt; inside &lt;p&gt;)</text>
+<text x="40.0" y="321.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• browser extensions injecting nodes</text>
+<text x="470.0" y="240.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">Fixes</text>
+<text x="470.0" y="264.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• same value on both sides, pass in data</text>
+<text x="470.0" y="283.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• client-only values in an effect</text>
+<text x="470.0" y="302.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• useId() for stable generated IDs</text>
+<text x="470.0" y="321.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• suppressHydrationWarning for one-offs</text>
+</svg>

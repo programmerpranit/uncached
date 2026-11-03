@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 476" width="360" height="476" role="img" aria-label="Five hydration strategies compared by which page regions run JavaScript: full, progressive, selective, islands and resumability" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="476" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Hydration strategies</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what runs on the client, when</text>
+<text x="16.0" y="98.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Full hydration</text>
+<rect x="16.0" y="108.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="46.0" y="108.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="76.0" y="108.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="106.0" y="108.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="136.0" y="108.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="166.0" y="108.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<text x="204.0" y="126.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Next pages/</text>
+<text x="16.0" y="164.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Progressive</text>
+<rect x="16.0" y="174.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="46.0" y="174.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="76.0" y="174.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="106.0" y="174.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="136.0" y="174.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="166.0" y="174.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="204.0" y="192.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">on-visible</text>
+<text x="16.0" y="230.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Selective (React 18)</text>
+<rect x="16.0" y="240.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="46.0" y="240.0" width="26.0" height="26.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="76.0" y="240.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="106.0" y="240.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="136.0" y="240.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="166.0" y="240.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="204.0" y="258.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">React 18</text>
+<text x="16.0" y="296.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Islands / partial</text>
+<rect x="16.0" y="306.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="46.0" y="306.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="76.0" y="306.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="106.0" y="306.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="136.0" y="306.0" width="26.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="166.0" y="306.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="204.0" y="324.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Astro, Fresh</text>
+<text x="16.0" y="362.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Resumability</text>
+<rect x="16.0" y="372.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="46.0" y="372.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="76.0" y="372.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="106.0" y="372.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="136.0" y="372.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="166.0" y="372.0" width="26.0" height="26.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="204.0" y="390.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Qwik</text>
+<text x="16.0" y="428.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">purple = hydrated, amber = first,</text>
+<text x="16.0" y="446.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">blank = static HTML only</text>
+</svg>

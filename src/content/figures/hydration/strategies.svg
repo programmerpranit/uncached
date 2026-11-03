@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 450" width="880" height="450" role="img" aria-label="Five hydration strategies compared by which page regions run JavaScript: full, progressive, selective, islands and resumability" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="450" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Hydration strategies</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">how much JavaScript runs on the client, and when</text>
+<text x="40.0" y="120.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">Full hydration</text>
+<text x="40.0" y="138.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">whole page hydrated in one pass</text>
+<rect x="330.0" y="104.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="374.0" y="104.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="418.0" y="104.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="462.0" y="104.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="506.0" y="104.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="550.0" y="104.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<text x="610.0" y="127.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">classic SSR (Next pages/, Nuxt)</text>
+<text x="40.0" y="180.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">Progressive</text>
+<text x="40.0" y="198.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">parts hydrate when visible / idle</text>
+<rect x="330.0" y="164.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="374.0" y="164.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="418.0" y="164.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="462.0" y="164.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="506.0" y="164.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="550.0" y="164.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="610.0" y="187.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">lazy hydration, on-visible</text>
+<text x="40.0" y="240.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">Selective (React 18)</text>
+<text x="40.0" y="258.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Suspense boundaries hydrate independently</text>
+<rect x="330.0" y="224.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="374.0" y="224.0" width="38.0" height="38.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="418.0" y="224.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="462.0" y="224.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="506.0" y="224.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="550.0" y="224.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="610.0" y="247.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">clicked boundary jumps the queue</text>
+<text x="40.0" y="300.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">Islands / partial</text>
+<text x="40.0" y="318.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">only interactive widgets ship JS</text>
+<rect x="330.0" y="284.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="374.0" y="284.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="418.0" y="284.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="462.0" y="284.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="506.0" y="284.0" width="38.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="#4a4136" stroke-width="1"/>
+<rect x="550.0" y="284.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="610.0" y="307.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Astro, Fresh, Eleventy+is-land</text>
+<text x="40.0" y="360.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">Resumability</text>
+<text x="40.0" y="378.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">no re-execution; listeners load on demand</text>
+<rect x="330.0" y="344.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="374.0" y="344.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="418.0" y="344.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="462.0" y="344.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="506.0" y="344.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="550.0" y="344.0" width="38.0" height="38.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="610.0" y="367.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Qwik</text>
+<rect x="40.0" y="408.0" width="14.0" height="14.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="62.0" y="420.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">hydrated (JS runs)</text>
+<rect x="210.0" y="408.0" width="14.0" height="14.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="232.0" y="420.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">hydrated first (user interacted)</text>
+<rect x="450.0" y="408.0" width="14.0" height="14.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="472.0" y="420.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">static HTML, no JS</text>
+</svg>

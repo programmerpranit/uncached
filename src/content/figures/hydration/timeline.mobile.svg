@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 468" width="360" height="468" role="img" aria-label="Timeline: HTML arrives and paints, then JavaScript downloads, executes and hydrates before the page becomes interactive" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="468" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">SSR + hydration</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">visible early, interactive later</text>
+<rect x="16.0" y="86.0" width="140.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="26.0" y="106.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">HTML</text>
+<rect x="16.0" y="124.0" width="220.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="26.0" y="144.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">JS download</text>
+<rect x="16.0" y="162.0" width="156.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="26.0" y="182.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">parse/exec</text>
+<rect x="16.0" y="200.0" width="188.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="26.0" y="220.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">hydrate</text>
+<rect x="16.0" y="238.0" width="156.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="26.0" y="258.0" font-size="11" fill="#1b1712" text-anchor="start" font-weight="600">interactive</text>
+<text x="16.0" y="292.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">painted after HTML step</text>
+<text x="16.0" y="312.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">interactive only at the end</text>
+<rect x="16.0" y="330.0" width="328.0" height="40.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="180.0" y="355.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">gap: looks ready, not clickable</text>
+<text x="16.0" y="400.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Client re-runs components, matches</text>
+<text x="16.0" y="419.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">them to existing DOM, attaches</text>
+<text x="16.0" y="438.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">listeners and runs effects.</text>
+</svg>
