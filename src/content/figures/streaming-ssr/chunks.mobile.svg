@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 530" width="360" height="530" role="img" aria-label="A streamed HTML response: the shell contains a placeholder and fallback, and a later chunk carries hidden content plus a small script that swaps it in" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="530" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">One response, many chunks</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">fallback swapped in place</text>
+<rect x="16.0" y="84.0" width="328.0" height="145.0" rx="6" fill="#ff5b2e" fill-opacity="0.08" stroke="#ff5b2e" stroke-width="1.3"/>
+<text x="26.0" y="104.0" font-size="10.5" fill="#ff5b2e" text-anchor="start" font-weight="700">chunk 1: shell</text>
+<text x="334.0" y="104.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">40 ms</text>
+<text x="26.0" y="124.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;html&gt;&lt;body&gt;</text>
+<text x="26.0" y="139.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;nav&gt;…&lt;/nav&gt;</text>
+<text x="26.0" y="154.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;!--$?--&gt;</text>
+<text x="26.0" y="169.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;template id="B:0"&gt;&lt;/template&gt;</text>
+<text x="26.0" y="184.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;div class="skeleton"&gt;…&lt;/div&gt;</text>
+<text x="26.0" y="199.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;!--/$--&gt;</text>
+<text x="26.0" y="214.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;script src="app.js" async&gt;</text>
+<rect x="16.0" y="241.0" width="328.0" height="130.0" rx="6" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.3"/>
+<text x="26.0" y="261.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="700">chunk 2: boundary</text>
+<text x="334.0" y="261.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">700 ms</text>
+<text x="26.0" y="281.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;div hidden id="S:0"&gt;</text>
+<text x="26.0" y="296.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;ul class="reviews"&gt;…&lt;/ul&gt;</text>
+<text x="26.0" y="311.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;/div&gt;</text>
+<text x="26.0" y="326.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;script&gt;</text>
+<text x="26.0" y="341.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">  $RC("B:0", "S:0")</text>
+<text x="26.0" y="356.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;/script&gt;</text>
+<rect x="16.0" y="383.0" width="328.0" height="55.0" rx="6" fill="#a69d8e" fill-opacity="0.08" stroke="#a69d8e" stroke-width="1.3"/>
+<text x="26.0" y="403.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="700">chunk 3</text>
+<text x="334.0" y="403.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">700 ms</text>
+<text x="26.0" y="423.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;/body&gt;&lt;/html&gt;</text>
+<text x="16.0" y="462.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Inline $RC swaps the hidden content</text>
+<text x="16.0" y="481.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">into the placeholder, even before</text>
+<text x="16.0" y="500.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">React itself has loaded.</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="880" height="520" role="img" aria-label="Timeline comparing classic SSR, which waits for the slowest query before sending anything, with streaming SSR, which sends a shell immediately and streams sections as data resolves" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="520" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Classic SSR vs streaming SSR</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the slowest query no longer holds the whole page hostage</text>
+<line x1="150.0" y1="100.0" x2="150.0" y2="392.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="150.0" y="96.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">0 ms</text>
+<line x1="274.0" y1="100.0" x2="274.0" y2="392.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="274.0" y="96.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">200 ms</text>
+<line x1="398.0" y1="100.0" x2="398.0" y2="392.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="398.0" y="96.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">400 ms</text>
+<line x1="522.0" y1="100.0" x2="522.0" y2="392.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="522.0" y="96.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">600 ms</text>
+<line x1="646.0" y1="100.0" x2="646.0" y2="392.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="646.0" y="96.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">800 ms</text>
+<line x1="770.0" y1="100.0" x2="770.0" y2="392.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="770.0" y="96.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">1000 ms</text>
+<text x="40.0" y="128.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="700">Classic</text>
+<text x="40.0" y="144.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">server</text>
+<text x="40.0" y="190.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">browser</text>
+<rect x="150.0" y="116.0" width="49.6" height="24.0" rx="4" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="174.8" y="132.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">user</text>
+<rect x="199.6" y="116.0" width="99.2" height="24.0" rx="4" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="249.2" y="132.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">products</text>
+<rect x="298.8" y="116.0" width="285.2" height="24.0" rx="4" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="441.4" y="132.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">reviews (slow)</text>
+<rect x="584.0" y="116.0" width="37.2" height="24.0" rx="4" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="621.2" y="176.0" width="37.2" height="24.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="658.4" y="176.0" width="111.6" height="24.0" rx="4" fill="#a69d8e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="714.2" y="192.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">load JS</text>
+<rect x="770.0" y="176.0" width="62.0" height="24.0" rx="4" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="801.0" y="192.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">hydrate</text>
+<text x="621.2" y="214.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">first paint ~760 ms</text>
+<text x="40.0" y="262.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="700">Streaming</text>
+<text x="40.0" y="278.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">server</text>
+<text x="40.0" y="330.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">browser</text>
+<rect x="150.0" y="250.0" width="24.8" height="24.0" rx="4" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="174.8" y="250.0" width="124.0" height="24.0" rx="4" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="236.8" y="266.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">products</text>
+<rect x="298.8" y="250.0" width="285.2" height="24.0" rx="4" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="441.4" y="266.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">reviews (slow)</text>
+<rect x="174.8" y="316.0" width="37.2" height="24.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="193.4" y="332.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">shell</text>
+<rect x="298.8" y="316.0" width="31.0" height="24.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="329.8" y="316.0" width="111.6" height="24.0" rx="4" fill="#a69d8e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="385.6" y="332.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">load JS</text>
+<rect x="441.4" y="316.0" width="55.8" height="24.0" rx="4" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="469.3" y="332.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">hydrate</text>
+<rect x="584.0" y="316.0" width="24.8" height="24.0" rx="4" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="608.8" y="316.0" width="31.0" height="24.0" rx="4" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="193.4" y="358.0" font-size="10.5" fill="#ff5b2e" text-anchor="middle" font-weight="400">shell + skeletons</text>
+<text x="314.3" y="358.0" font-size="10.5" fill="#ff5b2e" text-anchor="middle" font-weight="400">products</text>
+<text x="611.9" y="358.0" font-size="10.5" fill="#ff5b2e" text-anchor="middle" font-weight="400">reviews</text>
+<text x="469.3" y="374.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="400">interactive early</text>
+<rect x="150.0" y="408.0" width="12.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="168.0" y="418.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">data fetch</text>
+<rect x="258.2" y="408.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="276.2" y="418.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">slow fetch</text>
+<rect x="366.4" y="408.0" width="12.0" height="12.0" rx="2" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="384.4" y="418.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">HTML arrives / paints</text>
+<rect x="549.6" y="408.0" width="12.0" height="12.0" rx="2" fill="#9b8cff" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="567.6" y="418.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">render / hydrate</text>
+<rect x="698.7" y="408.0" width="12.0" height="12.0" rx="2" fill="#a69d8e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="716.7" y="418.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">download JS</text>
+<text x="40.0" y="452.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Classic SSR is all-or-nothing: it waits for every query, then for all JS, before anything is interactive.</text>
+<text x="40.0" y="471.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Streaming sends the shell at once, flushes each Suspense boundary as its data resolves,</text>
+<text x="40.0" y="490.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and hydrates pieces independently.</text>
+</svg>
