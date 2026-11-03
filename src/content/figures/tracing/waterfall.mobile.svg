@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 459" width="360" height="459" role="img" aria-label="Trace waterfall for a 420 ms checkout request: gateway span contains orders, which contains a 40 ms Postgres insert, a 60 ms inventory reserve, a 250 ms payments span containing a 230 ms Stripe call, and a Kafka publish" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="459" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">A trace = tree of spans</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same trace ID, parent links</text>
+<text x="16.0" y="102.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="700">gateway  GET /checkout</text>
+<rect x="16.0" y="108.0" width="328.0" height="12.0" rx="2" fill="#ff5b2e" fill-opacity="0.55" stroke="#ff5b2e" stroke-width="1"/>
+<text x="344.0" y="102.0" font-size="9.5" fill="#a69d8e" text-anchor="end" font-weight="400">420 ms</text>
+<text x="26.0" y="146.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">orders  POST /orders</text>
+<rect x="23.8" y="152.0" width="312.4" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="0.55" stroke="#5fb3a1" stroke-width="1"/>
+<text x="344.0" y="146.0" font-size="9.5" fill="#a69d8e" text-anchor="end" font-weight="400">400 ms</text>
+<text x="36.0" y="190.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">postgres  INSERT order</text>
+<rect x="31.6" y="196.0" width="31.2" height="12.0" rx="2" fill="#9b8cff" fill-opacity="0.55" stroke="#9b8cff" stroke-width="1"/>
+<text x="344.0" y="190.0" font-size="9.5" fill="#a69d8e" text-anchor="end" font-weight="400">40 ms</text>
+<text x="36.0" y="234.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">inventory  reserve</text>
+<rect x="70.7" y="240.0" width="46.9" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="0.55" stroke="#5fb3a1" stroke-width="1"/>
+<text x="344.0" y="234.0" font-size="9.5" fill="#a69d8e" text-anchor="end" font-weight="400">60 ms</text>
+<text x="36.0" y="278.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">payments  charge</text>
+<rect x="125.3" y="284.0" width="195.2" height="12.0" rx="2" fill="#e2b45a" fill-opacity="0.55" stroke="#e2b45a" stroke-width="1"/>
+<text x="344.0" y="278.0" font-size="9.5" fill="#a69d8e" text-anchor="end" font-weight="400">250 ms</text>
+<text x="46.0" y="322.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">stripe  HTTPS POST</text>
+<rect x="133.1" y="328.0" width="179.6" height="12.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="#e5534b" stroke-width="1"/>
+<text x="344.0" y="322.0" font-size="9.5" fill="#a69d8e" text-anchor="end" font-weight="400">230 ms</text>
+<text x="36.0" y="366.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">kafka  publish</text>
+<rect x="324.5" y="372.0" width="9.4" height="12.0" rx="2" fill="#9b8cff" fill-opacity="0.55" stroke="#9b8cff" stroke-width="1"/>
+<text x="344.0" y="366.0" font-size="9.5" fill="#a69d8e" text-anchor="end" font-weight="400">12 ms</text>
+<text x="16.0" y="410.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">230 of 420 ms is the</text>
+<text x="16.0" y="429.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Stripe call under payments.</text>
+</svg>

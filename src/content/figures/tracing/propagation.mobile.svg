@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" width="360" height="460" role="img" aria-label="W3C traceparent header carrying version, trace ID, parent span ID and sampled flag from the gateway to orders over HTTP and to a shipping worker via a Kafka record header, with an in-process context object inside each service" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="460" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ede6d8"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Context propagation</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">headers, in-process, messages</text>
+<rect x="16.0" y="88.0" width="328.0" height="50.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="110.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">gateway</text>
+<text x="180.0" y="126.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">span A</text>
+<line x1="180.0" y1="138.0" x2="180.0" y2="180.0" stroke="#ede6d8" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="190.0" y="164.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">HTTP header</text>
+<rect x="16.0" y="180.0" width="328.0" height="50.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="202.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">orders</text>
+<text x="180.0" y="218.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">span B, parent A</text>
+<line x1="180.0" y1="230.0" x2="180.0" y2="272.0" stroke="#ede6d8" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="190.0" y="256.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Kafka header</text>
+<rect x="16.0" y="272.0" width="328.0" height="50.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="294.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">shipping worker</text>
+<text x="180.0" y="310.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">span D, link to C</text>
+<rect x="16.0" y="370.0" width="328.0" height="66.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="392.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">traceparent:</text>
+<text x="28.0" y="410.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">00-4bf92f…4736-00f067…02b7-01</text>
+<text x="28.0" y="428.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">ver · trace-id · parent · flags</text>
+</svg>

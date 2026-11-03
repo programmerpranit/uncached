@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 433" width="880" height="433" role="img" aria-label="Head-based sampling decides at the root and propagates the flag, which is cheap but drops most errors; tail-based sampling buffers complete traces in a collector and keeps errors, slow traces and a small percentage of the rest" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="433" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Head vs tail sampling</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">decide at the start (cheap, blind) or after the trace finishes (smart, costly)</text>
+<rect x="40.0" y="96.0" width="380.0" height="250.0" rx="8" fill="#ff5b2e" fill-opacity="0.07" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="56.0" y="120.0" font-size="13" fill="#ff5b2e" text-anchor="start" font-weight="700">Head-based</text>
+<text x="56.0" y="150.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Root service rolls the dice: keep 5%</text>
+<text x="56.0" y="176.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Decision travels in the sampled flag</text>
+<text x="56.0" y="202.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Every service obeys → whole trace or none</text>
+<text x="56.0" y="228.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">✓ cheap, no buffering</text>
+<text x="56.0" y="254.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">✗ blind: 95% of errors and slow</text>
+<text x="56.0" y="280.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">   requests are dropped too</text>
+<rect x="460.0" y="96.0" width="380.0" height="250.0" rx="8" fill="#e2b45a" fill-opacity="0.07" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="476.0" y="120.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Tail-based</text>
+<text x="476.0" y="150.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Export 100% of spans to a collector tier</text>
+<text x="476.0" y="176.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Buffer each trace until it completes</text>
+<text x="476.0" y="202.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Policy: keep errors, p99+, 1% of the rest</text>
+<text x="476.0" y="228.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">✓ keeps the interesting traces</text>
+<text x="476.0" y="254.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">✗ collector memory, trace-ID-aware</text>
+<text x="476.0" y="280.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">   routing, a delay before decisions</text>
+<text x="40.0" y="384.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Common setup: head-sample generously in SDKs, then tail-sample in an OpenTelemetry Collector gateway that</text>
+<text x="40.0" y="403.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">load-balances by trace ID so all spans of a trace meet in one place.</text>
+</svg>
