@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 399" width="880" height="399" role="img" aria-label="Comparison of thread-per-request servers, event-loop async runtimes and actor systems: their unit of concurrency, how they wait on I/O, their main limits and example platforms" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="399" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Three ways to wait</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what a server does while a request waits on the database</text>
+<rect x="40.0" y="90.0" width="255.0" height="210.0" rx="8" fill="#ff5b2e" fill-opacity="0.1" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="54.0" y="114.0" font-size="12.5" fill="#ff5b2e" text-anchor="start" font-weight="700">Thread per request</text>
+<text x="54.0" y="144.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">1 OS thread per request</text>
+<text x="54.0" y="168.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">blocking calls, simple stack traces</text>
+<text x="54.0" y="192.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">~1 MB stack + context switches</text>
+<text x="54.0" y="216.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">limit: thousands of threads</text>
+<text x="54.0" y="284.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">Java servlets, Rails, Django, PHP-FPM</text>
+<rect x="315.0" y="90.0" width="255.0" height="210.0" rx="8" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="329.0" y="114.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">Event loop + async</text>
+<text x="329.0" y="144.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">few threads, many tasks</text>
+<text x="329.0" y="168.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">await yields at each I/O</text>
+<text x="329.0" y="192.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">no blocking allowed on loop</text>
+<text x="329.0" y="216.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">limit: CPU of the loop thread</text>
+<text x="329.0" y="284.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">Node.js, asyncio, Netty, Tokio</text>
+<rect x="590.0" y="90.0" width="255.0" height="210.0" rx="8" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="604.0" y="114.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">Actors</text>
+<text x="604.0" y="144.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">isolated state + mailbox</text>
+<text x="604.0" y="168.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">one message at a time</text>
+<text x="604.0" y="192.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">communicate only by messages</text>
+<text x="604.0" y="216.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">limit: mailbox / scheduler</text>
+<text x="604.0" y="284.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">Erlang/Elixir, Akka, Orleans</text>
+<text x="40.0" y="350.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">All three overlap waiting with other work. They differ in what is cheap (a thread, a task, an actor),</text>
+<text x="40.0" y="369.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">where blocking is safe, and how shared state is protected.</text>
+</svg>
