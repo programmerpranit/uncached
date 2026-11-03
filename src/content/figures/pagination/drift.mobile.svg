@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 424" width="360" height="424" role="img" aria-label="With offset pagination, a row inserted between page requests shifts positions so the second page repeats row N; a cursor that asks for rows after N returns M, L, K with no duplicate or gap" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="424" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">OFFSET drifts</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">inserts shift the pages</text>
+<text x="16.0" y="100.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">Req 1: OFFSET 0 LIMIT 3</text>
+<rect x="16.0" y="110.0" width="46.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.25" stroke="#7cc47f" stroke-width="1"/>
+<text x="39.0" y="132.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">P</text>
+<rect x="70.0" y="110.0" width="46.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.25" stroke="#7cc47f" stroke-width="1"/>
+<text x="93.0" y="132.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">O</text>
+<rect x="124.0" y="110.0" width="46.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.25" stroke="#7cc47f" stroke-width="1"/>
+<text x="147.0" y="132.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">N</text>
+<rect x="178.0" y="110.0" width="46.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="201.0" y="132.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">M</text>
+<rect x="232.0" y="110.0" width="46.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="255.0" y="132.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">L</text>
+<rect x="286.0" y="110.0" width="46.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="309.0" y="132.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">K</text>
+<text x="16.0" y="172.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">Q inserted at the top</text>
+<text x="16.0" y="200.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">Req 2: OFFSET 3 LIMIT 3</text>
+<rect x="16.0" y="210.0" width="41.0" height="36.0" rx="3" fill="#e2b45a" fill-opacity="0.25" stroke="#e2b45a" stroke-width="1"/>
+<text x="36.5" y="232.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Q</text>
+<rect x="63.0" y="210.0" width="41.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="83.5" y="232.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">P</text>
+<rect x="110.0" y="210.0" width="41.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="130.5" y="232.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">O</text>
+<rect x="157.0" y="210.0" width="41.0" height="36.0" rx="3" fill="#e5534b" fill-opacity="0.25" stroke="#e5534b" stroke-width="1"/>
+<text x="177.5" y="232.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">N</text>
+<rect x="204.0" y="210.0" width="41.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.25" stroke="#5fb3a1" stroke-width="1"/>
+<text x="224.5" y="232.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">M</text>
+<rect x="251.0" y="210.0" width="41.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.25" stroke="#5fb3a1" stroke-width="1"/>
+<text x="271.5" y="232.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">L</text>
+<rect x="298.0" y="210.0" width="41.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="318.5" y="232.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">K</text>
+<text x="16.0" y="270.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">N appears twice</text>
+<rect x="16.0" y="290.0" width="328.0" height="110.0" rx="8" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="28.0" y="312.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Cursor instead</text>
+<text x="28.0" y="336.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">page 1: P, O, N → cursor "after N"</text>
+<text x="28.0" y="356.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">page 2: WHERE id &lt; N LIMIT 3</text>
+<text x="28.0" y="376.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">→ M, L, K: no dup, no gap</text>
+</svg>

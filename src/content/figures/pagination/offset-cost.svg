@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 419" width="880" height="419" role="img" aria-label="Bar comparison of offset pagination: page 1 reads 20 rows, page 50 reads 1,000 rows and discards 980, page 5,000 reads 100,000 rows and discards 99,980, so cost grows linearly with page depth" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="419" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Why OFFSET gets slow</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the database reads and throws away every skipped row</text>
+<text x="40.0" y="122.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">page 1</text>
+<text x="40.0" y="140.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">OFFSET 0 LIMIT 20</text>
+<rect x="220.0" y="106.0" width="11.2" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.6" stroke="#7cc47f" stroke-width="1"/>
+<text x="236.0" y="128.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">read 20, return 20</text>
+<text x="40.0" y="192.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">page 50</text>
+<text x="40.0" y="210.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">OFFSET 980 LIMIT 20</text>
+<rect x="220.0" y="176.0" width="5.5" height="34.0" rx="4" fill="#e5534b" fill-opacity="0.25" stroke="#e5534b" stroke-width="1"/>
+<rect x="225.5" y="176.0" width="11.2" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.6" stroke="#7cc47f" stroke-width="1"/>
+<text x="241.5" y="198.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">980 read &amp; discarded</text>
+<text x="40.0" y="262.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">page 5,000</text>
+<text x="40.0" y="280.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">OFFSET 99,980 LIMIT 20</text>
+<rect x="220.0" y="246.0" width="559.9" height="34.0" rx="4" fill="#e5534b" fill-opacity="0.25" stroke="#e5534b" stroke-width="1"/>
+<rect x="779.9" y="246.0" width="11.2" height="34.0" rx="3" fill="#7cc47f" fill-opacity="0.6" stroke="#7cc47f" stroke-width="1"/>
+<text x="771.9" y="268.0" font-size="10.5" fill="#ede6d8" text-anchor="end" font-weight="400">99,980 read &amp; discarded</text>
+<rect x="220.0" y="310.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="238.0" y="320.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">rows scanned then dropped</text>
+<rect x="430.5" y="310.0" width="12.0" height="12.0" rx="2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="448.5" y="320.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">rows returned</text>
+<text x="40.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">OFFSET n cannot jump: the engine walks the index (or sorts) and counts n rows before returning anything.</text>
+<text x="40.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cost grows linearly with page depth, so deep pages are slow, and crawlers love deep pages.</text>
+</svg>
