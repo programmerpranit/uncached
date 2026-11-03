@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 378" width="360" height="378" role="img" aria-label="Timeline of the main thread with render work split into slices around user input, followed by a synchronous commit and paint" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="378" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Render vs commit</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">pausable vs atomic</text>
+<rect x="16.0" y="96.0" width="66.0" height="28.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="49.0" y="115.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">render</text>
+<rect x="86.0" y="96.0" width="42.0" height="28.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="107.0" y="115.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">input</text>
+<rect x="132.0" y="96.0" width="66.0" height="28.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="165.0" y="115.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">render</text>
+<rect x="202.0" y="96.0" width="60.0" height="28.0" rx="3" fill="#7cc47f" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="232.0" y="115.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">commit</text>
+<rect x="266.0" y="96.0" width="48.0" height="28.0" rx="3" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="290.0" y="115.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">paint</text>
+<text x="16.0" y="146.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="400">render yields ~every 5 ms</text>
+<rect x="16.0" y="170.0" width="328.0" height="84.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="28.0" y="194.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">Render (interruptible)</text>
+<text x="28.0" y="218.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">call components, diff, no DOM</text>
+<text x="28.0" y="235.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">writes; may pause or restart</text>
+<rect x="16.0" y="270.0" width="328.0" height="84.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="28.0" y="294.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">Commit (synchronous)</text>
+<text x="28.0" y="318.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">mutate DOM, run layout effects;</text>
+<text x="28.0" y="335.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">never half-applied</text>
+</svg>

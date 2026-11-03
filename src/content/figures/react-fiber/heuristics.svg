@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 421" width="880" height="421" role="img" aria-label="Four reconciliation cases: same element type updates, different type remounts, unkeyed lists match by index, keyed lists match by key" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="421" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Reconciliation heuristics</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">O(n) diffing by assuming type and key identify a component</text>
+<rect x="40.0" y="100.0" width="800.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="56.0" y="131.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">same type</text>
+<text x="230.0" y="131.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;div&gt; → &lt;div&gt;</text>
+<text x="470.0" y="131.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">keep node, update props, recurse</text>
+<rect x="40.0" y="164.0" width="800.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="56.0" y="195.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">different type</text>
+<text x="230.0" y="195.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;div&gt; → &lt;span&gt;</text>
+<text x="470.0" y="195.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">unmount subtree, mount new (state lost)</text>
+<rect x="40.0" y="228.0" width="800.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="56.0" y="259.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">list, no keys</text>
+<text x="230.0" y="259.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">[a,b,c] → [x,a,b,c]</text>
+<text x="470.0" y="259.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">match by index: every row updates</text>
+<rect x="40.0" y="292.0" width="800.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="56.0" y="323.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">list, with keys</text>
+<text x="230.0" y="323.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">key=a,b,c → x,a,b,c</text>
+<text x="470.0" y="323.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">match by key: insert x, move none</text>
+<text x="40.0" y="372.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A general tree diff is O(n³). React assumes different element types produce different trees, and that keys</text>
+<text x="40.0" y="391.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">are stable identities among siblings. Index keys break that whenever items are inserted, removed or sorted.</text>
+</svg>

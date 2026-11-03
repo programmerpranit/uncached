@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 413" width="880" height="413" role="img" aria-label="Timeline of the main thread with render work split into slices around user input, followed by a synchronous commit and paint" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="413" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Render phase vs commit phase</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">render can be paused and thrown away; commit cannot</text>
+<text x="40.0" y="100.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">main thread</text>
+<rect x="40.0" y="112.0" width="106.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="93.0" y="135.0" font-size="11.5" fill="#1b1712" text-anchor="middle" font-weight="600">render</text>
+<rect x="150.0" y="112.0" width="36.0" height="36.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="168.0" y="135.0" font-size="11.5" fill="#1b1712" text-anchor="middle" font-weight="600">input</text>
+<rect x="190.0" y="112.0" width="106.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="243.0" y="135.0" font-size="11.5" fill="#1b1712" text-anchor="middle" font-weight="600">render</text>
+<rect x="300.0" y="112.0" width="26.0" height="36.0" rx="3" fill="#4a4136" fill-opacity="0.5" stroke="none" stroke-width="1"/>
+<rect x="330.0" y="112.0" width="106.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="383.0" y="135.0" font-size="11.5" fill="#1b1712" text-anchor="middle" font-weight="600">render</text>
+<rect x="440.0" y="112.0" width="86.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="483.0" y="135.0" font-size="11.5" fill="#1b1712" text-anchor="middle" font-weight="600">commit</text>
+<rect x="530.0" y="112.0" width="56.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="558.0" y="135.0" font-size="11.5" fill="#1b1712" text-anchor="middle" font-weight="600">paint</text>
+<text x="150.0" y="170.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="400">yield every ~5 ms (shouldYield)</text>
+<text x="480.0" y="170.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">one synchronous pass</text>
+<rect x="40.0" y="200.0" width="385.0" height="130.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="56.0" y="226.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Render phase (interruptible)</text>
+<text x="56.0" y="254.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• call components, diff children</text>
+<text x="56.0" y="272.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• compute effects list / flags</text>
+<text x="56.0" y="290.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• no DOM changes, no visible output</text>
+<text x="56.0" y="308.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• can restart if higher-priority work arrives</text>
+<rect x="455.0" y="200.0" width="385.0" height="130.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="471.0" y="226.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">Commit phase (synchronous)</text>
+<text x="471.0" y="254.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• before-mutation: getSnapshotBeforeUpdate</text>
+<text x="471.0" y="272.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• mutation: insert / update / delete DOM</text>
+<text x="471.0" y="290.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• layout: refs, useLayoutEffect</text>
+<text x="471.0" y="308.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">• useEffect scheduled after paint</text>
+<text x="40.0" y="364.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Because render has no side effects, React can run it in slices, abandon it, or run it twice (StrictMode). Commit</text>
+<text x="40.0" y="383.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">must be all-or-nothing, so users never see a half-updated tree.</text>
+</svg>

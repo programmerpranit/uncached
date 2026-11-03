@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 475" width="360" height="475" role="img" aria-label="Four reconciliation cases: same element type updates, different type remounts, unkeyed lists match by index, keyed lists match by key" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="475" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Reconciliation rules</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">type + key = identity</text>
+<rect x="16.0" y="86.0" width="328.0" height="72.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="28.0" y="108.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">same type</text>
+<text x="28.0" y="128.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;div&gt; → &lt;div&gt;</text>
+<text x="28.0" y="146.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">keep node, update props, recurse</text>
+<rect x="16.0" y="168.0" width="328.0" height="72.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="28.0" y="190.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">different type</text>
+<text x="28.0" y="210.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;div&gt; → &lt;span&gt;</text>
+<text x="28.0" y="228.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">unmount subtree, mount new (state lost)</text>
+<rect x="16.0" y="250.0" width="328.0" height="72.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="272.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">list, no keys</text>
+<text x="28.0" y="292.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">[a,b,c] → [x,a,b,c]</text>
+<text x="28.0" y="310.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">match by index: every row updates</text>
+<rect x="16.0" y="332.0" width="328.0" height="72.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="354.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">list, with keys</text>
+<text x="28.0" y="374.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">key=a,b,c → x,a,b,c</text>
+<text x="28.0" y="392.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">match by key: insert x, move none</text>
+<text x="16.0" y="426.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Keys must be stable among</text>
+<text x="16.0" y="445.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">siblings, not array indexes.</text>
+</svg>

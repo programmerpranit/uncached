@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 419" width="880" height="419" role="img" aria-label="Fiber tree with child, sibling and return pointers, and the current and workInProgress trees linked by alternate pointers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="419" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A fiber tree is a linked list</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">child, sibling and return pointers, walked without recursion</text>
+<rect x="145.0" y="90.0" width="110.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="200.0" y="114.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">App</text>
+<rect x="25.0" y="190.0" width="110.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="80.0" y="214.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Header</text>
+<rect x="265.0" y="190.0" width="110.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="320.0" y="214.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">List</text>
+<rect x="185.0" y="290.0" width="110.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="240.0" y="314.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Item a</text>
+<rect x="345.0" y="290.0" width="110.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="400.0" y="314.5" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Item b</text>
+<line x1="200.0" y1="130.0" x2="80.0" y2="190.0" stroke="#5fb3a1" stroke-width="1.5" marker-end="url(#ah0)"/>
+<text x="112.0" y="158.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">child</text>
+<line x1="135.0" y1="210.0" x2="265.0" y2="210.0" stroke="#e2b45a" stroke-width="1.5" marker-end="url(#ah1)"/>
+<text x="180.0" y="202.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">sibling</text>
+<line x1="320.0" y1="230.0" x2="240.0" y2="290.0" stroke="#5fb3a1" stroke-width="1.5" marker-end="url(#ah0)"/>
+<text x="250.0" y="262.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">child</text>
+<line x1="295.0" y1="310.0" x2="345.0" y2="310.0" stroke="#e2b45a" stroke-width="1.5" marker-end="url(#ah1)"/>
+<path d="M 430 290 Q 470 240 375 215" fill="none" stroke="#d77fa1" stroke-width="1.3" marker-end="url(#ah2)" stroke-dasharray="4 3"/>
+<text x="455.0" y="250.0" font-size="10.5" fill="#d77fa1" text-anchor="start" font-weight="400">return</text>
+<path d="M 340 190 Q 330 140 255 115" fill="none" stroke="#d77fa1" stroke-width="1.3" marker-end="url(#ah2)" stroke-dasharray="4 3"/>
+<text x="312.0" y="146.0" font-size="10.5" fill="#d77fa1" text-anchor="start" font-weight="400">return</text>
+<rect x="540.0" y="100.0" width="140.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="610.0" y="121.0" font-size="12.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">current</text>
+<text x="610.0" y="137.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="400">on screen now</text>
+<rect x="700.0" y="100.0" width="140.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="770.0" y="121.0" font-size="12.5" fill="#9b8cff" text-anchor="middle" font-weight="600">workInProgress</text>
+<text x="770.0" y="137.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="400">being built</text>
+<path d="M 680 116 L 700 116" fill="none" stroke="#9b8cff" stroke-width="1.3" marker-end="url(#ah3)"/>
+<path d="M 700 134 L 680 134" fill="none" stroke="#5fb3a1" stroke-width="1.3" marker-end="url(#ah0)"/>
+<text x="690.0" y="170.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">alternate pointers</text>
+<text x="540.0" y="200.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Each fiber has an alternate. React builds</text>
+<text x="540.0" y="219.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">the next UI in the workInProgress tree,</text>
+<text x="540.0" y="238.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">then commit swaps one root pointer:</text>
+<text x="540.0" y="257.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">workInProgress becomes current.</text>
+<text x="540.0" y="295.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Unchanged fibers are cloned or reused,</text>
+<text x="540.0" y="314.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">so double buffering costs little memory.</text>
+<text x="40.0" y="370.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Walk: go to child; if none, complete it and go to sibling; if no sibling, return to the parent and complete it.</text>
+<text x="40.0" y="389.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Because the walk is a loop rather than a call stack, React can stop after any fiber and resume later.</text>
+</svg>

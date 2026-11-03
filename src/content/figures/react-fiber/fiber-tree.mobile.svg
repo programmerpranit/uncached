@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 464" width="360" height="464" role="img" aria-label="Fiber tree with child, sibling and return pointers, and the current and workInProgress trees linked by alternate pointers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="464" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Fiber tree links</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">child / sibling / return</text>
+<rect x="16.0" y="90.0" width="150.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="91.0" y="111.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">App</text>
+<rect x="56.0" y="136.0" width="150.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="131.0" y="157.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Header</text>
+<rect x="56.0" y="182.0" width="150.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="131.0" y="203.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">List</text>
+<rect x="96.0" y="228.0" width="150.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="171.0" y="249.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Item a</text>
+<rect x="96.0" y="274.0" width="150.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="171.0" y="295.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Item b</text>
+<text x="220.0" y="118.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">child ↓</text>
+<text x="220.0" y="138.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">sibling →</text>
+<text x="220.0" y="158.0" font-size="11" fill="#d77fa1" text-anchor="start" font-weight="400">return ↑</text>
+<rect x="16.0" y="326.0" width="155.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="93.5" y="345.0" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">current</text>
+<text x="93.5" y="361.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="400">on screen</text>
+<rect x="189.0" y="326.0" width="155.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="266.5" y="345.0" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">workInProgress</text>
+<text x="266.5" y="361.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="400">being built</text>
+<text x="16.0" y="396.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A loop walks the links, so React</text>
+<text x="16.0" y="415.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">can pause after any fiber. Commit</text>
+<text x="16.0" y="434.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">swaps the two trees.</text>
+</svg>
