@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 439" width="360" height="439" role="img" aria-label="An index with three primary shards and one replica each spread over three nodes; a coordinating node scatters the query to one copy of every shard and gathers results" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="439" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Shards, replicas and scatter-gather</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one query fans out to every shard</text>
+<rect x="100.0" y="66.0" width="160.0" height="36.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="87.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">coordinating node</text>
+<rect x="16.0" y="126.0" width="328.0" height="70.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="26.0" y="144.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="700">node 1</text>
+<rect x="110.0" y="138.0" width="104.0" height="46.0" rx="3" fill="#5fb3a1" fill-opacity="0.3" stroke="#5fb3a1" stroke-width="1"/>
+<text x="162.0" y="158.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">P0</text>
+<text x="162.0" y="174.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">primary</text>
+<rect x="228.0" y="138.0" width="104.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="280.0" y="158.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">R2</text>
+<text x="280.0" y="174.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">replica</text>
+<rect x="16.0" y="210.0" width="328.0" height="70.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="26.0" y="228.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="700">node 2</text>
+<rect x="110.0" y="222.0" width="104.0" height="46.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<text x="162.0" y="242.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">P1</text>
+<text x="162.0" y="258.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">primary</text>
+<rect x="228.0" y="222.0" width="104.0" height="46.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="280.0" y="242.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">R0</text>
+<text x="280.0" y="258.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">replica</text>
+<rect x="16.0" y="294.0" width="328.0" height="70.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="26.0" y="312.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="700">node 3</text>
+<rect x="110.0" y="306.0" width="104.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.3" stroke="#9b8cff" stroke-width="1"/>
+<text x="162.0" y="326.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">P2</text>
+<text x="162.0" y="342.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">primary</text>
+<rect x="228.0" y="306.0" width="104.0" height="46.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="280.0" y="326.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">R1</text>
+<text x="280.0" y="342.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">replica</text>
+<text x="16.0" y="394.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Query hits one copy of each shard,</text>
+<text x="16.0" y="409.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">then merges the top results.</text>
+</svg>

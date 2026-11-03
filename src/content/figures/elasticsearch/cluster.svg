@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 408" width="880" height="408" role="img" aria-label="An index with three primary shards and one replica each spread over three nodes; a coordinating node scatters the query to one copy of every shard and gathers results" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="408" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Shards, replicas and scatter-gather</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">an index is split into primary shards, each copied to replicas on other nodes; a query hits one copy of every shard</text>
+<rect x="360.0" y="74.0" width="160.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="440.0" y="98.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">coordinating node</text>
+<text x="540.0" y="98.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">query → scatter to shards → gather top-k → fetch docs</text>
+<rect x="60.0" y="170.0" width="240.0" height="150.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="72.0" y="190.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">node 1</text>
+<rect x="74.0" y="206.0" width="100.0" height="46.0" rx="3" fill="#5fb3a1" fill-opacity="0.3" stroke="#5fb3a1" stroke-width="1"/>
+<text x="124.0" y="226.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">P0</text>
+<text x="124.0" y="242.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">primary</text>
+<rect x="186.0" y="206.0" width="100.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="236.0" y="226.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">R2</text>
+<text x="236.0" y="242.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">replica</text>
+<text x="72.0" y="280.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">each shard = a Lucene index</text>
+<text x="72.0" y="298.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">(segments, inverted index)</text>
+<line x1="440.0" y1="114.0" x2="180.0" y2="170.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)" stroke-dasharray="4,3"/>
+<rect x="330.0" y="170.0" width="240.0" height="150.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="342.0" y="190.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">node 2</text>
+<rect x="344.0" y="206.0" width="100.0" height="46.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<text x="394.0" y="226.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">P1</text>
+<text x="394.0" y="242.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">primary</text>
+<rect x="456.0" y="206.0" width="100.0" height="46.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="506.0" y="226.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">R0</text>
+<text x="506.0" y="242.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">replica</text>
+<text x="342.0" y="280.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">each shard = a Lucene index</text>
+<text x="342.0" y="298.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">(segments, inverted index)</text>
+<line x1="440.0" y1="114.0" x2="450.0" y2="170.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)" stroke-dasharray="4,3"/>
+<rect x="600.0" y="170.0" width="240.0" height="150.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="612.0" y="190.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">node 3</text>
+<rect x="614.0" y="206.0" width="100.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.3" stroke="#9b8cff" stroke-width="1"/>
+<text x="664.0" y="226.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">P2</text>
+<text x="664.0" y="242.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">primary</text>
+<rect x="726.0" y="206.0" width="100.0" height="46.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="776.0" y="226.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">R1</text>
+<text x="776.0" y="242.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">replica</text>
+<text x="612.0" y="280.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">each shard = a Lucene index</text>
+<text x="612.0" y="298.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">(segments, inverted index)</text>
+<line x1="440.0" y1="114.0" x2="720.0" y2="170.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)" stroke-dasharray="4,3"/>
+<text x="60.0" y="360.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">3 primaries × 1 replica = 6 shard copies. Losing any one node loses no data.</text>
+<text x="60.0" y="378.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Primary count is fixed at index creation; replicas can change any time and add read throughput.</text>
+</svg>

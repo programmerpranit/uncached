@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 405" width="360" height="405" role="img" aria-label="Applications use an alias; a new index is created with the new mapping, filled with reindex, caught up with recent writes, and then the alias is atomically switched" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="405" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Zero-downtime reindex with an alias</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">apps talk to the alias, never the index</text>
+<circle cx="30.0" cy="92.0" r="13" fill="#5fb3a1" fill-opacity="1" stroke="0.25" stroke-width="#5fb3a1"/>
+<text x="30.0" y="97.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">1</text>
+<text x="54.0" y="88.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">App reads/writes alias "products" →</text>
+<text x="54.0" y="103.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">products_v1</text>
+<circle cx="30.0" cy="160.0" r="13" fill="#9b8cff" fill-opacity="1" stroke="0.25" stroke-width="#9b8cff"/>
+<text x="30.0" y="165.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">2</text>
+<text x="54.0" y="156.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">Create products_v2 with new mapping</text>
+<text x="54.0" y="171.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">/ shard count</text>
+<circle cx="30.0" cy="228.0" r="13" fill="#e2b45a" fill-opacity="1" stroke="0.25" stroke-width="#e2b45a"/>
+<text x="30.0" y="233.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">3</text>
+<text x="54.0" y="224.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">_reindex v1 → v2 (or rebuild from</text>
+<text x="54.0" y="239.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">source of truth)</text>
+<circle cx="30.0" cy="296.0" r="13" fill="#d77fa1" fill-opacity="1" stroke="0.25" stroke-width="#d77fa1"/>
+<text x="30.0" y="301.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">4</text>
+<text x="54.0" y="292.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">Catch up recent writes (dual-write</text>
+<text x="54.0" y="307.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">or replay)</text>
+<circle cx="30.0" cy="364.0" r="13" fill="#7cc47f" fill-opacity="1" stroke="0.25" stroke-width="#7cc47f"/>
+<text x="30.0" y="369.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="700">5</text>
+<text x="54.0" y="360.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">Atomically move alias to v2; keep</text>
+<text x="54.0" y="375.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">v1 for rollback</text>
+</svg>
