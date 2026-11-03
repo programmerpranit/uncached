@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 385" width="360" height="385" role="img" aria-label="With one state object at the form root, all 20 field components re-render on a keystroke; with state per field only one does; with uncontrolled inputs and subscriptions none do" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="385" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Renders per keystroke</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">typing one character, 20-field form</text>
+<text x="16.0" y="96.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">One useState object at the form root</text>
+<rect x="16.0" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="31.6" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="47.2" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="62.8" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="78.4" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="94.0" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="109.6" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="125.2" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="140.8" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="156.4" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="172.0" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="187.6" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="203.2" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="218.8" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="234.4" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="250.0" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="265.6" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="281.2" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="296.8" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="312.4" y="106.0" width="12.5" height="22.0" rx="2" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<text x="16.0" y="146.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">20 renders · whole form re-renders</text>
+<text x="16.0" y="176.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">Controlled, state per field component</text>
+<rect x="16.0" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="31.6" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="47.2" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="62.8" y="186.0" width="12.5" height="22.0" rx="2" fill="#e2b45a" fill-opacity="0.5" stroke="#e2b45a" stroke-width="1"/>
+<rect x="78.4" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="94.0" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="109.6" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="125.2" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="140.8" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="156.4" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="172.0" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="187.6" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="203.2" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="218.8" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="234.4" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="250.0" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="265.6" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="281.2" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="296.8" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="312.4" y="186.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="16.0" y="226.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">1 render · only the edited field</text>
+<text x="16.0" y="256.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">Uncontrolled subscriptions</text>
+<rect x="16.0" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="31.6" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="47.2" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="62.8" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="78.4" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="94.0" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="109.6" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="125.2" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="140.8" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="156.4" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="172.0" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="187.6" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="203.2" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="218.8" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="234.4" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="250.0" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="265.6" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="281.2" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="296.8" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="312.4" y="266.0" width="12.5" height="22.0" rx="2" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="16.0" y="306.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">0 renders · nothing until a watcher needs it</text>
+<text x="16.0" y="336.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Keep state close to the field, or</text>
+<text x="16.0" y="355.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">subscribe only where needed.</text>
+</svg>

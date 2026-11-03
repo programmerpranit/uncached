@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 431" width="360" height="431" role="img" aria-label="Validation timeline: stay quiet while typing, check on blur, re-check on every change once an error is shown, validate all fields on submit, and validate again on the server with the same schema" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="431" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">When to validate</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">reward early, punish late</text>
+<rect x="16.0" y="92.0" width="110.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="71.0" y="115.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">While typing</text>
+<text x="136.0" y="106.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">No errors yet: don't shout</text>
+<text x="136.0" y="121.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">at half-typed input</text>
+<line x1="71.0" y1="132.0" x2="71.0" y2="146.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="148.0" width="110.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.25" stroke="#e2b45a" stroke-width="1"/>
+<text x="71.0" y="171.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">On blur</text>
+<text x="136.0" y="162.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">First check when the user</text>
+<text x="136.0" y="177.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">leaves the field</text>
+<line x1="71.0" y1="188.0" x2="71.0" y2="202.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="204.0" width="110.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1"/>
+<text x="71.0" y="227.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">After an error</text>
+<text x="136.0" y="218.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Re-validate on every change</text>
+<text x="136.0" y="233.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">so the error clears</text>
+<text x="136.0" y="248.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">instantly</text>
+<line x1="71.0" y1="244.0" x2="71.0" y2="258.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="260.0" width="110.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.25" stroke="#9b8cff" stroke-width="1"/>
+<text x="71.0" y="283.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">On submit</text>
+<text x="136.0" y="274.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Validate everything, focus</text>
+<text x="136.0" y="289.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">the first invalid field</text>
+<line x1="71.0" y1="300.0" x2="71.0" y2="314.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="316.0" width="110.0" height="40.0" rx="3" fill="#e5534b" fill-opacity="0.25" stroke="#e5534b" stroke-width="1"/>
+<text x="71.0" y="339.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">On the server</text>
+<text x="136.0" y="330.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Same schema again; return</text>
+<text x="136.0" y="345.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">field errors</text>
+<text x="16.0" y="382.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Share one schema between client and</text>
+<text x="16.0" y="401.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">server. Client = speed, server = trust.</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 389" width="880" height="389" role="img" aria-label="With one state object at the form root, all 20 field components re-render on a keystroke; with state per field only one does; with uncontrolled inputs and subscriptions none do" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="389" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Renders per keystroke in a 20-field form</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">typing one character into the email field</text>
+<text x="40.0" y="110.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">One useState object at the form root</text>
+<text x="40.0" y="128.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">whole form re-renders</text>
+<rect x="380.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="402.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="424.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="446.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="468.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="490.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="512.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="534.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="556.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="578.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="600.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="622.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="644.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="666.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="688.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="710.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="732.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="754.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="776.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<rect x="798.0" y="96.0" width="18.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.5" stroke="#e5534b" stroke-width="1"/>
+<text x="850.0" y="116.0" font-size="14" fill="#e5534b" text-anchor="end" font-weight="700">20</text>
+<text x="40.0" y="182.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Controlled, state per field component</text>
+<text x="40.0" y="200.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">only the edited field</text>
+<rect x="380.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="402.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="424.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="446.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="#e2b45a" stroke-width="1"/>
+<rect x="468.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="490.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="512.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="534.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="556.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="578.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="600.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="622.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="644.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="666.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="688.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="710.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="732.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="754.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="776.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="798.0" y="168.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="850.0" y="188.0" font-size="14" fill="#e2b45a" text-anchor="end" font-weight="700">1</text>
+<text x="40.0" y="254.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Uncontrolled + form library subscriptions</text>
+<text x="40.0" y="272.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">nothing until a watcher needs it</text>
+<rect x="380.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="402.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="424.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="446.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="468.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="490.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="512.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="534.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="556.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="578.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="600.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="622.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="644.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="666.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="688.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="710.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="732.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="754.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="776.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="798.0" y="240.0" width="18.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="850.0" y="260.0" font-size="14" fill="#7cc47f" text-anchor="end" font-weight="700">0</text>
+<text x="380.0" y="306.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">each square = one field component</text>
+<text x="40.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Cost scales with what re-renders, not with how the value is stored. Keep state as close to the field as possible,</text>
+<text x="40.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">or let the DOM hold it and subscribe only where render output depends on the value.</text>
+</svg>
