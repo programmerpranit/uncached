@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 349" width="880" height="349" role="img" aria-label="Tracing garbage collection marks objects reachable from roots as live and reclaims everything else, including unreachable cycles" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="349" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ede6d8"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Tracing GC: mark from roots, sweep the rest</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">anything unreachable from roots is garbage</text>
+<rect x="40.0" y="110.0" width="120.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="100.0" y="127.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">roots</text>
+<text x="100.0" y="143.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">stack, globals</text>
+<rect x="240.0" y="90.0" width="80.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="280.0" y="112.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">A</text>
+<rect x="240.0" y="170.0" width="80.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="280.0" y="192.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">B</text>
+<rect x="380.0" y="90.0" width="80.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="420.0" y="112.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">C</text>
+<rect x="380.0" y="170.0" width="80.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="420.0" y="192.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">D</text>
+<rect x="560.0" y="90.0" width="80.0" height="36.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="600.0" y="112.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">E</text>
+<rect x="560.0" y="170.0" width="80.0" height="36.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="600.0" y="192.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">F</text>
+<rect x="700.0" y="130.0" width="80.0" height="36.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="740.0" y="152.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">G</text>
+<line x1="162.0" y1="124.0" x2="238.0" y2="108.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="162.0" y1="136.0" x2="238.0" y2="188.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="322.0" y1="108.0" x2="378.0" y2="108.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="322.0" y1="188.0" x2="378.0" y2="188.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="642.0" y1="108.0" x2="698.0" y2="140.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah1)"/>
+<line x1="642.0" y1="188.0" x2="698.0" y2="152.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah1)"/>
+<line x1="698.0" y1="160.0" x2="642.0" y2="182.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah1)" stroke-dasharray="3,3"/>
+<text x="310.0" y="240.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">marked live</text>
+<text x="640.0" y="240.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">unreachable (even with a cycle) → reclaimed</text>
+<text x="40.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Tracing collectors follow pointers from roots; cycles are no problem. Reference counting</text>
+<text x="40.0" y="319.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">frees objects immediately but needs extra help (cycle detection, weak refs) for cycles.</text>
+</svg>

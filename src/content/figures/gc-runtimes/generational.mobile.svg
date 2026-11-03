@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 333" width="360" height="333" role="img" aria-label="A generational heap: new objects go to Eden, survivors are copied between survivor spaces and promoted to the old generation, which is collected less often" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="333" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Generational heap</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">most objects die young</text>
+<rect x="16.0" y="86.0" width="140.0" height="44.0" rx="3" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="86.0" y="112.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Eden</text>
+<rect x="166.0" y="86.0" width="82.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="207.0" y="112.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">S0</text>
+<rect x="258.0" y="86.0" width="86.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="301.0" y="112.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">S1</text>
+<text x="16.0" y="150.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">minor GC: copy survivors (fast)</text>
+<line x1="180.0" y1="160.0" x2="180.0" y2="180.0" stroke="#a69d8e" stroke-width="1" marker-end="url(#ah0)"/>
+<text x="190.0" y="174.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">promote</text>
+<rect x="16.0" y="184.0" width="328.0" height="44.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="210.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Old generation</text>
+<text x="16.0" y="248.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="400">major GC: rare, larger</text>
+<text x="16.0" y="284.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Write barriers track</text>
+<text x="16.0" y="303.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">old → young pointers.</text>
+</svg>

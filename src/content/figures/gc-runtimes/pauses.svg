@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img" aria-label="Comparison of collectors: serial and parallel collectors stop the world for the whole collection, while G1, ZGC, Shenandoah, Go and .NET background GC do most work concurrently with only short stop-the-world phases" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="400" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Where pauses come from</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">stop-the-world vs concurrent phases</text>
+<text x="40.0" y="114.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">Serial / Parallel</text>
+<rect x="200.0" y="100.0" width="300.0" height="20.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<text x="520.0" y="114.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">STW for the whole collection; best throughput</text>
+<text x="40.0" y="164.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">G1</text>
+<rect x="200.0" y="150.0" width="24.0" height="20.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="224.0" y="150.0" width="156.0" height="20.0" rx="2" fill="#5fb3a1" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="380.0" y="150.0" width="30.0" height="20.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<text x="520.0" y="164.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">short STW + concurrent marking; pause target</text>
+<text x="40.0" y="214.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">ZGC / Shenandoah</text>
+<rect x="200.0" y="200.0" width="6.0" height="20.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="206.0" y="200.0" width="279.0" height="20.0" rx="2" fill="#5fb3a1" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="485.0" y="200.0" width="6.0" height="20.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<text x="520.0" y="214.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">concurrent compaction; sub-ms pauses</text>
+<text x="40.0" y="264.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">Go</text>
+<rect x="200.0" y="250.0" width="6.0" height="20.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="206.0" y="250.0" width="264.0" height="20.0" rx="2" fill="#5fb3a1" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="470.0" y="250.0" width="6.0" height="20.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<text x="520.0" y="264.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">concurrent mark-sweep, non-moving</text>
+<text x="40.0" y="314.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">.NET (background)</text>
+<rect x="200.0" y="300.0" width="18.0" height="20.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="218.0" y="300.0" width="222.0" height="20.0" rx="2" fill="#5fb3a1" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<rect x="440.0" y="300.0" width="18.0" height="20.0" rx="2" fill="#e5534b" fill-opacity="0.55" stroke="none" stroke-width="1"/>
+<text x="520.0" y="314.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">background gen2, STW gen0/1</text>
+<rect x="40.0" y="360.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="58.0" y="370.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">stop-the-world</text>
+<rect x="175.5" y="360.0" width="12.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="193.5" y="370.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">concurrent with app</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 345" width="360" height="345" role="img" aria-label="Tracing garbage collection marks objects reachable from roots as live and reclaims everything else, including unreachable cycles" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="345" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Mark and sweep</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">unreachable = garbage</text>
+<rect x="16.0" y="86.0" width="328.0" height="30.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="105.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">roots: stack, globals</text>
+<rect x="16.0" y="136.0" width="76.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="54.0" y="155.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">A</text>
+<rect x="100.0" y="136.0" width="76.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="138.0" y="155.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">B</text>
+<rect x="184.0" y="136.0" width="76.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="222.0" y="155.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">C</text>
+<rect x="268.0" y="136.0" width="76.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="306.0" y="155.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">D</text>
+<text x="16.0" y="190.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">reachable → kept</text>
+<rect x="16.0" y="206.0" width="76.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="54.0" y="225.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">E</text>
+<rect x="100.0" y="206.0" width="76.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="138.0" y="225.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">F</text>
+<rect x="184.0" y="206.0" width="76.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="222.0" y="225.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">G</text>
+<text x="16.0" y="260.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">unreachable (even cycles) → freed</text>
+<text x="16.0" y="296.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Tracing handles cycles;</text>
+<text x="16.0" y="315.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">refcounting needs help.</text>
+</svg>
