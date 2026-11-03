@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 436" width="360" height="436" role="img" aria-label="Failures are classified as transient and retried with backoff, permanent and dead-lettered immediately, or expected duplicates that are acknowledged and logged" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="436" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Classify the failure</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">transient vs permanent</text>
+<rect x="16.0" y="76.0" width="328.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="98.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Transient</text>
+<text x="180.0" y="114.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">timeout, 503, throttled, lock</text>
+<text x="28.0" y="148.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">→ retry with backoff + jitter</text>
+<rect x="16.0" y="176.0" width="328.0" height="50.0" rx="3" fill="#e5534b" fill-opacity="0.18" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="198.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Permanent</text>
+<text x="180.0" y="214.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">bad schema, validation, 4xx</text>
+<text x="28.0" y="248.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">→ dead-letter immediately</text>
+<rect x="16.0" y="276.0" width="328.0" height="50.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="298.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Expected no-op</text>
+<text x="180.0" y="314.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">duplicate, already applied</text>
+<text x="28.0" y="348.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">→ ack and log (idempotency)</text>
+<text x="16.0" y="390.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Keep payload, error, attempt count</text>
+<text x="16.0" y="406.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">and timestamps with each DLQ entry.</text>
+</svg>

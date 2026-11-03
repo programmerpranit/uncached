@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" width="360" height="480" role="img" aria-label="A consumer retries a failing message with backoff; after the maximum receive count it moves to a dead-letter queue, which raises an alert and can later be redriven" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="480" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Retry, then dead-letter</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">failed messages move aside</text>
+<rect x="16.0" y="76.0" width="328.0" height="50.0" rx="3" fill="#5fb3a1" fill-opacity="0.16" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="98.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Main queue</text>
+<text x="180.0" y="114.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">orders</text>
+<line x1="180.0" y1="126.0" x2="180.0" y2="146.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="148.0" width="328.0" height="50.0" rx="3" fill="#9b8cff" fill-opacity="0.16" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="170.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Consumer</text>
+<text x="180.0" y="186.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">process(msg)</text>
+<line x1="180.0" y1="198.0" x2="180.0" y2="218.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="220.0" width="328.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.16" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="242.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Retry with backoff</text>
+<text x="180.0" y="258.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">attempts 1 → 3</text>
+<line x1="180.0" y1="270.0" x2="180.0" y2="290.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="292.0" width="328.0" height="50.0" rx="3" fill="#e5534b" fill-opacity="0.16" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="314.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Dead-letter queue</text>
+<text x="180.0" y="330.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">after maxReceiveCount</text>
+<line x1="180.0" y1="342.0" x2="180.0" y2="362.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="16.0" y="364.0" width="328.0" height="50.0" rx="3" fill="#d77fa1" fill-opacity="0.16" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="386.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Alert, inspect, redrive</text>
+<text x="180.0" y="402.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">after the fix</text>
+<text x="16.0" y="450.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">Success at any attempt → ack, done.</text>
+</svg>

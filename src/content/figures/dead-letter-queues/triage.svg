@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="880" height="414" role="img" aria-label="Failures are classified as transient and retried with backoff, permanent and dead-lettered immediately, or expected duplicates that are acknowledged and logged" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="414" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Classify the failure</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">retry what might succeed later; dead-letter what never will</text>
+<rect x="330.0" y="84.0" width="220.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="440.0" y="108.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">process(msg) throws</text>
+<line x1="440.0" y1="124.0" x2="160.0" y2="168.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="40.0" y="172.0" width="240.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="160.0" y="194.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Transient</text>
+<text x="160.0" y="210.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">timeout, 503, throttled, lock</text>
+<line x1="160.0" y1="222.0" x2="160.0" y2="246.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="40.0" y="250.0" width="240.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="160.0" y="273.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">retry with backoff + jitter</text>
+<line x1="440.0" y1="124.0" x2="440.0" y2="168.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="320.0" y="172.0" width="240.0" height="50.0" rx="3" fill="#e5534b" fill-opacity="0.18" stroke="#e5534b" stroke-width="1"/>
+<text x="440.0" y="194.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Permanent</text>
+<text x="440.0" y="210.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">bad schema, validation, 4xx</text>
+<line x1="440.0" y1="222.0" x2="440.0" y2="246.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="320.0" y="250.0" width="240.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="273.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">dead-letter immediately</text>
+<line x1="440.0" y1="124.0" x2="720.0" y2="168.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="600.0" y="172.0" width="240.0" height="50.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="720.0" y="194.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Expected no-op</text>
+<text x="720.0" y="210.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">duplicate, already applied</text>
+<line x1="720.0" y1="222.0" x2="720.0" y2="246.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="600.0" y="250.0" width="240.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="720.0" y="273.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">ack and log (idempotency)</text>
+<rect x="40.0" y="320.0" width="800.0" height="70.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="440.0" y="358.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="56.0" y="344.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Every dead-lettered message keeps: original payload, headers, error class + message, stack/trace id,</text>
+<text x="56.0" y="362.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">attempt count, first/last failure time and source queue — enough to fix and redrive it later.</text>
+</svg>

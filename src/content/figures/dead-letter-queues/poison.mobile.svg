@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 364" width="360" height="364" role="img" aria-label="A poison message m3 blocks messages m4 to m6 when there is no retry limit; with a maximum attempt count it moves to a dead-letter queue and the rest are processed" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="364" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">A poison message</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one bad message, whole queue stuck</text>
+<text x="16.0" y="94.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">No retry limit</text>
+<rect x="16.0" y="104.0" width="48.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.2" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="122.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m1</text>
+<rect x="70.0" y="104.0" width="48.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.2" stroke="#7cc47f" stroke-width="1"/>
+<text x="94.0" y="122.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m2</text>
+<rect x="124.0" y="104.0" width="48.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.2" stroke="#e5534b" stroke-width="1"/>
+<text x="148.0" y="122.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m3 ☠</text>
+<rect x="178.0" y="104.0" width="48.0" height="30.0" rx="3" fill="#a69d8e" fill-opacity="0.2" stroke="#a69d8e" stroke-width="1"/>
+<text x="202.0" y="122.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m4</text>
+<rect x="232.0" y="104.0" width="48.0" height="30.0" rx="3" fill="#a69d8e" fill-opacity="0.2" stroke="#a69d8e" stroke-width="1"/>
+<text x="256.0" y="122.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m5</text>
+<rect x="286.0" y="104.0" width="48.0" height="30.0" rx="3" fill="#a69d8e" fill-opacity="0.2" stroke="#a69d8e" stroke-width="1"/>
+<text x="310.0" y="122.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m6</text>
+<text x="16.0" y="162.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">m4–m6 stuck behind m3</text>
+<text x="16.0" y="194.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">Max attempts + DLQ</text>
+<rect x="16.0" y="204.0" width="48.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.2" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="222.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m1</text>
+<rect x="70.0" y="204.0" width="48.0" height="30.0" rx="3" fill="#7cc47f" fill-opacity="0.2" stroke="#7cc47f" stroke-width="1"/>
+<text x="94.0" y="222.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m2</text>
+<rect x="124.0" y="204.0" width="48.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.2" stroke="#e5534b" stroke-width="1"/>
+<text x="148.0" y="222.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m3 ☠</text>
+<rect x="178.0" y="204.0" width="48.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="202.0" y="222.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m4</text>
+<rect x="232.0" y="204.0" width="48.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="256.0" y="222.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m5</text>
+<rect x="286.0" y="204.0" width="48.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="310.0" y="222.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">m6</text>
+<text x="16.0" y="262.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">m3 → DLQ, rest flow</text>
+<text x="16.0" y="300.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Poison: malformed payload,</text>
+<text x="16.0" y="317.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">schema mismatch, missing</text>
+<text x="16.0" y="334.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">reference, bug on this input.</text>
+</svg>

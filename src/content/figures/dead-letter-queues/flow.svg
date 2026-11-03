@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 454" width="880" height="454" role="img" aria-label="A consumer retries a failing message with backoff; after the maximum receive count it moves to a dead-letter queue, which raises an alert and can later be redriven" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="454" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker><marker id="ah4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker><marker id="ah5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Retry, then dead-letter</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a message gets a bounded number of attempts, then moves aside for a human or a tool to handle</text>
+<rect x="40.0" y="100.0" width="150.0" height="56.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="115.0" y="125.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Main queue</text>
+<text x="115.0" y="141.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">orders</text>
+<rect x="270.0" y="100.0" width="150.0" height="56.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="345.0" y="125.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Consumer</text>
+<text x="345.0" y="141.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">process(msg)</text>
+<line x1="190.0" y1="128.0" x2="266.0" y2="128.0" stroke="#5fb3a1" stroke-width="1.5" marker-end="url(#ah0)"/>
+<text x="228.0" y="120.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">receive</text>
+<rect x="510.0" y="100.0" width="150.0" height="56.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="585.0" y="125.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Done</text>
+<text x="585.0" y="141.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">ack / delete</text>
+<line x1="420.0" y1="128.0" x2="506.0" y2="128.0" stroke="#7cc47f" stroke-width="1.5" marker-end="url(#ah1)"/>
+<text x="463.0" y="120.0" font-size="9.5" fill="#7cc47f" text-anchor="middle" font-weight="400">success</text>
+<path d="M345,156 C345,215 115,215 115,160" fill="none" stroke="#e2b45a" stroke-width="1.4" marker-end="url(#ah2)" stroke-dasharray="4,3"/>
+<text x="230.0" y="226.0" font-size="10" fill="#e2b45a" text-anchor="middle" font-weight="400">fail → back to queue after visibility timeout / backoff</text>
+<text x="270.0" y="262.0" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="400">attempt 1</text>
+<text x="270.0" y="282.0" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="400">attempt 2 · +2 s</text>
+<text x="270.0" y="302.0" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="400">attempt 3 · +8 s</text>
+<text x="270.0" y="322.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">maxReceiveCount = 3 exceeded</text>
+<rect x="510.0" y="240.0" width="150.0" height="56.0" rx="3" fill="#e5534b" fill-opacity="0.18" stroke="#e5534b" stroke-width="1"/>
+<text x="585.0" y="265.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Dead-letter queue</text>
+<text x="585.0" y="281.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">orders-dlq</text>
+<line x1="440.0" y1="322.0" x2="506.0" y2="280.0" stroke="#e5534b" stroke-width="1.5" marker-end="url(#ah3)"/>
+<rect x="700.0" y="200.0" width="150.0" height="50.0" rx="3" fill="#d77fa1" fill-opacity="0.15" stroke="#d77fa1" stroke-width="1"/>
+<text x="775.0" y="222.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Alert</text>
+<text x="775.0" y="238.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">DLQ depth &gt; 0</text>
+<rect x="700.0" y="270.0" width="150.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="775.0" y="292.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Inspect</text>
+<text x="775.0" y="308.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">payload + error</text>
+<rect x="700.0" y="340.0" width="150.0" height="50.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="775.0" y="362.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Redrive</text>
+<text x="775.0" y="378.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">after the fix</text>
+<line x1="660.0" y1="262.0" x2="696.0" y2="232.0" stroke="#d77fa1" stroke-width="1.2" marker-end="url(#ah4)"/>
+<line x1="660.0" y1="272.0" x2="696.0" y2="292.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah5)"/>
+<path d="M775,390 L775,404 L60,404 L60,160" fill="none" stroke="#5fb3a1" stroke-width="1.3" marker-end="url(#ah0)" stroke-dasharray="3,4"/>
+<text x="440.0" y="424.0" font-size="10" fill="#5fb3a1" text-anchor="middle" font-weight="400">redrive: move messages back to the source queue once the bug is fixed</text>
+</svg>
