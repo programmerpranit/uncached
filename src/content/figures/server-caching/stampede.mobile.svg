@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 311" width="360" height="311" role="img" aria-label="A cache stampede: when a hot key expires, six concurrent requests each query the database; with request coalescing only one query runs while the others wait" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="311" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Cache stampede</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">one expiry, a thousand DB queries</text>
+<rect x="16.0" y="76.0" width="328.0" height="70.0" rx="3" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="114.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="98.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="700">Without protection</text>
+<text x="28.0" y="120.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">hot key expires → N misses → N DB queries</text>
+<rect x="16.0" y="160.0" width="328.0" height="70.0" rx="3" fill="#7cc47f" fill-opacity="0.08" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="198.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="182.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="700">Single-flight</text>
+<text x="28.0" y="204.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">1 request refreshes, others wait or</text>
+<text x="28.0" y="223.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">get the stale value</text>
+<text x="16.0" y="262.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Also: jittered TTLs,</text>
+<text x="16.0" y="281.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">stale-while-revalidate.</text>
+</svg>

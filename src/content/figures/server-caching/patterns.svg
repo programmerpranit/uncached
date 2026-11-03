@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 389" width="880" height="389" role="img" aria-label="Four caching strategies: cache-aside where the app loads the cache on a miss, read-through, write-through that writes cache and database together, and write-behind that writes the database asynchronously" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="389" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Read and write strategies</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">who populates the cache, and when the database finds out about writes</text>
+<rect x="40.0" y="85.0" width="390.0" height="130.0" rx="3" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1"/>
+<text x="235.0" y="153.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="56.0" y="111.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Cache-aside</text>
+<rect x="56.0" y="129.0" width="70.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="91.0" y="147.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">App</text>
+<rect x="190.0" y="129.0" width="80.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="230.0" y="147.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Cache</text>
+<rect x="334.0" y="129.0" width="70.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="369.0" y="147.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">DB</text>
+<line x1="126.0" y1="144.0" x2="188.0" y2="144.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<path d="M91 159 C91 177 369 177 369 161" fill="none" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<text x="56.0" y="189.0" font-size="9.8" fill="#a69d8e" text-anchor="start" font-weight="400">app reads cache; on miss reads DB and populates cache</text>
+<text x="56.0" y="205.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="700">most common, lazy</text>
+<rect x="450.0" y="85.0" width="390.0" height="130.0" rx="3" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1"/>
+<text x="645.0" y="153.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="466.0" y="111.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Read-through</text>
+<rect x="466.0" y="129.0" width="70.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="501.0" y="147.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">App</text>
+<rect x="600.0" y="129.0" width="80.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="640.0" y="147.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Cache</text>
+<rect x="744.0" y="129.0" width="70.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="779.0" y="147.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">DB</text>
+<line x1="536.0" y1="144.0" x2="598.0" y2="144.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="680.0" y1="144.0" x2="742.0" y2="144.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<text x="466.0" y="189.0" font-size="9.8" fill="#a69d8e" text-anchor="start" font-weight="400">cache library loads from DB on miss, transparently</text>
+<text x="466.0" y="205.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="700">simpler app code</text>
+<rect x="40.0" y="235.0" width="390.0" height="130.0" rx="3" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1"/>
+<text x="235.0" y="303.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="56.0" y="261.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Write-through</text>
+<rect x="56.0" y="279.0" width="70.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="91.0" y="297.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">App</text>
+<rect x="190.0" y="279.0" width="80.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.2" stroke="#e2b45a" stroke-width="1"/>
+<text x="230.0" y="297.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Cache</text>
+<rect x="334.0" y="279.0" width="70.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="369.0" y="297.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">DB</text>
+<line x1="126.0" y1="294.0" x2="188.0" y2="294.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="270.0" y1="294.0" x2="332.0" y2="294.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<text x="56.0" y="339.0" font-size="9.8" fill="#a69d8e" text-anchor="start" font-weight="400">writes go to cache and DB synchronously</text>
+<text x="56.0" y="355.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="700">fresh, slower writes</text>
+<rect x="450.0" y="235.0" width="390.0" height="130.0" rx="3" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1"/>
+<text x="645.0" y="303.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="466.0" y="261.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">Write-behind</text>
+<rect x="466.0" y="279.0" width="70.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="501.0" y="297.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">App</text>
+<rect x="600.0" y="279.0" width="80.0" height="30.0" rx="3" fill="#e5534b" fill-opacity="0.2" stroke="#e5534b" stroke-width="1"/>
+<text x="640.0" y="297.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">Cache</text>
+<rect x="744.0" y="279.0" width="70.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="779.0" y="297.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">DB</text>
+<line x1="536.0" y1="294.0" x2="598.0" y2="294.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<line x1="680.0" y1="294.0" x2="742.0" y2="294.0" stroke="#e5534b" stroke-width="1.1" marker-end="url(#ah1)" stroke-dasharray="4,3"/>
+<text x="466.0" y="339.0" font-size="9.8" fill="#a69d8e" text-anchor="start" font-weight="400">writes go to cache, DB updated asynchronously</text>
+<text x="466.0" y="355.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="700">fast, can lose data</text>
+</svg>
