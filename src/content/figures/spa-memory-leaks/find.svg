@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 337" width="880" height="337" role="img" aria-label="Five steps to find a leak: take a baseline snapshot, repeat the action, compare snapshots, follow the retainer path, and remove the reference" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="337" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Finding a leak with heap snapshots</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">repeat an action, compare snapshots, follow the retainers</text>
+<rect x="40.0" y="110.0" width="150.0" height="140.0" rx="8" fill="#ff5b2e" fill-opacity="0.08" stroke="#ff5b2e" stroke-width="1.3"/>
+<circle cx="64.0" cy="136.0" r="13" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="64.0" y="141.0" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="700">1</text>
+<text x="86.0" y="141.0" font-size="12.5" fill="#ff5b2e" text-anchor="start" font-weight="700">baseline</text>
+<text x="54.0" y="174.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">load page, warm up,</text>
+<text x="54.0" y="191.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">force GC, take</text>
+<text x="54.0" y="208.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">snapshot</text>
+<line x1="192.0" y1="180.0" x2="202.0" y2="180.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="204.0" y="110.0" width="150.0" height="140.0" rx="8" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.3"/>
+<circle cx="228.0" cy="136.0" r="13" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="228.0" y="141.0" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="700">2</text>
+<text x="250.0" y="141.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">repeat</text>
+<text x="218.0" y="174.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">open and close the</text>
+<text x="218.0" y="191.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">view 5–10 times</text>
+<line x1="356.0" y1="180.0" x2="366.0" y2="180.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="368.0" y="110.0" width="150.0" height="140.0" rx="8" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1.3"/>
+<circle cx="392.0" cy="136.0" r="13" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="392.0" y="141.0" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="700">3</text>
+<text x="414.0" y="141.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">compare</text>
+<text x="382.0" y="174.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">force GC, snapshot</text>
+<text x="382.0" y="191.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">again, view</text>
+<text x="382.0" y="208.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">"Comparison"</text>
+<line x1="520.0" y1="180.0" x2="530.0" y2="180.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="532.0" y="110.0" width="150.0" height="140.0" rx="8" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1.3"/>
+<circle cx="556.0" cy="136.0" r="13" fill="#9b8cff" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="556.0" y="141.0" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="700">4</text>
+<text x="578.0" y="141.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">retainers</text>
+<text x="546.0" y="174.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">pick a leaked</text>
+<text x="546.0" y="191.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">object; read its</text>
+<text x="546.0" y="208.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">retainer path</text>
+<line x1="684.0" y1="180.0" x2="694.0" y2="180.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="696.0" y="110.0" width="150.0" height="140.0" rx="8" fill="#7cc47f" fill-opacity="0.08" stroke="#7cc47f" stroke-width="1.3"/>
+<circle cx="720.0" cy="136.0" r="13" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="720.0" y="141.0" font-size="12" fill="#1b1712" text-anchor="middle" font-weight="700">5</text>
+<text x="742.0" y="141.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">fix</text>
+<text x="710.0" y="174.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">remove the</text>
+<text x="710.0" y="191.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">listener, timer or</text>
+<text x="710.0" y="208.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">cache entry</text>
+<text x="40.0" y="288.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Look for counts that grow by exactly the number of repetitions: 10 opens, 10 more instances.</text>
+<text x="40.0" y="307.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">"Detached" DOM nodes in the snapshot are elements removed from the page but still referenced from JavaScript.</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 459" width="880" height="459" role="img" aria-label="Heap size over repeated navigations: a healthy app returns to the same baseline after garbage collection, a leaking one climbs steadily" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="459" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Leaks show up as a rising sawtooth</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">heap size while a user navigates back and forth</text>
+<line x1="40.0" y1="330.0" x2="840.0" y2="330.0" stroke="#4a4136" stroke-width="1"/>
+<line x1="40.0" y1="330.0" x2="40.0" y2="120.0" stroke="#4a4136" stroke-width="1"/>
+<text x="44.0" y="116.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">JS heap (MB)</text>
+<text x="840.0" y="348.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">navigations →</text>
+<path d="M40,310 L110.0,246.0 L140.0,310.0 L210.0,246.0 L240.0,310.0 L310.0,246.0 L340.0,310.0 L410.0,246.0 L440.0,310.0 L510.0,246.0 L540.0,310.0 L610.0,246.0 L640.0,310.0 L710.0,246.0 L740.0,310.0 L810.0,246.0 L840.0,310.0" fill="none" stroke="#7cc47f" stroke-width="2"/>
+<path d="M40,300 L110.0,236.0 L140.0,285.0 L210.0,221.0 L240.0,270.0 L310.0,206.0 L340.0,255.0 L410.0,191.0 L440.0,240.0 L510.0,176.0 L540.0,225.0 L610.0,161.0 L640.0,210.0 L710.0,146.0 L740.0,195.0 L810.0,131.0 L840.0,180.0" fill="none" stroke="#e5534b" stroke-width="2"/>
+<rect x="60.0" y="360.0" width="12.0" height="12.0" rx="2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="78.0" y="370.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">healthy: GC returns to baseline</text>
+<rect x="311.4" y="360.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="329.4" y="370.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">leaking: baseline creeps up</text>
+<text x="40.0" y="410.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each page view allocates memory, then garbage collection frees it. If old pages stay referenced, the floor rises.</text>
+<text x="40.0" y="429.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">In an SPA nothing resets the heap, so a tab left open all day can grow to gigabytes and slow down or crash.</text>
+</svg>
