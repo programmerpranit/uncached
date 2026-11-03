@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 534" width="880" height="534" role="img" aria-label="A simple cross-origin GET versus a PUT that first sends an OPTIONS preflight and only proceeds if the server allows the method and headers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="534" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Simple request vs preflight</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">non-simple requests ask permission with OPTIONS first</text>
+<text x="120.0" y="92.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="700">browser (app.example.com)</text>
+<line x1="120.0" y1="104.0" x2="120.0" y2="416.0" stroke="#4a4136" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="700.0" y="92.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="700">server (api.example.com)</text>
+<line x1="700.0" y1="104.0" x2="700.0" y2="416.0" stroke="#4a4136" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="40.0" y="128.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">A. simple GET</text>
+<line x1="120.0" y1="146.0" x2="700.0" y2="146.0" stroke="#5fb3a1" stroke-width="1.5" marker-end="url(#ah0)"/>
+<text x="410.0" y="140.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">GET /items   Origin: https://app.example.com</text>
+<line x1="700.0" y1="176.0" x2="120.0" y2="176.0" stroke="#5fb3a1" stroke-width="1.5" marker-end="url(#ah0)"/>
+<text x="410.0" y="170.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">200   Access-Control-Allow-Origin: https://app.example.com</text>
+<text x="410.0" y="198.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">browser checks the header, then lets JS read the body</text>
+<text x="40.0" y="246.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">B. PUT with JSON + Authorization header</text>
+<line x1="120.0" y1="266.0" x2="700.0" y2="266.0" stroke="#e2b45a" stroke-width="1.5" marker-end="url(#ah1)"/>
+<text x="410.0" y="260.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">OPTIONS /items/7   Access-Control-Request-Method: PUT</text>
+<text x="410.0" y="282.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">Access-Control-Request-Headers: content-type, authorization</text>
+<line x1="700.0" y1="312.0" x2="120.0" y2="312.0" stroke="#e2b45a" stroke-width="1.5" marker-end="url(#ah1)"/>
+<text x="410.0" y="306.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">204   Allow-Methods: PUT   Allow-Headers: content-type, authorization</text>
+<text x="410.0" y="328.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">Access-Control-Max-Age: 600 (cache this answer)</text>
+<line x1="120.0" y1="366.0" x2="700.0" y2="366.0" stroke="#ff5b2e" stroke-width="1.5" marker-end="url(#ah2)"/>
+<text x="410.0" y="360.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">PUT /items/7   (the real request)</text>
+<line x1="700.0" y1="396.0" x2="120.0" y2="396.0" stroke="#ff5b2e" stroke-width="1.5" marker-end="url(#ah2)"/>
+<text x="410.0" y="390.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">200   Access-Control-Allow-Origin: https://app.example.com</text>
+<rect x="40.0" y="430.0" width="800.0" height="80.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="456.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Simple = GET/HEAD/POST, only safelisted headers, and Content-Type of form/text/multipart.</text>
+<text x="56.0" y="475.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Anything else (PUT, DELETE, JSON body, custom headers) triggers a preflight. If the preflight fails,</text>
+<text x="56.0" y="494.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">the real request is never sent.</text>
+</svg>

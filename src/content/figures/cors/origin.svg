@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 449" width="880" height="449" role="img" aria-label="Comparing URLs to https://app.example.com: only a different path keeps the same origin; scheme, host or port changes make it cross-origin" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="449" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What counts as the same origin</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">origin = scheme + host + port; all three must match</text>
+<text x="40.0" y="96.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">page origin:</text>
+<text x="130.0" y="96.0" font-size="14" fill="#ff5b2e" text-anchor="start" font-weight="700">https://app.example.com</text>
+<text x="130.0" y="124.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">scheme: https</text>
+<text x="220.0" y="124.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">host: app.example.com</text>
+<text x="400.0" y="124.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="400">port: 443 (implied)</text>
+<rect x="40.0" y="160.0" width="800.0" height="36.0" rx="5" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="183.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">https://app.example.com/a</text>
+<text x="820.0" y="183.0" font-size="12" fill="#7cc47f" text-anchor="end" font-weight="600">same (path differs)</text>
+<rect x="40.0" y="204.0" width="800.0" height="36.0" rx="5" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="227.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">http://app.example.com</text>
+<text x="820.0" y="227.0" font-size="12" fill="#e5534b" text-anchor="end" font-weight="600">cross: scheme</text>
+<rect x="40.0" y="248.0" width="800.0" height="36.0" rx="5" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="271.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">https://api.example.com</text>
+<text x="820.0" y="271.0" font-size="12" fill="#e5534b" text-anchor="end" font-weight="600">cross: host</text>
+<rect x="40.0" y="292.0" width="800.0" height="36.0" rx="5" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="315.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">https://app.example.com:8443</text>
+<text x="820.0" y="315.0" font-size="12" fill="#e5534b" text-anchor="end" font-weight="600">cross: port</text>
+<rect x="40.0" y="336.0" width="800.0" height="36.0" rx="5" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="359.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="400">https://example.com</text>
+<text x="820.0" y="359.0" font-size="12" fill="#e5534b" text-anchor="end" font-weight="600">cross: host (no subdomain)</text>
+<text x="40.0" y="400.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The path never matters. Ports must match exactly, and http vs https are different origins.</text>
+<text x="40.0" y="419.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Same-site (registrable domain, e.g. example.com) is a looser idea used by cookies, not by CORS.</text>
+</svg>
