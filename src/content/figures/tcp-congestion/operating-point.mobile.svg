@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 381" width="360" height="381" role="img" aria-label="Delivery rate rises with inflight data until the bandwidth-delay product, then flattens while RTT rises as the queue fills until the buffer overflows; BBR aims at the knee, loss-based algorithms at the cliff" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="381" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Where to operate</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">BBR targets the knee, loss-based CC the cliff</text>
+<line x1="40.0" y1="280.0" x2="330.0" y2="280.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="40.0" y1="280.0" x2="40.0" y2="74.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="330.0" y="312.0" font-size="9" fill="#a69d8e" text-anchor="end" font-weight="400">data in flight →</text>
+<path d="M40,280 L150,140 L320,140" fill="none" stroke="#5fb3a1" stroke-width="2"/>
+<path d="M40,236 L150,236 L272,90" fill="none" stroke="#e2b45a" stroke-width="2"/>
+<line x1="150.2" y1="80.0" x2="150.2" y2="280.0" stroke="#7cc47f" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="272.0" y1="80.0" x2="272.0" y2="280.0" stroke="#e5534b" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="150.2" y="296.0" font-size="9" fill="#7cc47f" text-anchor="middle" font-weight="700">BDP</text>
+<text x="272.0" y="296.0" font-size="9" fill="#e5534b" text-anchor="middle" font-weight="700">BDP + buffer</text>
+<text x="48.0" y="132.0" font-size="9" fill="#5fb3a1" text-anchor="start" font-weight="400">delivery rate</text>
+<text x="48.0" y="228.0" font-size="9" fill="#e2b45a" text-anchor="start" font-weight="400">RTT</text>
+<text x="225.1" y="204.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">queue grows</text>
+<text x="16.0" y="336.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">Green: BBR targets full bandwidth at minimum RTT.</text>
+<text x="16.0" y="351.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">Red: loss-based CC fills buffers until drops.</text>
+</svg>

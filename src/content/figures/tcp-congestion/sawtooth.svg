@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 398" width="880" height="398" role="img" aria-label="Congestion window over time: exponential slow start, a loss that halves the window, linear growth, then a timeout that resets the window to one segment" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="398" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The cwnd sawtooth</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">slow start doubles the window each RTT; congestion avoidance adds one segment per RTT; loss cuts it</text>
+<line x1="70.0" y1="350.0" x2="830.0" y2="350.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="70.0" y1="350.0" x2="70.0" y2="84.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="62.0" y="94.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">cwnd</text>
+<text x="830.0" y="368.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">time (RTTs)</text>
+<path d="M70.0,343.5 L95.3,337.0 L120.7,324.0 L146.0,298.0 L171.3,246.0 L196.7,142.0" fill="none" stroke="#5fb3a1" stroke-width="2"/>
+<path d="M196.7,142.0 L196.7,246.0 L196.7,246.0 L222.0,239.5 L247.3,233.0 L272.7,226.5 L298.0,220.0 L323.3,213.5 L348.7,207.0 L374.0,200.5 L399.3,194.0 L424.7,187.5 L450.0,181.0 L475.3,174.5" fill="none" stroke="#e2b45a" stroke-width="2"/>
+<path d="M475.3,168.0 L475.3,343.5 L475.3,343.5 L500.7,337.0 L526.0,324.0 L551.3,298.0 L576.7,246.0" fill="none" stroke="#5fb3a1" stroke-width="2"/>
+<path d="M576.7,259.0 L576.7,259.0 L602.0,252.5 L627.3,246.0 L652.7,239.5 L678.0,233.0 L703.3,226.5 L728.7,220.0 L754.0,213.5 L779.3,207.0 L804.7,200.5 L830.0,194.0" fill="none" stroke="#e2b45a" stroke-width="2"/>
+<line x1="196.7" y1="246.0" x2="475.3" y2="246.0" stroke="#9b8cff" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="475.3" y1="259.0" x2="830.0" y2="259.0" stroke="#9b8cff" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="202.7" y="138.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">3 dup ACKs → halve</text>
+<text x="481.3" y="162.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">timeout → cwnd = 1</text>
+<text x="102.9" y="285.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="700">slow start</text>
+<text x="247.3" y="285.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="700">congestion avoidance (+1 / RTT)</text>
+<text x="627.3" y="341.0" font-size="10" fill="#9b8cff" text-anchor="start" font-weight="400">ssthresh = half of window at loss</text>
+</svg>

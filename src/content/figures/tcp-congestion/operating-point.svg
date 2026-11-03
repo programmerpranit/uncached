@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 396" width="880" height="396" role="img" aria-label="Delivery rate rises with inflight data until the bandwidth-delay product, then flattens while RTT rises as the queue fills until the buffer overflows; BBR aims at the knee, loss-based algorithms at the cliff" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="396" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Where to operate</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">as inflight data grows past the BDP, throughput stops rising and only the queue (and RTT) grows</text>
+<line x1="80.0" y1="330.0" x2="640.0" y2="330.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="80.0" y1="330.0" x2="80.0" y2="84.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="640.0" y="366.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">data in flight →</text>
+<path d="M80,330 L292,162 L630,162" fill="none" stroke="#5fb3a1" stroke-width="2"/>
+<path d="M80,277 L292,277 L528,102" fill="none" stroke="#e2b45a" stroke-width="2"/>
+<line x1="292.8" y1="90.0" x2="292.8" y2="330.0" stroke="#7cc47f" stroke-width="1" stroke-dasharray="4,3"/>
+<line x1="528.0" y1="90.0" x2="528.0" y2="330.0" stroke="#e5534b" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="292.8" y="348.0" font-size="10" fill="#7cc47f" text-anchor="middle" font-weight="700">BDP</text>
+<text x="528.0" y="348.0" font-size="10" fill="#e5534b" text-anchor="middle" font-weight="700">BDP + buffer</text>
+<text x="88.0" y="154.0" font-size="10" fill="#5fb3a1" text-anchor="start" font-weight="400">delivery rate</text>
+<text x="88.0" y="269.2" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="400">RTT</text>
+<text x="424.4" y="238.8" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">queue grows</text>
+<rect x="670.0" y="100.0" width="190.0" height="96.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="765.0" y="152.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="684.0" y="122.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="700">BBR aims here</text>
+<text x="684.0" y="142.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">max bandwidth, min RTT;</text>
+<text x="684.0" y="158.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">paces at measured</text>
+<text x="684.0" y="174.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">bottleneck rate</text>
+<rect x="670.0" y="214.0" width="190.0" height="96.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="765.0" y="266.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="684.0" y="236.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="700">Loss-based CC ends here</text>
+<text x="684.0" y="256.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">fills the buffer until it</text>
+<text x="684.0" y="272.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">drops → bufferbloat,</text>
+<text x="684.0" y="288.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">high latency</text>
+</svg>
