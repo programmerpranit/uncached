@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 414" width="880" height="414" role="img" aria-label="Islands are server-rendered to HTML with serialized props, the browser paints immediately, and each island fetches and hydrates its own chunk when its trigger fires" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="414" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">An island from build to interaction</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">server renders HTML; the browser wakes islands one by one</text>
+<rect x="40.0" y="110.0" width="124.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="102.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Build</text>
+<line x1="164.0" y1="130.0" x2="176.0" y2="130.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="176.0" y="110.0" width="124.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="238.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Server render</text>
+<line x1="300.0" y1="130.0" x2="312.0" y2="130.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="312.0" y="110.0" width="124.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.22" stroke="#5fb3a1" stroke-width="1"/>
+<text x="374.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Browser paints</text>
+<line x1="436.0" y1="130.0" x2="448.0" y2="130.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="448.0" y="110.0" width="124.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="510.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Trigger fires</text>
+<line x1="572.0" y1="130.0" x2="584.0" y2="130.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="584.0" y="110.0" width="124.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.22" stroke="#9b8cff" stroke-width="1"/>
+<text x="646.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Hydrate island</text>
+<line x1="708.0" y1="130.0" x2="720.0" y2="130.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="720.0" y="110.0" width="124.0" height="40.0" rx="3" fill="#7cc47f" fill-opacity="0.22" stroke="#7cc47f" stroke-width="1"/>
+<text x="782.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Interactive</text>
+<text x="40.0" y="180.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">1. Build</text>
+<text x="200.0" y="180.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">each island gets its own chunk</text>
+<text x="40.0" y="206.0" font-size="11.5" fill="#ff5b2e" text-anchor="start" font-weight="700">2. Server render</text>
+<text x="200.0" y="206.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">all components → HTML; islands wrapped in a marker with serialized props</text>
+<text x="40.0" y="232.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="700">3. Browser paints</text>
+<text x="200.0" y="232.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">full content visible, 0 JS run yet</text>
+<text x="40.0" y="258.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="700">4. Trigger fires</text>
+<text x="200.0" y="258.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">load · idle · visible · media query</text>
+<text x="40.0" y="284.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="700">5. Hydrate island</text>
+<text x="200.0" y="284.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">fetch chunk, attach to existing DOM</text>
+<text x="40.0" y="310.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="700">6. Interactive</text>
+<text x="200.0" y="310.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">other islands stay asleep until their own trigger</text>
+<rect x="40.0" y="342.0" width="800.0" height="48.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="364.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;astro-island component-url="/Cart.js" props='{"sku":"A12"}' client="idle"&gt;</text>
+<text x="56.0" y="380.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">  …server-rendered button HTML…&lt;/astro-island&gt;</text>
+</svg>

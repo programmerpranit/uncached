@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 417" width="880" height="417" role="img" aria-label="Startup JavaScript for a client-rendered SPA and full SSR hydration is large, while an islands page only boots the few interactive components" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="417" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">How much JavaScript does the page boot?</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same page, three rendering strategies</text>
+<text x="40.0" y="120.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">SPA (client-rendered)</text>
+<text x="40.0" y="140.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">framework + all components, render in browser</text>
+<rect x="380.0" y="110.0" width="440.0" height="26.0" rx="4" fill="#ff5b2e" fill-opacity="0.35" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="380.0" y="156.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">blank until JS runs</text>
+<text x="40.0" y="204.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">SSR + full hydration</text>
+<text x="40.0" y="224.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">HTML first, then hydrate the whole tree</text>
+<rect x="380.0" y="194.0" width="404.8" height="26.0" rx="4" fill="#e2b45a" fill-opacity="0.35" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="380.0" y="240.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">visible early, interactive late</text>
+<text x="40.0" y="288.0" font-size="12.5" fill="#ede6d8" text-anchor="start" font-weight="700">Islands</text>
+<text x="40.0" y="308.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">HTML first, hydrate 3 components</text>
+<rect x="380.0" y="278.0" width="79.2" height="26.0" rx="4" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="380.0" y="324.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">visible early, interactive early</text>
+<text x="380.0" y="96.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">JS executed at startup →</text>
+<text x="40.0" y="368.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Hydration cost scales with the size of the hydrated tree, not with how much of it is interactive.</text>
+<text x="40.0" y="387.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Islands make that cost proportional to the interactive parts only. Content-heavy pages benefit most.</text>
+</svg>

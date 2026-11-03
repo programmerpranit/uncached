@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 479" width="880" height="479" role="img" aria-label="A page of static HTML with three interactive islands: search hydrates on load, a gallery when visible, and an add-to-cart button when idle" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="479" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A static page with islands of interactivity</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">HTML everywhere; JavaScript only where it is needed</text>
+<rect x="40.0" y="96.0" width="420.0" height="300.0" rx="10" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1.2"/>
+<rect x="56.0" y="110.0" width="270.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="191.0" y="131.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">Header (static HTML)</text>
+<rect x="334.0" y="110.0" width="110.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1"/>
+<text x="389.0" y="131.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Search</text>
+<rect x="56.0" y="156.0" width="388.0" height="90.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="250.0" y="205.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">Article body (static HTML)</text>
+<rect x="56.0" y="258.0" width="190.0" height="60.0" rx="3" fill="#9b8cff" fill-opacity="0.25" stroke="#9b8cff" stroke-width="1"/>
+<text x="151.0" y="292.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Image gallery</text>
+<rect x="254.0" y="258.0" width="190.0" height="60.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="349.0" y="292.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">Related links (static)</text>
+<rect x="56.0" y="330.0" width="240.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="176.0" y="359.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="600">Footer (static)</text>
+<rect x="304.0" y="330.0" width="140.0" height="50.0" rx="3" fill="#e2b45a" fill-opacity="0.25" stroke="#e2b45a" stroke-width="1"/>
+<text x="374.0" y="359.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Add to cart</text>
+<rect x="490.0" y="110.0" width="350.0" height="58.0" rx="8" fill="#ff5b2e" fill-opacity="0.1" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="506.0" y="132.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Search</text>
+<text x="824.0" y="132.0" font-size="10.5" fill="#ff5b2e" text-anchor="end" font-weight="400">client:load</text>
+<text x="506.0" y="154.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">~12 kB, hydrates immediately</text>
+<rect x="490.0" y="180.0" width="350.0" height="58.0" rx="8" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="506.0" y="202.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Gallery</text>
+<text x="824.0" y="202.0" font-size="10.5" fill="#9b8cff" text-anchor="end" font-weight="400">client:visible</text>
+<text x="506.0" y="224.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">hydrates when scrolled into view</text>
+<rect x="490.0" y="250.0" width="350.0" height="58.0" rx="8" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="506.0" y="272.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Add to cart</text>
+<text x="824.0" y="272.0" font-size="10.5" fill="#e2b45a" text-anchor="end" font-weight="400">client:idle</text>
+<text x="506.0" y="294.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">hydrates when the main thread is idle</text>
+<rect x="490.0" y="320.0" width="350.0" height="58.0" rx="8" fill="#4a4136" fill-opacity="0" stroke="#4a4136" stroke-width="1.2"/>
+<text x="506.0" y="342.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">everything else</text>
+<text x="824.0" y="342.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">—</text>
+<text x="506.0" y="364.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">0 kB JS, never hydrated</text>
+<text x="40.0" y="430.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each island is an independent component root with its own props, bundle and hydration trigger.</text>
+<text x="40.0" y="449.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The sea between them is plain server-rendered HTML that ships no JavaScript at all.</text>
+</svg>
