@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 427" width="360" height="427" role="img" aria-label="A common hybrid: partners call a public REST API, web and mobile apps call a GraphQL backend-for-frontend, and both call internal services over gRPC" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="427" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Mixing styles</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">protocol per edge</text>
+<rect x="16.0" y="92.0" width="130.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="81.0" y="116.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Partners</text>
+<line x1="146.0" y1="112.0" x2="196.0" y2="112.0" stroke="#ff5b2e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<rect x="196.0" y="92.0" width="148.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="270.0" y="116.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">REST</text>
+<rect x="16.0" y="148.0" width="130.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="81.0" y="172.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Web + mobile</text>
+<line x1="146.0" y1="168.0" x2="196.0" y2="168.0" stroke="#9b8cff" stroke-width="1.5" marker-end="url(#ah1)"/>
+<rect x="196.0" y="148.0" width="148.0" height="40.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="270.0" y="172.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">GraphQL BFF</text>
+<line x1="180.0" y1="198.0" x2="180.0" y2="226.0" stroke="#5fb3a1" stroke-width="1.6" marker-end="url(#ah2)"/>
+<text x="190.0" y="218.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="700">gRPC</text>
+<rect x="16.0" y="230.0" width="328.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="252.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Orders service</text>
+<rect x="16.0" y="274.0" width="328.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="296.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Users service</text>
+<rect x="16.0" y="318.0" width="328.0" height="36.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="340.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Inventory service</text>
+<text x="16.0" y="378.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">REST outside, GraphQL for UIs,</text>
+<text x="16.0" y="397.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">gRPC between services.</text>
+</svg>

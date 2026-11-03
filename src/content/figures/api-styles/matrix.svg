@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 443" width="880" height="443" role="img" aria-label="Comparison: REST is strongest at HTTP caching, browser support, public APIs and curl debugging; GraphQL at flexible client queries and typed schema; gRPC at typed contracts, payload speed and streaming" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="443" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What each style makes easy</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">strong ●  partial ◐  weak ○</text>
+<text x="460.0" y="108.0" font-size="13" fill="#ff5b2e" text-anchor="middle" font-weight="700">REST</text>
+<text x="600.0" y="108.0" font-size="13" fill="#9b8cff" text-anchor="middle" font-weight="700">GraphQL</text>
+<text x="740.0" y="108.0" font-size="13" fill="#5fb3a1" text-anchor="middle" font-weight="700">gRPC</text>
+<rect x="40.0" y="124.0" width="800.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="56.0" y="144.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">HTTP caching / CDNs</text>
+<text x="460.0" y="145.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<text x="600.0" y="145.0" font-size="16" fill="#e5534b" text-anchor="middle" font-weight="400">○</text>
+<text x="740.0" y="145.0" font-size="16" fill="#e5534b" text-anchor="middle" font-weight="400">○</text>
+<text x="56.0" y="174.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Browser support</text>
+<text x="460.0" y="175.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<text x="600.0" y="175.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<text x="740.0" y="175.0" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="400">◐</text>
+<rect x="40.0" y="184.0" width="800.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="56.0" y="204.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Flexible client queries</text>
+<text x="460.0" y="205.0" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="400">◐</text>
+<text x="600.0" y="205.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<text x="740.0" y="205.0" font-size="16" fill="#e5534b" text-anchor="middle" font-weight="400">○</text>
+<text x="56.0" y="234.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Strict typed contract</text>
+<text x="460.0" y="235.0" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="400">◐</text>
+<text x="600.0" y="235.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<text x="740.0" y="235.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<rect x="40.0" y="244.0" width="800.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="56.0" y="264.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Payload size / speed</text>
+<text x="460.0" y="265.0" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="400">◐</text>
+<text x="600.0" y="265.0" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="400">◐</text>
+<text x="740.0" y="265.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<text x="56.0" y="294.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Streaming</text>
+<text x="460.0" y="295.0" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="400">◐</text>
+<text x="600.0" y="295.0" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="400">◐</text>
+<text x="740.0" y="295.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<rect x="40.0" y="304.0" width="800.0" height="30.0" rx="4" fill="#2f2921" fill-opacity="0.6" stroke="none" stroke-width="1"/>
+<text x="56.0" y="324.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Public, third-party APIs</text>
+<text x="460.0" y="325.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<text x="600.0" y="325.0" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="400">◐</text>
+<text x="740.0" y="325.0" font-size="16" fill="#e5534b" text-anchor="middle" font-weight="400">○</text>
+<text x="56.0" y="354.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="400">Debug with curl</text>
+<text x="460.0" y="355.0" font-size="16" fill="#7cc47f" text-anchor="middle" font-weight="400">●</text>
+<text x="600.0" y="355.0" font-size="16" fill="#e2b45a" text-anchor="middle" font-weight="400">◐</text>
+<text x="740.0" y="355.0" font-size="16" fill="#e5534b" text-anchor="middle" font-weight="400">○</text>
+<text x="40.0" y="394.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Typical fit: REST for public and browser-facing resource APIs, GraphQL for many UI clients with varied</text>
+<text x="40.0" y="413.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">data needs, gRPC for internal service-to-service calls where latency and contracts matter most.</text>
+</svg>
