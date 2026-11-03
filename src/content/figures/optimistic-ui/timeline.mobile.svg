@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 443" width="360" height="443" role="img" aria-label="Pessimistic UI shows a spinner until the server responds; optimistic UI updates immediately, sends the request in the background, and confirms on success or rolls back on error" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="443" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Pessimistic vs optimistic</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">when does the UI change?</text>
+<text x="16.0" y="96.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Pessimistic</text>
+<rect x="16.0" y="106.0" width="328.0" height="28.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1.2"/>
+<text x="180.0" y="125.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">click</text>
+<rect x="16.0" y="140.0" width="328.0" height="28.0" rx="6" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="180.0" y="159.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">spinner · waiting</text>
+<rect x="16.0" y="174.0" width="328.0" height="28.0" rx="6" fill="#e2b45a" fill-opacity="0.25" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="180.0" y="193.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">UI updates</text>
+<text x="16.0" y="226.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Optimistic</text>
+<rect x="16.0" y="236.0" width="328.0" height="28.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1.2"/>
+<text x="180.0" y="255.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">click</text>
+<rect x="16.0" y="270.0" width="328.0" height="28.0" rx="6" fill="#5fb3a1" fill-opacity="0.25" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="180.0" y="289.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">UI updates</text>
+<rect x="16.0" y="304.0" width="328.0" height="28.0" rx="6" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="180.0" y="323.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">request in background</text>
+<rect x="16.0" y="338.0" width="160.0" height="28.0" rx="6" fill="#7cc47f" fill-opacity="0.2" stroke="#7cc47f" stroke-width="1.2"/>
+<text x="96.0" y="357.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="400">200 → confirm</text>
+<rect x="184.0" y="338.0" width="160.0" height="28.0" rx="6" fill="#e5534b" fill-opacity="0.2" stroke="#e5534b" stroke-width="1.2"/>
+<text x="264.0" y="357.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="400">error → roll back</text>
+<text x="16.0" y="394.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The response confirms what the</text>
+<text x="16.0" y="413.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">user already sees.</text>
+</svg>

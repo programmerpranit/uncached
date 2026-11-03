@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 319" width="880" height="319" role="img" aria-label="Displayed state is the confirmed server state with pending mutations applied on top; confirmed mutations merge in and failed ones are dropped and the view recomputed" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="319" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What the user sees = server state + pending changes</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">keep the confirmed copy; layer guesses on top</text>
+<rect x="40.0" y="110.0" width="220.0" height="120.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="150.0" y="174.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="150.0" y="134.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="700">Confirmed (server)</text>
+<text x="64.0" y="162.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">todo 1  ☐</text>
+<text x="64.0" y="184.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">todo 2  ☐</text>
+<text x="64.0" y="206.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">todo 3  ☑</text>
+<text x="290.0" y="176.0" font-size="22" fill="#a69d8e" text-anchor="middle" font-weight="400">+</text>
+<rect x="320.0" y="110.0" width="240.0" height="120.0" rx="3" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1"/>
+<text x="440.0" y="174.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="440.0" y="134.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="700">Pending mutations</text>
+<text x="344.0" y="162.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">#41 toggle todo 1</text>
+<text x="344.0" y="184.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">#42 add "todo 4"</text>
+<text x="344.0" y="206.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">#43 rename todo 2</text>
+<text x="590.0" y="176.0" font-size="22" fill="#a69d8e" text-anchor="middle" font-weight="400">=</text>
+<rect x="620.0" y="110.0" width="220.0" height="120.0" rx="3" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1"/>
+<text x="730.0" y="174.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="730.0" y="134.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="700">Displayed</text>
+<text x="644.0" y="158.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">todo 1  ☑</text>
+<text x="644.0" y="177.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">todo 2′ ☐</text>
+<text x="644.0" y="196.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">todo 3  ☑</text>
+<text x="644.0" y="215.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">todo 4  ☐  (saving)</text>
+<text x="40.0" y="270.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">When #41 succeeds, it moves into the confirmed copy. When #42 fails, it is dropped and the displayed state is</text>
+<text x="40.0" y="289.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">recomputed, so later pending changes (#43) survive. Snapshot-and-restore loses them; replaying a queue does not.</text>
+</svg>

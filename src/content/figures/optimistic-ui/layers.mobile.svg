@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 353" width="360" height="353" role="img" aria-label="Displayed state is the confirmed server state with pending mutations applied on top; confirmed mutations merge in and failed ones are dropped and the view recomputed" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="353" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Displayed state</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">confirmed + pending</text>
+<rect x="16.0" y="84.0" width="328.0" height="58.0" rx="8" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="28.0" y="106.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Confirmed (server)</text>
+<text x="28.0" y="128.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">todo 1 ☐ · todo 2 ☐ · todo 3 ☑</text>
+<rect x="16.0" y="152.0" width="328.0" height="58.0" rx="8" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="28.0" y="174.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">+ Pending mutations</text>
+<text x="28.0" y="196.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">#41 toggle 1 · #42 add 4 · #43 rename 2</text>
+<rect x="16.0" y="220.0" width="328.0" height="58.0" rx="8" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="28.0" y="242.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">= Displayed</text>
+<text x="28.0" y="264.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">todo 1 ☑ · todo 2′ · todo 3 ☑ · todo 4…</text>
+<text x="16.0" y="304.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">On failure, drop that mutation</text>
+<text x="16.0" y="323.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and recompute. Later ones survive.</text>
+</svg>

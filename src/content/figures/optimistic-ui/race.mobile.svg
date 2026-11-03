@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 379" width="360" height="379" role="img" aria-label="Two quick like and unlike requests whose responses return out of order; applying the late response flips the UI to the wrong state unless stale responses are ignored" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="379" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Out-of-order responses</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">last click must win</text>
+<text x="60.0" y="96.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="700">client</text>
+<text x="300.0" y="96.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="700">server</text>
+<line x1="60.0" y1="104.0" x2="60.0" y2="290.0" stroke="#4a4136" stroke-width="1.2"/>
+<line x1="300.0" y1="104.0" x2="300.0" y2="290.0" stroke="#4a4136" stroke-width="1.2"/>
+<line x1="60.0" y1="120.0" x2="300.0" y2="170.0" stroke="#ff5b2e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="120.0" y="118.0" font-size="10.5" fill="#ff5b2e" text-anchor="start" font-weight="400">like (1)</text>
+<line x1="60.0" y1="146.0" x2="300.0" y2="196.0" stroke="#9b8cff" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="70.0" y="188.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="400">unlike (2)</text>
+<line x1="300.0" y1="216.0" x2="60.0" y2="246.0" stroke="#9b8cff" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="240.0" y="206.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="400">ok (2)</text>
+<line x1="300.0" y1="246.0" x2="60.0" y2="280.0" stroke="#ff5b2e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="200.0" y="276.0" font-size="10.5" fill="#ff5b2e" text-anchor="start" font-weight="400">ok (1) late</text>
+<text x="16.0" y="304.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">UI shows ♥ ✗</text>
+<text x="16.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Ignore stale responses, or</text>
+<text x="16.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">serialize mutations per item.</text>
+</svg>
