@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 469" width="880" height="469" role="img" aria-label="Primitive tokens hold raw values, semantic tokens give them meaning, component tokens map meaning to usage; a dark theme remaps only the semantic tier" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="469" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Three tiers of design tokens</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">raw values → meaning → component use; themes swap the middle</text>
+<text x="40.0" y="104.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">Primitive (raw)</text>
+<rect x="40.0" y="116.0" width="240.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="160.0" y="137.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">blue-600  #2563eb</text>
+<rect x="40.0" y="160.0" width="240.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="160.0" y="181.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">blue-300  #93c5fd</text>
+<rect x="40.0" y="204.0" width="240.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="160.0" y="225.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">gray-900  #111827</text>
+<rect x="40.0" y="248.0" width="240.0" height="34.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="160.0" y="269.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">gray-50   #f9fafb</text>
+<text x="330.0" y="104.0" font-size="12.5" fill="#ff5b2e" text-anchor="start" font-weight="700">Semantic (meaning)</text>
+<rect x="330.0" y="116.0" width="240.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="450.0" y="137.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">color.action.primary</text>
+<rect x="330.0" y="160.0" width="240.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="450.0" y="181.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">color.text.default</text>
+<rect x="330.0" y="204.0" width="240.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="450.0" y="225.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">color.surface.default</text>
+<rect x="330.0" y="248.0" width="240.0" height="34.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="450.0" y="269.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">color.border.focus</text>
+<text x="620.0" y="104.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">Component (usage)</text>
+<rect x="620.0" y="116.0" width="240.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="740.0" y="137.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">button.primary.bg</text>
+<rect x="620.0" y="160.0" width="240.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="740.0" y="181.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">input.border.focus</text>
+<rect x="620.0" y="204.0" width="240.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="740.0" y="225.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">card.bg</text>
+<rect x="620.0" y="248.0" width="240.0" height="34.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="740.0" y="269.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">body.text</text>
+<line x1="280.0" y1="133.0" x2="330.0" y2="133.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="280.0" y1="221.0" x2="330.0" y2="177.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="280.0" y1="265.0" x2="330.0" y2="221.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="280.0" y1="177.0" x2="330.0" y2="265.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="570.0" y1="133.0" x2="620.0" y2="133.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="570.0" y1="265.0" x2="620.0" y2="177.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="570.0" y1="221.0" x2="620.0" y2="221.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="570.0" y1="177.0" x2="620.0" y2="265.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="40.0" y="312.0" width="800.0" height="70.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="336.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Dark theme: remap only the semantic tier</text>
+<text x="56.0" y="360.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">color.surface.default → gray-900   ·   color.text.default → gray-50   ·   color.action.primary → blue-300</text>
+<text x="40.0" y="420.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Components never reference raw values, so a theme, a brand or a high-contrast mode is a new</text>
+<text x="40.0" y="439.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">semantic mapping. The same tokens can be exported to CSS variables, iOS and Android.</text>
+</svg>

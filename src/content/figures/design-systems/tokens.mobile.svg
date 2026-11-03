@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 453" width="360" height="453" role="img" aria-label="Primitive tokens hold raw values, semantic tokens give them meaning, component tokens map meaning to usage; a dark theme remaps only the semantic tier" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="453" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Token tiers</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">themes remap the semantic tier</text>
+<rect x="16.0" y="86.0" width="328.0" height="56.0" rx="8" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1.3"/>
+<text x="28.0" y="108.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Primitive</text>
+<text x="28.0" y="128.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">blue-600 = #2563eb</text>
+<line x1="180.0" y1="142.0" x2="180.0" y2="156.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="156.0" width="328.0" height="56.0" rx="8" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1.3"/>
+<text x="28.0" y="178.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Semantic</text>
+<text x="28.0" y="198.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">color.action.primary → blue-600</text>
+<line x1="180.0" y1="212.0" x2="180.0" y2="226.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="226.0" width="328.0" height="56.0" rx="8" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1.3"/>
+<text x="28.0" y="248.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Component</text>
+<text x="28.0" y="268.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">button.primary.bg → action.primary</text>
+<line x1="180.0" y1="282.0" x2="180.0" y2="296.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="300.0" width="328.0" height="74.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="322.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Dark theme</text>
+<text x="28.0" y="342.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">remap the semantic tier only:</text>
+<text x="28.0" y="360.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">action.primary → blue-300</text>
+<text x="16.0" y="404.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Components never use raw values,</text>
+<text x="16.0" y="423.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">so themes are just new mappings.</text>
+</svg>

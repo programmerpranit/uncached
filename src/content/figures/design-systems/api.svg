@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 495" width="880" height="495" role="img" aria-label="A configuration-style Card takes many props, while a compositional Card exposes sub-components; each trades consistency against flexibility" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="495" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Configuration vs composition</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">two ways to design the same Card API</text>
+<text x="40.0" y="104.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">Configuration (props)</text>
+<rect x="40.0" y="116.0" width="380.0" height="196.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="54.0" y="138.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;Card</text>
+<text x="54.0" y="158.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  title="Plan"</text>
+<text x="54.0" y="178.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  subtitle="Billed yearly"</text>
+<text x="54.0" y="198.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  icon={&lt;Star/&gt;}</text>
+<text x="54.0" y="218.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  badge="New"</text>
+<text x="54.0" y="238.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  actions={[…]}</text>
+<text x="54.0" y="258.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  footerAlign="end"</text>
+<text x="54.0" y="278.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  hideDivider</text>
+<text x="54.0" y="298.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  titleSize="lg" …/&gt;</text>
+<text x="40.0" y="338.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ easy to keep consistent</text>
+<text x="40.0" y="360.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ simple for common cases</text>
+<text x="40.0" y="382.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">− prop explosion for each new need</text>
+<text x="40.0" y="404.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">− hard to handle the unforeseen case</text>
+<text x="460.0" y="104.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Composition (slots / compound)</text>
+<rect x="460.0" y="116.0" width="380.0" height="196.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="474.0" y="138.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;Card&gt;</text>
+<text x="474.0" y="158.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;Card.Header&gt;</text>
+<text x="474.0" y="178.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">    &lt;Star/&gt; &lt;Card.Title&gt;Plan&lt;/Card.Title&gt;</text>
+<text x="474.0" y="198.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">    &lt;Badge&gt;New&lt;/Badge&gt;</text>
+<text x="474.0" y="218.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;/Card.Header&gt;</text>
+<text x="474.0" y="238.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;Card.Body&gt;…&lt;/Card.Body&gt;</text>
+<text x="474.0" y="258.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;Card.Footer&gt;</text>
+<text x="474.0" y="278.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">    &lt;Button&gt;Upgrade&lt;/Button&gt;</text>
+<text x="474.0" y="298.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;/Card.Footer&gt;&lt;/Card&gt;</text>
+<text x="460.0" y="338.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ flexible: arrange, wrap, omit parts</text>
+<text x="460.0" y="360.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ smaller API per part</text>
+<text x="460.0" y="382.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">− more ways to diverge from the design</text>
+<text x="460.0" y="404.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="400">− more verbose for the simple case</text>
+<text x="40.0" y="446.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Good systems mix both: props for variants that must stay on-brand (variant, size, tone),</text>
+<text x="40.0" y="465.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and composition for content and layout the system cannot predict.</text>
+</svg>

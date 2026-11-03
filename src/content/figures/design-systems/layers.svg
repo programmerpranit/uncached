@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 479" width="880" height="479" role="img" aria-label="Design system layers from bottom to top: design tokens, primitives, components, patterns and product screens" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="479" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The layers of a design system</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each layer is built only from the one below</text>
+<rect x="152.0" y="100.0" width="296.0" height="52.0" rx="8" fill="#d77fa1" fill-opacity="0.2" stroke="#d77fa1" stroke-width="1.4"/>
+<text x="300.0" y="122.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="700">Product screens</text>
+<text x="300.0" y="140.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">checkout, settings, dashboards</text>
+<text x="590.0" y="130.0" font-size="11.5" fill="#d77fa1" text-anchor="start" font-weight="700">owned by feature teams</text>
+<rect x="124.0" y="162.0" width="352.0" height="52.0" rx="8" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1.4"/>
+<text x="300.0" y="184.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="700">Patterns</text>
+<text x="300.0" y="202.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">forms, empty states, data tables</text>
+<text x="590.0" y="192.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="700">documented recipes</text>
+<rect x="96.0" y="224.0" width="408.0" height="52.0" rx="8" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1.4"/>
+<text x="300.0" y="246.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="700">Components</text>
+<text x="300.0" y="264.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">Button, Dialog, Select, Tabs</text>
+<text x="590.0" y="254.0" font-size="11.5" fill="#ff5b2e" text-anchor="start" font-weight="700">typed APIs, a11y built in</text>
+<rect x="68.0" y="286.0" width="464.0" height="52.0" rx="8" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1.4"/>
+<text x="300.0" y="308.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="700">Primitives</text>
+<text x="300.0" y="326.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">Box, Stack, Text, Icon</text>
+<text x="590.0" y="316.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="700">layout &amp; typography</text>
+<rect x="40.0" y="348.0" width="520.0" height="52.0" rx="8" fill="#e2b45a" fill-opacity="0.2" stroke="#e2b45a" stroke-width="1.4"/>
+<text x="300.0" y="370.0" font-size="12.5" fill="#ede6d8" text-anchor="middle" font-weight="700">Design tokens</text>
+<text x="300.0" y="388.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">color, space, radius, type, motion</text>
+<text x="590.0" y="378.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="700">named decisions, not values</text>
+<line x1="574.0" y1="396.0" x2="574.0" y2="108.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="430.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Change a token once and every component, pattern and screen above it updates.</text>
+<text x="40.0" y="449.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Consistency comes from the lower layers being hard to bypass, not from reviews.</text>
+</svg>

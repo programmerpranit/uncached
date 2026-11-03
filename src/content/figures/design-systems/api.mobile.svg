@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 551" width="360" height="551" role="img" aria-label="A configuration-style Card takes many props, while a compositional Card exposes sub-components; each trades consistency against flexibility" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="551" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Config vs composition</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same Card, two APIs</text>
+<text x="16.0" y="98.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Configuration (props)</text>
+<rect x="16.0" y="108.0" width="328.0" height="135.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="26.0" y="128.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;Card</text>
+<text x="26.0" y="145.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">  title="Plan"</text>
+<text x="26.0" y="162.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">  subtitle="Billed yearly"</text>
+<text x="26.0" y="179.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">  icon={&lt;Star/&gt;}</text>
+<text x="26.0" y="196.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">  badge="New"</text>
+<text x="26.0" y="213.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">  actions={[…]}</text>
+<text x="26.0" y="230.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">  …/&gt;</text>
+<text x="16.0" y="261.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ consistent, simple</text>
+<text x="16.0" y="278.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">− prop explosion</text>
+<text x="16.0" y="319.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Composition (slots)</text>
+<rect x="16.0" y="329.0" width="328.0" height="101.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="26.0" y="349.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;Card&gt;</text>
+<text x="26.0" y="366.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;Card.Header&gt;…&lt;/Card.Header&gt;</text>
+<text x="26.0" y="383.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;Card.Body&gt;…&lt;/Card.Body&gt;</text>
+<text x="26.0" y="400.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">  &lt;Card.Footer&gt;…&lt;/Card.Footer&gt;</text>
+<text x="26.0" y="417.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;/Card&gt;</text>
+<text x="16.0" y="448.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">+ flexible</text>
+<text x="16.0" y="465.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">− more ways to diverge</text>
+<text x="16.0" y="502.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Props for variants, composition</text>
+<text x="16.0" y="521.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">for content and layout.</text>
+</svg>
