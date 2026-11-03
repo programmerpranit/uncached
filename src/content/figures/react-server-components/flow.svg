@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 411" width="880" height="411" role="img" aria-label="Request flow: server components render to an RSC payload, which is turned into HTML on the server and merged into the DOM on the client" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="411" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Request to screen</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">RSC payload is streamed, then turned into HTML and DOM</text>
+<rect x="40.0" y="110.0" width="148.0" height="74.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="50.0" y="134.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Server comps</text>
+<text x="50.0" y="156.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">fetch data,</text>
+<text x="50.0" y="171.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">run async comps</text>
+<line x1="188.0" y1="147.0" x2="204.0" y2="147.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="204.0" y="110.0" width="148.0" height="74.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="214.0" y="134.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">RSC payload</text>
+<text x="214.0" y="156.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">serialized tree</text>
+<text x="214.0" y="171.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">+ client refs</text>
+<line x1="352.0" y1="147.0" x2="368.0" y2="147.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="368.0" y="110.0" width="148.0" height="74.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="378.0" y="134.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">SSR</text>
+<text x="378.0" y="156.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">payload + client</text>
+<text x="378.0" y="171.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">comps to HTML</text>
+<line x1="516.0" y1="147.0" x2="532.0" y2="147.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="532.0" y="110.0" width="148.0" height="74.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ede6d8" stroke-width="1"/>
+<text x="542.0" y="134.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Browser</text>
+<text x="542.0" y="156.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">paint HTML,</text>
+<text x="542.0" y="171.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">load client JS</text>
+<line x1="680.0" y1="147.0" x2="696.0" y2="147.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="696.0" y="110.0" width="148.0" height="74.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="706.0" y="134.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">Hydrate</text>
+<text x="706.0" y="156.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">client comps</text>
+<text x="706.0" y="171.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">only</text>
+<rect x="40.0" y="220.0" width="800.0" height="110.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="244.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">Payload sketch (simplified)</text>
+<text x="56.0" y="268.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">1:I["./AddToCart.js",["chunk-a1.js"],"AddToCart"]      ← client reference: load this module</text>
+<text x="56.0" y="286.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">0:["$","main",null,{"children":[["$","h1",null,{"children":"Desk lamp"}],</text>
+<text x="56.0" y="304.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">    ["$","$L1",null,{"productId":42}]]}]                 ← rendered elements; $L1 is the client component</text>
+<text x="40.0" y="362.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">On client-side navigation, the router fetches only the payload for the new route and merges it into the existing</text>
+<text x="40.0" y="381.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">tree, preserving client state. Server components never re-run in the browser.</text>
+</svg>

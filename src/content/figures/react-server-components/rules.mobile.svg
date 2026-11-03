@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 461" width="360" height="461" role="img" aria-label="What can and cannot be passed as props from server components to client components" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="461" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Boundary rules</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what crosses the boundary</text>
+<rect x="16.0" y="84.0" width="328.0" height="160.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="28.0" y="106.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">Can pass</text>
+<text x="28.0" y="130.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">• plain data, Date, Map, Set</text>
+<text x="28.0" y="149.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">• Promises</text>
+<text x="28.0" y="168.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">• JSX / server children</text>
+<text x="28.0" y="187.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">• server functions</text>
+<rect x="16.0" y="256.0" width="328.0" height="126.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="28.0" y="278.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">Cannot</text>
+<text x="28.0" y="302.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">• plain functions / handlers</text>
+<text x="28.0" y="321.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">• class instances</text>
+<text x="28.0" y="340.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">• importing server-only code</text>
+<text x="28.0" y="359.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">  in a client module</text>
+<text x="16.0" y="412.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Pass server components to client</text>
+<text x="16.0" y="431.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">components as children instead.</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 439" width="360" height="439" role="img" aria-label="Request flow: server components render to an RSC payload, which is turned into HTML on the server and merged into the DOM on the client" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="439" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Request to screen</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">payload, HTML, hydrate</text>
+<rect x="16.0" y="84.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="104.0" font-size="11.5" fill="#5fb3a1" text-anchor="start" font-weight="700">Render server components</text>
+<text x="28.0" y="122.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">fetch data, run async components</text>
+<rect x="16.0" y="142.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="162.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="700">RSC payload</text>
+<text x="28.0" y="180.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">serialized tree + client refs</text>
+<rect x="16.0" y="200.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="28.0" y="220.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="700">SSR</text>
+<text x="28.0" y="238.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">payload + client comps to HTML</text>
+<rect x="16.0" y="258.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ede6d8" stroke-width="1"/>
+<text x="28.0" y="278.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">Browser</text>
+<text x="28.0" y="296.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">paint HTML, load client JS</text>
+<rect x="16.0" y="316.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="28.0" y="336.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="700">Hydrate</text>
+<text x="28.0" y="354.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">client components only</text>
+<text x="16.0" y="390.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Navigations fetch just the payload</text>
+<text x="16.0" y="409.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and merge it, keeping client state.</text>
+</svg>
