@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 394" width="880" height="394" role="img" aria-label="A cached response is reused with no request while fresh; once stale the browser revalidates with If-None-Match and gets a 304 to reuse the body or a 200 with a new one" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="394" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What happens on a repeat request</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">fresh → reuse · stale → revalidate · missing → fetch</text>
+<rect x="40.0" y="110.0" width="160.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="120.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">request /app.css</text>
+<line x1="200.0" y1="130.0" x2="250.0" y2="130.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="250.0" y="110.0" width="170.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="335.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">in cache?</text>
+<line x1="335.0" y1="150.0" x2="335.0" y2="330.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="345.0" y="250.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">no</text>
+<rect x="250.0" y="330.0" width="170.0" height="40.0" rx="3" fill="#e5534b" fill-opacity="0.2" stroke="#e5534b" stroke-width="1"/>
+<text x="335.0" y="354.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">full GET → 200</text>
+<line x1="420.0" y1="130.0" x2="470.0" y2="130.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="428.0" y="122.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">yes</text>
+<rect x="470.0" y="110.0" width="170.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="555.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">age &lt; max-age?</text>
+<line x1="640.0" y1="130.0" x2="690.0" y2="130.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="648.0" y="122.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">fresh</text>
+<rect x="690.0" y="110.0" width="150.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="765.0" y="134.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">use cache · 0 RTT</text>
+<line x1="555.0" y1="150.0" x2="555.0" y2="200.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="565.0" y="180.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">stale</text>
+<rect x="470.0" y="200.0" width="170.0" height="40.0" rx="3" fill="#e2b45a" fill-opacity="0.2" stroke="#e2b45a" stroke-width="1"/>
+<text x="555.0" y="224.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">If-None-Match: "v7"</text>
+<line x1="640.0" y1="220.0" x2="690.0" y2="200.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="640.0" y1="220.0" x2="690.0" y2="260.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="690.0" y="180.0" width="150.0" height="40.0" rx="3" fill="#7cc47f" fill-opacity="0.2" stroke="#7cc47f" stroke-width="1"/>
+<text x="765.0" y="204.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">304 · reuse body</text>
+<rect x="690.0" y="240.0" width="150.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="765.0" y="264.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">200 · new body</text>
+<text x="470.0" y="316.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A 304 still costs a round trip, but no body.</text>
+<text x="470.0" y="335.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Fresh hits cost nothing: no request at all.</text>
+</svg>

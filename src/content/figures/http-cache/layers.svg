@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 334" width="880" height="334" role="img" aria-label="A request passes the memory cache, HTTP disk cache, service worker and CDN before reaching the origin; private, public, s-maxage, no-store and Vary control which layers store it" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="334" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Caches between the user and your origin</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each one reads the same headers, with different scope</text>
+<rect x="40.0" y="120.0" width="146.0" height="48.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="113.0" y="148.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Memory cache</text>
+<text x="113.0" y="192.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">this tab, this page load</text>
+<line x1="186.0" y1="144.0" x2="204.0" y2="144.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="204.0" y="120.0" width="146.0" height="48.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="277.0" y="148.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">HTTP disk cache</text>
+<text x="277.0" y="192.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">private: one browser</text>
+<line x1="350.0" y1="144.0" x2="368.0" y2="144.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="368.0" y="120.0" width="146.0" height="48.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="441.0" y="148.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Service worker</text>
+<text x="441.0" y="192.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">your code decides</text>
+<line x1="514.0" y1="144.0" x2="532.0" y2="144.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="532.0" y="120.0" width="146.0" height="48.0" rx="3" fill="#e2b45a" fill-opacity="0.2" stroke="#e2b45a" stroke-width="1"/>
+<text x="605.0" y="148.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">CDN / proxy</text>
+<text x="605.0" y="192.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">shared: many users · s-maxage</text>
+<line x1="678.0" y1="144.0" x2="696.0" y2="144.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="696.0" y="120.0" width="146.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="769.0" y="148.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Origin</text>
+<text x="769.0" y="192.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">source of truth</text>
+<text x="40.0" y="104.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="700">browser</text>
+<line x1="40.0" y1="108.0" x2="520.0" y2="108.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="40.0" y="238.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">private  → only browser caches may store it (personalised pages, account data).</text>
+<text x="40.0" y="260.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">public / s-maxage → shared caches may store it too; s-maxage overrides max-age for them only.</text>
+<text x="40.0" y="282.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">no-store → nothing caches it at all. Use for truly sensitive responses, not as a general "don't cache".</text>
+<text x="40.0" y="304.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Vary: Accept-Encoding, Accept-Language … → separate cached copies per header value.</text>
+</svg>
