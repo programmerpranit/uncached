@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 452" width="360" height="452" role="img" aria-label="How to drain each kind of work: HTTP requests finish in flight, keep-alive and gRPC connections get GOAWAY, WebSockets are told to reconnect, queue consumers stop polling and nack unfinished messages, and long batch jobs checkpoint progress" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="452" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Draining workers</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">finish or hand back</text>
+<rect x="16.0" y="86.0" width="328.0" height="26.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="103.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">HTTP requests</text>
+<text x="16.0" y="128.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">stop accept,</text>
+<text x="16.0" y="142.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">finish in-flight, set Connection: close</text>
+<rect x="16.0" y="156.0" width="328.0" height="26.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="173.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Keep-alive / gRPC</text>
+<text x="16.0" y="198.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">send GOAWAY / close idle</text>
+<text x="16.0" y="212.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">conns so clients reconnect</text>
+<rect x="16.0" y="226.0" width="328.0" height="26.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="243.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">WebSockets / SSE</text>
+<text x="16.0" y="268.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">notify clients,</text>
+<text x="16.0" y="282.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">close with reconnect hint, stagger</text>
+<rect x="16.0" y="296.0" width="328.0" height="26.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="313.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Queue consumers</text>
+<text x="16.0" y="338.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">stop polling;</text>
+<text x="16.0" y="352.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">finish or nack so message is redelivered</text>
+<rect x="16.0" y="366.0" width="328.0" height="26.0" rx="3" fill="#d77fa1" fill-opacity="0.15" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="383.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Long batch jobs</text>
+<text x="16.0" y="408.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">checkpoint progress;</text>
+<text x="16.0" y="422.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">resume elsewhere idempotently</text>
+</svg>

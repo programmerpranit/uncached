@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 369" width="880" height="369" role="img" aria-label="Graceful shutdown sequence: SIGTERM, fail readiness, wait for the load balancer to remove the endpoint, stop accepting, drain in-flight work, close resources and exit before the grace period ends in SIGKILL" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="369" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ede6d8"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The shutdown sequence</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">order matters: leave the load balancer first, then drain, then exit</text>
+<rect x="42.0" y="120.0" width="98.0" height="56.0" rx="3" fill="#e5534b" fill-opacity="0.15" stroke="#e5534b" stroke-width="1"/>
+<text x="91.0" y="152.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">SIGTERM</text>
+<text x="91.0" y="196.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">signal arrives</text>
+<line x1="140.0" y1="148.0" x2="154.0" y2="148.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="154.0" y="120.0" width="98.0" height="56.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="203.0" y="152.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">fail ready</text>
+<text x="203.0" y="196.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">no new traffic</text>
+<line x1="252.0" y1="148.0" x2="266.0" y2="148.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="266.0" y="120.0" width="98.0" height="56.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="315.0" y="152.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">wait for LB</text>
+<text x="315.0" y="196.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">LB catches up</text>
+<line x1="364.0" y1="148.0" x2="378.0" y2="148.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="378.0" y="120.0" width="98.0" height="56.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="427.0" y="152.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">stop accept</text>
+<text x="427.0" y="196.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">close listener</text>
+<line x1="476.0" y1="148.0" x2="490.0" y2="148.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="490.0" y="120.0" width="98.0" height="56.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="539.0" y="152.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">drain</text>
+<text x="539.0" y="196.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">finish work</text>
+<line x1="588.0" y1="148.0" x2="602.0" y2="148.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="602.0" y="120.0" width="98.0" height="56.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="651.0" y="152.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">close</text>
+<text x="651.0" y="196.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">flush</text>
+<line x1="700.0" y1="148.0" x2="714.0" y2="148.0" stroke="#ede6d8" stroke-width="1.1" marker-end="url(#ah0)"/>
+<rect x="714.0" y="120.0" width="98.0" height="56.0" rx="3" fill="#7cc47f" fill-opacity="0.15" stroke="#7cc47f" stroke-width="1"/>
+<text x="763.0" y="152.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">exit 0</text>
+<text x="763.0" y="196.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">before SIGKILL</text>
+<rect x="40.0" y="240.0" width="780.0" height="16.0" rx="3" fill="#4a4136" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<rect x="40.0" y="240.0" width="640.0" height="16.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<text x="40.0" y="276.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">0 s</text>
+<text x="680.0" y="276.0" font-size="10" fill="#5fb3a1" text-anchor="middle" font-weight="400">done ≈ 25 s</text>
+<text x="820.0" y="276.0" font-size="10" fill="#e5534b" text-anchor="end" font-weight="400">30 s: SIGKILL</text>
+<line x1="820.0" y1="232.0" x2="820.0" y2="262.0" stroke="#e5534b" stroke-width="2"/>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">terminationGracePeriodSeconds is a hard deadline. Anything still running at that point is killed mid-request.</text>
+<text x="40.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Set app drain timeout &lt; grace period, and budget for the load balancer to notice the pod is leaving.</text>
+</svg>

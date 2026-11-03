@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 399" width="880" height="399" role="img" aria-label="Without a pre-stop delay the pod exits while the load balancer still routes to it, causing 502s; with a short pre-stop sleep the load balancer removes the endpoint before the pod stops serving" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="399" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The endpoint-removal race</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">SIGTERM and load balancer updates happen in parallel</text>
+<text x="40.0" y="104.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">Without a pre-stop delay</text>
+<text x="40.0" y="132.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">pod</text>
+<rect x="110.0" y="120.0" width="200.0" height="18.0" rx="3" fill="#5fb3a1" fill-opacity="0.5" stroke="none" stroke-width="1"/>
+<text x="318.0" y="134.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">exits at 0.2 s</text>
+<text x="40.0" y="162.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">LB</text>
+<rect x="110.0" y="150.0" width="460.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.4" stroke="none" stroke-width="1"/>
+<text x="578.0" y="164.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">still routes until 3 s</text>
+<rect x="310.0" y="118.0" width="260.0" height="52.0" rx="4" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="440.0" y="190.0" font-size="10.5" fill="#e5534b" text-anchor="middle" font-weight="400">connection refused / 502s</text>
+<text x="40.0" y="240.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">With pre-stop sleep + readiness fail</text>
+<text x="40.0" y="268.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">pod</text>
+<rect x="110.0" y="256.0" width="140.0" height="18.0" rx="3" fill="#e2b45a" fill-opacity="0.5" stroke="none" stroke-width="1"/>
+<text x="180.0" y="270.0" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="400">sleep 5 s</text>
+<rect x="250.0" y="256.0" width="300.0" height="18.0" rx="3" fill="#5fb3a1" fill-opacity="0.5" stroke="none" stroke-width="1"/>
+<text x="400.0" y="270.0" font-size="9.5" fill="#ede6d8" text-anchor="middle" font-weight="400">drain, then exit</text>
+<text x="40.0" y="298.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">LB</text>
+<rect x="110.0" y="286.0" width="100.0" height="18.0" rx="3" fill="#ff5b2e" fill-opacity="0.4" stroke="none" stroke-width="1"/>
+<text x="218.0" y="300.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">removed at ~3 s, no new requests</text>
+<text x="40.0" y="350.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Endpoint removal propagates asynchronously to kube-proxy, ingress controllers and cloud LBs.</text>
+<text x="40.0" y="369.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Keep serving for a few seconds after SIGTERM so in-flight routing decisions land on a live process.</text>
+</svg>
