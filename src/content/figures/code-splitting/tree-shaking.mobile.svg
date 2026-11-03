@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 498" width="360" height="498" role="img" aria-label="Module graph where only exports reachable from the entry are kept and unused exports are removed" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="498" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Tree shaking</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">follow imports, drop the rest</text>
+<rect x="16.0" y="84.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="108.3" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="600">main.js (entry)</text>
+<text x="16.0" y="150.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">utils.js</text>
+<rect x="16.0" y="160.0" width="328.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="178.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">formatDate</text>
+<rect x="16.0" y="194.0" width="328.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="212.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">formatMoney</text>
+<rect x="16.0" y="228.0" width="328.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="246.1" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="600">parseCSV</text>
+<line x1="20.0" y1="242.0" x2="340.0" y2="242.0" stroke="#e5534b" stroke-width="1.2"/>
+<rect x="16.0" y="262.0" width="328.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="280.1" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="600">slugify</text>
+<line x1="20.0" y1="276.0" x2="340.0" y2="276.0" stroke="#e5534b" stroke-width="1.2"/>
+<text x="16.0" y="312.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">lodash-es</text>
+<rect x="16.0" y="322.0" width="328.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="340.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">debounce</text>
+<rect x="16.0" y="356.0" width="328.0" height="28.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="374.1" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="600">~300 other functions</text>
+<line x1="20.0" y1="370.0" x2="340.0" y2="370.0" stroke="#e5534b" stroke-width="1.2"/>
+<rect x="16.0" y="390.0" width="12.0" height="12.0" rx="2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="400.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">kept</text>
+<rect x="83.3" y="390.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="101.3" y="400.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">removed</text>
+<text x="16.0" y="430.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Static ESM imports let the bundler</text>
+<text x="16.0" y="449.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">see what is used without running</text>
+<text x="16.0" y="468.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the code.</text>
+</svg>

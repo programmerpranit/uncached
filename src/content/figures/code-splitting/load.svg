@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 388" width="880" height="388" role="img" aria-label="Loading timeline comparing a single large bundle with split chunks, showing earlier interactivity" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="388" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What the user waits for</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">network and main-thread time before the page is usable</text>
+<text x="40.0" y="100.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">one bundle</text>
+<rect x="40.0" y="110.0" width="40.0" height="28.0" rx="3" fill="#a69d8e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="60.0" y="129.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">HTML</text>
+<rect x="80.0" y="110.0" width="420.0" height="28.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="290.0" y="129.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">download 1.2 MB</text>
+<rect x="500.0" y="110.0" width="260.0" height="28.0" rx="3" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="630.0" y="129.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">parse + execute</text>
+<line x1="760.0" y1="94.0" x2="760.0" y2="150.0" stroke="#7cc47f" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="764.0" y="162.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">interactive</text>
+<text x="40.0" y="210.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">split</text>
+<rect x="40.0" y="220.0" width="40.0" height="28.0" rx="3" fill="#a69d8e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="60.0" y="239.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">HTML</text>
+<rect x="80.0" y="220.0" width="130.0" height="28.0" rx="3" fill="#ff5b2e" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="145.0" y="239.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">entry+vendor</text>
+<rect x="210.0" y="220.0" width="90.0" height="28.0" rx="3" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="255.0" y="239.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">exec</text>
+<rect x="300.0" y="220.0" width="60.0" height="28.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="330.0" y="239.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">route</text>
+<line x1="360.0" y1="204.0" x2="360.0" y2="260.0" stroke="#7cc47f" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="364.0" y="272.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">interactive</text>
+<rect x="360.0" y="220.0" width="90.0" height="28.0" rx="3" fill="#d77fa1" fill-opacity="0.3" stroke="none" stroke-width="1"/>
+<text x="405.0" y="239.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="400">editor later</text>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">JavaScript costs twice: bytes over the network, then parse/compile/execute on the main thread.</text>
+<text x="40.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Splitting cuts both for the first load. Too many tiny chunks add request overhead and waterfalls, so aim</text>
+<text x="40.0" y="358.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">for a few meaningful chunks, and preload the ones you know you need.</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 477" width="880" height="477" role="img" aria-label="Module graph where only exports reachable from the entry are kept and unused exports are removed" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="477" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Tree shaking: keep only what is reached</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">start at the entry, follow imports, drop unused exports</text>
+<rect x="40.0" y="110.0" width="150.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="115.0" y="132.0" font-size="13" fill="#ff5b2e" text-anchor="middle" font-weight="600">main.js</text>
+<text x="115.0" y="148.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="400">entry</text>
+<rect x="280.0" y="90.0" width="250.0" height="200.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="296.0" y="112.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="700">utils.js</text>
+<rect x="296.0" y="128.0" width="218.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="405.0" y="147.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">export formatDate</text>
+<rect x="296.0" y="166.0" width="218.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="405.0" y="185.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">export formatMoney</text>
+<rect x="296.0" y="204.0" width="218.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="0.6" stroke="#e5534b" stroke-width="1"/>
+<text x="405.0" y="223.3" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="600">export parseCSV</text>
+<line x1="300.0" y1="219.0" x2="510.0" y2="219.0" stroke="#e5534b" stroke-width="1.2"/>
+<rect x="296.0" y="242.0" width="218.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="0.6" stroke="#e5534b" stroke-width="1"/>
+<text x="405.0" y="261.3" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="600">export slugify</text>
+<line x1="300.0" y1="257.0" x2="510.0" y2="257.0" stroke="#e5534b" stroke-width="1.2"/>
+<line x1="190.0" y1="128.0" x2="294.0" y2="143.0" stroke="#ff5b2e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<line x1="190.0" y1="140.0" x2="294.0" y2="181.0" stroke="#ff5b2e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<rect x="620.0" y="90.0" width="220.0" height="200.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="636.0" y="112.0" font-size="13" fill="#ede6d8" text-anchor="start" font-weight="700">lodash-es</text>
+<rect x="636.0" y="128.0" width="188.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="730.0" y="147.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">debounce</text>
+<rect x="636.0" y="166.0" width="188.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="730.0" y="185.3" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="600">~300 other functions</text>
+<line x1="636.0" y1="181.0" x2="824.0" y2="181.0" stroke="#e5534b" stroke-width="1.2"/>
+<path d="M 115 160 C 115 360, 730 370, 730 294" fill="none" stroke="#ff5b2e" stroke-width="1.5" marker-end="url(#ah0)"/>
+<text x="420.0" y="366.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">main.js also imports debounce from lodash-es</text>
+<rect x="40.0" y="386.0" width="12.0" height="12.0" rx="2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="58.0" y="396.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">reached: kept in bundle</text>
+<rect x="244.0" y="386.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="262.0" y="396.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">unreached: removed</text>
+<text x="40.0" y="428.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Works because ES module imports and exports are static: the bundler can see exactly which names are used</text>
+<text x="40.0" y="447.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">without running the code. CommonJS require() and side-effectful modules defeat it.</text>
+</svg>
