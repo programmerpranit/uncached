@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 568" width="360" height="568" role="img" aria-label="Steps for variable row heights: estimate, render, measure with ResizeObserver, then correct offsets" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="568" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Variable row heights</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">estimate, measure, correct</text>
+<rect x="16.0" y="84.0" width="328.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="180.0" y="105.3" font-size="12" fill="#a69d8e" text-anchor="middle" font-weight="600">1. estimate</text>
+<text x="16.0" y="136.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">unseen rows assumed 48px; offsets =</text>
+<text x="16.0" y="155.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">prefix sums</text>
+<rect x="16.0" y="188.0" width="328.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="209.3" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="600">2. render</text>
+<text x="16.0" y="240.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">rows in the window mount with real</text>
+<text x="16.0" y="259.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">content</text>
+<rect x="16.0" y="292.0" width="328.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="313.3" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">3. measure</text>
+<text x="16.0" y="344.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">ResizeObserver reports 48 → 112px for</text>
+<text x="16.0" y="363.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">row 61</text>
+<rect x="16.0" y="396.0" width="328.0" height="34.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="417.3" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">4. correct</text>
+<text x="16.0" y="448.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">update offsets below; adjust scrollTop</text>
+<text x="16.0" y="467.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">if the change is above the viewport</text>
+<text x="16.0" y="500.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Offsets are prefix sums of heights.</text>
+<text x="16.0" y="519.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">When row 61 grows by 64px, every</text>
+<text x="16.0" y="538.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">offset after it shifts by 64px.</text>
+</svg>

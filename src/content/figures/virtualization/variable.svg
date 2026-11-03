@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img" aria-label="Steps for variable row heights: estimate, render, measure with ResizeObserver, then correct offsets" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="400" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Variable row heights</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">estimate first, measure when rendered, correct the offsets</text>
+<rect x="40.0" y="100.0" width="185.0" height="64.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#a69d8e" stroke-width="1"/>
+<text x="132.5" y="136.7" font-size="13" fill="#a69d8e" text-anchor="middle" font-weight="600">1. estimate</text>
+<text x="40.0" y="190.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">unseen rows assumed 48px;</text>
+<text x="40.0" y="209.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">offsets = prefix sums</text>
+<line x1="227.0" y1="132.0" x2="243.0" y2="132.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="245.0" y="100.0" width="185.0" height="64.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#ff5b2e" stroke-width="1"/>
+<text x="337.5" y="136.7" font-size="13" fill="#ff5b2e" text-anchor="middle" font-weight="600">2. render</text>
+<text x="245.0" y="190.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">rows in the window mount</text>
+<text x="245.0" y="209.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">with real content</text>
+<line x1="432.0" y1="132.0" x2="448.0" y2="132.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="450.0" y="100.0" width="185.0" height="64.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="542.5" y="136.7" font-size="13" fill="#e2b45a" text-anchor="middle" font-weight="600">3. measure</text>
+<text x="450.0" y="190.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">ResizeObserver reports 48</text>
+<text x="450.0" y="209.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">→ 112px for row 61</text>
+<line x1="637.0" y1="132.0" x2="653.0" y2="132.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="655.0" y="100.0" width="185.0" height="64.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="747.5" y="136.7" font-size="13" fill="#9b8cff" text-anchor="middle" font-weight="600">4. correct</text>
+<text x="655.0" y="190.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">update offsets below;</text>
+<text x="655.0" y="209.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">adjust scrollTop if the</text>
+<text x="655.0" y="228.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">change is above the</text>
+<text x="655.0" y="247.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">viewport</text>
+<rect x="40.0" y="280.0" width="800.0" height="96.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="304.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">offset table (prefix sums of heights)</text>
+<text x="56.0" y="334.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">row 59</text>
+<text x="56.0" y="354.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="600">2,832</text>
+<text x="214.0" y="334.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">row 60</text>
+<text x="214.0" y="354.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="600">2,880</text>
+<text x="372.0" y="334.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">row 61</text>
+<text x="372.0" y="354.0" font-size="11.5" fill="#e2b45a" text-anchor="start" font-weight="600">2,928</text>
+<text x="530.0" y="334.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">row 62</text>
+<text x="530.0" y="354.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="600">3,040  (was 2,976)</text>
+<text x="688.0" y="334.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">row 63</text>
+<text x="688.0" y="354.0" font-size="11.5" fill="#9b8cff" text-anchor="start" font-weight="600">3,088  (was 3,024)</text>
+</svg>

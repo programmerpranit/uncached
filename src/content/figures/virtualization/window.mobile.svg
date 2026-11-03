@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" width="360" height="480" role="img" aria-label="A scroll container where only rows near the viewport are rendered, with spacers standing in for the rest" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="480" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Windowing a long list</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">only visible rows are in the DOM</text>
+<rect x="16.0" y="90.0" width="200.0" height="270.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="24.0" y="96.0" width="184.0" height="34.0" rx="4" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="116.0" y="117.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">spacer 2,400px</text>
+<rect x="24.0" y="138.0" width="184.0" height="22.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="32.0" y="153.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">row 60</text>
+<rect x="24.0" y="163.0" width="184.0" height="22.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="32.0" y="178.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">row 61</text>
+<rect x="24.0" y="188.0" width="184.0" height="22.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="32.0" y="203.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">row 62</text>
+<rect x="24.0" y="213.0" width="184.0" height="22.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="32.0" y="228.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">row 63</text>
+<rect x="24.0" y="238.0" width="184.0" height="22.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="32.0" y="253.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">row 64</text>
+<rect x="24.0" y="263.0" width="184.0" height="22.0" rx="3" fill="#ff5b2e" fill-opacity="0.22" stroke="#ff5b2e" stroke-width="1"/>
+<text x="32.0" y="278.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">row 65</text>
+<rect x="24.0" y="288.0" width="184.0" height="22.0" rx="3" fill="#e2b45a" fill-opacity="0.22" stroke="#e2b45a" stroke-width="1"/>
+<text x="32.0" y="303.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">row 66</text>
+<rect x="24.0" y="317.0" width="184.0" height="34.0" rx="4" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="116.0" y="338.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">spacer 237,400px</text>
+<rect x="12.0" y="160.0" width="208.0" height="128.0" rx="4" fill="none" fill-opacity="1" stroke="#d77fa1" stroke-width="2"/>
+<text x="226.0" y="170.0" font-size="11" fill="#d77fa1" text-anchor="start" font-weight="600">viewport</text>
+<text x="230.0" y="200.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">~10 rows</text>
+<text x="230.0" y="219.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">in the DOM,</text>
+<text x="230.0" y="238.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">not 10,000</text>
+<text x="16.0" y="384.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Total height stays 400,000px, so</text>
+<text x="16.0" y="403.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the scrollbar is normal. Each scroll</text>
+<text x="16.0" y="422.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">recomputes which rows to render.</text>
+<rect x="16.0" y="440.0" width="12.0" height="12.0" rx="2" fill="#ff5b2e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="34.0" y="450.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">visible</text>
+<rect x="101.6" y="440.0" width="12.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="119.6" y="450.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">overscan</text>
+<rect x="193.6" y="440.0" width="12.0" height="12.0" rx="2" fill="#a69d8e" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="211.6" y="450.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">spacer</text>
+</svg>
