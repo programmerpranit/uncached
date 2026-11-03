@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 399" width="880" height="399" role="img" aria-label="The service inserts the order row and an outbox event row in one database transaction; a relay reads the outbox by polling or change data capture, publishes to the broker and marks the row sent, giving at-least-once delivery to consumers" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="399" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d77fa1"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">The outbox: one transaction, then relay</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the event row commits atomically with the business row</text>
+<rect x="30.0" y="150.0" width="140.0" height="56.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="100.0" y="182.3" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Order service</text>
+<rect x="220.0" y="90.0" width="300.0" height="190.0" rx="10" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="236.0" y="112.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="700">ONE database transaction</text>
+<rect x="240.0" y="126.0" width="260.0" height="50.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="370.0" y="148.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">orders</text>
+<text x="370.0" y="164.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">INSERT order #42</text>
+<rect x="240.0" y="196.0" width="260.0" height="60.0" rx="3" fill="#e2b45a" fill-opacity="0.2" stroke="#e2b45a" stroke-width="1"/>
+<text x="370.0" y="223.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">outbox</text>
+<text x="370.0" y="239.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">INSERT {OrderPlaced, #42, payload}</text>
+<line x1="170.0" y1="178.0" x2="240.0" y2="152.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<line x1="170.0" y1="178.0" x2="240.0" y2="224.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="580.0" y="196.0" width="130.0" height="60.0" rx="3" fill="#d77fa1" fill-opacity="0.2" stroke="#d77fa1" stroke-width="1"/>
+<text x="645.0" y="223.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Relay</text>
+<text x="645.0" y="239.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">poll or CDC</text>
+<line x1="500.0" y1="226.0" x2="580.0" y2="226.0" stroke="#d77fa1" stroke-width="1.3" marker-end="url(#ah1)"/>
+<text x="540.0" y="218.0" font-size="10" fill="#d77fa1" text-anchor="middle" font-weight="400">read</text>
+<rect x="750.0" y="196.0" width="110.0" height="60.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="805.0" y="223.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Broker</text>
+<text x="805.0" y="239.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">Kafka / SNS</text>
+<line x1="710.0" y1="226.0" x2="750.0" y2="226.0" stroke="#9b8cff" stroke-width="1.3" marker-end="url(#ah2)"/>
+<path d="M 645 256 Q 590 300 500 250" fill="none" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)" stroke-dasharray="4 3"/>
+<text x="600.0" y="304.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">mark sent / advance offset</text>
+<rect x="750.0" y="290.0" width="110.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="805.0" y="314.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Consumers</text>
+<line x1="805.0" y1="256.0" x2="805.0" y2="290.0" stroke="#a69d8e" stroke-width="1.1" marker-end="url(#ah0)"/>
+<text x="30.0" y="350.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Either both rows commit or neither does, so the event exists iff the order does.</text>
+<text x="30.0" y="369.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The relay retries until the broker acks: delivery is at-least-once, never zero.</text>
+</svg>
