@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 321" width="880" height="321" role="img" aria-label="Ordering of console output for synchronous code, promise microtasks and a zero-delay timeout" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="321" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Who runs first?</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">output: A E C D B</text>
+<rect x="40.0" y="86.0" width="400.0" height="150.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="112.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">console.log('A');</text>
+<text x="56.0" y="136.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">setTimeout(() =&gt; console.log('B'), 0);</text>
+<text x="56.0" y="160.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">Promise.resolve().then(() =&gt; console.log('C'));</text>
+<text x="56.0" y="184.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">queueMicrotask(() =&gt; console.log('D'));</text>
+<text x="56.0" y="208.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">console.log('E');</text>
+<text x="480.0" y="104.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Script task</text>
+<rect x="480.0" y="118.0" width="100.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="530.0" y="141.0" font-size="14" fill="#e2b45a" text-anchor="middle" font-weight="600">A</text>
+<rect x="480.0" y="164.0" width="100.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="530.0" y="187.0" font-size="14" fill="#e2b45a" text-anchor="middle" font-weight="600">E</text>
+<text x="600.0" y="104.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Microtasks</text>
+<rect x="600.0" y="118.0" width="100.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="650.0" y="141.0" font-size="14" fill="#5fb3a1" text-anchor="middle" font-weight="600">C</text>
+<rect x="600.0" y="164.0" width="100.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="650.0" y="187.0" font-size="14" fill="#5fb3a1" text-anchor="middle" font-weight="600">D</text>
+<text x="720.0" y="104.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Next task</text>
+<rect x="720.0" y="118.0" width="100.0" height="36.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="770.0" y="141.0" font-size="14" fill="#e2b45a" text-anchor="middle" font-weight="600">B</text>
+<line x1="585.0" y1="136.0" x2="598.0" y2="136.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="705.0" y1="136.0" x2="718.0" y2="136.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="272.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The script itself is a task, so A and E log first. Its microtasks (C, D) drain before the next task;</text>
+<text x="40.0" y="291.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the timer callback B is a separate task, even at 0 ms. A paint can happen between D and B, never between E and C.</text>
+</svg>

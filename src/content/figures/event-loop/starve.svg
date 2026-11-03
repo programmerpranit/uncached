@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 445" width="880" height="445" role="img" aria-label="Main-thread timelines: a long task and a microtask chain block frames, chunked tasks let rendering and input run" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="445" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Long work and frames</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what the main thread looks like over 100 ms</text>
+<line x1="170.0" y1="90.0" x2="170.0" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<line x1="276.9" y1="90.0" x2="276.9" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<line x1="383.8" y1="90.0" x2="383.8" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<line x1="490.6" y1="90.0" x2="490.6" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<line x1="597.5" y1="90.0" x2="597.5" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<line x1="704.4" y1="90.0" x2="704.4" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<line x1="811.3" y1="90.0" x2="811.3" y2="330.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="170.0" y="84.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">frame deadlines (16.7 ms)</text>
+<text x="40.0" y="122.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="600">one long task</text>
+<rect x="170.0" y="100.0" width="612.4" height="32.0" rx="3" fill="#e5534b" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="477.2" y="121.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="700">loop over 10,000 items: no paint, input waits</text>
+<text x="40.0" y="182.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="600">microtask chain</text>
+<rect x="170.0" y="160.0" width="612.4" height="32.0" rx="3" fill="#d77fa1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="477.2" y="181.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="700">await in a loop never yields to rendering</text>
+<text x="40.0" y="242.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="600">chunked tasks</text>
+<rect x="170.0" y="220.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="276.9" y="220.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="383.8" y="220.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="490.6" y="220.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="597.5" y="220.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="704.4" y="220.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="234.0" y="220.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="340.9" y="220.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="447.8" y="220.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="554.6" y="220.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="661.5" y="220.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="768.4" y="220.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="40.0" y="302.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="600">click arrives</text>
+<rect x="170.0" y="280.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="383.8" y="280.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="490.6" y="280.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="597.5" y="280.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="704.4" y="280.0" width="62.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="234.0" y="280.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="340.9" y="280.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="447.8" y="280.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="554.6" y="280.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="661.5" y="280.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="768.4" y="280.0" width="23.6" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="276.9" y="280.0" width="23.6" height="32.0" rx="3" fill="#7cc47f" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="302.5" y="280.0" width="36.4" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="350.0" width="12.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="188.0" y="360.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">work</text>
+<rect x="237.3" y="350.0" width="12.0" height="12.0" rx="2" fill="#9b8cff" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="255.3" y="360.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">paint</text>
+<rect x="311.4" y="350.0" width="12.0" height="12.0" rx="2" fill="#7cc47f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="329.4" y="360.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">click handler</text>
+<rect x="440.0" y="350.0" width="12.0" height="12.0" rx="2" fill="#e5534b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="458.0" y="360.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">blocked</text>
+<text x="40.0" y="396.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Yielding with setTimeout or scheduler.yield() ends the task, so rendering and input can run in between.</text>
+<text x="40.0" y="415.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Awaiting an already-resolved promise does not: microtasks run before the browser gets a chance to paint.</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 381" width="360" height="381" role="img" aria-label="Event loop: call stack, task queue, microtask queue and the rendering step, with the order in which they run" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="381" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">One loop turn</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">task, all microtasks, maybe render</text>
+<rect x="16.0" y="84.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="104.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Call stack</text>
+<text x="28.0" y="122.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">runs to completion</text>
+<rect x="16.0" y="142.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="162.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Task queues</text>
+<text x="28.0" y="180.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">setTimeout, events, I/O</text>
+<rect x="16.0" y="200.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="220.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Microtask queue</text>
+<text x="28.0" y="238.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Promises, await, queueMicrotask</text>
+<rect x="16.0" y="258.0" width="328.0" height="50.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="28.0" y="278.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">Render step</text>
+<text x="28.0" y="296.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">rAF, style, layout, paint</text>
+<text x="16.0" y="332.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Each turn: run one task, drain all</text>
+<text x="16.0" y="351.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">microtasks, render if a frame is due.</text>
+</svg>
