@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="880" height="320" role="img" aria-label="A context map: Ordering publishes events to Billing, acts as a customer of Shipping, Billing reads the legacy ERP through an anti-corruption layer, and Identity is an open host service that others conform to" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="320" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ff5b2e"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e5534b"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Context map</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">relationships between contexts are explicit, and they mirror team relationships</text>
+<rect x="40.0" y="90.0" width="180.0" height="56.0" rx="3" fill="#ff5b2e" fill-opacity="0.18" stroke="#ff5b2e" stroke-width="1"/>
+<text x="130.0" y="115.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Ordering</text>
+<text x="130.0" y="131.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">core domain</text>
+<rect x="350.0" y="90.0" width="180.0" height="56.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="440.0" y="115.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Billing</text>
+<text x="440.0" y="131.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">supporting</text>
+<rect x="660.0" y="90.0" width="180.0" height="56.0" rx="3" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1"/>
+<text x="750.0" y="115.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Legacy ERP</text>
+<text x="750.0" y="131.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">upstream, fixed</text>
+<rect x="40.0" y="240.0" width="180.0" height="56.0" rx="3" fill="#d77fa1" fill-opacity="0.15" stroke="#d77fa1" stroke-width="1"/>
+<text x="130.0" y="265.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Shipping</text>
+<text x="130.0" y="281.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">supporting</text>
+<rect x="350.0" y="240.0" width="180.0" height="56.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="440.0" y="265.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Identity</text>
+<text x="440.0" y="281.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">generic (bought)</text>
+<line x1="220.0" y1="118.0" x2="348.0" y2="118.0" stroke="#ff5b2e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="284.0" y="108.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">events (published</text>
+<text x="284.0" y="138.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">language)</text>
+<rect x="560.0" y="96.0" width="76.0" height="44.0" rx="3" fill="#e5534b" fill-opacity="0.2" stroke="#e5534b" stroke-width="1"/>
+<text x="598.0" y="122.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">ACL</text>
+<line x1="658.0" y1="118.0" x2="638.0" y2="118.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah1)"/>
+<line x1="560.0" y1="118.0" x2="532.0" y2="118.0" stroke="#e5534b" stroke-width="1.3" marker-end="url(#ah2)"/>
+<line x1="130.0" y1="146.0" x2="130.0" y2="238.0" stroke="#ff5b2e" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="140.0" y="196.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">customer → supplier</text>
+<line x1="440.0" y1="238.0" x2="440.0" y2="148.0" stroke="#5fb3a1" stroke-width="1.3" marker-end="url(#ah3)"/>
+<line x1="222.0" y1="268.0" x2="348.0" y2="268.0" stroke="#5fb3a1" stroke-width="1.3" stroke-dasharray="4,3"/>
+<text x="452.0" y="196.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">open host service</text>
+<text x="285.0" y="260.0" font-size="9.5" fill="#a69d8e" text-anchor="middle" font-weight="400">conformist</text>
+<text x="580.0" y="230.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">ACL = anti-corruption layer:</text>
+<text x="580.0" y="249.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">translates the ERP's model so</text>
+<text x="580.0" y="268.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">it never leaks into Billing.</text>
+</svg>

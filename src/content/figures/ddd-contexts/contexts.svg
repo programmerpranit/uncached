@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="The word product means a catalog entry with images in Catalog, a stock item in Inventory, a priced line item in Billing and a parcel with weight in Shipping; each bounded context owns its own model and shares only the ID" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">One word, four models</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">"product" means something different in each bounded context</text>
+<rect x="40.0" y="90.0" width="185.0" height="170.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="132.5" y="178.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="54.0" y="114.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">Catalog</text>
+<text x="54.0" y="146.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Product</text>
+<text x="54.0" y="172.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">title, images,</text>
+<text x="54.0" y="191.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">description, category</text>
+<text x="54.0" y="240.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">own model + DB</text>
+<rect x="245.0" y="90.0" width="185.0" height="170.0" rx="3" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1"/>
+<text x="337.5" y="178.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="259.0" y="114.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">Inventory</text>
+<text x="259.0" y="146.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Stock item</text>
+<text x="259.0" y="172.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">SKU, warehouse,</text>
+<text x="259.0" y="191.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">quantity on hand</text>
+<text x="259.0" y="240.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">own model + DB</text>
+<rect x="450.0" y="90.0" width="185.0" height="170.0" rx="3" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1"/>
+<text x="542.5" y="178.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="464.0" y="114.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">Billing</text>
+<text x="464.0" y="146.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Line item</text>
+<text x="464.0" y="172.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">price, tax code,</text>
+<text x="464.0" y="191.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">discount, currency</text>
+<text x="464.0" y="240.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">own model + DB</text>
+<rect x="655.0" y="90.0" width="185.0" height="170.0" rx="3" fill="#d77fa1" fill-opacity="0.1" stroke="#d77fa1" stroke-width="1"/>
+<text x="747.5" y="178.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="669.0" y="114.0" font-size="12.5" fill="#d77fa1" text-anchor="start" font-weight="700">Shipping</text>
+<text x="669.0" y="146.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Parcel</text>
+<text x="669.0" y="172.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">weight, dimensions,</text>
+<text x="669.0" y="191.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">hazmat flag</text>
+<text x="669.0" y="240.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">own model + DB</text>
+<text x="440.0" y="290.0" font-size="11" fill="#ff5b2e" text-anchor="middle" font-weight="700">shared identity only: productId / SKU</text>
+<text x="40.0" y="330.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">A single shared "Product" class would need every field from every team, and every change would</text>
+<text x="40.0" y="349.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">need every team. Bounded contexts let each model stay small and change on its own.</text>
+</svg>

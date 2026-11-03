@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 419" width="360" height="419" role="img" aria-label="A context map: Ordering publishes events to Billing, acts as a customer of Shipping, Billing reads the legacy ERP through an anti-corruption layer, and Identity is an open host service that others conform to" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="419" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Context map</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">how contexts relate</text>
+<rect x="16.0" y="80.0" width="328.0" height="56.0" rx="3" fill="#ff5b2e" fill-opacity="0.14" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="105.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Ordering → Billing</text>
+<text x="180.0" y="121.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">published events</text>
+<rect x="16.0" y="146.0" width="328.0" height="56.0" rx="3" fill="#d77fa1" fill-opacity="0.14" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="171.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Ordering → Shipping</text>
+<text x="180.0" y="187.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">customer / supplier</text>
+<rect x="16.0" y="212.0" width="328.0" height="56.0" rx="3" fill="#e5534b" fill-opacity="0.14" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="237.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">ERP → ACL → Billing</text>
+<text x="180.0" y="253.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">anti-corruption layer</text>
+<rect x="16.0" y="278.0" width="328.0" height="56.0" rx="3" fill="#5fb3a1" fill-opacity="0.14" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="303.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Identity → all</text>
+<text x="180.0" y="319.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">open host, conformist</text>
+<text x="16.0" y="370.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">The map mirrors how the</text>
+<text x="16.0" y="389.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">teams depend on each other.</text>
+</svg>

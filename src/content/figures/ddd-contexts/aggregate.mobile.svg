@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 425" width="360" height="425" role="img" aria-label="The Order aggregate contains order lines and a shipping address, guarded by the Order root, which enforces invariants in one transaction; it references the Customer aggregate only by ID and publishes an OrderPlaced event for other contexts" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="425" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Aggregates</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">consistency boundary</text>
+<rect x="16.0" y="80.0" width="328.0" height="170.0" rx="3" fill="#ff5b2e" fill-opacity="0.07" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="168.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="100.0" font-size="11.5" fill="#ff5b2e" text-anchor="start" font-weight="700">Order aggregate</text>
+<rect x="28.0" y="112.0" width="150.0" height="36.0" rx="3" fill="#ff5b2e" fill-opacity="0.2" stroke="#ff5b2e" stroke-width="1"/>
+<text x="103.0" y="133.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Order (root)</text>
+<rect x="28.0" y="160.0" width="140.0" height="30.0" rx="3" fill="#a69d8e" fill-opacity="0.12" stroke="#a69d8e" stroke-width="1"/>
+<text x="98.0" y="178.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">OrderLine ×n</text>
+<rect x="176.0" y="160.0" width="156.0" height="30.0" rx="3" fill="#a69d8e" fill-opacity="0.12" stroke="#a69d8e" stroke-width="1"/>
+<text x="254.0" y="178.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">ShippingAddress</text>
+<text x="28.0" y="212.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">invariants enforced in</text>
+<text x="28.0" y="231.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">one transaction</text>
+<rect x="16.0" y="264.0" width="328.0" height="36.0" rx="3" fill="#9b8cff" fill-opacity="0.14" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="285.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">→ customerId (ID only)</text>
+<rect x="16.0" y="310.0" width="328.0" height="36.0" rx="3" fill="#7cc47f" fill-opacity="0.14" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="331.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">→ OrderPlaced event</text>
+<text x="16.0" y="376.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Cross-aggregate changes are</text>
+<text x="16.0" y="395.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">eventually consistent.</text>
+</svg>
