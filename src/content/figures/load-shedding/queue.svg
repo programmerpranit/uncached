@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 398" width="880" height="398" role="img" aria-label="An unbounded FIFO queue makes every request wait past its client timeout, while a bounded queue with timeouts rejects excess immediately and keeps queued work fresh" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="398" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Bound the queue, not just the rate</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a deep FIFO serves only stale requests; a bounded queue with timeouts serves fresh ones</text>
+<text x="40.0" y="110.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">Unbounded FIFO</text>
+<rect x="40.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="63.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="86.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="109.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="132.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="155.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="178.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="201.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="224.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="247.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="270.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="293.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="316.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="339.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="362.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="385.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="408.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="431.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="454.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="477.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#e5534b" fill-opacity="0.3" stroke="#e5534b" stroke-width="1"/>
+<rect x="500.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#a69d8e" fill-opacity="0.3" stroke="#a69d8e" stroke-width="1"/>
+<rect x="523.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#a69d8e" fill-opacity="0.3" stroke="#a69d8e" stroke-width="1"/>
+<rect x="546.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#a69d8e" fill-opacity="0.3" stroke="#a69d8e" stroke-width="1"/>
+<rect x="569.0" y="120.0" width="20.0" height="26.0" rx="3" fill="#a69d8e" fill-opacity="0.3" stroke="#a69d8e" stroke-width="1"/>
+<text x="40.0" y="166.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="400">every request waits 4 s; clients already timed out at 2 s → 100% wasted work</text>
+<rect x="660.0" y="112.0" width="180.0" height="42.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="750.0" y="137.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">workers (8)</text>
+<text x="40.0" y="240.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="700">Bounded queue + queue timeout</text>
+<rect x="40.0" y="250.0" width="20.0" height="26.0" rx="3" fill="#7cc47f" fill-opacity="0.3" stroke="#7cc47f" stroke-width="1"/>
+<rect x="63.0" y="250.0" width="20.0" height="26.0" rx="3" fill="#7cc47f" fill-opacity="0.3" stroke="#7cc47f" stroke-width="1"/>
+<rect x="86.0" y="250.0" width="20.0" height="26.0" rx="3" fill="#7cc47f" fill-opacity="0.3" stroke="#7cc47f" stroke-width="1"/>
+<rect x="109.0" y="250.0" width="20.0" height="26.0" rx="3" fill="#7cc47f" fill-opacity="0.3" stroke="#7cc47f" stroke-width="1"/>
+<rect x="132.0" y="250.0" width="20.0" height="26.0" rx="3" fill="#7cc47f" fill-opacity="0.3" stroke="#7cc47f" stroke-width="1"/>
+<rect x="155.0" y="250.0" width="20.0" height="26.0" rx="3" fill="#7cc47f" fill-opacity="0.3" stroke="#7cc47f" stroke-width="1"/>
+<text x="40.0" y="296.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="400">excess gets 503 immediately; queued work is fresh and finishes in time</text>
+<rect x="220.0" y="242.0" width="180.0" height="42.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="310.0" y="267.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">workers (8)</text>
+<text x="440.0" y="250.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">✗ full → reject</text>
+<text x="40.0" y="350.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">Adaptive variants: CoDel (drop if queueing delay stays above a target), LIFO under overload</text>
+<text x="40.0" y="368.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">(serve newest first), and concurrency limits that adjust from observed latency.</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img" aria-label="Goodput rises with load up to capacity; with load shedding it stays flat beyond capacity, without it it collapses as requests time out" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="430" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Goodput collapses without shedding</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">past capacity, an unprotected server spends its time on requests that will time out anyway</text>
+<line x1="90.0" y1="380.0" x2="790.0" y2="380.0" stroke="#a69d8e" stroke-width="1.2"/>
+<line x1="90.0" y1="380.0" x2="90.0" y2="120.0" stroke="#a69d8e" stroke-width="1.2"/>
+<text x="790.0" y="400.0" font-size="10" fill="#a69d8e" text-anchor="end" font-weight="400">offered load →</text>
+<text x="82.0" y="114.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">goodput</text>
+<line x1="405.0" y1="380.0" x2="405.0" y2="120.0" stroke="#4a4136" stroke-width="1" stroke-dasharray="3,4"/>
+<text x="405.0" y="400.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">capacity</text>
+<path d="M90,380 L405,185 L790,185" fill="none" stroke="#7cc47f" stroke-width="2.2"/>
+<path d="M405,185 C510,195 615,341 790,359" fill="none" stroke="#e5534b" stroke-width="2.2" stroke-dasharray="6,4"/>
+<text x="560.0" y="171.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">with load shedding: flat</text>
+<text x="417.0" y="356.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">no shedding: congestion collapse</text>
+</svg>
