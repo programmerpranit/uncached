@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 413" width="360" height="413" role="img" aria-label="An unstructured log line is a sentence that must be parsed with regexes; a structured log is a JSON event with named fields such as level, user_id, reason, duration and trace_id that can be filtered and grouped" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="413" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Structured vs unstructured</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">events with fields, not prose</text>
+<rect x="16.0" y="80.0" width="328.0" height="72.0" rx="3" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="119.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="100.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="700">unstructured</text>
+<text x="28.0" y="118.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">ERROR Payment failed for user</text>
+<text x="28.0" y="137.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">8812 after 3 retries (declined)</text>
+<rect x="16.0" y="166.0" width="328.0" height="170.0" rx="3" fill="#7cc47f" fill-opacity="0.08" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="254.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="28.0" y="186.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="700">structured</text>
+<text x="28.0" y="206.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">level: error</text>
+<text x="28.0" y="225.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">msg: payment failed</text>
+<text x="28.0" y="244.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">user_id: 8812  retries: 3</text>
+<text x="28.0" y="263.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">reason: card_declined</text>
+<text x="28.0" y="282.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">duration_ms: 812</text>
+<text x="28.0" y="301.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">trace_id: 4bf92f35…</text>
+<text x="16.0" y="364.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Filter and group by fields;</text>
+<text x="16.0" y="383.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">trace_id links to the trace.</text>
+</svg>

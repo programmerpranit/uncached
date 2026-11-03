@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 359" width="880" height="359" role="img" aria-label="An unstructured log line is a sentence that must be parsed with regexes; a structured log is a JSON event with named fields such as level, user_id, reason, duration and trace_id that can be filtered and grouped" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="359" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Structured vs unstructured</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">a log line is an event with fields, not a sentence for grep</text>
+<rect x="40.0" y="85.0" width="800.0" height="52.0" rx="3" fill="#e5534b" fill-opacity="0.08" stroke="#e5534b" stroke-width="1"/>
+<text x="440.0" y="114.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="56.0" y="106.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="700">unstructured</text>
+<text x="56.0" y="126.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="400">2026-11-03 10:42:07 ERROR Payment failed for user 8812 after 3 retries (card declined) took 812ms</text>
+<rect x="40.0" y="160.0" width="800.0" height="110.0" rx="3" fill="#7cc47f" fill-opacity="0.08" stroke="#7cc47f" stroke-width="1"/>
+<text x="440.0" y="218.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="56.0" y="182.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="700">structured (JSON)</text>
+<text x="56.0" y="204.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">{ "ts": "2026-11-03T10:42:07Z", "level": "error", "msg": "payment failed",</text>
+<text x="56.0" y="223.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">  "service": "checkout", "user_id": 8812, "retries": 3, "reason": "card_declined",</text>
+<text x="56.0" y="242.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">  "duration_ms": 812, "trace_id": "4bf92f35…", "span_id": "00f067aa…", "version": "v44" }</text>
+<text x="40.0" y="310.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Query: level=error AND reason=card_declined GROUP BY version  — no regex, no guesswork.</text>
+<text x="40.0" y="329.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">trace_id joins this line to the distributed trace; version ties it to the deploy.</text>
+</svg>

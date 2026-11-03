@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 379" width="880" height="379" role="img" aria-label="Metrics answer whether something is wrong and are cheap and aggregated; traces answer where, following one request across services; logs answer why, with detailed high-cardinality context" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="379" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Three signals, three questions</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each signal is cheap for one question and expensive for the others</text>
+<rect x="40.0" y="85.0" width="250.0" height="200.0" rx="3" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="165.0" y="188.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="56.0" y="112.0" font-size="14" fill="#5fb3a1" text-anchor="start" font-weight="700">Metrics</text>
+<text x="56.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Is something wrong?</text>
+<text x="56.0" y="170.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">counters, gauges,</text>
+<text x="56.0" y="189.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">histograms over time</text>
+<text x="56.0" y="262.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">cheap · aggregated · low cardinality</text>
+<rect x="310.0" y="85.0" width="250.0" height="200.0" rx="3" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1"/>
+<text x="435.0" y="188.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="326.0" y="112.0" font-size="14" fill="#9b8cff" text-anchor="start" font-weight="700">Traces</text>
+<text x="326.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Where is it wrong?</text>
+<text x="326.0" y="170.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">one request across</text>
+<text x="326.0" y="189.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">services, as spans</text>
+<text x="326.0" y="262.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">sampled · causal · per request</text>
+<rect x="580.0" y="85.0" width="250.0" height="200.0" rx="3" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1"/>
+<text x="705.0" y="188.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="596.0" y="112.0" font-size="14" fill="#e2b45a" text-anchor="start" font-weight="700">Logs</text>
+<text x="596.0" y="140.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">Why is it wrong?</text>
+<text x="596.0" y="170.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">discrete events with</text>
+<text x="596.0" y="189.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">full context fields</text>
+<text x="596.0" y="262.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">expensive · detailed · high cardinality</text>
+<line x1="290.0" y1="185.0" x2="308.0" y2="185.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<line x1="560.0" y1="185.0" x2="578.0" y2="185.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="330.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Typical flow: an alert fires on a metric → an exemplar or trace ID shows the slow span →</text>
+<text x="40.0" y="349.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">the logs for that trace ID explain the failure. Correlation IDs connect all three.</text>
+</svg>
