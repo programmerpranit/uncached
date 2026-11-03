@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 549" width="360" height="549" role="img" aria-label="The browser multiplies the slot width from sizes by the device pixel ratio and picks the smallest srcset candidate that covers it: 1200w for a phone, 1600w for a retina laptop, 1200w for a 1x desktop" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="549" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">How srcset is picked</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">three devices, three downloads</text>
+<rect x="16.0" y="84.0" width="328.0" height="96.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="104.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">srcset = 400w, 800w,</text>
+<text x="28.0" y="121.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">         1200w, 1600w</text>
+<text x="28.0" y="138.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">sizes  = (max-width: 600px) 100vw,</text>
+<text x="28.0" y="155.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">         50vw</text>
+<rect x="16.0" y="196.0" width="328.0" height="88.0" rx="8" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1.3"/>
+<text x="28.0" y="216.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">phone</text>
+<text x="100.0" y="216.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">390 px wide, DPR 3</text>
+<text x="28.0" y="236.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">slot 100vw → 390 px</text>
+<text x="28.0" y="253.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">needs 390 × 3 = 1170 px</text>
+<text x="28.0" y="272.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="700">downloads 1200w file</text>
+<rect x="16.0" y="292.0" width="328.0" height="88.0" rx="8" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1.3"/>
+<text x="28.0" y="312.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">laptop</text>
+<text x="100.0" y="312.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">1440 px wide, DPR 2</text>
+<text x="28.0" y="332.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">slot 50vw → 720 px</text>
+<text x="28.0" y="349.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">needs 720 × 2 = 1440 px</text>
+<text x="28.0" y="368.0" font-size="10.5" fill="#9b8cff" text-anchor="start" font-weight="700">downloads 1600w file</text>
+<rect x="16.0" y="388.0" width="328.0" height="88.0" rx="8" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1.3"/>
+<text x="28.0" y="408.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">desktop</text>
+<text x="100.0" y="408.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">1920 px wide, DPR 1</text>
+<text x="28.0" y="428.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">slot 50vw → 960 px</text>
+<text x="28.0" y="445.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">needs 960 × 1 = 960 px</text>
+<text x="28.0" y="464.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="700">downloads 1200w file</text>
+<text x="16.0" y="500.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">slot width × DPR, then the</text>
+<text x="16.0" y="519.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">smallest candidate that covers it.</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 447" width="880" height="447" role="img" aria-label="The browser multiplies the slot width from sizes by the device pixel ratio and picks the smallest srcset candidate that covers it: 1200w for a phone, 1600w for a retina laptop, 1200w for a 1x desktop" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="447" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">How the browser picks from srcset</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same &lt;img&gt;, three devices, three downloads</text>
+<rect x="40.0" y="92.0" width="800.0" height="62.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="116.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">&lt;img srcset="hero-400.jpg 400w, hero-800.jpg 800w, hero-1200.jpg 1200w, hero-1600.jpg 1600w"</text>
+<text x="56.0" y="138.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">     sizes="(max-width: 600px) 100vw, 50vw"  width="1600" height="900" alt="…"&gt;</text>
+<text x="40.0" y="190.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">device</text>
+<text x="250.0" y="190.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">slot width (sizes)</text>
+<text x="450.0" y="190.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">pixels needed</text>
+<text x="640.0" y="190.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">chosen</text>
+<rect x="40.0" y="204.0" width="190.0" height="46.0" rx="3" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1"/>
+<text x="135.0" y="224.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">phone</text>
+<text x="135.0" y="240.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">390 px wide, DPR 3</text>
+<text x="250.0" y="232.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">100vw → 390 px</text>
+<text x="450.0" y="232.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">390 × 3 = 1170</text>
+<rect x="640.0" y="214.0" width="44.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="662.0" y="231.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">400w</text>
+<rect x="690.0" y="214.0" width="44.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="712.0" y="231.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">800w</text>
+<rect x="740.0" y="214.0" width="44.0" height="26.0" rx="4" fill="#5fb3a1" fill-opacity="0.25" stroke="#5fb3a1" stroke-width="1.3"/>
+<text x="762.0" y="231.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="700">1200w</text>
+<rect x="790.0" y="214.0" width="44.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="812.0" y="231.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">1600w</text>
+<rect x="40.0" y="262.0" width="190.0" height="46.0" rx="3" fill="#9b8cff" fill-opacity="0.12" stroke="#9b8cff" stroke-width="1"/>
+<text x="135.0" y="282.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">laptop</text>
+<text x="135.0" y="298.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">1440 px wide, DPR 2</text>
+<text x="250.0" y="290.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">50vw → 720 px</text>
+<text x="450.0" y="290.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">720 × 2 = 1440</text>
+<rect x="640.0" y="272.0" width="44.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="662.0" y="289.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">400w</text>
+<rect x="690.0" y="272.0" width="44.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="712.0" y="289.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">800w</text>
+<rect x="740.0" y="272.0" width="44.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="762.0" y="289.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">1200w</text>
+<rect x="790.0" y="272.0" width="44.0" height="26.0" rx="4" fill="#9b8cff" fill-opacity="0.25" stroke="#9b8cff" stroke-width="1.3"/>
+<text x="812.0" y="289.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="700">1600w</text>
+<rect x="40.0" y="320.0" width="190.0" height="46.0" rx="3" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1"/>
+<text x="135.0" y="340.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">desktop</text>
+<text x="135.0" y="356.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">1920 px wide, DPR 1</text>
+<text x="250.0" y="348.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">50vw → 960 px</text>
+<text x="450.0" y="348.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">960 × 1 = 960</text>
+<rect x="640.0" y="330.0" width="44.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="662.0" y="347.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">400w</text>
+<rect x="690.0" y="330.0" width="44.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="712.0" y="347.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">800w</text>
+<rect x="740.0" y="330.0" width="44.0" height="26.0" rx="4" fill="#e2b45a" fill-opacity="0.25" stroke="#e2b45a" stroke-width="1.3"/>
+<text x="762.0" y="347.0" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="700">1200w</text>
+<rect x="790.0" y="330.0" width="44.0" height="26.0" rx="4" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="812.0" y="347.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">1600w</text>
+<text x="40.0" y="398.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The browser multiplies the slot width from sizes by the device pixel ratio, then picks the smallest candidate that</text>
+<text x="40.0" y="417.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">covers it. It may also pick a smaller one on a slow connection or reuse a larger one already in the cache.</text>
+</svg>

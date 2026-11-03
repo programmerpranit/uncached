@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 450" width="880" height="450" role="img" aria-label="The above-the-fold hero image loads eagerly with high fetch priority, below-the-fold images use loading lazy, and every image declares width and height so space is reserved before it loads" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="450" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Loading images in the right order</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">priority for the LCP image, lazy for the rest, space reserved for all</text>
+<rect x="40.0" y="96.0" width="300.0" height="330.0" rx="10" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<rect x="56.0" y="112.0" width="268.0" height="130.0" rx="6" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1.4"/>
+<text x="190.0" y="170.0" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="700">hero (LCP)</text>
+<text x="190.0" y="188.0" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="400">fetchpriority="high"</text>
+<rect x="56.0" y="254.0" width="268.0" height="10.0" rx="3" fill="#4a4136" fill-opacity="1" stroke="none" stroke-width="1"/>
+<rect x="56.0" y="272.0" width="200.0" height="10.0" rx="3" fill="#4a4136" fill-opacity="1" stroke="none" stroke-width="1"/>
+<line x1="40.0" y1="300.0" x2="340.0" y2="300.0" stroke="#e5534b" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="330.0" y="294.0" font-size="10" fill="#e5534b" text-anchor="end" font-weight="400">fold</text>
+<rect x="56.0" y="314.0" width="130.0" height="96.0" rx="6" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="121.0" y="358.0" font-size="10" fill="#e2b45a" text-anchor="middle" font-weight="400">loading="lazy"</text>
+<text x="121.0" y="374.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">fetched near view</text>
+<rect x="194.0" y="314.0" width="130.0" height="96.0" rx="6" fill="#e2b45a" fill-opacity="0.12" stroke="#e2b45a" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="259.0" y="358.0" font-size="10" fill="#e2b45a" text-anchor="middle" font-weight="400">loading="lazy"</text>
+<text x="259.0" y="374.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">fetched near view</text>
+<text x="372.0" y="112.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">Above the fold</text>
+<text x="372.0" y="132.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Load the LCP image eagerly with fetchpriority="high".</text>
+<text x="372.0" y="149.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Never lazy-load it. Preload it if CSS or JS discovers it.</text>
+<text x="372.0" y="208.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">Below the fold</text>
+<text x="372.0" y="228.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">loading="lazy" defers the request until the image</text>
+<text x="372.0" y="245.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">approaches the viewport, saving bandwidth.</text>
+<text x="372.0" y="304.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">Every image</text>
+<text x="372.0" y="324.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">Set width and height (or aspect-ratio) so the browser</text>
+<text x="372.0" y="341.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">reserves the box before the file arrives: no layout shift.</text>
+<text x="372.0" y="394.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">decoding="async" keeps decode work off the critical path.</text>
+</svg>
