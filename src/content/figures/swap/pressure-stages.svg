@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 373" width="880" height="373" role="img" aria-label="Memory pressure stages from healthy cache reclaim to thrashing, with zswap/zram and PSI-based userspace OOM as mitigations" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="373" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Pressure stages: from cache to thrashing</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">what you see as memory demand grows past RAM</text>
+<rect x="40.0" y="100.0" width="190.0" height="112.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="52.0" y="124.0" font-size="13" fill="#7cc47f" text-anchor="start" font-weight="700">healthy</text>
+<text x="52.0" y="150.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">free memory is mostly</text>
+<text x="52.0" y="168.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">page cache; reclaim</text>
+<text x="52.0" y="186.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">drops cold cache</text>
+<line x1="232.0" y1="156.0" x2="248.0" y2="156.0" stroke="#4a4136" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="250.0" y="100.0" width="190.0" height="112.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="262.0" y="124.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">working set fits</text>
+<text x="262.0" y="150.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">cold anon pages swapped</text>
+<text x="262.0" y="168.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">out; little swap-in</text>
+<line x1="442.0" y1="156.0" x2="458.0" y2="156.0" stroke="#4a4136" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="460.0" y="100.0" width="190.0" height="112.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="472.0" y="124.0" font-size="13" fill="#e2b45a" text-anchor="start" font-weight="700">pressure</text>
+<text x="472.0" y="150.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">refaults rise: evicted</text>
+<text x="472.0" y="168.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">pages are needed again</text>
+<text x="472.0" y="186.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">soon</text>
+<line x1="652.0" y1="156.0" x2="668.0" y2="156.0" stroke="#4a4136" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="670.0" y="100.0" width="190.0" height="112.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="682.0" y="124.0" font-size="13" fill="#e5534b" text-anchor="start" font-weight="700">thrashing</text>
+<text x="682.0" y="150.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">CPU mostly waits on</text>
+<text x="682.0" y="168.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">swap-in; PSI "full"</text>
+<text x="682.0" y="186.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">climbs; system appears</text>
+<text x="682.0" y="204.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">hung</text>
+<rect x="40.0" y="244.0" width="380.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="230.0" y="264.0" font-size="12.5" fill="#9b8cff" text-anchor="middle" font-weight="600">zswap / zram</text>
+<text x="230.0" y="280.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">compress pages in RAM before (or instead of) disk</text>
+<rect x="460.0" y="244.0" width="380.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="650.0" y="264.0" font-size="12.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">PSI + userspace OOM (systemd-oomd)</text>
+<text x="650.0" y="280.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">kill on sustained stall time, before thrashing</text>
+<text x="40.0" y="324.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Swap usage on its own is not a problem; swap-in rate and stall time are. Use /proc/pressure/memory (PSI) and</text>
+<text x="40.0" y="343.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">vmstat si/so (pages swapped in/out per second) to tell "parked cold pages" from "thrashing".</text>
+</svg>

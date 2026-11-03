@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 398" width="360" height="398" role="img" aria-label="Free memory watermarks: below low kswapd reclaims in the background, below min allocating threads do direct reclaim, and if reclaim fails the OOM killer runs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="398" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Watermarks &amp; reclaim</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">kswapd vs direct reclaim</text>
+<rect x="16.0" y="90.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="110.0" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">free &gt; low</text>
+<text x="180.0" y="126.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">nothing to do</text>
+<rect x="16.0" y="146.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="166.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">free &lt; low</text>
+<text x="180.0" y="182.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">kswapd reclaims in background</text>
+<rect x="16.0" y="202.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="222.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">free &lt; min</text>
+<text x="180.0" y="238.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">direct reclaim: thread stalls</text>
+<rect x="16.0" y="258.0" width="328.0" height="46.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="180.0" y="278.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="600">reclaim fails</text>
+<text x="180.0" y="294.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">OOM killer</text>
+<text x="16.0" y="330.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Direct reclaim is the latency</text>
+<text x="16.0" y="349.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">spike: a thread that wanted one</text>
+<text x="16.0" y="368.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">page scans LRUs and swaps.</text>
+</svg>

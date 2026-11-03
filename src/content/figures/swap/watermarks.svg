@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 453" width="880" height="453" role="img" aria-label="Free memory watermarks: below low kswapd reclaims in the background, below min allocating threads do direct reclaim, and if reclaim fails the OOM killer runs" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="453" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Free memory watermarks drive reclaim</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">kswapd works in the background; below min, allocations reclaim themselves</text>
+<rect x="60.0" y="100.0" width="120.0" height="250.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<line x1="50.0" y1="200.0" x2="190.0" y2="200.0" stroke="#7cc47f" stroke-width="1.6"/>
+<text x="198.0" y="204.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">high watermark</text>
+<line x1="50.0" y1="255.0" x2="190.0" y2="255.0" stroke="#e2b45a" stroke-width="1.6"/>
+<text x="198.0" y="259.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">low watermark</text>
+<line x1="50.0" y1="305.0" x2="190.0" y2="305.0" stroke="#e5534b" stroke-width="1.6"/>
+<text x="198.0" y="309.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">min watermark</text>
+<text x="120.0" y="175.0" font-size="11.5" fill="#7cc47f" text-anchor="middle" font-weight="700">fast path</text>
+<text x="120.0" y="282.5" font-size="11.5" fill="#e2b45a" text-anchor="middle" font-weight="700">kswapd</text>
+<text x="120.0" y="330.0" font-size="11.5" fill="#e5534b" text-anchor="middle" font-weight="700">direct</text>
+<text x="120.0" y="370.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">free pages in a zone</text>
+<rect x="400.0" y="118.0" width="440.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="620.0" y="141.0" font-size="12.5" fill="#7cc47f" text-anchor="middle" font-weight="600">free &gt; low</text>
+<text x="620.0" y="157.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">allocations succeed immediately; nothing to do</text>
+<rect x="400.0" y="182.0" width="440.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="620.0" y="205.0" font-size="12.5" fill="#e2b45a" text-anchor="middle" font-weight="600">free &lt; low</text>
+<text x="620.0" y="221.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">kswapd wakes and reclaims in the background until free &gt; high</text>
+<rect x="400.0" y="246.0" width="440.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="620.0" y="269.0" font-size="12.5" fill="#e5534b" text-anchor="middle" font-weight="600">free &lt; min</text>
+<text x="620.0" y="285.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">the allocating thread does direct reclaim itself: it stalls</text>
+<rect x="400.0" y="310.0" width="440.0" height="52.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e5534b" stroke-width="1"/>
+<text x="620.0" y="333.0" font-size="12.5" fill="#e5534b" text-anchor="middle" font-weight="600">reclaim fails</text>
+<text x="620.0" y="349.0" font-size="11" fill="#e5534b" text-anchor="middle" font-weight="400">OOM killer (or PSI-based userspace killer) frees memory</text>
+<text x="40.0" y="404.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Direct reclaim is where latency comes from: a request thread that wanted one page ends up scanning LRU lists,</text>
+<text x="40.0" y="423.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">writing back dirty pages or swapping. Raising vm.watermark_scale_factor gives kswapd more headroom.</text>
+</svg>

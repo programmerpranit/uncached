@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 437" width="360" height="437" role="img" aria-label="Memory pressure stages from healthy cache reclaim to thrashing, with zswap/zram and PSI-based userspace OOM as mitigations" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="437" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Pressure stages</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">cache → swap → thrash</text>
+<text x="16.0" y="86.0" font-size="12.5" fill="#7cc47f" text-anchor="start" font-weight="700">healthy</text>
+<text x="16.0" y="104.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">reclaim drops cold cache</text>
+<text x="16.0" y="132.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">working set fits</text>
+<text x="16.0" y="150.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">cold anon pages parked in swap</text>
+<text x="16.0" y="178.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">pressure</text>
+<text x="16.0" y="196.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">refaults: evicted pages return</text>
+<text x="16.0" y="224.0" font-size="12.5" fill="#e5534b" text-anchor="start" font-weight="700">thrashing</text>
+<text x="16.0" y="242.0" font-size="11" fill="#ede6d8" text-anchor="start" font-weight="400">CPU waits on swap-in</text>
+<rect x="16.0" y="274.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="298.1" font-size="11.5" fill="#9b8cff" text-anchor="middle" font-weight="600">zswap / zram: compress first</text>
+<rect x="16.0" y="322.0" width="328.0" height="40.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="346.1" font-size="11.5" fill="#5fb3a1" text-anchor="middle" font-weight="600">PSI + systemd-oomd: kill early</text>
+<text x="16.0" y="388.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Watch swap-in rate and PSI,</text>
+<text x="16.0" y="407.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">not swap used.</text>
+</svg>
