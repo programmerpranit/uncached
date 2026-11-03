@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 368" width="880" height="368" role="img" aria-label="Properties and methods that force layout when the DOM is dirty: box metrics like offsetWidth and getBoundingClientRect, scroll properties, layout-dependent computed style, innerText, and focus" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="368" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What forces layout</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">reads that need fresh geometry, and calls that need it too</text>
+<rect x="40.0" y="96.0" width="190.0" height="170.0" rx="8" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="54.0" y="120.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">Box metrics</text>
+<text x="54.0" y="148.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">offsetWidth / Height / Top</text>
+<text x="54.0" y="176.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">clientWidth / Height</text>
+<text x="54.0" y="204.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">getBoundingClientRect()</text>
+<text x="54.0" y="232.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">getClientRects()</text>
+<rect x="242.0" y="96.0" width="190.0" height="170.0" rx="8" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="256.0" y="120.0" font-size="12.5" fill="#9b8cff" text-anchor="start" font-weight="700">Scroll</text>
+<text x="256.0" y="148.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">scrollTop / scrollLeft</text>
+<text x="256.0" y="176.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">scrollWidth / Height</text>
+<text x="256.0" y="204.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">scrollIntoView()</text>
+<text x="256.0" y="232.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">scrollTo() / scrollBy()</text>
+<rect x="444.0" y="96.0" width="190.0" height="170.0" rx="8" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="458.0" y="120.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">Computed style</text>
+<text x="458.0" y="148.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">getComputedStyle(el).width</text>
+<text x="458.0" y="176.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">…any layout-dependent value</text>
+<text x="458.0" y="204.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">innerText</text>
+<text x="458.0" y="232.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">elementFromPoint()</text>
+<rect x="646.0" y="96.0" width="190.0" height="170.0" rx="8" fill="#d77fa1" fill-opacity="0.08" stroke="#d77fa1" stroke-width="1.2"/>
+<text x="660.0" y="120.0" font-size="12.5" fill="#d77fa1" text-anchor="start" font-weight="700">Window &amp; focus</text>
+<text x="660.0" y="148.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">el.focus()</text>
+<text x="660.0" y="176.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">window.innerHeight</text>
+<text x="660.0" y="204.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">input.select()</text>
+<text x="660.0" y="232.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">offsetParent</text>
+<text x="40.0" y="300.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Only reads on a dirty DOM cost anything: if nothing changed since the last layout, the cached value is returned.</text>
+<text x="40.0" y="319.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Writes (style, class, DOM insertion) are cheap on their own; they only mark the tree dirty. getComputedStyle()</text>
+<text x="40.0" y="338.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">alone does not force layout; reading a layout-dependent property from its result does.</text>
+</svg>

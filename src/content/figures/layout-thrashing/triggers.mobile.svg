@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 565" width="360" height="565" role="img" aria-label="Properties and methods that force layout when the DOM is dirty: box metrics like offsetWidth and getBoundingClientRect, scroll properties, layout-dependent computed style, innerText, and focus" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="565" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">What forces layout</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">reads on a dirty DOM</text>
+<rect x="16.0" y="84.0" width="328.0" height="96.0" rx="8" fill="#5fb3a1" fill-opacity="0.08" stroke="#5fb3a1" stroke-width="1.2"/>
+<text x="28.0" y="104.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">Box metrics</text>
+<text x="28.0" y="128.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">offsetWidth…</text>
+<text x="186.0" y="128.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">clientWidth…</text>
+<text x="28.0" y="154.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">getBoundingClientRect()</text>
+<text x="186.0" y="154.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">getClientRects()</text>
+<rect x="16.0" y="188.0" width="328.0" height="96.0" rx="8" fill="#9b8cff" fill-opacity="0.08" stroke="#9b8cff" stroke-width="1.2"/>
+<text x="28.0" y="208.0" font-size="12" fill="#9b8cff" text-anchor="start" font-weight="700">Scroll</text>
+<text x="28.0" y="232.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">scrollTop / scrollLeft</text>
+<text x="186.0" y="232.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">scrollWidth…</text>
+<text x="28.0" y="258.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">scrollIntoView()</text>
+<text x="186.0" y="258.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">scrollTo() / scrollBy()</text>
+<rect x="16.0" y="292.0" width="328.0" height="96.0" rx="8" fill="#e2b45a" fill-opacity="0.08" stroke="#e2b45a" stroke-width="1.2"/>
+<text x="28.0" y="312.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">Computed style</text>
+<text x="28.0" y="336.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">getComputedStyle(el).width</text>
+<text x="186.0" y="336.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">layout values</text>
+<text x="28.0" y="362.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">innerText</text>
+<text x="186.0" y="362.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">elementFromPoint()</text>
+<rect x="16.0" y="396.0" width="328.0" height="96.0" rx="8" fill="#d77fa1" fill-opacity="0.08" stroke="#d77fa1" stroke-width="1.2"/>
+<text x="28.0" y="416.0" font-size="12" fill="#d77fa1" text-anchor="start" font-weight="700">Window &amp; focus</text>
+<text x="28.0" y="440.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">el.focus()</text>
+<text x="186.0" y="440.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">window.innerHeight</text>
+<text x="28.0" y="466.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">input.select()</text>
+<text x="186.0" y="466.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">offsetParent</text>
+<text x="16.0" y="516.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Writes only mark the tree dirty;</text>
+<text x="16.0" y="535.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the next read pays for layout.</text>
+</svg>

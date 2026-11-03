@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 367" width="880" height="367" role="img" aria-label="Interleaving reads and writes for 100 elements forces about 100 layouts, while doing all reads first and all writes after forces at most one extra layout" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="367" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Interleaved vs batched</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">100 elements: 100 layouts or 1</text>
+<text x="40.0" y="104.0" font-size="12" fill="#e5534b" text-anchor="start" font-weight="700">Interleaved: read, write, read, write…</text>
+<rect x="40.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="60.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="86.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="106.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="132.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="152.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="178.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="198.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="224.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="244.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="270.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="290.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="316.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="336.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="362.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="382.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="408.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="428.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<rect x="454.0" y="116.0" width="18.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<rect x="474.0" y="116.0" width="20.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<text x="506.0" y="136.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">… × 100</text>
+<text x="40.0" y="170.0" font-size="11" fill="#e5534b" text-anchor="start" font-weight="400">~100 layouts · e.g. 120 ms task · dropped frames</text>
+<text x="40.0" y="214.0" font-size="12" fill="#7cc47f" text-anchor="start" font-weight="700">Batched: all reads, then all writes</text>
+<rect x="40.0" y="226.0" width="160.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<text x="120.0" y="246.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">100 reads</text>
+<rect x="204.0" y="226.0" width="40.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<text x="224.0" y="246.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">L</text>
+<rect x="248.0" y="226.0" width="160.0" height="30.0" rx="3" fill="#e2b45a" fill-opacity="0.3" stroke="#e2b45a" stroke-width="1"/>
+<text x="328.0" y="246.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">100 writes</text>
+<rect x="412.0" y="226.0" width="40.0" height="30.0" rx="3" fill="#5fb3a1" fill-opacity="0.35" stroke="#5fb3a1" stroke-width="1"/>
+<text x="432.0" y="246.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="400">L</text>
+<text x="40.0" y="280.0" font-size="11" fill="#7cc47f" text-anchor="start" font-weight="400">1 layout up front (often free if the DOM was clean) + 1 at frame end</text>
+<rect x="560.0" y="216.0" width="12.0" height="12.0" rx="2" fill="#e2b45a" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="578.0" y="226.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">JS read / write</text>
+<rect x="560.0" y="236.0" width="12.0" height="12.0" rx="2" fill="#5fb3a1" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="578.0" y="246.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">style + layout</text>
+<text x="40.0" y="318.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The work per layout depends on how much of the tree is dirty, so the interleaved loop is not just 100× the cost;</text>
+<text x="40.0" y="337.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">each layout can be large. Batching turns it into a single pass the browser would have done anyway.</text>
+</svg>
