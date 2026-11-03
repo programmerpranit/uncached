@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 499" width="360" height="499" role="img" aria-label="With a media query the sidebar card is forced into the wide layout because the viewport is wide; with a container query each card adapts to its own container" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="499" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Media vs container query</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same card, two slots</text>
+<text x="16.0" y="96.0" font-size="11.5" fill="#e5534b" text-anchor="start" font-weight="700">@media (min-width: 900px)</text>
+<rect x="16.0" y="106.0" width="328.0" height="140.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1.2"/>
+<rect x="24.0" y="114.0" width="100.0" height="124.0" rx="6" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="28.0" y="128.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">sidebar</text>
+<rect x="132.0" y="114.0" width="204.0" height="124.0" rx="6" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="136.0" y="128.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">main</text>
+<rect x="30.0" y="136.0" width="88.0" height="60.0" rx="6" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1.3"/>
+<rect x="34.0" y="142.0" width="34.0" height="48.0" rx="4" fill="#e5534b" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<text x="72.0" y="168.0" font-size="9" fill="#e5534b" text-anchor="start" font-weight="400">squash</text>
+<rect x="138.0" y="136.0" width="192.0" height="70.0" rx="6" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1.3"/>
+<rect x="146.0" y="144.0" width="70.0" height="54.0" rx="4" fill="#5fb3a1" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<text x="226.0" y="164.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="700">Card title</text>
+<text x="226.0" y="182.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">image beside text</text>
+<text x="16.0" y="274.0" font-size="11.5" fill="#7cc47f" text-anchor="start" font-weight="700">@container (min-width: 400px)</text>
+<rect x="16.0" y="284.0" width="328.0" height="140.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1.2"/>
+<rect x="24.0" y="292.0" width="100.0" height="124.0" rx="6" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="28.0" y="306.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">sidebar</text>
+<rect x="132.0" y="292.0" width="204.0" height="124.0" rx="6" fill="#1b1712" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="136.0" y="306.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">main</text>
+<rect x="30.0" y="314.0" width="88.0" height="94.0" rx="6" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1.3"/>
+<rect x="36.0" y="320.0" width="76.0" height="40.0" rx="4" fill="#5fb3a1" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<text x="36.0" y="380.0" font-size="9.5" fill="#ede6d8" text-anchor="start" font-weight="400">stacked</text>
+<rect x="138.0" y="314.0" width="192.0" height="70.0" rx="6" fill="#5fb3a1" fill-opacity="0.12" stroke="#5fb3a1" stroke-width="1.3"/>
+<rect x="146.0" y="322.0" width="70.0" height="54.0" rx="4" fill="#5fb3a1" fill-opacity="0.35" stroke="None" stroke-width="0"/>
+<text x="226.0" y="342.0" font-size="10" fill="#ede6d8" text-anchor="start" font-weight="700">Card title</text>
+<text x="226.0" y="360.0" font-size="9" fill="#a69d8e" text-anchor="start" font-weight="400">image beside text</text>
+<text x="16.0" y="450.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Media queries ask the viewport;</text>
+<text x="16.0" y="469.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">container queries ask the parent.</text>
+</svg>

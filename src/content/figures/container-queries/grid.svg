@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 417" width="880" height="417" role="img" aria-label="An auto-fit grid with minmax shows three columns in a wide container, two in a medium one and one in a narrow one, with no media queries" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="417" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Intrinsic layout: let the content decide</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr))</text>
+<text x="40.0" y="104.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">container 820px → 3 columns</text>
+<rect x="40.0" y="114.0" width="820.0" height="46.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="4 3"/>
+<rect x="50.0" y="122.0" width="260.0" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1.2"/>
+<rect x="320.0" y="122.0" width="260.0" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1.2"/>
+<rect x="590.0" y="122.0" width="260.0" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="40.0" y="190.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">container 560px → 2 columns</text>
+<rect x="40.0" y="200.0" width="560.0" height="46.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="4 3"/>
+<rect x="50.0" y="208.0" width="265.0" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1.2"/>
+<rect x="325.0" y="208.0" width="265.0" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="40.0" y="276.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="700">container 260px → 1 column</text>
+<rect x="40.0" y="286.0" width="260.0" height="46.0" rx="6" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1" stroke-dasharray="4 3"/>
+<rect x="50.0" y="294.0" width="240.0" height="30.0" rx="4" fill="#ff5b2e" fill-opacity="0.25" stroke="#ff5b2e" stroke-width="1.2"/>
+<text x="40.0" y="368.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The browser fits as many columns as can be at least 14rem wide, then stretches them to fill the row.</text>
+<text x="40.0" y="387.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">No media queries: the grid responds to whatever space its container has, in any slot, at any viewport.</text>
+</svg>
