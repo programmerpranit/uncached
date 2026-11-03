@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 637" width="360" height="637" role="img" aria-label="TCP state machine: CLOSED to SYN_SENT on connect or LISTEN on listen, SYN_RCVD, ESTABLISHED, then FIN_WAIT_1, FIN_WAIT_2 and TIME_WAIT for the active closer and CLOSE_WAIT and LAST_ACK for the passive closer" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="637" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">TCP states (simplified)</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">teal client · violet server · amber close</text>
+<rect x="105.0" y="70.0" width="150.0" height="32.0" rx="3" fill="#a69d8e" fill-opacity="0.18" stroke="#a69d8e" stroke-width="1"/>
+<text x="180.0" y="89.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">CLOSED</text>
+<rect x="16.0" y="162.0" width="150.0" height="32.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="91.0" y="181.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">SYN_SENT</text>
+<rect x="194.0" y="162.0" width="150.0" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="269.0" y="181.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">LISTEN</text>
+<rect x="194.0" y="228.0" width="150.0" height="32.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="269.0" y="247.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">SYN_RCVD</text>
+<rect x="105.0" y="294.0" width="150.0" height="32.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="180.0" y="313.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">ESTABLISHED</text>
+<rect x="16.0" y="386.0" width="150.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="91.0" y="405.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">FIN_WAIT_1</text>
+<rect x="16.0" y="452.0" width="150.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="91.0" y="471.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">FIN_WAIT_2</text>
+<rect x="16.0" y="518.0" width="150.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="91.0" y="537.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">TIME_WAIT</text>
+<rect x="194.0" y="386.0" width="150.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="269.0" y="405.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">CLOSE_WAIT</text>
+<rect x="194.0" y="452.0" width="150.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="269.0" y="471.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">LAST_ACK</text>
+<rect x="194.0" y="518.0" width="150.0" height="32.0" rx="3" fill="#a69d8e" fill-opacity="0.18" stroke="#a69d8e" stroke-width="1"/>
+<text x="269.0" y="537.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">CLOSED</text>
+<line x1="180.0" y1="102.0" x2="91.0" y2="162.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="127.5" y="136.0" font-size="8.5" fill="#a69d8e" text-anchor="end" font-weight="400">connect()</text>
+<line x1="180.0" y1="102.0" x2="269.0" y2="162.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="232.5" y="136.0" font-size="8.5" fill="#a69d8e" text-anchor="start" font-weight="400">listen()</text>
+<line x1="269.0" y1="194.0" x2="269.0" y2="228.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="275.0" y="215.0" font-size="8.5" fill="#a69d8e" text-anchor="start" font-weight="400">SYN / SYN-ACK</text>
+<line x1="91.0" y1="194.0" x2="105.0" y2="310.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="106.0" y="256.0" font-size="8.5" fill="#a69d8e" text-anchor="start" font-weight="400">SYN-ACK / ACK</text>
+<line x1="269.0" y1="260.0" x2="255.0" y2="310.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="254.0" y="289.0" font-size="8.5" fill="#a69d8e" text-anchor="end" font-weight="400">ACK</text>
+<line x1="180.0" y1="326.0" x2="91.0" y2="386.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="127.5" y="360.0" font-size="8.5" fill="#a69d8e" text-anchor="end" font-weight="400">close() / FIN</text>
+<line x1="180.0" y1="326.0" x2="269.0" y2="386.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="232.5" y="360.0" font-size="8.5" fill="#a69d8e" text-anchor="start" font-weight="400">FIN / ACK</text>
+<line x1="91.0" y1="418.0" x2="91.0" y2="452.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="97.0" y="439.0" font-size="8.5" fill="#a69d8e" text-anchor="start" font-weight="400">ACK</text>
+<line x1="91.0" y1="484.0" x2="91.0" y2="518.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="97.0" y="505.0" font-size="8.5" fill="#a69d8e" text-anchor="start" font-weight="400">FIN / ACK</text>
+<line x1="269.0" y1="418.0" x2="269.0" y2="452.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="275.0" y="439.0" font-size="8.5" fill="#a69d8e" text-anchor="start" font-weight="400">close() / FIN</text>
+<line x1="269.0" y1="484.0" x2="269.0" y2="518.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="275.0" y="505.0" font-size="8.5" fill="#a69d8e" text-anchor="start" font-weight="400">ACK</text>
+<text x="91.0" y="566.0" font-size="8.5" fill="#a69d8e" text-anchor="middle" font-weight="400">→ CLOSED after 2×MSL</text>
+<text x="16.0" y="592.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">Many CLOSE_WAIT: app forgot close().</text>
+<text x="16.0" y="607.0" font-size="9.5" fill="#a69d8e" text-anchor="start" font-weight="400">Many TIME_WAIT: many short conns.</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 632" width="880" height="632" role="img" aria-label="Sequence diagram: SYN, SYN-ACK and ACK open the connection, data flows, then FIN, ACK, FIN, ACK close it, with each side&#x27;s TCP state labelled and the client ending in TIME_WAIT" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="632" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">A TCP connection from SYN to TIME_WAIT</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">three segments to open, four to close; each side moves through its own states</text>
+<rect x="210.0" y="84.0" width="80.0" height="28.0" rx="3" fill="#5fb3a1" fill-opacity="0.2" stroke="#5fb3a1" stroke-width="1"/>
+<text x="250.0" y="102.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">client</text>
+<rect x="590.0" y="84.0" width="80.0" height="28.0" rx="3" fill="#9b8cff" fill-opacity="0.2" stroke="#9b8cff" stroke-width="1"/>
+<text x="630.0" y="102.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">server</text>
+<line x1="250.0" y1="142.0" x2="630.0" y2="158.0" stroke="#5fb3a1" stroke-width="1.6" marker-end="url(#ah0)"/>
+<text x="440.0" y="138.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">SYN seq=x</text>
+<text x="242.0" y="146.0" font-size="10.5" fill="#ede6d8" text-anchor="end" font-weight="600">SYN_SENT</text>
+<text x="638.0" y="162.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="600">LISTEN</text>
+<line x1="630.0" y1="188.0" x2="250.0" y2="204.0" stroke="#9b8cff" stroke-width="1.6" marker-end="url(#ah1)"/>
+<text x="440.0" y="184.0" font-size="11" fill="#9b8cff" text-anchor="middle" font-weight="400">SYN-ACK seq=y ack=x+1</text>
+<text x="638.0" y="192.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="600">SYN_RCVD</text>
+<line x1="250.0" y1="234.0" x2="630.0" y2="250.0" stroke="#5fb3a1" stroke-width="1.6" marker-end="url(#ah0)"/>
+<text x="440.0" y="230.0" font-size="11" fill="#5fb3a1" text-anchor="middle" font-weight="400">ACK ack=y+1</text>
+<text x="242.0" y="238.0" font-size="10.5" fill="#ede6d8" text-anchor="end" font-weight="600">ESTABLISHED</text>
+<rect x="250.0" y="274.0" width="380.0" height="30.0" rx="2" fill="#7cc47f" fill-opacity="0.12" stroke="none" stroke-width="1"/>
+<text x="440.0" y="293.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">data flows both ways (ESTABLISHED on both sides)</text>
+<text x="642.0" y="293.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="600">ESTABLISHED</text>
+<line x1="250.0" y1="326.0" x2="630.0" y2="342.0" stroke="#e2b45a" stroke-width="1.6" marker-end="url(#ah2)"/>
+<text x="440.0" y="322.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">FIN</text>
+<text x="242.0" y="330.0" font-size="10.5" fill="#ede6d8" text-anchor="end" font-weight="600">FIN_WAIT_1</text>
+<text x="638.0" y="346.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="600">ESTABLISHED</text>
+<line x1="630.0" y1="372.0" x2="250.0" y2="388.0" stroke="#e2b45a" stroke-width="1.6" marker-end="url(#ah2)"/>
+<text x="440.0" y="368.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">ACK</text>
+<text x="242.0" y="392.0" font-size="10.5" fill="#ede6d8" text-anchor="end" font-weight="600">FIN_WAIT_2</text>
+<text x="638.0" y="376.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="600">CLOSE_WAIT</text>
+<line x1="630.0" y1="418.0" x2="250.0" y2="434.0" stroke="#e2b45a" stroke-width="1.6" marker-end="url(#ah2)"/>
+<text x="440.0" y="414.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">FIN</text>
+<text x="638.0" y="422.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="600">LAST_ACK</text>
+<line x1="250.0" y1="464.0" x2="630.0" y2="480.0" stroke="#e2b45a" stroke-width="1.6" marker-end="url(#ah2)"/>
+<text x="440.0" y="460.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">ACK</text>
+<text x="242.0" y="468.0" font-size="10.5" fill="#ede6d8" text-anchor="end" font-weight="600">TIME_WAIT</text>
+<text x="638.0" y="484.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="600">CLOSED</text>
+<line x1="250.0" y1="112.0" x2="250.0" y2="544.0" stroke="#4a4136" stroke-width="1.2"/>
+<line x1="630.0" y1="112.0" x2="630.0" y2="544.0" stroke="#4a4136" stroke-width="1.2"/>
+<text x="242.0" y="538.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">wait 2×MSL</text>
+<text x="242.0" y="554.0" font-size="10.5" fill="#a69d8e" text-anchor="end" font-weight="400">→ CLOSED</text>
+<text x="440.0" y="584.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">Opening costs one round trip before the client can send its request (data may ride on the final ACK).</text>
+<text x="440.0" y="602.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">The side that closes first holds TIME_WAIT so stray old segments cannot corrupt a new connection on the same 4-tuple.</text>
+</svg>

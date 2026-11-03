@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 402" width="880" height="402" role="img" aria-label="A listening socket has a SYN queue for half-open connections and an accept queue for established ones; SYN floods fill the first, and a slow application overflows the second" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="402" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5fb3a1"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b8cff"/></marker><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Inside a listening socket: two queues</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the kernel completes handshakes on its own; the application only sees finished connections</text>
+<rect x="30.0" y="110.0" width="120.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="90.0" y="136.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">clients</text>
+<rect x="210.0" y="96.0" width="200.0" height="72.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="310.0" y="129.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">SYN queue</text>
+<text x="310.0" y="145.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">half-open, SYN_RCVD</text>
+<rect x="470.0" y="96.0" width="200.0" height="72.0" rx="3" fill="#7cc47f" fill-opacity="0.18" stroke="#7cc47f" stroke-width="1"/>
+<text x="570.0" y="129.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">accept queue</text>
+<text x="570.0" y="145.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">ESTABLISHED, waiting</text>
+<rect x="730.0" y="110.0" width="120.0" height="44.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="790.0" y="136.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">accept()</text>
+<line x1="150.0" y1="124.0" x2="210.0" y2="124.0" stroke="#5fb3a1" stroke-width="1.4" marker-end="url(#ah0)"/>
+<text x="180.0" y="116.0" font-size="9.5" fill="#5fb3a1" text-anchor="middle" font-weight="400">SYN</text>
+<line x1="210.0" y1="148.0" x2="150.0" y2="148.0" stroke="#9b8cff" stroke-width="1.4" marker-end="url(#ah1)"/>
+<text x="180.0" y="166.0" font-size="9.5" fill="#9b8cff" text-anchor="middle" font-weight="400">SYN-ACK</text>
+<line x1="410.0" y1="132.0" x2="470.0" y2="132.0" stroke="#7cc47f" stroke-width="1.4" marker-end="url(#ah2)"/>
+<text x="440.0" y="124.0" font-size="9.5" fill="#7cc47f" text-anchor="middle" font-weight="400">ACK</text>
+<line x1="670.0" y1="132.0" x2="730.0" y2="132.0" stroke="#e2b45a" stroke-width="1.4" marker-end="url(#ah3)"/>
+<text x="310.0" y="190.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">size ≈ tcp_max_syn_backlog</text>
+<text x="570.0" y="190.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">size = min(backlog, somaxconn)</text>
+<rect x="210.0" y="222.0" width="200.0" height="120.0" rx="3" fill="#e5534b" fill-opacity="0.1" stroke="#e5534b" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="222.0" y="246.0" font-size="10" fill="#e5534b" text-anchor="start" font-weight="700">SYN flood</text>
+<text x="222.0" y="263.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">spoofed SYNs fill the queue;</text>
+<text x="222.0" y="280.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">real clients get no SYN-ACK.</text>
+<text x="222.0" y="297.0" font-size="10" fill="#7cc47f" text-anchor="start" font-weight="700">Fix: SYN cookies</text>
+<text x="222.0" y="314.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">encode state in the ISN,</text>
+<text x="222.0" y="331.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">keep nothing until the ACK.</text>
+<rect x="470.0" y="222.0" width="200.0" height="120.0" rx="3" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="482.0" y="246.0" font-size="10" fill="#e2b45a" text-anchor="start" font-weight="700">Accept queue full</text>
+<text x="482.0" y="263.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">app too slow to accept();</text>
+<text x="482.0" y="280.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">kernel drops the final ACK,</text>
+<text x="482.0" y="297.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">client thinks it is connected</text>
+<text x="482.0" y="314.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">and its request waits →</text>
+<text x="482.0" y="331.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">latency spikes, timeouts.</text>
+<text x="440.0" y="372.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">Watch: ListenOverflows / ListenDrops in netstat -s, Recv-Q on LISTEN sockets in ss -lnt.</text>
+</svg>
