@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" role="img" aria-label="Protobuf encodes each value with its field number so unknown fields can be skipped; Avro encodes bare values in schema order and resolves the writer schema against the reader schema by field name" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="380" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Protobuf vs Avro on the wire</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Protobuf carries field numbers; Avro relies on the writer schema</text>
+<rect x="30.0" y="85.0" width="400.0" height="230.0" rx="3" fill="#5fb3a1" fill-opacity="0.07" stroke="#5fb3a1" stroke-width="1"/>
+<text x="230.0" y="203.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="46.0" y="108.0" font-size="13" fill="#5fb3a1" text-anchor="start" font-weight="700">Protobuf</text>
+<text x="46.0" y="132.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">message User {</text>
+<text x="46.0" y="151.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">  string name  = 1;</text>
+<text x="46.0" y="170.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">  int32  age   = 2;</text>
+<text x="46.0" y="189.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">  string email = 3;  // added later</text>
+<text x="46.0" y="208.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">}</text>
+<rect x="46.0" y="232.0" width="116.0" height="32.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="104.0" y="251.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">tag1 "Ada"</text>
+<rect x="170.0" y="232.0" width="116.0" height="32.0" rx="3" fill="#5fb3a1" fill-opacity="0.18" stroke="#5fb3a1" stroke-width="1"/>
+<text x="228.0" y="251.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">tag2 36</text>
+<rect x="294.0" y="232.0" width="116.0" height="32.0" rx="3" fill="#e2b45a" fill-opacity="0.18" stroke="#e2b45a" stroke-width="1"/>
+<text x="352.0" y="251.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">tag3 "a@x"</text>
+<text x="46.0" y="292.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">unknown tag? skip it by wire type. Missing? default.</text>
+<rect x="450.0" y="85.0" width="400.0" height="230.0" rx="3" fill="#9b8cff" fill-opacity="0.07" stroke="#9b8cff" stroke-width="1"/>
+<text x="650.0" y="203.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600"></text>
+<text x="466.0" y="108.0" font-size="13" fill="#9b8cff" text-anchor="start" font-weight="700">Avro</text>
+<text x="466.0" y="132.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">bytes have no tags or names:</text>
+<text x="466.0" y="151.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">just values in writer-schema order</text>
+<rect x="466.0" y="172.0" width="80.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="506.0" y="190.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">"Ada"</text>
+<rect x="556.0" y="172.0" width="80.0" height="30.0" rx="3" fill="#9b8cff" fill-opacity="0.18" stroke="#9b8cff" stroke-width="1"/>
+<text x="596.0" y="190.6" font-size="10" fill="#ede6d8" text-anchor="middle" font-weight="600">36</text>
+<rect x="466.0" y="224.0" width="160.0" height="36.0" rx="3" fill="#a69d8e" fill-opacity="0.12" stroke="#a69d8e" stroke-width="1"/>
+<text x="546.0" y="245.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">writer schema</text>
+<rect x="674.0" y="224.0" width="160.0" height="36.0" rx="3" fill="#ff5b2e" fill-opacity="0.12" stroke="#ff5b2e" stroke-width="1"/>
+<text x="754.0" y="245.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">reader schema</text>
+<line x1="626.0" y1="242.0" x2="672.0" y2="242.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<text x="466.0" y="292.0" font-size="10" fill="#a69d8e" text-anchor="start" font-weight="400">resolve by field NAME; reader default fills gaps</text>
+<text x="30.0" y="350.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Protobuf: never reuse or renumber a tag.  Avro: the reader must know the exact writer schema.</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 369" width="880" height="369" role="img" aria-label="Backward compatibility means a new reader can read data from an old writer; forward compatibility means an old reader can read data from a new writer; full compatibility means both" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="369" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Who can read whom?</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">compatibility is about which side upgrades first</text>
+<text x="260.0" y="100.0" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="700">Reader v1 (old)</text>
+<text x="560.0" y="100.0" font-size="11.5" fill="#ff5b2e" text-anchor="middle" font-weight="700">Reader v2 (new)</text>
+<text x="40.0" y="150.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="700">Writer v1</text>
+<text x="40.0" y="240.0" font-size="11.5" fill="#ff5b2e" text-anchor="start" font-weight="700">Writer v2</text>
+<rect x="130.0" y="120.0" width="260.0" height="64.0" rx="3" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1"/>
+<text x="260.0" y="149.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">same schema</text>
+<text x="260.0" y="165.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">trivially fine</text>
+<rect x="430.0" y="120.0" width="260.0" height="64.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="560.0" y="149.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">BACKWARD</text>
+<text x="560.0" y="165.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">new reader, old data</text>
+<rect x="130.0" y="210.0" width="260.0" height="64.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="260.0" y="239.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">FORWARD</text>
+<text x="260.0" y="255.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">old reader, new data</text>
+<rect x="430.0" y="210.0" width="260.0" height="64.0" rx="3" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1"/>
+<text x="560.0" y="239.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">same schema</text>
+<text x="560.0" y="255.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">trivially fine</text>
+<text x="40.0" y="320.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Backward: upgrade consumers first.  Forward: upgrade producers first.</text>
+<text x="40.0" y="339.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">FULL = both, so deploy order stops mattering. "Transitive" = against every older version.</text>
+</svg>

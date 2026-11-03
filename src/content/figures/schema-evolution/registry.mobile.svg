@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 381" width="360" height="381" role="img" aria-label="A producer registers a new schema version; the registry runs a compatibility check and returns an ID or rejects it; each message carries a magic byte and the schema ID; consumers fetch and cache the writer schema by ID" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="381" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Schema registry</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">compat checked at publish time</text>
+<rect x="16.0" y="80.0" width="328.0" height="40.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="104.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Producer registers User v3</text>
+<line x1="180.0" y1="120.0" x2="180.0" y2="136.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="138.0" width="328.0" height="48.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="159.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Registry: compat check</text>
+<text x="180.0" y="175.0" font-size="11" fill="#a69d8e" text-anchor="middle" font-weight="400">→ id 42, or reject</text>
+<line x1="180.0" y1="186.0" x2="180.0" y2="202.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="204.0" width="50.0" height="38.0" rx="3" fill="#a69d8e" fill-opacity="0.15" stroke="#a69d8e" stroke-width="1"/>
+<text x="41.0" y="226.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">0x0</text>
+<rect x="66.0" y="204.0" width="86.0" height="38.0" rx="3" fill="#9b8cff" fill-opacity="0.15" stroke="#9b8cff" stroke-width="1"/>
+<text x="109.0" y="226.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">id 42</text>
+<rect x="152.0" y="204.0" width="192.0" height="38.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="248.0" y="226.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">payload</text>
+<line x1="180.0" y1="242.0" x2="180.0" y2="258.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="260.0" width="328.0" height="40.0" rx="3" fill="#ff5b2e" fill-opacity="0.15" stroke="#ff5b2e" stroke-width="1"/>
+<text x="180.0" y="284.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">Consumer fetches #42, resolves</text>
+<text x="16.0" y="332.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">Bad changes fail at publish</text>
+<text x="16.0" y="351.0" font-size="10.5" fill="#a69d8e" text-anchor="start" font-weight="400">time, not in a consumer.</text>
+</svg>
