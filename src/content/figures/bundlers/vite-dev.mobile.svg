@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 339" width="360" height="339" role="img" aria-label="A bundle-based dev server builds the whole app before starting; Vite pre-bundles dependencies once and serves source modules on demand as the browser imports them" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="339" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Dev server styles</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">why Vite starts fast</text>
+<text x="16.0" y="96.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">A. bundle first (webpack)</text>
+<text x="16.0" y="118.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">all modules → bundle → ready</text>
+<text x="16.0" y="135.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">startup grows with app size (~20 s)</text>
+<text x="16.0" y="178.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">B. serve on demand (Vite)</text>
+<text x="16.0" y="200.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">deps pre-bundled by esbuild</text>
+<text x="16.0" y="217.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">server ready in ~300 ms</text>
+<text x="16.0" y="234.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">browser imports modules natively;</text>
+<text x="16.0" y="251.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">files transformed when requested</text>
+<text x="16.0" y="290.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Production builds are still</text>
+<text x="16.0" y="309.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">bundled for fewer requests.</text>
+</svg>

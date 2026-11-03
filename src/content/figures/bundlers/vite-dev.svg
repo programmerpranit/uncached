@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 404" width="880" height="404" role="img" aria-label="A bundle-based dev server builds the whole app before starting; Vite pre-bundles dependencies once and serves source modules on demand as the browser imports them" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="404" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Bundle first vs serve on demand</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">why Vite's dev server starts in milliseconds</text>
+<text x="40.0" y="110.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">A. bundle-based dev server (classic webpack)</text>
+<rect x="40.0" y="124.0" width="200.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="140.0" y="150.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">all 842 modules</text>
+<line x1="242.0" y1="146.0" x2="300.0" y2="146.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="304.0" y="124.0" width="200.0" height="44.0" rx="3" fill="#e2b45a" fill-opacity="0.15" stroke="#e2b45a" stroke-width="1"/>
+<text x="404.0" y="150.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">bundle everything</text>
+<line x1="506.0" y1="146.0" x2="564.0" y2="146.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="568.0" y="124.0" width="272.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="704.0" y="150.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">server ready  (~20 s)</text>
+<text x="40.0" y="196.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">Edits rebuild the affected chunk; startup and HMR slow down as the app grows.</text>
+<text x="40.0" y="246.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">B. native-ESM dev server (Vite)</text>
+<rect x="40.0" y="260.0" width="200.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="140.0" y="279.0" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">node_modules</text>
+<text x="140.0" y="295.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">pre-bundled once by esbuild</text>
+<rect x="304.0" y="260.0" width="200.0" height="44.0" rx="3" fill="#5fb3a1" fill-opacity="0.15" stroke="#5fb3a1" stroke-width="1"/>
+<text x="404.0" y="286.1" font-size="11.5" fill="#ede6d8" text-anchor="middle" font-weight="600">server ready (~300 ms)</text>
+<line x1="242.0" y1="282.0" x2="300.0" y2="282.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="568.0" y="260.0" width="272.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="704.0" y="286.0" font-size="11" fill="#ede6d8" text-anchor="middle" font-weight="600">browser requests /src/Page.tsx</text>
+<line x1="506.0" y1="282.0" x2="564.0" y2="282.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<text x="40.0" y="336.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The browser asks for each module through native import statements. Vite transforms only the files that this</text>
+<text x="40.0" y="355.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">page actually imports, when they are requested. An edit invalidates one module, so HMR stays fast at any size.</text>
+<text x="40.0" y="374.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">For production, Vite still bundles (with Rollup, now Rolldown) so users don't download hundreds of files.</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 433" width="880" height="433" role="img" aria-label="esbuild is fast because it is native Go code, runs in parallel on all cores, makes only three passes over a shared AST, and avoids repeated parsing and garbage-heavy data" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="433" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Why esbuild is 10–100× faster</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same job, different engineering choices</text>
+<text x="260.0" y="108.0" font-size="12" fill="#e5534b" text-anchor="middle" font-weight="700">traditional JS toolchain</text>
+<text x="640.0" y="108.0" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="700">esbuild</text>
+<text x="40.0" y="148.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">language</text>
+<rect x="160.0" y="124.0" width="200.0" height="38.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="260.0" y="146.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">JavaScript on Node.js</text>
+<rect x="540.0" y="124.0" width="220.0" height="38.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="650.0" y="146.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">Go, compiled to native code</text>
+<line x1="364.0" y1="143.0" x2="536.0" y2="143.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="196.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">parallelism</text>
+<rect x="160.0" y="172.0" width="200.0" height="38.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="260.0" y="194.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">mostly one thread</text>
+<rect x="540.0" y="172.0" width="220.0" height="38.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="650.0" y="194.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">parses and prints on all cores</text>
+<line x1="364.0" y1="191.0" x2="536.0" y2="191.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="244.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">AST passes</text>
+<rect x="160.0" y="220.0" width="200.0" height="38.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="260.0" y="242.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">many plugins, each re-walks</text>
+<rect x="540.0" y="220.0" width="220.0" height="38.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="650.0" y="242.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">three passes total, shared</text>
+<line x1="364.0" y1="239.0" x2="536.0" y2="239.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="292.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">data formats</text>
+<rect x="160.0" y="268.0" width="200.0" height="38.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="260.0" y="290.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">string → AST → string per tool</text>
+<rect x="540.0" y="268.0" width="220.0" height="38.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="650.0" y="290.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">one AST, no re-parsing</text>
+<line x1="364.0" y1="287.0" x2="536.0" y2="287.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="340.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">memory</text>
+<rect x="160.0" y="316.0" width="200.0" height="38.0" rx="3" fill="#e5534b" fill-opacity="0.12" stroke="#e5534b" stroke-width="1"/>
+<text x="260.0" y="338.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">many small objects, GC heavy</text>
+<rect x="540.0" y="316.0" width="220.0" height="38.0" rx="3" fill="#7cc47f" fill-opacity="0.12" stroke="#7cc47f" stroke-width="1"/>
+<text x="650.0" y="338.8" font-size="10.5" fill="#ede6d8" text-anchor="middle" font-weight="600">compact, cache-friendly structs</text>
+<line x1="364.0" y1="335.0" x2="536.0" y2="335.0" stroke="#a69d8e" stroke-width="1.2" marker-end="url(#ah0)"/>
+<text x="40.0" y="384.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Rust tools such as SWC, Rolldown, Oxc and Turbopack follow the same recipe: native code, parallelism, few passes.</text>
+<text x="40.0" y="403.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">esbuild gives up some flexibility to get there, like limited plugin hooks and no type checking.</text>
+</svg>

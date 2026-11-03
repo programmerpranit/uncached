@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 389" width="880" height="389" role="img" aria-label="A bundler resolves imports, parses files, transforms TypeScript and JSX, links the module graph with tree shaking, splits chunks, then minifies and emits hashed files" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="880" height="389" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#a69d8e"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What a bundler does</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">from hundreds of source modules to a few optimized files</text>
+<rect x="40.0" y="110.0" width="124.0" height="96.0" rx="8" fill="#ff5b2e" fill-opacity="0.1" stroke="#ff5b2e" stroke-width="1.3"/>
+<text x="102.0" y="138.0" font-size="12" fill="#ff5b2e" text-anchor="middle" font-weight="700">resolve</text>
+<text x="46.0" y="166.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">find each import</text>
+<text x="46.0" y="182.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">on disk</text>
+<line x1="165.0" y1="158.0" x2="175.0" y2="158.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="176.0" y="110.0" width="124.0" height="96.0" rx="8" fill="#5fb3a1" fill-opacity="0.1" stroke="#5fb3a1" stroke-width="1.3"/>
+<text x="238.0" y="138.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="700">load + parse</text>
+<text x="182.0" y="166.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">read files,</text>
+<text x="182.0" y="182.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">build ASTs</text>
+<line x1="301.0" y1="158.0" x2="311.0" y2="158.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="312.0" y="110.0" width="124.0" height="96.0" rx="8" fill="#e2b45a" fill-opacity="0.1" stroke="#e2b45a" stroke-width="1.3"/>
+<text x="374.0" y="138.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="700">transform</text>
+<text x="318.0" y="166.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">TS, JSX, CSS</text>
+<text x="318.0" y="182.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">→ JS</text>
+<line x1="437.0" y1="158.0" x2="447.0" y2="158.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="448.0" y="110.0" width="124.0" height="96.0" rx="8" fill="#9b8cff" fill-opacity="0.1" stroke="#9b8cff" stroke-width="1.3"/>
+<text x="510.0" y="138.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="700">link</text>
+<text x="454.0" y="166.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">build the module</text>
+<text x="454.0" y="182.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">graph, tree-shake</text>
+<line x1="573.0" y1="158.0" x2="583.0" y2="158.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="584.0" y="110.0" width="124.0" height="96.0" rx="8" fill="#d77fa1" fill-opacity="0.1" stroke="#d77fa1" stroke-width="1.3"/>
+<text x="646.0" y="138.0" font-size="12" fill="#d77fa1" text-anchor="middle" font-weight="700">chunk</text>
+<text x="590.0" y="166.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">split by entry</text>
+<text x="590.0" y="182.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">+ dynamic import</text>
+<line x1="709.0" y1="158.0" x2="719.0" y2="158.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="720.0" y="110.0" width="124.0" height="96.0" rx="8" fill="#7cc47f" fill-opacity="0.1" stroke="#7cc47f" stroke-width="1.3"/>
+<text x="782.0" y="138.0" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="700">minify + emit</text>
+<text x="726.0" y="166.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">shrink, hash,</text>
+<text x="726.0" y="182.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">write files</text>
+<rect x="40.0" y="246.0" width="180.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="130.0" y="271.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">src/  842 modules</text>
+<text x="130.0" y="287.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">.ts .tsx .css .svg</text>
+<line x1="222.0" y1="274.0" x2="640.0" y2="274.0" stroke="#a69d8e" stroke-width="1.3" marker-end="url(#ah0)"/>
+<rect x="644.0" y="246.0" width="196.0" height="56.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="742.0" y="271.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">dist/  6 files</text>
+<text x="742.0" y="287.0" font-size="10" fill="#a69d8e" text-anchor="middle" font-weight="400">index-3f9a.js  vendor-a1c2.js …</text>
+<text x="40.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Every bundler does roughly these steps. Speed depends on how fast each step runs, how much work is repeated,</text>
+<text x="40.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">and how much of it can run in parallel across CPU cores.</text>
+</svg>

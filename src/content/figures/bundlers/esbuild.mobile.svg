@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 511" width="360" height="511" role="img" aria-label="esbuild is fast because it is native Go code, runs in parallel on all cores, makes only three passes over a shared AST, and avoids repeated parsing and garbage-heavy data" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" style="font-variant-ligatures:none">
+<rect width="360" height="511" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Why esbuild is fast</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">same job, different choices</text>
+<rect x="16.0" y="84.0" width="328.0" height="64.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="104.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">language</text>
+<text x="28.0" y="122.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">✕ JavaScript on Node.js</text>
+<text x="28.0" y="139.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ Go, compiled to native code</text>
+<rect x="16.0" y="156.0" width="328.0" height="64.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="176.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">parallelism</text>
+<text x="28.0" y="194.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">✕ mostly one thread</text>
+<text x="28.0" y="211.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ parses and prints on all cores</text>
+<rect x="16.0" y="228.0" width="328.0" height="64.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="248.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">AST passes</text>
+<text x="28.0" y="266.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">✕ many plugins, each re-walks</text>
+<text x="28.0" y="283.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ three passes total, shared</text>
+<rect x="16.0" y="300.0" width="328.0" height="64.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="320.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">data formats</text>
+<text x="28.0" y="338.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">✕ string → AST → string per tool</text>
+<text x="28.0" y="355.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ one AST, no re-parsing</text>
+<rect x="16.0" y="372.0" width="328.0" height="64.0" rx="8" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="28.0" y="392.0" font-size="11" fill="#a69d8e" text-anchor="start" font-weight="400">memory</text>
+<text x="28.0" y="410.0" font-size="10.5" fill="#e5534b" text-anchor="start" font-weight="400">✕ many small objects, GC heavy</text>
+<text x="28.0" y="427.0" font-size="10.5" fill="#7cc47f" text-anchor="start" font-weight="400">✓ compact, cache-friendly structs</text>
+<text x="16.0" y="462.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Native code, parallel work and</text>
+<text x="16.0" y="481.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">few passes: the Rust tools too.</text>
+</svg>
