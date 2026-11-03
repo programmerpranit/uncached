@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 389" width="360" height="389" role="img" aria-label="Timeline of a single frame: input, JavaScript, requestAnimationFrame, style, layout, paint and composite fitting in a 16.7 ms budget" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="389" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">One frame</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">~16.7 ms at 60 Hz</text>
+<rect x="16.0" y="86.0" width="64.0" height="24.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="102.0" font-size="10.5" fill="#1b1712" text-anchor="start" font-weight="600">input</text>
+<rect x="16.0" y="116.0" width="240.0" height="24.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="132.0" font-size="10.5" fill="#1b1712" text-anchor="start" font-weight="600">JS / timers</text>
+<rect x="16.0" y="146.0" width="80.0" height="24.0" rx="3" fill="#d77fa1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="162.0" font-size="10.5" fill="#1b1712" text-anchor="start" font-weight="600">rAF</text>
+<rect x="16.0" y="176.0" width="112.0" height="24.0" rx="3" fill="#9b8cff" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="192.0" font-size="10.5" fill="#1b1712" text-anchor="start" font-weight="600">style</text>
+<rect x="16.0" y="206.0" width="144.0" height="24.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="222.0" font-size="10.5" fill="#1b1712" text-anchor="start" font-weight="600">layout</text>
+<rect x="16.0" y="236.0" width="112.0" height="24.0" rx="3" fill="#d77fa1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="252.0" font-size="10.5" fill="#1b1712" text-anchor="start" font-weight="600">paint</text>
+<rect x="16.0" y="266.0" width="96.0" height="24.0" rx="3" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="24.0" y="282.0" font-size="10.5" fill="#1b1712" text-anchor="start" font-weight="600">composite</text>
+<text x="16.0" y="312.0" font-size="11.5" fill="#ede6d8" text-anchor="start" font-weight="400">total must fit in ~16.7 ms</text>
+<text x="16.0" y="340.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Overruns drop the frame (jank).</text>
+<text x="16.0" y="359.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">120 Hz halves the budget.</text>
+</svg>

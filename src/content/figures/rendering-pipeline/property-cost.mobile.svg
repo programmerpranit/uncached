@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 431" width="360" height="431" role="img" aria-label="Which pipeline stages run for layout-triggering, paint-only and composite-only CSS property changes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="431" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Cost of a change</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">earliest stage wins</text>
+<rect x="16.0" y="86.0" width="328.0" height="84.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="28.0" y="108.0" font-size="12" fill="#e2b45a" text-anchor="start" font-weight="700">triggers layout</text>
+<text x="28.0" y="128.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">width, top, font-size, adding nodes</text>
+<rect x="28.0" y="140.0" width="50.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="53.0" y="154.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">S</text>
+<rect x="86.0" y="140.0" width="50.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="111.0" y="154.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">L</text>
+<rect x="144.0" y="140.0" width="50.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="169.0" y="154.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">P</text>
+<rect x="202.0" y="140.0" width="50.0" height="20.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="227.0" y="154.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">C</text>
+<rect x="16.0" y="182.0" width="328.0" height="84.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="28.0" y="204.0" font-size="12" fill="#d77fa1" text-anchor="start" font-weight="700">triggers paint</text>
+<text x="28.0" y="224.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">color, background, box-shadow</text>
+<rect x="28.0" y="236.0" width="50.0" height="20.0" rx="3" fill="#d77fa1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="53.0" y="250.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">S</text>
+<rect x="86.0" y="236.0" width="50.0" height="20.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<text x="111.0" y="250.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="600">L</text>
+<rect x="144.0" y="236.0" width="50.0" height="20.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<text x="169.0" y="250.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="600">P</text>
+<rect x="202.0" y="236.0" width="50.0" height="20.0" rx="3" fill="#d77fa1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="227.0" y="250.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">C</text>
+<rect x="16.0" y="278.0" width="328.0" height="84.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="28.0" y="300.0" font-size="12" fill="#5fb3a1" text-anchor="start" font-weight="700">triggers composite</text>
+<text x="28.0" y="320.0" font-size="10.5" fill="#ede6d8" text-anchor="start" font-weight="400">transform, opacity, filter*</text>
+<rect x="28.0" y="332.0" width="50.0" height="20.0" rx="3" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<text x="53.0" y="346.0" font-size="10.5" fill="#1b1712" text-anchor="middle" font-weight="600">S</text>
+<rect x="86.0" y="332.0" width="50.0" height="20.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<text x="111.0" y="346.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="600">L</text>
+<rect x="144.0" y="332.0" width="50.0" height="20.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<text x="169.0" y="346.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="600">P</text>
+<rect x="202.0" y="332.0" width="50.0" height="20.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<text x="227.0" y="346.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="600">C</text>
+<text x="16.0" y="382.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Animate transform and opacity;</text>
+<text x="16.0" y="401.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">they skip layout and paint.</text>
+</svg>

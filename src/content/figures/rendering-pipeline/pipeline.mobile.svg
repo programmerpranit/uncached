@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 475" width="360" height="475" role="img" aria-label="Rendering pipeline stages: parse, style, layout, paint and composite, with the main thread and compositor thread" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="475" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a4136"/></marker></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">Rendering pipeline</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">HTML + CSS to pixels</text>
+<rect x="16.0" y="86.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="180.0" y="105.0" font-size="12" fill="#ede6d8" text-anchor="middle" font-weight="600">Parse</text>
+<text x="180.0" y="121.0" font-size="10.5" fill="#a69d8e" text-anchor="middle" font-weight="400">DOM + CSSOM</text>
+<line x1="180.0" y1="130.0" x2="180.0" y2="140.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="142.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#9b8cff" stroke-width="1"/>
+<text x="180.0" y="161.0" font-size="12" fill="#9b8cff" text-anchor="middle" font-weight="600">Style</text>
+<text x="180.0" y="177.0" font-size="10.5" fill="#9b8cff" text-anchor="middle" font-weight="400">computed styles</text>
+<line x1="180.0" y1="186.0" x2="180.0" y2="196.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="198.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="180.0" y="217.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">Layout</text>
+<text x="180.0" y="233.0" font-size="10.5" fill="#e2b45a" text-anchor="middle" font-weight="400">box geometry</text>
+<line x1="180.0" y1="242.0" x2="180.0" y2="252.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="254.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#d77fa1" stroke-width="1"/>
+<text x="180.0" y="273.0" font-size="12" fill="#d77fa1" text-anchor="middle" font-weight="600">Paint</text>
+<text x="180.0" y="289.0" font-size="10.5" fill="#d77fa1" text-anchor="middle" font-weight="400">draw commands</text>
+<line x1="180.0" y1="298.0" x2="180.0" y2="308.0" stroke="#4a4136" stroke-width="1.2" marker-end="url(#ah0)"/>
+<rect x="16.0" y="310.0" width="328.0" height="44.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#5fb3a1" stroke-width="1"/>
+<text x="180.0" y="329.0" font-size="12" fill="#5fb3a1" text-anchor="middle" font-weight="600">Composite</text>
+<text x="180.0" y="345.0" font-size="10.5" fill="#5fb3a1" text-anchor="middle" font-weight="400">GPU merges layers</text>
+<text x="16.0" y="378.0" font-size="11" fill="#9b8cff" text-anchor="start" font-weight="400">main thread: Parse → Paint</text>
+<text x="16.0" y="396.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">compositor + GPU: Composite</text>
+<text x="16.0" y="426.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A change re-runs every stage</text>
+<text x="16.0" y="445.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">after the first one it touches.</text>
+</svg>

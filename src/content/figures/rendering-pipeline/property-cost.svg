@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 365" width="880" height="365" role="img" aria-label="Which pipeline stages run for layout-triggering, paint-only and composite-only CSS property changes" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="365" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">What a CSS change costs</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">the earliest stage a property touches decides how much work runs</text>
+<text x="450.0" y="98.0" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="400">Style</text>
+<text x="550.0" y="98.0" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="400">Layout</text>
+<text x="650.0" y="98.0" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="400">Paint</text>
+<text x="750.0" y="98.0" font-size="11.5" fill="#a69d8e" text-anchor="middle" font-weight="400">Composite</text>
+<rect x="40.0" y="116.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="136.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">width, top, font-size, adding nodes</text>
+<text x="56.0" y="154.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">triggers layout</text>
+<rect x="410.0" y="128.0" width="80.0" height="24.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="510.0" y="128.0" width="80.0" height="24.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="610.0" y="128.0" width="80.0" height="24.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="710.0" y="128.0" width="80.0" height="24.0" rx="3" fill="#e2b45a" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="40.0" y="176.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="196.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">color, background, box-shadow</text>
+<text x="56.0" y="214.0" font-size="11" fill="#d77fa1" text-anchor="start" font-weight="400">triggers paint</text>
+<rect x="410.0" y="188.0" width="80.0" height="24.0" rx="3" fill="#d77fa1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="510.0" y="188.0" width="80.0" height="24.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<rect x="610.0" y="188.0" width="80.0" height="24.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<rect x="710.0" y="188.0" width="80.0" height="24.0" rx="3" fill="#d77fa1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="40.0" y="236.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="256.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">transform, opacity, filter*</text>
+<text x="56.0" y="274.0" font-size="11" fill="#5fb3a1" text-anchor="start" font-weight="400">triggers composite</text>
+<rect x="410.0" y="248.0" width="80.0" height="24.0" rx="3" fill="#5fb3a1" fill-opacity="0.85" stroke="none" stroke-width="1"/>
+<rect x="510.0" y="248.0" width="80.0" height="24.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<rect x="610.0" y="248.0" width="80.0" height="24.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<rect x="710.0" y="248.0" width="80.0" height="24.0" rx="3" fill="#4a4136" fill-opacity="0.35" stroke="none" stroke-width="1"/>
+<text x="40.0" y="316.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">* only if the element has its own compositor layer (will-change, active animation, video, canvas).</text>
+<text x="40.0" y="335.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">Compositor-only animations stay smooth even while the main thread is busy running JavaScript.</text>
+</svg>
