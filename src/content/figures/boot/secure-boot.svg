@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 427" width="880" height="427" role="img" aria-label="Secure Boot chain of signature checks from UEFI firmware through shim, bootloader and kernel, with TPM PCR measurements for measured boot" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="427" fill="#1b1712"/>
+<defs><marker id="ah0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7cc47f"/></marker><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#e2b45a"/></marker></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Secure and measured boot</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">verify each stage before running it, and record what ran</text>
+<rect x="40.0" y="104.0" width="185.0" height="54.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="132.5" y="128.0" font-size="12.5" fill="#7cc47f" text-anchor="middle" font-weight="600">UEFI firmware</text>
+<text x="132.5" y="144.0" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="400">keys: PK, KEK, db / dbx</text>
+<line x1="227.0" y1="131.0" x2="243.0" y2="131.0" stroke="#7cc47f" stroke-width="1.3" marker-end="url(#ah0)"/>
+<line x1="132.0" y1="160.0" x2="132.0" y2="214.0" stroke="#e2b45a" stroke-width="1.1" marker-end="url(#ah1)"/>
+<rect x="245.0" y="104.0" width="185.0" height="54.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="337.5" y="128.0" font-size="12.5" fill="#7cc47f" text-anchor="middle" font-weight="600">shim</text>
+<text x="337.5" y="144.0" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="400">signed by Microsoft CA</text>
+<line x1="432.0" y1="131.0" x2="448.0" y2="131.0" stroke="#7cc47f" stroke-width="1.3" marker-end="url(#ah0)"/>
+<line x1="337.0" y1="160.0" x2="337.0" y2="214.0" stroke="#e2b45a" stroke-width="1.1" marker-end="url(#ah1)"/>
+<rect x="450.0" y="104.0" width="185.0" height="54.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="542.5" y="128.0" font-size="12.5" fill="#7cc47f" text-anchor="middle" font-weight="600">GRUB / UKI</text>
+<text x="542.5" y="144.0" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="400">signed by distro key</text>
+<line x1="637.0" y1="131.0" x2="653.0" y2="131.0" stroke="#7cc47f" stroke-width="1.3" marker-end="url(#ah0)"/>
+<line x1="542.0" y1="160.0" x2="542.0" y2="214.0" stroke="#e2b45a" stroke-width="1.1" marker-end="url(#ah1)"/>
+<rect x="655.0" y="104.0" width="185.0" height="54.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="747.5" y="128.0" font-size="12.5" fill="#7cc47f" text-anchor="middle" font-weight="600">kernel + modules</text>
+<text x="747.5" y="144.0" font-size="10.5" fill="#7cc47f" text-anchor="middle" font-weight="400">signed; lockdown mode</text>
+<line x1="747.0" y1="160.0" x2="747.0" y2="214.0" stroke="#e2b45a" stroke-width="1.1" marker-end="url(#ah1)"/>
+<text x="140.0" y="190.0" font-size="11" fill="#e2b45a" text-anchor="start" font-weight="400">measure (hash) each stage</text>
+<rect x="40.0" y="216.0" width="800.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="440.0" y="237.0" font-size="12.5" fill="#e2b45a" text-anchor="middle" font-weight="600">TPM: Platform Configuration Registers (PCRs)</text>
+<text x="440.0" y="253.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">each stage hashes the next into a PCR before running it: PCR = SHA256(PCR ‖ hash)</text>
+<rect x="40.0" y="296.0" width="385.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#7cc47f" stroke-width="1"/>
+<text x="232.5" y="317.0" font-size="12" fill="#7cc47f" text-anchor="middle" font-weight="600">Secure Boot: refuse unsigned code</text>
+<text x="232.5" y="333.0" font-size="11" fill="#7cc47f" text-anchor="middle" font-weight="400">enforcement at boot time</text>
+<rect x="455.0" y="296.0" width="385.0" height="48.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#e2b45a" stroke-width="1"/>
+<text x="647.5" y="317.0" font-size="12" fill="#e2b45a" text-anchor="middle" font-weight="600">Measured boot: prove what ran</text>
+<text x="647.5" y="333.0" font-size="11" fill="#e2b45a" text-anchor="middle" font-weight="400">disk keys sealed to PCRs, remote attestation</text>
+<text x="40.0" y="378.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">The two are complementary. Secure Boot stops untrusted code from running; measured boot records exactly what ran,</text>
+<text x="40.0" y="397.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">so a TPM can release a disk encryption key (systemd-cryptenroll, BitLocker) only if the chain matches.</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 403" width="360" height="403" role="img" aria-label="Comparison of legacy BIOS and UEFI boot: what is loaded, partition scheme, CPU mode, boot entries and verification" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="360" height="403" fill="#1b1712"/>
+<defs></defs>
+<text x="16.0" y="32.0" font-size="15" fill="#ede6d8" text-anchor="start" font-weight="600">BIOS vs UEFI</text>
+<text x="16.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">finding the bootloader</text>
+<text x="16.0" y="86.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">loads</text>
+<text x="16.0" y="103.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">BIOS: first 512-byte sector (MBR)</text>
+<text x="16.0" y="119.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">UEFI: an .efi file from the ESP (FAT)</text>
+<text x="16.0" y="138.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">partitions</text>
+<text x="16.0" y="155.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">BIOS: MBR: 4 primary, 2 TiB limit</text>
+<text x="16.0" y="171.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">UEFI: GPT: 128+, huge disks</text>
+<text x="16.0" y="190.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">CPU mode at handoff</text>
+<text x="16.0" y="207.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">BIOS: 16-bit real mode</text>
+<text x="16.0" y="223.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">UEFI: 64-bit long mode</text>
+<text x="16.0" y="242.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">boot entries</text>
+<text x="16.0" y="259.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">BIOS: "boot from disk N"</text>
+<text x="16.0" y="275.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">UEFI: NVRAM entries (efibootmgr)</text>
+<text x="16.0" y="294.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="700">verification</text>
+<text x="16.0" y="311.0" font-size="10.5" fill="#e2b45a" text-anchor="start" font-weight="400">BIOS: none</text>
+<text x="16.0" y="327.0" font-size="10.5" fill="#5fb3a1" text-anchor="start" font-weight="400">UEFI: Secure Boot signatures</text>
+<text x="16.0" y="354.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">UEFI reads filesystems and loads</text>
+<text x="16.0" y="373.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">.efi programs directly.</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 369" width="880" height="369" role="img" aria-label="Comparison of legacy BIOS and UEFI boot: what is loaded, partition scheme, CPU mode, boot entries and verification" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace">
+<rect width="880" height="369" fill="#1b1712"/>
+<defs></defs>
+<text x="30.0" y="32.0" font-size="16" fill="#ede6d8" text-anchor="start" font-weight="600">Legacy BIOS vs UEFI</text>
+<text x="30.0" y="52.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">how the firmware finds what to run next</text>
+<text x="300.0" y="96.0" font-size="12.5" fill="#e2b45a" text-anchor="start" font-weight="700">legacy BIOS</text>
+<text x="580.0" y="96.0" font-size="12.5" fill="#5fb3a1" text-anchor="start" font-weight="700">UEFI</text>
+<rect x="40.0" y="108.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="128.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">loads</text>
+<text x="300.0" y="128.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">first 512-byte sector (MBR)</text>
+<text x="580.0" y="128.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">an .efi file from the ESP (FAT)</text>
+<rect x="40.0" y="144.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="164.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">partitions</text>
+<text x="300.0" y="164.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">MBR: 4 primary, 2 TiB limit</text>
+<text x="580.0" y="164.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">GPT: 128+, huge disks</text>
+<rect x="40.0" y="180.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="200.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">CPU mode at handoff</text>
+<text x="300.0" y="200.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">16-bit real mode</text>
+<text x="580.0" y="200.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">64-bit long mode</text>
+<rect x="40.0" y="216.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="236.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">boot entries</text>
+<text x="300.0" y="236.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">"boot from disk N"</text>
+<text x="580.0" y="236.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">NVRAM entries (efibootmgr)</text>
+<rect x="40.0" y="252.0" width="800.0" height="30.0" rx="3" fill="#2f2921" fill-opacity="1" stroke="#4a4136" stroke-width="1"/>
+<text x="56.0" y="272.0" font-size="12" fill="#ede6d8" text-anchor="start" font-weight="600">verification</text>
+<text x="300.0" y="272.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">none</text>
+<text x="580.0" y="272.0" font-size="11.5" fill="#a69d8e" text-anchor="start" font-weight="400">Secure Boot signatures</text>
+<text x="40.0" y="320.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">A 446-byte MBR boot sector can't do much, so BIOS bootloaders chain through several stages. UEFI firmware</text>
+<text x="40.0" y="339.0" font-size="12" fill="#a69d8e" text-anchor="start" font-weight="400">understands filesystems and PE executables, so it loads the bootloader, or the kernel itself (EFI stub), directly.</text>
+</svg>
